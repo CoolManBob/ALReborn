@@ -1,0 +1,7 @@
+; AgcmAIDlg.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AgcmAIDlg"
+DESCRIPTION  'AgcmAIDlg Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

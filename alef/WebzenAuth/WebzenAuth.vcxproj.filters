@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="WebzenAuth">
+      <UniqueIdentifier>{a56b3028-b8a9-460f-92f1-3d834b663f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SingleProcessChecker">
+      <UniqueIdentifier>{ff8070a3-c0fe-40bb-a86a-8b72ca88dd8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\CWebzenAuth.cpp">
+      <Filter>WebzenAuth</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\AuSingleProcessChecker.cpp">
+      <Filter>SingleProcessChecker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\CWebzenAuth.h">
+      <Filter>WebzenAuth</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\AuSingleProcessChecker.h">
+      <Filter>SingleProcessChecker</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

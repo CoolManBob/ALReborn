@@ -1,0 +1,754 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 	lexClass:
+//		name		= c_CPPString
+//		parent		= c_CPP
+//		parent:dyn	= c_CPP
+//
+//		children		= 0
+//		children		= class1, class2, ...
+//
+//		previous:class			=	
+//		previous:tag			=	
+//		previous:tag:separators	=	
+//
+//		start:class		= 
+//		start:Tag		= '"'
+//
+//		skip:Tag		= '\"'
+//
+//		end:class		= //
+//		end:Tag			= '"'
+//		end:separators	= ' '
+//
+//		Token:tag		= 'if', 'for', 'while', 'do'
+//		Token:start:separators	= 
+//		Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//	txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//	txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//	txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//	txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//	txt:Bold	= 1 // {1,0} default: 0
+//	txt:Italic	= 1 // {1,0} default: 0
+//	txt:Underline	= 1 // {1,0} default: 0
+//
+//	caseSensitive	= 1 // {1,0} default: 0
+//
+//	Collapsable	= 1 // {1,0} default: 0
+//	CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//	ParseOnScreen	= 1 // {1,0} default: 0
+// 	
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+// 	global:FirstParseInSeparateThread	= 1		// {0,1} default=1
+// 	global:EditReparceInSeparateThread	= 1		// {0,1} default=1
+// 	global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+// 	global:EditReparceTimeout_ms	= 500		// default= 500 ms; time out for start reparse after last key was pressed.
+// 	global:MaxBackParseOffset		= 100		// default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+// 	global:OnScreenSchCacheLifeTime_sec = 180	// default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+// 	global:ParserThreadIdleLifeTime_sec = 60	// default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+	
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+/// HTML ///	
+lexClass:
+	parent:file		= <*.htm|*.html|*.asp|*.xml|*.plg|*.inc|*.js>
+	name			= c_HTML
+	//caseSensitive	= 0
+	txt:colorFG	= 0x000000
+	DisplayName = 'Normal Text'
+
+/// ASP ///	
+lexClass:	
+	name		= c_ASP_VBScriptBlock0
+	parent		= c_HTML
+	start:Tag	= '<%@'
+	end:Tag		= '%>'
+	txt:colorFG	= 0x000000
+	txt:colorBK	= 0xFFFF00
+	DisplayName = 'ASP VB Script Block (@)'
+//:lexClass
+
+lexClass:	
+	name		= c_ASP_VBScriptBlock
+	parent		= c_HTML, c_HTMLelement
+	parent		= c_HTMLelement_SCRIPT_lang_other
+	parent		= c_HTMLelementPropValue_str1, c_HTMLelementPropValue_str2	
+	start:Tag	= '<%'
+	end:Tag		= '%>'
+	txt:colorBK	= 0xFFFF00
+	Collapsable = 1
+	DisplayName = 'ASP VB Script Block'
+//:lexClass
+
+lexClass:  
+	name		= c_HTMLcomment
+	parent		= c_HTML
+	children	= 0 // URL	
+	start:Tag	= '<!--'
+	end:Tag		= '-->'	
+	txt:colorFG	= 0x008200 
+	Collapsable = 1
+	DisplayName = 'HTML Comment'
+//:lexClass
+
+lexClass:
+	name		= c_HTMLelement_start	
+	parent		= c_HTML
+	Token:tag	= '<!', '</', '<'	
+	txt:colorFG	= 0x0000FF
+	DisplayName = 'HTML Element (start)'
+//:lexClass
+
+lexClass:
+	name		= c_HTMLelement_end	
+	parent		= c_HTML
+	Token:tag	= '>'	
+	txt:colorFG	= 0x0000FF
+	DisplayName = 'HTML Element (end)'
+//:lexClass
+
+lexClass: 
+	name		= c_HTML_ScriptBlock_start
+	parent		= c_HTML	
+	previous:class = c_HTMLelement_start
+	previous:tag   = '<'
+	Token:tag			 = 'SCRIPT'	
+	Token:end:separators = ' ', '\t', '>'
+	txt:colorFG = 0x840000
+	txt:Italic = 0
+	DisplayName = 'HTML Script Block (start)'
+//:lexClass
+
+	lexClass: 
+		name			= c_HTML_ScriptBlock
+		parent			= c_HTML	
+		previous:class	= c_HTML_ScriptBlock_start
+		end:separators	= '</SCRIPT>'
+		txt:colorFG		= 0x0000FF
+		DisplayName = 'HTML Script Block'
+
+	//	txt:Bold = 1
+	//:lexClass
+	
+	/////////////////////////////////////////////////////////////////////
+			lexClass:
+				name			= c_HTMLelement_SCRIPT_lang
+				parent			= c_HTML_ScriptBlock
+				previous:tag	= ' ', '\t', @eol
+				token:tag			= 'LANGUAGE'
+				token:end:separators = ' ', '\t', '=', @eol
+				txt:colorFG		= 0xF00000
+				DisplayName = 'HTML Element Script Language'
+			//:lexClass
+			lexClass:
+				name			= c_HTMLelement_SCRIPT_lang2
+				parent			= c_HTML_ScriptBlock
+				previous:tag	= ' ', '\t', @eol
+				token:tag			= 'TYPE'
+				token:end:separators = ' ', '\t', '=', @eol
+				txt:colorFG		= 0xF00000
+				DisplayName = 'HTML Element Script Language'
+			//:lexClass
+
+				lexClass:
+					name			= c_HTMLelement_SCRIPT_lang_VB_start
+					parent			= c_HTML_ScriptBlock
+					previous:class	= c_HTMLelement_SCRIPT_lang, c_HTMLelement_SCRIPT_lang2
+					previous:tag			= '='
+					previous:tag:separators	= ' ', '\t', @eol
+									
+					token:tag		= 'VBScript', '"VBScript"', '\'VBScript\'', 'text/VBScript', '"text/VBScript"'
+					Token:end:separators = ' ', '\t', '>', @EOL
+	
+					txt:colorFG		= 0x0000FF
+					DisplayName = 'HTML Element Script Language VB (start)'
+				//:lexClass
+
+					lexClass:
+						name			= c_HTMLelement_SCRIPT_lang_VB // c_HTMLelement_SCRIPT_lang_JS
+						parent			= c_HTML_ScriptBlock
+						previous:class	= c_HTMLelement_SCRIPT_lang_VB_start
+						end:separators	= '</SCRIPT>'
+						txt:colorFG		= 0x000000
+						DisplayName = 'HTML Element Script Language VB'
+					//:lexClass
+
+			lexClass:
+				name			= c_HTMLelement_SCRIPT_lang_JS_start
+				parent			= c_HTML_ScriptBlock
+				previous:class	= c_HTMLelement_SCRIPT_lang, c_HTMLelement_SCRIPT_lang2
+				previous:tag			= '='
+				previous:tag:separators	= ' ', '\t', @eol
+								   
+				token:tag		= 'JScript', '"JScript"', '\'JScript\''
+				token:tag		= 'JavaScript', '"JavaScript"', '\'JavaScript\''
+				token:tag		= 'text/javascript', '"text/javascript"'
+
+				Token:end:separators = ' ', '\t', '>', @EOL
+
+				txt:colorFG		= 0x0000FF
+				DisplayName = 'HTML Element Script Language JS (start)'				
+			//:lexClass
+
+			lexClass:
+				name			= c_HTMLelement_SCRIPT_lang_JS
+				parent			= c_HTML_ScriptBlock
+				previous:class	= c_HTMLelement_SCRIPT_lang_JS_start 								
+				//previous:class	= c_HTMLelement_SCRIPT_lang_defaultJS
+				end:separators	= '</SCRIPT>'
+				
+				//txt:Underline = 1
+				DisplayName = 'HTML Element Script Language JS'
+
+			//:lexClass
+
+				lexClass:
+					name			= c_HTMLelement_SCRIPT_lang_other_start1
+					parent			= c_HTML_ScriptBlock
+					previous:class	= c_HTMLelement_SCRIPT_lang, c_HTMLelement_SCRIPT_lang2
+					previous:tag			= '='
+					previous:tag:separators	= ' ', '\t', @eol									
+					start:Tag		= @alpha					
+					end:separators	= @alpha:not	
+					txt:colorFG		= 0x0000FF
+					DisplayName = 'HTML Element Script Language (other start 1)'
+				//:lexClass
+
+				lexClass:
+					name			= c_HTMLelement_SCRIPT_lang_other_start2
+					parent			= c_HTML_ScriptBlock
+					previous:class	= c_HTMLelement_SCRIPT_lang, c_HTMLelement_SCRIPT_lang2
+					previous:tag			= '='
+					previous:tag:separators	= ' ', '\t', @eol									
+					start:Tag		= '"', @eol
+					end:tag			= '"', @eol
+					txt:colorFG		= 0x0000FF
+					DisplayName = 'HTML Element Script Language (other start 2)'
+				//:lexClass
+
+								lexClass:
+					name			= c_HTMLelement_SCRIPT_lang_other_start3
+					parent			= c_HTML_ScriptBlock
+					previous:class	= c_HTMLelement_SCRIPT_lang,c_HTMLelement_SCRIPT_lang2
+					previous:tag			= '='
+					previous:tag:separators	= ' ', '\t', @eol									
+					start:Tag		= '\'', @eol
+					end:Tag			= '\'', @eol
+					txt:colorFG		= 0x0000FF
+					DisplayName = 'HTML Element Script Language (other start 3)'
+				//:lexClass
+
+
+			lexClass:
+				name			= c_HTMLelement_SCRIPT_lang_other
+				parent			= c_HTML_ScriptBlock
+				previous:class	= c_HTMLelement_SCRIPT_lang_other_start1
+				previous:class	= c_HTMLelement_SCRIPT_lang_other_start2
+				previous:class	= c_HTMLelement_SCRIPT_lang_other_start3
+				end:separators	= '</SCRIPT>'
+				txt:colorFG		= 0x848484
+				DisplayName = 'HTML Element Script Language (other)'
+			//:lexClass
+				
+			lexClass:
+				name			= c_HTMLelement_SCRIPT_HeadrerTail
+				parent			= c_HTMLelement_SCRIPT_lang_VB, c_HTMLelement_SCRIPT_lang_JS
+				parent			= c_HTMLelement_SCRIPT_lang_other
+				previous:class	= c_HTMLelement_SCRIPT_lang_VB, c_HTMLelement_SCRIPT_lang_JS				
+				previous:class	= c_HTMLelement_SCRIPT_lang_other				 				
+				end:tag			= '>'
+				txt:colorFG	= 0x0000FF
+				DisplayName = 'HTML Element Script Header Tail'
+			//:lexClass
+
+			lexClass:
+				name			= c_HTMLelement_SCRIPT_lang_defaultJS
+				parent			= c_HTML_ScriptBlock
+				Token:tag		= '>'
+				txt:colorFG		= 0x0000FF
+				DisplayName = 'HTML Element Script Language Default'
+			//:lexClass
+
+				lexClass:
+					name			= c_JScriptBlock
+					parent			= c_HTMLelement_SCRIPT_lang_JS, c_HTML_ScriptBlock				
+					previous:class	= c_HTMLelement_SCRIPT_HeadrerTail, c_HTMLelement_SCRIPT_lang_defaultJS
+					previous:class	= c_HTML_ScriptBlock_PropName,
+					previous:class	= c_HTML_ScriptBlock_PropValue_str1, c_HTML_ScriptBlock_PropValue_str2
+					previous:tag	= '>'
+					end:separators	= '</SCRIPT>'
+					txt:colorFG		= 0x000000
+					DisplayName = 'Java Script Block'
+				//:lexClass
+							
+		/////////////////////////////////////////////////////////////////////
+
+		lexClass:
+			name			=  c_HTML_ScriptBlock_PropName	
+			ParseOnScreen = 0
+			parent			= c_HTML_ScriptBlock, c_HTMLelement_SCRIPT_HeadrerTail 
+			previous:tag	= ' ', '\t', @eol
+			children		= 0
+			start:tag		= @alpha
+			end:separators	= ' ', '\t', '=', '>', @eol, '</SCRIPT>'
+			txt:colorFG	= 0xFF0000
+			DisplayName = 'HTML Script Block Property Name' 
+		//:lexClass	
+
+		lexClass:
+			name		= c_HTML_ScriptBlock_PropValue_str1
+			ParseOnScreen = 0
+			parent		=  c_HTML_ScriptBlock, c_HTMLelement_SCRIPT_HeadrerTail 
+			children	= 0 // URL
+			start:Tag	= '"', @eol
+			end:Tag		= '"', @eol
+			txt:colorFG	= 0x0000FF
+			DisplayName = 'HTML Script Block Property Value (dobule quote)'  
+		//:lexClass
+			
+		lexClass:	
+			name		=  c_HTML_ScriptBlock_PropValue_str2
+			ParseOnScreen = 0
+			parent		=  c_HTML_ScriptBlock, c_HTMLelement_SCRIPT_HeadrerTail 
+			children	= 0 // URL
+			start:Tag	='\'', @eol
+			end:Tag		='\'', @eol
+			txt:colorFG	= 0x0000FF
+			DisplayName = 'HTML Script Block Property Value (single quote)' 
+		//:lexClass
+
+		
+
+
+lexClass:	
+	name			= c_VBScriptBlock1
+	parent			= c_ASP_VBScriptBlock //, c_HTMLelement_SCRIPT_lang_VB	
+	previous:tag	= '<%' //, '>'
+	previous:tag:separators = ' ', '\t', @eol
+
+	end:separators	= '%>' //, '</SCRIPT>'
+	txt:colorFG		= 0x000000
+	txt:colorBK		= 0xFFFFFF
+	DisplayName = 'VB Script Block 1' 
+//:lexClass
+
+lexClass:
+	name			= c_VBScriptBlock2
+	parent			= c_HTMLelement_SCRIPT_lang_VB	
+	previous:tag	= '>'
+	previous:tag:separators = ' ', '\t', @eol
+
+	end:separators	= '</SCRIPT>'
+	txt:colorFG		= 0x000000
+	txt:colorBK		= 0xFFFFFF
+	DisplayName = 'VB Script Block 2'
+//:lexClass
+
+lexClass:
+	name		= c_HTMLelement	
+	parent		= c_HTML
+	//previous:tag	= '<!', '</', '<'
+	previous:class = c_HTMLelement_start
+	end:separators  = '>'
+	txt:colorFG	= 0x0000FF
+	DisplayName = 'HTML Element'
+//:lexClass
+
+lexClass:
+	name		= c_HTMLelement_KnownNames	
+	ParseOnScreen = 0
+	parent		= c_HTMLelement	
+	previous:tag = '<', '</', '<!'
+	children	= 0
+	Token:Tag	= 'abbr', 'above', 'acronym', 'address', 'applet', 'array', 'area', 'a'
+	Token:Tag	= 'basefont', 'base', 'bdo', 'bgsound', 'big', 'blink', 'blockquote'
+	Token:Tag	= 'body', 'box', 'br', 'button', 'b'
+	Token:Tag	= 'caption', 'center', 'cite', 'code', 'colgroup', 'comment', 'col'
+	Token:Tag	= 'dd', 'del', 'dfn', 'dir', 'div', 'dl', 'dt', 'embed', 'em'
+	Token:Tag	= 'fieldset', 'fig', 'font', 'form', 'frame', 'frameset'
+	Token:Tag	= 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'hr', 'html'
+	Token:Tag	= 'id', 'iframe', 'ilayer', 'img', 'input', 'ins', 'isindex', 'i'
+	Token:Tag	= 'kbd', 'label', 'layer', 'legend', 'link', 'listing', 'li' 
+	Token:Tag	= 'map', 'marquee', 'menu', 'meta', 'multicol'
+	Token:Tag	= 'nextid', 'nobr', 'noframes', 'nolayer', 'note', 'noscript'
+	Token:Tag	= 'object', 'ol', 'option', 'keygen', 'optgroup', 'param', 'pre', 'p'
+	Token:Tag	= 'quote', 'q', 'range', 'root', 'samp', 'select', 'small', 'script'
+	Token:Tag	= 'sound', 'spacer', 'span', 'sqrt', 'strike', 'strong', 'style', 'sub', 'sup', 's'
+	Token:Tag	= 'table', 'tbody', 'td', 'textarea', 'text', 'tfoot', 'thead', 'title', 'tr', 'tt', 'th'
+	Token:Tag	= 'ul', 'u', 'var', 'wbr', 'xmp'
+
+	Token:end:separators = ' ', '\t', '>', @eol
+	txt:colorFG	= 0x840000
+	DisplayName = 'HTML Element Known Names'
+//:lexClass	
+ 
+lexClass:
+	name		= c_HTMLelementName	
+	ParseOnScreen = 0
+	parent		= c_HTMLelement	
+	previous:tag = '<', '</', '<!'
+	children	= 0
+	start:tag	= @alpha
+	skip:tag	= @digit
+	end:separators = @alpha:not
+	txt:colorFG	= 0x840000
+	txt:italic	= 1
+	DisplayName = 'HTML Element Name'
+//:lexClass
+	
+lexClass:
+	name			= c_HTMLelementPropName	
+	ParseOnScreen = 0
+	parent			= c_HTMLelement, 
+	previous:tag	= ' ', '\t', @eol, '>'
+	children		= 0
+	start:tag		= @alpha
+	end:separators	= ' ', '\t', '=', '>', @eol
+	txt:colorFG	= 0xFF0000
+	DisplayName = 'HTML Element Property Name'
+//:lexClass
+	
+lexClass:
+	name		= c_HTMLelementPropValue_str1
+	ParseOnScreen = 0
+	parent		= c_HTMLelement, c_HTMLelement_SCRIPT, c_HTMLelement_SCRIPT_HeadrerTail
+	children	= c_ASP_VBScriptBlock
+	start:Tag	= '"'
+	end:Tag		= '"'
+	txt:colorFG	= 0x0000FF
+	DisplayName = 'HTML Element Property Value (double quote)'
+//:lexClass
+	
+lexClass:	
+	name = c_HTMLelementPropValue_str2
+	ParseOnScreen = 0
+	parent		= c_HTMLelement, c_HTMLelement_SCRIPT, c_HTMLelement_SCRIPT_HeadrerTail
+	children	= c_ASP_VBScriptBlock
+	start:Tag	='\''
+	end:Tag		='\''
+	txt:colorFG	= 0x0000FF
+	DisplayName = 'HTML Element Property Value (single quote)'
+//:lexClass
+
+
+//=============================================================================
+//*** VB, VB Script colorization *** ==========================================
+//=============================================================================
+lexClass:
+	name		= c_VBScriptComment
+	parent		= c_VBScriptBlock1, c_VBScriptBlock2	
+	start:Tag	= '\''
+	end:separators = '%>', @EOL
+	txt:colorFG	= 0x008200
+	DisplayName = 'VB Script Comment)'
+//:lexClass
+
+lexClass:
+	name		= c_VBScriptStr
+	parent		= c_VBScriptBlock1, c_VBScriptBlock2
+	ParseOnScreen = 0	
+	start:Tag	='"'
+	end:Tag		='"', @EOL
+	txt:colorFG	= 0x840000
+	DisplayName = 'VB Script String)'
+//:lexClass
+
+lexClass:
+	name			= c_VBScriptNumber10
+	parent			= c_VBScriptBlock1, c_VBScriptBlock2
+	ParseOnScreen	= 1
+	previous:tag	= @specs, ' ', '\t', @EOL	
+	start:Tag		= @digit
+	end:separators	= @digit:not
+	txt:colorFG	= 0x008284
+	DisplayName = 'VB Script Number)'
+//:lexClass
+	
+lexClass: 
+	name		= c_VBScript_Language_Keywords
+	parent		= c_VBScriptBlock1, c_VBScriptBlock2
+	ParseOnScreen = 0
+
+	token:start:separators	= ' ','\t', '<%=', '<%', '>', @eol
+	token:end:separators	= ' ','\t', '%>', '<', '(', @eol
+	
+	txt:colorFG	= 0x0000FF
+	txt:Bold = 1
+		
+	token:tag = 'And'
+	token:tag = 'ByVal', 'ByRef'
+	token:tag = 'Call', 'Case'	
+	token:tag = 'Dim'
+    token:tag = 'Error', 'ElseIf', 'Else', 'End', 'Erase', 'Exit', 'Eqv', 'Explicit'
+	token:tag = 'For', 'Function'
+    token:tag = 'In', 'If', 'Is', 'Imp'
+	token:tag = 'Like'
+	token:tag = 'Mod'
+    token:tag = 'Nothing', 'New', 'Next', 'Not'
+	token:tag = 'Option', 'On', 'Or'
+    token:tag = 'Preserve', 'Private', 'Public'
+	token:tag = 'ReDim', 'Raise', 'Resume'
+    token:tag = 'Set', 'Step', 'Sub'
+	token:tag = 'Then', 'To'
+	token:tag = 'Until'
+	token:tag = 'Xor'
+	token:tag = 'With', 'Wend', 'While'
+	DisplayName = 'VB Script Keywords)'
+
+//:lexClass
+
+lexClass: 
+	name		= c_VBScript_Functions
+	parent		= c_VBScriptBlock1, c_VBScriptBlock2
+	ParseOnScreen = 0
+
+	token:start:separators	= ' ', '\t', '<%=', '<%', '>', '(', @eol
+	token:end:separators	= ' ', '\t', '%>', '<', '(', ')', @eol
+	
+	txt:colorFG	= 0x0000FF
+		
+    token:tag = 'Abs'
+    token:tag = 'Array'
+    token:tag = 'Asc'
+    token:tag = 'Atn'
+    token:tag = 'CBool'
+    token:tag = 'CByte'
+    token:tag = 'CCur'
+    token:tag = 'CDate'
+    token:tag = 'CDbl'
+    token:tag = 'Chr'
+    token:tag = 'CInt'
+    token:tag = 'CLng'
+    token:tag = 'Const'
+    token:tag = 'Cos'
+    token:tag = 'CreateObject'
+    token:tag = 'CSng'
+    token:tag = 'CStr'
+    token:tag = 'Date'
+    token:tag = 'DateAdd'
+    token:tag = 'DateDiff'
+    token:tag = 'DatePart'
+    token:tag = 'DateSerial'
+    token:tag = 'DateValue'
+    token:tag = 'Day'
+    token:tag = 'Exp'
+    token:tag = 'Filter'
+    token:tag = 'Fix'
+    token:tag = 'FormatCurrency'
+    token:tag = 'FormatDateTime'
+    token:tag = 'FormatNumber'
+    token:tag = 'FormatPercent'
+    token:tag = 'GetObject'
+    token:tag = 'Hex'
+    token:tag = 'Hour'
+    token:tag = 'InputBox'
+    token:tag = 'InStr'
+    token:tag = 'InStrRev'
+    token:tag = 'Int'
+    token:tag = 'IsArray'
+    token:tag = 'IsDate'
+    token:tag = 'IsEmpty'
+    token:tag = 'IsNull'
+    token:tag = 'IsNumeric'
+    token:tag = 'IsObject'
+    token:tag = 'Join'
+    token:tag = 'LBound'
+    token:tag = 'LCase'
+    token:tag = 'Left'
+    token:tag = 'Len'
+    token:tag = 'LoadPicture'
+    token:tag = 'Log'
+    token:tag = 'LTrim'
+    token:tag = 'Mid'
+    token:tag = 'Minute'
+    token:tag = 'Month'
+    token:tag = 'MonthName'
+    token:tag = 'MsgBox'
+    token:tag = 'Now'
+    token:tag = 'Oct'
+    token:tag = 'Replace'
+    token:tag = 'Right'
+    token:tag = 'Rnd'
+    token:tag = 'Round'
+    token:tag = 'RTrim'
+    token:tag = 'ScriptEngine'
+    token:tag = 'ScriptEngineBuildVersion'
+    token:tag = 'ScriptEngineMajorVersion'
+    token:tag = 'ScriptEngineMinorVersion'
+    token:tag = 'Second'
+    token:tag = 'Sgn'
+    token:tag = 'Sin'
+    token:tag = 'Space'
+    token:tag = 'Split'
+    token:tag = 'Sqr'
+    token:tag = 'StrComp'
+    token:tag = 'StrReverse'
+    token:tag = 'String'
+    token:tag = 'Tan'
+    token:tag = 'Time'
+    token:tag = 'TimeSerial'
+    token:tag = 'TimeValue'
+    token:tag = 'Trim'
+    token:tag = 'TypeName'
+    token:tag = 'UBound'
+    token:tag = 'UCase'
+    token:tag = 'VarType'
+    token:tag = 'Weekday'
+    token:tag = 'WeekdayName'
+    token:tag = 'Year'
+
+    token:tag = 'empty'
+    token:tag = 'True'
+    token:tag = 'false'
+    token:tag = 'null'
+
+	DisplayName = 'VB Script Functions)'
+//:lexClass
+
+/////////////////////////////////////////////////////////////
+// Operators Arithmetic 
+//            "^"
+//            "*"
+//            "/"
+//            "\"
+//            "+"
+//            "-"
+//            "&"
+// Operators Comparison 
+//            "="
+//            "<>"
+//            "<"
+//            "<="
+//            ">"
+//            ">="
+// Operators Logical
+//            "~"
+/////////////////////////////////////////////////////////////
+
+//=============================================================================
+//*** Java, J Script colorization *** ==========================================
+//=============================================================================
+lexClass:
+	name		= c_JScriptCommentSL
+	parent		= c_JScriptBlock	
+	children	= 0
+	start:Tag	= '//'
+	end:separators = @EOL
+	txt:colorFG	= 0x008200
+	DisplayName = 'Java Script Comment (single line)'
+//:lexClass
+
+lexClass:
+	name		= c_JScriptCommentML
+	parent		= c_JScriptBlock
+	children	= 0
+	start:Tag	= '/*'
+	end:Tag		= '*/'
+	txt:colorFG	= 0x008200
+	DisplayName = 'Java Script Comment (multi-line)'
+//:lexClass
+
+lexClass:
+	name		= c_JScriptStr1
+	parent		= c_JScriptBlock
+	//ParseOnScreen = 0
+	start:Tag	='"'
+	end:Tag		='"', @EOL
+	txt:colorFG	= 0x840000
+	DisplayName = 'Java Script String (double quote)'
+//:lexClass
+
+lexClass:
+	name		= c_JScriptStr
+	parent		= c_JScriptBlock
+	//ParseOnScreen = 0
+	start:Tag	='\''
+	end:Tag		='\'', @EOL
+	txt:colorFG	= 0x840000
+	DisplayName = 'Java Script String (single quote)'
+//:lexClass
+
+//lexClass:
+//	name		= c_JScriptHTMLcomment
+//	parent		= c_JScriptBlock
+//	start:Tag	= '<!--'
+//	end:Tag		= '-->'
+//	txt:colorFG	= 0x808080	
+////:lexClass
+
+
+lexClass:
+	name			= c_JScriptNumber10
+	parent			= c_JScriptBlock
+	ParseOnScreen	= 1
+	previous:tag	= @specs, ' ', '\t', @EOL	
+	start:Tag		= @digit
+	end:separators	= @digit:not
+	txt:colorFG	= 0x008284
+	DisplayName = 'Java Script Number'
+//:lexClass
+	
+lexClass: 
+	name		= c_JScript_Language_Keywords0
+	parent		= c_JScriptBlock
+	ParseOnScreen = 0
+
+	token:start:separators	= ' ', '\t', '<%=', '<%', @specs, @eol 
+	token:end:separators	= ' ', '\t', '%>', @specs, @eol 
+	
+	txt:colorFG	= 0x0000FF
+	txt:Bold = 1
+
+	token:tag = 'break'
+    token:tag = 'case'
+    token:tag = 'catch'
+    token:tag = 'const'
+    token:tag = 'continue'
+    token:tag = 'do'
+    token:tag = 'else'
+    token:tag = 'finally'
+    token:tag = 'for'
+    token:tag = 'function'
+    token:tag = 'if'
+    token:tag = 'in'
+    token:tag = 'instanceof'
+    token:tag = 'new'
+    token:tag = 'return'
+    token:tag = 'switch'
+    token:tag = 'this'
+    token:tag = 'throw'
+    token:tag = 'try'
+    token:tag = 'typeof'
+    token:tag = 'var'
+    token:tag = 'while'
+    token:tag = 'with'
+
+	token:tag = 'True'
+	token:tag = 'false'
+    token:tag = 'null'
+	DisplayName = 'Java Script Keywords'
+//:lexClass
+

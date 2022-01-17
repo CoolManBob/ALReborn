@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_SLOVAK, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Form·t kr·tkeho d·tumu",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   Form·t dlhÈho d·tumu",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   »as",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   »as (24 hodÌn)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   »Ìslo strany",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   PoËet str·n",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Zarovnanie væavo &&b Zarovnanie v strede &&b Zarovnanie vpravo", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   N·zov okna",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  Ampersand (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Nov˝ riadok",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "TlaËiù...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Nasleduj˙ca strana",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Predch·dzaj˙ca strana",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "PriblÌûiù",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Vzdialiù",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Zavrieù",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Jedna strana"
+    XTP_IDS_TWOPAGE         "Dve strany"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigov·"
+    XTP_IDS_CLR_GRAY80      "80% sivej"
+    XTP_IDS_CLR_DARK_RED    "TmavoËerven·"
+    XTP_IDS_CLR_ORANGE      "Oranûov·"
+    XTP_IDS_CLR_DARK_YELLOW "Tmavoûlt·"
+    XTP_IDS_CLR_GREEN       "Zelen·"
+    XTP_IDS_CLR_TEAL        "Sivozelen·"
+    XTP_IDS_CLR_BLUE        "Modr·"
+    XTP_IDS_CLR_BLUEGRAY    "Modrosiv·"
+    XTP_IDS_CLR_GRAY50      "50% sivej"
+    XTP_IDS_CLR_RED         "»erven·"
+    XTP_IDS_CLR_LIGHTORANGE "Svetlooranûov·"
+    XTP_IDS_CLR_LIME        "éltozelen·"
+    XTP_IDS_CLR_SEA_GREEN   "Morsk· zeleÚ"
+    XTP_IDS_CLR_AQUA        "AkvamarÌnov·"
+    XTP_IDS_CLR_LIGHT_BLUE  "Svetlomodr·"
+    XTP_IDS_CLR_VIOLET      "Fialov·"
+    XTP_IDS_CLR_GRAY40      "40% sivej"
+    XTP_IDS_CLR_PINK        "Ruûov·"
+    XTP_IDS_CLR_GOLD        "Zlat·"
+    XTP_IDS_CLR_YELLOW      "élt·"
+    XTP_IDS_CLR_BRIGHT_GREEN "Jasnozelen·"
+    XTP_IDS_CLR_TURQUOISE   "Tyrkysov·"
+    XTP_IDS_CLR_SKY_BLUE    "Nebesk· modr·"
+    XTP_IDS_CLR_PLUM        "Slivkov·"
+    XTP_IDS_CLR_GRAY25      "25% sivej"
+    XTP_IDS_CLR_ROSE        "Svetloruûov·"
+    XTP_IDS_CLR_TAN         "éltooranûov·"
+    XTP_IDS_CLR_LIGHT_YELLOW "Svetloûlt·"
+    XTP_IDS_CLR_LIGHT_GREEN "Svetlozelen·"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Svetlotyrkysov·"
+    XTP_IDS_CLR_PALE_BLUE   "Bledomodr·"
+    XTP_IDS_CLR_BLACK       "»ierna"
+    XTP_IDS_CLR_BROWN       "Hned·"
+    XTP_IDS_CLR_OLIVE_GREEN "Olivovozelen·"
+    XTP_IDS_CLR_DARK_GREEN  "Tmavozelen·"
+    XTP_IDS_CLR_DARK_TEAL   "Tmav· sivozelen·"
+    XTP_IDS_CLR_DARK_BLUE   "Tmavomodr·"
+    XTP_IDS_CLR_LAVENDER    "Levanduæov·"
+    XTP_IDS_CLR_WHITE       "Biela"
+    XTP_IDS_CLR_GRAY        "Siv·"
+    XTP_IDS_CLR_MAROON      "Gaötanovohned·"
+    XTP_IDS_CLR_OLIVE       "Olivov·"
+    XTP_IDS_CLR_NAVY        "N·mornÌcka modr·"
+    XTP_IDS_CLR_PURPLE      "Purpurov·"
+    XTP_IDS_CLR_SILVER      "Striebro"
+    XTP_IDS_CLR_FUCHSIA     "Svetlofialov·"
+    XTP_IDS_CLR_NOFILL      "Bez v˝plne\nBez v˝plne"
+    XTP_IDS_CLR_AUTOMATIC   "Automatick· farba\nAutomatick· farba"
+    XTP_IDS_CLR_MORE        "œalöie farby..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

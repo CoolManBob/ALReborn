@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nodeClone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="p2clpcom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="p2stdclsw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rpplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rtgncpip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nodeAtomicEnumerateLights.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeAtomicInstance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeClipLine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeClipTriangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeClone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeCullTriangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeFastPathSplitter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeImmInstance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeImmMangleLineIndices.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeImmMangleTriangleIndices.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeImmRenderSetup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeImmStash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeLight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeMaterialScatter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodePostLight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodePreLight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeRGBAInterp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeScatter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeSubmitLine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeSubmitTriangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeTransform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeUVInterp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeWorldSectorEnumerateLights.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeWorldSectorInstance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="p2clpcom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="p2stdclsw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtgncpip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

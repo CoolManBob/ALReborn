@@ -1,0 +1,42 @@
+$$// newproj.inf = template for list of template files
+$$//  format is 'sourceResName' \t 'destFileName'
+$$//    The source res name may be preceded by any combination of '=', '-',  '!', '?', ':', '#', and/or '*'
+$$//       '=' => the resource is binary
+$$//       '-' => the file should not be added to the project (all files are added to the project by default)
+$$//       '!' => the file should be marked exclude from build
+$$//       '?' => the file should be treated as a help file
+$$//       ':' => the file should be treated as a resource
+$$//       '#' => the file should be treated as a template (implies '!')
+$$//       '*' => bypass the custom AppWizard's resources when loading
+$$//	if name starts with / => create new subdir
+
+
+
+/share
+/share\win
+/src
+/src\win
+
+
+CAMERA.CPP	share\camera.cpp
+CAMERA.H	share\camera.h
+DUMMY.H	dummy.h
+EVENTS.H	share\events.h
+MENU.CPP	share\menu.cpp
+MENU.H	share\menu.h
+MOUSE.CPP	share\mouse.cpp
+MOUSE.H	share\mouse.h
+MOUSEDAT.H	share\mousedat.h
+PLATFORM.H	share\platform.h
+PTRDATA.H	share\ptrdata.h
+SKELETON.CPP	share\skeleton.cpp
+SKELETON.H	share\skeleton.h
+RESOURCE.H	share\win\resource.h
+WIN.CPP	share\win\win.cpp
+WIN.H	share\win\win.h
+WIN.RC	share\win\win.rc
+MAIN.CPP	src\$$root$$.cpp
+EVENTS.CPP	src\win\events.cpp
+
+
+

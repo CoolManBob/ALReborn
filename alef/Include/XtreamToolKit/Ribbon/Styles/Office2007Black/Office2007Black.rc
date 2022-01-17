@@ -1,0 +1,187 @@
+//Microsoft Developer Studio generated resource script.
+//
+//
+#include "afxres.h"
+
+OFFICE2007BLACK_INI      TEXTFILE MOVEABLE PURE  "Ribbon\\Styles\\Office2007Black\\res\\Office2007Theme.ini"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+OFFICE2007BLACK_WORKSPACETOPLEFT_BMP   PNG  MOVEABLE PURE  "Ribbon\\Styles\\Office2007Black\\res\\Office2007_WorkspaceTopLeft.png"                    
+OFFICE2007BLACK_FRAMESYSTEMBUTTON_BMP   PNG  MOVEABLE PURE  "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameSystemButton.png"                    
+OFFICE2007BLACK_FRAMESYSTEMBUTTON52_BMP   PNG  MOVEABLE PURE  "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameSystemButton52.png"                    
+OFFICE2007BLACK_TOOLBARFACEHORIZONTAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarFaceHorizontal.png"
+OFFICE2007BLACK_TOOLBARFACEVERTICAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarFaceVertical.png"
+OFFICE2007BLACK_TOOLBAREXPANDBUTTONHORIZONTAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarExpandButtonHorizontal.png"
+OFFICE2007BLACK_TOOLBAREXPANDBUTTONVERTICAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarExpandButtonVertical.png"
+OFFICE2007BLACK_TOOLBARBUTTONS50_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtons50.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPLIT50_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSplit50.png"
+OFFICE2007BLACK_CONTEXTTABGREENGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabGreenGroupButton.png"
+OFFICE2007BLACK_CONTEXTTABORANGEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabOrangeGroupButton.png"
+OFFICE2007BLACK_CONTEXTTABBLUEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabBlueGroupButton.png"
+OFFICE2007BLACK_CONTEXTTABCYANGROUPBUTTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabCyanGroupButtton.png"
+OFFICE2007BLACK_CONTEXTTABPURPLEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabPurpleGroupButton.png"
+OFFICE2007BLACK_CONTEXTTABREDGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabRedGroupButton.png"
+OFFICE2007BLACK_CONTEXTTABYELLOWGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabYellowGroupButton.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPLITDROPDOWN50_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSplitDropDown50.png"
+OFFICE2007BLACK_RIBBONTAB_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonTab.png"
+OFFICE2007BLACK_CONTEXTTABPURPLE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabPurple.png"
+OFFICE2007BLACK_CONTEXTTABORANGE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabOrange.png"
+OFFICE2007BLACK_CONTEXTTABGREEN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabGreen.png"
+OFFICE2007BLACK_RIBBONGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupButton.png"
+OFFICE2007BLACK_CONTEXTTABCYAN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabCyan.png"
+OFFICE2007BLACK_CONTEXTTABYELLOW_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabYellow.png"
+OFFICE2007BLACK_CONTEXTTABBLUE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabBlue.png"
+OFFICE2007BLACK_CONTEXTTABRED_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabRed.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPLIT22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSplit22.png"
+OFFICE2007BLACK_TOOLBARBUTTONS22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtons22.png"
+OFFICE2007BLACK_TOOLBARBUTTONCHECKBOX_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonCheckBox.png"
+OFFICE2007BLACK_TOOLBARBUTTONSPIN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonSpin.png"
+OFFICE2007BLACK_TOOLBARBUTTONRADIOBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonRadioButton.png"
+OFFICE2007BLACK_MENUSELECTEDITEM54_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MenuSelectedItem54.png"
+OFFICE2007BLACK_CONTROLGALLERYPOPUP_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryPopup.png"
+OFFICE2007BLACK_CONTROLGALLERYUP_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryUp.png"
+OFFICE2007BLACK_CONTROLGALLERYDOWN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryDown.png"
+OFFICE2007BLACK_RIBBONGROUPS_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroups.png"
+OFFICE2007BLACK_RIBBONQUICKACCESSBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonQuickAccessButton.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPLITDROPDOWN22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSplitDropDown22.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALSPLITLEFT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialSplitLeft.png"
+OFFICE2007BLACK_RIBBONQUICKACCESSMORE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonQuickAccessMore.png"
+OFFICE2007BLACK_MENUSELECTEDDISABLEDITEM54_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MenuSelectedDisabledItem54.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALSPLITDROPDOWNRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialSplitDropDownRight.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALSINGLE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialSingle.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALSPLITCENTER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialSplitCenter.png"
+OFFICE2007BLACK_FRAMECAPTIONBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionButton.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALSPLITRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialSplitRight.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLTHUMBVERTICAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollThumbVertical.png"
+OFFICE2007BLACK_CONTEXTTABGROUPCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabGroupClient.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALLEFT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialLeft.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALSPLITDROPDOWNCENTER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialSplitDropDownCenter.png"
+OFFICE2007BLACK_CONTEXTTABORANGECLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabOrangeClient.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALSPLITDROPDOWNLEFT_BMP   PNG  MOVEABLE  PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialSplitDropDownLeft.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialRight.png"
+OFFICE2007BLACK_CONTEXTTABCYANCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabCyanClient.png"
+OFFICE2007BLACK_CONTEXTTABGREENCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabGreenClient.png"
+OFFICE2007BLACK_CONTEXTTABYELLOWCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabYellowClient.png"
+OFFICE2007BLACK_CONTEXTTABPURPLECLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabPurpleClient.png"
+OFFICE2007BLACK_CONTEXTTABREDCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabRedClient.png"
+OFFICE2007BLACK_CONTEXTTABPURPLEHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabPurpleHeader.png"
+OFFICE2007BLACK_CONTEXTTABBLUECLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabBlueClient.png"
+OFFICE2007BLACK_MENUSELECTEDITEM22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MenuSelectedItem22.png"
+OFFICE2007BLACK_CONTEXTTABGREENHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabGreenHeader.png"
+OFFICE2007BLACK_CONTEXTTABBLUEHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabBlueHeader.png"
+OFFICE2007BLACK_RIBBONGROUPCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupClient.png"
+OFFICE2007BLACK_TOOLBARBUTTONSSPECIALCENTER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsSpecialCenter.png"
+OFFICE2007BLACK_CONTEXTTABORANGEHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabOrangeHeader.png"
+OFFICE2007BLACK_RIBBONOPTIONBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonOptionButton.png"
+OFFICE2007BLACK_CONTEXTTABREDHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabRedHeader.png"
+OFFICE2007BLACK_CONTEXTTABCYANHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabCyanHeader.png"
+OFFICE2007BLACK_CONTEXTTABYELLOWHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabYellowHeader.png"
+OFFICE2007BLACK_MENUSELECTEDDISABLEDITEM22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MenuSelectedDisabledItem22.png"
+OFFICE2007BLACK_TOOLBARBUTTONSCOMBODROPDOWN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonsComboDropDown.png"
+OFFICE2007BLACK_FRAMECAPTIONCLOSE23_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionClose23.png"
+OFFICE2007BLACK_MENUCHECKEDITEMMARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MenuCheckedItemMark.png"
+OFFICE2007BLACK_FRAMECAPTIONRESTORE23_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionRestore23.png"
+OFFICE2007BLACK_CONTEXTTABGROUPCAPTION_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabGroupCaption.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLARROWGLYPHS_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollArrowGlyphs.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLARROWSVERTICALLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollArrowsVerticalLight.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLARROWSHORIZONTALDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollArrowsHorizontalDark.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLARROWSHORIZONTALLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollArrowsHorizontalLight.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLHORIZONTALDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollHorizontalDark.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLHORIZONTALLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollHorizontalLight.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLTHUMBGRIPPERHORIZONTAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollThumbGripperHorizontal.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLTHUMBHORIZONTAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollThumbHorizontal.png"
+OFFICE2007BLACK_FRAMECAPTIONCLOSE17_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionClose17.png"
+OFFICE2007BLACK_RIBBONGROUPCAPTION_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupCaption.png"
+OFFICE2007BLACK_FRAMETOPLEFT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameTopLeft.png"
+OFFICE2007BLACK_RIBBONGROUPBUTTONICON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupButtonIcon.png"
+OFFICE2007BLACK_FRAMECAPTIONMAXIMIZE23_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionMaximize23.png"
+OFFICE2007BLACK_FRAMECAPTIONCLOSE13_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionClose13.png"
+OFFICE2007BLACK_FRAMECAPTIONRESTORE17_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionRestore17.png"
+OFFICE2007BLACK_FRAMECAPTIONRESTORE13_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionRestore13.png"
+OFFICE2007BLACK_FRAMECAPTIONMAXIMIZE17_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionMaximize17.png"
+OFFICE2007BLACK_MENUCHECKEDITEM_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MenuCheckedItem.png"
+OFFICE2007BLACK_FRAMETOPRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameTopRight.png"
+OFFICE2007BLACK_RIBBONGROUPQUICKACCESS_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupQuickAccess.png"
+OFFICE2007BLACK_RIBBONQUICKACCESSFRAME_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonQuickAccessFrame.png"
+OFFICE2007BLACK_RIBBONQUICKACCESSAREA_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonQuickAccessArea.png"
+OFFICE2007BLACK_FRAMECAPTIONMAXIMIZE13_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionMaximize13.png"
+OFFICE2007BLACK_STATUSBARDEVIDER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_StatusBarDevider.png"
+OFFICE2007BLACK_FRAMECAPTIONMINIMIZE23_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionMinimize23.png"
+OFFICE2007BLACK_TOOLBARBUTTONDROPDOWNGLYPH_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ToolbarButtonDropDownGlyph.png"
+OFFICE2007BLACK_STATUSBARSEPARATOR_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_StatusBarSeparator.png"
+OFFICE2007BLACK_POPUPBARFRAME_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_PopupBarFrame.png"
+OFFICE2007BLACK_MOREPOPUPBARFRAME_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MorePopupBarFrame.png"
+OFFICE2007BLACK_FRAMECAPTIONMINIMIZE17_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionMinimize17.png"
+OFFICE2007BLACK_FRAMECAPTIONMINIMIZE13_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameCaptionMinimize13.png"
+OFFICE2007BLACK_STATUSBARGRIPPER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_StatusBarGripper.png"
+OFFICE2007BLACK_STATUSBARLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_StatusBarLight.png"
+OFFICE2007BLACK_STATUSBARDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_StatusBarDark.png"
+OFFICE2007BLACK_FRAMEBOTTOMRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameBottomRight.png"
+OFFICE2007BLACK_FRAMEBOTTOMLEFT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameBottomLeft.png"
+OFFICE2007BLACK_RIBBONTABSEPARATOR_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonTabSeparator.png"
+OFFICE2007BLACK_CONTEXTTABSEPARATOR_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ContextTabSeparator.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLTHUMBGRIPPERVERTICAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollThumbGripperVertical.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLVERTICALLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollVerticalLight.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLARROWSVERTICALDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollArrowsVerticalDark.png"
+OFFICE2007BLACK_CONTROLGALLERYSCROLLVERTICALDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ControlGalleryScrollVerticalDark.png"
+OFFICE2007BLACK_FRAMETOPCENTER_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_FrameTopCenter.png"
+OFFICE2007BLACK_RIBBONSYSTEMMENU_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonSystemMenu.png"
+OFFICE2007BLACK_RIBBONSYSTEMMENUBUTTON_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonSystemMenuButton.png"
+OFFICE2007BLACK_MENUSPLITDROPDOWN_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MenuSplitDropDown.png"
+OFFICE2007BLACK_MENUPOPUPGLYPH_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_MenuPopupGlyph.png"
+
+OFFICE2007BLACK_RIBBONGROUPSSCROLLLEFT_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupsScrollLeft.png"
+OFFICE2007BLACK_RIBBONGROUPSSCROLLLEFTGLYPH_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupsScrollLeftGlyph.png"
+OFFICE2007BLACK_RIBBONGROUPSSCROLLRIGHT_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupsScrollRight.png"
+OFFICE2007BLACK_RIBBONGROUPSSCROLLRIGHTGLYPH_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonGroupsScrollRightGlyph.png"
+OFFICE2007BLACK_SHORTCUTBARITEMS_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_ShortcutBarItems.png"
+
+OFFICE2007BLACK_RIBBONQUICKACCESSAREADWM_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Black\\res\\Office2007_RibbonQuickAccessAreaDwm.png"
+
+#ifdef _XTP_INCLUDE_VERSION
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,3,0
+ PRODUCTVERSION 11,1,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "May 24, 2007\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Office 2007 Black Ribbon Style\0"
+            VALUE "FileVersion", "11, 1, 3, 0\0"
+            VALUE "InternalName", "Office2007Black.dll\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Office2007Black.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Office 2007 Black Style for Xtreme RibbonBar\0"
+            VALUE "ProductVersion", "11, 1, 3, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // _XTP_INCLUDE_VERSION

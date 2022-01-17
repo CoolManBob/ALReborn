@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Kýsa tarih biçimi",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   Uzun tarih biçimi",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Zaman",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   Zaman (24 saat)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   Sayfa Numarasý",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Sayfa sayýsý",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Sola Hizala &&b Ortala &&b Saða Hizala", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   Pencere Baþlýðý",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  ve iþareti (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Yeni satýr",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Yazdýr...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Sonraki Sayfa",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Önceki",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "Büyüt",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Küçült",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Kapat",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Bir Sayfa"
+    XTP_IDS_TWOPAGE         "Ýki Sayfa"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigo"
+    XTP_IDS_CLR_GRAY80      "Gray-80%"
+    XTP_IDS_CLR_DARK_RED    "Dark Red"
+    XTP_IDS_CLR_ORANGE      "Orange"
+    XTP_IDS_CLR_DARK_YELLOW "Dark Yellow"
+    XTP_IDS_CLR_GREEN       "Green"
+    XTP_IDS_CLR_TEAL        "Teal"
+    XTP_IDS_CLR_BLUE        "Blue"
+    XTP_IDS_CLR_BLUEGRAY    "Blue-Gray"
+    XTP_IDS_CLR_GRAY50      "Gray-50%"
+    XTP_IDS_CLR_RED         "Red"
+    XTP_IDS_CLR_LIGHTORANGE "Light Orange"
+    XTP_IDS_CLR_LIME        "Lime"
+    XTP_IDS_CLR_SEA_GREEN   "Sea Green"
+    XTP_IDS_CLR_AQUA        "Aqua"
+    XTP_IDS_CLR_LIGHT_BLUE  "Light Blue"
+    XTP_IDS_CLR_VIOLET      "Violet"
+    XTP_IDS_CLR_GRAY40      "Gray-40%"
+    XTP_IDS_CLR_PINK        "Pink"
+    XTP_IDS_CLR_GOLD        "Gold"
+    XTP_IDS_CLR_YELLOW      "Yellow"
+    XTP_IDS_CLR_BRIGHT_GREEN "Bright Green"
+    XTP_IDS_CLR_TURQUOISE   "Turquoise"
+    XTP_IDS_CLR_SKY_BLUE    "Sky Blue"
+    XTP_IDS_CLR_PLUM        "Plum"
+    XTP_IDS_CLR_GRAY25      "Gray-25%"
+    XTP_IDS_CLR_ROSE        "Rose"
+    XTP_IDS_CLR_TAN         "Tan"
+    XTP_IDS_CLR_LIGHT_YELLOW "Light Yellow"
+    XTP_IDS_CLR_LIGHT_GREEN "Light Green"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Light Turquoise"
+    XTP_IDS_CLR_PALE_BLUE   "Pale Blue"
+    XTP_IDS_CLR_BLACK       "Black"
+    XTP_IDS_CLR_BROWN       "Brown"
+    XTP_IDS_CLR_OLIVE_GREEN "Olive Green"
+    XTP_IDS_CLR_DARK_GREEN  "Dark Green"
+    XTP_IDS_CLR_DARK_TEAL   "Dark Teal"
+    XTP_IDS_CLR_DARK_BLUE   "Dark Blue"
+    XTP_IDS_CLR_LAVENDER    "Lavender"
+    XTP_IDS_CLR_WHITE       "White"
+    XTP_IDS_CLR_GRAY        "Gray"
+    XTP_IDS_CLR_MAROON      "Maroon"
+    XTP_IDS_CLR_OLIVE       "Olive"
+    XTP_IDS_CLR_NAVY        "Navy"
+    XTP_IDS_CLR_PURPLE      "Purple"
+    XTP_IDS_CLR_SILVER      "Silver"
+    XTP_IDS_CLR_FUCHSIA     "Fuchsia"
+    XTP_IDS_CLR_NOFILL      "No Fill\nNo Fill"
+    XTP_IDS_CLR_AUTOMATIC   "Automatic Color\nAutomatic Color"
+    XTP_IDS_CLR_MORE        "More Colors..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

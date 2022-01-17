@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   短い形式",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   長い形式",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   時間",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   時間 (24 時間)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   ページ番号",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   ページ数",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   左揃え &&b 中央揃え &&b 右揃え", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   ウィンドウ タイトル",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  アンパサンド (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   改行",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "印刷...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "次のページ",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "前ページ",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "拡大",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "縮小",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "閉じる",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "1 ページ"
+    XTP_IDS_TWOPAGE         "2 ページ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "インディゴ"
+    XTP_IDS_CLR_GRAY80      "80% 灰色"
+    XTP_IDS_CLR_DARK_RED    "濃い赤"
+    XTP_IDS_CLR_ORANGE      "オレンジ"
+    XTP_IDS_CLR_DARK_YELLOW "濃い黄"
+    XTP_IDS_CLR_GREEN       "緑"
+    XTP_IDS_CLR_TEAL        "青緑"
+    XTP_IDS_CLR_BLUE        "青"
+    XTP_IDS_CLR_BLUEGRAY    "ブルーグレー"
+    XTP_IDS_CLR_GRAY50      "50% 灰色"
+    XTP_IDS_CLR_RED         "赤"
+    XTP_IDS_CLR_LIGHTORANGE "薄いオレンジ"
+    XTP_IDS_CLR_LIME        "ライム"
+    XTP_IDS_CLR_SEA_GREEN   "シーグリーン"
+    XTP_IDS_CLR_AQUA        "アクア"
+    XTP_IDS_CLR_LIGHT_BLUE  "薄い青"
+    XTP_IDS_CLR_VIOLET      "紫"
+    XTP_IDS_CLR_GRAY40      "40% 灰色"
+    XTP_IDS_CLR_PINK        "ピンク"
+    XTP_IDS_CLR_GOLD        "ゴールド"
+    XTP_IDS_CLR_YELLOW      "黄"
+    XTP_IDS_CLR_BRIGHT_GREEN "明るい緑"
+    XTP_IDS_CLR_TURQUOISE   "水色"
+    XTP_IDS_CLR_SKY_BLUE    "スカイブルー"
+    XTP_IDS_CLR_PLUM        "プラム"
+    XTP_IDS_CLR_GRAY25      "25% 灰色"
+    XTP_IDS_CLR_ROSE        "ローズ"
+    XTP_IDS_CLR_TAN         "ベージュ"
+    XTP_IDS_CLR_LIGHT_YELLOW "薄い黄"
+    XTP_IDS_CLR_LIGHT_GREEN "薄い緑"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "薄い水色"
+    XTP_IDS_CLR_PALE_BLUE   "ペールブルー"
+    XTP_IDS_CLR_BLACK       "黒"
+    XTP_IDS_CLR_BROWN       "茶"
+    XTP_IDS_CLR_OLIVE_GREEN "オリーブ"
+    XTP_IDS_CLR_DARK_GREEN  "濃い緑"
+    XTP_IDS_CLR_DARK_TEAL   "濃い青緑"
+    XTP_IDS_CLR_DARK_BLUE   "濃い青"
+    XTP_IDS_CLR_LAVENDER    "ラベンダー"
+    XTP_IDS_CLR_WHITE       "白"
+    XTP_IDS_CLR_GRAY        "灰色"
+    XTP_IDS_CLR_MAROON      "マロン"
+    XTP_IDS_CLR_OLIVE       "オリーブ"
+    XTP_IDS_CLR_NAVY        "紺"
+    XTP_IDS_CLR_PURPLE      "紫"
+    XTP_IDS_CLR_SILVER      "シルバー"
+    XTP_IDS_CLR_FUCHSIA     "赤紫"
+    XTP_IDS_CLR_NOFILL      "塗りつぶしなし\n塗りつぶしなし"
+    XTP_IDS_CLR_AUTOMATIC   "自動設定の色\n自動設定の色"
+    XTP_IDS_CLR_MORE        "その他の色..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

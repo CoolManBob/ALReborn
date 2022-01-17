@@ -1,0 +1,307 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Editor de botão"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Imagem",IDC_STATIC,7,7,86,8
+    GROUPBOX        "Cores",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Mover",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Visualizar",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Ferramentas",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Transparente",IDC_STATIC,135,156,44,8
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Ferramentas",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Mover",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Cores",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Teclado"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Categoria:",IDC_STATIC,4,5,89,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,4,15,91,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Comandos:",XTP_IDC_TXT_COMMANDS,4,28,89,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,4,38,91,77,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "atribuição de teclas:",XTP_IDC_TXT_ASSIGNMENTS,100,28,73,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,51,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pressione a nova tecla de atalho:",XTP_IDC_TXT_NEWKEY,100,93,120,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,103,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Atribuir",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Remover",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Redefinir tudo",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Descrição:",XTP_IDC_TXT_DESC_TITLE,4,117,89,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,4,127,171,19,0,
+                    WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Barras de ferramentas"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Barras de ferramentas:",IDC_STATIC,4,5,148,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Novo...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Renomear...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Excluir",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "Redefinir...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Opções"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Menus e barras de ferramentas personalizadas",XTP_IDC_GROUP_PERSONALIZED,4,5,222,8
+    CONTROL         "Sempre mostrar menus completos",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,216,10
+    CONTROL         "Mostrar menus completos após um pequeno intervalo",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,29,204,10
+    PUSHBUTTON      "Redefinir dados de uso de menu e barra de ferramentas",
+                    XTP_IDC_BUTTON_RESETDATA,10,42,192,14
+    LTEXT           "Outra", XTP_IDC_GROUP_OTHER,4,70,222,8
+    CONTROL         "Ícones grandes",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,82,216,10
+    CONTROL         "Mostrar dicas de tela nas barras de ferramentas",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,93,216,10
+    CONTROL         "Mostrar teclas de atalho nas dicas de tela",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,104,204,10
+    LTEXT           "Animações de menu:",IDC_STATIC,10,117,67,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,81,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Comandos"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Para adicionar um comando a uma barra de ferramentas: selecione uma categoria e arraste o comando para fora desta caixa de diálogo até uma barra de ferramentas.",
+                    IDC_STATIC,4,5,220,25
+    LTEXT           "Categorias:",IDC_STATIC,4,32,80,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,42,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Comandos:",IDC_STATIC,90,32,134,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,42,135,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Menus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Application Menus",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Context Menus",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "&Show Menu:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Default menu\nDefault application menu",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Select &context menu:",IDC_STATIC,10,92,68,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,83,90,130,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nova barra de ferramentas"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Nome da barra de ferramentas:",IDC_STATIC,4,4,178,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Personalizar"
+    BEGIN
+        MENUITEM "Redefinir",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Excluir",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Nome:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Copiar imagem de botão",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Colar imagem de botão",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Redefinir imagem de botão",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Editar imagem de botão...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Alterar imagem de botão",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Estilo padrão",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Somente texto",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Imagem e texto",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Iniciar um grupo",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "Fechar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Personalizar"
+    XTP_IDS_NEWMENU         "Novo menu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Esta operação excluirá o registro dos comandos usados neste aplicativo e restaurará o conjunto padrão de comandos visíveis nos menus e barras de ferramentas. Ela não irá desfazer nenhuma personalização explícita. Tem certeza de que deseja fazer isso?"
+    XTP_IDS_INVALID_NUMBER  "Este não é um número válido."
+    XTP_IDS_INVALID_FONTSIZE "O número deve estar entre 1 e 1638."
+    XTP_IDS_CONFIRM_RESET   "Tem certeza de que deseja redefinir as alterações feitas em '%s' barra de ferramentas?"
+    XTP_IDS_BUILTINMENUS    "Menus internos"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Personalizada %d"
+    XTP_IDS_ERROR_BLANKNAME "O nome da barra de ferramentas não pode ficar em branco. Digite um nome."
+    XTP_IDS_ERROR_LIMIT     "Desculpe, você alcançou o limite."
+    XTP_IDS_ERROR_EXISTS    "Já existe uma barra de ferramentas denominada '%s'. Digite outro nome."
+    XTP_IDS_RENAMETOOLBAR   "Renomear barra de ferramentas"
+    XTP_IDS_CONFIRM_DELETE  "Tem certeza de que deseja excluir a barra de ferramentas '%s'?"
+    XTP_IDS_ALLCOMMANDS     "Todos os comandos"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\nPersonalizar..."
+    XTP_ID_CUSTOMIZE_RESET  "\nRedefinir"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\nAdicionar ou remover botões"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Você tem certesa que deseja retornar aos padrões? Esta ação fará com que todas as customizações sejam excluídas."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Todos os arquivos de imagens|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metarquivos(*.Wmf;*.Emf)|*.wmf;*.emf|Ícones(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Todos os arquivos(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nOpções da barra de ferramentas"
+    XTP_ID_TOOLBAR_HIDE     "\nFechar"
+    XTP_ID_POPUPBAR_EXPAND  "\nExpand"
+    XTP_ID_MENUBAR_CLOSE    "\nFechar janela"
+    XTP_ID_MENUBAR_RESTORE  "\nRestaurar janela"
+    XTP_ID_MENUBAR_MINIMIZE "\nMinimizar janela"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nLápis"
+    XTP_ID_BUTTON_FILL      "\nCor do preenchimento"
+    XTP_ID_BUTTON_GETCOLOR  "\nEscolher Cor..."
+    XTP_ID_BUTTON_LINE      "\nLinha"
+    XTP_ID_BUTTON_RECTANGLE "\nRetângulo"
+    XTP_ID_BUTTON_CIRCLE    "\nElipse"
+    XTP_ID_BUTTON_COPY      "\nCopiar"
+    XTP_ID_BUTTON_PASTE     "\nColar"
+    XTP_ID_BUTTON_CLEAR     "\nLimpar"
+    XTP_ID_BUTTON_UNDO      "\nDesfazer"
+    XTP_ID_BUTTON_REDO      "\nRefazer"
+    XTP_ID_BUTTON_OPEN      "\nImportar do Arquivo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(padrão do sistema)"
+    XTP_IDS_ANIMATION_RANDOM "Aleatórias"
+    XTP_IDS_ANIMATION_UNFOLD "Desdobradas"
+    XTP_IDS_ANIMATION_SLIDE "Deslizar"
+    XTP_IDS_ANIMATION_FADE  "Desaparecer"
+    XTP_IDS_ANIMATION_NONE  "Nenhum"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSPACE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSPACE_NEWVERTICAL "\nNew &Vertical Tab Group"
+    XTP_ID_WORKSPACE_CANCEL "Cancelar"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Active Files"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

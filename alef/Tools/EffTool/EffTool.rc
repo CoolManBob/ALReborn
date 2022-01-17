@@ -1,0 +1,819 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EffTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\EffTool.ico"
+IDR_EFFTOOTYPE          ICON                    "res\\EffToolDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLBAR_MAIN        BITMAP                  "res\\toolbar1.bmp"
+IDB_BMP_PANE            BITMAP                  "res\\bitmap1.bmp"
+IDB_BMP_CLASS           BITMAP                  "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBAR_MAIN TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_TBTN_PLAY
+    BUTTON      ID_TBTN_EDIT_STATE
+    BUTTON      IDR_TBTN_FIND
+    BUTTON      IDR_TBTN_EDIT_FIND
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄 설정(&R)...",                ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                      ID_APP_EXIT
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",                   ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "EffTool 정보(&A)...",           ID_APP_ABOUT
+    END
+END
+
+IDR_EFFTOOTYPE MENUEX 
+BEGIN
+    POPUP "파일(&F)",                         65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",            57600,MFT_STRING,MFS_ENABLED
+        MENUITEM "열기(&O)...\tCtrl+O",           57601,MFT_STRING,MFS_ENABLED
+        MENUITEM "닫기(&C)",                      57602,MFT_STRING,MFS_ENABLED
+        MENUITEM "저장(&S)\tCtrl+S",              57603,MFT_STRING,MFS_ENABLED
+        MENUITEM "다른 이름으로 저장(&A)...",           57604,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "파일 팩킹",                       32781,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+        MENUITEM "모든이펙트 바운딩계산",                 32784,MFT_STRING,MFS_ENABLED
+        MENUITEM "바운딩계산중지",                     32786,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",           57607,MFT_STRING,MFS_ENABLED
+        MENUITEM "인쇄 미리 보기(&V)",                57609,MFT_STRING,MFS_ENABLED
+        MENUITEM "인쇄 설정(&R)...",                57606,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "최근 파일",                       57616,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "종료(&X)",                      57665,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Ambient Light",               32792,MFT_STRING,MFS_ENABLED
+        MENUITEM "Engine Light",                32793,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Set Texture Directory",       ID_SET_TEXDIRECTORY,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "편집(&E)",                         65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "취소(&U)\tCtrl+Z",              57643,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",            57635,MFT_STRING,MFS_ENABLED
+        MENUITEM "복사(&C)\tCtrl+C",              57634,MFT_STRING,MFS_ENABLED
+        MENUITEM "붙여넣기(&P)\tCtrl+V",            57637,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "보기(&V)",                         65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "도구 모음(&T)",                   59392,MFT_STRING,MFS_ENABLED
+        MENUITEM "상태 표시줄(&S)",                  59393,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "창(&W)",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "다음 창(&N)",                    57648,MFT_STRING,MFS_ENABLED
+        MENUITEM "계단식(&C)",                     57650,MFT_STRING,MFS_ENABLED
+        MENUITEM "바둑판식(&T)",                    57651,MFT_STRING,MFS_ENABLED
+        MENUITEM "아이콘 정렬(&A)",                  57649,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "도움말(&H)",                        65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "EffTool 정보(&A)...",           57664,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_MENU_TRCTRL_SET_POPMENU MENU 
+BEGIN
+    POPUP "TrCtrlEffSet_Popup"
+    BEGIN
+        MENUITEM "&Edit(bounding info)",        ID_MENUITEM_TRCTRL_EDIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Insert",                     ID_MENUITEM_TRCTRL_INS
+        MENUITEM "&Delete",                     ID_MENUITEM_TRCTRL_DEL
+        MENUITEM "&Save",                       ID_TRCTRLEFFSET_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "InsertDependancy",            ID_TRCTRLEFFSET_INSERTDEPENDANCY
+        MENUITEM SEPARATOR
+        MENUITEM "base copy",                   32798
+        MENUITEM "base paste",                  32799
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EffTool 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "EffTool 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DLG_FORMVIEW DIALOG  0, 0, 104, 111
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System"
+BEGIN
+END
+
+IDD_DLG_LIST DIALOGEX 0, 0, 187, 100
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_INFO,7,7,173,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_LIST_DATA,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_TABSTOP,7,23,173,70,WS_EX_STATICEDGE
+END
+
+IDD_DLG_TREE DIALOGEX 0, 0, 187, 99
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_INFO,7,7,173,11,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Tree1",IDC_TREE_DATA,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_TRACKSELECT | TVS_FULLROWSELECT | WS_TABSTOP,7,23,173,69,WS_EX_STATICEDGE
+END
+
+IDD_DLG_STATIC DIALOG  0, 0, 187, 99
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_STATIC_RECT,"Static",SS_BLACKRECT,7,7,173,85
+END
+
+IDD_DLG_NEWEFFSET DIALOG  0, 0, 141, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New EffSet"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,84,52,50,14
+    RTEXT           "ID :",IDC_STATIC,7,7,31,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ID,43,7,91,12,ES_AUTOHSCROLL
+    RTEXT           "Title :",IDC_STATIC,7,29,31,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_TITLE,43,29,91,12,ES_AUTOHSCROLL
+END
+
+IDD_DLG_EDIT DIALOG  0, 0, 187, 99
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_INFO,7,7,173,85,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DLG_NEWEFFBASE DIALOGEX 0, 0, 187, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "새로운 EffBase 를 추가합니다."
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,66,50,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,128,66,50,14,0,WS_EX_STATICEDGE
+    CONTROL         "board",IDC_RADIO_BOARD,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,7,7,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "particle",IDC_RADIO_PSYS,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,95,7,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "PSBH",IDC_RADIO_PSYS_SBH,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,139,7,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "tail",IDC_RADIO_TAIL,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,7,25,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "object",IDC_RADIO_OBJ,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,51,7,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "light",IDC_RADIO_LIGHT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,51,25,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "sound",IDC_RADIO_SOUND,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,95,25,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "MFrm",IDC_RADIO_MFRM,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,139,25,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "terrainB",IDC_RADIO_TERRAINB,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,7,43,39,14,WS_EX_CLIENTEDGE
+    CONTROL         "FX",IDC_RADIO_FX,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,51,43,39,14,WS_EX_CLIENTEDGE
+END
+
+IDD_DLG_EFFBASE DIALOG  0, 0, 169, 116
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "title",IDC_STATIC,13,22,27,12,WS_BORDER
+    EDITTEXT        IDC_EDIT_TITLE,46,22,110,12,ES_AUTOHSCROLL
+    LTEXT           "delay",IDC_STATIC,13,36,27,12,WS_BORDER
+    EDITTEXT        IDC_EDIT_DELAY,46,36,110,12,ES_AUTOHSCROLL
+    LTEXT           "life",IDC_STATIC,13,50,27,12,WS_BORDER
+    EDITTEXT        IDC_EDIT_LIFE,46,50,110,12,ES_AUTOHSCROLL
+    LTEXT           "loop",IDC_STATIC,13,64,27,12,WS_BORDER
+    COMBOBOX        IDC_COMBO_LOOPOPT,46,64,110,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "BILLBOARD",IDC_CHECK_BILLBOARD,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,17,89,59,12
+    CONTROL         "BILLBOARDY",IDC_CHECK_BILLBOARDY,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,93,89,59,12
+    GROUPBOX        "effect base",IDC_STATIC,7,7,155,102
+    GROUPBOX        "option",IDC_STATIC,14,80,142,23
+END
+
+IDD_DLG_RENDERBASE DIALOG  0, 0, 169, 117
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "blend",IDC_STATIC,13,22,27,12,WS_BORDER
+    LTEXT           "texture",IDC_STATIC_TEX,13,36,27,12,WS_BORDER
+    EDITTEXT        IDC_EDIT_TEX,46,36,95,12,ES_AUTOHSCROLL
+    LTEXT           "mask",IDC_STATIC_MASK,13,50,27,12,WS_BORDER
+    EDITTEXT        IDC_EDIT_MASK,46,50,95,12,ES_AUTOHSCROLL
+    LTEXT           "pos",IDC_STATIC,13,79,27,12,WS_BORDER
+    GROUPBOX        "effect render base",IDC_STATIC,7,7,155,103
+    COMBOBOX        IDC_COMBO_BLEND,46,21,112,148,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_POS_X,46,79,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POS_Y,86,79,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POS_Z,126,79,31,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "....",IDC_BUTTON_TEX,143,36,15,11
+    PUSHBUTTON      "....",IDC_BUTTON_MASK,143,50,15,11
+    LTEXT           "angle",IDC_STATIC,13,94,27,12,WS_BORDER
+    EDITTEXT        IDC_EDIT_ANGLE_X,46,94,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANGLE_Y,86,94,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ANGLE_Z,126,94,31,12,ES_AUTOHSCROLL
+    CTEXT           "x",IDC_STATIC,47,68,31,8
+    CTEXT           "y",IDC_STATIC,86,68,31,8
+    CTEXT           "z",IDC_STATIC,125,68,31,8
+END
+
+IDD_DLG_NEWEFFANIM DIALOGEX 0, 0, 187, 100
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "add effect animation"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,79,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,79,50,14
+    CONTROL         "color",IDC_RADIO_COLR,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,7,7,56,14,WS_EX_CLIENTEDGE
+    CONTROL         "tutv",IDC_RADIO_TUTV,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,65,7,56,14,WS_EX_CLIENTEDGE
+    CONTROL         "missile",IDC_RADIO_MISSILE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,123,7,56,14,WS_EX_CLIENTEDGE
+    CONTROL         "linear",IDC_RADIO_LINEAR,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,7,25,56,14,WS_EX_CLIENTEDGE
+    CONTROL         "revolution",IDC_RADIO_REV,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,65,25,56,14,WS_EX_CLIENTEDGE
+    CONTROL         "rotation",IDC_RADIO_ROT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,124,25,56,14,WS_EX_CLIENTEDGE
+    CONTROL         "spline",IDC_RADIO_SPLINE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,7,43,56,14,WS_EX_CLIENTEDGE
+    CONTROL         "rtanim",IDC_RADIO_RTANIM,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,65,43,56,14,WS_EX_CLIENTEDGE
+    CONTROL         "scale",IDC_RADIO_SCALE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,124,43,56,14,WS_EX_CLIENTEDGE
+END
+
+IDD_DLG_NEWANIMITEM DIALOG  0, 0, 187, 104
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "anim value"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,83,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,83,50,14
+    LTEXT           "ex",IDC_STATIC_GUID,35,7,145,12,WS_BORDER
+    PUSHBUTTON      "....",IDC_BTN_DLG,149,47,31,29,WS_DISABLED
+    LTEXT           "value :",IDC_STATIC,7,63,22,12
+    EDITTEXT        IDC_EDIT_VAL,35,63,110,12,ES_AUTOHSCROLL
+    LTEXT           "time",IDC_STATIC_EXIST_TIME,35,24,145,12,WS_BORDER
+    LTEXT           "time :",IDC_STATIC,7,47,22,12
+    EDITTEXT        IDC_EDIT_TIME,35,47,110,12,ES_AUTOHSCROLL
+    LTEXT           "guid :",IDC_STATIC,7,7,22,12
+    LTEXT           "time :",IDC_STATIC,7,24,22,12
+END
+
+IDD_DLG_TEXUV DIALOGEX 0, 0, 124, 274
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "tex uv select"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,7,50,14
+    EDITTEXT        IDC_EDIT_ROW,45,91,64,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ROW,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,109,91,8,12
+    EDITTEXT        IDC_EDIT_COL,45,109,64,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_COLUMN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HORZ,109,109,8,12
+    CONTROL         "",IDC_STATIC_TEX,"Static",SS_BLACKRECT,7,130,110,137
+    RTEXT           "row :",IDC_STATIC,7,91,31,12,SS_SUNKEN
+    RTEXT           "column :",IDC_STATIC,7,109,31,12,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_TIMEDISTANCE,49,42,64,12,ES_AUTOHSCROLL
+    RTEXT           "time :",IDC_STATIC,11,42,31,12,SS_SUNKEN
+    CONTROL         "multi input",IDC_CHECK_MULTI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,28,50,10
+    EDITTEXT        IDC_EDIT_BEGIN_INDEX,49,57,64,12,ES_AUTOHSCROLL
+    RTEXT           "begin :",IDC_STATIC,11,57,31,12,SS_SUNKEN
+    EDITTEXT        IDC_EDIT_END_INDEX,49,72,64,12,ES_AUTOHSCROLL
+    RTEXT           "end :",IDC_STATIC,11,72,31,12,SS_SUNKEN
+    GROUPBOX        "",IDC_STATIC,7,21,110,66
+END
+
+IDD_DLG_NEWDEPENDANCY DIALOGEX 0, 0, 297, 298
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "new dependancy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "취소",IDCANCEL,240,277,50,14
+    DEFPUSHBUTTON   "확인",IDOK,7,277,50,14
+    CONTROL         "",IDC_STATIC_PARENT,"Static",SS_BLACKRECT,7,27,137,212
+    CONTROL         "",IDC_STATIC_CHILD,"Static",SS_BLACKRECT,153,27,137,212
+    EDITTEXT        IDC_EDIT_STATE,7,246,283,26,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NODE,48,7,96,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "node :",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,7,7,35,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "FileDescription", "EffTool MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "EffTool"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "EffTool.EXE"
+            VALUE "ProductName", "EffTool 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DLG_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 97
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_DLG_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DLG_TREE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DLG_STATIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DLG_NEWEFFSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DLG_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DLG_NEWEFFBASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DLG_EFFBASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DLG_RENDERBASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_DLG_NEWEFFANIM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DLG_NEWANIMITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_DLG_TEXUV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_DLG_NEWDEPENDANCY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_EFFBASE DLGINIT
+BEGIN
+    IDC_COMBO_LOOPOPT, 0x403, 15, 0
+0x6f6e, 0x656e, 0xb928, 0xbadd, 0xbeb9, 0xc0f8, 0x29bd, "\000" 
+    IDC_COMBO_LOOPOPT, 0x403, 15, 0
+0x6e69, 0x6966, 0x696e, 0x7974, 0xb928, 0xc7ab, 0x29d1, "\000" 
+    IDC_COMBO_LOOPOPT, 0x403, 30, 0
+0x6e6f, 0x4465, 0x7269, 0x6365, 0x6974, 0x6e6f, 0xc728, 0xb9d1, 0xc7e6, 
+0xc0e2, 0xb7b8, 0x20ce, 0xddb9, 0xb9ba, 0x0029, 
+    IDC_COMBO_LOOPOPT, 0x403, 38, 0
+0x6f70, 0x6973, 0x6974, 0x6576, 0xbe28, 0xb9e7, 0xc7e6, 0xb9e2, 0xbadd, 
+0x20b9, 0x6974, 0x656d, 0x303d, 0xba20, 0xc5ce, 0x20cd, 0xc3bd, 0xdbc0, 
+0x0029, 
+    IDC_COMBO_LOOPOPT, 0x403, 41, 0
+0x656e, 0x6167, 0x6974, 0x6576, 0xbe28, 0xb9e7, 0xc7e6, 0xb9e2, 0xbadd, 
+0x20b9, 0x6974, 0x656d, 0x6c3d, 0x6669, 0x2065, 0xceba, 0xcdc5, 0xbd20, 
+0xc0c3, 0x29db, "\000" 
+    0
+END
+
+IDD_DLG_RENDERBASE DLGINIT
+BEGIN
+    IDC_COMBO_BLEND, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_COMBO_BLEND, 0x403, 13, 0
+0x4441, 0x5f44, 0x4554, 0x5358, 0x4154, 0x4547, "\000" 
+    IDC_COMBO_BLEND, 0x403, 12, 0
+0x4441, 0x5f44, 0x4e4f, 0x5f45, 0x4e4f, 0x0045, 
+    IDC_COMBO_BLEND, 0x403, 13, 0
+0x4441, 0x5f44, 0x5253, 0x4143, 0x4f5f, 0x454e, "\000" 
+    IDC_COMBO_BLEND, 0x403, 17, 0
+0x4441, 0x5f44, 0x5253, 0x4143, 0x495f, 0x564e, 0x5253, 0x4143, "\000" 
+    IDC_COMBO_BLEND, 0x403, 17, 0
+0x4441, 0x5f44, 0x5253, 0x4343, 0x495f, 0x564e, 0x5253, 0x4343, "\000" 
+    IDC_COMBO_BLEND, 0x403, 15, 0
+0x4552, 0x5356, 0x4255, 0x4f5f, 0x454e, 0x4f5f, 0x454e, "\000" 
+    IDC_COMBO_BLEND, 0x403, 16, 0
+0x4552, 0x5356, 0x4255, 0x535f, 0x4352, 0x5f41, 0x4e4f, 0x0045, 
+    IDC_COMBO_BLEND, 0x403, 20, 0
+0x4552, 0x5356, 0x4255, 0x535f, 0x4352, 0x5f41, 0x4e49, 0x5356, 0x4352, 
+0x0041, 
+    IDC_COMBO_BLEND, 0x403, 20, 0
+0x4552, 0x5356, 0x4255, 0x535f, 0x4352, 0x5f43, 0x4e49, 0x5356, 0x4352, 
+0x0043, 
+    IDC_COMBO_BLEND, 0x403, 12, 0
+0x5553, 0x5f42, 0x4e4f, 0x5f45, 0x4e4f, 0x0045, 
+    IDC_COMBO_BLEND, 0x403, 13, 0
+0x5553, 0x5f42, 0x5253, 0x4143, 0x4f5f, 0x454e, "\000" 
+    IDC_COMBO_BLEND, 0x403, 17, 0
+0x5553, 0x5f42, 0x5253, 0x4143, 0x495f, 0x564e, 0x5253, 0x4143, "\000" 
+    IDC_COMBO_BLEND, 0x403, 17, 0
+0x5553, 0x5f42, 0x5253, 0x4343, 0x495f, 0x564e, 0x5253, 0x4343, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "EffTool"
+    IDR_EFFTOOTYPE          "\nEffToo\nEffToo\n\n\nEffTool.Document\nEffToo Document\\"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "EffTool"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다\n열기"
+    ID_FILE_CLOSE           "현재 열린 문서를 닫습니다\n닫기"
+    ID_FILE_SAVE            "현재 열린 문서를 저장합니다\n저장"
+    ID_FILE_SAVE_AS         "현재 열린 문서를 다른 이름으로 저장합니다\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다\n쪽 설정"
+    ID_FILE_PRINT_SETUP     "프린터와 인쇄 옵션을 변경합니다\n인쇄 설정"
+    ID_FILE_PRINT           "현재 열린 문서를 인쇄합니다\n인쇄"
+    ID_FILE_PRINT_PREVIEW   "쪽 전체를 표시합니다\n인쇄 미리 보기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보와 버전 정보, 저작권 정보를 표시합니다\n정보"
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE2       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE3       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE4       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE5       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE6       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE7       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE8       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE9       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE10      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE11      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE12      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE13      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE14      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE15      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE16      "이 문서를 엽니다"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "현재 열린 문서를 위해 또 다른 창을 엽니다\n새 창"
+    ID_WINDOW_ARRANGE       "창 아래쪽에 아이콘을 정렬합니다\n아이콘 정렬"
+    ID_WINDOW_CASCADE       "서로 겹쳐지도록 창을 정렬합니다\n계단식 창"
+    ID_WINDOW_TILE_HORZ     "서로 겹치지 않는 바둑판 모양으로 창을 정렬합니다\n바둑판식 창"
+    ID_WINDOW_TILE_VERT     "서로 겹치지 않는 바둑판 모양으로 창을 정렬합니다\n바둑판식 창"
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 수행합니다\n다시 실행"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+    AFX_IDS_MDICHILD        "이 창을 활성화합니다"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다\n미리 보기 취소"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PACKING              "이펙트 파일을 묶습니다.\\N"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\EffTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

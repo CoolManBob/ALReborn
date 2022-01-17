@@ -1,0 +1,618 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AgcmAdminDlgXT.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AgcmAdminDlgXT DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AgcmAdminDlgXT\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AgcmAdminDlgXT.DLL\0"
+            VALUE "ProductName", "AgcmAdminDlgXT 동적 연결 라이브러리\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 203, 263
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Main"
+MENU IDM_MAIN
+FONT 9, "Tahoma"
+BEGIN
+    LISTBOX         IDC_LS_MAIN_OBJECT,0,0,80,137,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_MAIN_INFO,80,0,123,137,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Move",IDC_STATIC,0,139,203,49
+    LTEXT           "이동할 캐릭터 :",IDC_STATIC,4,149,49,8
+    EDITTEXT        IDC_E_MAIN_MOVE_PC,58,149,113,10,ES_AUTOHSCROLL
+    LTEXT           "타겟 캐릭터　 :",IDC_STATIC,4,160,48,8
+    EDITTEXT        IDC_E_MAIN_MOVE_TARGET,58,160,113,10,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CB_MAIN_MOVE_PLACE,3,171,55,58,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_MAIN_MOVE_X,58,172,37,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_MAIN_MOVE_Y,96,172,37,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_MAIN_MOVE_Z,134,172,37,10,ES_AUTOHSCROLL
+    PUSHBUTTON      "Go!",IDC_B_MAIN_MOVE_GO,172,149,29,34
+    CONTROL         "List2",IDC_LV_MAIN_HELP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,0,190,203,61
+    LTEXT           "운영자 수 :",IDC_STATIC,61,253,35,8
+    LTEXT           "999",IDC_S_MAIN_ADMIN_COUNT,98,253,12,8
+    LTEXT           "대기중인 진정 수 :",IDC_STATIC,117,253,58,8
+    LTEXT           "999",IDC_S_MAIN_HELP_COUNT,177,253,12,8
+    LTEXT           "접속자 수 :",IDC_STATIC,0,253,35,8
+    LTEXT           "9999",IDC_S_MAIN_CURRENT_USER,38,253,16,8
+END
+
+IDD_SEARCH DIALOG DISCARDABLE  0, 0, 263, 151
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Search"
+FONT 9, "Tahoma"
+BEGIN
+    GROUPBOX        "Search",IDC_STATIC,0,0,263,30,BS_CENTER
+    COMBOBOX        IDC_CB_SEARCH_TYPE,3,12,63,77,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CB_SEARCH_FIELD,68,12,63,77,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_CHAR_SEARCH_DATA,132,12,83,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Search",IDC_BTN_SEARCH_SEARCH,216,12,43,13
+    CONTROL         "List1",IDC_LV_SEARCH_RESULT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,1,34,261,100
+    PUSHBUTTON      "Add",IDC_BTN_SEARCH_ADD,0,137,43,11
+    PUSHBUTTON      "Go",IDC_BTN_SEARCH_GO,45,137,43,11
+    PUSHBUTTON      "Modify",IDC_BTN_SEARCH_MODIFY,91,137,43,11
+    PUSHBUTTON      "G&&M",IDC_BTN_SEARCH_GM,136,137,43,11
+END
+
+IDD_CHAR_DATA DIALOG DISCARDABLE  0, 0, 323, 219
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Character"
+FONT 9, "Tahoma"
+BEGIN
+    CONTROL         "",IDC_S_CHAR_BASIC_PLACE,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,1,1,123,204
+    COMBOBOX        IDC_CB_CHAR_VIEW,125,1,64,58,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_S_VIEW_PLACE,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,126,16,195,140
+    EDITTEXT        IDC_E_CHAR_VIEW_INFO,126,159,164,58,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Refresh",IDC_BTN_CHAR_REFRESH,190,1,32,13
+    CONTROL         "1초마다 갱신",IDC_CH_CHAR_RELOAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,1,209,51,8
+    PUSHBUTTON      "Ban",IDC_BTN_CHAR_BAN,223,1,32,13
+    CONTROL         "",IDC_CHAR_DRAW_PLACE,"Static",SS_BLACKRECT,292,159,29,
+                    29
+END
+
+IDD_HELP DIALOG DISCARDABLE  0, 0, 341, 252
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Help"
+FONT 9, "Tahoma"
+BEGIN
+    LTEXT           "진정 리스트",IDC_STATIC,3,1,37,8
+    CONTROL         "List1",IDC_LV_HELP_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,2,10,159,114
+    CONTROL         "",IDC_S_CHAR_BASIC_PLACE,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,165,10,174,114
+    LTEXT           "진정 내용",IDC_STATIC,3,127,31,8
+    EDITTEXT        IDC_E_HELP_MSG,2,137,160,42,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    LTEXT           "메모 내용",IDC_STATIC,3,181,31,8
+    EDITTEXT        IDC_E_HELP_MEMO,2,190,160,42,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "메모저장",IDC_B_HELP_MEMO_SAVE,3,239,33,12
+    LTEXT           "대화창",IDC_STATIC,165,126,22,8
+    EDITTEXT        IDC_E_HELP_CHAT,164,137,175,84,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_E_HELP_CHAT_SEND,164,222,175,11,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,1,236,339,1
+    DEFPUSHBUTTON   "채팅메시지보내는건데이버튼은안보이지롱",IDC_B_CHAT_SEND,
+                    97,240,29,10
+    PUSHBUTTON      "해결",IDC_B_HELP_COMPLETE,193,239,29,12
+    PUSHBUTTON      "보류",IDC_B_HELP_DEFER,222,239,29,12
+    PUSHBUTTON      "전달",IDC_B_HELP_DELIVER,252,239,29,12
+    PUSHBUTTON      "반송",IDC_B_HELP_REJECT,281,239,29,12
+    PUSHBUTTON      "삭제",IDC_B_HELP_DELETE,310,239,29,12
+    PUSHBUTTON      "이동",IDC_B_HELP_GO,164,239,29,12
+END
+
+IDD_MOVE DIALOG DISCARDABLE  0, 0, 203, 43
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Move"
+MENU IDM_MOVE
+FONT 9, "Tahoma"
+BEGIN
+    LTEXT           "이동할 캐릭터 :",IDC_STATIC,4,7,49,8
+    EDITTEXT        IDC_E_MOVE_MOVE_PC,58,7,113,10,ES_AUTOHSCROLL
+    LTEXT           "타겟 캐릭터　 :",IDC_STATIC,4,18,48,8
+    EDITTEXT        IDC_E_MOVE_MOVE_TARGET,58,18,113,10,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CB_MOVE_MOVE_PLACE,3,29,55,58,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_MOVE_MOVE_X,58,30,37,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_MOVE_MOVE_Y,96,30,37,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_MOVE_MOVE_Z,134,30,37,10,ES_AUTOHSCROLL
+    PUSHBUTTON      "Go!",IDC_B_MOVE_MOVE_GO,172,7,29,34
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME | SS_SUNKEN,2,2,200,
+                    1
+END
+
+IDD_BAN DIALOG DISCARDABLE  0, 0, 201, 93
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Ban"
+FONT 9, "Tahoma"
+BEGIN
+    LTEXT           "캐릭터 이름 :",IDC_STATIC,3,4,42,8
+    LTEXT           "똥싸개",IDC_S_CHARNAME,48,4,74,8
+    LTEXT           "계정　 이름 :",IDC_STATIC,3,14,42,8
+    LTEXT           "아무개",IDC_S_ACCNAME,48,14,76,8
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME | SS_SUNKEN,0,27,200,
+                    1
+    LTEXT           "채팅　 금지 :",IDC_STATIC,3,33,42,8
+    COMBOBOX        IDC_CB_CHAT_BAN_TIME,155,31,35,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "2004년 01월 06일 18시 35분 부터",IDC_S_CHAT_BAN_START,
+                    47,33,108,8
+    LTEXT           "캐릭터 블럭 :",IDC_STATIC,3,47,42,8
+    COMBOBOX        IDC_CB_CHAR_BAN_TIME,155,45,35,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "2004년 01월 06일 18시 35분 부터",IDC_S_CHAR_BAN_START,
+                    47,47,108,8
+    LTEXT           "계정　 블럭 :",IDC_STATIC,3,61,42,8
+    COMBOBOX        IDC_CB_ACC_BAN_TIME,155,59,35,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "2004년 01월 06일 18시 35분 부터",IDC_S_ACC_BAN_START,47,
+                    61,108,8
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME | SS_SUNKEN,0,75,200,
+                    1
+    PUSHBUTTON      "로그아웃",IDC_B_BAN_LOGOUT,164,12,35,13
+    PUSHBUTTON      "Ban적용",IDC_B_BAN_APPLY,165,78,34,13
+    PUSHBUTTON      "Ban해제",IDC_B_BAN_CANCEL,131,78,33,13
+    CONTROL         "",IDC_CH_CHATBAN_MODIFY,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,192,33,8,8
+    CONTROL         "",IDC_CH_CHARBAN_MODIFY,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,192,48,8,8
+    CONTROL         "",IDC_CH_ACCBAN_MODIFY,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,192,61,8,8
+END
+
+IDD_ITEM DIALOG DISCARDABLE  0, 0, 147, 129
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Item"
+FONT 9, "Tahoma"
+BEGIN
+    CONTROL         "생성",IDC_R_ITEM_CREATE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,3,2,24,10
+    CONTROL         "개조",IDC_R_ITEM_CONVERT,"Button",BS_AUTORADIOBUTTON,30,
+                    2,24,10
+    GROUPBOX        "아이템 선택",IDC_S_ITEM_PROPERTY,2,13,109,47
+    COMBOBOX        IDC_CB_ITEM_TID,6,26,100,62,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "수량 :",IDC_STATIC,61,44,18,8
+    EDITTEXT        IDC_E_ITEM_COUNT,80,42,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_ITEM_DRAW_PLACE,"Static",SS_BLACKRECT,115,17,29,
+                    29
+    PUSHBUTTON      "만들자",IDC_B_ITEM_CREATE,114,48,31,12
+    GROUPBOX        "개조 속성 선택",IDC_S_ITEM_CONVERT_TYPE,2,63,109,62
+    COMBOBOX        IDC_CB_ITEM_RUNE_TID,6,76,100,62,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_ITEM_DRAW_PLACE2,"Static",SS_BLACKRECT,115,68,29,
+                    28
+    PUSHBUTTON      "개조하자",IDC_B_ITEM_CONVERT,114,98,31,12
+    COMBOBOX        IDC_CB_ITEM_SPIRIT_STONE_TID,6,92,100,62,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_ITEM_EGO_TID,6,108,100,62,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_S_ITEM_INVENTORY_POS,7,44,51,8
+END
+
+IDD_ADMIN_LIST DIALOG DISCARDABLE  0, 0, 155, 123
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Admin List"
+FONT 9, "Tahoma"
+BEGIN
+    CONTROL         "List2",IDC_LV_ADMIN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,0,0,155,109
+    PUSHBUTTON      "Select",IDC_B_ADMIN_SELECT,0,110,154,12
+END
+
+IDD_NOTICE DIALOG DISCARDABLE  0, 0, 203, 20
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin Client - Notice"
+FONT 9, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_E_NOTICE,0,0,172,20,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "보내기",IDC_B_NOTICE,172,0,30,20
+END
+
+IDD_CHAR_ITEM DIALOG DISCARDABLE  0, 0, 231, 236
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin - Character Item"
+FONT 9, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_CB_CHAR_ITEM_INDEX,1,3,96,77,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "캐릭이름 : ",IDC_STATIC,133,4,33,10
+    LTEXT           "울트라작살때이천재",IDC_S_CHAR_VIEW_CHARNAME,167,4,63,
+                    10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,1,18,
+                    127,1
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_1_1,1,21,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_1_2,33,21,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_1_3,65,21,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_1_4,97,21,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_2_1,1,52,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_2_2,33,52,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_2_3,65,52,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_2_4,97,52,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_3_1,1,82,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_3_2,33,82,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_3_3,65,82,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_3_4,97,82,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,1,113,
+                    127,1
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_4_1,1,116,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_4_2,33,116,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_4_3,65,116,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_4_4,97,116,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_5_1,1,146,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_5_2,33,146,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_5_3,65,146,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_5_4,97,146,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_6_1,1,176,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_6_2,33,176,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_6_3,65,176,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_6_4,97,176,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_7_1,1,206,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_7_2,33,206,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_7_3,65,206,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    PUSHBUTTON      "",IDC_B_CHAR_ITEM_GRID_7_4,97,206,31,29,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE | BS_FLAT
+    LTEXT           "인벤겔드 :",IDC_STATIC,133,22,32,9
+    EDITTEXT        IDC_E_CHAR_ITEM_INVEN_MONEY,167,21,63,12,ES_AUTOHSCROLL
+    LTEXT           "창고겔드 :",IDC_STATIC,133,35,32,9
+    EDITTEXT        IDC_E_CHAR_ITEM_BANK_MONEY,167,33,63,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_CHAR_ITEM_DESC,130,52,100,183,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "R",IDC_B_CHAR_ITEM_REFRESH,99,2,29,13,BS_FLAT
+END
+
+IDD_GAME DIALOG DISCARDABLE  0, 0, 451, 263
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "ArchLord Admin Tool"
+FONT 9, "Verdana"
+BEGIN
+    CONTROL         "Tree1",IDC_T_USER_STATUS,"SysTreeView32",WS_BORDER | 
+                    WS_TABSTOP,1,20,96,137
+    LISTBOX         IDC_L_USER_LIST,348,20,102,230,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_CHAT_SEND,142,251,308,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_R_CHAT,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_TABSTOP,97,
+                    20,251,230
+    COMBOBOX        IDC_CB_SEND_TYPE,97,251,45,49,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_CHAR_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_MOVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 36
+    END
+
+    IDD_BAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_ITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_ADMIN_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_NOTICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 13
+    END
+
+    IDD_CHAR_ITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_GAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+        HORZGUIDE, 262
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+    END
+    POPUP "Edit"
+    BEGIN
+        POPUP "&Object"
+        BEGIN
+            MENUITEM "&Select",                     IDM_OBJECT_SELECT
+            MENUITEM "&Del",                        IDM_OBJECT_DEL
+            MENUITEM "&Clear",                      IDM_OBJECT_CLEAR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Help"
+        BEGIN
+            MENUITEM "&Select",                     IDM_HELP_SELECT
+        END
+    END
+    POPUP "&Tool"
+    BEGIN
+        MENUITEM "&Search",                     IDM_TOOL_SEARCH
+        MENUITEM SEPARATOR
+        MENUITEM "&Character",                  IDM_TOOL_CHARACTER
+        MENUITEM "&Move",                       IDM_TOOL_MOVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Help",                       IDM_TOOL_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Item",                       IDM_TOOL_ITEM
+        MENUITEM SEPARATOR
+        MENUITEM "&Admin List",                 IDM_TOOL_ADMIN_LIST
+        MENUITEM "&Notice",                     IDM_TOOL_NOTICE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      IDM_HELP_ABOUT
+    END
+END
+
+IDM_MOVE MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Close",                      IDM_MOVE_FILE_CLOSE
+    END
+    POPUP "&Edit"
+    BEGIN
+        POPUP "&Mode"
+        BEGIN
+            MENUITEM "&Normal",                     IDM_MOVE_EDIT_NORMAL
+            MENUITEM "&Add",                        IDM_MOVE_EDIT_ADD
+            MENUITEM "&Remove",                     IDM_MOVE_EDIT_REMOVE
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_BLACK          ICON    DISCARDABLE     "icon1.ico"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\AgcmAdminDlgXT.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

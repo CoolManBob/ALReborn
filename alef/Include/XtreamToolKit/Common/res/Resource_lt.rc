@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_LITHUANIAN, SUBLANG_LITHUANIAN
+#pragma code_page(1257)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Trumpasis datos formatas",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   Ilgasis datos formatas",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Laikas",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T  Laikas (24 valandø)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   Puslapio numeris",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Puslapiø skaièius",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Lygiuotæ kairëje &&b Lygiuotæ centre &&b Lygiuotæ deðinëje", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   Lango pavadinimas",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  konjunkcijos þenklas (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Nauja eilutë",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Spausdinti...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Paskesnis puslapis",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Ankstesnis puslapis",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "Didinti mastelá",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Maþinti mastelá",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Uþdaryti",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Vienas puslapis"
+    XTP_IDS_TWOPAGE         "Du puslapiai"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Mëlyna indigo"
+    XTP_IDS_CLR_GRAY80      "Tamsiai pilka"
+    XTP_IDS_CLR_DARK_RED    "Tamsiai raudona"
+    XTP_IDS_CLR_ORANGE      "Oranþinë"
+    XTP_IDS_CLR_DARK_YELLOW "Tamsiai geltona"
+    XTP_IDS_CLR_GREEN       "Þalia"
+    XTP_IDS_CLR_TEAL        "Tamsvai þydra"
+    XTP_IDS_CLR_BLUE        "Mëlyna"
+    XTP_IDS_CLR_BLUEGRAY    "Mëlynai pilka"
+    XTP_IDS_CLR_GRAY50      "Pilka"
+    XTP_IDS_CLR_RED         "Raudona"
+    XTP_IDS_CLR_LIGHTORANGE "Ðviesiai oranþinë"
+    XTP_IDS_CLR_LIME        "Citrininë"
+    XTP_IDS_CLR_SEA_GREEN   "Þalia jûros"
+    XTP_IDS_CLR_AQUA        "Þydra vandens"
+    XTP_IDS_CLR_LIGHT_BLUE  "Ðviesiai mëlyna"
+    XTP_IDS_CLR_VIOLET      "Violetinë"
+    XTP_IDS_CLR_GRAY40      "Ðviesiai pilka"
+    XTP_IDS_CLR_PINK        "Rausva"
+    XTP_IDS_CLR_GOLD        "Auksas"
+    XTP_IDS_CLR_YELLOW      "Geltona"
+    XTP_IDS_CLR_BRIGHT_GREEN "Skaisèiai þalia"
+    XTP_IDS_CLR_TURQUOISE   "Þydra"
+    XTP_IDS_CLR_SKY_BLUE    "Dangiðka"
+    XTP_IDS_CLR_PLUM        "Rudai violetinë"
+    XTP_IDS_CLR_GRAY25      "Pilkðva"
+    XTP_IDS_CLR_ROSE        "Roþinë"
+    XTP_IDS_CLR_TAN         "Geltonai rusva"
+    XTP_IDS_CLR_LIGHT_YELLOW "Ðviesiai geltona"
+    XTP_IDS_CLR_LIGHT_GREEN "Ðviesiai þalia"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Blyðkiai þydra"
+    XTP_IDS_CLR_PALE_BLUE   "Blyðkiai mëlyna"
+    XTP_IDS_CLR_BLACK       "Juoda"
+    XTP_IDS_CLR_BROWN       "Ruda"
+    XTP_IDS_CLR_OLIVE_GREEN "Þalia alyvuogiø"
+    XTP_IDS_CLR_DARK_GREEN  "Tamsiai þalia"
+    XTP_IDS_CLR_DARK_TEAL   "Tamsva mëlynai þydra"
+    XTP_IDS_CLR_DARK_BLUE   "Tamsiai mëlyna"
+    XTP_IDS_CLR_LAVENDER    "Violetinë levandø"
+    XTP_IDS_CLR_WHITE       "Balta"
+    XTP_IDS_CLR_GRAY        "Pilka"
+    XTP_IDS_CLR_MAROON      "Kaðtoninë"
+    XTP_IDS_CLR_OLIVE       "Gelsvai þalia"
+    XTP_IDS_CLR_NAVY        "Tamsiai mëlyna"
+    XTP_IDS_CLR_PURPLE      "Violetinë"
+    XTP_IDS_CLR_SILVER      "Sidabras"
+    XTP_IDS_CLR_FUCHSIA     "Ryðkiai raudona"
+    XTP_IDS_CLR_NOFILL      "Be u?pildo\nBe u?pildo"
+    XTP_IDS_CLR_AUTOMATIC   "Automatin? spalva\nAutomatin? spalva"
+    XTP_IDS_CLR_MORE        "Daugiau spalvø..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

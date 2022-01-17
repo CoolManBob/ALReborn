@@ -1,0 +1,447 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AgcmAIDlg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AgcmAIDlg DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AgcmAIDlg\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AgcmAIDlg.DLL\0"
+            VALUE "ProductName", "AgcmAIDlg 동적 연결 라이브러리\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_AI DIALOG DISCARDABLE  0, 0, 550, 304
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AI Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,189,282,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,-57,24,50,14
+    CONTROL         "List1",IDC_AI_FACTORS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,5,70,100,208
+    COMBOBOX        IDC_AI_FACTOR_TYPE,149,35,120,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,114,35,17,8
+    LTEXT           "ID",IDC_STATIC,114,20,8,8
+    EDITTEXT        IDC_AI_FACTOR_ID,149,20,65,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "List2",IDC_AI_ACTIONS,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,149,110,120,166
+    GROUPBOX        "AI Factor",IDC_STATIC,108,5,380,274
+    LTEXT           "Actions",IDC_STATIC,114,110,25,8
+    PUSHBUTTON      "Add",IDC_AI_FACTOR_ADD,149,50,60,15
+    PUSHBUTTON      "Delete",IDC_AI_FACTOR_DELETE,209,50,60,15
+    PUSHBUTTON      "Edit",IDC_AI_EDIT_CONDITION,244,75,25,30
+    LTEXT           "Condition",IDC_STATIC,114,75,32,8
+    EDITTEXT        IDC_AI_FACTOR_CONDITION,149,75,95,30,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "Target",IDC_STATIC,279,99,200,155
+    CONTROL         "Aggressive",IDC_AI_TARGET_RELATION_AGGRESSIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,294,169,53,10
+    CONTROL         "Friendly",IDC_AI_TARGET_RELATION_FRIENDLY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,384,169,43,10
+    CONTROL         "Agro",IDC_AI_TARGET_AGRO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,294,179,31,10
+    CONTROL         "Damage",IDC_AI_TARGET_HISTORY_DAMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,294,189,43,10
+    CONTROL         "Buffer",IDC_AI_TARGET_HISTORY_BUFFER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,384,189,36,10
+    CONTROL         "Stronger",IDC_AI_TARGET_STRONG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,294,209,44,10
+    LTEXT           "Near",IDC_STATIC,304,199,17,8
+    LTEXT           "Far",IDC_STATIC,394,199,12,8
+    CONTROL         "Weaker",IDC_AI_TARGET_WEAK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,384,209,41,10
+    CONTROL         "Boss",IDC_AI_TARGET_BOSS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,294,219,33,10
+    CONTROL         "Follower",IDC_AI_TARGET_FOLLOWER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,384,219,44,10
+    CONTROL         "Self",IDC_AI_TARGET_SELF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,294,229,29,10
+    CONTROL         "Other",IDC_AI_TARGET_OTHER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,384,229,34,10
+    EDITTEXT        IDC_AI_WEIGHT_RELATION_AGGRESSIVE,349,169,30,12,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_RELATION_FRIENLDY,439,169,31,12,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_AGRO,349,179,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_HISTORY_DAMAGE,349,189,30,12,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_HISTORY_BUFFER,439,189,30,12,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_NEAR,349,199,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_FAR,439,199,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_STRONG,349,209,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_WEAK,439,209,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_BOSS,349,219,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_FOLLOWER,439,219,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_SELF,349,229,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_WEIGHT_OTHER,439,229,30,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_AI_TARGET_BASE,329,109,80,35,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Target Base",IDC_STATIC,284,109,41,8
+    LTEXT           "ID",IDC_STATIC,414,109,8,8
+    EDITTEXT        IDC_AI_TARGET_ID,429,109,40,12,ES_AUTOHSCROLL
+    LTEXT           "Position",IDC_STATIC,284,124,28,8
+    EDITTEXT        IDC_AI_TARGET_POS_X,329,124,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_TARGET_POS_Y,354,124,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_TARGET_POS_Z,379,124,25,12,ES_AUTOHSCROLL
+    LTEXT           "Radius",IDC_STATIC,284,139,24,8
+    EDITTEXT        IDC_AI_TARGET_RADIUS,329,139,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Target Weight",IDC_STATIC,284,154,190,95
+    LTEXT           "Name",IDC_STATIC,5,25,20,8
+    EDITTEXT        IDC_AI_NAME,50,25,55,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ID",IDC_STATIC,5,10,8,8
+    EDITTEXT        IDC_AI_ID,50,10,28,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Visibility",IDC_STATIC,5,40,29,8
+    EDITTEXT        IDC_AI_VISIBILITY,50,40,55,12,ES_AUTOHSCROLL
+    LTEXT           "Interval",IDC_STATIC,5,55,26,8
+    EDITTEXT        IDC_AI_INTERVAL,50,55,55,12,ES_AUTOHSCROLL
+    GROUPBOX        "Action",IDC_STATIC,274,10,210,265
+    COMBOBOX        IDC_AI_ACTION_TYPE,329,20,80,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_AI_ACTION_RATE,329,35,40,12,ES_AUTOHSCROLL
+    LTEXT           "Action Type",IDC_STATIC,284,20,39,8
+    LTEXT           "Action Rate",IDC_STATIC,284,35,38,8
+    PUSHBUTTON      "Add / Update",IDC_AI_ACTION_UPDATE,313,257,90,15
+    PUSHBUTTON      "Delete",IDC_AI_ACTION_DELETE,403,257,50,15
+    PUSHBUTTON      "Item",IDC_AI_USEITEM,283,57,47,16
+    PUSHBUTTON      "Skill",IDC_AI_USESKILL,329,57,47,16
+    PUSHBUTTON      "SCREAM",IDC_AI_SCREAM,376,57,47,16
+END
+
+IDD_DIALOG_AI_TEMPLATES DIALOG DISCARDABLE  0, 0, 298, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AI Template Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,240,190,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,-57,24,50,14
+    CONTROL         "List1",IDC_AI_TEMPLATES,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,5,35,230,170
+    PUSHBUTTON      "Add",IDC_AI_TEMPLATE_ADD,170,20,50,15
+    PUSHBUTTON      "Edit",IDC_AI_TEMPLATE_EDIT,240,35,50,15
+    PUSHBUTTON      "Delete",IDC_AI_TEMPLATE_DELETE,240,50,50,15
+    PUSHBUTTON      "Select",IDC_AI_TEMPLATE_SELECT,240,80,50,15
+    LTEXT           "Name",IDC_STATIC,5,20,20,8
+    EDITTEXT        IDC_AI_TEMPLATE_NAME,50,20,115,12,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,5,5,8,8
+    EDITTEXT        IDC_AI_TEMPLATE_ID,50,5,55,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_AI_FACTOR DIALOG DISCARDABLE  0, 0, 146, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AI Character Factor Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,50,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,-57,29,50,14
+    COMBOBOX        IDC_AI_FACTOR_COMPARE,5,10,80,45,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit Factors",IDC_AI_FACTOR_EDIT,90,10,50,14
+END
+
+IDD_DIALOG_AI_STATUS DIALOG DISCARDABLE  0, 0, 181, 39
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AI Character Status Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,20,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,-57,20,50,14
+    COMBOBOX        IDC_AI_STATUS,61,5,115,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Action Status",IDC_STATIC,5,5,43,8
+END
+
+IDD_DIALOG_AI_ITEM DIALOG DISCARDABLE  0, 0, 194, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AI Character Item Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,24,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,-57,24,50,14
+    LTEXT           "Item Template",IDC_STATIC,10,5,47,8
+    COMBOBOX        IDC_AI_ITEM_TEMPLATE,69,5,120,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_AI_EDIT_USE_ITEM DIALOGEX 0, 0, 179, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "사용아이템 등록"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_AI_ITEM_USE_COMBO,52,82,118,62,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "아이템ID :",IDC_STATIC,10,85,39,11
+    EDITTEXT        IDC_AI_USE_ITEM_HP_CON_EDIT,25,17,50,12,ES_AUTOHSCROLL
+    LTEXT           "HP :",IDC_STATIC,10,17,27,9
+    EDITTEXT        IDC_AI_USE_ITEM_RATE_EDIT,52,97,118,12,ES_AUTOHSCROLL
+    LTEXT           "가중치 :",IDC_STATIC,10,98,29,10
+    CONTROL         "List3",IDC_AI_USE_ITEM_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,12,113,158,78
+    GROUPBOX        "조건",IDC_STATIC,5,5,170,57,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    GROUPBOX        "사용 아이템 리스트",IDC_STATIC,5,70,170,148,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Add",IDC_AI_USE_ITEM_ADD_BUTTON,13,195,77,14
+    PUSHBUTTON      "Remove",IDC_AI_USE_ITEM_REMOVE_BUTTON,90,195,81,14
+    PUSHBUTTON      "O&K",IDC_AI_USE_ITEM_OK_BUTTON,5,225,80,13
+    PUSHBUTTON      "C&ancel",IDC_AI_USE_ITEM_CANCEL_BUTTON,85,225,88,13
+END
+
+IDD_DIALOG_AI_YELL DIALOG DISCARDABLE  0, 0, 219, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    LTEXT           "FEAR LV1:",IDC_STATIC,15,15,35,10
+    LTEXT           "FEAR LV2:",IDC_STATIC,15,30,35,10
+    LTEXT           "FEAR LV3:",IDC_STATIC,15,45,35,10
+    LTEXT           "HELP LV3:",IDC_STATIC,125,45,35,10
+    LTEXT           "HELP LV2:",IDC_STATIC,125,30,35,10
+    LTEXT           "HELP LV1:",IDC_STATIC,125,15,35,10
+    EDITTEXT        IDC_AI_FEARSCREAM_EDIT1,50,15,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_FEARSCREAM_EDIT3,50,45,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_FEARSCREAM_EDIT2,50,30,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_HELPSCREAM_EDIT3,160,45,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_HELPSCREAM_EDIT2,160,30,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AI_HELPSCREAM_EDIT1,160,15,48,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_AI_HELP_SCREAM_CHARTYLE_LIST,125,90,85,76,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AI_HELP_SCREAM_CHARTYPE_COMBO,125,75,85,65,
+                    CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_AI_HELP_SCREAM_CHAR_ADD_BUTTON,125,170,45,15
+    PUSHBUTTON      "Remove",IDC_AI_HELP_SCREAM_CHAR_REMOVE_BUTTON,170,170,
+                    40,15
+    GROUPBOX        "Fear Scream",IDC_STATIC,5,5,100,60
+    GROUPBOX        "Help Scream",IDC_STATIC,115,5,100,185
+    PUSHBUTTON      "O&K",IDC_AI_SCREAM_OK_BUTTON,5,195,105,15
+    PUSHBUTTON      "C&ancel",IDC_AI_SCREAM_CANCEL_BUTTON,110,195,105,15
+    CONTROL         "Help All",IDC_AI_HELP_SCREAM_ALL_CHAR_TYPE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,60,85,10
+END
+
+IDD_DIALOG_AI_EDIT_USE_SKILL DIALOGEX 0, 0, 179, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "사용스킬 등록"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_AI_SKILL_USE_COMBO,52,82,118,62,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "스킬ID :",IDC_STATIC,10,85,39,11
+    EDITTEXT        IDC_AI_USE_SKILL_HP_CON_EDIT,25,17,50,12,ES_AUTOHSCROLL
+    LTEXT           "HP :",IDC_STATIC,10,17,27,9
+    EDITTEXT        IDC_AI_USE_SKILL_RATE_EDIT,52,97,118,12,ES_AUTOHSCROLL
+    LTEXT           "가중치 :",IDC_STATIC,10,98,29,10
+    CONTROL         "List3",IDC_AI_USE_SKILL_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,12,113,158,78
+    GROUPBOX        "조건",IDC_STATIC,5,5,170,57,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_STATICEDGE
+    GROUPBOX        "사용 스킬 리스트",IDC_STATIC,5,70,170,148,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    PUSHBUTTON      "Add",IDC_AI_USE_SKILL_ADD_BUTTON,13,195,77,14
+    PUSHBUTTON      "Remove",IDC_AI_USE_SKILL_REMOVE_BUTTON,90,195,81,14
+    PUSHBUTTON      "O&K",IDC_AI_USE_SKILL_OK_BUTTON,5,225,80,13
+    PUSHBUTTON      "C&ancel",IDC_AI_USE_SKILL_CANCEL_BUTTON,85,225,88,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_AI, DIALOG
+    BEGIN
+        RIGHTMARGIN, 546
+        TOPMARGIN, 5
+    END
+
+    IDD_DIALOG_AI_FACTOR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 140
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_DIALOG_AI_STATUS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 176
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_DIALOG_AI_ITEM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 189
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_DIALOG_AI_EDIT_USE_ITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG_AI_YELL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG_AI_EDIT_USE_SKILL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_AI_FACTOR DLGINIT
+BEGIN
+    IDC_AI_FACTOR_COMPARE, 0x403, 10, 0
+0x654c, 0x7373, 0x7420, 0x6168, 0x006e, 
+    IDC_AI_FACTOR_COMPARE, 0x403, 6, 0
+0x7145, 0x6175, 0x006c, 
+    IDC_AI_FACTOR_COMPARE, 0x403, 12, 0
+0x614c, 0x6772, 0x7265, 0x7420, 0x6168, 0x006e, 
+    0
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\AgcmAIDlg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,252 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 		lexClass:
+//			name		= c_PascalString
+//		+	parent		= c_Pascal
+//		+	parent:dyn	= c_Pascal
+//
+//		+	children		= 0
+//		+	children		= class1, class2, ...
+//
+//		+	previous:class			=	
+//		+	previous:tag			=	
+//		+	previous:tag:separators	=	
+//
+//		+	start:class		= 
+//		+	start:Tag		= '"'
+//
+//		+	skip:Tag		= '\"'
+//
+//		+	end:class		= //
+//		+	end:Tag			= '"'
+//		+	end:separators	= ' '
+//
+//		+	Token:tag		= 'if', 'for', 'while', 'do'
+//		+	Token:start:separators	= 
+//		+	Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//		txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//		txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//		txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//		txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//		txt:Bold	= 1 // {1,0} default: 0
+//		txt:Italic	= 1 // {1,0} default: 0
+//		txt:Underline	= 1 // {1,0} default: 0
+//
+//		caseSensitive	= 1 // {1,0} default: 0
+//
+//		Collapsable	= 1 // {1,0} default: 0
+//		CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//		ParseOnScreen	= 1 // {1,0} default: 0
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+lexClass: 
+	name			= c_Pascal
+	parent:file		= <*.pas|*.dpr|*.dpk|*.inc|*.int>	
+	caseSensitive		= 0
+
+lexClass:
+	name		= c_PascalCodeBlock_Start		
+	parent		= c_Pascal, c_PascalCodeBlock	
+	children	= 0	
+	previous:tag	= ';', ' ', '\t', @eol
+	start:Tag	= 'begin'
+	end:Tag		= '\t', ' ', @eol
+	end:Separators	= '\t', ' ', @eol
+	txt:colorFG	= 0x0000FF
+    txt:bold    = 1
+	
+lexClass:
+	name		= c_PascalCodeBlock_End		
+	parent		= c_Pascal, c_PascalCodeBlock, c_PascalCodeBlock	
+	children	= 0	
+	previous:tag	= @specs, ' ', '\t', @eol
+	start:Tag	= 'end'	
+	end:Separators	= @specs, @eol
+	txt:colorFG	= 0x0000FF
+    txt:bold    = 1
+
+lexClass:
+	name		= c_PascalCodeBlock	
+	parent		= c_Pascal, c_PascalCodeBlock
+	children	= c_PascalCodeBlock_End		
+	start:CLASS	= c_PascalCodeBlock_Start	
+	end:CLASS	= c_PascalCodeBlock_End	
+	Collapsable	= 1 
+	CollapsedText	= '...'
+
+lexClass: 	
+	name			= c_String	
+	parent:dyn		= c_Pascal, c_PascalCodeBlock
+	children		= 0
+	start:Tag		= '"'
+	skip:Tag		= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag			= '"', @eol
+	txt:colorFG		= 0xE00000
+
+lexClass: 	
+	name			= c_String_char	
+	parent:dyn		= c_Pascal, c_PascalCodeBlock
+	children		= 0
+	start:Tag		= '\''
+	//skip:Tag		= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag			= '\'', @eol
+	txt:colorFG		= 0xE00000
+
+lexClass:	
+	name		= c_PascalCommentSL
+	parent		= c_Pascal, c_PascalCodeBlock
+	children	= 0		
+	start:tag	='//'
+	skip:Tag	= '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:tag		= @eol
+	txt:colorFG	= 0x00A000
+
+lexClass:
+	name		= c_PascalCommentML1	
+	parent:dyn	= c_Pascal, c_PascalCodeBlock
+	children	= 0
+	start:Tag	='{'
+	end:Tag		='}'
+	Collapsable	= 1 
+	CollapsedText	= '{...}' 	
+	txt:colorFG	= 0x00CF00
+
+lexClass:
+	name		= c_PascalCommentML2
+	parent:dyn	= c_Pascal, c_PascalCodeBlock
+	children	= 0
+	start:Tag	='(*'
+	end:Tag		='*)'
+	Collapsable	= 1 
+	CollapsedText	= '(*...*)' 	
+	txt:colorFG	= 0x00CF00
+
+lexClass:	
+	name		= c_KeywordsWord
+	ParseOnScreen	= 1
+	parent:Dyn	= c_Pascal, c_PascalCodeBlock
+	children	= 0	
+	token:tag	= 'and', 'array', 'as', 'const', 'div', 'file', 'in', 'is'
+	token:tag	= 'mod', 'not', 'of', 'or', 'out', 'shl', 'shr', 'threadvar', 'var', 'xor'
+	token:start:separators	= @specs, @eol
+	token:end:separators	= @specs, @eol
+	txt:colorFG	= 0xAA33BB
+	txt:bold = 1
+
+lexClass:	
+	name		= c_KeywordsConst
+	ParseOnScreen	= 1
+	parent:Dyn	= c_Pascal, c_PascalCodeBlock
+	children	= 0	
+	token:tag	= 'False', 'True', 'nil', 'null'
+	token:start:separators	= @specs, @eol
+	token:end:separators	= @specs, @eol
+	txt:colorFG	= 0xAA33BB
+	txt:bold = 1
+
+lexClass:	
+	name		= c_KeywordsType
+	ParseOnScreen	= 1
+	parent:Dyn	= c_Pascal, c_PascalCodeBlock
+	children	= 0	
+    // Types
+	token:tag	= 'AnsiChar', 'AnsiString', 'Boolean', 'Byte', 'ByteBool'
+	token:tag	= 'Cardinal', 'Comp', 'Currency', 'DWord', 'Integer'
+	token:tag	= 'LongBool', 'LongInt', 'LongWord', 'OleVariant', 'OpenString'
+	token:tag	= 'PAnsiChar', 'PWideChar', 'ShortInt', 'ShortString', 'SmallInt'
+	token:tag	= 'TDateTime', 'TextFile', 'Variant', 'WideChar', 'WideString'
+	token:tag	= 'Word', 'WordBool'
+    // Smalls
+	token:tag	= 'byte', 'char', 'double', 'extended', 'int64'
+	token:tag	= 'real', 'single', 'string', 'text', 'UINT'
+    // .NET
+	token:tag	= 'PChar', 'Pointer', 'real48'
+	token:start:separators	= @specs, @eol
+	token:end:separators	= @specs, @eol
+	txt:colorFG	= 0xAA33BB
+	txt:bold = 1
+
+lexClass:	
+	name		= c_KeywordsPropWord
+	ParseOnScreen	= 1
+	parent:Dyn	= c_PascalProperty
+	children	= 0	
+	token:tag	= 'default', 'implements', 'index', 'nodefault'
+	token:tag	= 'read', 'readonly', 'stored', 'write', 'writeonly'
+	token:start:separators	= @specs, @eol
+	token:end:separators	= @specs, @eol
+	txt:colorFG	= 0xAA33BB
+	txt:bold = 1
+
+lexClass:	
+	name		= c_KeywordsExport
+	ParseOnScreen	= 1
+	parent:Dyn	= c_PascalExport
+	children	= 0	
+	token:tag	= 'external', 'name', 'index'
+	token:start:separators	= @specs, @eol
+	token:end:separators	= @specs, @eol
+	txt:colorFG	= 0xAA33BB
+	txt:bold = 1
+
+lexClass:	
+	name		= c_KeywordsClass
+	ParseOnScreen	= 1
+	parent:Dyn	= c_PascalClass
+	children	= 0	
+	token:tag	= 'private', 'protected', 'public', 'published'
+	token:tag	= 'dynamic', 'override', 'reintroduce', 'virtual'
+	token:tag	= 'default', 'message'
+	// .NET
+	token:tag	= 'strict', 'helper', 'sealed', 'final', 'static'
+	token:start:separators	= @specs, @eol
+	token:end:separators	= @specs, @eol
+	txt:colorFG	= 0xAA33BB
+	txt:bold = 1
+
+lexClass:	
+	name		= c_KeywordsInternal
+	ParseOnScreen	= 1
+	parent:Dyn	= c_PascalClass
+	children	= 0	
+	token:tag	= 'abstract', 'asm', 'assembler', 'automated'
+	token:tag	= 'begin', 'break', 'case', 'cdecl', 'class', 'constructor', 'contains', 'continue'
+	token:tag	= 'deprecated', 'destructor', 'dispid', 'dispinterface', 'do', 'downto'
+	token:tag	= 'else', 'end', 'except', 'exit', 'experimental', 'export', 'exports', 'external'
+	token:tag	= 'far', 'finalization', 'finally', 'for', 'forward', 'function'
+	token:tag	= 'goto', 'if', 'implementation', 'inherited', 'initialization', 'inline', 'interface', 'interrupt'
+	token:tag	= 'label', 'library', 'near', 'object', 'on', 'operator', 'overload'
+	token:tag	= 'package', 'packed', 'pascal', 'platform', 'procedure', 'program'
+	token:tag	= 'raise', 'record', 'repeat', 'requires', 'resident', 'result', 'resourcestring'
+	token:tag	= 'safecall', 'set', 'self', 'stdcall', 'register'
+	token:tag	= 'then', 'to', 'try', 'type'
+	token:tag	= 'unit', 'until', 'uses', 'while', 'with'
+	// .NET unsafe
+	token:tag	= 'absolute'
+	//token:tag	= '', '', '', '', '', '', ''
+	token:start:separators	= @specs, @eol
+	token:end:separators	= @specs, @eol
+	txt:colorFG	= 0xAA33BB
+	txt:bold = 1
+

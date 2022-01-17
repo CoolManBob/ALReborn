@@ -1,0 +1,795 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\AlefAdminDLL.rc2""  // Microsoft Visual C++에서 편집하지 않은 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "Comments", "만든이 : 김태희"
+            VALUE "CompanyName", "(주)NHN Games"
+            VALUE "FileDescription", "-_-"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AlefAdminDLL.dll"
+            VALUE "LegalCopyright", "(주)NHN Games.  All rights reserved."
+            VALUE "OriginalFilename", "AlefAdminDLL.dll"
+            VALUE "ProductName", "ArchLord Admin Client"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 562, 455
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "AlefAdminClient (2010.02.17)"
+MENU IDR_MENU_MAIN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CB_SEARCH_TYPE,2,1,68,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_SEARCH_FIELD,72,1,132,13,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "검색",IDC_B_SEARCH,206,1,50,13
+    CONTROL         "",IDC_LC_SEARCH_RESULT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,2,16,556,75
+    CONTROL         "",IDC_TAB_MAIN,"SysTabControl32",0x0,2,94,556,276
+    CONTROL         "",IDC_TAB_MESSAGE,"SysTabControl32",0x0,2,371,556,70
+    RTEXT           "",IDC_S_CURRENT_USER,368,1,187,8
+    CONTROL         "살려줘",IDC_CH_SOS,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,262,4,39,8
+END
+
+IDD_CHARACTER DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_CHAR,"SysTabControl32",0x0,274,6,178,272
+    CONTROL         "",IDC_S_CHAR_GRID_PLACE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,4,6,267,271
+END
+
+IDD_ITEM DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_CB_POS,4,6,89,129,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "새로고침",IDC_B_REFRESH,96,6,58,14
+    CONTROL         "",IDC_LC_ITEM,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,24,282,192
+    CONTROL         "",IDC_L_ITEM_CONVERT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,290,29,163,47
+    PUSHBUTTON      "새로고침",IDC_B_REFRESH_CONVERT,291,108,45,13
+    PUSHBUTTON      "삭제",IDC_B_DELETE,420,108,33,13
+    COMBOBOX        IDC_CB_CONVERT_PHYSICAL,290,78,30,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_CONVERT_SOCKET,322,78,27,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_CONVERT_SPIRIT_STONE,352,78,102,114,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_CONVERT_STONE,290,92,116,117,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "개조실행",IDC_B_CONVERT,408,92,45,13
+    LISTBOX         IDC_L_OPTION_ADDED,290,132,71,42,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_L_OPTION_ALL,382,144,69,30,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_B_OPTION_ADD,363,145,18,12
+    PUSHBUTTON      ">>",IDC_B_OPTION_REMOVE,363,157,18,12
+    EDITTEXT        IDC_E_OPTION_DESC,290,175,163,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_CREATE_COUNT,100,245,25,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "생성",IDC_B_CREATE,372,259,82,16,BS_MULTILINE
+    EDITTEXT        IDC_E_CREATE_TID,27,245,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "개조",IDC_STATIC,288,19,168,105
+    GROUPBOX        "아이템생성",IDC_STATIC,4,237,452,40
+    LTEXT           "개수 :",IDC_S_CREATE_TID2,80,248,19,8
+    GROUPBOX        "옵션",IDC_STATIC,288,125,168,64
+    LTEXT           "[아이템 주인]",IDC_STATIC,175,8,44,8
+    LTEXT           "현재 캐릭터 이름이 옵니다.",IDC_S_ITEM_OWNER,223,8,227,8
+    LTEXT           "TID :",IDC_STATIC,9,248,16,9
+    COMBOBOX        IDC_CB_ITEM_LIST,9,260,117,88,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,128,240,1,36
+    CONTROL         "",IDC_CHK_USING,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,138,262,8,8
+    LTEXT           "사용중",IDC_STATIC,132,249,21,8
+    LTEXT           "남은시간 :",IDC_S_REMAIN_TIME,158,248,32,8
+    EDITTEXT        IDC_E_R_TIME_DAY,193,246,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "일",IDC_S_R_TIME_DATE,221,248,8,8
+    EDITTEXT        IDC_E_R_TIME_HOUR,232,246,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "시간",IDC_S_R_TIME_HOUR,259,248,8,8
+    EDITTEXT        IDC_E_R_TIME_MIN,270,246,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "분",IDC_S_R_TIME_MIN,298,248,8,8
+    EDITTEXT        IDC_E_R_TIME_SEC,307,246,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "초",IDC_S_R_TIME_SEC,335,248,8,8
+    COMBOBOX        IDC_CB_E_DATE_YEAR,193,261,28,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "/",IDC_STATIC,224,263,8,8
+    COMBOBOX        IDC_CB_E_DATE_MONTH,232,261,25,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "/",IDC_STATIC,262,263,8,8
+    COMBOBOX        IDC_CB_E_DATE_DAY,270,261,25,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_E_DATE_HOUR,307,261,25,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           ":",IDC_STATIC,335,263,8,8
+    COMBOBOX        IDC_CB_E_DATE_MIN,342,261,25,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "검색",IDC_B_ITEM_SEARCH,54,245,24,13
+    COMBOBOX        IDC_CB_EXPIRE_DATE_DEFAULT,157,261,33,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_DELETE_REASON,337,108,83,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_CREATE_REASON,372,243,82,69,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,369,240,1,36
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,291,106,162,1
+    LTEXT           "내구도 :",IDC_STATIC,5,219,27,8
+    EDITTEXT        IDC_E_DURABILITY,32,217,36,12,ES_AUTOHSCROLL
+    LTEXT           "/",IDC_STATIC,71,219,8,8
+    PUSHBUTTON      "변경",IDC_B_ITEM_UPDATE,115,217,24,13
+    EDITTEXT        IDC_E_MAX_DURABILITY,77,217,36,12,ES_AUTOHSCROLL
+    LTEXT           "스킬효과",IDC_STATIC,155,219,28,8
+    COMBOBOX        IDC_CB_SKILLPLUS,186,217,101,59,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OPT_SEARCH_BOX,384,131,45,12,ES_AUTOHSCROLL
+    LTEXT           "옵션 :",IDC_STATIC,364,132,19,13,SS_CENTERIMAGE
+    PUSHBUTTON      "검색",IDC_B_OPT_SEARCH,431,130,21,13
+    LISTBOX         IDC_L_SKILL_ADDED,290,196,71,41,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_L_SKILL_ALL,382,209,69,29,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_B_SKILL_ADD,363,209,18,12
+    PUSHBUTTON      ">>",IDC_B_SKILL_REMOVE,363,221,18,12
+    GROUPBOX        "스킬옵션",IDC_STATIC,288,189,168,51
+    EDITTEXT        IDC_SKILL_SEARCH_BOX,384,195,45,12,ES_AUTOHSCROLL
+    LTEXT           "스킬 :",IDC_STATIC,364,196,19,13,SS_CENTERIMAGE
+    PUSHBUTTON      "검색",IDC_B_SKILL_SEARCH,431,194,21,13
+END
+
+IDD_SKILL DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "배운 스킬",IDC_STATIC,4,2,223,257
+    GROUPBOX        "스킬 목록",IDC_STATIC,230,2,224,257
+    COMBOBOX        IDC_CB_SKILL_TYPE,153,13,60,95,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LV_OWN_SKILL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,29,216,210
+    COMBOBOX        IDC_CB_SKILL_CATEGORY,233,13,207,125,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LV_ALL_SKILL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,233,29,216,226
+    PUSHBUTTON      "전체 초기화",IDC_B_INIT_SKILL_ALL,177,263,41,15
+    PUSHBUTTON      "부분 초기화",IDC_B_INIT_SKILL_SPECIFIC,220,263,41,15
+    PUSHBUTTON      "레벨업",IDC_B_LEVEL_UP,263,263,41,15
+    PUSHBUTTON      "배우기",IDC_B_LEARN,349,263,41,15
+    EDITTEXT        IDC_E_REMAIN_POINT,41,264,22,12,ES_AUTOHSCROLL
+    LTEXT           "스킬포인트",IDC_STATIC,4,266,35,9
+    PUSHBUTTON      "새로고침",IDC_B_REFRESH,413,263,41,15
+    CONTROL         "",IDC_CK_OWN_SKILL_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,14,9,12
+    CONTROL         "",IDC_CK_ALL_SKILL_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,441,14,9,12
+    PUSHBUTTON      "레벨다운",IDC_B_LEVEL_DOWN,306,263,41,15
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,67,262,1,18
+    EDITTEXT        IDC_E_PRODUCT_LEVEL,31,243,164,12,ES_AUTOHSCROLL
+    LTEXT           "숙련도",IDC_STATIC,8,245,21,8
+    PUSHBUTTON      "수정",IDC_B_PRODUCT_EXP_CHANGE,196,242,26,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,173,262,1,18
+    LTEXT           "",IDC_S_SKILL_CHARNAME,9,16,141,8
+END
+
+IDD_OPTION DIALOGEX 0, 0, 185, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,38,95,50,14
+    PUSHBUTTON      "취소",IDCANCEL,98,95,50,14
+    CONTROL         "",IDC_SL_ALPHA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,8,43,169,10
+    GROUPBOX        "투명도 조절",IDC_STATIC,3,2,179,55
+    CONTROL         "윈도우를 투명하게 합니다.",IDC_CH_USE_LAYERED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,16,158,8
+    LTEXT           "70%",IDC_S_ALPHA,82,30,20,8
+    GROUPBOX        "채팅",IDC_STATIC,3,61,179,31
+    CONTROL         "귓말 저장",IDC_CH_SAVE_WHISPER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,75,48,8
+END
+
+IDD_NOTICE DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_E_NOTICE,4,6,391,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "보내기",IDC_B_SEND,397,6,58,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,4,24,452,1
+    EDITTEXT        IDC_E_NOTICE_TEXT,4,30,391,247,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "재생",IDC_B_PLAY,397,30,58,14
+    PUSHBUTTON      "일시정지",IDC_B_PAUSE,397,44,29,14
+    PUSHBUTTON      "정지",IDC_B_STOP,426,44,29,14
+    PUSHBUTTON      "도움말",IDC_B_HELP,397,70,58,14
+    PUSHBUTTON      "저장",IDC_B_SAVE,397,108,29,14
+    PUSHBUTTON      "새로저장",IDC_B_SAVE_AS,426,108,29,14
+    PUSHBUTTON      "열기",IDC_B_LOAD,397,122,29,14
+    LISTBOX         IDC_L_NOTICE,397,138,59,140,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_NOTICE_FILENAME,397,95,59,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "삭제",IDC_B_DELETE,426,122,29,14
+END
+
+IDD_CHARMACRO DIALOGEX 0, 0, 161, 238
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    LISTBOX         IDC_L_MACRO,1,13,158,207,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "매크로 실행하기",IDC_B_RUN_MACRO,1,222,158,14
+    PUSHBUTTON      "L",IDC_B_LOAD,116,2,9,9
+    PUSHBUTTON      "+",IDC_B_ADD,126,2,9,9
+    PUSHBUTTON      "-",IDC_B_REMOVE,137,2,9,9
+    PUSHBUTTON      "S",IDC_B_SAVE,148,2,9,9
+    LTEXT           "매크로 파일 이름",IDC_S_MACRO_FILENAME,2,2,113,8
+END
+
+IDD_GUILD DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "길드 검색",IDC_STATIC,4,4,224,26
+    GROUPBOX        "서버의 길드 정보",IDC_STATIC,232,4,224,26
+    COMBOBOX        IDC_CB_GUILD_SEARCH_TYPE,7,14,71,64,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_GUILD_SEARCH_FIELD,78,13,114,14,ES_AUTOHSCROLL
+    LTEXT           "총 길드 수 :",IDC_STATIC,235,17,37,9
+    LTEXT           "000000",IDC_S_GUILD_COUNT,275,17,22,9
+    LTEXT           "000000",IDC_S_GUILD_MEMBER_COUNT,393,17,21,9
+    PUSHBUTTON      "새로고침",IDC_B_GUILD_INFO_REFRESH,421,13,31,14
+    PUSHBUTTON      "검색",IDC_B_GUILD_SEARCH,193,13,31,14
+    GROUPBOX        "길드 정보",IDC_STATIC,4,34,452,245
+    EDITTEXT        IDC_E_GUILD_NOTICE,353,48,100,211,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "길드에 가입한 캐릭터 수 :",IDC_STATIC,310,17,80,9
+    CONTROL         "",IDC_LV_MEMBER,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,185,48,167,211
+    CONTROL         "",IDC_LV_GUILD,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,48,178,211
+    PUSHBUTTON      "길드 해체",IDC_B_GUILD_DESTROY,142,261,43,15
+    PUSHBUTTON      "강퇴",IDC_B_MEMBER_FORCED_LEAVE,267,261,43,15
+    PUSHBUTTON      "마스터 변경",IDC_B_CHANGE_MASTER,310,261,43,15
+    PUSHBUTTON      "공지 변경",IDC_B_CHANGE_NOTICE,410,261,43,15
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 262, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin Client"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,38,92,185,14
+    LTEXT           "Last Build Date : 2010-02-17",IDC_STATIC,84,52,92,8
+END
+
+IDD_WC DIALOGEX 0, 0, 161, 238
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    PUSHBUTTON      "새로고침",IDC_B_WC_REFRESH,2,2,156,16
+    EDITTEXT        IDC_E_WC_CONTENT,1,20,157,196,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "현상수배삭제",IDC_B_WC_DELETE,2,219,156,16
+END
+
+IDD_USER DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "본토",IDC_STATIC,7,12,149,261
+    GROUPBOX        "정령계",IDC_STATIC,325,59,130,124,NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "던전",IDC_STATIC,326,61,130,124,NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "마을",IDC_STATIC,325,55,130,124,NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "배틀그라운드",IDC_STATIC,163,12,149,261
+    CONTROL         "",IDC_LISTMAIN,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,25,138,226
+    CONTROL         "",IDC_LISTDUNGEON,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | NOT WS_VISIBLE | WS_DISABLED | WS_BORDER | WS_TABSTOP,331,75,118,91
+    CONTROL         "",IDC_LISTBATTLE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,168,26,138,226
+    CONTROL         "",IDC_LISTSPIRIT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | NOT WS_VISIBLE | WS_DISABLED | WS_BORDER | WS_TABSTOP,331,73,118,91
+    CONTROL         "",IDC_LISTVILLAGE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | NOT WS_VISIBLE | WS_DISABLED | WS_BORDER | WS_TABSTOP,331,69,118,91
+    PUSHBUTTON      "요청하기",IDC_USER_REQUEST,394,250,47,18
+    RTEXT           "인원 :",IDC_STATIC,80,254,18,14,SS_CENTERIMAGE
+    CTEXT           "0",IDC_STATIC_MAINUSER,103,254,25,14,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "인원 :",IDC_STATIC,399,169,18,14,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_DISABLED
+    CTEXT           "0",IDC_STATIC_DUNGEONUSER,422,169,25,14,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_DISABLED | WS_BORDER
+    RTEXT           "인원 :",IDC_STATIC,233,254,18,14,SS_CENTERIMAGE
+    CTEXT           "0",IDC_STATIC_BATTLEUSER,256,254,25,14,SS_CENTERIMAGE | WS_BORDER
+    RTEXT           "인원 :",IDC_STATIC,399,167,18,14,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_DISABLED
+    CTEXT           "0",IDC_STATIC_SPIRITUSER,422,167,25,14,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_DISABLED | WS_BORDER
+    RTEXT           "인원 :",IDC_STATIC,399,163,18,14,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_DISABLED
+    CTEXT           "0",IDC_STATIC_VILLAGEUSER,422,163,25,14,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_DISABLED | WS_BORDER
+    LTEXT           "총인원 :",IDC_STATIC,318,255,29,11
+    CTEXT           "0",IDC_STATIC_ALLUSER,347,252,37,14,SS_CENTERIMAGE | WS_BORDER
+END
+
+IDD_QUEST DIALOGEX 0, 0, 160, 236
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    CTEXT           "퀘스트",IDC_STATIC,2,2,156,15,SS_CENTERIMAGE
+    LISTBOX         IDC_L_QUEST,1,14,158,221,LBS_DISABLENOSCROLL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_CHARTITLE DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TITLE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,325,33,125,218
+    CONTROL         "",IDC_TITLE_ALL_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,1,34,127,217
+    CTEXT           "보유 타이틀 퀘스트",IDC_STATIC,150,14,143,15,SS_CENTERIMAGE
+    CTEXT           "보유 타이틀",IDC_STATIC,343,13,99,15,SS_CENTERIMAGE
+    CONTROL         "",IDC_TITLE_QUEST_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,129,34,194,196
+    CTEXT           "전체 타이틀 리스트",IDC_STATIC,3,14,143,15,SS_CENTERIMAGE
+    PUSHBUTTON      "타이틀 퀘스트 추가",IDC_TITLE_QUEST_ADD,10,255,106,13
+    PUSHBUTTON      "퀘스트 삭제",IDC_QUEST_DELETE,260,255,56,14
+    PUSHBUTTON      "퀘스트 값수정",IDC_QUEST_VALUE_EDIT,134,255,62,14
+    PUSHBUTTON      "타이틀 사용",IDC_TITLE_USE,337,255,55,14
+    PUSHBUTTON      "타이틀 삭제",IDC_TITLE_DELETE,396,255,50,14
+    PUSHBUTTON      "퀘스트 완료",IDC_QUEST_COMPLETE,197,255,61,14
+    CTEXT           "변경할 값 :",IDC_STATIC,131,235,73,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TITLE_QUEST_CHECK_VALUE,190,235,59,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 555
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 448
+    END
+
+    IDD_CHARACTER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 185
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_ITEM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 456
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_SKILL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 412
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_CHARMACRO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GUILD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 185
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_WC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_CHARTITLE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 453
+        BOTTOMMARGIN, 277
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "항상 위(&T)",                    ID_32771
+        MENUITEM "종료(&X)",                      ID_32772
+    END
+    POPUP "도구(&T)"
+    BEGIN
+        MENUITEM "옵션(&O)",                      ID_OPTION
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "AlefAdminClient 정보(&H)",      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ITEM DLGINIT
+BEGIN
+    IDC_CB_EXPIRE_DATE_DEFAULT, 0x403, 7, 0
+0xbec1, 0xe1b7, 0xcfc0, "\000" 
+    IDC_CB_EXPIRE_DATE_DEFAULT, 0x403, 7, 0
+0xe2b1, 0xbbba, 0xaab0, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_RESULT_1       "캐릭터 '%s' 의 '%s' 을(를) '%d' 로 수정하였습니다."
+    IDS_EDIT_RESULT_2       "캐릭터 '%s' 의 '%s' 을(를) '%.2f' 로 수정하였습니다."
+    IDS_EDIT_RESULT_3       "캐릭터 '%s' 의 '%s' 을(를) '%I64d' 로 수정하였습니다."
+    IDS_EDIT_RESULT_4       "캐릭터 '%s' 의 '%s' 을(를) '%s' 로 수정하였습니다."
+    IDS_EDIT_RESULT_FAILURE "수정에 실패하였습니다."
+    IDS_SKILL_LEARN_ALREADY "캐릭터 '%s' 가 '%s' 스킬을 이미 배웠기 때문에 업그레이를 합니다."
+    IDS_SKILL_LEARN_SUCCESS "캐릭터 '%s' 가 '%s' 스킬을 배웠습니다."
+    IDS_SKILL_LEARN_FAILURE "캐릭터 '%s' 는 '%s' 스킬을 배울 수 없습니다."
+    IDS_SKILL_UPGRADE_FAILURE "캐릭터 '%s' 의 '%s' 스킬 레벨을 변경할 수 없습니다."
+    IDS_SKILL_UPGRADE_SUCCESS "캐릭터 '%s' 의 '%s' 스킬 레벨을 '%d' 로 변경하였습니다."
+    IDS_ITEM_CREATE_SUCCESS "아이템 '%s' 을(를) '%d' 개 만들었습니다."
+    IDS_ITEM_CREATE_FAILURE "아이템 '%s' 생성에 실패하였습니다."
+    IDS_ITEM_CONVERT_SUCCESS_PHY "아이템 '%s' 의 기본능력을 '%d' 단계로 강화하였습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEM_CONVERT_SUCCESS_SOCKET "아이템 '%s' 의 소켓을 '%d' 로 뚫었습니다."
+    IDS_ITEM_CONVERT_SUCCESS_STONE "아이템 '%s' 에 '%s' 을(를) 발랐습니다."
+    IDS_ITEM_CONVERT_FAILURE "아이템 '%s' 의 개조가 실패하였습니다."
+    IDS_ITEM_DELETE_SUCCESS "아이템 '%s' 를 삭제하였습니다."
+    IDS_ITEM_DELETE_FAILURE "아이템 삭제에 실패하였습니다."
+    IDS_MAIN_CURRENT_USER   "서버 : %s, 현재 접속자 : %d 명"
+    IDS_NOTICE_ASK_APPLY    "새로 바뀐 내용으로 적용하시겠습니까?"
+    IDS_ITEM_OPTION_ADD_SUCCESS "아이템에 옵션을 더했습니다."
+    IDS_ITEM_OPTION_REMOVE_SUCCESS "아이템에서 옵션을 뺐습니다."
+    IDS_ITEM_CREATE_OWNER   "캐릭터 '%s' 에게 아이템 '%s' 을(를) 넣어주겠습니까? (No 를 선택하시면 자신에게 들어갑니다)"
+    IDS_ITEM_CREATE_ACCNAME_CONFIRM 
+                            "캐릭터 '%s' 의 계정이 '%s' 인지 다시 한번 확인해 주시기 바랍니다. 맞습니까?"
+    IDS_ITEM_CREATE_INVEN_FULL "인벤토리가 꽉 찾습니다. 더 이상 지급할 수 없습니다."
+    IDS_ITEM_DELETE_CONFIRM "해당 아이템을 삭제하시겠습니까?"
+    IDS_ITEM_REFRESH        "적용된 내용을 보시려면 Refresh 를 꼭 하시기 바랍니다."
+    IDS_EDIT_CONFIRM        "캐릭터 정보를 수정하시겠습니까?"
+    IDS_EDIT_DB_CHAR        "접속중이지 않은 캐릭터를 수정하려고 합니다. 수정할 수 있는 데이터는 레벨, 경험치, 좌표, 인벤겔드 입니다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_DB_REFRESH     "결과를 확인하려면 꼭 '새로고침' 을 해주시기 바랍니다."
+    IDS_ITEM_CONVERT_CONFIRM "아이템을 개조하시겠습니까?"
+    IDS_ITEM_CONVERT_WARNING 
+                            "접속중이지 않은 캐릭터의 아이템의 개조는 신중하게 하여야 합니다. 정말 개조하시겠습니까?"
+    IDS_ITEM_INIT_SOCKET    "소켓 개수는 단계적으로 줄일 수 없고, 초기화가 됩니다. 계속하시겠습니까?"
+    IDS_NOT_PRIVILEGE       "권한이 없습니다 -ㅠ-"
+    IDS_MAIN_SERVER         "서버 : %s"
+    IDS_ITEM_INSERT_DELETE_REASON "캐쉬 아이템인 경우, 삭제 이유를 설정하여야 합니다."
+    IDS_ITEM_INSERT_CREATE_REASON "캐쉬 아이템인 경우, 생성 이유를 설정하여야 합니다."
+    IDS_GUILD_DESTROY_CONFIRM "정말로 '%s' 길드를 해체하실 겁니까?"
+    IDS_GUILD_LEAVE_ONLY_MEMBER "일반 길드원만 가능합니다."
+    IDS_GUILD_MEMBER_FORCED_LEAVE "'%s' 을(를) '%s' 길드에서 탈퇴 시키겠습니까?"
+    IDS_GUILD_CHANGE_MASTER "'%s' 길드의 마스터를 '%s' 로 바꾸시겠습니까?"
+    IDS_GUILD_CHANGE_MASTER_CONFIRM 
+                            "마스터를 바꿀 때에는 해당 길드의 멤버가 모두 오프라인이어야 합니다. 준비 되셨습니까?"
+    IDS_GUILD_CHANGE_NOTICE_CONFIRM "길드 공지사항을 바꾸시겠습니까? (한글 40글자까지 가능합니다.)"
+    IDS_ITEM_UPDATE_CONFIRM "아이템 수치를 변경하시겠습니까?"
+    IDS_LOGIN_TIME          "접속한 시간"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHARNAME            "캐릭터 이름"
+    IDS_ACCNAME             "계정"
+    IDS_RACE                "종족"
+    IDS_CLASS               "클래스"
+    IDS_SERVER              "서버"
+    IDS_LEVEL               "레벨"
+    IDS_GUILD_NOTICE_EXCEED_MAX_LENGTH "공지사항 최대 길이를 벗어났습니다. (한글 40글자까지)"
+    IDS_EXP                 "경험치"
+    IDS_CRIMINAL_STATUS     "선공상태"
+    IDS_MURDERER_POINT      "악당포인트"
+    IDS_RCF                 "남은선공시간"
+    IDS_RMF                 "남은악당시간"
+    IDS_CON                 "체력"
+    IDS_STR                 "힘"
+    IDS_INT                 "지식"
+    IDS_WIS                 "지혜"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEX                 "민첩"
+    IDS_CHA                 "카리스마"
+    IDS_NORMAL_ATTACK       "물리공격력"
+    IDS_DEFENSE             "물리방어력"
+    IDS_SKILL_BLOCK         "스킬 블럭"
+    IDS_PHYSICAL_RES        "물리저항력"
+    IDS_AR                  "공격률"
+    IDS_ADDITIONAL_AR       "추가명중률"
+    IDS_BLOCK               "방어율"
+    IDS_EVADE               "추가회피율"
+    IDS_ATTACK_SPEED        "공격속도"
+    IDS_MOVE_SPEED          "이동속도"
+    IDS_CHAR_CREATION_DATE  "캐릭터 생성 날짜"
+    IDS_LAST_IP             "마지막 접속 IP"
+    IDS_EDIT_EXP            "Edit 시에는 %%단위로 입력하세요"
+    IDS_ATTACK_POWER        "공격력"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RES_POWER           "저항력"
+    IDS_PLAY_TIME           "플레이 시간"
+    IDS_POSITION            "현재 좌표"
+    IDS_IP                  "접속한 IP"
+    IDS_GUILD_ID            "길드 이름"
+    IDS_INVENTORY           "인벤토리"
+    IDS_BANK                "창고"
+    IDS_DELETE_REASON       "--삭제이유--"
+    IDS_DELETE_REPAY        "환불"
+    IDS_CREATE_REASON       "--생성이유--"
+    IDS_CREATE_REWARD       "보상"
+    IDS_ITEM_POS            "위치"
+    IDS_ITEM_NAME           "이름"
+    IDS_ITEM_COUNT          "개수"
+    IDS_ITEM_CONVERT        "강화"
+    IDS_ITEM_SOCKET         "소켓"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEM_RANK           "랭크"
+    IDS_ITEM_USE            "사용중"
+    IDS_ITEM_REMAIN_TIME    "남은시간"
+    IDS_ITEM_EXPIRE_DATE    "종료일"
+    IDS_ITEM_USE_COUNT      "사용횟수"
+    IDS_ITEM_EQUIP          "장착"
+    IDS_ITEM_INVENTORY      "인벤토리"
+    IDS_ITEM_AUCTION        "중개소"
+    IDS_ITEM_CASH_INVEN     "로니인벤"
+    IDS_ITEM_SOCKETED_ITEM  "바른 아이템"
+    IDS_ITEM_PHYSICAL_CONVERT "물리강화"
+    IDS_ITEM_SPIRIT_STONE   "<정령석>"
+    IDS_ITEM_RUNE           "<기원석>"
+    IDS_ITEM_SOLD_OUT       "팔렸음"
+    IDS_ITEM_PAUSED         "일시정지"
+    IDS_TIME_DAY            "일"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EQUIP_RIGHT_HAND    "오른손"
+    IDS_EQUIP_LEFT_HAND     "왼손"
+    IDS_EQUIP_HEAD          "머리"
+    IDS_EQUIP_CHEST         "갑빠"
+    IDS_EQUIP_PANTS         "바지"
+    IDS_EQUIP_FEET          "발"
+    IDS_EQUIP_ARM           "팔뚝"
+    IDS_EQUIP_NECKLACE      "목걸이"
+    IDS_EQUIP_RING          "반지"
+    IDS_EQUIP_STANDARD      "탈것무기"
+    IDS_EQUIP_RIDE          "탈것"
+    IDS_SET_ON_INVENTORY    "인벤토리에 놓고 하세요."
+    IDS_MAX_OPTION          "옵션은 %d 개까지만 붙일 수 있습니다."
+    IDS_CANNOT_ADD_OPTION_TO_LOGOUT_USER "접속중이지 않은 캐릭터의 아이템에 옵션을 붙일 수는 없습니다."
+    IDS_NOT_SELECTED_ITEM   "옵션이 붙는 아이템이 (또는 생성하는 아이템) 선택되어 있지 않습니다."
+    IDS_NOT_SUPPORTED_REMOVE_OPTION "옵션 빼는 작업은 지원하지 않습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_THIS_PLACE_NOTICE   "이곳에 공지사항이 옵니다"
+    IDS_COLUMN              "항목"
+    IDS_DATA                "내용"
+    IDS_GUILD_BASIC         "기본 정보"
+    IDS_GUILD_MASTER_ID     "마스터 아이디"
+    IDS_GUILD_RANK          "랭크"
+    IDS_GUILD_CREATION_DATE "만든 날짜"
+    IDS_GUILD_PASSWORD      "비밀번호"
+    IDS_GUILD_MEMBER_COUNT  "멤버 수"
+    IDS_GUILD_BATTLE        "길드전"
+    IDS_GUILD_BATTLE_STATUS "길드전 상태"
+    IDS_GUILD_BATTLE_RECORD "전적"
+    IDS_GUILD_ENEMY_GUILD_ID "상대 길드 아이디"
+    IDS_GUILD_BATTLE_ACCEPT_TIME "수락 시간"
+    IDS_GUILD_BATTLE_START_TIME "시작 시간"
+    IDS_GUILD_BATTLE_DURATION "하는 시간"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_BATTLE_SCORE  "자기 점수"
+    IDS_GUILD_BATTLE_ENEMY_SCORE "상대 점수"
+    IDS_GUILD_MASTER        "마스터"
+    IDS_GUILD_MEMBER        "길드원"
+    IDS_GUILD_JOIN_REQUEST  "가입 대기중"
+    IDS_GUILD_LEAVE_REQUEST "탈퇴 대기중"
+    IDS_GUILD_LEAVE_MEMBER_SUCCESS "길드 멤버를 탈퇴 시켰습니다."
+    IDS_GUILD_LEAVE_MEMBER_FAILED "길드 멤버를 탈퇴 시키지 못했습니다."
+    IDS_GUILD_DESTROY_SUCCESS "길드를 해체 시켰습니다."
+    IDS_GUILD_DESTROY_FAILED "길드를 해체 시키지 못했습니다."
+    IDS_GUILD_CHANGE_MASTER_SUCCESS "길드 마스터를 변경하였습니다."
+    IDS_GUILD_CHANGE_MASTER_FAILED "길드 마스터를 변경하지 못했습니다."
+    IDS_GUILD_CHANGE_NOTICE_SUCCESS "길드 공지를 변경하였습니다."
+    IDS_GUILD_CHANGE_NOTICE_FAILED "길드 공지를 변경하지 못했습니다."
+    IDS_GUILD_BATTLE_STATUS_NONE "일반 상태"
+    IDS_GUILD_BATTLE_STATUS_READY "대기 상태"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_BATTLE_STATUS_BATTLE "배틀 중"
+    IDS_WHISPER             "귓말"
+    IDS_SEARCH_CHARNAME     "캐릭터명"
+    IDS_SEARCH_ACCNAME      "계정명"
+    IDS_LOGIN_STATUS        "접속상태"
+    IDS_ONLINE              "온라인"
+    IDS_OFFLINE             "오프라인"
+    IDS_SKILL_NAME          "스킬 이름"
+    IDS_BANK_ITEM_DELETE_CONFIRM 
+                            "창고 아이템을 지울 때에는 해당 계정의 캐릭터가 모두 로그오프 상태여야 합니다.\n그렇지 않으면 예상치 못한 문제가 발생할 수 있습니다."
+    IDS_BANK_ITEM_DELETE_CONFIRM2 "'%s' 계정의 창고 아이템을 지웁니다. 계속하시겠습니까?"
+    IDS_SKILL_MASTERY_0     "전투"
+    IDS_SKILL_MASTERY_1     "강화"
+    IDS_SKILL_MASTERY_2     "전용"
+    IDS_SKILL_MASTERY_3     "패시브"
+    IDS_SKILL_PRODUCT       "생산"
+    IDS_SKILL_NOT_ENOUGH_POINT "스킬 포인트가 부족합니다"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DESC                "설명"
+    IDS_SKILL_CONFIRM_1     "캐릭터가 가지고 있는 모든 스킬을 초기화 하겠습니까?"
+    IDS_SKILL_CONFIRM_2     "선택한 스킬들을 초기화 하겠습니까?"
+    IDS_SKILL_CONFIRM_3     "선택한 스킬들을 레벨업 하겠습니까?"
+    IDS_SKILL_CONFIRM_4     "선택한 스킬들을 레벨다운 하겠습니까?"
+    IDS_SKILL_CONFIRM_5     "선택한 스킬들을 캐릭터가 배우게 하겠습니까?"
+    IDS_SKILL_CONFIRM_6     "선택한 생산스킬들의 숙련도를 변경하겠습니까?"
+    IDS_SKILL_PRODUCT_COMPOSE "생산물"
+    IDS_SKILL_DISABLE_BY_ONLINE "캐릭터가 온라인일때는 이 작업을 할 수 없습니다."
+    IDS_SKILL_DISABLE_BY_COMPOSE "생산물에는 이 작업을 할 수 없습니다."
+    IDS_SKILL_EXP_ERROR     "0 에서 100 사이의 %% 값으로 입력하세요."
+    IDS_WC_DEFAULT_TEXT     "해당 캐릭터의 현상수배 정보가 없습니다."
+    IDS_WC_MONEY            "현상금"
+    IDS_WC_DELETE_CONFIRM   "현상수배 정보를 삭제하시겠습니까?"
+    IDS_ITEM_MAILBOX        "우편함"
+    IDS_SKILL_MASTERY_4     "연계"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEM_INVENTORY_PET  "펫 인벤토리"
+    IDS_GUILD_SUBMASTER     "부마스터"
+    IDS_NOT_EXIST_QUEST     "수행중인 퀘스트가 없습니다."
+    IDS_QUEST_ID            "QuestID"
+    IDS_QUEST_PARAM1        "Param1"
+    IDS_QUEST_PARAM2        "Param2"
+    IDS_QUEST_NPCNAME       "QuestNPC"
+    IDS_QUEST_NAME          "QuestName"
+    IDS_QUEST_SCENARIO_NAME "ScenarioName"
+    IDS_MAX_SKILL           "스킬 옵션은 %d 개까지만 붙일 수 있습니다."
+    IDS_TITLE_ID            "타이틀Tid"
+    IDS_TITLE_USE           "타이틀 사용여부"
+    IDS_TITLE_NAME          "타이틀 이름"
+    IDS_TITLE_CHECK_TYPE    "타이틀 목표 타입"
+    IDS_TITLE_CHECK_VALUE   "타이틀 목표 값"
+    IDS_TITLE_CUR_VALUE     "현재 목표 값"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE_USING_STATE   "타이틀이 사용중입니다."
+    IDS_TITLE_NOT_EDIT      "오프라인 캐릭터는 타이틀 수정이 불가합니다."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\AlefAdminDLL.rc2"  // Microsoft Visual C++에서 편집하지 않은 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="skel">
+      <UniqueIdentifier>{51a438a4-dcf3-49cd-b704-05cf52b528e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXUTgui">
+      <UniqueIdentifier>{bb257105-9992-409d-b557-73a733ca3bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryManager">
+      <UniqueIdentifier>{538f5cbc-17c2-4b43-9cd7-b00417faaccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XCrashReport">
+      <UniqueIdentifier>{5abbcdac-e4e1-4300-ba6b-eed72e3b4979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtlasCreation">
+      <UniqueIdentifier>{8274da67-64e1-478a-aa64-ec2235da0821}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\Control.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\FXUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\MatD3DFxTool.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\Scene.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\camera.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\menu.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\mouse.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\skeleton.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\win.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\DXUTgui\DXUTgui.cpp">
+      <Filter>DXUTgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\DXUTgui\DXUTmisc.cpp">
+      <Filter>DXUTgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\MemoryManager\mmgr.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\XCrashReport\ExceptionHandler.cpp">
+      <Filter>XCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\XCrashReport\GetWinVer.cpp">
+      <Filter>XCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\XCrashReport\MiniVersion.cpp">
+      <Filter>XCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\AtlasCreation\AtlasContainer.cpp">
+      <Filter>AtlasCreation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\AtlasCreation\CmdLineOptions.cpp">
+      <Filter>AtlasCreation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\AtlasCreation\Packer.cpp">
+      <Filter>AtlasCreation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\AtlasCreation\TextureObject.cpp">
+      <Filter>AtlasCreation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\Control.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\FXUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\Scene.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\camera.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\menu.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\mouse.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\mousedat.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\platform.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\ptrdata.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\resource.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\skeleton.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\win.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\DXUTgui\DXUTgui.h">
+      <Filter>DXUTgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\DXUTgui\DXUTmisc.h">
+      <Filter>DXUTgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\MemoryManager\mmgr.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\MemoryManager\nommgr.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\CrashFileNames.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\dbghelp.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\ExceptionHandler.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\GetWinVer.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\MiniVersion.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\AtlasContainer.h">
+      <Filter>AtlasCreation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\CmdLineOptions.h">
+      <Filter>AtlasCreation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\Packer.h">
+      <Filter>AtlasCreation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\TATypes.h">
+      <Filter>AtlasCreation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\TextureObject.h">
+      <Filter>AtlasCreation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Tools\MatD3DFxTool\skel\main.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Tools\MatD3DFxTool\skel\win.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

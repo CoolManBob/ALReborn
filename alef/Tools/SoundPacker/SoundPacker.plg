@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SoundPacker - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/SoundPacker.res" /d "NDEBUG" /d "_AFXDLL" "C:\codetest\SoundPacker\SoundPacker.rc"" 
+Creating temporary file "C:\DOCUME~1\KIMTAI~1\LOCALS~1\Temp\RSP4B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/SoundPacker.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\codetest\SoundPacker\SoundPacker.cpp"
+"C:\codetest\SoundPacker\SoundPackerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KIMTAI~1\LOCALS~1\Temp\RSP4B.tmp" 
+Creating temporary file "C:\DOCUME~1\KIMTAI~1\LOCALS~1\Temp\RSP4C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/SoundPacker.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\codetest\SoundPacker\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KIMTAI~1\LOCALS~1\Temp\RSP4C.tmp" 
+Creating command line "link.exe mss32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SoundPacker.pdb" /machine:I386 /out:"Release/SoundPacker.exe"  .\Release\SoundPacker.obj .\Release\SoundPackerDlg.obj .\Release\StdAfx.obj .\Release\SoundPacker.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+SoundPacker.cpp
+SoundPackerDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SoundPacker.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

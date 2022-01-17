@@ -1,0 +1,429 @@
+// Calendar resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+      
+#include "Common/resource.h"
+#include "Calendar/Resource.h"
+#include "Calendar/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_THAI, SUBLANG_DEFAULT
+#pragma code_page(874)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_CALENDAR_DIALOG_OCURR_SERIES DIALOGEX DISCARDABLE  0, 0, 175, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "ตกลง",IDOK,35,69,50,14
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,91,69,50,14
+    LTEXT           "",
+                    XTP_IDC_CALENDAR_STATIC_OCCUR_MESSAGE,43,6,120,27
+    CONTROL         "",XTP_IDC_CALENDAR_RADIO_OCCUR,"Button",
+                    BS_AUTORADIOBUTTON,43,39,125,10
+    CONTROL         "",XTP_IDC_CALENDAR_RADIO_SERIES,"Button",
+                    BS_AUTORADIOBUTTON,43,51,127,10
+    ICON            "",XTP_IDC_CALENDAR_STATIC_ICON,9,8,20,20
+END
+
+XTP_IDD_CALENDAR_PRINT_PAGE_SETUP DIALOGEX DISCARDABLE  32, 32, 283, 338
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "ปฏิทินการตั้งค่าหน้ากระดาษ"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "วันตัวเลือกมุมมอง",XTP_IDC_PRINT_DAYVIEW_OPTIONS_FRAME,7,
+                    5,106,66
+    RTEXT           "พิมพ์จาก:",IDC_STATIC,10,21,43,8
+    COMBOBOX        XTP_IDC_PRINT_FROM_COMBO,55,19,52,104,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "พิมพ์ถึง:",IDC_STATIC,10,39,42,8
+    COMBOBOX        XTP_IDC_PRINT_TO_COMBO,55,36,52,104,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ช่วงระยะที่พิมพ์",XTP_IDC_PRINT_FROMTO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,56,95,10
+    GROUPBOX        "วันที่หัวกระดาษ",XTP_IDC_PRINT_DATE_HEADER_FRAME,120,5,157,
+                    65
+    CONTROL         "การพิมพ์วันที่หัวกระดาษ",XTP_IDC_PRINT_DATE_HEADER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,17,148,10
+    LTEXT           "วันที่หัวกระดาษแบบอักษร:",XTP_IDC_PRINT_DATE_HEADER_FONT_LABEL,
+                    138,28,136,8
+    LTEXT           "123456789 123456789 123456789\n2\n3",
+                    XTP_IDC_PRINT_DATE_HEADER_FONT,138,40,115,26,SS_NOPREFIX | 
+                    SS_SUNKEN
+    PUSHBUTTON      "...",XTP_IDC_PRINT_DATE_HEADER_FONT_BUTTON,257,40,16,14
+    GROUPBOX        "กระดาษ",1073,7,183,197,51,WS_GROUP
+    LTEXT           "ขนาด:",1089,11,199,40,8
+    COMBOBOX        1137,55,197,141,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "แหล่ง:",1090,12,216,39,8
+    COMBOBOX        1138,55,214,141,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "การวางแนว",1072,211,183,66,51,WS_GROUP
+    RADIOBUTTON     "แนวตั้ง",1056,216,196,56,12,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "แนวนอน",1057,216,212,58,12
+    GROUPBOX        "ระยะขอบ",1075,8,238,196,58,WS_GROUP
+    LTEXT           "ด้านซ้าย:",1102,16,254,36,8
+    EDITTEXT        1155,55,251,32,12,WS_GROUP
+    LTEXT           "ด้านขวา:",1103,123,253,35,8
+    EDITTEXT        1157,162,250,32,12,WS_GROUP
+    LTEXT           "ด้านบน:",1104,16,274,35,8
+    EDITTEXT        1156,55,272,32,12,WS_GROUP
+    LTEXT           "ด้านล่าง:",1105,123,274,35,8
+    EDITTEXT        1158,162,272,32,12,WS_GROUP
+    GROUPBOX        "แสดงตัวอย่าง",XTP_IDC_PRINT_PREVIEW_FRAME,212,238,66,58
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,261,253,4,38
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,230,250,31,40
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,235,290,29,2
+    PUSHBUTTON      "วิธีใช้",1038,75,320,61,14
+    PUSHBUTTON      "เครื่องพิมพ์...",1026,8,300,60,14
+    DEFPUSHBUTTON   "ตกลง",1,175,320,48,14,WS_GROUP
+    PUSHBUTTON      "ยกเลิก",2,229,320,48,14
+    GROUPBOX        "การตั้งค่า",IDC_STATIC,7,74,270,27
+    CONTROL         "พิมพ์แบบขาวดำ",
+                    XTP_IDC_PRINT_BLACK_WHITE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,87,258,10
+    GROUPBOX        "หัวกระดาษและท้ายกระดาษ",IDC_STATIC,7,105,270,70
+    LTEXT           "หัวกระดาษ",IDC_STATIC,13,115,190,8
+    LTEXT           "ท้ายกระดาษ",IDC_STATIC,13,145,190,8
+    EDITTEXT        XTP_IDC_CALENDAR_HEADER_FORMAT,13,126,247,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "",XTP_IDC_CALENDAR_HEADER_FORMAT_BTN,260,126,13,14,
+                    BS_ICON,WS_EX_STATICEDGE
+    EDITTEXT        XTP_IDC_CALENDAR_FOOTER_FORMAT,13,155,247,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "",XTP_IDC_CALENDAR_FOOTER_FORMAT_BTN,260,155,13,14,
+                    BS_ICON,WS_EX_STATICEDGE
+END
+
+XTP_IDD_CALENDAR_EVENT_PROPERTIES DIALOGEX DISCARDABLE  0, 0, 450, 231
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "รายละเอียดการนัดหมายและเหตุการณ์"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "ตกลง",IDOK,165,210,50,14
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,233,210,50,14
+    LTEXT           "เรื่อง:",IDC_STATIC,7,9,42,8
+    EDITTEXT        XTP_IDC_EDIT_SUBJECT,55,5,235,14,ES_AUTOHSCROLL
+    EDITTEXT        XTP_IDC_EDIT_LOCATION,55,26,235,14,ES_AUTOHSCROLL
+    LTEXT           "ตำแหน่งที่ตั้ง:",IDC_STATIC,7,26,42,8
+    LTEXT           "เวลาที่เริ่มต้น:",XTP_IDC_START_TEXT,7,56,42,8
+    LTEXT           "เวลาที่สิ้นสุด:",XTP_IDC_END_TEXT,7,76,42,8
+    CONTROL         "DateTimePicker1",XTP_IDC_DTP_START_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP,55,55,68,15
+    CONTROL         "DateTimePicker2",XTP_IDC_DTP_START_TIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP | 0x8,127,56,67,15
+    CONTROL         "DateTimePicker1",XTP_IDC_DTP_END_DATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,55,75,68,15
+    CONTROL         "DateTimePicker2",XTP_IDC_DTP_END_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,127,76,67,
+                    15
+    LTEXT           "แสดงเวลาเป็น:",IDC_STATIC,300,28,45,8
+    COMBOBOX        XTP_IDC_COMBO_BUSYSTATE,350,25,90,72,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ป้ายชื่อ:",IDC_STATIC,300,7,40,8
+    COMBOBOX        XTP_IDC_COMBO_LABEL,350,5,90,209,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "การเกิดขึ้นประจำ...",XTP_IDC_BUTTON_RECURRECNCE,370,100,69,
+                    14
+    CONTROL         "ตลอดทั้งวัน",XTP_IDC_CHECK_ALLDAY_EVENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,55,57,10
+    CONTROL         "ส่วนตัว",XTP_IDC_CHECK_PRIVATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,55,38,10
+    CONTROL         "การประชุม",XTP_IDC_CHECK_MEETING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,65,41,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,5,95,285,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,5,45,285,
+                    1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN | NOT 
+                    WS_VISIBLE,5,205,440,1
+    COMBOBOX        XTP_IDC_COMBO_REMINDER,55,100,68,88,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ตัวเตือน:",XTP_IDC_CHECK_REMINDER,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,7,102,45,10
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,295,5,1,
+                    110
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,300,95,145,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,300,45,145,1
+    COMBOBOX        XTP_IDC_COMBO_SCHEDULEID,200,100,90,88,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "ชื่อกำหนดการ",XTP_IDC_SCHEDULEID_TEXT,135,103,62,10
+    EDITTEXT        XTP_IDC_EDIT_BODY,5,125,440,75,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+XTP_IDD_CALENDAR_RECURRENCE_PROPERTIES DIALOGEX DISCARDABLE  0, 0, 340, 311
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "การนัดหมายที่เกิดขึ้นประจำ"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        XTP_IDC_COMBO_SCHEDULEID,34,20,55,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_REC_END,116,20,55,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_REC_DURATION,218,20,87,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ไม่มีวันที่สิ้นสุด",XTP_IDC_RADIO_NOEND,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,166,144,62,9
+    CONTROL         "สิ้นสุดหลังจาก:",XTP_IDC_RADIO_ENDAFTER,"Button",
+                    BS_AUTORADIOBUTTON,166,157,45,10
+    CONTROL         "สิ้นสุด ณ วันที่:",XTP_IDC_RADIO_ENDBY,"Button",
+                    BS_AUTORADIOBUTTON,166,171,39,10
+    EDITTEXT        XTP_IDC_EDIT_OCCUR,214,154,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",XTP_IDC_DATETIMEPICKER_ENDDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,214,169,83,15
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,124,191,50,14
+    PUSHBUTTON      "ลบการเกิดซ้ำออก",XTP_IDC_BUTTON_REMOVE_RECURRENCE,199,
+                    191,90,14,WS_DISABLED
+    DEFPUSHBUTTON   "ตกลง",IDOK,49,191,50,14
+    GROUPBOX        "รูปแบบของการเกิดขึ้นประจำ",IDC_STATIC,7,47,328,85
+    CONTROL         "ประจำวัน",XTP_IDC_RADIO_DAILY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,11,58,54,10
+    CONTROL         "ประจำสัปดาห์",XTP_IDC_RADIO_WEEKLY,"Button",
+                    BS_AUTORADIOBUTTON,11,76,61,10
+    CONTROL         "ประจำเดือน",XTP_IDC_RADIO_MONTHLY,"Button",
+                    BS_AUTORADIOBUTTON,11,94,59,10
+    CONTROL         "ประจำปี",XTP_IDC_RADIO_YEARLY,"Button",
+                    BS_AUTORADIOBUTTON,11,112,52,10
+    CONTROL         "วันจันทร์",XTP_IDC_CHECK_MONDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,105,41,10
+    CONTROL         "วันอังคาร",XTP_IDC_CHECK_TUESDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,127,105,50,10
+    CONTROL         "วันพุธ",XTP_IDC_CHECK_WEDNESDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,184,105,54,10
+    CONTROL         "วันพฤหัสบดี",XTP_IDC_CHECK_THURSDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,247,105,46,10
+    CONTROL         "วันศุกร์",XTP_IDC_CHECK_FRIDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,120,41,10
+    CONTROL         "วันเสาร์",XTP_IDC_CHECK_SATURDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,120,45,10
+    CONTROL         "วันอาทิตย์",XTP_IDC_CHECK_SUNDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,184,119,62,10
+    EDITTEXT        XTP_IDC_EDIT_WEEKLY_INTERVAL,127,88,26,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "สัปดาห์ในวัน:",XTP_IDC_STATIC_WEEKLY_FOLLDAYS,157,91,66,8
+    LTEXT           "เกิดประจำทุกๆ",XTP_IDC_STATIC_WEEKLY_RECEVERY,82,91,43,8
+    GROUPBOX        "เวลาการนัดหมาย",IDC_STATIC,7,3,328,40
+    GROUPBOX        "ช่วงของการเกิดขึ้นประจำ",IDC_STATIC,7,135,328,52
+    CONTROL         "",XTP_IDC_DATETIMEPICKER_START,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,47,156,100,15
+    RTEXT           "เริ่ม",IDC_STATIC,15,160,28,8
+    LTEXT           "สิ่งที่เกิดขึ้น",IDC_STATIC,257,156,49,8
+    RTEXT           "เริ่ม:",IDC_STATIC,12,22,20,8
+    RTEXT           "สิ้นสุด:",IDC_STATIC,89,22,24,8
+    RTEXT           "ระยะเวลา:",IDC_STATIC,175,23,39,8
+    GROUPBOX        "",XTP_IDC_STATIC_SEP,73,51,1,76
+    CONTROL         "ทุกๆ",XTP_IDC_RADIO_EVERYDAY,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,57,35,10
+    CONTROL         "WorkDays",XTP_IDC_RADIO_EVERYWORKDAY,"Button",
+                    BS_AUTORADIOBUTTON,81,72,108,10
+    EDITTEXT        XTP_IDC_EDIT_DAYINTERVAL,120,55,28,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "วัน",XTP_IDC_STATIC_DAY,152,57,22,8
+    CONTROL         "วัน",XTP_IDC_RADIO_MONTH_RECUR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,220,26,10
+    CONTROL         "เมื่อ",XTP_IDC_RADIO_MONTH_IN,"Button",
+                    BS_AUTORADIOBUTTON,81,239,28,10
+    EDITTEXT        XTP_IDC_EDIT_MONTH_DATE,111,218,24,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ของทุกๆ",XTP_IDC_STATIC_MONTH_NUMEVERY,139,221,28,8
+    EDITTEXT        XTP_IDC_EDIT_MONTH_MONTH,170,218,25,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "เดือน",XTP_IDC_STATIC_MONTH_MONTH,200,221,37,8
+    COMBOBOX        XTP_IDC_COMBO_MONTH_CRIT,111,237,50,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_MONTH_DAY,162,237,68,287,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ของทุกๆ",XTP_IDC_STATIC_MONTH_EVERY,234,238,28,8
+    EDITTEXT        XTP_IDC_EDIT_MONTH_MONTH2,266,235,26,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "เดือน",XTP_IDC_STATIC_MONTH_MONTH2,296,238,29,8
+    CONTROL         "ทุกๆ",XTP_IDC_RADIO_YEAR_RECUR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,268,34,10
+    CONTROL         "เมื่อ",XTP_IDC_RADIO_YEAR_IN,"Button",BS_AUTORADIOBUTTON,
+                    81,288,31,10
+    EDITTEXT        XTP_IDC_EDIT_YEAR_DATE,195,266,27,12,ES_AUTOHSCROLL
+    COMBOBOX        XTP_IDC_COMBO_YEAR_CRIT,117,286,48,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_DAY,167,286,70,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_MONTH,117,266,76,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_MONTH2,253,286,71,230,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ของ",XTP_IDC_STATIC_YEAR_OF,241,289,10,8
+END
+
+XTP_IDD_CALENDAR_TIMESCALE_PROPERTIES DIALOGEX 0, 0, 274, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "โซนเวลา"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "ตกลง",IDOK,150,158,50,14
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,217,158,50,14
+    GROUPBOX        "โซนเวลาปัจจุบัน",IDC_STATIC,7,7,260,65
+    GROUPBOX        "",IDC_STATIC,7,88,260,62,0,WS_EX_TRANSPARENT
+    CONTROL         "แสดงโซนเวลาเพิ่มอีกโซนหนึ่ง",
+                    XTP_IDC_CHECK_ADDITIONAL_TIMEZONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,78,260,8,WS_EX_TRANSPARENT
+    EDITTEXT        XTP_IDC_LABEL1,60,21,40,14,ES_AUTOHSCROLL
+    LTEXT           "ป้ายชื่อ:",IDC_STATIC,15,23,20,8
+    LTEXT           "โซนเวลา:",IDC_STATIC,15,42,36,8
+    COMBOBOX        XTP_IDC_COMBO_TIMEZONE1,60,39,195,130,CBS_DROPDOWN | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        XTP_IDC_LABEL2,60,99,40,14,ES_AUTOHSCROLL
+    LTEXT           "ป้ายชื่อ:",IDC_STATIC,15,101,20,8
+    LTEXT           "โซนเวลา:",IDC_STATIC,15,120,36,8
+    COMBOBOX        XTP_IDC_COMBO_TIMEZONE2,60,117,195,135,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ปรับนาฬิกาอัตโนมัติสำหรับการเลื่อนเวลาตามฤดูกาล",
+                    XTP_IDC_CHECK_ADJUST_DAYLIGHT_TIMEZONE1,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,56,234,8,
+                    WS_EX_TRANSPARENT
+    CONTROL         "ปรับนาฬิกาอัตโนมัติสำหรับการเลื่อนเวลาตามฤดูกาล",
+                    XTP_IDC_CHECK_ADJUST_DAYLIGHT_TIMEZONE2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,134,234,8,
+                    WS_EX_TRANSPARENT
+END
+
+XTP_IDD_CALENDAR_REMINDERS DIALOGEX DISCARDABLE  0, 0, 303, 181
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ตัวเตือน"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "รายการ1",XTP_IDC_RMD_REMINDERS_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,5,40,290,90
+    PUSHBUTTON      "บอกเลิกทั้งหมด",XTP_IDC_RMD_DIMISS_ALL,5,135,65,14
+    PUSHBUTTON      "บอกเลิก",XTP_IDC_RMD_DIMISS,230,135,65,14
+    PUSHBUTTON      "เปิดรายการ",XTP_IDC_RMD_OPEN_ITEM,160,135,65,14
+    COMBOBOX        XTP_IDC_RMD_SNOZE_TIME_CB,5,165,220,130,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "คลิก 'เลื่อนการเตือน' เพื่อเตือนอีกครั้งภายใน:",IDC_STATIC,5,
+                    155,170,8
+    LTEXT           "ค่าคงที่",XTP_IDC_RMD_DESCRIPTION,25,5,270,30,SS_NOPREFIX
+    DEFPUSHBUTTON   "เลื่อนการเตือน",XTP_IDC_RMD_SNOOZE,230,165,65,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+//  String table 
+//
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_DATEPICKER_TODAY       "วันนี้"
+    XTP_IDS_DATEPICKER_NONE        "ไม่มี"
+END
+
+STRINGTABLE 
+BEGIN
+    XTP_IDS_CALENDAR_OCURR_SERIES_DELETE  "ยืนยันการลบ\nลบเหตุการณ์นี้\nลบชุดข้อมูล\nคุณต้องการลบเหตุการณ์ทั้งหมดที่เกิดขึ้นประจำของการนัดหมาย ""%s"" หรือลบเฉพาะเหตุการณ์นี้เท่านั้น"
+    XTP_IDS_CALENDAR_OCURR_SERIES_OPEN    "เปิดรายการที่เกิดประจำ\nเปิดเหตุการณ์นี้\nเปิดชุดเหตุการณ์\n""%s"" เป็นการนัดหมายที่เกิดประจำ คุณต้องการเปิดเฉพาะเหตุการณ์นี้หรือเปิดทั้งชุด"
+    XTP_IDS_CALENDAR_FROM                 "จาก"
+    XTP_IDS_CALENDAR_TO                   "ถึง"
+    XTP_IDS_CALENDAR_MARGINS_MM           "ระยะขอบ (มิลลิเมตร)"
+    XTP_IDS_CALENDAR_MARGINS_INCH         "ระยะขอบ (นิ้ว)"
+    
+    XTP_IDS_CALENDAR_REMINDERS            "%d ตัวเตือน"
+    XTP_IDS_CALENDAR_SUBJECT              "เรื่อง"
+    XTP_IDS_CALENDAR_DUEIN                "ครบกำหนดภายใน"
+    XTP_IDS_CALENDAR_OVERDUE              "พ้นกำหนด"
+
+    XTP_IDS_CALENDAR_SEL_0_RMD            "ตัวเตือน 0 ตัวได้ถูกเลือก"
+    XTP_IDS_CALENDAR_NO_REMINDERS         "ไม่มีตัวเตือนที่จะให้แสดง"
+    XTP_IDS_CALENDAR_START_TIME           "เวลาเริ่มต้น"
+
+    XTP_IDS_CALENDAR_WRONG_VALUE          "ค่าที่ไม่ถูกต้อง"
+    XTP_IDS_CALENDAR_WRONG_VALUE_RANGE    "โปรดใส่ค่าระหว่าง %s ถึง %s" 
+    XTP_IDS_CALENDAR_REMOVE_EXCEPTIONS    "ข้อยกเว้นใดๆ ที่เกี่ยวกับการนัดหมายที่เกิดประจำนี้ จะหายไป ถ้าข้อยกเว้นคือการประชุม ผู้เข้าร่วมประชุมจะไม่ถูกแจ้งให้ทราบ ตกลงตามนี้หรือไม่"
+
+    XTP_IDS_CALENDAR_TIME_STATUS_FREE           "ว่าง"
+    XTP_IDS_CALENDAR_TIME_STATUS_TENTATIVE      "ไม่แน่นอน"
+    XTP_IDS_CALENDAR_TIME_STATUS_BUSY           "ไม่ว่าง"
+    XTP_IDS_CALENDAR_TIME_STATUS_OUTOFOFFICE    "ไม่อยู่ที่สำนักงาน"
+
+    XTP_IDS_CALENDAR_EVENT_LABEL_NONE               "ไม่มี"
+    XTP_IDS_CALENDAR_EVENT_LABEL_IMPORTANT          "สิ่งสำคัญ"
+    XTP_IDS_CALENDAR_EVENT_LABEL_BUSINESS           "ธุรกิจ"
+    XTP_IDS_CALENDAR_EVENT_LABEL_PERSONAL           "ส่วนบุคคล"
+    XTP_IDS_CALENDAR_EVENT_LABEL_VACATION           "วันหยุดพักผ่อน"
+    XTP_IDS_CALENDAR_EVENT_LABEL_MUSTATTEND         "ต้องเข้าร่วม"
+    XTP_IDS_CALENDAR_EVENT_LABEL_TRAVELREQUIRED     "จำเป็นต้องเดินทาง"
+    XTP_IDS_CALENDAR_EVENT_LABEL_NEEDSPREPARATION   "จำเป็นต้องมีการจัดเตรียม"
+    XTP_IDS_CALENDAR_EVENT_LABEL_BIRTHDAY           "วันเกิด"
+    XTP_IDS_CALENDAR_EVENT_LABEL_ANNIVERSARY        "วันครบรอบ"
+    XTP_IDS_CALENDAR_EVENT_LABEL_PHONECALL          "การโทรศัพท์"
+
+    XTP_IDS_CALENDAR_FIRST      "หน้าแรก"
+    XTP_IDS_CALENDAR_SECOND     "วินาที"
+    XTP_IDS_CALENDAR_THIRD      "ที่สาม"
+    XTP_IDS_CALENDAR_FOURTH     "ที่สี่"
+    XTP_IDS_CALENDAR_LAST       "สุดท้าย"
+
+    XTP_IDS_CALENDAR_MINUTES_0      "0 นาที"
+    XTP_IDS_CALENDAR_MINUTES_1      "1 นาที"
+    XTP_IDS_CALENDAR_MINUTES_5      "5 นาที"
+    XTP_IDS_CALENDAR_MINUTES_10     "10 นาที"
+    XTP_IDS_CALENDAR_MINUTES_15     "15 นาที"
+    XTP_IDS_CALENDAR_MINUTES_30     "30 นาที"
+    
+    XTP_IDS_CALENDAR_HOURS_1        "1 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_2        "2 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_3        "3 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_4        "4 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_5        "5 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_6        "6 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_7        "7 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_8        "8 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_9        "9 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_10       "10 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_11       "11 ชั่วโมง"
+    XTP_IDS_CALENDAR_HOURS_18       "18 ชั่วโมง"
+
+    XTP_IDS_CALENDAR_DAYS_0_5       "0.5 วัน"
+    XTP_IDS_CALENDAR_DAYS_1         "1 วัน"
+    XTP_IDS_CALENDAR_DAYS_2         "2 วัน"
+    XTP_IDS_CALENDAR_DAYS_3         "3 วัน"
+
+    XTP_IDS_CALENDAR_WEEKS_1        "1 สัปดาห์"
+    XTP_IDS_CALENDAR_WEEKS_2        "2 สัปดาห์"
+
+    XTP_IDS_CALENDAR_MINUTES    "นาที"
+    XTP_IDS_CALENDAR_HOURS      "ชั่วโมง"
+    XTP_IDS_CALENDAR_DAYS       "วัน"
+    XTP_IDS_CALENDAR_WEEKS      "สัปดาห์"
+
+    XTP_IDS_CALENDAR_TIME_PREFIX_MINUTES    "นาที"   // minutes
+    XTP_IDS_CALENDAR_TIME_PREFIX_HOURS      "ช.ม."     // hours
+    XTP_IDS_CALENDAR_TIME_PREFIX_DAYS       "วัน"     // days
+    XTP_IDS_CALENDAR_TIME_PREFIX_WEEKS      "สัปดาห์"     // weeks    
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

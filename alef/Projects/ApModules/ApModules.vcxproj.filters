@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ApAdmin">
+      <UniqueIdentifier>{c29f22bf-5d6a-4e94-8552-cd5c35c29df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApAdmin\소스 파일">
+      <UniqueIdentifier>{48539b7e-c01f-4fe8-b6ed-a99a345e1d7c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ApAdmin\헤더 파일">
+      <UniqueIdentifier>{f704dc46-1b19-48cf-949f-b94826a30a5e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ApBase">
+      <UniqueIdentifier>{3a8ef73c-997c-41b0-96ab-2b2db904dcec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApBase\소스 파일">
+      <UniqueIdentifier>{591a9241-ca0f-4c14-8f0f-4ee7fde7b54e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ApBase\헤더 파일">
+      <UniqueIdentifier>{b5a667e8-ebb3-4da1-a36b-6e14134b94d9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ApMemory">
+      <UniqueIdentifier>{146149c1-2c1d-410b-99ba-57ab98703147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApMemory\소스 파일">
+      <UniqueIdentifier>{38b92b13-e876-4603-bc0a-941eb271c4d7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ApMemory\헤더 파일">
+      <UniqueIdentifier>{02f0de37-c6fa-446f-a885-230427600fae}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ApMemoryTracker">
+      <UniqueIdentifier>{d4420eb1-7078-4311-b396-3fbed7ac9678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApMemoryTracker\소스 파일">
+      <UniqueIdentifier>{e51126c5-cb48-4291-b57d-c29549aa6b00}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ApMemoryTracker\헤더 파일">
+      <UniqueIdentifier>{f26670e3-d0a5-427c-ad3c-2c17b7470620}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ApModule">
+      <UniqueIdentifier>{bd9be842-cad8-4303-82f3-cb9427425484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApModule\소스 파일">
+      <UniqueIdentifier>{2ef9846c-e33e-47b2-808e-3384935ad301}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ApModule\헤더 파일">
+      <UniqueIdentifier>{2409e5ad-3962-4a38-af38-c0dd567700f3}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ApServerMonitor">
+      <UniqueIdentifier>{d38a8b2f-699a-4948-978b-ec10142f053e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApServerMonitor\소스 파일">
+      <UniqueIdentifier>{be9479e0-bd45-4ae5-8861-88decfae445c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApServerMonitor\헤더 파일">
+      <UniqueIdentifier>{2c34f817-9616-447e-8898-c27f36ed4659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuConsole">
+      <UniqueIdentifier>{53b70682-bca6-4735-9e95-d5211103dfbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuConsole\소스 파일">
+      <UniqueIdentifier>{efb63041-54e8-4525-afe2-3d47042c8a19}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuConsole\헤더 파일">
+      <UniqueIdentifier>{ac084d30-88bb-414e-8622-993b398a3b89}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuExcelTxtLib">
+      <UniqueIdentifier>{a6cfbad7-1e6f-4143-9903-f95b759c55a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuExcelTxtLib\소스 파일">
+      <UniqueIdentifier>{97cfd8f3-effa-4b3f-9c0e-f560d79bc1e1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuExcelTxtLib\헤더 파일">
+      <UniqueIdentifier>{2dd2d73b-8772-4882-9672-25fdf5daa60f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuFileFind">
+      <UniqueIdentifier>{c9a9f539-e444-401e-b5a1-33ac536540d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuGenerateID">
+      <UniqueIdentifier>{0a67bb9d-40d9-4ad6-b24d-2226c65fe2ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuGenerateID\소스 파일">
+      <UniqueIdentifier>{47771dd4-d992-4a01-a580-fa397191041f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuGenerateID\헤더 파일">
+      <UniqueIdentifier>{aff2f9a0-8e4c-43d1-8494-5516d493df61}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuIPBlockingManager">
+      <UniqueIdentifier>{c51405cd-8aec-432c-8ffa-438f8fdbea8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuIniManager">
+      <UniqueIdentifier>{3c2e24a4-fe75-4623-8955-72ee5d974894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuIniManager\소스 파일">
+      <UniqueIdentifier>{0065828d-196f-41cb-b4f8-a1d552de9653}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuIniManager\헤더 파일">
+      <UniqueIdentifier>{bc96b87d-1e7c-4ed5-804a-50268917fe00}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuMD5EnCrypt">
+      <UniqueIdentifier>{a8967781-0ad4-469c-896d-4237953ccf30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuMD5EnCrypt\소스 파일">
+      <UniqueIdentifier>{bb51d25b-229b-4944-9dc3-942afda82c00}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuMD5EnCrypt\헤더 파일">
+      <UniqueIdentifier>{ced189eb-5ba7-4efd-a459-68d35d69e319}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuMath">
+      <UniqueIdentifier>{1a605b24-8ae7-4486-b1da-d0ca7fde4ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuMath\소스 파일">
+      <UniqueIdentifier>{bc10e59c-fda1-478d-abda-b0c545cb0145}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuMath\헤더 파일">
+      <UniqueIdentifier>{55b49eb3-d684-4046-9982-fc484659a60d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuPacket">
+      <UniqueIdentifier>{c418b438-de5e-42bf-8afd-8ee687a1f21a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuPacket\소스 파일">
+      <UniqueIdentifier>{04342e7f-fd13-4bcd-8137-09f9115fdc72}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuPacket\헤더 파일">
+      <UniqueIdentifier>{e6b8a9cb-b810-4d62-b6d5-0de2157c4100}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuPackingManager">
+      <UniqueIdentifier>{1404b3ca-a92a-4bdc-baac-38d14ac4cd62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuPatchCheckCode">
+      <UniqueIdentifier>{d63dfde1-b5ac-4c7b-8acd-d3d324cfaa3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuProcessManager">
+      <UniqueIdentifier>{3d240b1e-3f6c-4474-9177-340e04391b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuProcessManager\소스 파일">
+      <UniqueIdentifier>{c926e544-49bb-431a-97c5-035cda99b041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuProcessManager\헤더 파일">
+      <UniqueIdentifier>{a78704b4-e589-4304-98f8-63e7453ee3e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuProfileManager">
+      <UniqueIdentifier>{f99589b6-1688-47a8-9009-bcd5253fffc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuProfileManager\소스 파일">
+      <UniqueIdentifier>{eff3e26d-13df-42df-a4c3-7eae83ab3cd9}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuProfileManager\헤더 파일">
+      <UniqueIdentifier>{1e64d2b5-5ebd-46d0-90ab-c1460f51f7a0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuRandomNumberGenerator">
+      <UniqueIdentifier>{61bf4dd2-16e0-4323-9dd3-07c0d99dcefe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuRandomNumberGenerator\소스 파일">
+      <UniqueIdentifier>{42a31628-6834-435f-b29e-255a2674c75f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuRandomNumberGenerator\헤더 파일">
+      <UniqueIdentifier>{a3ff4cf6-ea48-42a3-8e04-d291e471ebf1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuScriptEngine">
+      <UniqueIdentifier>{b39561ec-572b-407a-a9a4-c5a266c7b6a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuScriptEngine\소스 파일">
+      <UniqueIdentifier>{b5424e44-4813-4bbc-840e-cb125c0f36d1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuScriptEngine\헤더 파일">
+      <UniqueIdentifier>{d1f69446-de52-483e-a090-359fd9ef8e92}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuTickCounter">
+      <UniqueIdentifier>{03795b06-cb3c-4125-bc12-05fccb8625e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuTickCounter\소스 파일">
+      <UniqueIdentifier>{bf54cfe1-e096-44bd-891d-48f13e16f664}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AuTickCounter\헤더 파일">
+      <UniqueIdentifier>{b1a1cc52-a333-46d7-b3c1-c185a458dda6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuTimeStamp">
+      <UniqueIdentifier>{54455c5c-b59f-4d2f-bf3e-9d52e46c5cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuTimeStamp\소스 파일">
+      <UniqueIdentifier>{3bc8f662-8f0a-43f5-b284-03745fdb22a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuTimeStamp\헤더 파일">
+      <UniqueIdentifier>{935cb608-8c51-433c-b873-41b004e103d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuXCrashReport">
+      <UniqueIdentifier>{6a05e434-0be0-489b-bd8f-315087e9e87f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuCrypt">
+      <UniqueIdentifier>{4ab8449a-aadb-40f8-aca1-ed8ca73a0a8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuCrypt\소스 파일">
+      <UniqueIdentifier>{065a0bf9-9671-41db-b31e-6d618ce7a801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuCrypt\헤더 파일">
+      <UniqueIdentifier>{9dd16528-49aa-4f1e-a2b6-da48b8394521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuCryptAlgorithm">
+      <UniqueIdentifier>{10ff51b1-771b-45bf-b79c-520998e3714e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuCryptAlgorithm\AuBlowFish">
+      <UniqueIdentifier>{35fa809e-03f5-46de-ae2c-d35b17256079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuCryptAlgorithm\AuMD5Mac">
+      <UniqueIdentifier>{8c46bb2d-6674-47f1-964f-579c142928e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuCryptAlgorithm\AuRijnDael">
+      <UniqueIdentifier>{5c190f78-6fb5-4a60-9f41-26ff0d1e519d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuCryptAlgorithm\AuSeed">
+      <UniqueIdentifier>{d76a61e3-8251-4cfc-a4f7-6ac5ba1df3bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuEtcUtil">
+      <UniqueIdentifier>{6ea3d59e-b47f-4ce3-9e18-041b60f3b285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuEtcUtil\헤더 파일">
+      <UniqueIdentifier>{03e84672-f2fb-4834-94df-5ed1ae3f20ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuEtcUtil\소스 파일">
+      <UniqueIdentifier>{a248be04-aaee-417d-bedb-1c28ac871f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuStrTable">
+      <UniqueIdentifier>{34e0d59a-a291-4672-a94f-137903988769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuStrTable\헤더 파일">
+      <UniqueIdentifier>{10ba06eb-06f9-4afa-b6e4-17652a0d19a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuStrTable\소스 파일">
+      <UniqueIdentifier>{8478082f-f198-4b12-935d-6a8415cf2061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuStringConv">
+      <UniqueIdentifier>{fb847c15-72c9-40d5-9539-30e6e5329494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuJapan">
+      <UniqueIdentifier>{5d3efae4-b078-4c31-8363-a9c3756b9cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuGameEnv">
+      <UniqueIdentifier>{33fe0834-311d-42ce-b125-d40979921c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuXmlParser">
+      <UniqueIdentifier>{eabf542d-db17-48e9-986e-bf882d0fa62b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuXmlParser\TinyXml">
+      <UniqueIdentifier>{0f669b8b-1627-4648-b2a2-bbfc40d6b0d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuLocalize">
+      <UniqueIdentifier>{50ca6179-aa74-4b8c-92dd-e541a91687e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuLua">
+      <UniqueIdentifier>{29944bdb-2a5a-4323-a2eb-4abb2e5a2755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuGameGuard">
+      <UniqueIdentifier>{9b6a3021-da45-4898-88e9-6efd9722566f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuIgnoringHelper">
+      <UniqueIdentifier>{4954ef80-199a-428d-8b4d-0d5a43c8d0e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\APublic\ApAdmin\ApAdmin.cpp">
+      <Filter>ApAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApAdmin\ApSet.cpp">
+      <Filter>ApAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApBase\ApLockManager.cpp">
+      <Filter>ApBase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApBase\ApMemoryChecker.cpp">
+      <Filter>ApBase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApBase\ApMutualEx.cpp">
+      <Filter>ApBase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApBase\ApRWLock.cpp">
+      <Filter>ApBase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApBase\CSLog.cpp">
+      <Filter>ApBase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApBase\MagDebug.cpp">
+      <Filter>ApBase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApMemory\ApHeap.cpp">
+      <Filter>ApMemory\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApMemory\ApMemoryManager.cpp">
+      <Filter>ApMemory\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApMemoryTracker\ApMemoryTracker.cpp">
+      <Filter>ApMemoryTracker\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApModule\ApModule.cpp">
+      <Filter>ApModule\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApModule\ApModuleManager.cpp">
+      <Filter>ApModule\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApModule\ApModuleStream.cpp">
+      <Filter>ApModule\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApServerMonitor\ApServerMonitor.cpp">
+      <Filter>ApServerMonitor\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApServerMonitor\ApServerMonitorPacket.cpp">
+      <Filter>ApServerMonitor\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuConsole\AuConsole.cpp">
+      <Filter>AuConsole\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuExcelTxtLib\AuExcelBinaryLib.cpp">
+      <Filter>AuExcelTxtLib\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuExcelTxtLib\AuExcelTxtLib.cpp">
+      <Filter>AuExcelTxtLib\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuFileFind\AuFileFind.cpp">
+      <Filter>AuFileFind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuGenerateID\AuGenerateID.cpp">
+      <Filter>AuGenerateID\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuIPBlockingManager\AuIPBlockingManager.cpp">
+      <Filter>AuIPBlockingManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuIniManager\AuIniManager.cpp">
+      <Filter>AuIniManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuMD5EnCrypt\AuMD5Encrypt.cpp">
+      <Filter>AuMD5EnCrypt\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuMath\AuMath.cpp">
+      <Filter>AuMath\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuMath\AuMathEx.cpp">
+      <Filter>AuMath\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuPacket\AuCircularBuffer.cpp">
+      <Filter>AuPacket\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuPacket\AuMiniLZO.cpp">
+      <Filter>AuPacket\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuPacket\AuPacket.cpp">
+      <Filter>AuPacket\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuPacket\minilzo.c">
+      <Filter>AuPacket\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuPackingManager\AuPackingManager.cpp">
+      <Filter>AuPackingManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuPatchCheckCode\AuPatchCheckCode.cpp">
+      <Filter>AuPatchCheckCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuProcessManager\AuProcessManager.cpp">
+      <Filter>AuProcessManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuProcessManager\AuSingleProcessChecker.cpp">
+      <Filter>AuProcessManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuProfileManager\AuProfileManager.cpp">
+      <Filter>AuProfileManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuRandomNumberGenerator\AuRandomNumber.cpp">
+      <Filter>AuRandomNumberGenerator\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuScriptEngine\AuAngelScriptEngine.cpp">
+      <Filter>AuScriptEngine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuScriptEngine\AuScriptEngine.cpp">
+      <Filter>AuScriptEngine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuScriptEngine\stdstring.cpp">
+      <Filter>AuScriptEngine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuTickCounter\AuTickCounter.cpp">
+      <Filter>AuTickCounter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuTimeStamp\AuTimeStamp.cpp">
+      <Filter>AuTimeStamp\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXCrashReport\ExceptionHandler.cpp">
+      <Filter>AuXCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXCrashReport\GetWinVer.cpp">
+      <Filter>AuXCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXCrashReport\MiniVersion.cpp">
+      <Filter>AuXCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXCrashReport\StackWalker.cpp">
+      <Filter>AuXCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuCrypt\AuCrypt.cpp">
+      <Filter>AuCrypt\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuCrypt\AuCryptManager.cpp">
+      <Filter>AuCrypt\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\AuBlowFish.cpp">
+      <Filter>AuCryptAlgorithm\AuBlowFish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\AuMD5Mac.cpp">
+      <Filter>AuCryptAlgorithm\AuMD5Mac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\AuRijnDael.cpp">
+      <Filter>AuCryptAlgorithm\AuRijnDael</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\AuSeed.cpp">
+      <Filter>AuCryptAlgorithm\AuSeed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuEtcUtil\MemMappedFile.cpp">
+      <Filter>AuEtcUtil\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuEtcUtil\StrUtil.cpp">
+      <Filter>AuEtcUtil\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuStrTable\AuStrTable.cpp">
+      <Filter>AuStrTable\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuStringConv\AuStringConv.cpp">
+      <Filter>AuStringConv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuJapan\AuGameInfoJpn.cpp">
+      <Filter>AuJapan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuJapan\AuJapaneseClientAuth.cpp">
+      <Filter>AuJapan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuGameEnv\AuGameEnv.cpp">
+      <Filter>AuGameEnv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\AuXmlParser.cpp">
+      <Filter>AuXmlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinystr.cpp">
+      <Filter>AuXmlParser\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinyxml.cpp">
+      <Filter>AuXmlParser\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinyxmlerror.cpp">
+      <Filter>AuXmlParser\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinyxmlparser.cpp">
+      <Filter>AuXmlParser\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuLocalize\AuRegionNameConver.cpp">
+      <Filter>AuLocalize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuLocalize\AuTranslateRegionName.cpp">
+      <Filter>AuLocalize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuLua\AuLua.cpp">
+      <Filter>AuLua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuGameGuard\augameguard.cpp">
+      <Filter>AuGameGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuGameGuard\AuNPGameLib.cpp">
+      <Filter>AuGameGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuIgnoringHelper\AuIgnoringHelper.cpp">
+      <Filter>AuIgnoringHelper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Modules\APublic\ApAdmin\ApAdmin.h">
+      <Filter>ApAdmin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApAdmin\ApArray.h">
+      <Filter>ApAdmin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApAdmin\ApSet.h">
+      <Filter>ApAdmin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApAdmin\ApSort.h">
+      <Filter>ApAdmin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApBase.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApDefine.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApLockManager.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApMemoryChecker.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApMutualEx.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApRWLock.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApSafeArray.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApString.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApUtil.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApVector.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\AuEzSTL.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\CSLog.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\MagDebug.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApBase\NoMemoryChecker.h">
+      <Filter>ApBase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApHeap.h">
+      <Filter>ApMemory\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApMemory.h">
+      <Filter>ApMemory\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApMemoryAllocator.h">
+      <Filter>ApMemory\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApMemoryManager.h">
+      <Filter>ApMemory\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApMemoryPool.h">
+      <Filter>ApMemory\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApMemoryTracker\ApCRTHeader.h">
+      <Filter>ApMemoryTracker\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApMemoryTracker\ApMemoryTracker.h">
+      <Filter>ApMemoryTracker\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\ApErrorCode.h">
+      <Filter>ApModule\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApModule\ApModule.h">
+      <Filter>ApModule\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApModule\ApModuleManager.h">
+      <Filter>ApModule\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApModule\ApModuleStream.h">
+      <Filter>ApModule\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\ApPacket.h">
+      <Filter>ApModule\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApServerMonitor\ApServerMonitor.h">
+      <Filter>ApServerMonitor\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApServerMonitor\ApServerMonitorPacket.h">
+      <Filter>ApServerMonitor\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuConsole\AuConsole.h">
+      <Filter>AuConsole\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuExcelTxtLib\AuExcelBinaryLib.h">
+      <Filter>AuExcelTxtLib\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuExcelTxtLib\AuExcelTxtLib.h">
+      <Filter>AuExcelTxtLib\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuFileFind\AuFileFind.h">
+      <Filter>AuFileFind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuGenerateID\AuGenerateID.h">
+      <Filter>AuGenerateID\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuIPBlockingManager\AuIPBlockingManager.h">
+      <Filter>AuIPBlockingManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuIniManager\AuIniManager.h">
+      <Filter>AuIniManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuMD5EnCrypt\AuMD5Encrypt.h">
+      <Filter>AuMD5EnCrypt\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuMath\AuMath.h">
+      <Filter>AuMath\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuMath\AuMathEx.h">
+      <Filter>AuMath\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\AuCircularBuffer.h">
+      <Filter>AuPacket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\AuMiniLZO.h">
+      <Filter>AuPacket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\AuPacket.h">
+      <Filter>AuPacket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\AuType.h">
+      <Filter>AuPacket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\lzoconf.h">
+      <Filter>AuPacket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\minilzo.h">
+      <Filter>AuPacket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuPackingManager\AuPackingManager.h">
+      <Filter>AuPackingManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuPatchCheckCode\AuPatchCheckCode.h">
+      <Filter>AuPatchCheckCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuProfileManager\AuProfileManager.h">
+      <Filter>AuProfileManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuRandomNumberGenerator\AuRandomNumber.h">
+      <Filter>AuRandomNumberGenerator\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuScriptEngine\AuAngelScriptEngine.h">
+      <Filter>AuScriptEngine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuScriptEngine\AuScriptEngine.h">
+      <Filter>AuScriptEngine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuScriptEngine\stdstring.h">
+      <Filter>AuScriptEngine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuScriptEngine\stdvector.h">
+      <Filter>AuScriptEngine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuTickCounter\AuTickCounter.h">
+      <Filter>AuTickCounter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuTimeStamp\AuTimeStamp.h">
+      <Filter>AuTimeStamp\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\CrashFileNames.h">
+      <Filter>AuXCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\dbghelp.h">
+      <Filter>AuXCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\ExceptionHandler.h">
+      <Filter>AuXCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\GetWinVer.h">
+      <Filter>AuXCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\MiniVersion.h">
+      <Filter>AuXCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\StackWalker.h">
+      <Filter>AuXCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuCrypt\AuCrypt.h">
+      <Filter>AuCrypt\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuCrypt\AuCryptManager.h">
+      <Filter>AuCrypt\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuCryptAlgorithm.h">
+      <Filter>AuCryptAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuCryptAlgorithmBase.h">
+      <Filter>AuCryptAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\AuBlowFish.h">
+      <Filter>AuCryptAlgorithm\AuBlowFish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\AuMD5Mac.h">
+      <Filter>AuCryptAlgorithm\AuMD5Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\AuRijnDael.h">
+      <Filter>AuCryptAlgorithm\AuRijnDael</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\AuSeed.h">
+      <Filter>AuCryptAlgorithm\AuSeed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuEtcUtil\MemMappedFile.h">
+      <Filter>AuEtcUtil\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuEtcUtil\StrUtil.h">
+      <Filter>AuEtcUtil\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuStrTable\AuStrTable.h">
+      <Filter>AuStrTable\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuStringConv\AuStringConv.h">
+      <Filter>AuStringConv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\AuGameInfoJpn.h">
+      <Filter>AuJapan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\AuJapaneseClientAuth.h">
+      <Filter>AuJapan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\HanAuthForClient.h">
+      <Filter>AuJapan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\HanBillingForSvr.h">
+      <Filter>AuJapan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\HanGameInfoForClient.h">
+      <Filter>AuJapan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\HanReportForClient.h">
+      <Filter>AuJapan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuGameEnv\AuGameEnv.h">
+      <Filter>AuGameEnv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXmlParser\AuXmlParser.h">
+      <Filter>AuXmlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinystr.h">
+      <Filter>AuXmlParser\TinyXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinyxml.h">
+      <Filter>AuXmlParser\TinyXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuLocalize\AuRegionNameConvert.h">
+      <Filter>AuLocalize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuLocalize\AuTranslateRegionName.h">
+      <Filter>AuLocalize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuLua\AuLua.h">
+      <Filter>AuLua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuGameGuard\AuGameGuard.h">
+      <Filter>AuGameGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuGameGuard\AuNPGameLib.h">
+      <Filter>AuGameGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuIgnoringHelper\AuIgnoringHelper.h">
+      <Filter>AuIgnoringHelper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\AuBlowFish.h2">
+      <Filter>AuCryptAlgorithm\AuBlowFish</Filter>
+    </None>
+    <None Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\AuRijnDael.h2">
+      <Filter>AuCryptAlgorithm\AuRijnDael</Filter>
+    </None>
+    <None Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\AuSeed.h2">
+      <Filter>AuCryptAlgorithm\AuSeed</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Modules\AUtility\AuProcessManager\AuProcessManager.h">
+      <Filter>AuProcessManager\헤더 파일</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Modules\AUtility\AuProcessManager\AuSingleProcessChecker.h">
+      <Filter>AuProcessManager\헤더 파일</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

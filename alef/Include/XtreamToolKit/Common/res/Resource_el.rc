@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
+#pragma code_page(1253)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Μορφή",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   Μορφή",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Χρόνος",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T  Χρόνος (24ωρο)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   Αριθμός σελίδας",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Αριθμός σελίδων",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Στοίχιση αριστερά &&b Στοίχιση στο κέντρο &&b Στοίχιση δεξιά", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   Τίτλος παραθύρου",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  Εμπορικό (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Νέα γραμμή",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Εκτύπωση...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Επόμενη σελίδα",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Προηγούμενη σελίδα",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "Μεγέθυνση",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Σμίκρυνση",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Kλείσιμο",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Μία σελίδα"
+    XTP_IDS_TWOPAGE         "Δύο σελίδες"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Λουλακί"
+    XTP_IDS_CLR_GRAY80      "Γκρι-80%"
+    XTP_IDS_CLR_DARK_RED    "Σκούρο κόκκινο"
+    XTP_IDS_CLR_ORANGE      "Πορτοκαλί"
+    XTP_IDS_CLR_DARK_YELLOW "Σκούρο κίτρινο"
+    XTP_IDS_CLR_GREEN       "Πράσινο"
+    XTP_IDS_CLR_TEAL        "Πετρόλ"
+    XTP_IDS_CLR_BLUE        "Μπλε"
+    XTP_IDS_CLR_BLUEGRAY    "Μπλε-γκρι"
+    XTP_IDS_CLR_GRAY50      "Γκρι-50%"
+    XTP_IDS_CLR_RED         "Κόκκινο"
+    XTP_IDS_CLR_LIGHTORANGE "Ανοιχτό πορτοκαλί"
+    XTP_IDS_CLR_LIME        "Λαχανί"
+    XTP_IDS_CLR_SEA_GREEN   "Πράσινο της θάλασσας"
+    XTP_IDS_CLR_AQUA        "Θαλασσί"
+    XTP_IDS_CLR_LIGHT_BLUE  "Ανοιχτό μπλε"
+    XTP_IDS_CLR_VIOLET      "Βιολετί"
+    XTP_IDS_CLR_GRAY40      "Γκρι-40%"
+    XTP_IDS_CLR_PINK        "Ροζ"
+    XTP_IDS_CLR_GOLD        "Χρυσός"
+    XTP_IDS_CLR_YELLOW      "Κίτρινο"
+    XTP_IDS_CLR_BRIGHT_GREEN "Φωτεινό πράσινο"
+    XTP_IDS_CLR_TURQUOISE   "Τυρκουάζ"
+    XTP_IDS_CLR_SKY_BLUE    "Μπλε του ουρανού"
+    XTP_IDS_CLR_PLUM        "Δαμασκηνί"
+    XTP_IDS_CLR_GRAY25      "Γκρι-25%"
+    XTP_IDS_CLR_ROSE        "Τριανταφυλλί"
+    XTP_IDS_CLR_TAN         "Ώχρα"
+    XTP_IDS_CLR_LIGHT_YELLOW "Ανοιχτό κίτρινο"
+    XTP_IDS_CLR_LIGHT_GREEN "Ανοιχτό πράσινο"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Ανοιχτό τυρκουάζ"
+    XTP_IDS_CLR_PALE_BLUE   "Παλ μπλε"
+    XTP_IDS_CLR_BLACK       "Μαύρο"
+    XTP_IDS_CLR_BROWN       "Καφέ"
+    XTP_IDS_CLR_OLIVE_GREEN "Λαδί"
+    XTP_IDS_CLR_DARK_GREEN  "Σκούρο πράσινο"
+    XTP_IDS_CLR_DARK_TEAL   "Μπλε ραφ"
+    XTP_IDS_CLR_DARK_BLUE   "Σκούρο μπλε"
+    XTP_IDS_CLR_LAVENDER    "Λεβάντα"
+    XTP_IDS_CLR_WHITE       "Λευκό"
+    XTP_IDS_CLR_GRAY        "Γκρίζο"
+    XTP_IDS_CLR_MAROON      "Καστανό"
+    XTP_IDS_CLR_OLIVE       "Λαδί"
+    XTP_IDS_CLR_NAVY        "Σκούρο μπλε"
+    XTP_IDS_CLR_PURPLE      "Μοβ"
+    XTP_IDS_CLR_SILVER      "Ασημί"
+    XTP_IDS_CLR_FUCHSIA     "Φούξια"
+    XTP_IDS_CLR_NOFILL      "Χωρίς γέμισμα\nΧωρίς γέμισμα"
+    XTP_IDS_CLR_AUTOMATIC   "Αυτόματο χρώμα\nΑυτόματο χρώμα"
+    XTP_IDS_CLR_MORE        "Περισσότερα χρώματα..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

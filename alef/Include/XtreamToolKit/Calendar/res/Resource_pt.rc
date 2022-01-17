@@ -1,0 +1,429 @@
+// Calendar resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+      
+#include "Common/resource.h"
+#include "Calendar/Resource.h"
+#include "Calendar/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_CALENDAR_DIALOG_OCURR_SERIES DIALOGEX DISCARDABLE  0, 0, 175, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,69,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,91,69,50,14
+    LTEXT           "",
+                    XTP_IDC_CALENDAR_STATIC_OCCUR_MESSAGE,43,6,120,27
+    CONTROL         "",XTP_IDC_CALENDAR_RADIO_OCCUR,"Button",
+                    BS_AUTORADIOBUTTON,43,39,125,10
+    CONTROL         "",XTP_IDC_CALENDAR_RADIO_SERIES,"Button",
+                    BS_AUTORADIOBUTTON,43,51,127,10
+    ICON            "",XTP_IDC_CALENDAR_STATIC_ICON,9,8,20,20
+END
+
+XTP_IDD_CALENDAR_PRINT_PAGE_SETUP DIALOGEX DISCARDABLE  32, 32, 283, 338
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Página de definição de calendário"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Opções de visualização diária",XTP_IDC_PRINT_DAYVIEW_OPTIONS_FRAME,7,
+                    5,106,66
+    RTEXT           "Imprimir de:",IDC_STATIC,10,21,43,8
+    COMBOBOX        XTP_IDC_PRINT_FROM_COMBO,55,19,52,104,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Imprimir para:",IDC_STATIC,10,39,42,8
+    COMBOBOX        XTP_IDC_PRINT_TO_COMBO,55,36,52,104,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Imprimir de (exactamente) para",XTP_IDC_PRINT_FROMTO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,56,95,10
+    GROUPBOX        "Cabeçalho da data",XTP_IDC_PRINT_DATE_HEADER_FRAME,120,5,157,
+                    65
+    CONTROL         "Imprimir cabeçalho da data",XTP_IDC_PRINT_DATE_HEADER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,17,148,10
+    LTEXT           "Fonte do cabeçalho da data:",XTP_IDC_PRINT_DATE_HEADER_FONT_LABEL,
+                    138,28,136,8
+    LTEXT           "123456789 123456789 123456789\n2\n3",
+                    XTP_IDC_PRINT_DATE_HEADER_FONT,138,40,115,26,SS_NOPREFIX | 
+                    SS_SUNKEN
+    PUSHBUTTON      "...",XTP_IDC_PRINT_DATE_HEADER_FONT_BUTTON,257,40,16,14
+    GROUPBOX        "Papel",1073,7,183,197,51,WS_GROUP
+    LTEXT           "Ta&manho:",1089,11,199,40,8
+    COMBOBOX        1137,55,197,141,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Origem:",1090,12,216,39,8
+    COMBOBOX        1138,55,214,141,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Orientação",1072,211,183,66,51,WS_GROUP
+    RADIOBUTTON     "R&etrato",1056,216,196,56,12,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "P&aisagem",1057,216,212,58,12
+    GROUPBOX        "Margens",1075,8,238,196,58,WS_GROUP
+    LTEXT           "E&squerda:",1102,16,254,36,8
+    EDITTEXT        1155,55,251,32,12,WS_GROUP
+    LTEXT           "&Direita:",1103,123,253,35,8
+    EDITTEXT        1157,162,250,32,12,WS_GROUP
+    LTEXT           "&Topo:",1104,16,274,35,8
+    EDITTEXT        1156,55,272,32,12,WS_GROUP
+    LTEXT           "&Fim:",1105,123,274,35,8
+    EDITTEXT        1158,162,272,32,12,WS_GROUP
+    GROUPBOX        "Previsão",XTP_IDC_PRINT_PREVIEW_FRAME,212,238,66,58
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,261,253,4,38
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,230,250,31,40
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,235,290,29,2
+    PUSHBUTTON      "A&juda",1038,75,320,61,14
+    PUSHBUTTON      "&Impressora...",1026,8,300,60,14
+    DEFPUSHBUTTON   "OK",1,175,320,48,14,WS_GROUP
+    PUSHBUTTON      "Cancelar",2,229,320,48,14
+    GROUPBOX        "Definições comuns",IDC_STATIC,7,74,270,27
+    CONTROL         "Impressão p&reto e &branco, em tons de cinzento",
+                    XTP_IDC_PRINT_BLACK_WHITE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,87,258,10
+    GROUPBOX        "Cabeçalhos e rodapés",IDC_STATIC,7,105,270,70
+    LTEXT           "Cabeça&lho",IDC_STATIC,13,115,190,8
+    LTEXT           "&Rodapé",IDC_STATIC,13,145,190,8
+    EDITTEXT        XTP_IDC_CALENDAR_HEADER_FORMAT,13,126,247,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "",XTP_IDC_CALENDAR_HEADER_FORMAT_BTN,260,126,13,14,
+                    BS_ICON,WS_EX_STATICEDGE
+    EDITTEXT        XTP_IDC_CALENDAR_FOOTER_FORMAT,13,155,247,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "",XTP_IDC_CALENDAR_FOOTER_FORMAT_BTN,260,155,13,14,
+                    BS_ICON,WS_EX_STATICEDGE
+END
+
+XTP_IDD_CALENDAR_EVENT_PROPERTIES DIALOGEX DISCARDABLE  0, 0, 450, 231
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Propriedades de aviso"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,165,210,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,233,210,50,14
+    LTEXT           "Assunto:  ",IDC_STATIC,7,9,42,8
+    EDITTEXT        XTP_IDC_EDIT_SUBJECT,55,5,235,14,ES_AUTOHSCROLL
+    EDITTEXT        XTP_IDC_EDIT_LOCATION,55,26,235,14,ES_AUTOHSCROLL
+    LTEXT           "Localização:  ",IDC_STATIC,7,26,42,8
+    LTEXT           "Hora ínicio:  ",XTP_IDC_START_TEXT,7,56,42,8
+    LTEXT           "Hora fim:  ",XTP_IDC_END_TEXT,7,76,42,8
+    CONTROL         "DateTimePicker1",XTP_IDC_DTP_START_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP,55,55,68,15
+    CONTROL         "DateTimePicker2",XTP_IDC_DTP_START_TIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP | 0x8,127,56,67,15
+    CONTROL         "DateTimePicker1",XTP_IDC_DTP_END_DATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,55,75,68,15
+    CONTROL         "DateTimePicker2",XTP_IDC_DTP_END_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,127,76,67,
+                    15
+    LTEXT           "Mostrar hora &como:",IDC_STATIC,300,28,45,8
+    COMBOBOX        XTP_IDC_COMBO_BUSYSTATE,350,25,90,72,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Rótulo:",IDC_STATIC,300,7,40,8
+    COMBOBOX        XTP_IDC_COMBO_LABEL,350,5,90,209,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Rec&orrente...",XTP_IDC_BUTTON_RECURRECNCE,370,100,69,
+                    14
+    CONTROL         "To&dos os eventos diários",XTP_IDC_CHECK_ALLDAY_EVENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,55,57,10
+    CONTROL         "&Privado",XTP_IDC_CHECK_PRIVATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,55,38,10
+    CONTROL         "&Reunião",XTP_IDC_CHECK_MEETING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,65,41,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,5,95,285,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,5,45,285,
+                    1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN | NOT 
+                    WS_VISIBLE,5,205,440,1
+    COMBOBOX        XTP_IDC_COMBO_REMINDER,55,100,68,88,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Aviso:",XTP_IDC_CHECK_REMINDER,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,7,102,45,10
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,295,5,1,
+                    110
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,300,95,145,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,300,45,145,1
+    COMBOBOX        XTP_IDC_COMBO_SCHEDULEID,200,100,90,88,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Agenda ID:",XTP_IDC_SCHEDULEID_TEXT,135,103,62,10
+    EDITTEXT        XTP_IDC_EDIT_BODY,5,125,440,75,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+XTP_IDD_CALENDAR_RECURRENCE_PROPERTIES DIALOGEX DISCARDABLE  0, 0, 340, 311
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Anotação recorrente"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        XTP_IDC_COMBO_SCHEDULEID,34,20,55,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_REC_END,116,20,55,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_REC_DURATION,218,20,87,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Nenhuma data fim",XTP_IDC_RADIO_NOEND,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,166,144,62,9
+    CONTROL         "Finalizar após:",XTP_IDC_RADIO_ENDAFTER,"Button",
+                    BS_AUTORADIOBUTTON,166,157,45,10
+    CONTROL         "Finalizar por:",XTP_IDC_RADIO_ENDBY,"Button",
+                    BS_AUTORADIOBUTTON,166,171,39,10
+    EDITTEXT        XTP_IDC_EDIT_OCCUR,214,154,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",XTP_IDC_DATETIMEPICKER_ENDDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,214,169,83,15
+    PUSHBUTTON      "Cancelar",IDCANCEL,124,191,50,14
+    PUSHBUTTON      "Remover recorrência",XTP_IDC_BUTTON_REMOVE_RECURRENCE,199,
+                    191,90,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,49,191,50,14
+    GROUPBOX        "Padrão de recorrência:",IDC_STATIC,7,47,328,85
+    CONTROL         "Diária",XTP_IDC_RADIO_DAILY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,11,58,54,10
+    CONTROL         "Semanal",XTP_IDC_RADIO_WEEKLY,"Button",
+                    BS_AUTORADIOBUTTON,11,76,61,10
+    CONTROL         "Mensal",XTP_IDC_RADIO_MONTHLY,"Button",
+                    BS_AUTORADIOBUTTON,11,94,59,10
+    CONTROL         "Anual",XTP_IDC_RADIO_YEARLY,"Button",
+                    BS_AUTORADIOBUTTON,11,112,52,10
+    CONTROL         "Segunda",XTP_IDC_CHECK_MONDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,105,41,10
+    CONTROL         "Terça",XTP_IDC_CHECK_TUESDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,127,105,50,10
+    CONTROL         "Quarta",XTP_IDC_CHECK_WEDNESDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,184,105,54,10
+    CONTROL         "Quinta",XTP_IDC_CHECK_THURSDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,247,105,46,10
+    CONTROL         "Sexta",XTP_IDC_CHECK_FRIDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,120,41,10
+    CONTROL         "Sábado",XTP_IDC_CHECK_SATURDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,120,45,10
+    CONTROL         "Domingo",XTP_IDC_CHECK_SUNDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,184,119,62,10
+    EDITTEXT        XTP_IDC_EDIT_WEEKLY_INTERVAL,127,88,26,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "semana(s) em:",XTP_IDC_STATIC_WEEKLY_FOLLDAYS,157,91,66,8
+    LTEXT           "Ocorrer& em cada",XTP_IDC_STATIC_WEEKLY_RECEVERY,82,91,43,8
+    GROUPBOX        "Hora da anotação",IDC_STATIC,7,3,328,40
+    GROUPBOX        "Limite da ocorrência",IDC_STATIC,7,135,328,52
+    CONTROL         "",XTP_IDC_DATETIMEPICKER_START,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,47,156,100,15
+    RTEXT           "Iní&cio",IDC_STATIC,15,160,28,8
+    LTEXT           "ocorrências",IDC_STATIC,257,156,49,8
+    RTEXT           "I&nício:",IDC_STATIC,12,22,20,8
+    RTEXT           "F&im:",IDC_STATIC,89,22,24,8
+    RTEXT           "D&uração:",IDC_STATIC,175,23,39,8
+    GROUPBOX        "",XTP_IDC_STATIC_SEP,73,51,1,76
+    CONTROL         "Cada",XTP_IDC_RADIO_EVERYDAY,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,57,35,10
+    CONTROL         "Cada dia útil",XTP_IDC_RADIO_EVERYWORKDAY,"Button",
+                    BS_AUTORADIOBUTTON,81,72,108,10
+    EDITTEXT        XTP_IDC_EDIT_DAYINTERVAL,120,55,28,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "dia(s)",XTP_IDC_STATIC_DAY,152,57,22,8
+    CONTROL         "&Dia",XTP_IDC_RADIO_MONTH_RECUR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,220,26,10
+    CONTROL         "D&e",XTP_IDC_RADIO_MONTH_IN,"Button",
+                    BS_AUTORADIOBUTTON,81,239,28,10
+    EDITTEXT        XTP_IDC_EDIT_MONTH_DATE,111,218,24,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "de cada",XTP_IDC_STATIC_MONTH_NUMEVERY,139,221,28,8
+    EDITTEXT        XTP_IDC_EDIT_MONTH_MONTH,170,218,25,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "mês(s)",XTP_IDC_STATIC_MONTH_MONTH,200,221,37,8
+    COMBOBOX        XTP_IDC_COMBO_MONTH_CRIT,111,237,50,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_MONTH_DAY,162,237,68,287,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "de cada",XTP_IDC_STATIC_MONTH_EVERY,234,238,28,8
+    EDITTEXT        XTP_IDC_EDIT_MONTH_MONTH2,266,235,26,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "mês(s)",XTP_IDC_STATIC_MONTH_MONTH2,296,238,29,8
+    CONTROL         "C&ada",XTP_IDC_RADIO_YEAR_RECUR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,268,34,10
+    CONTROL         "De",XTP_IDC_RADIO_YEAR_IN,"Button",BS_AUTORADIOBUTTON,
+                    81,288,31,10
+    EDITTEXT        XTP_IDC_EDIT_YEAR_DATE,195,266,27,12,ES_AUTOHSCROLL
+    COMBOBOX        XTP_IDC_COMBO_YEAR_CRIT,117,286,48,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_DAY,167,286,70,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_MONTH,117,266,76,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_MONTH2,253,286,71,230,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "de",XTP_IDC_STATIC_YEAR_OF,241,289,10,8
+END
+
+XTP_IDD_CALENDAR_TIMESCALE_PROPERTIES DIALOGEX 0, 0, 274, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fuso horário"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,150,158,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,217,158,50,14
+    GROUPBOX        "Fuso horário actual",IDC_STATIC,7,7,260,65
+    GROUPBOX        "",IDC_STATIC,7,88,260,62,0,WS_EX_TRANSPARENT
+    CONTROL         "&Mostrar fuso horário adicional",
+                    XTP_IDC_CHECK_ADDITIONAL_TIMEZONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,78,260,8,WS_EX_TRANSPARENT
+    EDITTEXT        XTP_IDC_LABEL1,60,21,40,14,ES_AUTOHSCROLL
+    LTEXT           "Etiqueta:",IDC_STATIC,15,23,20,8
+    LTEXT           "Fuso horário:",IDC_STATIC,15,42,36,8
+    COMBOBOX        XTP_IDC_COMBO_TIMEZONE1,60,39,195,130,CBS_DROPDOWN | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        XTP_IDC_LABEL2,60,99,40,14,ES_AUTOHSCROLL
+    LTEXT           "Etiqueta:",IDC_STATIC,15,101,20,8
+    LTEXT           "Fuso horário:",IDC_STATIC,15,120,36,8
+    COMBOBOX        XTP_IDC_COMBO_TIMEZONE2,60,117,195,135,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "A&justar automáticamente o relógio para actualizações de gravação diárias",
+                    XTP_IDC_CHECK_ADJUST_DAYLIGHT_TIMEZONE1,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,56,234,8,
+                    WS_EX_TRANSPARENT
+    CONTROL         "A&justar automáticamente o relógio para actualizações de gravação diárias",
+                    XTP_IDC_CHECK_ADJUST_DAYLIGHT_TIMEZONE2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,134,234,8,
+                    WS_EX_TRANSPARENT
+END
+
+XTP_IDD_CALENDAR_REMINDERS DIALOGEX DISCARDABLE  0, 0, 303, 181
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Avisos activos"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "Lista",XTP_IDC_RMD_REMINDERS_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,5,40,290,90
+    PUSHBUTTON      "Desmarcar &todos",XTP_IDC_RMD_DIMISS_ALL,5,135,65,14
+    PUSHBUTTON      "&Desmarcar",XTP_IDC_RMD_DIMISS,230,135,65,14
+    PUSHBUTTON      "&Abrir item",XTP_IDC_RMD_OPEN_ITEM,160,135,65,14
+    COMBOBOX        XTP_IDC_RMD_SNOZE_TIME_CB,5,165,220,130,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Selecione adormecer para ser lembrado novamente em: ",IDC_STATIC,5,
+                    155,170,8
+    LTEXT           "Estático",XTP_IDC_RMD_DESCRIPTION,25,5,270,30,SS_NOPREFIX
+    DEFPUSHBUTTON   "&Adormecer",XTP_IDC_RMD_SNOOZE,230,165,65,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+//  String table 
+//
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_DATEPICKER_TODAY       "Hoje"
+    XTP_IDS_DATEPICKER_NONE        "Nenhum"
+END
+
+STRINGTABLE 
+BEGIN
+    XTP_IDS_CALENDAR_OCURR_SERIES_DELETE  "Confirme Apagar\nApagar esta &ocorrência.\nApagar as &séries.\nDeseja apagar todas as ocorrências do evento recorrente ""%s"", ou apenas esta?"
+    XTP_IDS_CALENDAR_OCURR_SERIES_OPEN    "Abrir item recorrente\nAbrir a &ocorrência.\nAbrir as &séries.\n""%s"" é um evento recorrente. \nDeseja abrir apenas esta ocorrência ou as séries associadas?"
+    XTP_IDS_CALENDAR_FROM                 "De"
+    XTP_IDS_CALENDAR_TO                   "Para"
+    XTP_IDS_CALENDAR_MARGINS_MM           "Margens (milímetros)"
+    XTP_IDS_CALENDAR_MARGINS_INCH         "Margens (polegadas)"
+    
+    XTP_IDS_CALENDAR_REMINDERS            "%d Lembretes"
+    XTP_IDS_CALENDAR_SUBJECT              "Assunto"
+    XTP_IDS_CALENDAR_DUEIN                "Vencida em"
+    XTP_IDS_CALENDAR_OVERDUE              "vencida"
+
+    XTP_IDS_CALENDAR_SEL_0_RMD            "Não foram selecionados avisos"
+    XTP_IDS_CALENDAR_NO_REMINDERS         "Não existem avisos para apresentação."
+    XTP_IDS_CALENDAR_START_TIME           "Data de ínicio"
+
+    XTP_IDS_CALENDAR_WRONG_VALUE          "Valor errado!"
+    XTP_IDS_CALENDAR_WRONG_VALUE_RANGE    "Aviso. Por favor introduza valores entre %s e %s." 
+    XTP_IDS_CALENDAR_REMOVE_EXCEPTIONS    "Todas as excepções associadas a esta anotação recorrente serão perdidas. Confirma?"
+
+    XTP_IDS_CALENDAR_TIME_STATUS_FREE           "Grátis"
+    XTP_IDS_CALENDAR_TIME_STATUS_TENTATIVE      "Tentativa"
+    XTP_IDS_CALENDAR_TIME_STATUS_BUSY           "Ocupado"
+    XTP_IDS_CALENDAR_TIME_STATUS_OUTOFOFFICE    "Ausente do escritório"
+
+    XTP_IDS_CALENDAR_EVENT_LABEL_NONE               "Nenhum"
+    XTP_IDS_CALENDAR_EVENT_LABEL_IMPORTANT          "Importante"
+    XTP_IDS_CALENDAR_EVENT_LABEL_BUSINESS           "Negócios"
+    XTP_IDS_CALENDAR_EVENT_LABEL_PERSONAL           "Pessoal"
+    XTP_IDS_CALENDAR_EVENT_LABEL_VACATION           "Férias"
+    XTP_IDS_CALENDAR_EVENT_LABEL_MUSTATTEND         "Deve comparecer"
+    XTP_IDS_CALENDAR_EVENT_LABEL_TRAVELREQUIRED     "Viagem necessária"
+    XTP_IDS_CALENDAR_EVENT_LABEL_NEEDSPREPARATION   "Necessita preparação"
+    XTP_IDS_CALENDAR_EVENT_LABEL_BIRTHDAY           "Data de nascimento"
+    XTP_IDS_CALENDAR_EVENT_LABEL_ANNIVERSARY        "Aniversário"
+    XTP_IDS_CALENDAR_EVENT_LABEL_PHONECALL          "Chamada telefónica"
+
+    XTP_IDS_CALENDAR_FIRST      "Primeiro"
+    XTP_IDS_CALENDAR_SECOND     "Segundo"
+    XTP_IDS_CALENDAR_THIRD      "Terceiro"
+    XTP_IDS_CALENDAR_FOURTH     "Quarto"
+    XTP_IDS_CALENDAR_LAST       "Último"
+
+    XTP_IDS_CALENDAR_MINUTES_0      "0 minutos"
+    XTP_IDS_CALENDAR_MINUTES_1      "1 minuto"
+    XTP_IDS_CALENDAR_MINUTES_5      "5 minutos"
+    XTP_IDS_CALENDAR_MINUTES_10     "10 minutos"
+    XTP_IDS_CALENDAR_MINUTES_15     "15 minutos"
+    XTP_IDS_CALENDAR_MINUTES_30     "30 minutos"
+    
+    XTP_IDS_CALENDAR_HOURS_1        "1 hora"
+    XTP_IDS_CALENDAR_HOURS_2        "2 horas"
+    XTP_IDS_CALENDAR_HOURS_3        "3 horas"
+    XTP_IDS_CALENDAR_HOURS_4        "4 horas"
+    XTP_IDS_CALENDAR_HOURS_5        "5 horas"
+    XTP_IDS_CALENDAR_HOURS_6        "6 horas"
+    XTP_IDS_CALENDAR_HOURS_7        "7 horas"
+    XTP_IDS_CALENDAR_HOURS_8        "8 horas"
+    XTP_IDS_CALENDAR_HOURS_9        "9 horas"
+    XTP_IDS_CALENDAR_HOURS_10       "10 horas"
+    XTP_IDS_CALENDAR_HOURS_11       "11 horas"
+    XTP_IDS_CALENDAR_HOURS_18       "18 horas"
+
+    XTP_IDS_CALENDAR_DAYS_0_5       "0,5 dias"
+    XTP_IDS_CALENDAR_DAYS_1         "1 dia"
+    XTP_IDS_CALENDAR_DAYS_2         "2 dias"
+    XTP_IDS_CALENDAR_DAYS_3         "3 dias"
+
+    XTP_IDS_CALENDAR_WEEKS_1        "1 semana"
+    XTP_IDS_CALENDAR_WEEKS_2        "2 semanas"
+
+    XTP_IDS_CALENDAR_MINUTES    "minuto(s)"
+    XTP_IDS_CALENDAR_HOURS      "hora(s)"
+    XTP_IDS_CALENDAR_DAYS       "dia(s)"
+    XTP_IDS_CALENDAR_WEEKS      "semana(s)"
+
+    XTP_IDS_CALENDAR_TIME_PREFIX_MINUTES    "min"   // minutes
+    XTP_IDS_CALENDAR_TIME_PREFIX_HOURS      "h"     // hours
+    XTP_IDS_CALENDAR_TIME_PREFIX_DAYS       "d"     // days
+    XTP_IDS_CALENDAR_TIME_PREFIX_WEEKS      "s"     // weeks    
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

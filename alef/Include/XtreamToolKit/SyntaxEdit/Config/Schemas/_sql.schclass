@@ -1,0 +1,401 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 	lexClass:
+//		name		= c_CPPString
+//		parent		= c_CPP
+//		parent:dyn	= c_CPP
+//
+//		children		= 0
+//		children		= class1, class2, ...
+//
+//		previous:class			=	
+//		previous:tag			=	
+//		previous:tag:separators	=	
+//
+//		start:class		= 
+//		start:Tag		= '"'
+//
+//		skip:Tag		= '\"'
+//
+//		end:class		= //
+//		end:Tag			= '"'
+//		end:separators	= ' '
+//
+//		Token:tag		= 'if', 'for', 'while', 'do'
+//		Token:start:separators	= 
+//		Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//	txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//	txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//	txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//	txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//	txt:Bold	= 1 // {1,0} default: 0
+//	txt:Italic	= 1 // {1,0} default: 0
+//	txt:Underline	= 1 // {1,0} default: 0
+//
+//	caseSensitive	= 1 // {1,0} default: 0
+//
+//	Collapsable	= 1 // {1,0} default: 0
+//	CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//	ParseOnScreen	= 1 // {1,0} default: 0
+// 	
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+// 	global:FirstParseInSeparateThread	= 1		// {0,1} default=1
+// 	global:EditReparceInSeparateThread	= 1		// {0,1} default=1
+// 	global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+// 	global:EditReparceTimeout_ms	= 500		// default= 500 ms; time out for start reparse after last key was pressed.
+// 	global:MaxBackParseOffset		= 100		// default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+// 	global:OnScreenSchCacheLifeTime_sec = 180	// default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+// 	global:ParserThreadIdleLifeTime_sec = 60	// default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+	
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+/// SQL ///	
+lexClass:
+	parent:file		= <*.sql>
+	name			= c_SQL
+	caseSensitive	= 0
+	txt:colorFG	= 0x000000
+	global:EditReparceTimeout_ms = 15000
+	global:OnScreenSchcacheLifeTime_sec = 0
+	global:ParserThreadIdleLifeTime_sec = 300
+//:lexClass
+
+lexClass:
+	name		= c_TSQL_Batch_Separator	
+	parent		= c_SQL	
+	children	= 0	
+	previous:tag	= '\t', ' ', @eol
+	start:Tag	= 'go'
+	//end:Tag		= '\t', ' ', @eol
+	end:Separators	= '\t', ' ', @eol
+	txt:colorFG	= 0x0000FF
+//:lexClass
+
+//lexClass:
+//	name		= c_TSQL_Batch_Block
+//	parent		= c_SQL
+//	//children	= c_PascalCodeBlock_End		
+//	start:CLASS	= c_TSQL_Batch_Separator	
+//	end:CLASS	= c_TSQL_Batch_Separator	
+//	Collapsable	= 1 
+//	CollapsedText	= '...'
+
+//** (1) **
+lexClass:
+	name		= c_TSQL_CodeBlock_Frame
+	parent		= c_SQL, c_TSQL_CodeBlock
+	RecurrenceDepth = 15
+	//children	= c_TSQL_CodeBlock	
+	previous:tag	= ';', ' ', '\t', @eol        	
+	Start:Tag		= 'begin ', 'begin\t', 'begin\r', 'begin\n'
+	End:Tag			= ' end', '\tend', '\rend', '\nend'
+	End:separators	= ';', ' ', '\t', @eol        
+    
+	Collapsable	= 1 
+	CollapsedText	= '...'
+		
+	txt:colorFG	= 0x0000FF
+	txt:colorBK = 0xFFFFFF
+	txt:Bold = 1
+//:lexClass
+
+lexClass:
+	name		= c_TSQL_CodeBlock	
+	parent		= c_TSQL_CodeBlock_Frame
+	previous:class = c_TSQL_CodeBlock_Frame
+	                              
+	end:separators	= ' end;', '\tend;', '\rend;', '\nend;'	
+	end:separators	= ' end ', '\tend ', '\rend ', '\nend '	
+	end:separators	= ' end\t', '\tend\t', '\rend\t', '\nend\t'	
+	end:separators	= ' end\r', '\tend\r', '\rend\r', '\nend\r'	
+	end:separators	= ' end\n', '\tend\n', '\rend\n', '\nend\n'	
+		                          
+	txt:colorFG	= 0x000000        
+	txt:colorBK = 0xFFFFFF        
+	txt:Bold = 0
+	RecurrenceDepth = 15
+//:lexClass                       
+                                  
+//lexClass:                       
+//	name		= c_TSQL_CodeBlock_Start		
+//	parent		= c_SQL, c_TSQL_CodeBlock	
+//	children	= 0	
+//	Token:Tag				= 'begin'
+//	Token:start:separators	= ';', ' ', '\t', @eol        
+//    Token:end:separators    =	   ' ', '\t', @eol
+//	
+//	txt:colorFG	= 0x0000FF
+//	txt:Underline = 1
+////:lexClass
+//	
+//lexClass:
+//	name		= c_TSQL_CodeBlock_End		
+//	parent		= c_SQL, c_TSQL_CodeBlock	
+//	children	= 0		
+//	Token:tag				= 'end'
+//    Token:start:separators  = ';', ' ', '\t', @specs, @eol        
+//    Token:end:separators    = ';', ' ', '\t', @specs, @eol	
+//	txt:colorFG	= 0x0000FF
+//	//txt:colorBK = 0x80808f
+//	txt:bold = 1
+//
+////:lexClass
+//
+//lexClass:
+//	name		= c_TSQL_CodeBlock	
+//	parent		= c_SQL, c_TSQL_CodeBlock
+//	//children	= c_TSQL_CodeBlock_End		
+//
+//	previous:class	= c_TSQL_CodeBlock_Start	
+//	//start:class	= c_TSQL_CodeBlock_Start	
+//	end:class	= c_TSQL_CodeBlock_End	
+//	end:CLASS:Parent= this
+//
+//	Collapsable	= 1 
+//	CollapsedText	= '...'
+//
+//	//RestartRunLoop = 1
+//
+//	txt:colorBK = 0xFF8000
+////:lexClass
+//
+//
+////lexClass:
+//	name		= c_TSQL_CodeBlock
+//	parent:dyn	= c_SQL, c_TSQL_CodeBlock
+//	start:Tag	= 'begin'
+//	end:tag		= 'ebd'
+//	Collapsable	= 1 
+//	CollapsedText	= '...'
+
+//lexClass:
+//	name		= c_TSQL_Proc_Start		
+//	parent		= c_SQL 	
+//	children	= 0	
+//	previous:tag	= ' ', '\t', @eol
+//	start:Tag	= 'as'
+//	end:Tag		= '\t', ' ', @eol
+//	end:Separators	= '\t', ' ', @eol
+//	txt:colorFG	= 0x0000FF
+	
+//lexClass:
+//	name		= c_TSQL_Proc_End		
+//	parent		= c_SQL	
+//	children	= 0	
+//	previous:tag	= @specs, ' ', '\t', @eol
+//	start:Tag	= 'go'	
+//	end:Separators	= @specs, @eol
+//	txt:colorFG	= 0x0000FF
+
+//lexClass:
+//	name		= c_TSQL_Proc_Body	
+//	parent		= c_SQL
+//	children	= c_TSQL_Proc_End		
+//	start:CLASS	= c_TSQL_Proc_Start	
+//	end:CLASS	= c_TSQL_Proc_End	
+//	Collapsable	= 1 
+//	CollapsedText	= '...'
+
+lexClass:
+	name		= c_SQLCommentML	
+	parent:dyn	= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block
+	children	= 0
+	start:Tag	='/*'
+	end:Tag		='*/'
+	Collapsable	= 1 
+	CollapsedText	= '/**/' 
+	txt:colorfg = 0x80FF00
+
+lexClass:	
+	name		= c_SQLCommentSL
+	parent		= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block
+	children	= c_SQLString_char		
+	start:tag	='--'
+	skip:Tag	= '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:tag		= @eol
+	txt:colorFG	= 0x80FF00
+
+lexClass:
+	name		= c_SQL_A_OPERATORS	
+	ParseOnScreen = 1
+	parent		= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block	
+	Token:Tag = '<', '>', '=', '+', '-', '!', '(', ')'
+	txt:colorfg = 0xC0C0C0
+
+lexClass:
+	name		= c_SQL_L_OPERATORS	
+	ParseOnScreen = 1
+	parent		= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block	
+        Token:Tag =  'AND', 'OR', 'NOT', 'EXISTS', 'JOIN'
+        token:start:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+        token:end:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+        txt:colorfg = 0xC0C0C0
+
+lexClass: 	
+	name			= c_SQLString_char	
+	parent:dyn		= c_SQL, c_TSQL_CodeBlock
+	children		= 0
+	start:Tag		= '\''
+	end:Tag			= '\'', @eol
+	txt:colorFG		= 0xE00000
+
+lexClass:
+	name		= c_TSQL_Key_Words	
+	ParseOnScreen = 1
+	parent		= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block	
+
+	Token:Tag = 'ABSOLUTE', 'ACTION', 'ADA', 'ADD', 'ALL', 'ALLOCATE', 'ALTER', 'ANY'
+	Token:Tag = 'ARE', 'AS', 'ASC', 'ASSERTION', 'AT', 'AUTHORIZATION', 'AVG', 'BEGIN' 	
+	Token:Tag = 'BETWEEN', 'BIT', 'BIT_LENGTH', 'BOTH', 'BY', 'CASCADE', 'CASCADED', 'CASE'
+	Token:Tag = 'CAST', 'CATALOG', 'CHAR', 'CHAR_LENGTH', 'CHARACTER', 'CHARACTER_LENGTH'
+	Token:Tag = 'CHECK', 'CLOSE', 'COALESCE', 'COLLATE', 'COLLATION', 'COLUMN', 'COMMIT'
+	Token:Tag = 'CONNECT', 'CONNECTION', 'CONSTRAINT', 'CONSTRAINTS', 'CONTINUE', 'CONVERT'
+	Token:Tag = 'CORRESPONDING', 'COUNT', 'CREATE', 'CROSS', 'CURRENT', 'CURRENT_DATE'
+	Token:Tag = 'CURRENT_TIME', 'CURRENT_TIMESTAMP', 'CURRENT_USER', 'CURSOR', 'DATE', 'DAY'
+	Token:Tag = 'DEALLOCATE', 'DEC', 'DECIMAL', 'DECLARE', 'DEFAULT', 'DEFERRABLE', 'DEFERRED'
+	Token:Tag = 'DELETE', 'DESC', 'DESCRIBE', 'DESCRIPTOR', 'DIAGNOSTICS', 'DISCONNECT'
+	Token:Tag = 'DISTINCT', 'DOMAIN', 'DOUBLE', 'DROP', 'ELSE', 'END', 'END-EXEC', 'ESCAPE'
+	Token:Tag = 'EXCEPT', 'EXCEPTION', 'EXEC', 'EXECUTE', 'EXISTS', 'EXTERNAL', 'EXTRACT'
+	Token:Tag = 'FALSE', 'FETCH', 'FIRST', 'FLOAT', 'FOR', 'FOREIGN', 'FORTRAN', 'FOUND'
+	Token:Tag = 'FROM', 'FULL', 'GET', 'GLOBAL', 'GO', 'GOTO', 'GRANT', 'GROUP', 'HAVING'
+	Token:Tag = 'HOUR', 'IDENTITY', 'IMMEDIATE', 'IN', 'INCLUDE', 'INDEX', 'INDICATOR'
+	Token:Tag = 'INITIALLY', 'INNER', 'INPUT', 'INSENSITIVE', 'INSERT', 'INT', 'INTEGER'
+	Token:Tag = 'INTERSECT', 'INTERVAL', 'INTO', 'IS', 'ISOLATION', 'JOIN', 'KEY', 'LANGUAGE'
+	Token:Tag = 'LAST', 'LEADING', 'LEFT', 'LEVEL', 'LIKE', 'LOCAL', 'LOWER', 'MATCH', 'MAX'
+	Token:Tag = 'MIN', 'MINUTE', 'MODULE', 'MONTH', 'NAMES', 'NATIONAL', 'NATURAL', 'NCHAR'
+	Token:Tag = 'NEXT', 'NO', 'NONE', 'NOT', 'NULL', 'NULLIF', 'NUMERIC', 'OCTET_LENGTH'
+	Token:Tag = 'OF', 'ON', 'ONLY', 'OPEN', 'OPTION', 'OR', 'ORDER', 'OUTER', 'OUTPUT'
+	Token:Tag = 'OVERLAPS', 'PAD', 'PARTIAL', 'PASCAL', 'POSITION', 'PRECISION', 'PREPARE'
+	Token:Tag = 'PRESERVE', 'PRIMARY', 'PRIOR', 'PRIVILEGES', 'PROCEDURE', 'PUBLIC', 'READ'
+	Token:Tag = 'REAL', 'REFERENCES', 'RELATIVE', 'RESTRICT', 'return', 'returns', 'REVOKE', 'RIGHT', 'ROLLBACK'
+	Token:Tag = 'ROWS', 'SCHEMA', 'SCROLL', 'SECOND', 'SECTION', 'SELECT', 'SESSION'
+	Token:Tag = 'SESSION_USER', 'SET', 'SIZE', 'SMALLINT', 'SOME', 'SPACE', 'SQL', 'SQLCA'
+	Token:Tag = 'SQLCODE', 'SQLERROR', 'SQLSTATE', 'SQLWARNING', 'SUBSTRING', 'SUM', 'SYSTEM_USER'
+	Token:Tag = 'TABLE', 'TEMPORARY', 'THEN', 'TIME', 'TIMESTAMP', 'TIMEZONE_HOUR', 'TIMEZONE_MINUTE'
+	Token:Tag = 'TO', 'TRAILING', 'TRANSACTION', 'TRANSLATE', 'TRANSLATION', 'TRIM', 'TRUE'
+	Token:Tag = 'UNION', 'UNIQUE', 'UNKNOWN', 'UPDATE', 'UPPER', 'USAGE', 'USER', 'USING'
+	Token:Tag = 'VALUE', 'VALUES', 'VARCHAR', 'VARYING', 'VIEW', 'WHEN', 'WHENEVER', 'WHERE'
+	Token:Tag = 'WITH', 'WORK', 'WRITE', 'YEAR', 'ZONE'
+	txt:colorfg = 0x0000FF
+	token:start:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+	token:end:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+
+lexClass:
+	name		= c_SQL_Key_Words	
+	ParseOnScreen = 1
+	parent		= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block	
+
+	Token:Tag = 'add', 'all', 'alter', 'and', 'any', 'as', 'asc', 'authorization', 'avg'
+	Token:Tag = 'backup', 'begin', 'between', 'break', 'browse', 'bulk', 'by', 'cascade'
+	Token:Tag = 'case', 'check', 'checkpoint', 'close', 'clustered', 'coalesce', 'column'
+	Token:Tag = 'commit', 'commited', 'compute', 'confirm', 'constraint', 'contains', 'containstable'
+	Token:Tag = 'continue', 'controlrow', 'convert', 'count', 'create', 'cross', 'current'
+	Token:Tag = 'current_date', 'current_time', 'current_timestamp', 'current_user', 'cursor'
+	Token:Tag = 'database', 'dbcc', 'deallocate', 'declare', 'default', 'delete', 'deny'
+	Token:Tag = 'desc', 'disk', 'distinct', 'distributed', 'double', 'drop', 'dummy', 'dump'
+	Token:Tag = 'else', 'end', 'errlvl', 'errorexit', 'escape', 'except', 'exec', 'exit'
+	Token:Tag = 'file', 'fillfactor', 'floppy', 'for', 'foreign', 'freetext', 'freetexttable'
+	Token:Tag = 'from', 'full', 'goto', 'grant', 'group', 'having', 'holdlock', 'identity'
+	Token:Tag = 'identity_insert', 'identitycol', 'if', 'in', 'index', 'insert', 'intersect'
+	Token:Tag = 'into', 'is', 'isolation', 'join', 'key', 'kill', 'left', 'level', 'like'
+	Token:Tag = 'lineno', 'load', 'max', 'min', 'mirrorexit', 'national', 'nocheck', 'nonclustered'
+	Token:Tag = 'not', 'null', 'nullif', 'of', 'off', 'offsets', 'on', 'once', 'only', 'open'
+	Token:Tag = 'opendatasource', 'openquery', 'openrowset', 'option', 'or', 'order', 'outer'
+	Token:Tag = 'over', 'percent', 'perm', 'permanent', 'pipe', 'plan', 'precision', 'prepare'
+	Token:Tag = 'primary', 'print', 'privileges', 'proc', 'procedure', 'processexit', 'public'
+	Token:Tag = 'raiserror', 'readtext', 'reconfigure', 'references', 'repeatable', 'replication', 'restore'
+	Token:Tag = 'restrict', 'return', 'revoke', 'right', 'rollback', 'rowcount', 'rowguidecol'
+	Token:Tag = 'rule', 'save', 'schema', 'select', 'serializable', 'session_user', 'set'
+	Token:Tag = 'setuser', 'shutdown', 'some', 'statistics', 'sum', 'system_user', 'table'
+	Token:Tag = 'tape', 'temp', 'temporary', 'textsize', 'then', 'to', 'top', 'tran', 'transaction'
+	Token:Tag = 'trigger', 'truncate', 'tsequal', 'ucommited', 'union', 'unique', 'update'
+	Token:Tag = 'updatetext', 'use', 'user', 'values', 'varying', 'view', 'waitfor', 'when'
+	Token:Tag = 'where', 'while', 'with', 'work', 'writetext'
+	txt:colorfg = 0x0000FF
+	token:start:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+	token:end:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+
+lexClass:
+	name		= c_TSQL_Functions	
+	ParseOnScreen = 1
+	parent		= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block	
+
+	Token:Tag = 'abs', 'acos', 'all', 'and', 'any', 'ascii', 'asin', 'atan', 'atn2', 'avg'
+	Token:Tag = 'case', 'cast', 'ceiling', 'CHAR', 'CHARINDEX', 'convert', 'cos', 'current_timestamp'
+	Token:Tag = 'current_user', 'cursor_status', 'datalenght', 'date', 'dateadd', 'datediff'
+	Token:Tag = 'datename', 'datepart', 'decode', 'degrees', 'DIFFERENCE', 'exp', 'floor', 'getdate'
+	Token:Tag = 'identity', 'LEFT', 'LEN', 'log', 'log10', 'LOWER', 'LTRIM', 'NCHAR', 'object_id'
+	Token:Tag = 'object_name', 'objectproperty', 'odbc', 'openquery', 'openrowset', 'parsename'
+	Token:Tag = 'PATINDEX', 'power', 'rand', 'readtext', 'REPLACE', 'REPLICATE', 'REVERSE'
+	Token:Tag = 'RIGHT', 'RTRIM', 'sin', 'SOUNDEX', 'SPACE', 'STR', 'STUFF', 'SUBSTRING'
+	Token:Tag = 'UNICODE', 'updatetext', 'UPPER', 'PATINDEX', 'TEXTPTR', 'writetext'
+	Token:Tag = '@@DATEFIRST', '@@OPTIONS', '@@DBTS', '@@REMSERVER', '@@LANGID', '@@SERVERNAME' 
+	Token:Tag = '@@LANGUAGE', '@@SERVICENAME', '@@LOCK_TIMEOUT', '@@SPID', '@@MAX_CONNECTIONS'
+	Token:Tag = '@@TEXTSIZE', '@@MAX_PRECISION', '@@VERSION', '@@NESTLEVEL'   
+
+	txt:colorfg = 0xFF0080
+	token:start:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+	token:end:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+
+lexClass:
+	name		= c_SQL_Set_Operators	
+	ParseOnScreen = 1
+	parent		= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block	
+
+	Token:Tag = 'UNION', 'UNION ALL', 'INTERSECT', 'MINUS'
+	txt:colorfg = 0xFF0080
+	token:start:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+	token:end:separators = ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+
+
+lexClass:
+	name		= c_SQL_ORACLE_Functions	
+	ParseOnScreen = 1
+	parent		= c_SQL, c_TSQL_CodeBlock//,c_TSQL_Batch_Block	
+
+	Token:Tag = 'ABS', 'ACOS', 'ADD_MONTHS', 'ASCII', 'ASCIISTR', 'ASIN', 'ATAN', 'ATAN2', 'AVG'
+	Token:Tag = 'BFILENAME', 'BIN_TO_NUM', 'BITAND', 'CAST', 'CEIL', 'CHARTOROWID', 'CHR', 'COALESCE' 
+	Token:Tag = 'COMPOSE', 'CONCAT', 'CONVERT', 'CORR', 'COS', 'COSH', 'COUNT', 'COVAR_POP', 'COVAR_SAMP'
+	Token:Tag = 'CUME_DIST', 'CURRENT_DATE', 'CURRENT_TIMESTAMP', 'DBTIMEZONE', 'DECODE', 'DECOMPOSE'
+	Token:Tag = 'DENSE_RANK', 'DEPTH', 'DEREF', 'DUMP', 'EMPTY_BLOB', 'EMPTY_CLOB', 'EXISTSNODE', 'EXP'
+	Token:Tag = 'EXTRACT', 'EXTRACT', 'EXTRACTVALUE', 'FIRST', 'FIRST_VALUE', 'FLOOR', 'FROM_TZ'
+	Token:Tag = 'GREATEST', 'GROUP_ID', 'GROUPING', 'GROUPING_ID', 'HEXTORAW', 'INITCAP', 'INSTR'
+	Token:Tag = 'LAG', 'LAST', 'LAST_DAY', 'LAST_VALUE', 'LEAD', 'LEAST', 'LENGTH', 'LN', 'LOCALTIMESTAMP'
+	Token:Tag = 'LOG', 'LOWER', 'LPAD', 'LTRIM', 'MAKE_REF', 'MAX', 'MIN', 'MOD', 'MONTHS_BETWEEN', 'NCHR'
+	Token:Tag = 'NEW_TIME', 'NEXT_DAY', 'NLS_CHARSET_DECL_LEN', 'NLS_CHARSET_ID', 'NLS_CHARSET_NAME', 'NLS_INITCAP'
+	Token:Tag = 'NLS_LOWER', 'NLSSORT', 'NLS_UPPER', 'NTILE', 'NULLIF', 'NUMTODSINTERVAL', 'NUMTOYMINTERVAL'
+	Token:Tag = 'NVL', 'NVL2', 'PATH', 'PERCENT_RANK', 'PERCENTILE_CONT', 'PERCENTILE_DISC', 'POWER'
+	Token:Tag = 'RANK', 'RATIO_TO_REPORT', 'RAWTOHEX', 'RAWTONHEX', 'REF', 'REFTOHEX', 'REGR_'
+	Token:Tag = 'REPLACE', 'ROUND', 'ROW_NUMBER', 'ROWIDTOCHAR', 'ROWIDTONCHAR', 'RPAD', 'RTRIM'
+	Token:Tag = 'SESSIONTIMEZONE', 'SIGN', 'SIN', 'SINH', 'SOUNDEX', 'SQRT', 'STDDEV', 'STDDEV_POP'
+	Token:Tag = 'STDDEV_SAMP', 'SUBSTR', 'SUM', 'SYS_CONNECT_BY_PATH', 'SYS_CONTEXT', 'SYS_DBURIGEN'
+	Token:Tag = 'SYS_EXTRACT_UTC', 'SYS_GUID', 'SYS_TYPEID', 'SYS_XMLAGG', 'SYS_XMLGEN', 'SYSDATE', 'SYSTIMESTAMP'
+	Token:Tag = 'TAN', 'TANH', 'TO_CHAR', 'TO_CHAR', 'TO_CLOB', 'TO_DATE', 'TO_DSINTERVAL', 'TO_LOB'
+	Token:Tag = 'TO_MULTI_BYTE', 'TO_NCHAR', 'TO_NCLOB', 'TO_NUMBER', 'TO_SINGLE_BYTE', 'TO_TIMESTAMP'
+	Token:Tag = 'TO_TIMESTAMP_TZ', 'TO_YMINTERVAL', 'TRANSLATE', 'TRANSLATE', 'USING', 'TREAT', 'TRIM'
+	Token:Tag = 'TRUNC', 'TZ_OFFSET', 'UID', 'UNISTR', 'UPDATEXML', 'UPPER', 'USER', 'USERENV', 'VALUE'
+	Token:Tag = 'VAR_POP', 'VAR_SAMP', 'VARIANCE', 'VSIZE', 'WIDTH_BUCKET', 'XMLAGG', 'XMLCOLATTVAL', 'XMLCONCAT'
+	Token:Tag = 'XMLELEMENT', 'XMLFOREST', 'XMLSEQUENCE', 'XMLTRANSFORM', 'ROUND','TRUNC'

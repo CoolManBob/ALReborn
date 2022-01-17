@@ -1,0 +1,920 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="AgcmBlockingDlg">
+      <UniqueIdentifier>{6c64b7e9-4226-48da-b0c4-329d65e07bd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmBlockingDlg\헤더 파일">
+      <UniqueIdentifier>{1cd69c4e-0477-40cd-9426-7444ec4f0c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmBlockingDlg\소스 파일">
+      <UniqueIdentifier>{56ff769d-61fe-4b20-bc3c-c9f938232521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEffectDlg">
+      <UniqueIdentifier>{fc278486-754f-4de9-9467-c236fe0c6a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEffectDlg\헤더 파일">
+      <UniqueIdentifier>{cb18bfdd-d42d-467e-b32a-90903adf4f4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEffectDlg\소스 파일">
+      <UniqueIdentifier>{51c7d7a3-7aa4-405e-b355-e6fb470c5df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventAutionDlg">
+      <UniqueIdentifier>{7a51361e-628a-483b-bf60-e6265a82740d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventAutionDlg\헤더 파일">
+      <UniqueIdentifier>{c72a92f0-78ef-4f2b-8aa9-2d8295f957ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventAutionDlg\소스 파일">
+      <UniqueIdentifier>{310f5ada-3bb1-4cbf-829a-ea9122fb9a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventBindingDlg">
+      <UniqueIdentifier>{bf5fb658-7636-4a9b-8d98-d412ef55baa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventBindingDlg\헤더 파일">
+      <UniqueIdentifier>{7fb4e265-b7df-4ede-8599-27df918cb006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventBindingDlg\소스 파일">
+      <UniqueIdentifier>{d333bb3d-10b3-445d-8e9b-a11bf54a7642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNatureDlg">
+      <UniqueIdentifier>{2b3933dd-11eb-46c9-b5b6-a8789029dada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNatureDlg\헤더 파일">
+      <UniqueIdentifier>{c75a5018-d3ec-4016-8696-e7b461127710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNatureDlg\소스 파일">
+      <UniqueIdentifier>{b75fa13e-e986-483c-b830-dcb4513d20a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCDialogDlg">
+      <UniqueIdentifier>{bc3ba4c6-df97-434b-89ca-d2f72692455c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCDialogDlg\헤더 파일">
+      <UniqueIdentifier>{a856c715-8afb-448d-8a3f-9e7ba8172efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCDialogDlg\소스 파일">
+      <UniqueIdentifier>{f78b1c73-5084-40cf-af63-7ba875c66515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCTradeDlg">
+      <UniqueIdentifier>{eca59fca-e9d6-473f-8cdf-e2e6efb7f2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCTradeDlg\헤더 파일">
+      <UniqueIdentifier>{7a808b26-31c8-4554-b5d8-d07b21632c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCTradeDlg\소스 파일">
+      <UniqueIdentifier>{e2a83641-a569-4cd0-beec-9097e039f22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSkillMasterDlg">
+      <UniqueIdentifier>{d263c68f-f8a8-4d41-84b9-8f4fab2c080a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSkillMasterDlg\헤더 파일">
+      <UniqueIdentifier>{a6b4f657-d144-4e1a-8bc1-9ddf879fab9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSkillMasterDlg\소스 파일">
+      <UniqueIdentifier>{c9796619-42e3-4316-84af-9b493a141b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSpawnDlg">
+      <UniqueIdentifier>{d15889fd-ee0f-4390-8ba0-8e914d8b31aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSpawnDlg\헤더 파일">
+      <UniqueIdentifier>{27622a42-816b-451b-9c7c-4fc608b02cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSpawnDlg\소스 파일">
+      <UniqueIdentifier>{cab629dc-6242-4f63-8fa5-7c3ff8353fe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventTeleportDlg">
+      <UniqueIdentifier>{adf2997e-372d-43d6-8cc7-c6c3d443fa53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventTeleportDlg\헤더 파일">
+      <UniqueIdentifier>{77987a1b-6aa8-47da-adb6-c221c35979f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventTeleportDlg\소스 파일">
+      <UniqueIdentifier>{92490a02-298b-499e-95f9-e4c41b381d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventProductDlg">
+      <UniqueIdentifier>{4ccb36c0-8e64-42ee-b9ec-5bc7ab7f24a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventProductDlg\헤더 파일">
+      <UniqueIdentifier>{0fa2a397-1db1-446c-a53f-7a2b498f81a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventProductDlg\소스 파일">
+      <UniqueIdentifier>{62c3087d-22ad-4fb4-870d-95f09eeb86d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAnimationDlg">
+      <UniqueIdentifier>{fea7b1c6-87fc-4fe5-ad3c-000b0ac1640e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAnimationDlg\소스 파일">
+      <UniqueIdentifier>{24aed363-28ac-4a87-895d-76918ff03064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAnimationDlg\헤더 파일">
+      <UniqueIdentifier>{1dc03861-ecb8-4666-b10d-a9076ba4ba8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmLODDlg">
+      <UniqueIdentifier>{5eb9b479-601b-43c2-8281-a0e8d994934e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmLODDlg\헤더 파일">
+      <UniqueIdentifier>{ff417ee2-7af6-4028-ac12-f15ec5206d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmLODDlg\소스 파일">
+      <UniqueIdentifier>{3047dbe0-8aa0-41b1-8f5d-935c9a7eff6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmObjectDlg">
+      <UniqueIdentifier>{e56ca5e1-e6a4-4ac6-8caf-b9038671abdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmObjectDlg\헤더 파일">
+      <UniqueIdentifier>{eb40180c-deb8-447c-b929-4bdb46c09f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmObjectDlg\소스 파일">
+      <UniqueIdentifier>{676f7489-d6f0-4c90-a877-edcbd4eeb2f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmObjectTypeDlg">
+      <UniqueIdentifier>{b15e04b9-3b68-4e35-a387-5cdaa744f5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmObjectTypeDlg\헤더 파일">
+      <UniqueIdentifier>{f7aa1219-f2bc-482f-9550-fff699e1752c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmObjectTypeDlg\소스 파일">
+      <UniqueIdentifier>{f2350898-3d56-4b8e-8731-b92a1de51f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmShrineDlg">
+      <UniqueIdentifier>{1b8bf0a9-2927-471d-89f5-8d7e7800c9b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmShrineDlg\헤더 파일">
+      <UniqueIdentifier>{19506ccb-4f1c-48f8-892f-bcb7c029dac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmShrineDlg\소스 파일">
+      <UniqueIdentifier>{16832b17-e77a-4656-beb8-a0fcb24d79ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmWaterDlg">
+      <UniqueIdentifier>{3766687d-e539-4aa6-983d-879434c6326f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmWaterDlg\헤더 파일">
+      <UniqueIdentifier>{ae305bf1-a837-4699-89cb-29230cedc76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmWaterDlg\소스 파일">
+      <UniqueIdentifier>{bbfd6f5d-754b-47ed-930d-6da9bd33e709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmWaterDlg2">
+      <UniqueIdentifier>{145a9ba7-833f-43f5-b1c7-ef5198ff436a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmWaterDlg2\헤더 파일">
+      <UniqueIdentifier>{ec36d2ae-c394-4601-8541-35c10be650ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmWaterDlg2\소스 파일">
+      <UniqueIdentifier>{aa910801-2dc9-476c-8a2f-38091a0276b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventQuestDlg2">
+      <UniqueIdentifier>{2a3ddfab-c9b3-48a0-9fc8-c4d034c7adf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventQuestDlg2\헤더 파일">
+      <UniqueIdentifier>{7acd534a-c7fe-42ec-be0a-7d25938448de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventQuestDlg2\소스 파일">
+      <UniqueIdentifier>{abe27dfc-959f-4ea9-a208-ff59dab54cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCharacterDlg">
+      <UniqueIdentifier>{5ce1ff9f-53e9-4aee-88c5-2a7ef0a1a0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCharacterDlg\소스 파일">
+      <UniqueIdentifier>{507dbf50-f361-4963-b1b3-ee52948b1e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCharacterDlg\헤더 파일">
+      <UniqueIdentifier>{0306e3e8-e64b-4b58-a09b-b3d274304f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmItemDlg">
+      <UniqueIdentifier>{53872b12-0db7-4356-98fa-9d896cadbd8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmItemDlg\소스 파일">
+      <UniqueIdentifier>{fbc5d57a-b2e2-4c6e-b228-3f9a624f9e10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmItemDlg\헤더 파일">
+      <UniqueIdentifier>{60b4285d-b7f8-4296-8187-7bd07fbe34e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSkillDlg">
+      <UniqueIdentifier>{8cb79e91-b3fb-4625-8610-4ef50a958f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSkillDlg\소스 파일">
+      <UniqueIdentifier>{b9804533-9540-425a-b5d7-2819b0a0e51f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSkillDlg\헤더 파일">
+      <UniqueIdentifier>{760910f5-d666-43f9-8eea-95745db3fce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{7c2eeaa3-9c3f-42f9-af4c-a0b5f9c16e63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\소스 파일">
+      <UniqueIdentifier>{8960b8ee-4698-47ba-902f-4463b1fcfd5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\헤더 파일">
+      <UniqueIdentifier>{35bd2199-96d0-48f6-8bc2-65836ee31de3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\AgcmFileListDlg">
+      <UniqueIdentifier>{03f062d0-4849-48d0-aef0-e1f2a7329a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\AgcmFileListDlg\헤더 파일">
+      <UniqueIdentifier>{9f79ac66-cefc-407d-b430-0a8eafc2f5d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\AgcmFileListDlg\소스 파일">
+      <UniqueIdentifier>{327be45e-fbe7-42ab-a8ea-54d7737d2783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmFactorsDlg">
+      <UniqueIdentifier>{d0525e36-3f7a-4d3c-8d41-d27274adcf78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmFactorsDlg\헤더 파일">
+      <UniqueIdentifier>{35eb2052-0c40-456e-8a45-7f3cdfe6c25f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmFactorsDlg\소스 파일">
+      <UniqueIdentifier>{3fc6a3d5-e855-4bfe-9acf-9b1ac11a69b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUDADlg">
+      <UniqueIdentifier>{614a3e8e-7e7d-47a3-98a3-3460aa04ac1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUDADlg\헤더 파일">
+      <UniqueIdentifier>{647f9f36-dac7-470e-8244-9b54f437a8a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUDADlg\소스 파일">
+      <UniqueIdentifier>{e3a36cb1-5877-4d54-8b4f-8bce162dd058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSetFaceDlg">
+      <UniqueIdentifier>{a0298e37-2f05-4973-80a6-c515aa3d1f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSetFaceDlg\소스 파일">
+      <UniqueIdentifier>{21631b6b-7e51-40a4-9343-cd54e11774ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSetFaceDlg\헤더 파일">
+      <UniqueIdentifier>{c0c4cbea-8b31-465d-99f5-ff1c4490115e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventGachaDlg">
+      <UniqueIdentifier>{09d3da1d-aff6-47d1-afc6-6f562335be7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAI2Dlg">
+      <UniqueIdentifier>{83b3ba7f-ca6f-49f4-ac7e-58fdc3aa4a52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AgcmDialogs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmBlockingDlg\AgcmBlockingDlg.cpp">
+      <Filter>AgcmBlockingDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmBlockingDlg\AgcmEditBlockingDlg.cpp">
+      <Filter>AgcmBlockingDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmBlockingDlg\AgcmInsertBlockingInfoDlg.cpp">
+      <Filter>AgcmBlockingDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmBlockingDlg\AgcmOpenEditBlockingDlg.cpp">
+      <Filter>AgcmBlockingDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\AgcmEffectConditionDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\AgcmEffectDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\AgcmEffectList.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\AgcmEffectStatusDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\ConditionListDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\EffectDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\EffectHelpDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\EffectListModalDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\RotationDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\ScriptDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\SSConditionListDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEffectDlg\StatusListDlg.cpp">
+      <Filter>AgcmEffectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventAuctionDlg\AgcmEventAuctionDlg.cpp">
+      <Filter>AgcmEventAutionDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventAuctionDlg\AgcmEventAuctionDlgDialog.cpp">
+      <Filter>AgcmEventAutionDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventBindingDlg\AgcmEventBindingDlg.cpp">
+      <Filter>AgcmEventBindingDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventBindingDlg\AgcmEventBindingPoint.cpp">
+      <Filter>AgcmEventBindingDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\AgcmEventNatureDlg.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\ClipPlaneSetDlg.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\EffectEditDlg.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\EventNatureSettingDlg.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\HSVControlStatic.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\hsvinputdlg.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\ImagePreviewStatic.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\PortionStatic.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\skysettingdlg.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\TemplateNameEditDlg.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\TemplateSelectDlg.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\TextureListStatic.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNatureDlg\TimeSelectStatic.cpp">
+      <Filter>AgcmEventNatureDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.cpp">
+      <Filter>AgcmEventNPCDialogDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNPCDialogDlg\AgcmEventNPCDialogSelectTemplateDlg.cpp">
+      <Filter>AgcmEventNPCDialogDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.cpp">
+      <Filter>AgcmEventNPCTradeDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventNPCTradeDlg\AgcmEventSelectNPCTradeTemplateDlg.cpp">
+      <Filter>AgcmEventNPCTradeDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventSkillMasterDlg\AgcmEventSkillEventSettingDlg.cpp">
+      <Filter>AgcmEventSkillMasterDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.cpp">
+      <Filter>AgcmEventSkillMasterDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventSpawnDlg\AgcmDropItemDlg.cpp">
+      <Filter>AgcmEventSpawnDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventSpawnDlg\AgcmDropTemplateDlg.cpp">
+      <Filter>AgcmEventSpawnDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventSpawnDlg\AgcmEventSpawnDlg.cpp">
+      <Filter>AgcmEventSpawnDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventSpawnDlg\AgcmEventSpawnSpawnDlg.cpp">
+      <Filter>AgcmEventSpawnDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmEventTeleportDlg.cpp">
+      <Filter>AgcmEventTeleportDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmTeleportAddEvent.cpp">
+      <Filter>AgcmEventTeleportDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmTeleportGroup.cpp">
+      <Filter>AgcmEventTeleportDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmTeleportGroupList.cpp">
+      <Filter>AgcmEventTeleportDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmTeleportTarget.cpp">
+      <Filter>AgcmEventTeleportDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventProductDlg\AgcmEventProductDlg.cpp">
+      <Filter>AgcmEventProductDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventProductDlg\EventProduct.cpp">
+      <Filter>AgcmEventProductDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAnimationDlg\AgcmAnimationDlg.cpp">
+      <Filter>AgcmAnimationDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAnimationDlg\AnimFlagsDlg.cpp">
+      <Filter>AgcmAnimationDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAnimationDlg\CharacterAnimationDlg.cpp">
+      <Filter>AgcmAnimationDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAnimationDlg\CharAnimAttachedDataDlg.cpp">
+      <Filter>AgcmAnimationDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAnimationDlg\CharAnimAttachedSoundDataDlg.cpp">
+      <Filter>AgcmAnimationDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAnimationDlg\CharAnimCustFlagsDlg.cpp">
+      <Filter>AgcmAnimationDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmLODDlg\AgcmLODDistanceDlg.cpp">
+      <Filter>AgcmLODDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmLODDlg\AgcmLODDlg.cpp">
+      <Filter>AgcmLODDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmLODDlg\LODDlg.cpp">
+      <Filter>AgcmLODDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmObjectDlg\AgcmObjectDlg.cpp">
+      <Filter>AgcmObjectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmObjectDlg\ObjectDlg.cpp">
+      <Filter>AgcmObjectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmObjectDlg\ObjectListDlg.cpp">
+      <Filter>AgcmObjectDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmObjectTypeDlg\AgcmObjectTypeDlg.cpp">
+      <Filter>AgcmObjectTypeDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmObjectTypeDlg\ObjectTypeDlg.cpp">
+      <Filter>AgcmObjectTypeDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmShrineDlg\AgcmShrineDlg.cpp">
+      <Filter>AgcmShrineDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmShrineDlg\AgcmShrineSettingDlg.cpp">
+      <Filter>AgcmShrineDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmWaterDlg\AgcmWaterDlg.cpp">
+      <Filter>AgcmWaterDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmWaterDlg\WaterDlg.cpp">
+      <Filter>AgcmWaterDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmWaterDlg2\AgcmWaterDlg2.cpp">
+      <Filter>AgcmWaterDlg2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmWaterDlg2\WaterDlg2.cpp">
+      <Filter>AgcmWaterDlg2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventQuestDlg2\AgcmEventQuestDlg2.cpp">
+      <Filter>AgcmEventQuestDlg2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventQuestDlg2\EventQuest.cpp">
+      <Filter>AgcmEventQuestDlg2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmCharacterDlg\AgcmCharacterDlg.cpp">
+      <Filter>AgcmCharacterDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmCharacterDlg\CharacterDlg.cpp">
+      <Filter>AgcmCharacterDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmCharacterDlg\CharacterTemplateListDlg.cpp">
+      <Filter>AgcmCharacterDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmCharacterDlg\CharCustomFlagsDlg.cpp">
+      <Filter>AgcmCharacterDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmItemDlg\AgcmItemDlg.cpp">
+      <Filter>AgcmItemDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmItemDlg\ItemDlg.cpp">
+      <Filter>AgcmItemDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmItemDlg\ItemListDlg.cpp">
+      <Filter>AgcmItemDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmSkillDlg\AgcmCharSkillDlg.cpp">
+      <Filter>AgcmSkillDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmSkillDlg\AgcmSkillDlg.cpp">
+      <Filter>AgcmSkillDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmSkillDlg\AgcmSkillTemplateDlg.cpp">
+      <Filter>AgcmSkillDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmSkillDlg\AgcmSkillTemplateListDlg.cpp">
+      <Filter>AgcmSkillDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EditDlg.cpp">
+      <Filter>Common\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EventButton.cpp">
+      <Filter>Common\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmFileListDlg\AgcmFileListDlg.cpp">
+      <Filter>Common\AgcmFileListDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmFileListDlg\FileListDlg.cpp">
+      <Filter>Common\AgcmFileListDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmFileListDlg\FindFileDlg.cpp">
+      <Filter>Common\AgcmFileListDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmFactorsDlg\AgcmFactorsDlg.cpp">
+      <Filter>AgcmFactorsDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmFactorsDlg\FactorDlg.cpp">
+      <Filter>AgcmFactorsDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmFactorsDlg\InputDlg.cpp">
+      <Filter>AgcmFactorsDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmUDADlg\AgcmUDADlg.cpp">
+      <Filter>AgcmUDADlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmUDADlg\MainUDADlg.cpp">
+      <Filter>AgcmUDADlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="agcmsetfacedlg\AgcmSetFaceDlg.cpp">
+      <Filter>AgcmSetFaceDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="agcmsetfacedlg\SetFace.cpp">
+      <Filter>AgcmSetFaceDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventGachaDlg\AgcmEventGachaDlg.cpp">
+      <Filter>AgcmEventGachaDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmEventGachaDlg\GachaSelectDlg.cpp">
+      <Filter>AgcmEventGachaDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAI2Dlg\AgcmAI2Dialog.cpp">
+      <Filter>AgcmAI2Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAI2Dlg\AgcmAI2Dlg.cpp">
+      <Filter>AgcmAI2Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAI2Dlg\AgcmAI2EditTableDlg.cpp">
+      <Filter>AgcmAI2Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AgcmAI2Dlg\AgcmAI2TemplateDlg.cpp">
+      <Filter>AgcmAI2Dlg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AgcmDialogs.def">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="res\AgcmDialogs.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\spoid.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="CharAnimAttachedSoundDataDlg.htm" />
+    <None Include="SetFace.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmBlockingDlg\AgcmBlockingDlg.h">
+      <Filter>AgcmBlockingDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmBlockingDlg\AgcmEditBlockingDlg.h">
+      <Filter>AgcmBlockingDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmBlockingDlg\AgcmInsertBlockingInfoDlg.h">
+      <Filter>AgcmBlockingDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmBlockingDlg\AgcmOpenEditBlockingDlg.h">
+      <Filter>AgcmBlockingDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\AgcmEffectConditionDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\AgcmEffectDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\AgcmEffectList.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\AgcmEffectStatusDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\ConditionListDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\EffectDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\EffectHelpDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\EffectListModalDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\RotationDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\ScriptDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\SSConditionListDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEffectDlg\StatusListDlg.h">
+      <Filter>AgcmEffectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventAuctionDlg\AgcmEventAuctionDlg.h">
+      <Filter>AgcmEventAutionDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventAuctionDlg\AgcmEventAuctionDlgDialog.h">
+      <Filter>AgcmEventAutionDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventBindingDlg\AgcmEventBindingDlg.h">
+      <Filter>AgcmEventBindingDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventBindingDlg\AgcmEventBindingPoint.h">
+      <Filter>AgcmEventBindingDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\AgcmEventNatureDlg.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\ClipPlaneSetDlg.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\EffectEditDlg.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\EventNatureSettingDlg.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\HSVControlStatic.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\hsvinputdlg.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\ImagePreviewStatic.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\PortionStatic.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\skysettingdlg.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\TemplateNameEditDlg.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\TemplateSelectDlg.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\TextureListStatic.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNatureDlg\TimeSelectStatic.h">
+      <Filter>AgcmEventNatureDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.h">
+      <Filter>AgcmEventNPCDialogDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNPCDialogDlg\AgcmEventNPCDialogSelectTemplateDlg.h">
+      <Filter>AgcmEventNPCDialogDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.h">
+      <Filter>AgcmEventNPCTradeDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventNPCTradeDlg\AgcmEventSelectNPCTradeTemplateDlg.h">
+      <Filter>AgcmEventNPCTradeDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventSkillMasterDlg\AgcmEventSkillEventSettingDlg.h">
+      <Filter>AgcmEventSkillMasterDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.h">
+      <Filter>AgcmEventSkillMasterDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventSpawnDlg\AgcmDropItemDlg.h">
+      <Filter>AgcmEventSpawnDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventSpawnDlg\AgcmDropTemplateDlg.h">
+      <Filter>AgcmEventSpawnDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventSpawnDlg\AgcmEventSpawnDlg.h">
+      <Filter>AgcmEventSpawnDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventSpawnDlg\AgcmEventSpawnSpawnDlg.h">
+      <Filter>AgcmEventSpawnDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmEventTeleportDlg.h">
+      <Filter>AgcmEventTeleportDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmTeleportAddEvent.h">
+      <Filter>AgcmEventTeleportDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmTeleportGroup.h">
+      <Filter>AgcmEventTeleportDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmTeleportGroupList.h">
+      <Filter>AgcmEventTeleportDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmTeleportTarget.h">
+      <Filter>AgcmEventTeleportDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventProductDlg\AgcmEventProductDlg.h">
+      <Filter>AgcmEventProductDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventProductDlg\EventProduct.h">
+      <Filter>AgcmEventProductDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAnimationDlg\AgcmAnimationDlg.h">
+      <Filter>AgcmAnimationDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAnimationDlg\AnimFlagsDlg.h">
+      <Filter>AgcmAnimationDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAnimationDlg\CharacterAnimationDlg.h">
+      <Filter>AgcmAnimationDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAnimationDlg\CharAnimAttachedDataDlg.h">
+      <Filter>AgcmAnimationDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAnimationDlg\CharAnimAttachedSoundDataDlg.h">
+      <Filter>AgcmAnimationDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAnimationDlg\CharAnimCustFlagsDlg.h">
+      <Filter>AgcmAnimationDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmLODDlg\AgcdLODDlg.h">
+      <Filter>AgcmLODDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmLODDlg\AgcmLODDistanceDlg.h">
+      <Filter>AgcmLODDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmLODDlg\AgcmLODDlg.h">
+      <Filter>AgcmLODDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmLODDlg\LODDlg.h">
+      <Filter>AgcmLODDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmObjectDlg\AgcmObjectDlg.h">
+      <Filter>AgcmObjectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmObjectDlg\ObjectDlg.h">
+      <Filter>AgcmObjectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmObjectDlg\ObjectListDlg.h">
+      <Filter>AgcmObjectDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmObjectTypeDlg\AgcmObjectTypeDlg.h">
+      <Filter>AgcmObjectTypeDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmObjectTypeDlg\ObjectTypeDlg.h">
+      <Filter>AgcmObjectTypeDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmShrineDlg\AgcmShrineDlg.h">
+      <Filter>AgcmShrineDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmShrineDlg\AgcmShrineSettingDlg.h">
+      <Filter>AgcmShrineDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmWaterDlg\AgcmWaterDlg.h">
+      <Filter>AgcmWaterDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmWaterDlg\WaterDlg.h">
+      <Filter>AgcmWaterDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmWaterDlg2\AgcmWaterDlg2.h">
+      <Filter>AgcmWaterDlg2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmWaterDlg2\WaterDlg2.h">
+      <Filter>AgcmWaterDlg2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventQuestDlg2\AgcmEventQuestDlg2.h">
+      <Filter>AgcmEventQuestDlg2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventQuestDlg2\EventQuest.h">
+      <Filter>AgcmEventQuestDlg2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmCharacterDlg\AgcmCharacterDlg.h">
+      <Filter>AgcmCharacterDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmCharacterDlg\CharacterDlg.h">
+      <Filter>AgcmCharacterDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmCharacterDlg\CharacterTemplateListDlg.h">
+      <Filter>AgcmCharacterDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmCharacterDlg\CharCustomFlagsDlg.h">
+      <Filter>AgcmCharacterDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmItemDlg\AgcmItemDlg.h">
+      <Filter>AgcmItemDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmItemDlg\ItemDlg.h">
+      <Filter>AgcmItemDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmItemDlg\ItemListDlg.h">
+      <Filter>AgcmItemDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmSkillDlg\AgcmCharSkillDlg.h">
+      <Filter>AgcmSkillDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmSkillDlg\AgcmSkillDlg.h">
+      <Filter>AgcmSkillDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmSkillDlg\AgcmSkillTemplateDlg.h">
+      <Filter>AgcmSkillDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmSkillDlg\AgcmSkillTemplateListDlg.h">
+      <Filter>AgcmSkillDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EditDlg.h">
+      <Filter>Common\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EventButton.h">
+      <Filter>Common\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmFileListDlg\AgcmFileListDlg.h">
+      <Filter>Common\AgcmFileListDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmFileListDlg\FileListDlg.h">
+      <Filter>Common\AgcmFileListDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmFileListDlg\FindFileDlg.h">
+      <Filter>Common\AgcmFileListDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmFactorsDlg\AgcmFactorsDlg.h">
+      <Filter>AgcmFactorsDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmFactorsDlg\FactorDlg.h">
+      <Filter>AgcmFactorsDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmFactorsDlg\InputDlg.h">
+      <Filter>AgcmFactorsDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmUDADlg\AgcmUDADlg.h">
+      <Filter>AgcmUDADlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmUDADlg\MainUDAdlg.h">
+      <Filter>AgcmUDADlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="agcmsetfacedlg\AgcmSetFaceDlg.h">
+      <Filter>AgcmSetFaceDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="agcmsetfacedlg\SetFace.h">
+      <Filter>AgcmSetFaceDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventGachaDlg\AgcmEventGachaDlg.h">
+      <Filter>AgcmEventGachaDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmEventGachaDlg\GachaSelectDlg.h">
+      <Filter>AgcmEventGachaDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAI2Dlg\AgcmAI2Dialog.h">
+      <Filter>AgcmAI2Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAI2Dlg\AgcmAI2Dlg.h">
+      <Filter>AgcmAI2Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAI2Dlg\AgcmAI2EditTableDlg.h">
+      <Filter>AgcmAI2Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AgcmAI2Dlg\AgcmAI2TemplateDlg.h">
+      <Filter>AgcmAI2Dlg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AgcmDialogs.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bmp233.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\sky_window.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug EM64T|Win32">
+      <Configuration>Debug EM64T</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug EM64T|x64">
+      <Configuration>Debug EM64T</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release EM64T|Win32">
+      <Configuration>Release EM64T</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release EM64T|x64">
+      <Configuration>Release EM64T</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CFD93F15-C931-4506-8E73-36D3817F8E65}</ProjectGuid>
+    <RootNamespace>AsNetworkLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31727.243</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AsIOCPServer\*.h" "..\..\include"
+copy "..\..\Modules\APublic\ApIOCPDispatcher\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuService\*.h" "..\..\include"
+copy "..\..\Server\AsDP8Client\*.h" "..\..\include"
+copy "..\..\Server\AsCommonLib\*.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AsIOCPServer\*.h" "..\..\include"
+copy "..\..\Modules\APublic\ApIOCPDispatcher\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuService\*.h" "..\..\include"
+copy "..\..\Server\AsDP8Client\*.h" "..\..\include"
+copy "..\..\Server\AsCommonLib\*.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AsIOCPServer\*.h" "..\..\include"
+copy "..\..\Modules\APublic\ApIOCPDispatcher\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuService\*.h" "..\..\include"
+copy "..\..\Server\AsDP8Client\*.h" "..\..\include"
+copy "..\..\Server\AsCommonLib\*.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AsIOCPServer\*.h" "..\..\include"
+copy "..\..\Modules\APublic\ApIOCPDispatcher\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuService\*.h" "..\..\include"
+copy "..\..\Server\AsDP8Client\*.h" "..\..\include"
+copy "..\..\Server\AsCommonLib\*.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AsIOCPServer\*.h" "..\..\include"
+copy "..\..\Modules\APublic\ApIOCPDispatcher\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuService\*.h" "..\..\include"
+copy "..\..\Server\AsDP8Client\*.h" "..\..\include"
+copy "..\..\Server\AsCommonLib\*.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)include\stlport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AsIOCPServer\*.h" "..\..\include"
+copy "..\..\Modules\APublic\ApIOCPDispatcher\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuService\*.h" "..\..\include"
+copy "..\..\Server\AsDP8Client\*.h" "..\..\include"
+copy "..\..\Server\AsCommonLib\*.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AsIOCPServer\*.h" "..\..\include"
+copy "..\..\Modules\APublic\ApIOCPDispatcher\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuService\*.h" "..\..\include"
+copy "..\..\Server\AsDP8Client\*.h" "..\..\include"
+copy "..\..\Server\AsCommonLib\*.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:EM64T %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AsIOCPServer\*.h" "..\..\include"
+copy "..\..\Modules\APublic\ApIOCPDispatcher\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuService\*.h" "..\..\include"
+copy "..\..\Server\AsDP8Client\*.h" "..\..\include"
+copy "..\..\Server\AsCommonLib\*.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:EM64T %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\APublic\ApIOCPDispatcher\ApIOCP.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApIOCPDispatcher\ApIOCPDispatcher.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuService\AuService.cpp" />
+    <ClCompile Include="..\..\Server\AsCommonLib\AsCommonLib.cpp" />
+    <ClCompile Include="..\..\Server\AsCommonLib\AsDebugOutput.cpp" />
+    <ClCompile Include="..\..\Server\AsCommonLib\AspActionValidCheck.cpp" />
+    <ClCompile Include="..\..\Server\AsDP8Client\AsDP8Client.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\ApFilterFunction.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsException.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsIOCPServer.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsListener.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsObject.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsServerSocket.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsServerSocketManager.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsTimer.cpp" />
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsWSABufManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Modules\APublic\ApIOCPDispatcher\ApIOCP.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApIOCPDispatcher\ApIOCPDispatcher.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuService\AuService.h" />
+    <ClInclude Include="..\..\Server\AsCommonLib\AsCMDQueue.h" />
+    <ClInclude Include="..\..\Server\AsCommonLib\AsCommonLib.h" />
+    <ClInclude Include="..\..\Server\AsCommonLib\AsDebugOutput.h" />
+    <ClInclude Include="..\..\Server\AsCommonLib\AspActionValidCheck.h" />
+    <ClInclude Include="..\..\Server\AsDP8Client\AsDP8Client.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\ApFilterFunction.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsException.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsIOCPServer.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsListener.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsObject.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsServerSocket.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsServerSocketManager.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsTimer.h" />
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsWSABufManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApModules\ApModules.vcxproj">
+      <Project>{a5c4630c-e440-4767-87cc-6b53905d260e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,82 @@
+// Reource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "afxres.h"
+
+#define LANGUAGE_DEFAULT(ProdName) <##ProdName##\res\Resource.rc>
+
+#ifdef _XTP_RESOURCE_LANGUAGE
+	#define LANGUAGE_LOCALIZED__(ProdName, LangName) <##ProdName##\res\Resource_##LangName##.rc>
+	#define LANGUAGE_LOCALIZED_(ProdName, LangName) LANGUAGE_LOCALIZED__(ProdName, LangName)
+	#define LANGUAGE_LOCALIZED(ProdName) LANGUAGE_LOCALIZED_(ProdName, _XTP_RESOURCE_LANGUAGE)
+#else
+	#define LANGUAGE_LOCALIZED(ProdName) LANGUAGE_DEFAULT(ProdName)
+#endif
+
+#if !defined(_XTP_EXCLUDE_CALENDAR)
+#include LANGUAGE_LOCALIZED(Calendar)         // _XTP_INCLUDE_CALENDAR
+#endif
+
+#if !defined(_XTP_EXCLUDE_COMMANDBARS)
+#include LANGUAGE_LOCALIZED(CommandBars)      // _XTP_INCLUDE_COMMANDBARS
+#endif
+
+#if !defined(_XTP_EXCLUDE_COMMON)
+#include LANGUAGE_LOCALIZED(Common)             // _XTP_INCLUDE_COMMON
+#endif
+
+#if !defined(_XTP_EXCLUDE_CONTROLS)
+#include LANGUAGE_LOCALIZED(Controls)         // _XTP_INCLUDE_CONTROLS
+#endif
+
+#if !defined(_XTP_EXCLUDE_DOCKINGPANE)
+#include LANGUAGE_LOCALIZED(DockingPane)      // _XTP_INCLUDE_DOCKINGPANE
+#endif
+
+#if !defined(_XTP_EXCLUDE_PROPERTYGRID)
+#include LANGUAGE_LOCALIZED(PropertyGrid)     // _XTP_INCLUDE_PROPERTYGRID
+#endif
+
+#if !defined(_XTP_EXCLUDE_REPORTCONTROL)
+#include LANGUAGE_LOCALIZED(ReportControl)    // _XTP_INCLUDE_REPORTCONTROL
+#endif
+
+#if !defined(_XTP_EXCLUDE_RIBBON)
+#include LANGUAGE_LOCALIZED(Ribbon)           // _XTP_INCLUDE_RIBBON
+#endif
+
+#if !defined(_XTP_EXCLUDE_SHORTCUTBAR)
+#include LANGUAGE_LOCALIZED(ShortcutBar)      // _XTP_INCLUDE_SHORTCUTBAR
+#endif
+
+#if !defined(_XTP_EXCLUDE_SYNTAXEDIT)
+#include LANGUAGE_LOCALIZED(SyntaxEdit)       // _XTP_INCLUDE_SYNTAXEDIT
+#endif
+
+#if !defined(_XTP_EXCLUDE_TABMANAGER)
+#include LANGUAGE_LOCALIZED(TabManager)       // _XTP_INCLUDE_TABMANAGER
+#endif
+
+#if !defined(_XTP_EXCLUDE_TASKPANEL)
+#include LANGUAGE_DEFAULT(TaskPanel)          // _XTP_INCLUDE_TASKPANEL
+#endif
+
+#undef LANGUAGE_LOCALIZED
+#undef LANGUAGE_DEFAULT

@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BillingClient", "BillingClient_VS2003.vcproj", "{3BC90D4D-D346-42E8-9FC4-44C13AC29786}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug_MB = Debug_MB
+		Release = Release
+		Release_MB = Release_MB
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3BC90D4D-D346-42E8-9FC4-44C13AC29786}.Debug.ActiveCfg = Debug|Win32
+		{3BC90D4D-D346-42E8-9FC4-44C13AC29786}.Debug.Build.0 = Debug|Win32
+		{3BC90D4D-D346-42E8-9FC4-44C13AC29786}.Debug_MB.ActiveCfg = Debug_MB|Win32
+		{3BC90D4D-D346-42E8-9FC4-44C13AC29786}.Debug_MB.Build.0 = Debug_MB|Win32
+		{3BC90D4D-D346-42E8-9FC4-44C13AC29786}.Release.ActiveCfg = Release|Win32
+		{3BC90D4D-D346-42E8-9FC4-44C13AC29786}.Release.Build.0 = Release|Win32
+		{3BC90D4D-D346-42E8-9FC4-44C13AC29786}.Release_MB.ActiveCfg = Release_MB|Win32
+		{3BC90D4D-D346-42E8-9FC4-44C13AC29786}.Release_MB.Build.0 = Release_MB|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{c00d8cb3-495e-4521-b9c7-745baef234d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Source Files">
+      <UniqueIdentifier>{e8dca27a-4419-4b41-ab98-4a27cf1ce17c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Main\Source Files\AMT">
+      <UniqueIdentifier>{9b03eb7d-a400-497b-bc11-d5aaf7d2a150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Header Files">
+      <UniqueIdentifier>{0fdd89d4-71c3-4903-ab8c-dc2cbc9db864}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Main\Resource Files">
+      <UniqueIdentifier>{a0a427b8-5a4d-4236-ab7b-90145310f1d3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Main\Resource Files\Rsc">
+      <UniqueIdentifier>{58dc4b61-2b03-41a5-8169-dcfd1c52a52e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC class">
+      <UniqueIdentifier>{76e77cf1-7802-4548-8847-9c5db30abf15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC class\Attribute">
+      <UniqueIdentifier>{1dbb3406-babc-4237-9255-aee66cccdd6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC class\Custom">
+      <UniqueIdentifier>{9e4f6554-ce1d-404d-89d9-ca6b77efcf2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{b269f34f-22e5-4ba8-bef4-7bba5707cb17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{20f6922a-d88a-4d2d-a00d-b0011ab5a6fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Dialog_S">
+      <UniqueIdentifier>{fb60250f-a874-492c-a675-c9cc9d28f611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Dialog_H">
+      <UniqueIdentifier>{2923bc0d-d911-45b7-9171-d00048fd6553}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AgcEngineChild.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelTool.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelToolDlg.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_AddObject.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_Animation.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_Blocking.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_Camera.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_EditEquipments.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_Initialize.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_LOD.CPP">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_OpenDetailInfo.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_PropertyFunction.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_Release.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_Render.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_Save.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_SetObject.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_ToolFunction.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="AMT_Update.cpp">
+      <Filter>Main\Source Files\AMT</Filter>
+    </ClCompile>
+    <ClCompile Include="EventButton.cpp">
+      <Filter>MFC class\Attribute</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuForm.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyForm.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyTree.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderForm.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderView.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceForm.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceTree.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleForm.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolForm.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeCtrlEx.cpp">
+      <Filter>MFC class\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardMng.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWare.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceSaver.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="RWUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="AttachFaceDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="AttachHairDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="CharRideDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateObjectDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomizePreviewDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultEquipmentsDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultHeadRenderTypeDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="DetailInfoDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="EditDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="EditEquipmentsDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="EditFaceDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="EditHairDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemTemplateListDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="LightOptionDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenFilesDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderOptionDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeDlg.cpp">
+      <Filter>Dialog\Dialog_S</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AgcEngineChild.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelTool.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelToolDlg.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolDefine.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Main\Resource Files\Rsc</Filter>
+    </ClInclude>
+    <ClInclude Include="EventButton.h">
+      <Filter>MFC class\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuForm.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyForm.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyTree.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderForm.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderView.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceForm.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceTree.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleForm.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolForm.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeCtrlEx.h">
+      <Filter>MFC class\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardMng.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderWare.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceSaver.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="RWUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="AttachFaceDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="AttachHairDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="CharRideDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateObjectDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomizePreviewDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultEquipmentsDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultHeadRenderTypeDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="DetailInfoDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="EditDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="EditEquipmentsDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="EditFaceDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="EditHairDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemTemplateListDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="LightOptionDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="OffsetDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenFilesDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderOptionDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeDlg.h">
+      <Filter>Dialog\Dialog_H</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="arrowcop.cur">
+      <Filter>Main\Resource Files</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Main\Resource Files</Filter>
+    </None>
+    <None Include="nodrop.cur">
+      <Filter>Main\Resource Files</Filter>
+    </None>
+    <None Include="res\ModelTool.rc2">
+      <Filter>Main\Resource Files\Rsc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon1.ico">
+      <Filter>Main\Resource Files</Filter>
+    </Image>
+    <Image Include="res\MenuToolbar.bmp">
+      <Filter>Main\Resource Files</Filter>
+    </Image>
+    <Image Include="res\MenuToolBar2.bmp">
+      <Filter>Main\Resource Files</Filter>
+    </Image>
+    <Image Include="res\ModelTool.ico">
+      <Filter>Main\Resource Files</Filter>
+    </Image>
+    <Image Include="res\ResourceToolbar.bmp">
+      <Filter>Main\Resource Files</Filter>
+    </Image>
+    <Image Include="res\trunk_only.bmp">
+      <Filter>Main\Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ModelTool.rc">
+      <Filter>Main\Resource Files\Rsc</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

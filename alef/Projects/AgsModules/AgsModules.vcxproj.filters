@@ -1,0 +1,1853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AgsEngine">
+      <UniqueIdentifier>{35cc7a26-1c72-4727-8447-eac9f8d1cfb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsEngine\소스 파일">
+      <UniqueIdentifier>{4b6f9241-b337-40d5-88f3-53516114cb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsEngine\헤더 파일">
+      <UniqueIdentifier>{7cb650bb-1f66-41c6-b522-c415d0083497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAI2">
+      <UniqueIdentifier>{ccb71ab5-efaf-48dd-b5ca-41ac7aef8bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAI2\소스 파일">
+      <UniqueIdentifier>{20b5ea72-5aaa-4068-b213-47d79f3cd578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAI2\헤더 파일">
+      <UniqueIdentifier>{da06aa5e-c486-4996-934c-2622d3bfeff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAOIFilter">
+      <UniqueIdentifier>{dd313d41-8402-492a-abd4-7e60c6621588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAOIFilter\소스 파일">
+      <UniqueIdentifier>{a0ff45ba-5d7d-44a7-9796-a806a220e374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAOIFilter\헤더 파일">
+      <UniqueIdentifier>{de7e91f7-d30f-4d6b-afad-26a0f3235ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAccountManager">
+      <UniqueIdentifier>{c7b0e42c-efba-4365-9378-15d0f22f14bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAccountManager\소스 파일">
+      <UniqueIdentifier>{1e3d7103-e924-49bf-b4ad-627dfd695731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAccountManager\헤더 파일">
+      <UniqueIdentifier>{7a660aa8-d925-4787-80ba-c1f17d0a057d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAdmin">
+      <UniqueIdentifier>{3f43de13-a9da-4bf7-ad6b-bf986b990ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAdmin\소스 파일">
+      <UniqueIdentifier>{1eadc507-6208-475a-ae79-f1f81887a3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAdmin\헤더 파일">
+      <UniqueIdentifier>{8f82d9ca-402e-4d2f-ba66-f7baad3736e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAreaChatting">
+      <UniqueIdentifier>{cf07ed51-49e8-4736-83c0-c3a8ea2c9c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAreaChatting\소스 파일">
+      <UniqueIdentifier>{f9f67b5c-7beb-49af-94db-4256d59642a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAreaChatting\헤더 파일">
+      <UniqueIdentifier>{20c3f5ca-1c29-456d-bcd4-ee8c817dadcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAuction">
+      <UniqueIdentifier>{fd90ff89-35dc-4b88-b850-038b7e814e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAuction\소스 파일">
+      <UniqueIdentifier>{59724d83-9e9c-42b7-8474-5ec39b720ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAuction\헤더 파일">
+      <UniqueIdentifier>{55b1fa5c-1547-44eb-b237-9e21998146cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAuctionRelay">
+      <UniqueIdentifier>{7ab7eca1-254b-45af-9b21-c2d5bd84708b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAuctionRelay\소스 파일">
+      <UniqueIdentifier>{fab56384-0033-4b27-919a-8141e9f7255a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmAuctionRelay\헤더 파일">
+      <UniqueIdentifier>{66a191c2-d079-430a-9ebb-a1810f3d648d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBillInfo">
+      <UniqueIdentifier>{96a6b0c6-d1ef-477f-b12e-a9391dfe77cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBillInfo\소스 파일">
+      <UniqueIdentifier>{58082190-9b00-4db9-bbee-bfcda2ca363d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBillInfo\헤더 파일">
+      <UniqueIdentifier>{296d0726-aaa3-467e-aa09-4260461cdd2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBilling">
+      <UniqueIdentifier>{e4c94af1-f5f5-4460-ad6c-b29145ed7ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBilling\소스 파일">
+      <UniqueIdentifier>{797f70cd-2616-4cdb-91d2-0d307a2bbb98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBilling\헤더 파일">
+      <UniqueIdentifier>{4262227c-1139-4f60-8a0f-667bc3c32c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBuddy">
+      <UniqueIdentifier>{f19721dd-c395-435d-8aee-2b1ed954901c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBuddy\소스 파일">
+      <UniqueIdentifier>{567f984e-5972-4e3c-aee3-decffd2feaef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBuddy\헤더 파일">
+      <UniqueIdentifier>{aee6fc6d-1f74-4573-a52f-c54aa31237d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCashMall">
+      <UniqueIdentifier>{0c3587e5-e06a-46a8-921d-1b545ee30120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCashMall\소스 파일">
+      <UniqueIdentifier>{6b24c37c-437c-410d-970b-41a25ac18a19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCashMall\헤더 파일">
+      <UniqueIdentifier>{2c4faa71-c02b-4141-ac12-5c07e628d321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCasper">
+      <UniqueIdentifier>{68a478dc-4cb8-4712-9773-d92459bb0a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCasper\소스 파일">
+      <UniqueIdentifier>{220ed68d-e639-425f-81f8-eb2f7f2f2a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCasper\헤더 파일">
+      <UniqueIdentifier>{604348b4-a3a0-4276-ad05-cb1343fd86df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCastle">
+      <UniqueIdentifier>{8bc6deca-1c1d-442f-9cfa-92c0776f7039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCastle\소스 파일">
+      <UniqueIdentifier>{d9dc3e93-7aee-45e1-ab82-08da7f2fda33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCastle\헤더 파일">
+      <UniqueIdentifier>{6cbef99a-87e9-441f-abf6-7c7632fa14e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmChannel">
+      <UniqueIdentifier>{50bfa49d-1e67-4a98-96b0-8bf41cbcfc82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmChannel\소스 파일">
+      <UniqueIdentifier>{561f7c2e-5ee4-4ddb-a02c-5ba43ad99f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmChannel\헤더 파일">
+      <UniqueIdentifier>{a562bee8-4a4a-4fe1-92d4-ea19253a1c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCharManager">
+      <UniqueIdentifier>{b7edfc4e-877a-46c5-877c-f17abe9428f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCharManager\소스 파일">
+      <UniqueIdentifier>{6a7d2d70-e89e-4a0b-9324-d9625fb0ddf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCharManager\헤더 파일">
+      <UniqueIdentifier>{048ddec5-b9c0-4680-8df9-06cacec6366e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCharacter">
+      <UniqueIdentifier>{12fab8e5-4824-4561-bb71-3438a1538083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCharacter\소스 파일">
+      <UniqueIdentifier>{3a76ff4d-ecfa-4c1b-b278-c005e3ccee0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCharacter\헤더 파일">
+      <UniqueIdentifier>{2e2037d3-22c3-4b55-bbc8-9914e0a8b095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmChatting">
+      <UniqueIdentifier>{2382749f-4018-44da-9167-d23b207d913d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmChatting\소스 파일">
+      <UniqueIdentifier>{ce4fd4e9-a0b0-45c3-b7cb-84d983baa94a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmChatting\헤더 파일">
+      <UniqueIdentifier>{03ca27a5-5b21-4e94-ae62-080f4fb192c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCombat">
+      <UniqueIdentifier>{97ead775-02b1-4667-9d13-7f0591515fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCombat\소스 파일">
+      <UniqueIdentifier>{a05f872f-d78e-463c-aa20-eb7f4822c389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCombat\헤더 파일">
+      <UniqueIdentifier>{bc307ee2-225d-4891-9163-90d22c03467d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmConfig">
+      <UniqueIdentifier>{6c14f682-eca9-4cac-8267-03cc9a3ef26b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmConfig\헤더 파일">
+      <UniqueIdentifier>{df8be351-c06d-4463-acfb-b5d1c7a8e849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmConfig\소스 파일">
+      <UniqueIdentifier>{a2e0eba9-431b-4ceb-abc3-3a4d2799c525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDatabaseConfig">
+      <UniqueIdentifier>{8f911616-a563-4036-9fa3-8ff491151768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDatabaseConfig\소스 파일">
+      <UniqueIdentifier>{04d74bdb-60c0-4f9d-8f62-c76960fbe562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDatabaseConfig\헤더 파일">
+      <UniqueIdentifier>{dc2b964d-bedc-4b14-9aa3-dff731068f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDatabasePool">
+      <UniqueIdentifier>{7f3a44a4-8ba9-4d20-9291-0e17b2bd8ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDatabasePool\소스 파일">
+      <UniqueIdentifier>{66d8e9fd-8462-4acb-bb34-935badd51210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDatabasePool\헤더 파일">
+      <UniqueIdentifier>{8eff3889-2bb2-4d18-a45e-543f06172cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDeath">
+      <UniqueIdentifier>{23128f97-8ae8-4b97-bd82-f6f33c7f1866}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDeath\소스 파일">
+      <UniqueIdentifier>{442aa9d8-30db-403a-95ba-1e1fb5adaf4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDeath\헤더 파일">
+      <UniqueIdentifier>{60983d23-fa63-43ee-ae72-d1233da6db84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDropItem">
+      <UniqueIdentifier>{6f8b0d6d-a17a-47f2-9103-0a09d0d9e9d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDropItem\소스 파일">
+      <UniqueIdentifier>{d9f9d992-11c2-49e9-9f8b-1f7bff6a2aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDropItem\헤더 파일">
+      <UniqueIdentifier>{c725a142-d8d9-4ad3-a726-4a55b8f6b1ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDropItem2">
+      <UniqueIdentifier>{46d873a6-d9f3-4887-86fe-6861d4b36dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDropItem2\소스 파일">
+      <UniqueIdentifier>{cc2039bd-0d95-47b9-a851-95fc715e9034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmDropItem2\헤더 파일">
+      <UniqueIdentifier>{385f99e7-b0cd-45af-9efa-3fe6f7426dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventBank">
+      <UniqueIdentifier>{7e02198f-810c-41fd-8821-afb9f555ac46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventBank\소스 파일">
+      <UniqueIdentifier>{3ba11627-caf6-4584-bd83-bf76a28f21b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventBank\헤더 파일">
+      <UniqueIdentifier>{925311f1-69f3-4236-93cd-d00753a9aac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventCharCustomize">
+      <UniqueIdentifier>{f7edddc4-24c4-4850-8b1d-fa5eb29bfaa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventCharCustomize\소스 파일">
+      <UniqueIdentifier>{3d7b16b8-b16a-4bb4-82a6-a0766d01e87a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventCharCustomize\헤더 파일">
+      <UniqueIdentifier>{f3997f16-5d2a-4e60-a1d6-aba77b3512d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventGuild">
+      <UniqueIdentifier>{1f27f25c-d294-4d3f-9e6a-d5c444380f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventGuild\소스 파일">
+      <UniqueIdentifier>{abf0497b-41ed-4b67-b46a-9fba670cdf99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventGuild\헤더 파일">
+      <UniqueIdentifier>{f463d177-4a03-48a3-a6a4-0c4028a5e823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventItemConvert">
+      <UniqueIdentifier>{d104fbda-2d3b-4247-8e49-410143a1abc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventItemConvert\소스 파일">
+      <UniqueIdentifier>{2579fb2d-68da-45cd-99dc-6ab4ad7c1cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventItemConvert\헤더 파일">
+      <UniqueIdentifier>{d7151d54-3dcd-4e7b-8c74-abf7eeebbf47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventItemRepair">
+      <UniqueIdentifier>{a68ea109-824e-4388-bc75-20d10a9e5655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventItemRepair\소스 파일">
+      <UniqueIdentifier>{662f1f19-9afc-41a2-84c7-f957a0fd35e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventItemRepair\헤더 파일">
+      <UniqueIdentifier>{069437a2-d74d-4b4e-9eac-bbb2936c8054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventManager">
+      <UniqueIdentifier>{29431edc-3971-45cd-80e2-e1f93c355917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventManager\소스 파일">
+      <UniqueIdentifier>{06bbfa3c-7a4c-4a0e-9fda-2d59962c1f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventManager\헤더 파일">
+      <UniqueIdentifier>{c98ddc79-1617-4113-85d9-0c0f90661b80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNPCDialog">
+      <UniqueIdentifier>{fba58c94-b047-4ed2-bc36-2de313d51e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNPCDialog\소스 파일">
+      <UniqueIdentifier>{2eca7997-9e8d-4141-b6dd-a38b62b3db03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNPCDialog\헤더 파일">
+      <UniqueIdentifier>{baded3e6-f029-46f4-b08f-7285f2abee2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNPCTrade">
+      <UniqueIdentifier>{8cf015b5-cfec-4818-9eb7-4c8026d92fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNPCTrade\소스 파일">
+      <UniqueIdentifier>{4f74f392-250a-4b95-8059-a7f7bab9ada0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNPCTrade\헤더 파일">
+      <UniqueIdentifier>{123efd67-7c0e-416d-b8ac-e42e227f10c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNature">
+      <UniqueIdentifier>{67363715-6e8e-4e34-a903-b2d1e5eab293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNature\소스 파일">
+      <UniqueIdentifier>{b35c55e6-b3bc-47a9-b13a-6c12c29d6d2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventNature\헤더 파일">
+      <UniqueIdentifier>{bf0b9450-b68e-4c51-9611-8d24f6caf7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventProduct">
+      <UniqueIdentifier>{6ba4798f-0865-46a5-b850-64a1f3a92d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventProduct\소스 파일">
+      <UniqueIdentifier>{ed748ae4-d436-470d-ae76-f2c1f232f05f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventProduct\헤더 파일">
+      <UniqueIdentifier>{7be1ee79-0d1d-48c4-ae2e-2c4ece48a64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventQuest">
+      <UniqueIdentifier>{562bf9ae-5419-4589-aa59-33efc5b6c9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventQuest\소스 파일">
+      <UniqueIdentifier>{40065a83-c275-436c-9f37-ca045bd16f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventQuest\헤더 파일">
+      <UniqueIdentifier>{fa53c6e4-d7d2-4958-8c72-05bddd420ee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventRefinery">
+      <UniqueIdentifier>{544b32d3-72d4-4375-8f0e-1bb6482657d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventRefinery\소스 파일">
+      <UniqueIdentifier>{3d874181-7ef1-4247-aa66-89d1eb0553ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventRefinery\헤더 파일">
+      <UniqueIdentifier>{36bb116e-2d5d-4c25-ad6d-32ae9bcaefa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSkillMaster">
+      <UniqueIdentifier>{c1933205-195a-4069-b145-6cab96612c8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSkillMaster\소스 파일">
+      <UniqueIdentifier>{52b41851-b19b-4cec-9c60-76f857ec15a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSkillMaster\헤더 파일">
+      <UniqueIdentifier>{cdd4f75b-d0f3-48e6-895f-13a5939d3d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSpawn">
+      <UniqueIdentifier>{c9574398-328e-48b1-bf32-6b846272d29f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSpawn\소스 파일">
+      <UniqueIdentifier>{6cb6199c-9bff-41fa-829b-0756736c0772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSpawn\헤더 파일">
+      <UniqueIdentifier>{f94096f2-6924-4982-a922-90671f62bbae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventTeleport">
+      <UniqueIdentifier>{210d356e-fce0-42b1-a97d-cbb8618cecf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventTeleport\소스 파일">
+      <UniqueIdentifier>{80506b7a-0172-4a84-bc22-2c3629a41ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventTeleport\헤더 파일">
+      <UniqueIdentifier>{5ca49323-96da-4c1b-8b4e-2eea2e754848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventUvUReward">
+      <UniqueIdentifier>{06d16d70-eb6d-4b45-ae5d-ee9f398a5cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventUvUReward\소스 파일">
+      <UniqueIdentifier>{2115a04d-87ad-4361-bc94-5d8ed30038c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventUvUReward\헤더 파일">
+      <UniqueIdentifier>{8b26570e-c82a-4565-b07a-cd2209e9b8ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmFactors">
+      <UniqueIdentifier>{057199b9-804f-4883-a586-17a1fab1f552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmFactors\소스 파일">
+      <UniqueIdentifier>{0d2e38db-36a1-44a6-8505-cc7d9ff6cd6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmFactors\헤더 파일">
+      <UniqueIdentifier>{04aae3e6-2439-450e-8222-ae350345bfee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGKforPCRoom">
+      <UniqueIdentifier>{79288e1b-0791-4fb3-9e02-b555714b4cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGKforPCRoom\소스 파일">
+      <UniqueIdentifier>{3afe7d3c-c8a6-449b-adb0-bec5586daaef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGKforPCRoom\헤더 파일">
+      <UniqueIdentifier>{42ff5c11-c810-4949-b537-c5d18116b4ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGuild">
+      <UniqueIdentifier>{27e08a33-e41b-4166-86a8-a331f3415c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGuild\소스 파일">
+      <UniqueIdentifier>{14904c00-bd7e-498c-a0e5-1251514d9941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGuild\헤더 파일">
+      <UniqueIdentifier>{2094e5aa-27b7-4eb7-8485-8f9daf3457ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmInterServerLink">
+      <UniqueIdentifier>{d4520e7b-e936-403e-b525-b964cef6cd4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmInterServerLink\소스 파일">
+      <UniqueIdentifier>{3a4dd041-ef7d-4dd2-bcd0-5d9917d694fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmInterServerLink\헤더 파일">
+      <UniqueIdentifier>{bfd2f227-6a04-42e0-b366-87e92ab33b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItem">
+      <UniqueIdentifier>{99f4c817-851f-4ef2-8d53-a54a0743b6bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItem\소스 파일">
+      <UniqueIdentifier>{2f028a19-9cb0-4ccf-ac03-c9e8702fca4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItem\헤더 파일">
+      <UniqueIdentifier>{ece53de0-ea8b-450e-accf-a7984dcfaa7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItemConvert">
+      <UniqueIdentifier>{db0ea935-84c3-4854-b870-7eec60f2d12a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItemConvert\소스 파일">
+      <UniqueIdentifier>{303aab86-835d-4aef-a60b-e2b148b36130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItemConvert\헤더 파일">
+      <UniqueIdentifier>{35035c2c-ef8c-4a50-9f19-2d9e52edb020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItemManager">
+      <UniqueIdentifier>{ac3bb978-be8e-402a-9910-114add979ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItemManager\소스 파일">
+      <UniqueIdentifier>{a452fdf1-433f-4f62-bf6e-665ed813d9cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmItemManager\헤더 파일">
+      <UniqueIdentifier>{3038f8ee-2537-48a0-afb6-3e97f4eca454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLog">
+      <UniqueIdentifier>{86e7f85f-4ab0-4a22-9e02-98cae4a7ab7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLog\소스 파일">
+      <UniqueIdentifier>{58731381-6d63-4bcc-bc80-6edf32a74fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLog\헤더 파일">
+      <UniqueIdentifier>{e9a63119-91e8-40f0-9fd7-f50236a3e0a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLogin">
+      <UniqueIdentifier>{4ed688c9-8c83-430e-b5d4-296abd8c17a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLogin\소스 파일">
+      <UniqueIdentifier>{6413e563-9989-422a-bf01-2b2890a9f2f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLogin\헤더 파일">
+      <UniqueIdentifier>{9c2fd8d6-5d82-4056-b027-4e22562eca04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLoginClient">
+      <UniqueIdentifier>{2fda998e-7464-4722-bb56-2fda4d12934d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLoginClient\소스 파일">
+      <UniqueIdentifier>{bb62ad0e-f8a3-4e86-9697-fdb6a1037602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLoginClient\헤더 파일">
+      <UniqueIdentifier>{67fc86a7-7c61-43ef-8d2e-64b6dbb4c341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLoginServer">
+      <UniqueIdentifier>{cb9a36a8-e0b0-4187-89ba-de098c519d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLoginServer\소스 파일">
+      <UniqueIdentifier>{07b17215-3186-45f2-8448-9124b60e943b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLoginServer\헤더 파일">
+      <UniqueIdentifier>{3fa6e0fa-b159-4510-bd40-81ba0f5c7247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmMailBox">
+      <UniqueIdentifier>{293b59ef-36ad-461d-b38e-fa08ce4524d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmMailBox\소스 파일">
+      <UniqueIdentifier>{910058ed-3e1d-4b23-a11c-8d6babcc7b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmMailBox\헤더 파일">
+      <UniqueIdentifier>{e76fdcb3-2bac-4b5d-9183-42ae2c468845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmMap">
+      <UniqueIdentifier>{d8280fca-6a30-4df0-8090-fa02cbdaa86a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmMap\소스 파일">
+      <UniqueIdentifier>{c00783e3-b145-4859-ae80-36cb6719f885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmMap\헤더 파일">
+      <UniqueIdentifier>{8d0ac8ec-e832-4a2f-bba1-acff99aa39fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmObject">
+      <UniqueIdentifier>{726c22e3-55b9-49b5-8728-ba97f8842c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmObject\소스 파일">
+      <UniqueIdentifier>{09a0b706-2113-40f2-bfe8-b15c4c54bd70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmObject\헤더 파일">
+      <UniqueIdentifier>{8b22f96f-43fb-4830-96f9-1e7f6e179834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmParty">
+      <UniqueIdentifier>{808688c8-4f16-4c45-bb63-5a3821bf8665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmParty\소스 파일">
+      <UniqueIdentifier>{ae91b971-462f-49f5-b25a-f08b5f284048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmParty\헤더 파일">
+      <UniqueIdentifier>{46a921d1-6a23-4205-801f-8220995bd0d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmPrivateTrade">
+      <UniqueIdentifier>{be27ed45-4cc1-4513-b69d-2a757173be34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmPrivateTrade\소스 파일">
+      <UniqueIdentifier>{2ef24d35-62fe-4f80-a6aa-6fb82fab6061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmPrivateTrade\헤더 파일">
+      <UniqueIdentifier>{f98f9ad5-fad2-45b5-be9d-8163f4c7f626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmProduct">
+      <UniqueIdentifier>{99f88cf1-cdc6-4791-957e-1eedb8460673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmProduct\소스 파일">
+      <UniqueIdentifier>{3ef40335-554e-4b51-8e60-e18793513fdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmProduct\헤더 파일">
+      <UniqueIdentifier>{490b183b-96c0-4044-82b4-2a375f9c72d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmPvP">
+      <UniqueIdentifier>{ffcba5cc-356b-4bd3-af02-6f1d3a36f1aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmPvP\소스 파일">
+      <UniqueIdentifier>{39c20130-7a6c-4e74-8ca8-373f226f8796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmPvP\헤더 파일">
+      <UniqueIdentifier>{3405e886-5775-4aeb-8b9c-7e1e8049ca35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmQuest">
+      <UniqueIdentifier>{2eeace37-ebdf-4e82-a3b3-2d9b071e51ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmQuest\소스 파일">
+      <UniqueIdentifier>{f109e809-c298-420f-a2b6-098fb5e66f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmQuest\헤더 파일">
+      <UniqueIdentifier>{f4e5b0af-714e-45c9-b11c-541218015ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRefinery">
+      <UniqueIdentifier>{0d5aced7-d0dd-4da8-858c-0083fe8bab70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRefinery\소스 파일">
+      <UniqueIdentifier>{b0a9267e-e544-4b31-9bf3-850a2e96e4da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRefinery\헤더 파일">
+      <UniqueIdentifier>{6c2722ba-4111-44ae-b4e9-0529a432d865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRelay2">
+      <UniqueIdentifier>{8513659a-6ce9-4065-a6e1-2151d6e48b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRelay2\소스 파일">
+      <UniqueIdentifier>{f6672891-929a-4c43-8af6-b70ec62fb1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRelay2\헤더 파일">
+      <UniqueIdentifier>{fb5b9485-78d3-474f-a844-b99dcf2fc8a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRemission">
+      <UniqueIdentifier>{13e5f5b9-baaa-4d15-a3b3-bfad91cf0246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRemission\소스 파일">
+      <UniqueIdentifier>{7ac19086-7e62-44eb-93fd-a5fdebb1c179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRemission\헤더 파일">
+      <UniqueIdentifier>{8fa72ea2-a7a4-4fe4-a619-ae58e90cce10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRide">
+      <UniqueIdentifier>{5c90b246-5649-414b-ba39-079700492e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRide\소스 파일">
+      <UniqueIdentifier>{52ac654d-57b7-45ea-b7c4-dd5ea44df1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmRide\헤더 파일">
+      <UniqueIdentifier>{cbecded4-6a95-4eef-b38e-2fbaeb4fbbe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmServerManager2">
+      <UniqueIdentifier>{4a4d6478-5b53-4d36-a352-71b340eb5d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmServerManager2\소스 파일">
+      <UniqueIdentifier>{7a502943-810e-4b42-abb8-9c0b4b8d7e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmServerManager2\헤더 파일">
+      <UniqueIdentifier>{0e3315df-9940-4cc2-b66a-be420e234161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmServerStatus">
+      <UniqueIdentifier>{01d5f90e-65ae-4566-a03d-2be5a7c3ac15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmServerStatus\소스 파일">
+      <UniqueIdentifier>{7aa6a6a5-171a-4c33-b418-515e7ffa738d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmServerStatus\헤더 파일">
+      <UniqueIdentifier>{c78b7269-8a42-4cf0-9958-1ca86668ceb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmShrine">
+      <UniqueIdentifier>{fb84a698-c7d5-4aba-ae54-55b4a8ed34b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmShrine\소스 파일">
+      <UniqueIdentifier>{48e5509c-b066-4b39-a06b-4634b249da2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmShrine\헤더 파일">
+      <UniqueIdentifier>{373cc463-1b3f-415c-8ab4-fd567e64ac75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSiegeWar">
+      <UniqueIdentifier>{7387fb58-a246-455a-9667-ae91abb23735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSiegeWar\소스 파일">
+      <UniqueIdentifier>{122e2e23-83b7-468a-9cfd-b9db14f1da73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSiegeWar\헤더 파일">
+      <UniqueIdentifier>{80bfbecb-1c8e-4c7e-b57b-363d26606092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSkill">
+      <UniqueIdentifier>{79ba032d-bbf0-40e4-bfa7-4bfa4bcac641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSkill\소스 파일">
+      <UniqueIdentifier>{bb0353ca-6ca6-4332-ae00-39af5834b10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSkill\헤더 파일">
+      <UniqueIdentifier>{4d1ec8ef-a498-4150-9175-67384029a2ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSkillManager">
+      <UniqueIdentifier>{b3f0fe97-4535-4ee7-b624-f43c06a118b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSkillManager\소스 파일">
+      <UniqueIdentifier>{daf5e5df-96b7-4b81-8aa3-13cde134eb1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSkillManager\헤더 파일">
+      <UniqueIdentifier>{c9ef8991-1d15-46cc-9455-555f4e0140d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSummons">
+      <UniqueIdentifier>{576b3aab-e85b-4ca5-89cc-5dfa60f603c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSummons\소스 파일">
+      <UniqueIdentifier>{260ba2fe-c8a2-4238-a078-52337504685f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSummons\헤더 파일">
+      <UniqueIdentifier>{cf75b9a5-8e78-48b6-a43f-771d7050b089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSystemInfo">
+      <UniqueIdentifier>{df2dfa6b-5bc7-4cf9-b433-6c71970f4d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSystemInfo\소스 파일">
+      <UniqueIdentifier>{a1a9faa4-6065-44c0-af29-5a9089d29d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSystemInfo\헤더 파일">
+      <UniqueIdentifier>{8b508fc8-c825-4796-8d77-bef628e6992a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSystemMessage">
+      <UniqueIdentifier>{e38b6f8c-05a7-43d0-a89e-3b514bda7f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSystemMessage\소스 파일">
+      <UniqueIdentifier>{28e04159-5bf7-414a-8a7e-94d6b6672d70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSystemMessage\헤더 파일">
+      <UniqueIdentifier>{1f3e9f56-dffc-49a0-b904-43de1fa4b266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmTimer">
+      <UniqueIdentifier>{cfdd8887-98ca-473a-85ef-638e7cc76610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmTimer\소스 파일">
+      <UniqueIdentifier>{dfb2f23e-1d52-401a-a24b-c9368f9e7343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmTimer\헤더 파일">
+      <UniqueIdentifier>{b44fd7a1-2dd2-47ad-85b2-9741c3934abe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmUIStatus">
+      <UniqueIdentifier>{7f9f40a0-22fa-4182-bd54-f22a9979e849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmUIStatus\소스 파일">
+      <UniqueIdentifier>{038e5fae-c51b-446b-bb76-807cd049e60c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmUIStatus\헤더 파일">
+      <UniqueIdentifier>{3ee88e91-8583-4cfb-9e62-b96abdff2957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmWorld">
+      <UniqueIdentifier>{5e775ca3-5d9e-475f-82f5-27fa1fd00764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmWorld\소스 파일">
+      <UniqueIdentifier>{05aba399-2940-464c-a5a3-a40e83624d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmWorld\헤더 파일">
+      <UniqueIdentifier>{2cc990ab-f228-46d4-9c35-0744f702d113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmZoning">
+      <UniqueIdentifier>{929585cc-7817-4746-8592-3c9178360957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmZoning\소스 파일">
+      <UniqueIdentifier>{0383598e-a137-44dc-b803-7dc492041237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmZoning\헤더 파일">
+      <UniqueIdentifier>{c56b4cdd-9184-4ff8-b80b-57db6421c042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuDatabase">
+      <UniqueIdentifier>{1a2e72d4-84ca-4c63-9f49-162ddf11e848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuDatabase\소스 파일">
+      <UniqueIdentifier>{beed4de5-9c40-467a-839b-08241bc0555a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuDatabase\헤더 파일">
+      <UniqueIdentifier>{88235e50-a9aa-4128-9790-e2854db5da4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuDatabase2">
+      <UniqueIdentifier>{eaaa0d2e-9c52-4e41-854a-3b222ccf17d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuDatabase2\소스 파일">
+      <UniqueIdentifier>{6e6f283c-15b9-4dff-a6cb-d51357564b29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuDatabase2\헤더 파일">
+      <UniqueIdentifier>{7bc08cde-8ab4-4302-a951-fe41449a9f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuRegistry">
+      <UniqueIdentifier>{99258aba-21c9-4204-af7d-0283f300cafc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmUsedCharDataPool">
+      <UniqueIdentifier>{eaeb59f2-b004-424a-b552-5290fdf95aca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmUsedCharDataPool\소스 파일">
+      <UniqueIdentifier>{fe891da9-99fb-410c-958a-dfa0433d9b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmUsedCharDataPool\헤더 파일">
+      <UniqueIdentifier>{658e9add-d2b8-4b49-bbbe-f877dce63167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmReturnToLogin">
+      <UniqueIdentifier>{f43d5aa2-ffe2-497b-88ac-73e2c63ddb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmReturnToLogin\소스 파일">
+      <UniqueIdentifier>{8c650f37-8b83-4053-9337-962322e5b7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmReturnToLogin\헤더 파일">
+      <UniqueIdentifier>{aec0b5c7-ea9f-4a6e-9abe-9e7b31533335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmWantedCriminal">
+      <UniqueIdentifier>{8e12ed84-76a5-480d-904f-f4b1037b1962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmWantedCriminal\소스 파일">
+      <UniqueIdentifier>{a43f3f10-c45b-4557-a7d0-6d706d8c41b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmWantedCriminal\헤더 파일">
+      <UniqueIdentifier>{399580c8-afbb-443c-a8e5-0dbb22b6a23f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmStartupEncryption">
+      <UniqueIdentifier>{5baef100-8c75-484e-9206-4ea46f56c799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmStartupEncryption\소스 파일">
+      <UniqueIdentifier>{5296a947-9a7b-4a0c-a18e-20e46272b961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmStartupEncryption\헤더 파일">
+      <UniqueIdentifier>{e05e5180-33b0-4371-9498-a985360fc410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSiegeWarNPC">
+      <UniqueIdentifier>{8ccdbc54-5a66-474c-8065-01db345df7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSiegeWarNPC\소스 파일">
+      <UniqueIdentifier>{bdc540b0-d3ea-4d81-8ab6-b26bc63805b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSiegeWarNPC\헤더 파일">
+      <UniqueIdentifier>{d1bb5674-2cf0-44f8-8ad0-e71cb1e5988f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGlobalChatting">
+      <UniqueIdentifier>{5bb7039b-3784-4d28-8103-245e18315b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGlobalChatting\헤더 파일">
+      <UniqueIdentifier>{3c19a9db-77c9-4d26-a836-48d43852d4c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGlobalChatting\소스 파일">
+      <UniqueIdentifier>{e022d276-2481-45ae-a0b5-dcd1f061b653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSearch">
+      <UniqueIdentifier>{659c33db-2488-4c53-81d7-03d708da8276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSearch\헤더 파일">
+      <UniqueIdentifier>{0675f689-311e-4b8b-9b9b-dfac1c987193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmSearch\소스 파일">
+      <UniqueIdentifier>{314692e7-5952-44f6-86e5-fe6e33e388d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBillingChina">
+      <UniqueIdentifier>{41bb7865-3e5a-42bc-a763-f3912d834df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBillingChina\소스 파일">
+      <UniqueIdentifier>{5e9ea7f1-53e7-4a99-90fc-075c2144fc9c}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="AgsmBillingChina\헤더 파일">
+      <UniqueIdentifier>{50d906a3-cd95-4f30-9603-cfa4b566291e}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="AgsmTax">
+      <UniqueIdentifier>{e06f6877-d109-4c79-adbd-73bd4ceb046e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmTax\헤더 파일">
+      <UniqueIdentifier>{1d218478-c3d6-4bae-b88d-1e74335a9341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmTax\소스 파일">
+      <UniqueIdentifier>{3e99fb92-9a89-4459-b2f5-3c4c32793b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGuildWarehouse">
+      <UniqueIdentifier>{bc3cfacd-355b-4de8-8552-6ccc899b586a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGuildWarehouse\헤더 파일">
+      <UniqueIdentifier>{e560712d-374f-460d-b129-bfc6c7cce21b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGuildWarehouse\소스 파일">
+      <UniqueIdentifier>{49b3a6d9-7800-4a96-95ce-637ee32b9908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmArchlord">
+      <UniqueIdentifier>{2a9d178b-8501-4352-9149-048f487e5634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmArchlord\헤더 파일">
+      <UniqueIdentifier>{8738e8b8-6c76-4b52-ba44-9c5a89a82efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmArchlord\소스 파일">
+      <UniqueIdentifier>{4bbcf84c-3754-41e1-8b7c-b7ff78e47cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmCogpas">
+      <UniqueIdentifier>{fd972a72-06f7-4413-a2cf-bdbf6a79e874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGamble">
+      <UniqueIdentifier>{88dd3d16-7ada-4d11-8e20-b7f9c3b1f94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGamble\헤더 파일">
+      <UniqueIdentifier>{d96b94ac-97c7-45ff-94a6-59618b0b2eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGamble\소스 파일">
+      <UniqueIdentifier>{70dfc28b-33aa-4cbb-8c4c-b5323933b7ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBillingJapan">
+      <UniqueIdentifier>{d2973a18-5a50-43bf-9517-7a9bcea3bfc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventGacha">
+      <UniqueIdentifier>{17522793-674d-4331-b458-07b5c0816501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBattleGround">
+      <UniqueIdentifier>{8dfbba7d-09e4-4039-92c0-b960cfe399d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmNpcManager">
+      <UniqueIdentifier>{228dd57e-9678-4c5d-bd6c-61ec342f8b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEventSystem">
+      <UniqueIdentifier>{88917ef8-4211-4f26-a74a-0d5409ddf9c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEpicZone">
+      <UniqueIdentifier>{b62b9f27-7441-4848-a4ff-0471b17add45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEpicZone\소스 파일">
+      <UniqueIdentifier>{18324cda-20ac-4db3-b4ea-e14c8a6f90f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmEpicZone\헤더 파일">
+      <UniqueIdentifier>{f74a0c9f-e9a4-4fd5-8b5a-a083cfe060da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmTitle">
+      <UniqueIdentifier>{775596cb-5990-42cf-b023-0b38c77eb12f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmTitle\Source">
+      <UniqueIdentifier>{3c3857df-4ad9-4442-84a8-d2cbf5e7bb2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmTitle\Header">
+      <UniqueIdentifier>{31b8b60c-bb62-4ba8-850f-c0da2809149a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmGameholic">
+      <UniqueIdentifier>{312ec267-16f5-4fe2-ad0c-48e571ab2dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmBillingGlobal">
+      <UniqueIdentifier>{7f6cb602-3364-4edd-b993-d1905573b436}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Server\AgsEngine\AgsEngine.cpp">
+      <Filter>AgsEngine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AgsEngine\AgsGameProcess.cpp">
+      <Filter>AgsEngine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AgsEngine\AgsModuleDBStream.cpp">
+      <Filter>AgsEngine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAI2\AgsmAI2.cpp">
+      <Filter>AgsmAI2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAI2\AgsmNPCAI2.cpp">
+      <Filter>AgsmAI2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOICell.cpp">
+      <Filter>AgsmAOIFilter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOIFilter.cpp">
+      <Filter>AgsmAOIFilter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOIMap.cpp">
+      <Filter>AgsmAOIFilter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAccountManager\AgsaAccountManager.cpp">
+      <Filter>AgsmAccountManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAccountManager\AgsmAccountManager.cpp">
+      <Filter>AgsmAccountManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdmin.cpp">
+      <Filter>AgsmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminCharacter.cpp">
+      <Filter>AgsmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminCommand.cpp">
+      <Filter>AgsmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminGuild.cpp">
+      <Filter>AgsmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminItem.cpp">
+      <Filter>AgsmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminSkill.cpp">
+      <Filter>AgsmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminStatistic.cpp">
+      <Filter>AgsmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminTitle.cpp">
+      <Filter>AgsmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAreaChatting\AgsmAreaChatting.cpp">
+      <Filter>AgsmAreaChatting\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAuction\AgsmAuction.cpp">
+      <Filter>AgsmAuction\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsaAuctionRelay.cpp">
+      <Filter>AgsmAuctionRelay\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsdAuctionRelay.cpp">
+      <Filter>AgsmAuctionRelay\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsmAuctionRelay.cpp">
+      <Filter>AgsmAuctionRelay\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillInfo\AgsmBillInfo.cpp">
+      <Filter>AgsmBillInfo\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBilling\AgsaBilling.cpp">
+      <Filter>AgsmBilling\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBilling\AgsmBilling.cpp">
+      <Filter>AgsmBilling\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBuddy\AgsmBuddy.cpp">
+      <Filter>AgsmBuddy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCashMall\AgsmCashMall.cpp">
+      <Filter>AgsmCashMall\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCasper\AgsmCasper.cpp">
+      <Filter>AgsmCasper\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCastle\AgsmCastle.cpp">
+      <Filter>AgsmCastle\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmChannel\AgsmChannel.cpp">
+      <Filter>AgsmChannel\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharManager\AgsmCharManager.cpp">
+      <Filter>AgsmCharManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacter.cpp">
+      <Filter>AgsmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacterCB.cpp">
+      <Filter>AgsmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacterCheckRecvChar.cpp">
+      <Filter>AgsmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacterPacket.cpp">
+      <Filter>AgsmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacterWaitOperation.cpp">
+      <Filter>AgsmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmChatting\AgsmChatting.cpp">
+      <Filter>AgsmChatting\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmCombat\AgsmCombat.cpp">
+      <Filter>AgsmCombat\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmConfig\AgsmConfig.cpp">
+      <Filter>AgsmConfig\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabaseConfig\AgsmDatabaseConfig.cpp">
+      <Filter>AgsmDatabaseConfig\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabasePool\AgsdDatabase.cpp">
+      <Filter>AgsmDatabasePool\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabasePool\AgsmDatabasePool.cpp">
+      <Filter>AgsmDatabasePool\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabasePool\IOCPDatabase.cpp">
+      <Filter>AgsmDatabasePool\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabasePool\zzThread.cpp">
+      <Filter>AgsmDatabasePool\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmDeath\AgsmDeath.cpp">
+      <Filter>AgsmDeath\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmDropItem\AgsmDropItem.cpp">
+      <Filter>AgsmDropItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmDropItem2\AgsmDropItem2.cpp">
+      <Filter>AgsmDropItem2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventBank\AgsmEventBank.cpp">
+      <Filter>AgsmEventBank\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventCharCustomize\AgsmEventCharCustomize.cpp">
+      <Filter>AgsmEventCharCustomize\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventGuild\AgsmEventGuild.cpp">
+      <Filter>AgsmEventGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventItemConvert\AgsmEventItemConvert.cpp">
+      <Filter>AgsmEventItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventItemRepair\AgsmEventItemRepair.cpp">
+      <Filter>AgsmEventItemRepair\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventManager\AgsmEventManager.cpp">
+      <Filter>AgsmEventManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventNPCDialog\AgsmEventNPCDialog.cpp">
+      <Filter>AgsmEventNPCDialog\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventNPCTrade\AgsmEventNPCTrade.cpp">
+      <Filter>AgsmEventNPCTrade\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventNature\AgsmEventNature.cpp">
+      <Filter>AgsmEventNature\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventProduct\AgsmEventProduct.cpp">
+      <Filter>AgsmEventProduct\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventQuest\AgsmEventQuest.cpp">
+      <Filter>AgsmEventQuest\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventRefinery\AgsmEventRefinery.cpp">
+      <Filter>AgsmEventRefinery\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventSkillMaster\AgsmEventSkillMaster.cpp">
+      <Filter>AgsmEventSkillMaster\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventSpawn\AgsmEventSpawn.cpp">
+      <Filter>AgsmEventSpawn\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventTeleport\AgsmEventTeleport.cpp">
+      <Filter>AgsmEventTeleport\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventUvUReward\AgsmEventUvUReward.cpp">
+      <Filter>AgsmEventUvUReward\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmFactors\AgsmFactors.cpp">
+      <Filter>AgsmFactors\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmGKforPCRoom\AgsmGKforPCRoom.cpp">
+      <Filter>AgsmGKforPCRoom\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmGuild\AgsmGuild.cpp">
+      <Filter>AgsmGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmInterServerLink\AgsmInterServerLink.cpp">
+      <Filter>AgsmInterServerLink\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmItem\AgsmItem.cpp">
+      <Filter>AgsmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmItem\AgsmItemCB.cpp">
+      <Filter>AgsmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmItem\AgsmItemPacket.cpp">
+      <Filter>AgsmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmItemConvert\AgsmItemConvert.cpp">
+      <Filter>AgsmItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmItemManager\AgsmItemManager.cpp">
+      <Filter>AgsmItemManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmLog\AgsmLog.cpp">
+      <Filter>AgsmLog\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmLogin\AgsmLogin.cpp">
+      <Filter>AgsmLogin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmLoginClient\AgsmLoginClient.cpp">
+      <Filter>AgsmLoginClient\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmLoginServer\AgsmLoginServer.cpp">
+      <Filter>AgsmLoginServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmMailBox\AgsmMailBox.cpp">
+      <Filter>AgsmMailBox\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmMap\AgsmMap.cpp">
+      <Filter>AgsmMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmObject\AgsmObject.cpp">
+      <Filter>AgsmObject\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmParty\AgsmParty.cpp">
+      <Filter>AgsmParty\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmPrivateTrade\AgsmPrivateTrade.cpp">
+      <Filter>AgsmPrivateTrade\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmProduct\AgsaProduct.cpp">
+      <Filter>AgsmProduct\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmProduct\AgsmProduct.cpp">
+      <Filter>AgsmProduct\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmPvP\AgsmPvP.cpp">
+      <Filter>AgsmPvP\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmQuest\AgsdQuest.cpp">
+      <Filter>AgsmQuest\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmQuest\AgsmQuest.cpp">
+      <Filter>AgsmQuest\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRefinery\AgsmRefinery.cpp">
+      <Filter>AgsmRefinery\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2AccountWorld.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Admin.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Archlord.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2BankMoneyEdit.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Buddy.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2CashItemBuyList.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2CashItemTimeExtend.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Character.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2CharismaPointEdit.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2ConcurrentUser.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Custom.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2EventSystem.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Guild.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Item.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2ItemConvert.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Log.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2MailBox.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Quest.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2SiegeWar.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Skill.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Test.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmTitle\AgsmRelay2Title.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2UIStatus.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2WantedCriminal.cpp">
+      <Filter>AgsmRelay2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRemission\AgsmRemission.cpp">
+      <Filter>AgsmRemission\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmRide\AgsmRide.cpp">
+      <Filter>AgsmRide\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmServerManager2\AgsaServer2.cpp">
+      <Filter>AgsmServerManager2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmServerManager2\AgsmServerManager2.cpp">
+      <Filter>AgsmServerManager2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmServerStatus\AgsmServerStatus.cpp">
+      <Filter>AgsmServerStatus\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmServerStatus\AgsmServerStatus_IOCPServer.cpp">
+      <Filter>AgsmServerStatus\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmShrine\AgsmShrine.cpp">
+      <Filter>AgsmShrine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSiegeWar\AgsmSiegeWar.cpp">
+      <Filter>AgsmSiegeWar\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSkill\AgsmSkill.cpp">
+      <Filter>AgsmSkill\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSkill\AgsmSkillEffect.cpp">
+      <Filter>AgsmSkill\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSkill\AgsmSkillMastery.cpp">
+      <Filter>AgsmSkill\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSkillManager\AgsmSkillManager.cpp">
+      <Filter>AgsmSkillManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSummons\AgsmSummons.cpp">
+      <Filter>AgsmSummons\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSystemInfo\AgsmSystemInfo.cpp">
+      <Filter>AgsmSystemInfo\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSystemMessage\AgsmSystemMessage.cpp">
+      <Filter>AgsmSystemMessage\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmTimer\AgsmTimer.cpp">
+      <Filter>AgsmTimer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmUIStatus\AgsmUIStatus.cpp">
+      <Filter>AgsmUIStatus\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\agsmworld\AgsmWorld.cpp">
+      <Filter>AgsmWorld\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmZoning\AgsmZoning.cpp">
+      <Filter>AgsmZoning\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase\auDatabase.cpp">
+      <Filter>AuDatabase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase\AuDatabaseOCI.cpp">
+      <Filter>AuDatabase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase\auDatabaseODBC.cpp">
+      <Filter>AuDatabase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase\auDatabaseOLEDB.cpp">
+      <Filter>AuDatabase\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase2\AuDatabase2.cpp">
+      <Filter>AuDatabase2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuRegistry\AuRegistry.cpp">
+      <Filter>AuRegistry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmUsedCharDataPool\AgsmUsedCharDataPool.cpp">
+      <Filter>AgsmUsedCharDataPool\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmReturnToLogin\AgsdAuthKey.cpp">
+      <Filter>AgsmReturnToLogin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmReturnToLogin\AgsmReturnToLogin.cpp">
+      <Filter>AgsmReturnToLogin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmWantedCriminal\AgsmWantedCriminal.cpp">
+      <Filter>AgsmWantedCriminal\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmStartupEncryption\AgsmStartupEncryption.cpp">
+      <Filter>AgsmStartupEncryption\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventSiegeWarNPC\AgsmEventSiegeWarNPC.cpp">
+      <Filter>AgsmEventSiegeWarNPC\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmGlobalChatting\AgsmGlobalChatting.cpp">
+      <Filter>AgsmGlobalChatting\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmSearch\AgsmSearch.cpp">
+      <Filter>AgsmSearch\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingChina\AgsmBillingChina.cpp">
+      <Filter>AgsmBillingChina\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingChina\BillAPI.cpp">
+      <Filter>AgsmBillingChina\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingChina\CallbackFunc.cpp">
+      <Filter>AgsmBillingChina\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmTax\AgsmTax.cpp">
+      <Filter>AgsmTax\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmGuildWarehouse\AgsmGuildWarehouse.cpp">
+      <Filter>AgsmGuildWarehouse\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmArchlord\AgsmArchlord.cpp">
+      <Filter>AgsmArchlord\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmLoginDB\AgsmCogpas.cpp">
+      <Filter>AgsmCogpas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmGamble\AgsmGamble.cpp">
+      <Filter>AgsmGamble\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingJapan\AgsmBillingJapan.cpp">
+      <Filter>AgsmBillingJapan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventGacha\AgsmEventGacha.cpp">
+      <Filter>AgsmEventGacha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBattleGround\AgsmBattleGround.cpp">
+      <Filter>AgsmBattleGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmNpcManager\AgsmNpcManager.cpp">
+      <Filter>AgsmNpcManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventSystem\AgsmEventSystem.cpp">
+      <Filter>AgsmEventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmEpicZone\AgsmEpicZone.cpp">
+      <Filter>AgsmEpicZone\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmTitle\AgsmTitle.cpp">
+      <Filter>AgsmTitle\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmGameholic\AgsmGameholic.cpp">
+      <Filter>AgsmGameholic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingGlobal\AgsmBillingGlobal.cpp">
+      <Filter>AgsmBillingGlobal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Server\AgsEngine\AgsEngine.h">
+      <Filter>AgsEngine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AgsEngine\AgsGameProcess.h">
+      <Filter>AgsEngine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AgsEngine\AgsModuleDBStream.h">
+      <Filter>AgsEngine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAI2\AgsmAI2.h">
+      <Filter>AgsmAI2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOICell.h">
+      <Filter>AgsmAOIFilter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOIFilter.h">
+      <Filter>AgsmAOIFilter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOIMap.h">
+      <Filter>AgsmAOIFilter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAccountManager\AgsaAccountManager.h">
+      <Filter>AgsmAccountManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAccountManager\AgsdAccount.h">
+      <Filter>AgsmAccountManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAccountManager\AgsmAccountManager.h">
+      <Filter>AgsmAccountManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdmin.h">
+      <Filter>AgsmAdmin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAreaChatting\AgsmAreaChatting.h">
+      <Filter>AgsmAreaChatting\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAuction\AgsmAuction.h">
+      <Filter>AgsmAuction\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsaAuctionRelay.h">
+      <Filter>AgsmAuctionRelay\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsdAuctionRelay.h">
+      <Filter>AgsmAuctionRelay\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsmAuctionRelay.h">
+      <Filter>AgsmAuctionRelay\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillInfo\AgsmBillInfo.h">
+      <Filter>AgsmBillInfo\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBilling\AgsaBilling.h">
+      <Filter>AgsmBilling\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBilling\AgsdBilling.h">
+      <Filter>AgsmBilling\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBilling\AgsmBilling.h">
+      <Filter>AgsmBilling\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBuddy\AgsdBuddy.h">
+      <Filter>AgsmBuddy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBuddy\AgsmBuddy.h">
+      <Filter>AgsmBuddy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmCashMall\AgsmCashMall.h">
+      <Filter>AgsmCashMall\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmCasper\AgsmCasper.h">
+      <Filter>AgsmCasper\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmCastle\AgsmCastle.h">
+      <Filter>AgsmCastle\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmChannel\AgsmChannel.h">
+      <Filter>AgsmChannel\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmCharManager\AgsmCharManager.h">
+      <Filter>AgsmCharManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmCharacter\AgsdCharacter.h">
+      <Filter>AgsmCharacter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacter.h">
+      <Filter>AgsmCharacter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmChatting\AgsmChatting.h">
+      <Filter>AgsmChatting\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmCombat\AgsmCombat.h">
+      <Filter>AgsmCombat\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmConfig\AgsmConfig.h">
+      <Filter>AgsmConfig\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabaseConfig\AgsmDatabaseConfig.h">
+      <Filter>AgsmDatabaseConfig\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabasePool\AgsdDatabase.h">
+      <Filter>AgsmDatabasePool\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabasePool\AgsmDatabasePool.h">
+      <Filter>AgsmDatabasePool\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabasePool\IOCPDatabase.h">
+      <Filter>AgsmDatabasePool\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabasePool\zzThread.h">
+      <Filter>AgsmDatabasePool\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDeath\AgsdDeath.h">
+      <Filter>AgsmDeath\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDeath\AgsmDeath.h">
+      <Filter>AgsmDeath\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDropItem\AgsmDropItem.h">
+      <Filter>AgsmDropItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmDropItem2\AgsmDropItem2.h">
+      <Filter>AgsmDropItem2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventBank\AgsmEventBank.h">
+      <Filter>AgsmEventBank\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventCharCustomize\AgsmEventCharCustomize.h">
+      <Filter>AgsmEventCharCustomize\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventGuild\AgsmEventGuild.h">
+      <Filter>AgsmEventGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventItemConvert\AgsmEventItemConvert.h">
+      <Filter>AgsmEventItemConvert\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventItemRepair\AgsmEventItemRepair.h">
+      <Filter>AgsmEventItemRepair\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventManager\AgsmEventManager.h">
+      <Filter>AgsmEventManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventNPCDialog\AgsmEventNPCDialog.h">
+      <Filter>AgsmEventNPCDialog\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventNPCTrade\AgsdEventNPCTrade.h">
+      <Filter>AgsmEventNPCTrade\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventNPCTrade\AgsmEventNPCTrade.h">
+      <Filter>AgsmEventNPCTrade\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventNature\AgsmEventNature.h">
+      <Filter>AgsmEventNature\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventProduct\AgsmEventProduct.h">
+      <Filter>AgsmEventProduct\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventQuest\AgsmEventQuest.h">
+      <Filter>AgsmEventQuest\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventRefinery\AgsmEventRefinery.h">
+      <Filter>AgsmEventRefinery\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSkillMaster\AgsmEventSkillMaster.h">
+      <Filter>AgsmEventSkillMaster\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSpawn\AgsmEventSpawn.h">
+      <Filter>AgsmEventSpawn\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventTeleport\AgsmEventTeleport.h">
+      <Filter>AgsmEventTeleport\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventUvUReward\AgsmEventUvUReward.h">
+      <Filter>AgsmEventUvUReward\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmFactors\AgsdFactors.h">
+      <Filter>AgsmFactors\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmFactors\AgsmFactors.h">
+      <Filter>AgsmFactors\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGKforPCRoom\AgsmGKforPCRoom.h">
+      <Filter>AgsmGKforPCRoom\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGKforPCRoom\AgsmGKPacket.h">
+      <Filter>AgsmGKforPCRoom\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGuild\AgsdGuild.h">
+      <Filter>AgsmGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGuild\AgsmGuild.h">
+      <Filter>AgsmGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGuild\AgspGuild.h">
+      <Filter>AgsmGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmInterServerLink\AgsmInterServerLink.h">
+      <Filter>AgsmInterServerLink\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmItem\AgsdItem.h">
+      <Filter>AgsmItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmItem\AgsmItem.h">
+      <Filter>AgsmItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmItemConvert\AgsmItemConvert.h">
+      <Filter>AgsmItemConvert\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmItemManager\AgsmItemManager.h">
+      <Filter>AgsmItemManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLog\AgsmLog.h">
+      <Filter>AgsmLog\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLogin\AgsdLogin.h">
+      <Filter>AgsmLogin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLogin\AgsmLogin.h">
+      <Filter>AgsmLogin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginClient\AgsmLoginBst.h">
+      <Filter>AgsmLoginClient\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginClient\AgsmLoginClient.h">
+      <Filter>AgsmLoginClient\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginServer\AgsmLoginServer.h">
+      <Filter>AgsmLoginServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmMailBox\AgsmMailBox.h">
+      <Filter>AgsmMailBox\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmMap\AgsmMap.h">
+      <Filter>AgsmMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmObject\AgsdObject.h">
+      <Filter>AgsmObject\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmObject\AgsmObject.h">
+      <Filter>AgsmObject\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmParty\AgsdParty.h">
+      <Filter>AgsmParty\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmParty\AgsmParty.h">
+      <Filter>AgsmParty\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmPrivateTrade\AgsmPrivateTrade.h">
+      <Filter>AgsmPrivateTrade\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmProduct\AgsaProduct.h">
+      <Filter>AgsmProduct\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmProduct\AgsdProduct.h">
+      <Filter>AgsmProduct\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmProduct\AgsmProduct.h">
+      <Filter>AgsmProduct\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmPvP\AgsmPvP.h">
+      <Filter>AgsmPvP\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmQuest\AgsdQuest.h">
+      <Filter>AgsmQuest\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmQuest\AgsmQuest.h">
+      <Filter>AgsmQuest\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRefinery\AgsdRefinery.h">
+      <Filter>AgsmRefinery\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRefinery\AgsmRefinery.h">
+      <Filter>AgsmRefinery\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgsdRelay2.h">
+      <Filter>AgsmRelay2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2.h">
+      <Filter>AgsmRelay2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgspBankMoneyEdit.h">
+      <Filter>AgsmRelay2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgspCashItemTimeExtend.h">
+      <Filter>AgsmRelay2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgspCharismaPointEdit.h">
+      <Filter>AgsmRelay2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRemission\AgsmRemission.h">
+      <Filter>AgsmRemission\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmRide\AgsmRide.h">
+      <Filter>AgsmRide\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerManager2\AgsaServer2.h">
+      <Filter>AgsmServerManager2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerManager2\AgsdServer2.h">
+      <Filter>AgsmServerManager2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerManager2\AgsmServerManager2.h">
+      <Filter>AgsmServerManager2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerStatus\AgsmServerStatus.h">
+      <Filter>AgsmServerStatus\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerStatus\AgsmServerStatus_IOCPServer.h">
+      <Filter>AgsmServerStatus\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmShrine\AgsdShrine.h">
+      <Filter>AgsmShrine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmShrine\AgsmShrine.h">
+      <Filter>AgsmShrine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSiegeWar\AgsmSiegeWar.h">
+      <Filter>AgsmSiegeWar\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkill\AgsdSkill.h">
+      <Filter>AgsmSkill\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkill\AgsmSkill.h">
+      <Filter>AgsmSkill\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkill\AgsmSkillEffect.h">
+      <Filter>AgsmSkill\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkill\AgspSkill.h">
+      <Filter>AgsmSkill\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkillManager\AgsmSkillManager.h">
+      <Filter>AgsmSkillManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSummons\AgsmSummons.h">
+      <Filter>AgsmSummons\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSystemInfo\AgsmSystemInfo.h">
+      <Filter>AgsmSystemInfo\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSystemMessage\AgsmSystemMessage.h">
+      <Filter>AgsmSystemMessage\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmTimer\AgsmTimer.h">
+      <Filter>AgsmTimer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmUIStatus\AgsmUIStatus.h">
+      <Filter>AgsmUIStatus\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\agsmworld\AgsmWorld.h">
+      <Filter>AgsmWorld\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmZoning\AgsdZoning.h">
+      <Filter>AgsmZoning\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmZoning\AgsmZoning.h">
+      <Filter>AgsmZoning\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase\auDatabase.h">
+      <Filter>AuDatabase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase\AuDatabaseOCI.h">
+      <Filter>AuDatabase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase\auDatabaseODBC.h">
+      <Filter>AuDatabase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase\auDatabaseOLEDB.h">
+      <Filter>AuDatabase\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase2\AuDatabase2.h">
+      <Filter>AuDatabase2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuRegistry\AuRegistry.h">
+      <Filter>AuRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmUsedCharDataPool\AgsdUsedPoolList.h">
+      <Filter>AgsmUsedCharDataPool\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmUsedCharDataPool\AgsmUsedCharDataPool.h">
+      <Filter>AgsmUsedCharDataPool\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmReturnToLogin\AgsdAuthKey.h">
+      <Filter>AgsmReturnToLogin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmReturnToLogin\AgsmReturnToLogin.h">
+      <Filter>AgsmReturnToLogin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmWantedCriminal\AgsmWantedCriminal.h">
+      <Filter>AgsmWantedCriminal\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmStartupEncryption\AgsmStartupEncryption.h">
+      <Filter>AgsmStartupEncryption\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSiegeWarNPC\AgsmEventSiegeWarNPC.h">
+      <Filter>AgsmEventSiegeWarNPC\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGlobalChatting\AgsmGlobalChatting.h">
+      <Filter>AgsmGlobalChatting\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmSearch\AgsmSearch.h">
+      <Filter>AgsmSearch\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\AgsmBillingChina.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\APIFunc.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\BillAPI.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\bsiperrcode.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\bsipfun.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\bsipmacro.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\bsipmsg.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\CallbackFunc.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\errcode.h">
+      <Filter>AgsmBillingChina\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmTax\AgsmTax.h">
+      <Filter>AgsmTax\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGuildWarehouse\AgsmGuildWarehouse.h">
+      <Filter>AgsmGuildWarehouse\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmArchlord\AgsmArchlord.h">
+      <Filter>AgsmArchlord\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginDB\AgsmCogpas.h">
+      <Filter>AgsmCogpas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGamble\AgsmGamble.h">
+      <Filter>AgsmGamble\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingJapan\AgsmBillingJapan.h">
+      <Filter>AgsmBillingJapan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventGacha\AgsmEventGacha.h">
+      <Filter>AgsmEventGacha</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBattleGround\AgsmBattleGround.h">
+      <Filter>AgsmBattleGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmNpcManager\AgsdNpcManager.h">
+      <Filter>AgsmNpcManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmNpcManager\AgsmNpcManager.h">
+      <Filter>AgsmNpcManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSystem\AgsmEventSystem.h">
+      <Filter>AgsmEventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSystem\AgspEventSystem.h">
+      <Filter>AgsmEventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmEpicZone\AgsmEpicZone.h">
+      <Filter>AgsmEpicZone\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmTitle\AgsmTitle.h">
+      <Filter>AgsmTitle\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmTitle\AgspTitleRelayPacket.h">
+      <Filter>AgsmTitle\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGameholic\AgsmGameholic.h">
+      <Filter>AgsmGameholic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmGameholic\FCMsdkBase.h">
+      <Filter>AgsmGameholic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingGlobal\AgsmBillingGlobal.h">
+      <Filter>AgsmBillingGlobal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingGlobal\WebzenBilling.h">
+      <Filter>AgsmBillingGlobal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingGlobal\WebzenBilling_Kor.h">
+      <Filter>AgsmBillingGlobal</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug(Profile)|Win32">
+      <Configuration>Debug(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Profile)|Win32">
+      <Configuration>Release(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMFC_EffTool|Win32">
+      <Configuration>ReleaseMFC_EffTool</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{1FF69C8F-3833-4C77-B0F2-1C042AB94410}</ProjectGuid>
+    <RootNamespace>AgcmDialogs</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.31919.74</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일 복사</Message>
+      <Command>attrib -r ..\..\include\*.h
+
+copy "AgcmAI2Dlg\AgcmAI2Dlg.h" "..\..\include"
+copy "AgcmAnimationDlg\AgcmAnimationDlg.h" "..\..\include"
+copy "AgcmBlockingDlg\AgcmBlockingDlg.h" "..\..\include"
+copy "AgcmCharacterDlg\AgcmCharacterDlg.h" "..\..\include"
+copy "AgcmEffectDlg\AgcmEffectDlg.h" "..\..\include"
+copy "AgcmEventAuctionDlg\AgcmEventAuctionDlg.h" "..\..\include"
+copy "AgcmEventBindingDlg\AgcmEventBindingDlg.h" "..\..\include"
+copy "AgcmEventNatureDlg\AgcmEventNatureDlg.h" "..\..\include"
+copy "AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.h" "..\..\include"
+copy "AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.h" "..\..\include"
+copy "AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.h" "..\..\include"
+copy "AgcmEventSpawnDlg\AgcmEventSpawnDlg.h" "..\..\include"
+copy "AgcmEventTeleportDlg\AgcmEventTeleportDlg.h" "..\..\include"
+copy "AgcmFactorsDlg\AgcmFactorsDlg.h" "..\..\include"
+copy "AgcmFileListDlg\AgcmFileListDlg.h" "..\..\include"
+copy "AgcmItemDlg\AgcmItemDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+copy "AgcmObjectDlg\AgcmObjectDlg.h" "..\..\include"
+copy "AgcmObjectTypeDlg\AgcmObjectTypeDlg.h" "..\..\include"
+copy "AgcmShrineDlg\AgcmShrineDlg.h" "..\..\include"
+copy "AgcmSkillDlg\AgcmSkillDlg.h" "..\..\include"
+copy "AgcmWaterDlg2\AgcmWaterDlg2.h" "..\..\include"
+copy "AgcmWaterDlg\AgcmWaterDlg.h" "..\..\include"
+copy "AgcmEventQuestDlg2\AgcmEventQuestDlg2.h" "..\..\include"
+copy "AgcmEventProductDlg\AgcmEventProductDlg.h" "..\..\include"
+copy "AgcmUDADlg\AgcmUDADlg.h" "..\..\include"
+copy "AgcmSetFaceDlg\AgcmSetFaceDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+copy "AgcmEventGachaDlg\AgcmEventGachaDlg.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;USE_MFC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>AuDynCodeClientD.lib;ApmDialogsD.lib;AgpModulesD.lib;AgcModulesD_MFC.lib;rtfsyst.lib;RtRay.lib;RtRAS.lib;RpSpline.lib;RpMorph.lib;RtWing.lib;RtGCond.lib;RpLODAtm.lib;RtPITexD.lib;RtQuat.lib;RpSkin.lib;RtAnim.lib;RpHAnim.lib;rpusrdat.lib;rpmatfx.lib;rtimport.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rttiff.lib;rpworld.lib;rwcore.lib;rplogo.lib;winmm.lib;rtdict.lib;rpuvanim.lib;libfreetype.lib;PatchZipLibD.lib;imagehlp.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AgcmDialogs.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;$(SolutionDir)lib/debug;$(SolutionDir)lib/debug/STLPort_32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\AgcmDialogs.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\debug\$(ProjectName)D.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>attrib -r ..\..\include\*.h
+
+copy "AgcmAI2Dlg\AgcmAI2Dlg.h" "..\..\include"
+copy "AgcmAnimationDlg\AgcmAnimationDlg.h" "..\..\include"
+copy "AgcmBlockingDlg\AgcmBlockingDlg.h" "..\..\include"
+copy "AgcmCharacterDlg\AgcmCharacterDlg.h" "..\..\include"
+copy "AgcmEffectDlg\AgcmEffectDlg.h" "..\..\include"
+copy "AgcmEventAuctionDlg\AgcmEventAuctionDlg.h" "..\..\include"
+copy "AgcmEventBindingDlg\AgcmEventBindingDlg.h" "..\..\include"
+copy "AgcmEventNatureDlg\AgcmEventNatureDlg.h" "..\..\include"
+copy "AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.h" "..\..\include"
+copy "AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.h" "..\..\include"
+copy "AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.h" "..\..\include"
+copy "AgcmEventSpawnDlg\AgcmEventSpawnDlg.h" "..\..\include"
+copy "AgcmEventTeleportDlg\AgcmEventTeleportDlg.h" "..\..\include"
+copy "AgcmFactorsDlg\AgcmFactorsDlg.h" "..\..\include"
+copy "AgcmFileListDlg\AgcmFileListDlg.h" "..\..\include"
+copy "AgcmItemDlg\AgcmItemDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+copy "AgcmObjectDlg\AgcmObjectDlg.h" "..\..\include"
+copy "AgcmObjectTypeDlg\AgcmObjectTypeDlg.h" "..\..\include"
+copy "AgcmShrineDlg\AgcmShrineDlg.h" "..\..\include"
+copy "AgcmSkillDlg\AgcmSkillDlg.h" "..\..\include"
+copy "AgcmWaterDlg2\AgcmWaterDlg2.h" "..\..\include"
+copy "AgcmWaterDlg\AgcmWaterDlg.h" "..\..\include"
+copy "AgcmEventQuestDlg2\AgcmEventQuestDlg2.h" "..\..\include"
+copy "AgcmEventProductDlg\AgcmEventProductDlg.h" "..\..\include"
+copy "AgcmUDADlg\AgcmUDADlg.h" "..\..\include"
+copy "AgcmSetFaceDlg\AgcmSetFaceDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;_MAPTOOL_BUILD_ONLY_;USE_MFC;__D_MODELTOOL__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rtfsyst.lib;RtRay.lib;RtRAS.lib;RpSpline.lib;RpMorph.lib;RtWing.lib;RtGCond.lib;RpLODAtm.lib;RtPITexD.lib;RtQuat.lib;RpSkin.lib;RtAnim.lib;RpHAnim.lib;rpusrdat.lib;rpmatfx.lib;rtimport.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rttiff.lib;rpworld.lib;rwcore.lib;rplogo.lib;winmm.lib;rtdict.lib;rpuvanim.lib;libfreetype.lib;PatchZipLib.lib;imagehlp.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/Release/AgcmDialogs.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib/release;$(SolutionDir)rw/lib/release;$(SolutionDir)lib/release/STLPort_32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\release\$(ProjectName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일 복사</Message>
+      <Command>attrib -r ..\..\include\*.h
+
+copy "AgcmAI2Dlg\AgcmAI2Dlg.h" "..\..\include"
+copy "AgcmAnimationDlg\AgcmAnimationDlg.h" "..\..\include"
+copy "AgcmBlockingDlg\AgcmBlockingDlg.h" "..\..\include"
+copy "AgcmCharacterDlg\AgcmCharacterDlg.h" "..\..\include"
+copy "AgcmEffectDlg\AgcmEffectDlg.h" "..\..\include"
+copy "AgcmEventAuctionDlg\AgcmEventAuctionDlg.h" "..\..\include"
+copy "AgcmEventBindingDlg\AgcmEventBindingDlg.h" "..\..\include"
+copy "AgcmEventNatureDlg\AgcmEventNatureDlg.h" "..\..\include"
+copy "AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.h" "..\..\include"
+copy "AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.h" "..\..\include"
+copy "AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.h" "..\..\include"
+copy "AgcmEventSpawnDlg\AgcmEventSpawnDlg.h" "..\..\include"
+copy "AgcmEventTeleportDlg\AgcmEventTeleportDlg.h" "..\..\include"
+copy "AgcmFactorsDlg\AgcmFactorsDlg.h" "..\..\include"
+copy "AgcmFileListDlg\AgcmFileListDlg.h" "..\..\include"
+copy "AgcmItemDlg\AgcmItemDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+copy "AgcmObjectDlg\AgcmObjectDlg.h" "..\..\include"
+copy "AgcmObjectTypeDlg\AgcmObjectTypeDlg.h" "..\..\include"
+copy "AgcmShrineDlg\AgcmShrineDlg.h" "..\..\include"
+copy "AgcmSkillDlg\AgcmSkillDlg.h" "..\..\include"
+copy "AgcmWaterDlg2\AgcmWaterDlg2.h" "..\..\include"
+copy "AgcmWaterDlg\AgcmWaterDlg.h" "..\..\include"
+copy "AgcmEventQuestDlg2\AgcmEventQuestDlg2.h" "..\..\include"
+copy "AgcmEventProductDlg\AgcmEventProductDlg.h" "..\..\include"
+copy "AgcmUDADlg\AgcmUDADlg.h" "..\..\include"
+copy "AgcmSetFaceDlg\AgcmSetFaceDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ApmDialogsD.lib;AgpModulesD.lib;AgcModulesD_MFC.lib;rtfsyst.lib;RtRay.lib;RtRAS.lib;RpSpline.lib;RpMorph.lib;RtWing.lib;RtGCond.lib;RpLODAtm.lib;RtPITexD.lib;RtQuat.lib;RpSkin.lib;RtAnim.lib;RpHAnim.lib;rpusrdat.lib;rpmatfx.lib;rtimport.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rttiff.lib;rpworld.lib;rwcore.lib;rplogo.lib;winmm.lib;rtdict.lib;rpuvanim.lib;libfreetype.lib;PatchZipLibD.lib;imagehlp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AgcmDialogs.dll</OutputFile>
+      <ModuleDefinitionFile>.\AgcmDialogs.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\debug\$(ProjectName)D.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <PreBuildEvent>
+      <Command>attrib -r ..\..\include\*.h
+
+copy "AgcmAI2Dlg\AgcmAI2Dlg.h" "..\..\include"
+copy "AgcmAnimationDlg\AgcmAnimationDlg.h" "..\..\include"
+copy "AgcmBlockingDlg\AgcmBlockingDlg.h" "..\..\include"
+copy "AgcmCharacterDlg\AgcmCharacterDlg.h" "..\..\include"
+copy "AgcmEffectDlg\AgcmEffectDlg.h" "..\..\include"
+copy "AgcmEventAuctionDlg\AgcmEventAuctionDlg.h" "..\..\include"
+copy "AgcmEventBindingDlg\AgcmEventBindingDlg.h" "..\..\include"
+copy "AgcmEventNatureDlg\AgcmEventNatureDlg.h" "..\..\include"
+copy "AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.h" "..\..\include"
+copy "AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.h" "..\..\include"
+copy "AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.h" "..\..\include"
+copy "AgcmEventSpawnDlg\AgcmEventSpawnDlg.h" "..\..\include"
+copy "AgcmEventTeleportDlg\AgcmEventTeleportDlg.h" "..\..\include"
+copy "AgcmFactorsDlg\AgcmFactorsDlg.h" "..\..\include"
+copy "AgcmFileListDlg\AgcmFileListDlg.h" "..\..\include"
+copy "AgcmItemDlg\AgcmItemDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+copy "AgcmObjectDlg\AgcmObjectDlg.h" "..\..\include"
+copy "AgcmObjectTypeDlg\AgcmObjectTypeDlg.h" "..\..\include"
+copy "AgcmShrineDlg\AgcmShrineDlg.h" "..\..\include"
+copy "AgcmSkillDlg\AgcmSkillDlg.h" "..\..\include"
+copy "AgcmWaterDlg2\AgcmWaterDlg2.h" "..\..\include"
+copy "AgcmWaterDlg\AgcmWaterDlg.h" "..\..\include"
+copy "AgcmEventQuestDlg2\AgcmEventQuestDlg2.h" "..\..\include"
+copy "AgcmEventProductDlg\AgcmEventProductDlg.h" "..\..\include"
+copy "AgcmUDADlg\AgcmUDADlg.h" "..\..\include"
+copy "AgcmSetFaceDlg\AgcmSetFaceDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ApmDialogs.lib;AgpModules.lib;AgcModules_MFC.lib;rtfsyst.lib;RtRay.lib;RtRAS.lib;RpSpline.lib;RpMorph.lib;RtWing.lib;RtGCond.lib;RpLODAtm.lib;RtPITexD.lib;RtQuat.lib;RpSkin.lib;RtAnim.lib;RpHAnim.lib;rpusrdat.lib;rpmatfx.lib;rtimport.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rttiff.lib;rpworld.lib;rwcore.lib;rplogo.lib;winmm.lib;rtdict.lib;rpuvanim.lib;libfreetype.lib;PatchZipLib.lib;imagehlp.lib;angelscript.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/Release/AgcmDialogs.dll</OutputFile>
+      <IgnoreSpecificDefaultLibraries>ApmEventManager.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\AgcmDialogs.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\release\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'">
+    <PreBuildEvent>
+      <Command>attrib -r ..\..\include\*.h
+
+copy "AgcmAI2Dlg\AgcmAI2Dlg.h" "..\..\include"
+copy "AgcmAnimationDlg\AgcmAnimationDlg.h" "..\..\include"
+copy "AgcmBlockingDlg\AgcmBlockingDlg.h" "..\..\include"
+copy "AgcmCharacterDlg\AgcmCharacterDlg.h" "..\..\include"
+copy "AgcmEffectDlg\AgcmEffectDlg.h" "..\..\include"
+copy "AgcmEventAuctionDlg\AgcmEventAuctionDlg.h" "..\..\include"
+copy "AgcmEventBindingDlg\AgcmEventBindingDlg.h" "..\..\include"
+copy "AgcmEventNatureDlg\AgcmEventNatureDlg.h" "..\..\include"
+copy "AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.h" "..\..\include"
+copy "AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.h" "..\..\include"
+copy "AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.h" "..\..\include"
+copy "AgcmEventSpawnDlg\AgcmEventSpawnDlg.h" "..\..\include"
+copy "AgcmEventTeleportDlg\AgcmEventTeleportDlg.h" "..\..\include"
+copy "AgcmFactorsDlg\AgcmFactorsDlg.h" "..\..\include"
+copy "AgcmFileListDlg\AgcmFileListDlg.h" "..\..\include"
+copy "AgcmItemDlg\AgcmItemDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+copy "AgcmObjectDlg\AgcmObjectDlg.h" "..\..\include"
+copy "AgcmObjectTypeDlg\AgcmObjectTypeDlg.h" "..\..\include"
+copy "AgcmShrineDlg\AgcmShrineDlg.h" "..\..\include"
+copy "AgcmSkillDlg\AgcmSkillDlg.h" "..\..\include"
+copy "AgcmWaterDlg2\AgcmWaterDlg2.h" "..\..\include"
+copy "AgcmWaterDlg\AgcmWaterDlg.h" "..\..\include"
+copy "AgcmEventQuestDlg2\AgcmEventQuestDlg2.h" "..\..\include"
+copy "AgcmEventProductDlg\AgcmEventProductDlg.h" "..\..\include"
+copy "AgcmUDADlg\AgcmUDADlg.h" "..\..\include"
+copy "AgcmSetFaceDlg\AgcmSetFaceDlg.h" "..\..\include"
+copy "AgcmLODDlg\AgcmLODDlg.h" "..\..\include"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ApmDialogs.lib;AgpModules.lib;AgcModules_MFC.lib;rtfsyst.lib;RtRay.lib;RtRAS.lib;RpSpline.lib;RpMorph.lib;RtWing.lib;RtGCond.lib;RpLODAtm.lib;RtPITexD.lib;RtQuat.lib;RpSkin.lib;RtAnim.lib;RpHAnim.lib;rpusrdat.lib;rpmatfx.lib;rtimport.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rttiff.lib;rpworld.lib;rwcore.lib;rplogo.lib;winmm.lib;rtdict.lib;rpuvanim.lib;libfreetype.lib;PatchZipLib.lib;imagehlp.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/Release/AgcmDialogs.dll</OutputFile>
+      <IgnoreSpecificDefaultLibraries>ApmEventManager.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\AgcmDialogs.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\release\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AgcmAI2Dlg\AgcmAI2Dialog.cpp" />
+    <ClCompile Include="AgcmAI2Dlg\AgcmAI2Dlg.cpp" />
+    <ClCompile Include="AgcmAI2Dlg\AgcmAI2EditTableDlg.cpp" />
+    <ClCompile Include="AgcmAI2Dlg\AgcmAI2TemplateDlg.cpp" />
+    <ClCompile Include="AgcmAnimationDlg\AgcmAnimationDlg.cpp" />
+    <ClCompile Include="AgcmAnimationDlg\AnimFlagsDlg.cpp" />
+    <ClCompile Include="AgcmAnimationDlg\CharacterAnimationDlg.cpp" />
+    <ClCompile Include="AgcmAnimationDlg\CharAnimAttachedDataDlg.cpp" />
+    <ClCompile Include="AgcmAnimationDlg\CharAnimAttachedSoundDataDlg.cpp" />
+    <ClCompile Include="AgcmAnimationDlg\CharAnimCustFlagsDlg.cpp" />
+    <ClCompile Include="AgcmBlockingDlg\AgcmBlockingDlg.cpp" />
+    <ClCompile Include="AgcmBlockingDlg\AgcmEditBlockingDlg.cpp" />
+    <ClCompile Include="AgcmBlockingDlg\AgcmInsertBlockingInfoDlg.cpp" />
+    <ClCompile Include="AgcmBlockingDlg\AgcmOpenEditBlockingDlg.cpp" />
+    <ClCompile Include="AgcmCharacterDlg\AgcmCharacterDlg.cpp" />
+    <ClCompile Include="AgcmCharacterDlg\CharacterDlg.cpp" />
+    <ClCompile Include="AgcmCharacterDlg\CharacterTemplateListDlg.cpp" />
+    <ClCompile Include="AgcmCharacterDlg\CharCustomFlagsDlg.cpp" />
+    <ClCompile Include="AgcmDialogs.cpp" />
+    <ClCompile Include="AgcmEffectDlg\AgcmEffectConditionDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\AgcmEffectDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\AgcmEffectList.cpp" />
+    <ClCompile Include="AgcmEffectDlg\AgcmEffectStatusDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\ConditionListDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\EffectDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\EffectHelpDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\EffectListModalDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\RotationDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\ScriptDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\SSConditionListDlg.cpp" />
+    <ClCompile Include="AgcmEffectDlg\StatusListDlg.cpp" />
+    <ClCompile Include="AgcmEventAuctionDlg\AgcmEventAuctionDlg.cpp" />
+    <ClCompile Include="AgcmEventAuctionDlg\AgcmEventAuctionDlgDialog.cpp" />
+    <ClCompile Include="AgcmEventBindingDlg\AgcmEventBindingDlg.cpp" />
+    <ClCompile Include="AgcmEventBindingDlg\AgcmEventBindingPoint.cpp" />
+    <ClCompile Include="AgcmEventGachaDlg\AgcmEventGachaDlg.cpp" />
+    <ClCompile Include="AgcmEventGachaDlg\GachaSelectDlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\AgcmEventNatureDlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\ClipPlaneSetDlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\EffectEditDlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\EventNatureSettingDlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\HSVControlStatic.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\hsvinputdlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\ImagePreviewStatic.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\PortionStatic.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\skysettingdlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\TemplateNameEditDlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\TemplateSelectDlg.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\TextureListStatic.cpp" />
+    <ClCompile Include="AgcmEventNatureDlg\TimeSelectStatic.cpp" />
+    <ClCompile Include="AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.cpp" />
+    <ClCompile Include="AgcmEventNPCDialogDlg\AgcmEventNPCDialogSelectTemplateDlg.cpp" />
+    <ClCompile Include="AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.cpp" />
+    <ClCompile Include="AgcmEventNPCTradeDlg\AgcmEventSelectNPCTradeTemplateDlg.cpp" />
+    <ClCompile Include="AgcmEventProductDlg\AgcmEventProductDlg.cpp" />
+    <ClCompile Include="AgcmEventProductDlg\EventProduct.cpp" />
+    <ClCompile Include="AgcmEventQuestDlg2\AgcmEventQuestDlg2.cpp" />
+    <ClCompile Include="AgcmEventQuestDlg2\EventQuest.cpp" />
+    <ClCompile Include="AgcmEventSkillMasterDlg\AgcmEventSkillEventSettingDlg.cpp" />
+    <ClCompile Include="AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.cpp" />
+    <ClCompile Include="AgcmEventSpawnDlg\AgcmDropItemDlg.cpp" />
+    <ClCompile Include="AgcmEventSpawnDlg\AgcmDropTemplateDlg.cpp" />
+    <ClCompile Include="AgcmEventSpawnDlg\AgcmEventSpawnDlg.cpp" />
+    <ClCompile Include="AgcmEventSpawnDlg\AgcmEventSpawnSpawnDlg.cpp" />
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmEventTeleportDlg.cpp" />
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmTeleportAddEvent.cpp" />
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmTeleportGroup.cpp" />
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmTeleportGroupList.cpp" />
+    <ClCompile Include="AgcmEventTeleportDlg\AgcmTeleportTarget.cpp" />
+    <ClCompile Include="AgcmFactorsDlg\AgcmFactorsDlg.cpp" />
+    <ClCompile Include="AgcmFactorsDlg\FactorDlg.cpp" />
+    <ClCompile Include="AgcmFactorsDlg\InputDlg.cpp" />
+    <ClCompile Include="AgcmFileListDlg\AgcmFileListDlg.cpp" />
+    <ClCompile Include="AgcmFileListDlg\FileListDlg.cpp" />
+    <ClCompile Include="AgcmFileListDlg\FindFileDlg.cpp" />
+    <ClCompile Include="AgcmItemDlg\AgcmItemDlg.cpp" />
+    <ClCompile Include="AgcmItemDlg\ItemDlg.cpp" />
+    <ClCompile Include="AgcmItemDlg\ItemListDlg.cpp" />
+    <ClCompile Include="AgcmLODDlg\AgcmLODDistanceDlg.cpp" />
+    <ClCompile Include="AgcmLODDlg\AgcmLODDlg.cpp" />
+    <ClCompile Include="AgcmLODDlg\LODDlg.cpp" />
+    <ClCompile Include="AgcmObjectDlg\AgcmObjectDlg.cpp" />
+    <ClCompile Include="AgcmObjectDlg\ObjectDlg.cpp" />
+    <ClCompile Include="AgcmObjectDlg\ObjectListDlg.cpp" />
+    <ClCompile Include="AgcmObjectTypeDlg\AgcmObjectTypeDlg.cpp" />
+    <ClCompile Include="AgcmObjectTypeDlg\ObjectTypeDlg.cpp" />
+    <ClCompile Include="agcmsetfacedlg\AgcmSetFaceDlg.cpp" />
+    <ClCompile Include="agcmsetfacedlg\SetFace.cpp" />
+    <ClCompile Include="AgcmShrineDlg\AgcmShrineDlg.cpp" />
+    <ClCompile Include="AgcmShrineDlg\AgcmShrineSettingDlg.cpp" />
+    <ClCompile Include="AgcmSkillDlg\AgcmCharSkillDlg.cpp" />
+    <ClCompile Include="AgcmSkillDlg\AgcmSkillDlg.cpp" />
+    <ClCompile Include="AgcmSkillDlg\AgcmSkillTemplateDlg.cpp" />
+    <ClCompile Include="AgcmSkillDlg\AgcmSkillTemplateListDlg.cpp" />
+    <ClCompile Include="AgcmUDADlg\AgcmUDADlg.cpp" />
+    <ClCompile Include="AgcmUDADlg\MainUDADlg.cpp" />
+    <ClCompile Include="AgcmWaterDlg2\AgcmWaterDlg2.cpp" />
+    <ClCompile Include="AgcmWaterDlg2\WaterDlg2.cpp" />
+    <ClCompile Include="AgcmWaterDlg\AgcmWaterDlg.cpp" />
+    <ClCompile Include="AgcmWaterDlg\WaterDlg.cpp" />
+    <ClCompile Include="EditDlg.cpp" />
+    <ClCompile Include="EventButton.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AgcmDialogs.def" />
+    <None Include="CharAnimAttachedSoundDataDlg.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\AgcmDialogs.rc2" />
+    <None Include="res\spoid.cur" />
+    <None Include="SetFace.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AgcmAI2Dlg\AgcmAI2Dialog.h" />
+    <ClInclude Include="AgcmAI2Dlg\AgcmAI2Dlg.h" />
+    <ClInclude Include="AgcmAI2Dlg\AgcmAI2EditTableDlg.h" />
+    <ClInclude Include="AgcmAI2Dlg\AgcmAI2TemplateDlg.h" />
+    <ClInclude Include="AgcmAnimationDlg\AgcmAnimationDlg.h" />
+    <ClInclude Include="AgcmAnimationDlg\AnimFlagsDlg.h" />
+    <ClInclude Include="AgcmAnimationDlg\CharacterAnimationDlg.h" />
+    <ClInclude Include="AgcmAnimationDlg\CharAnimAttachedDataDlg.h" />
+    <ClInclude Include="AgcmAnimationDlg\CharAnimAttachedSoundDataDlg.h" />
+    <ClInclude Include="AgcmAnimationDlg\CharAnimCustFlagsDlg.h" />
+    <ClInclude Include="AgcmBlockingDlg\AgcmBlockingDlg.h" />
+    <ClInclude Include="AgcmBlockingDlg\AgcmEditBlockingDlg.h" />
+    <ClInclude Include="AgcmBlockingDlg\AgcmInsertBlockingInfoDlg.h" />
+    <ClInclude Include="AgcmBlockingDlg\AgcmOpenEditBlockingDlg.h" />
+    <ClInclude Include="AgcmCharacterDlg\AgcmCharacterDlg.h" />
+    <ClInclude Include="AgcmCharacterDlg\CharacterDlg.h" />
+    <ClInclude Include="AgcmCharacterDlg\CharacterTemplateListDlg.h" />
+    <ClInclude Include="AgcmCharacterDlg\CharCustomFlagsDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\AgcmEffectConditionDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\AgcmEffectDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\AgcmEffectList.h" />
+    <ClInclude Include="AgcmEffectDlg\AgcmEffectStatusDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\ConditionListDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\EffectDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\EffectHelpDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\EffectListModalDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\RotationDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\ScriptDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\SSConditionListDlg.h" />
+    <ClInclude Include="AgcmEffectDlg\StatusListDlg.h" />
+    <ClInclude Include="AgcmEventAuctionDlg\AgcmEventAuctionDlg.h" />
+    <ClInclude Include="AgcmEventAuctionDlg\AgcmEventAuctionDlgDialog.h" />
+    <ClInclude Include="AgcmEventBindingDlg\AgcmEventBindingDlg.h" />
+    <ClInclude Include="AgcmEventBindingDlg\AgcmEventBindingPoint.h" />
+    <ClInclude Include="AgcmEventGachaDlg\AgcmEventGachaDlg.h" />
+    <ClInclude Include="AgcmEventGachaDlg\GachaSelectDlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\AgcmEventNatureDlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\ClipPlaneSetDlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\EffectEditDlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\EventNatureSettingDlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\HSVControlStatic.h" />
+    <ClInclude Include="AgcmEventNatureDlg\hsvinputdlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\ImagePreviewStatic.h" />
+    <ClInclude Include="AgcmEventNatureDlg\PortionStatic.h" />
+    <ClInclude Include="AgcmEventNatureDlg\skysettingdlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\TemplateNameEditDlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\TemplateSelectDlg.h" />
+    <ClInclude Include="AgcmEventNatureDlg\TextureListStatic.h" />
+    <ClInclude Include="AgcmEventNatureDlg\TimeSelectStatic.h" />
+    <ClInclude Include="AgcmEventNPCDialogDlg\AgcmEventNPCDialogDlg.h" />
+    <ClInclude Include="AgcmEventNPCDialogDlg\AgcmEventNPCDialogSelectTemplateDlg.h" />
+    <ClInclude Include="AgcmEventNPCTradeDlg\AgcmEventNPCTradeDlg.h" />
+    <ClInclude Include="AgcmEventNPCTradeDlg\AgcmEventSelectNPCTradeTemplateDlg.h" />
+    <ClInclude Include="AgcmEventProductDlg\AgcmEventProductDlg.h" />
+    <ClInclude Include="AgcmEventProductDlg\EventProduct.h" />
+    <ClInclude Include="AgcmEventQuestDlg2\AgcmEventQuestDlg2.h" />
+    <ClInclude Include="AgcmEventQuestDlg2\EventQuest.h" />
+    <ClInclude Include="AgcmEventSkillMasterDlg\AgcmEventSkillEventSettingDlg.h" />
+    <ClInclude Include="AgcmEventSkillMasterDlg\AgcmEventSkillMasterDlg.h" />
+    <ClInclude Include="AgcmEventSpawnDlg\AgcmDropItemDlg.h" />
+    <ClInclude Include="AgcmEventSpawnDlg\AgcmDropTemplateDlg.h" />
+    <ClInclude Include="AgcmEventSpawnDlg\AgcmEventSpawnDlg.h" />
+    <ClInclude Include="AgcmEventSpawnDlg\AgcmEventSpawnSpawnDlg.h" />
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmEventTeleportDlg.h" />
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmTeleportAddEvent.h" />
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmTeleportGroup.h" />
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmTeleportGroupList.h" />
+    <ClInclude Include="AgcmEventTeleportDlg\AgcmTeleportTarget.h" />
+    <ClInclude Include="AgcmFactorsDlg\AgcmFactorsDlg.h" />
+    <ClInclude Include="AgcmFactorsDlg\FactorDlg.h" />
+    <ClInclude Include="AgcmFactorsDlg\InputDlg.h" />
+    <ClInclude Include="AgcmFileListDlg\AgcmFileListDlg.h" />
+    <ClInclude Include="AgcmFileListDlg\FileListDlg.h" />
+    <ClInclude Include="AgcmFileListDlg\FindFileDlg.h" />
+    <ClInclude Include="AgcmItemDlg\AgcmItemDlg.h" />
+    <ClInclude Include="AgcmItemDlg\ItemDlg.h" />
+    <ClInclude Include="AgcmItemDlg\ItemListDlg.h" />
+    <ClInclude Include="AgcmLODDlg\AgcdLODDlg.h" />
+    <ClInclude Include="AgcmLODDlg\AgcmLODDistanceDlg.h" />
+    <ClInclude Include="AgcmLODDlg\AgcmLODDlg.h" />
+    <ClInclude Include="AgcmLODDlg\LODDlg.h" />
+    <ClInclude Include="AgcmObjectDlg\AgcmObjectDlg.h" />
+    <ClInclude Include="AgcmObjectDlg\ObjectDlg.h" />
+    <ClInclude Include="AgcmObjectDlg\ObjectListDlg.h" />
+    <ClInclude Include="AgcmObjectTypeDlg\AgcmObjectTypeDlg.h" />
+    <ClInclude Include="AgcmObjectTypeDlg\ObjectTypeDlg.h" />
+    <ClInclude Include="agcmsetfacedlg\AgcmSetFaceDlg.h" />
+    <ClInclude Include="agcmsetfacedlg\SetFace.h" />
+    <ClInclude Include="AgcmShrineDlg\AgcmShrineDlg.h" />
+    <ClInclude Include="AgcmShrineDlg\AgcmShrineSettingDlg.h" />
+    <ClInclude Include="AgcmSkillDlg\AgcmCharSkillDlg.h" />
+    <ClInclude Include="AgcmSkillDlg\AgcmSkillDlg.h" />
+    <ClInclude Include="AgcmSkillDlg\AgcmSkillTemplateDlg.h" />
+    <ClInclude Include="AgcmSkillDlg\AgcmSkillTemplateListDlg.h" />
+    <ClInclude Include="AgcmUDADlg\AgcmUDADlg.h" />
+    <ClInclude Include="AgcmUDADlg\MainUDAdlg.h" />
+    <ClInclude Include="AgcmWaterDlg2\AgcmWaterDlg2.h" />
+    <ClInclude Include="AgcmWaterDlg2\WaterDlg2.h" />
+    <ClInclude Include="AgcmWaterDlg\AgcmWaterDlg.h" />
+    <ClInclude Include="AgcmWaterDlg\WaterDlg.h" />
+    <ClInclude Include="EditDlg.h" />
+    <ClInclude Include="EventButton.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AgcmDialogs.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bmp233.bmp" />
+    <Image Include="res\sky_window.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AgcModules\AgcModules.vcxproj">
+      <Project>{1fbf53c3-9711-4bb9-a5c1-db7e06a6301f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ApmDialogs\ApmDialogs.vcxproj">
+      <Project>{1a78b8f2-1151-48d9-ad9f-a3ada1b54074}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AgcmDialogs.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

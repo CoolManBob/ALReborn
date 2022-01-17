@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   תבנית תאריך קצר",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   תבנית תאריך ארוך",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   שעה",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T  שעה (24 שעות)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   מספר עמוד",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   מספר עמודים",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   יישור לשמאל &&b מרכוז &&b יישור לימין", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   כותרת חלון",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  אמפרסנד (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   שורה חדשה",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "הדפסה...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "הדף הבא",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "הדף הקודם",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "הגדל",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "הקטן",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "סגור",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "עמוד אחד"
+    XTP_IDS_TWOPAGE         "שני עמודים"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "כחול-אינדיגו"
+    XTP_IDS_CLR_GRAY80      "אפור-80%"
+    XTP_IDS_CLR_DARK_RED    "אדום כהה"
+    XTP_IDS_CLR_ORANGE      "כתום"
+    XTP_IDS_CLR_DARK_YELLOW "צהוב כהה"
+    XTP_IDS_CLR_GREEN       "ירוק"
+    XTP_IDS_CLR_TEAL        "כחול-ירקרק"
+    XTP_IDS_CLR_BLUE        "כחול"
+    XTP_IDS_CLR_BLUEGRAY    "כחול-אפור"
+    XTP_IDS_CLR_GRAY50      "אפור-50%"
+    XTP_IDS_CLR_RED         "אדום"
+    XTP_IDS_CLR_LIGHTORANGE "כתום בהיר"
+    XTP_IDS_CLR_LIME        "ירוק-לימון"
+    XTP_IDS_CLR_SEA_GREEN   "ירוק-ים"
+    XTP_IDS_CLR_AQUA        "תכלת"
+    XTP_IDS_CLR_LIGHT_BLUE  "כחול בהיר"
+    XTP_IDS_CLR_VIOLET      "סיגלית"
+    XTP_IDS_CLR_GRAY40      "אפור-40%"
+    XTP_IDS_CLR_PINK        "ורוד"
+    XTP_IDS_CLR_GOLD        "זהב"
+    XTP_IDS_CLR_YELLOW      "צהוב"
+    XTP_IDS_CLR_BRIGHT_GREEN "ירוק מבריק"
+    XTP_IDS_CLR_TURQUOISE   "טורקיז"
+    XTP_IDS_CLR_SKY_BLUE    "כחול-שמים"
+    XTP_IDS_CLR_PLUM        "סגול-שזיף"
+    XTP_IDS_CLR_GRAY25      "אפור-‎25%‎"
+    XTP_IDS_CLR_ROSE        "שושנה"
+    XTP_IDS_CLR_TAN         "חום-צהבהב"
+    XTP_IDS_CLR_LIGHT_YELLOW "צהוב בהיר"
+    XTP_IDS_CLR_LIGHT_GREEN "ירוק בהיר"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "טורקיז בהיר"
+    XTP_IDS_CLR_PALE_BLUE   "כחול חיוור"
+    XTP_IDS_CLR_BLACK       "שחור"
+    XTP_IDS_CLR_BROWN       "חום"
+    XTP_IDS_CLR_OLIVE_GREEN "ירוק-זית"
+    XTP_IDS_CLR_DARK_GREEN  "ירוק כהה"
+    XTP_IDS_CLR_DARK_TEAL   "כחול-ירקרק כהה"
+    XTP_IDS_CLR_DARK_BLUE   "כחול כהה"
+    XTP_IDS_CLR_LAVENDER    "סגול-לבנדר"
+    XTP_IDS_CLR_WHITE       "לבן"
+    XTP_IDS_CLR_GRAY        "אפור"
+    XTP_IDS_CLR_MAROON      "חום-ערמוני"
+    XTP_IDS_CLR_OLIVE       "ירוק-זית"
+    XTP_IDS_CLR_NAVY        "כחול-צי"
+    XTP_IDS_CLR_PURPLE      "סגול"
+    XTP_IDS_CLR_SILVER      "כסף"
+    XTP_IDS_CLR_FUCHSIA     "ורוד-פוקסיה"
+    XTP_IDS_CLR_NOFILL      "ללא מילוי\nללא מילוי"
+    XTP_IDS_CLR_AUTOMATIC   "צבע אוטומטי\nצבע אוטומטי"
+    XTP_IDS_CLR_MORE        "צבעים נוספים...‏"
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d5933465-95d2-4209-8801-e63bc3ea827c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{deaa1efd-9ff2-4f35-9c32-3af0af006aef}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b03da469-d4e0-4acf-a839-9eee6d08458e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="skel">
+      <UniqueIdentifier>{b7be383a-8ce5-4579-8c1e-d65b823b2883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXUTgui">
+      <UniqueIdentifier>{e38fc6d5-9137-4acb-86b9-b56879e92b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryManager">
+      <UniqueIdentifier>{26d35af2-e448-431d-b5a6-03e8102a603b}</UniqueIdentifier>
+      <Extensions>.cpp;.h</Extensions>
+    </Filter>
+    <Filter Include="XCrashReport">
+      <UniqueIdentifier>{c11280aa-b94a-46cd-b26f-2b46bde1df43}</UniqueIdentifier>
+      <Extensions>.cpp;.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FXUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatD3DFxTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skel\camera.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="skel\menu.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="skel\mouse.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="skel\skeleton.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="skel\win.c">
+      <Filter>skel</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTgui\DXUTgui.cpp">
+      <Filter>DXUTgui</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTgui\DXUTmisc.cpp">
+      <Filter>DXUTgui</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManager\mmgr.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="XCrashReport\ExceptionHandler.cpp">
+      <Filter>XCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="XCrashReport\GetWinVer.cpp">
+      <Filter>XCrashReport</Filter>
+    </ClCompile>
+    <ClCompile Include="XCrashReport\MiniVersion.cpp">
+      <Filter>XCrashReport</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FXUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\camera.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\menu.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\mouse.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\mousedat.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\platform.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\ptrdata.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\resource.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\skeleton.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="skel\win.h">
+      <Filter>skel</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTgui\DXUTgui.h">
+      <Filter>DXUTgui</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTgui\DXUTmisc.h">
+      <Filter>DXUTgui</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\mmgr.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\nommgr.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="XCrashReport\CrashFileNames.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="XCrashReport\dbghelp.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="XCrashReport\ExceptionHandler.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="XCrashReport\GetWinVer.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+    <ClInclude Include="XCrashReport\MiniVersion.h">
+      <Filter>XCrashReport</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="skel\main.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="skel\win.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,307 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Editor tlaèítek"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Obrázek",IDC_STATIC,7,7,86,8
+    GROUPBOX        "Barvy",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Stìhování",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Náhled",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Nástroje",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Storno",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Prùhledné",IDC_STATIC,135,156,42,8
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Nástroje",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Stìhování",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Barvy",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Klávesnice"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Kategorie:",IDC_STATIC,4,5,89,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,4,15,91,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pøíkazy:",XTP_IDC_TXT_COMMANDS,4,28,89,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,4,38,91,77,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Poioazení kláves:",XTP_IDC_TXT_ASSIGNMENTS,100,28,73,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,51,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nová klávesová zkratka:",XTP_IDC_TXT_NEWKEY,100,93,100,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,103,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Pøiøadit",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Odebrat",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Obnovit vše",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Popis:",XTP_IDC_TXT_DESC_TITLE,4,117,89,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,4,127,171,19,0,
+                    WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Panely nástrojù"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Panely nástrojù:",IDC_STATIC,4,5,148,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Nová...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Pøejmenovat...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Odstranit",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "&Pùvodní...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Možnosti"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Individuální nabídky a panely nástrojù",XTP_IDC_GROUP_PERSONALIZED,4,5,222,8
+    CONTROL         "Vždy zobrazovat úplné nabídky",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,216,10
+    CONTROL         "Zobrazovat úplné nabídky s krátkým zpoždìním",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,29,204,10
+    PUSHBUTTON      "Obnovit údaje o používání aplikace",
+                    XTP_IDC_BUTTON_RESETDATA,10,42,125,14
+    LTEXT           "Jiné", XTP_IDC_GROUP_OTHER,4,70,222,8
+    CONTROL         "Velké ikony",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,82,216,10
+    CONTROL         "Zobrazovat názvy tlaèítek na panelech nástrojù",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,93,216,10
+    CONTROL         "S názvy tlaèítek zobrazovat i klávesové zkratky",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,104,204,10
+    LTEXT           "Animace nabídek:",IDC_STATIC,10,117,59,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,74,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Pøíkazy"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Pøidání pøíkazu na panel nástrojù: Vyberte kategorii a pøetáhnìte pøíkaz myší na panel nástrojù z tohoto dialogového okna.",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Kategorie:",IDC_STATIC,4,25,80,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,111,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pøíkazy:",IDC_STATIC,90,25,134,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,135,111,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Menus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Application Menus",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Context Menus",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "&Show Menu:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Default menu\nDefault application menu",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Select &context menu:",IDC_STATIC,10,92,68,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,83,90,130,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nový panel nástrojù"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Název panelu nástrojù:",IDC_STATIC,4,4,178,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Storno",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Vlastní nastavení"
+    BEGIN
+        MENUITEM "Pùvodní",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Odstranit",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Název:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Kopírovat vzhled tlaèítka",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Vložit vzhled tlaèítka",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Pùvodní vzhled tlaèítka",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Upravit vzhled tlaèítka…",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Zmìnit vzhled tlaèítka",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Výchozí styl",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Pouze text",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Ikona a text",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Zaèátek skupiny",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "Zavøít"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Vlastní nastavení"
+    XTP_IDS_NEWMENU         "Nová nabídka"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Tato akce odstraní záznam pøíkazù použitých v této aplikaci a obnoví výchozí nastavení zobrazených pøíkazù v nabídkách a na panelech nástrojù. Nedojde k vrácení vlastních úprav. Opravdu chcete tuto akci provést ?"
+    XTP_IDS_INVALID_NUMBER  "Neplatné èíslo."
+    XTP_IDS_INVALID_FONTSIZE "Èíslo musí být mezi 1 a 1 638."
+    XTP_IDS_CONFIRM_RESET   "Opravdu chcete zrušit provedené zmìny panelu nástrojù '%s'?"
+    XTP_IDS_BUILTINMENUS    "Vestavìné nabídky"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Vlastní %d"
+    XTP_IDS_ERROR_BLANKNAME "Název panelu nemùže být prázdný. Zapište název."
+    XTP_IDS_ERROR_LIMIT     "Dosáhli jste možného limitu."
+    XTP_IDS_ERROR_EXISTS    "Panel nástrojù s názvem '%s' již existuje. Zadejte jiný název."
+    XTP_IDS_RENAMETOOLBAR   "Pøejmenovat panel nástrojù"
+    XTP_IDS_CONFIRM_DELETE  "Opravdu chcete odstranit panel nástrojù '%s'?"
+    XTP_IDS_ALLCOMMANDS     "Všechny pøíkazy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\n&Vlastní..."
+    XTP_ID_CUSTOMIZE_RESET  "\nPùvodní"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\nPøidat èi odebrat tlaèítka"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Opravdu chcete resetovat pøiøazení kláves ?  Tato akce odstraní všechna vaše vlastní klávesová pøiøazení."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "Tato klávesová zkratka je již pøiøazena.\nChcete ji pøiøadit znovu ?"
+    XTP_IDS_CONFIRM_UPDATE  "Z dùvodù aktualizace software se nástrojová lišta '%s' zmìnila. Chcete resetovat vaši uživatelskou nástrojovou lištu nebo vytvoøit novou ?"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Všechny obrázkové soubory|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Rastrové obrázky(*.Bmp;*.Dib)|*.bmp;*.dib|Metasoubory(*.Wmf;*.Emf)|*.wmf;*.emf|Ikony(*.Ico;*.Cur)|*.ico;*.cur|Soubory GIF(*.Gif)|*.gif|Soubory JPEG(*.Jpg)|*.jpg|Všechny soubory(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nMožnosti panelu nástrojù"
+    XTP_ID_TOOLBAR_HIDE     "\nZavøít"
+    XTP_ID_POPUPBAR_EXPAND  "\nExpand"
+    XTP_ID_MENUBAR_CLOSE    "\nZavøít okno"
+    XTP_ID_MENUBAR_RESTORE  "\nObnovit okno"
+    XTP_ID_MENUBAR_MINIMIZE "\nMinimalizovat okno"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nTužka"
+    XTP_ID_BUTTON_FILL      "\nBarva výplnì"
+    XTP_ID_BUTTON_GETCOLOR  "\nVybrat barvu"
+    XTP_ID_BUTTON_LINE      "\nÈára"
+    XTP_ID_BUTTON_RECTANGLE "\nObdélník"
+    XTP_ID_BUTTON_CIRCLE    "\nElipsa"
+    XTP_ID_BUTTON_COPY      "\nKopie"
+    XTP_ID_BUTTON_PASTE     "\nVložit"
+    XTP_ID_BUTTON_CLEAR     "\nVymazat"
+    XTP_ID_BUTTON_UNDO      "\nZpìt"
+    XTP_ID_BUTTON_REDO      "\nZnovu"
+    XTP_ID_BUTTON_OPEN      "\nImportovat ze souboru"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(Výchozí nastavení systému)"
+    XTP_IDS_ANIMATION_RANDOM "Náhodná"
+    XTP_IDS_ANIMATION_UNFOLD "Rozbalení"
+    XTP_IDS_ANIMATION_SLIDE "Promítání"
+    XTP_IDS_ANIMATION_FADE  "Zesvìtlení"
+    XTP_IDS_ANIMATION_NONE  "Žádný"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\nPøesunout do &pøedchozí skupiny záložek"
+    XTP_ID_WORKSPACE_MOVENEXT "\nPøesunout do &následující skupiny záložek"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\nPøesunout do nové &horizontální skupiny záložek"
+    XTP_ID_WORKSPACE_NEWVERTICAL "\nPøesunout do nové &vertikální skupiny záložek"
+    XTP_ID_WORKSPACE_CANCEL "Storno"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Active Files"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

@@ -1,0 +1,307 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Painike-editori"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Kuva",IDC_STATIC,7,7,86,8
+    GROUPBOX        "Värit",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Siirrä",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Esikatselu",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Työkalut",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Peruuta",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Läpinäkyvä",IDC_STATIC,135,156,42,8
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Työkalut",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Siirrä",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Värit",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Näppäimistöön"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Luokka:",IDC_STATIC,4,5,89,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,4,15,91,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Komennot:",XTP_IDC_TXT_COMMANDS,4,28,89,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,4,38,91,77,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "äppäinmääritykset:",XTP_IDC_TXT_ASSIGNMENTS,100,28,73,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,51,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Anna uusi näppäinyhdistelmä:",XTP_IDC_TXT_NEWKEY,100,93,100,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,103,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Liitä",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Poista",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Palauta kaikki",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Kuvaus:",XTP_IDC_TXT_DESC_TITLE,4,117,89,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,4,127,171,19,0,
+                    WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Työkalurivit"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Työkalurivit:",IDC_STATIC,4,5,148,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Uusi...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Nimeä uudelleen...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Poistaminen",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "Palauta...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Mukautetut valikot ja työkalurivit",XTP_IDC_GROUP_PERSONALIZED,4,5,222,8
+    CONTROL         "Näytä aina täydet valikot",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,216,10
+    CONTROL         "Näytä täydet valikot viiveen jälkeen",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,29,204,10
+    PUSHBUTTON      "Palauta valikkojen ja työkalurivien käyttötiedot",
+                    XTP_IDC_BUTTON_RESETDATA,10,42,160,14
+    LTEXT           "Muu", XTP_IDC_GROUP_OTHER,4,70,222,8
+    CONTROL         "Suuret kuvakkeet",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,82,216,10
+    CONTROL         "Näytä työkalurivien kohdeohjeet",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,93,216,10
+    CONTROL         "Näytä pikanäppäimet kohdeohjeissa",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,104,204,10
+    LTEXT           "Valikkoanimaatio:",IDC_STATIC,10,117,56,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,70,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Komennot"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Lisää komento työkaluriville valitsemalla luokka ja vetämällä komento valintaikkunasta työkaluriville.",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Luokat:",IDC_STATIC,4,25,80,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,111,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Komennot:",IDC_STATIC,90,25,134,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,135,111,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Menus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Application Menus",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Context Menus",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "&Show Menu:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Default menu\nDefault application menu",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Select &context menu:",IDC_STATIC,10,92,68,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,83,90,130,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Uusi työkalurivi"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Työkalurivin nimi:",IDC_STATIC,4,4,178,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Peruuta",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Mukauta"
+    BEGIN
+        MENUITEM "Palauta alkutilaan",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Poistaminen",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Nimi:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Kopioi painikkeen kuva",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Liitä painikkeen kuva",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Palauta painikkeen kuva",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Muokkaa painikkeen kuvaa...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Muuta painikkeen kuva",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Oletustyyli",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Vain teksti",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Kuva ja teksti",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Aloita ryhmä",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "Sulje"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Mukauta"
+    XTP_IDS_NEWMENU         "Uusi valikko"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Tämä komento poistaa sovelluksessa käyttämiesi komentojen luettelon ja palauttaa valikoihin ja työkaluriveihin oletusarvoiset komennot. Tämä toiminto ei kumoa erikseen määritettyjä ominaisuuksien mukauttamisia. Haluatko jatkaa?"
+    XTP_IDS_INVALID_NUMBER  "Tämä numero ei kelpaa."
+    XTP_IDS_INVALID_FONTSIZE "Tämä ei ole kelvollinen luku."
+    XTP_IDS_CONFIRM_RESET   "Haluatko varmasti kumota kohteen  '%s' työkalurivi muutokset?"
+    XTP_IDS_BUILTINMENUS    "Valmiit valikot"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Mukautettu %d"
+    XTP_IDS_ERROR_BLANKNAME "Työkalurivin nimi ei voi olla tyhjä. Kirjoita nimi."
+    XTP_IDS_ERROR_LIMIT     "Sorry you have reached your limit."
+    XTP_IDS_ERROR_EXISTS    "Työkalurivi  '%s' on jo olemassa. Kirjoita  toinen nimi."
+    XTP_IDS_RENAMETOOLBAR   "Nimeä työkalurivi uudelleen"
+    XTP_IDS_CONFIRM_DELETE  "Haluatko varmasti poistaa työkalurivin  '%s'?"
+    XTP_IDS_ALLCOMMANDS     "Kaikki komennot"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\nMukauta..."
+    XTP_ID_CUSTOMIZE_RESET  "\nPalauta alkutilaan"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\nLisää tai poista painikkeita"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Are you sure you want to reset the key assignments?  This action will remove all custom key assignments at the text level."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Kaikki kuvatiedostot|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bittikartat(*.Bmp;*.Dib)|*.bmp;*.dib|Meta-tiedostot(*.Wmf;*.Emf)|*.wmf;*.emf|Kuvakkeet(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Kaikki tiedostot(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nTyökalurivin asetukset"
+    XTP_ID_TOOLBAR_HIDE     "\nSulje"
+    XTP_ID_POPUPBAR_EXPAND  "\nExpand"
+    XTP_ID_MENUBAR_CLOSE    "\nSulje ikkuna"
+    XTP_ID_MENUBAR_RESTORE  "\nPalauta ikkuna"
+    XTP_ID_MENUBAR_MINIMIZE "\nPienennä ikkuna"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nKynä"
+    XTP_ID_BUTTON_FILL      "\nTäyttöväri"
+    XTP_ID_BUTTON_GETCOLOR  "\nValitse väri"
+    XTP_ID_BUTTON_LINE      "\nViiva"
+    XTP_ID_BUTTON_RECTANGLE "\nSuorakulmio"
+    XTP_ID_BUTTON_CIRCLE    "\nEllipsi"
+    XTP_ID_BUTTON_COPY      "\nKopioi"
+    XTP_ID_BUTTON_PASTE     "\nLiitä"
+    XTP_ID_BUTTON_CLEAR     "\nTyhjennä"
+    XTP_ID_BUTTON_UNDO      "\nKumoa"
+    XTP_ID_BUTTON_REDO      "\nTee uudelleen"
+    XTP_ID_BUTTON_OPEN      "\nTuo tiedostosta"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(Järjestelmän oletus)"
+    XTP_IDS_ANIMATION_RANDOM "Satunnainen"
+    XTP_IDS_ANIMATION_UNFOLD "Avautuva"
+    XTP_IDS_ANIMATION_SLIDE "Liukuva"
+    XTP_IDS_ANIMATION_FADE  "Vaimeneva"
+    XTP_IDS_ANIMATION_NONE  "Ei missään"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSPACE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSPACE_NEWVERTICAL "\nNew &Vertical Tab Group"
+    XTP_ID_WORKSPACE_CANCEL "Peruuta"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Active Files"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

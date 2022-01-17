@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="HanIPCheckForSvr">
+      <UniqueIdentifier>{abbbe651-7f4a-4cda-b151-9105fea902ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HanAuthForSvr">
+      <UniqueIdentifier>{3acd7cb0-0337-43fb-befa-1d64ed51be8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HangameTPack">
+      <UniqueIdentifier>{53065cf2-bb96-4342-bd65-09329ca90f62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Server\HanGameForServer\HanIPCheckForSvr\AuHanIPCheckForServer.cpp">
+      <Filter>HanIPCheckForSvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\HanGameForServer\HanAuthForSvr\HanServerAuth.cpp">
+      <Filter>HanAuthForSvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\HanGameForServer\HangameTPack\AuHangameTPack.cpp">
+      <Filter>HangameTPack</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Server\HanGameForServer\HanIPCheckForSvr\AuHanIPCheckForServer.h">
+      <Filter>HanIPCheckForSvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\HanGameForServer\HanIPCheckForSvr\HanIPCheckForSvr.h">
+      <Filter>HanIPCheckForSvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\HanGameForServer\HanAuthForSvr\HanAuthForSvr.h">
+      <Filter>HanAuthForSvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\HanGameForServer\HanAuthForSvr\HanServerAuth.h">
+      <Filter>HanAuthForSvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\HanGameForServer\HangameTPack\AuHangameTPack.h">
+      <Filter>HangameTPack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\HanGameForServer\HangameTPack\DORIAN_Connector\Include\DORIAN_3.0.h">
+      <Filter>HangameTPack</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

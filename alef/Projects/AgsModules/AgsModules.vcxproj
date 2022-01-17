@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Chinese|Win32">
+      <Configuration>Debug Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Chinese|x64">
+      <Configuration>Debug Chinese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Japanese|Win32">
+      <Configuration>Debug Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Japanese|x64">
+      <Configuration>Debug Japanese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Chinese|Win32">
+      <Configuration>Release Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Chinese|x64">
+      <Configuration>Release Chinese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese|Win32">
+      <Configuration>Release Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese|x64">
+      <Configuration>Release Japanese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AEA137C2-3EAB-40C8-80B9-78FE659027B2}</ProjectGuid>
+    <RootNamespace>AgsModules</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31727.243</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;$(SolutionDir)Include\Billing\HannEver;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ORACLE_THROUGH_OCI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;$(SolutionDir)Include\Billing\HannEver;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ORACLE_THROUGH_OCI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ORACLE_THROUGH_OCI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ORACLE_THROUGH_OCI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;$(SolutionDir)Include\Billing\HannEver;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ORACLE_THROUGH_OCI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;$(SolutionDir)Include\Billing\HannEver;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ORACLE_THROUGH_OCI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;$(SolutionDir)\Server\WebzenShop\ClientStub;$(SolutionDir)\Server\WebzenShop\Public_src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;_DEBUG;_CONSOLE;_AREA_KOREA_;APMEMORY_CHECKER;_WEBZEN_AUTH_;_WEBZEN_BILLING_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D_x64.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuStrTable\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;..\..\include\oci;..\..\include\Billing\HannEver;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;NDEBUG;_CONSOLE;_AREA_KOREA_;APMEMORY_CHECKER;_WEBZEN_AUTH_;_WEBZEN_BILLING_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;..\..\Include\oci;..\..\Include\Billing\HannEver;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_CONSOLE;_AREA_JAPAN_;ORACLE_THROUGH_OCI;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;..\..\Include\oci;..\..\Include\Billing\HannEver;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_CONSOLE;_AREA_JAPAN_;ORACLE_THROUGH_OCI;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;..\..\Include\oci;..\..\Include\Billing\HannEver;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;_DEBUG;_CONSOLE;_AREA_CHINA_;ORACLE_THROUGH_OCI;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Server\AgsEngine\*.h" "..\..\include"
+copy "..\..\Server\AgsmPrivateTrade\*.h" "..\..\include"
+copy "..\..\Server\AsEchoServer\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuOLEDB\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuODBC\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuRegistry\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuDatabase2\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuStrTable\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AServer" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AServer\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;..\..\include\oci;..\..\include\Billing\HannEver;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;NDEBUG;_CONSOLE;_AREA_CHINA_;ORACLE_THROUGH_OCI;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\AServer\AgsmAccountManager\AgsaAccountManager.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAccountManager\AgsmAccountManager.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdmin.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminCharacter.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminCommand.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminGuild.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminItem.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminSkill.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminStatistic.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdminTitle.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAI2\AgsmAI2.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAI2\AgsmNPCAI2.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOICell.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOIFilter.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOIMap.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmArchlord\AgsmArchlord.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAreaChatting\AgsmAreaChatting.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsaAuctionRelay.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsdAuctionRelay.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsmAuctionRelay.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmAuction\AgsmAuction.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBattleGround\AgsmBattleGround.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillInfo\AgsmBillInfo.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingChina\AgsmBillingChina.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingChina\BillAPI.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingChina\CallbackFunc.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingGlobal\AgsmBillingGlobal.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBillingJapan\AgsmBillingJapan.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBilling\AgsaBilling.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBilling\AgsmBilling.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmBuddy\AgsmBuddy.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCashMall\AgsmCashMall.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCasper\AgsmCasper.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCastle\AgsmCastle.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmChannel\AgsmChannel.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacter.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacterCB.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacterCheckRecvChar.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacterPacket.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacterWaitOperation.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCharManager\AgsmCharManager.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmChatting\AgsmChatting.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmCombat\AgsmCombat.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmConfig\AgsmConfig.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabaseConfig\AgsmDatabaseConfig.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabasePool\AgsdDatabase.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabasePool\AgsmDatabasePool.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabasePool\IOCPDatabase.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmDatabasePool\zzThread.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmDeath\AgsmDeath.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmDropItem2\AgsmDropItem2.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmDropItem\AgsmDropItem.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEpicZone\AgsmEpicZone.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventBank\AgsmEventBank.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventCharCustomize\AgsmEventCharCustomize.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventGacha\AgsmEventGacha.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventGuild\AgsmEventGuild.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventItemConvert\AgsmEventItemConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventItemRepair\AgsmEventItemRepair.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventManager\AgsmEventManager.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventNature\AgsmEventNature.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventNPCDialog\AgsmEventNPCDialog.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventNPCTrade\AgsmEventNPCTrade.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventProduct\AgsmEventProduct.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventQuest\AgsmEventQuest.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventRefinery\AgsmEventRefinery.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventSiegeWarNPC\AgsmEventSiegeWarNPC.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventSkillMaster\AgsmEventSkillMaster.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventSpawn\AgsmEventSpawn.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventSystem\AgsmEventSystem.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventTeleport\AgsmEventTeleport.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmEventUvUReward\AgsmEventUvUReward.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmFactors\AgsmFactors.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmGamble\AgsmGamble.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmGameholic\AgsmGameholic.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmGKforPCRoom\AgsmGKforPCRoom.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmGlobalChatting\AgsmGlobalChatting.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmGuildWarehouse\AgsmGuildWarehouse.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmGuild\AgsmGuild.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmInterServerLink\AgsmInterServerLink.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmItemConvert\AgsmItemConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmItemManager\AgsmItemManager.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmItem\AgsmItem.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmItem\AgsmItemCB.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmItem\AgsmItemPacket.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmLoginClient\AgsmLoginClient.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmLoginDB\AgsmCogpas.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmLoginServer\AgsmLoginServer.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmLogin\AgsmLogin.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmLog\AgsmLog.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmMailBox\AgsmMailBox.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmMap\AgsmMap.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmNpcManager\AgsmNpcManager.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmObject\AgsmObject.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmParty\AgsmParty.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmPrivateTrade\AgsmPrivateTrade.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmProduct\AgsaProduct.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmProduct\AgsmProduct.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmPvP\AgsmPvP.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmQuest\AgsdQuest.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmQuest\AgsmQuest.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRefinery\AgsmRefinery.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2AccountWorld.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Admin.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Archlord.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2BankMoneyEdit.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Buddy.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2CashItemBuyList.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2CashItemTimeExtend.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Character.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2CharismaPointEdit.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2ConcurrentUser.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Custom.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2EventSystem.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Guild.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Item.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2ItemConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Log.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2MailBox.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Quest.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2SiegeWar.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Skill.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2Test.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2UIStatus.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2WantedCriminal.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRemission\AgsmRemission.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmReturnToLogin\AgsdAuthKey.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmReturnToLogin\AgsmReturnToLogin.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmRide\AgsmRide.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSearch\AgsmSearch.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmServerManager2\AgsaServer2.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmServerManager2\AgsmServerManager2.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmServerStatus\AgsmServerStatus.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmServerStatus\AgsmServerStatus_IOCPServer.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmShrine\AgsmShrine.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSiegeWar\AgsmSiegeWar.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSkillManager\AgsmSkillManager.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSkill\AgsmSkill.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSkill\AgsmSkillEffect.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSkill\AgsmSkillMastery.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmStartupEncryption\AgsmStartupEncryption.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSummons\AgsmSummons.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSystemInfo\AgsmSystemInfo.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmSystemMessage\AgsmSystemMessage.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmTax\AgsmTax.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmTimer\AgsmTimer.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmTitle\AgsmRelay2Title.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmTitle\AgsmTitle.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmUIStatus\AgsmUIStatus.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmUsedCharDataPool\AgsmUsedCharDataPool.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmWantedCriminal\AgsmWantedCriminal.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\agsmworld\AgsmWorld.cpp" />
+    <ClCompile Include="..\..\Modules\AServer\AgsmZoning\AgsmZoning.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase2\AuDatabase2.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase\auDatabase.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase\AuDatabaseOCI.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase\auDatabaseODBC.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuDatabase\auDatabaseOLEDB.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuRegistry\AuRegistry.cpp" />
+    <ClCompile Include="..\..\Server\AgsEngine\AgsEngine.cpp" />
+    <ClCompile Include="..\..\Server\AgsEngine\AgsGameProcess.cpp" />
+    <ClCompile Include="..\..\Server\AgsEngine\AgsModuleDBStream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Modules\AServer\AgsmAccountManager\AgsaAccountManager.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAccountManager\AgsdAccount.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAccountManager\AgsmAccountManager.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAdmin\AgsmAdmin.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAI2\AgsmAI2.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOICell.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOIFilter.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAOIFilter\AgsmAOIMap.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmArchlord\AgsmArchlord.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAreaChatting\AgsmAreaChatting.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsaAuctionRelay.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsdAuctionRelay.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAuctionRelay\AgsmAuctionRelay.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmAuction\AgsmAuction.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBattleGround\AgsmBattleGround.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillInfo\AgsmBillInfo.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\AgsmBillingChina.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\APIFunc.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\BillAPI.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\bsiperrcode.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\bsipfun.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\bsipmacro.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\bsipmsg.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\CallbackFunc.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingChina\errcode.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingGlobal\AgsmBillingGlobal.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingGlobal\WebzenBilling.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingGlobal\WebzenBilling_Kor.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBillingJapan\AgsmBillingJapan.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBilling\AgsaBilling.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBilling\AgsdBilling.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBilling\AgsmBilling.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBuddy\AgsdBuddy.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmBuddy\AgsmBuddy.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmCashMall\AgsmCashMall.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmCasper\AgsmCasper.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmCastle\AgsmCastle.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmChannel\AgsmChannel.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmCharacter\AgsdCharacter.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmCharacter\AgsmCharacter.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmCharManager\AgsmCharManager.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmChatting\AgsmChatting.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmCombat\AgsmCombat.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmConfig\AgsmConfig.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabaseConfig\AgsmDatabaseConfig.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabasePool\AgsdDatabase.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabasePool\AgsmDatabasePool.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabasePool\IOCPDatabase.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDatabasePool\zzThread.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDeath\AgsdDeath.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDeath\AgsmDeath.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDropItem2\AgsmDropItem2.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmDropItem\AgsmDropItem.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEpicZone\AgsmEpicZone.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventBank\AgsmEventBank.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventCharCustomize\AgsmEventCharCustomize.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventGacha\AgsmEventGacha.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventGuild\AgsmEventGuild.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventItemConvert\AgsmEventItemConvert.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventItemRepair\AgsmEventItemRepair.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventManager\AgsmEventManager.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventNature\AgsmEventNature.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventNPCDialog\AgsmEventNPCDialog.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventNPCTrade\AgsdEventNPCTrade.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventNPCTrade\AgsmEventNPCTrade.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventProduct\AgsmEventProduct.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventQuest\AgsmEventQuest.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventRefinery\AgsmEventRefinery.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSiegeWarNPC\AgsmEventSiegeWarNPC.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSkillMaster\AgsmEventSkillMaster.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSpawn\AgsmEventSpawn.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSystem\AgsmEventSystem.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventSystem\AgspEventSystem.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventTeleport\AgsmEventTeleport.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmEventUvUReward\AgsmEventUvUReward.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmFactors\AgsdFactors.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmFactors\AgsmFactors.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGamble\AgsmGamble.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGameholic\AgsmGameholic.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGameholic\FCMsdkBase.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGKforPCRoom\AgsmGKforPCRoom.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGKforPCRoom\AgsmGKPacket.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGlobalChatting\AgsmGlobalChatting.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGuildWarehouse\AgsmGuildWarehouse.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGuild\AgsdGuild.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGuild\AgsmGuild.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmGuild\AgspGuild.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmInterServerLink\AgsmInterServerLink.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmItemConvert\AgsmItemConvert.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmItemManager\AgsmItemManager.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmItem\AgsdItem.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmItem\AgsmItem.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginClient\AgsmLoginBst.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginClient\AgsmLoginClient.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginDB\AgsmCogpas.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginServer\AgsmLoginServer.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmLogin\AgsdLogin.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmLogin\AgsmLogin.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmLog\AgsmLog.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmMailBox\AgsmMailBox.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmMap\AgsmMap.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmNpcManager\AgsdNpcManager.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmNpcManager\AgsmNpcManager.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmObject\AgsdObject.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmObject\AgsmObject.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmParty\AgsdParty.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmParty\AgsmParty.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmPrivateTrade\AgsmPrivateTrade.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmProduct\AgsaProduct.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmProduct\AgsdProduct.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmProduct\AgsmProduct.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmPvP\AgsmPvP.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmQuest\AgsdQuest.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmQuest\AgsmQuest.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRefinery\AgsdRefinery.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRefinery\AgsmRefinery.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgsdRelay2.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgsmRelay2.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgspBankMoneyEdit.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgspCashItemTimeExtend.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRelay2\AgspCharismaPointEdit.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRemission\AgsmRemission.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmReturnToLogin\AgsdAuthKey.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmReturnToLogin\AgsmReturnToLogin.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmRide\AgsmRide.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSearch\AgsmSearch.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerManager2\AgsaServer2.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerManager2\AgsdServer2.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerManager2\AgsmServerManager2.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerStatus\AgsmServerStatus.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmServerStatus\AgsmServerStatus_IOCPServer.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmShrine\AgsdShrine.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmShrine\AgsmShrine.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSiegeWar\AgsmSiegeWar.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkillManager\AgsmSkillManager.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkill\AgsdSkill.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkill\AgsmSkill.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkill\AgsmSkillEffect.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSkill\AgspSkill.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmStartupEncryption\AgsmStartupEncryption.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSummons\AgsmSummons.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSystemInfo\AgsmSystemInfo.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmSystemMessage\AgsmSystemMessage.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmTax\AgsmTax.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmTimer\AgsmTimer.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmTitle\AgsmTitle.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmTitle\AgspTitleRelayPacket.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmUIStatus\AgsmUIStatus.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmUsedCharDataPool\AgsdUsedPoolList.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmUsedCharDataPool\AgsmUsedCharDataPool.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmWantedCriminal\AgsmWantedCriminal.h" />
+    <ClInclude Include="..\..\Modules\AServer\agsmworld\AgsmWorld.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmZoning\AgsdZoning.h" />
+    <ClInclude Include="..\..\Modules\AServer\AgsmZoning\AgsmZoning.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase2\AuDatabase2.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase\auDatabase.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase\AuDatabaseOCI.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase\auDatabaseODBC.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuDatabase\auDatabaseOLEDB.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuRegistry\AuRegistry.h" />
+    <ClInclude Include="..\..\Server\AgsEngine\AgsEngine.h" />
+    <ClInclude Include="..\..\Server\AgsEngine\AgsGameProcess.h" />
+    <ClInclude Include="..\..\Server\AgsEngine\AgsModuleDBStream.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AgpModules\AgpModules.vcxproj">
+      <Project>{55deee27-6b81-4be1-bbb0-fd4894e6806d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\AsNetworkLib\AsNetworkLib.vcxproj">
+      <Project>{cfd93f15-c931-4506-8e73-36d3817f8e65}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\HanGameForServer\HanGameForServer.vcxproj">
+      <Project>{5a50ddd0-2806-49e5-9186-50433a293d16}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

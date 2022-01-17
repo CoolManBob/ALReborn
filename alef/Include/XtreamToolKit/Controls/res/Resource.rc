@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tip of the Day"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "&Close",IDOK,221,136,50,14
+    CONTROL         "&Show tips at startup",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,120,10
+    PUSHBUTTON      "&Next Tip",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Custom"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Colors:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "&Hue:",XT_IDC_TXT_HUE,7,108,18,8
+    EDITTEXT        XT_IDC_EDIT_HUE,25,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,49,105,
+                    10,14
+    LTEXT           "&Sat:",XT_IDC_TXT_SAT,7,125,18,8
+    EDITTEXT        XT_IDC_EDIT_SAT,25,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,49,122,
+                    10,14
+    LTEXT           "&Lum:",XT_IDC_TXT_LUM,7,140,18,8
+    EDITTEXT        XT_IDC_EDIT_LUM,25,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,49,137,
+                    10,14
+    LTEXT           "&Red:",XT_IDC_TXT_RED,65,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,89,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,105,
+                    11,14
+    LTEXT           "&Green:",XT_IDC_TXT_GREEN,65,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,89,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,122,
+                    11,14
+    LTEXT           "&Blue:",XT_IDC_TXT_BLUE,65,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,89,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standard"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Colors:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Arrange Windows"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Select &Window:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Activate",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "&OK",IDOK,233,24,62,14
+    PUSHBUTTON      "&Save",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "&Close Window",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "Casca&de",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "Tile &Horizontally",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "Tile &Vertically",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "Minimi&ze",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "S&mall Icons",                XT_IDC_SMALLICON
+        MENUITEM "Lar&ge Icons",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "&Undo",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+        MENUITEM "&Delete",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Sort Ascending",              XT_IDC_SORTASC
+        MENUITEM "Sort Descending",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Alignment"
+        BEGIN
+            MENUITEM "Align Left",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Align Center",                XT_IDC_ALIGNCENTER
+            MENUITEM "Align Right",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "New"
+    XT_IDC_BTN_DELETE       "Delete"
+    XT_IDC_BTN_UP           "Move Up"
+    XT_IDC_BTN_DOWN         "Move Down"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Name"
+    XT_IDS_SIZE             "Size"
+    XT_IDS_TYPE             "Type"
+    XT_IDS_MODIFIED         "Modified"
+    XT_IDS_COLOR_AUTO       "Automatic"
+    XT_IDS_COLOR_CUST       "Customize..."
+    XT_IDS_SELDIR           "Select Directory:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "All Files (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Directory name:"
+    XT_IDS_CLICKKEEPOPEN    "Click push pin to keep open"
+    XT_IDS_SE_0             "The operating system is out of memory or resources."
+    XT_IDS_SE_ERR_FNF       "The specified file was not found."
+    XT_IDS_SE_ERR_PNF       "The specified path was not found."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "The operating system denied access to the specified file."
+    XT_IDS_SE_ERR_OOM       "There was not enough memory to complete the operation."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "The .exe file is invalid (non-Win32® .exe or error in .exe image)."
+    XT_IDS_SE_ERR_SHARE     "A sharing violation occurred."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "The file name association is incomplete or invalid."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "The DDE transaction could not be completed because the request timed out."
+    XT_IDS_SE_ERR_DDEFAIL   "The DDE transaction failed."
+    XT_IDS_SE_ERR_DDEBUSY   "The DDE transaction could not be completed because other DDE transactions were being processed."
+    XT_IDS_SE_ERR_NOASSOC   "There is no application associated with the given file name extension."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "The specified dynamic-link library was not found."
+    XT_IDS_SE_ERR_UNKOWN    "An unknown error number %d occured."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Sort Ascending\nSort Ascending"
+    XT_IDC_SORTDSC          "Sort Descending\nSort Descending"
+    XT_IDC_ALIGNLEFT        "Aligns the paragraph at the left margin\nAlign Left"
+    XT_IDC_ALIGNCENTER      "Centers the paragraph between the margins\nCenter"
+    XT_IDC_ALIGNRIGHT       "Aligns the paragraph at the right margin\nAlign Right"
+    XT_IDC_LARGEICON        "Show large icons\nLarge Icons"
+    XT_IDC_SMALLICON        "Show small icons\nSmall Icons"
+    XT_IDC_REMOVEITEM       "Remove from Outlook Bar"
+    XT_IDC_RENAMEITEM       "Rename Shortcut"
+    XT_IDC_REMOVEGROUP      "Remove Group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Rename Group"
+    XT_IDS_HEX              "Hex"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Standard Colors"
+    XT_IDS_TIPTEXT          "Tip text"
+    XT_IDS_DIDYOUKNOW       "Did you know..."
+    XT_IDS_FILE_ABSENT      "The specified file does not exist."
+    XT_IDS_FILE_CORRUPT     "Error reading file."
+    XT_IDS_COLOR_CAPTION    "Colors"
+    XT_IDS_NEW              "New"
+    XT_IDS_CURRENT          "Current"
+    XT_IDS_DIRECTORIES      "Directories:"
+    XT_IDS_FILES            "Files:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "OK"
+    XTP_IDS_TASK_YES          "&Yes"
+    XTP_IDS_TASK_NO           "&No"
+    XTP_IDS_TASK_RETRY        "&Retry"
+    XTP_IDS_TASK_CANCEL       "Cancel"
+    XTP_IDS_TASK_CLOSE        "&Close"
+    XTP_IDS_TASK_SEE_DETAILS  "Show &Details"
+    XTP_IDS_TASK_HIDE_DETAILS "Hide &Details"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

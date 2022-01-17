@@ -1,0 +1,429 @@
+// Calendar resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+      
+#include "Common/resource.h"
+#include "Calendar/Resource.h"
+#include "Calendar/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_CALENDAR_DIALOG_OCURR_SERIES DIALOGEX DISCARDABLE  0, 0, 175, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,69,50,14
+    PUSHBUTTON      "Revocare",IDCANCEL,91,69,50,14
+    LTEXT           "",
+                    XTP_IDC_CALENDAR_STATIC_OCCUR_MESSAGE,43,6,120,27
+    CONTROL         "",XTP_IDC_CALENDAR_RADIO_OCCUR,"Button",
+                    BS_AUTORADIOBUTTON,43,39,125,10
+    CONTROL         "",XTP_IDC_CALENDAR_RADIO_SERIES,"Button",
+                    BS_AUTORADIOBUTTON,43,51,127,10
+    ICON            "",XTP_IDC_CALENDAR_STATIC_ICON,9,8,20,20
+END
+
+XTP_IDD_CALENDAR_PRINT_PAGE_SETUP DIALOGEX DISCARDABLE  32, 32, 283, 338
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Calendar Iniþializare paginã"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Zi Vizualizare opþiuni",XTP_IDC_PRINT_DAYVIEW_OPTIONS_FRAME,7,
+                    5,106,66
+    RTEXT           "Imprimare de la:",IDC_STATIC,10,21,43,8
+    COMBOBOX        XTP_IDC_PRINT_FROM_COMBO,55,19,52,104,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Imprimare pânã la:",IDC_STATIC,10,39,42,8
+    COMBOBOX        XTP_IDC_PRINT_TO_COMBO,55,36,52,104,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Zonã de imprimat",XTP_IDC_PRINT_FROMTO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,56,95,10
+    GROUPBOX        "Datã Antet",XTP_IDC_PRINT_DATE_HEADER_FRAME,120,5,157,
+                    65
+    CONTROL         "Imprimare Datã Antet",XTP_IDC_PRINT_DATE_HEADER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,17,148,10
+    LTEXT           "Datã Antet Font:",XTP_IDC_PRINT_DATE_HEADER_FONT_LABEL,
+                    138,28,136,8
+    LTEXT           "123456789 123456789 123456789\n2\n3",
+                    XTP_IDC_PRINT_DATE_HEADER_FONT,138,40,115,26,SS_NOPREFIX | 
+                    SS_SUNKEN
+    PUSHBUTTON      "...",XTP_IDC_PRINT_DATE_HEADER_FONT_BUTTON,257,40,16,14
+    GROUPBOX        "Hârtie",1073,7,183,197,51,WS_GROUP
+    LTEXT           "Dim:",1089,11,199,40,8
+    COMBOBOX        1137,55,197,141,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Sursã:",1090,12,216,39,8
+    COMBOBOX        1138,55,214,141,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Orientare",1072,211,183,66,51,WS_GROUP
+    RADIOBUTTON     "Portret",1056,216,196,56,12,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "Vedere",1057,216,212,58,12
+    GROUPBOX        "Margini",1075,8,238,196,58,WS_GROUP
+    LTEXT           "Stânga:",1102,16,254,36,8
+    EDITTEXT        1155,55,251,32,12,WS_GROUP
+    LTEXT           "Dreapta:",1103,123,253,35,8
+    EDITTEXT        1157,162,250,32,12,WS_GROUP
+    LTEXT           "Sus:",1104,16,274,35,8
+    EDITTEXT        1156,55,272,32,12,WS_GROUP
+    LTEXT           "Jos:",1105,123,274,35,8
+    EDITTEXT        1158,162,272,32,12,WS_GROUP
+    GROUPBOX        "Examinare",XTP_IDC_PRINT_PREVIEW_FRAME,212,238,66,58
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,261,253,4,38
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,230,250,31,40
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,235,290,29,2
+    PUSHBUTTON      "Ajutor",1038,75,320,61,14
+    PUSHBUTTON      "Imprimantã...",1026,8,300,60,14
+    DEFPUSHBUTTON   "OK",1,175,320,48,14,WS_GROUP
+    PUSHBUTTON      "Revocare",2,229,320,48,14
+    GROUPBOX        "Setãri generale",IDC_STATIC,7,74,270,27
+    CONTROL         "Imprimare în alb-negru",
+                    XTP_IDC_PRINT_BLACK_WHITE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,87,258,10
+    GROUPBOX        "Anteturi ºi subsoluri",IDC_STATIC,7,105,270,70
+    LTEXT           "Antet",IDC_STATIC,13,115,190,8
+    LTEXT           "Subsol",IDC_STATIC,13,145,190,8
+    EDITTEXT        XTP_IDC_CALENDAR_HEADER_FORMAT,13,126,247,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "",XTP_IDC_CALENDAR_HEADER_FORMAT_BTN,260,126,13,14,
+                    BS_ICON,WS_EX_STATICEDGE
+    EDITTEXT        XTP_IDC_CALENDAR_FOOTER_FORMAT,13,155,247,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "",XTP_IDC_CALENDAR_FOOTER_FORMAT_BTN,260,155,13,14,
+                    BS_ICON,WS_EX_STATICEDGE
+END
+
+XTP_IDD_CALENDAR_EVENT_PROPERTIES DIALOGEX DISCARDABLE  0, 0, 450, 231
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Detalii rezervare ºi eveniment"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,165,210,50,14
+    PUSHBUTTON      "Revocare",IDCANCEL,233,210,50,14
+    LTEXT           "Subiect:",IDC_STATIC,7,9,42,8
+    EDITTEXT        XTP_IDC_EDIT_SUBJECT,55,5,235,14,ES_AUTOHSCROLL
+    EDITTEXT        XTP_IDC_EDIT_LOCATION,55,26,235,14,ES_AUTOHSCROLL
+    LTEXT           "Amplasare:",IDC_STATIC,7,26,42,8
+    LTEXT           "Orã de început:",XTP_IDC_START_TEXT,7,56,42,8
+    LTEXT           "Orã de sfârºit:",XTP_IDC_END_TEXT,7,76,42,8
+    CONTROL         "DateTimePicker1",XTP_IDC_DTP_START_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP,55,55,68,15
+    CONTROL         "DateTimePicker2",XTP_IDC_DTP_START_TIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP | 0x8,127,56,67,15
+    CONTROL         "DateTimePicker1",XTP_IDC_DTP_END_DATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,55,75,68,15
+    CONTROL         "DateTimePicker2",XTP_IDC_DTP_END_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,127,76,67,
+                    15
+    LTEXT           "Afiºare orã ca:",IDC_STATIC,300,28,45,8
+    COMBOBOX        XTP_IDC_COMBO_BUSYSTATE,350,25,90,72,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Etichetã:",IDC_STATIC,300,7,40,8
+    COMBOBOX        XTP_IDC_COMBO_LABEL,350,5,90,209,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Recurenþã...",XTP_IDC_BUTTON_RECURRECNCE,370,100,69,
+                    14
+    CONTROL         "Eveniment zi întreagã",XTP_IDC_CHECK_ALLDAY_EVENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,55,57,10
+    CONTROL         "Privat",XTP_IDC_CHECK_PRIVATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,55,38,10
+    CONTROL         "Întâlnire",XTP_IDC_CHECK_MEETING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,65,41,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,5,95,285,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,5,45,285,
+                    1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN | NOT 
+                    WS_VISIBLE,5,205,440,1
+    COMBOBOX        XTP_IDC_COMBO_REMINDER,55,100,68,88,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Memento:",XTP_IDC_CHECK_REMINDER,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,7,102,45,10
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,295,5,1,
+                    110
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,300,95,145,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,300,45,145,1
+    COMBOBOX        XTP_IDC_COMBO_SCHEDULEID,200,100,90,88,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "ID planificare",XTP_IDC_SCHEDULEID_TEXT,135,103,62,10
+    EDITTEXT        XTP_IDC_EDIT_BODY,5,125,440,75,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+XTP_IDD_CALENDAR_RECURRENCE_PROPERTIES DIALOGEX DISCARDABLE  0, 0, 340, 311
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Recurenþã rezervare"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        XTP_IDC_COMBO_SCHEDULEID,34,20,55,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_REC_END,116,20,55,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_REC_DURATION,218,20,87,230,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Fãrã datã de sfârºit",XTP_IDC_RADIO_NOEND,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,166,144,62,9
+    CONTROL         "Sfârºit dupã:",XTP_IDC_RADIO_ENDAFTER,"Button",
+                    BS_AUTORADIOBUTTON,166,157,45,10
+    CONTROL         "Sfârºit prin:",XTP_IDC_RADIO_ENDBY,"Button",
+                    BS_AUTORADIOBUTTON,166,171,39,10
+    EDITTEXT        XTP_IDC_EDIT_OCCUR,214,154,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",XTP_IDC_DATETIMEPICKER_ENDDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,214,169,83,15
+    PUSHBUTTON      "Revocare",IDCANCEL,124,191,50,14
+    PUSHBUTTON      "Eliminare recurenþã",XTP_IDC_BUTTON_REMOVE_RECURRENCE,199,
+                    191,90,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,49,191,50,14
+    GROUPBOX        "Model recurenþã",IDC_STATIC,7,47,328,85
+    CONTROL         "Zilnic",XTP_IDC_RADIO_DAILY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,11,58,54,10
+    CONTROL         "Sãptãmânal",XTP_IDC_RADIO_WEEKLY,"Button",
+                    BS_AUTORADIOBUTTON,11,76,61,10
+    CONTROL         "Lunar",XTP_IDC_RADIO_MONTHLY,"Button",
+                    BS_AUTORADIOBUTTON,11,94,59,10
+    CONTROL         "Anual",XTP_IDC_RADIO_YEARLY,"Button",
+                    BS_AUTORADIOBUTTON,11,112,52,10
+    CONTROL         "Luni",XTP_IDC_CHECK_MONDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,105,41,10
+    CONTROL         "Marþi",XTP_IDC_CHECK_TUESDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,127,105,50,10
+    CONTROL         "Miercuri",XTP_IDC_CHECK_WEDNESDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,184,105,54,10
+    CONTROL         "Joi",XTP_IDC_CHECK_THURSDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,247,105,46,10
+    CONTROL         "Vineri",XTP_IDC_CHECK_FRIDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,120,41,10
+    CONTROL         "Sâmbãtã",XTP_IDC_CHECK_SATURDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,120,45,10
+    CONTROL         "Duminicã",XTP_IDC_CHECK_SUNDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,184,119,62,10
+    EDITTEXT        XTP_IDC_EDIT_WEEKLY_INTERVAL,127,88,26,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "sãptãmâni în ziua de:",XTP_IDC_STATIC_WEEKLY_FOLLDAYS,157,91,66,8
+    LTEXT           "Revenire la fiecare",XTP_IDC_STATIC_WEEKLY_RECEVERY,82,91,43,8
+    GROUPBOX        "Ora rezervãrii",IDC_STATIC,7,3,328,40
+    GROUPBOX        "Interval de recurenþã",IDC_STATIC,7,135,328,52
+    CONTROL         "",XTP_IDC_DATETIMEPICKER_START,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP,47,156,100,15
+    RTEXT           "Începere",IDC_STATIC,15,160,28,8
+    LTEXT           "ocurenþe",IDC_STATIC,257,156,49,8
+    RTEXT           "Start:",IDC_STATIC,12,22,20,8
+    RTEXT           "Sfârºit:",IDC_STATIC,89,22,24,8
+    RTEXT           "Duratã:",IDC_STATIC,175,23,39,8
+    GROUPBOX        "",XTP_IDC_STATIC_SEP,73,51,1,76
+    CONTROL         "La fiecare",XTP_IDC_RADIO_EVERYDAY,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,57,35,10
+    CONTROL         "Zilele sãptãmânii",XTP_IDC_RADIO_EVERYWORKDAY,"Button",
+                    BS_AUTORADIOBUTTON,81,72,108,10
+    EDITTEXT        XTP_IDC_EDIT_DAYINTERVAL,120,55,28,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "zile",XTP_IDC_STATIC_DAY,152,57,22,8
+    CONTROL         "Zi",XTP_IDC_RADIO_MONTH_RECUR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,220,26,10
+    CONTROL         "A",XTP_IDC_RADIO_MONTH_IN,"Button",
+                    BS_AUTORADIOBUTTON,81,239,28,10
+    EDITTEXT        XTP_IDC_EDIT_MONTH_DATE,111,218,24,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "la fiecare",XTP_IDC_STATIC_MONTH_NUMEVERY,139,221,28,8
+    EDITTEXT        XTP_IDC_EDIT_MONTH_MONTH,170,218,25,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "luni",XTP_IDC_STATIC_MONTH_MONTH,200,221,37,8
+    COMBOBOX        XTP_IDC_COMBO_MONTH_CRIT,111,237,50,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_MONTH_DAY,162,237,68,287,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "la fiecare",XTP_IDC_STATIC_MONTH_EVERY,234,238,28,8
+    EDITTEXT        XTP_IDC_EDIT_MONTH_MONTH2,266,235,26,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "luni",XTP_IDC_STATIC_MONTH_MONTH2,296,238,29,8
+    CONTROL         "La fiecare",XTP_IDC_RADIO_YEAR_RECUR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,268,34,10
+    CONTROL         "A",XTP_IDC_RADIO_YEAR_IN,"Button",BS_AUTORADIOBUTTON,
+                    81,288,31,10
+    EDITTEXT        XTP_IDC_EDIT_YEAR_DATE,195,266,27,12,ES_AUTOHSCROLL
+    COMBOBOX        XTP_IDC_COMBO_YEAR_CRIT,117,286,48,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_DAY,167,286,70,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_MONTH,117,266,76,230,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        XTP_IDC_COMBO_YEAR_MONTH2,253,286,71,230,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "al",XTP_IDC_STATIC_YEAR_OF,241,289,10,8
+END
+
+XTP_IDD_CALENDAR_TIMESCALE_PROPERTIES DIALOGEX 0, 0, 274, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fus orar"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,150,158,50,14
+    PUSHBUTTON      "Revocare",IDCANCEL,217,158,50,14
+    GROUPBOX        "Fus orar curent",IDC_STATIC,7,7,260,65
+    GROUPBOX        "",IDC_STATIC,7,88,260,62,0,WS_EX_TRANSPARENT
+    CONTROL         "Afiºare fus orar suplimentar",
+                    XTP_IDC_CHECK_ADDITIONAL_TIMEZONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,78,260,8,WS_EX_TRANSPARENT
+    EDITTEXT        XTP_IDC_LABEL1,60,21,40,14,ES_AUTOHSCROLL
+    LTEXT           "Etichetã:",IDC_STATIC,15,23,20,8
+    LTEXT           "Fus orar:",IDC_STATIC,15,42,36,8
+    COMBOBOX        XTP_IDC_COMBO_TIMEZONE1,60,39,195,130,CBS_DROPDOWN | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        XTP_IDC_LABEL2,60,99,40,14,ES_AUTOHSCROLL
+    LTEXT           "Etichetã:",IDC_STATIC,15,101,20,8
+    LTEXT           "Fus orar:",IDC_STATIC,15,120,36,8
+    COMBOBOX        XTP_IDC_COMBO_TIMEZONE2,60,117,195,135,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Reglare automatã a ceasului la modificarea orei de varã",
+                    XTP_IDC_CHECK_ADJUST_DAYLIGHT_TIMEZONE1,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,56,234,8,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Reglare automatã a ceasului la modificarea orei de varã",
+                    XTP_IDC_CHECK_ADJUST_DAYLIGHT_TIMEZONE2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,134,234,8,
+                    WS_EX_TRANSPARENT
+END
+
+XTP_IDD_CALENDAR_REMINDERS DIALOGEX DISCARDABLE  0, 0, 303, 181
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mementouri"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "List1",XTP_IDC_RMD_REMINDERS_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,5,40,290,90
+    PUSHBUTTON      "Îndepãrtare totalã",XTP_IDC_RMD_DIMISS_ALL,5,135,65,14
+    PUSHBUTTON      "Îndepãrtare",XTP_IDC_RMD_DIMISS,230,135,65,14
+    PUSHBUTTON      "Deschidere element",XTP_IDC_RMD_OPEN_ITEM,160,135,65,14
+    COMBOBOX        XTP_IDC_RMD_SNOZE_TIME_CB,5,165,220,130,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Se face clic pe Temporizare pentru reamintire în:",IDC_STATIC,5,
+                    155,170,8
+    LTEXT           "Staticã",XTP_IDC_RMD_DESCRIPTION,25,5,270,30,SS_NOPREFIX
+    DEFPUSHBUTTON   "Temporizare",XTP_IDC_RMD_SNOOZE,230,165,65,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+//  String table 
+//
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_DATEPICKER_TODAY       "Azi"
+    XTP_IDS_DATEPICKER_NONE        "Fãrã"
+END
+
+STRINGTABLE 
+BEGIN
+    XTP_IDS_CALENDAR_OCURR_SERIES_DELETE  "Confirmare ºtergere\nSe ºterge aceastã ocurenþã.\nSe ºterg seriile.\nªtergeþi toate ocurenþele rezervãrii periodice ""%s"" sau doar pe aceasta?"
+    XTP_IDS_CALENDAR_OCURR_SERIES_OPEN    "Deschidere element periodic\nSe deschide aceastã ocurenþã.\nDeschidere serie.\n""""<0w#80>"""" este o rezervare periodicã. Deschideþi doar aceastã ocurenþã sau toatã seria?"
+    XTP_IDS_CALENDAR_FROM                 "De la"
+    XTP_IDS_CALENDAR_TO                   "Cãtre"
+    XTP_IDS_CALENDAR_MARGINS_MM           "Margini (milimetri)"
+    XTP_IDS_CALENDAR_MARGINS_INCH         "Margini (inci)"
+    
+    XTP_IDS_CALENDAR_REMINDERS            "%d Mementouri"
+    XTP_IDS_CALENDAR_SUBJECT              "Subiect"
+    XTP_IDS_CALENDAR_DUEIN                "Scadent în"
+    XTP_IDS_CALENDAR_OVERDUE              "termen depãºit"
+
+    XTP_IDS_CALENDAR_SEL_0_RMD            "0 memento-uri sunt selectate"
+    XTP_IDS_CALENDAR_NO_REMINDERS         "Nici un memento de afiºat."
+    XTP_IDS_CALENDAR_START_TIME           "Ora de început"
+
+    XTP_IDS_CALENDAR_WRONG_VALUE          "Valoare greºitã"
+    XTP_IDS_CALENDAR_WRONG_VALUE_RANGE    "Introduceþi o valoare între %s ºi %s" 
+    XTP_IDS_CALENDAR_REMOVE_EXCEPTIONS    "Orice excepþie asociatã cu aceastã rezervare periodicã va fi pierdutã. Dacã unele dintre excepþii sunt întâlniri, participanþii nu vor primi mesaje de notificare. OK?"
+
+    XTP_IDS_CALENDAR_TIME_STATUS_FREE           "Liber"
+    XTP_IDS_CALENDAR_TIME_STATUS_TENTATIVE      "Încercare"
+    XTP_IDS_CALENDAR_TIME_STATUS_BUSY           "Ocupatã"
+    XTP_IDS_CALENDAR_TIME_STATUS_OUTOFOFFICE    "Absent de la birou"
+
+    XTP_IDS_CALENDAR_EVENT_LABEL_NONE               "Fãrã"
+    XTP_IDS_CALENDAR_EVENT_LABEL_IMPORTANT          "Important"
+    XTP_IDS_CALENDAR_EVENT_LABEL_BUSINESS           "De afaceri"
+    XTP_IDS_CALENDAR_EVENT_LABEL_PERSONAL           "Personal"
+    XTP_IDS_CALENDAR_EVENT_LABEL_VACATION           "Vacanþã"
+    XTP_IDS_CALENDAR_EVENT_LABEL_MUSTATTEND         "Participare obligatorie"
+    XTP_IDS_CALENDAR_EVENT_LABEL_TRAVELREQUIRED     "Solicitã cãlãtorie"
+    XTP_IDS_CALENDAR_EVENT_LABEL_NEEDSPREPARATION   "Cere pregãtiri"
+    XTP_IDS_CALENDAR_EVENT_LABEL_BIRTHDAY           "Zi de naºtere"
+    XTP_IDS_CALENDAR_EVENT_LABEL_ANNIVERSARY        "Aniversare"
+    XTP_IDS_CALENDAR_EVENT_LABEL_PHONECALL          "Apel telefonic"
+
+    XTP_IDS_CALENDAR_FIRST      "Primul"
+    XTP_IDS_CALENDAR_SECOND     "Second"
+    XTP_IDS_CALENDAR_THIRD      "Al treilea"
+    XTP_IDS_CALENDAR_FOURTH     "Al patrulea"
+    XTP_IDS_CALENDAR_LAST       "Ultimul"
+
+    XTP_IDS_CALENDAR_MINUTES_0      "0 minute"
+    XTP_IDS_CALENDAR_MINUTES_1      "1 minut"
+    XTP_IDS_CALENDAR_MINUTES_5      "5 minute"
+    XTP_IDS_CALENDAR_MINUTES_10     "10 minute"
+    XTP_IDS_CALENDAR_MINUTES_15     "15 minute"
+    XTP_IDS_CALENDAR_MINUTES_30     "30 minute"
+    
+    XTP_IDS_CALENDAR_HOURS_1        "1 Orã"
+    XTP_IDS_CALENDAR_HOURS_2        "2 Ore"
+    XTP_IDS_CALENDAR_HOURS_3        "3 Ore"
+    XTP_IDS_CALENDAR_HOURS_4        "4 Ore"
+    XTP_IDS_CALENDAR_HOURS_5        "5 Ore"
+    XTP_IDS_CALENDAR_HOURS_6        "6 Ore"
+    XTP_IDS_CALENDAR_HOURS_7        "7 Ore"
+    XTP_IDS_CALENDAR_HOURS_8        "8 Ore"
+    XTP_IDS_CALENDAR_HOURS_9        "9 Ore"
+    XTP_IDS_CALENDAR_HOURS_10       "10 Ore"
+    XTP_IDS_CALENDAR_HOURS_11       "11 Ore"
+    XTP_IDS_CALENDAR_HOURS_18       "18 Ore"
+
+    XTP_IDS_CALENDAR_DAYS_0_5       "0,5 Zile"
+    XTP_IDS_CALENDAR_DAYS_1         "1 Zi"
+    XTP_IDS_CALENDAR_DAYS_2         "2 Zile"
+    XTP_IDS_CALENDAR_DAYS_3         "3 Zile"
+
+    XTP_IDS_CALENDAR_WEEKS_1        "1 Sãptãmânã"
+    XTP_IDS_CALENDAR_WEEKS_2        "2 Sãptãmâni"
+
+    XTP_IDS_CALENDAR_MINUTES    "minute"
+    XTP_IDS_CALENDAR_HOURS      "ore"
+    XTP_IDS_CALENDAR_DAYS       "zile"
+    XTP_IDS_CALENDAR_WEEKS      "sãptãmâni"
+
+    XTP_IDS_CALENDAR_TIME_PREFIX_MINUTES    "min"   // minutes
+    XTP_IDS_CALENDAR_TIME_PREFIX_HOURS      "h"     // hours
+    XTP_IDS_CALENDAR_TIME_PREFIX_DAYS       "z"     // days
+    XTP_IDS_CALENDAR_TIME_PREFIX_WEEKS      "sãpt"     // weeks    
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

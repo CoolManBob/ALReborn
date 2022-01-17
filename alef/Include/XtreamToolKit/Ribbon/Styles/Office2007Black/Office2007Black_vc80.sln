@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Office2007Black", ".\Office2007Black_vc80.vcproj", "{14818156-5322-1989-6784-267513166848}"
+EndProject

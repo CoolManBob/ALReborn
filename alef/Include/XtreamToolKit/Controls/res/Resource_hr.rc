@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_CROATIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Savjet dana"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Zatvaranje",IDOK,221,136,50,14
+    CONTROL         "Pokaži savjet dana prilikom pokretanja",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,140,10
+    PUSHBUTTON      "Pokaži sljedeæe",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Prilagodba"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Boje:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Nijansa:",XT_IDC_TXT_HUE,4,108,24,8
+    EDITTEXT        XT_IDC_EDIT_HUE,36,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,60,105,
+                    10,14
+    LTEXT           "Zasiæenje:",XT_IDC_TXT_SAT,4,125,28,8
+    EDITTEXT        XT_IDC_EDIT_SAT,36,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,60,122,
+                    10,14
+    LTEXT           "Svjetlina:",XT_IDC_TXT_LUM,4,140,26,8
+    EDITTEXT        XT_IDC_EDIT_LUM,36,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,60,137,
+                    10,14
+    LTEXT           "Crvena:",XT_IDC_TXT_RED,76,108,25,8
+    EDITTEXT        XT_IDC_EDIT_RED,107,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,131,105,
+                    11,14
+    LTEXT           "Zelena:",XT_IDC_TXT_GREEN,76,125,25,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,107,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,131,122,
+                    11,14
+    LTEXT           "Plava:",XT_IDC_TXT_BLUE,76,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,107,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,131,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standard"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Boje:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Prozore"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Oznaèi:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Aktiviranje",XT_IDC_BTN_ACTIVATE,228,7,70,14
+    PUSHBUTTON      "U redu",IDOK,228,24,70,14
+    PUSHBUTTON      "Spremi",XT_IDC_BTN_SAVE,228,41,70,14
+    PUSHBUTTON      "Zatvori prozor",XT_IDC_BTN_CLOSEWINDOWS,228,58,70,14
+    PUSHBUTTON      "Kaskade",XT_IDC_BTN_CASCADE,228,75,70,14
+    PUSHBUTTON      "Poploèaj vodoravno",XT_IDC_BTN_TILEHORZ,228,92,70,14
+    PUSHBUTTON      "Poploèaj okomito",XT_IDC_BTN_TILEVERT,228,109,70,14
+    PUSHBUTTON      "Minimiziraj",XT_IDC_BTN_MINIMIZE,228,126,70,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Male ikone",                XT_IDC_SMALLICON
+        MENUITEM "Velike ikone",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Poništi",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Izreži",                        ID_EDIT_CUT
+        MENUITEM "Kopiraj",                       ID_EDIT_COPY
+        MENUITEM "Zalijepi",                      ID_EDIT_PASTE
+        MENUITEM "Izbriši",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Odaberi sve",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Sortiraj uzlazno",              XT_IDC_SORTASC
+        MENUITEM "Sortiraj silazno",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Poravnanje"
+        BEGIN
+            MENUITEM "Poravnaj lijevo",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Poravnaj po sredini",                XT_IDC_ALIGNCENTER
+            MENUITEM "Poravnaj desno",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Novi"
+    XT_IDC_BTN_DELETE       "Izbriši"
+    XT_IDC_BTN_UP           "Premjesti gore"
+    XT_IDC_BTN_DOWN         "Premjesti dolje"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Ime"
+    XT_IDS_SIZE             "Velièina"
+    XT_IDS_TYPE             "Vrsta"
+    XT_IDS_MODIFIED         "Mijenjano"
+    XT_IDS_COLOR_AUTO       "Automatsko"
+    XT_IDS_COLOR_CUST       "Prilagodi..."
+    XT_IDS_SELDIR           "Imenik:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Sve datoteke (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Imenik:"
+    XT_IDS_CLICKKEEPOPEN    "Pritisnite pribadaèu želite li zadržati otvoreno"
+    XT_IDS_SE_0             "The operating system is out of memory or resources."
+    XT_IDS_SE_ERR_FNF       "The specified file was not found."
+    XT_IDS_SE_ERR_PNF       "The specified path was not found."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "The operating system denied access to the specified file."
+    XT_IDS_SE_ERR_OOM       "There was not enough memory to complete the operation."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "The .exe file is invalid (non-Win32® .exe or error in .exe image)."
+    XT_IDS_SE_ERR_SHARE     "A sharing violation occurred."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "The file name association is incomplete or invalid."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "The DDE transaction could not be completed because the request timed out."
+    XT_IDS_SE_ERR_DDEFAIL   "The DDE transaction failed."
+    XT_IDS_SE_ERR_DDEBUSY   "The DDE transaction could not be completed because other DDE transactions were being processed."
+    XT_IDS_SE_ERR_NOASSOC   "There is no application associated with the given file name extension."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "The specified dynamic-link library was not found."
+    XT_IDS_SE_ERR_UNKOWN    "An unknown error number %d occured."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Razvrstaj uzlazno\nRazvrstaj uzlazno"
+    XT_IDC_SORTDSC          "Razvrstaj silazno\nRazvrstaj silazno"
+    XT_IDC_ALIGNLEFT        "Poravnaj lijevo\nPoravnaj lijevo"
+    XT_IDC_ALIGNCENTER      "Poravnaj okomito\nPoravnaj okomito"
+    XT_IDC_ALIGNRIGHT       "Poravnaj desno\nPoravnaj desno"
+    XT_IDC_LARGEICON        "Velike ikone\nVelike ikone"
+    XT_IDC_SMALLICON        "Male ikone\nMale ikone"
+    XT_IDC_REMOVEITEM       "Ukloni s trake Outlook"
+    XT_IDC_RENAMEITEM       "Preimenuj preèac"
+    XT_IDC_REMOVEGROUP      "Ukloni grupu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Preimenuj grupu"
+    XT_IDS_HEX              "Hex"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Standardne boje"
+    XT_IDS_TIPTEXT          "Tekst savjeta"
+    XT_IDS_DIDYOUKNOW       "Jeste li znali..."
+    XT_IDS_FILE_ABSENT      "Datoteka ne postoji."
+    XT_IDS_FILE_CORRUPT     "Došlo je do pogreške pri èitanju datoteke."
+    XT_IDS_COLOR_CAPTION    "Boje"
+    XT_IDS_NEW              "Novi"
+    XT_IDS_CURRENT          "Trenutno"
+    XT_IDS_DIRECTORIES      "Imenici:"
+    XT_IDS_FILES            "Datoteke:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "U redu"
+    XTP_IDS_TASK_YES          "Da"
+    XTP_IDS_TASK_NO           "Ne"
+    XTP_IDS_TASK_RETRY        "Pokušaj ponovno"
+    XTP_IDS_TASK_CANCEL       "Odustani"
+    XTP_IDS_TASK_CLOSE        "Zatvori"
+    XTP_IDS_TASK_SEE_DETAILS  "Prikaži pojedinosti"
+    XTP_IDS_TASK_HIDE_DETAILS "Sakrij pojedinost"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

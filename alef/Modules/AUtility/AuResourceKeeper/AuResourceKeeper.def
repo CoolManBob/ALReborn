@@ -1,0 +1,7 @@
+; AuResourceKeeper.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AuResourceKeeper"
+DESCRIPTION  'AuResourceKeeper Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="WebzenShopScript">
+      <UniqueIdentifier>{d5a0a924-b77d-472f-867f-0bbffbc1bafd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{56f21260-6968-4044-9660-91b5b8716a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop">
+      <UniqueIdentifier>{adaf8cde-e6e4-4563-92af-0ec80ad26842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop\Product">
+      <UniqueIdentifier>{f41488df-5a0f-4b67-8b94-e9412556edff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop\Package">
+      <UniqueIdentifier>{52db3982-6f0e-4183-9faa-d71d698088a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop\Category">
+      <UniqueIdentifier>{83218f7e-3fdc-43cb-89a2-f3dd19d88f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop\EventProperty">
+      <UniqueIdentifier>{b270773f-a3ab-4e35-9301-e4d332d7c549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{df208fd8-23d9-4fd8-b44c-fe6097dc562b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProductDic">
+      <UniqueIdentifier>{d9439a6f-25d7-460a-9b06-98a0b635bfb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\WebzenShopScript\CWebzenShopList.cpp">
+      <Filter>WebzenShopScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Utility\CWebzenUtility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Shop.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Product.cpp">
+      <Filter>Shop\Product</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Package.cpp">
+      <Filter>Shop\Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Category.cpp">
+      <Filter>Shop\Category</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\EventProperty.cpp">
+      <Filter>Shop\EventProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Script.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\ProductDic.cpp">
+      <Filter>ProductDic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\CWebzenShopList.h">
+      <Filter>WebzenShopScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CWebzenUtility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Shop.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Product.h">
+      <Filter>Shop\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Package.h">
+      <Filter>Shop\Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Category.h">
+      <Filter>Shop\Category</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EventProperty.h">
+      <Filter>Shop\EventProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Script.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ProductDic.h">
+      <Filter>ProductDic</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ContainerUtil.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ESTONIAN, SUBLANG_DEFAULT
+#pragma code_page(1257)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Lühikese kuupäeva vorming",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   KPika kuupäeva vorming",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Kellaaeg",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   Kellaaeg (24 tundi)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p  Leheküljenumber",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Lehekülgede arv",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Vasakjoondus &&b Keskjoondus &&b Paremjoondus", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   aknatiitel",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  Ampersand (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Uus rida",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Prindi...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Järgmine lehekülg",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Eelmine lehekülg",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "Suurenda",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Vähenda",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Sule",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Üks lehekülg"
+    XTP_IDS_TWOPAGE         "Kaks lehekülge"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigosinine"
+    XTP_IDS_CLR_GRAY80      "Hall-80%"
+    XTP_IDS_CLR_DARK_RED    "Tumepunane"
+    XTP_IDS_CLR_ORANGE      "Oranþ"
+    XTP_IDS_CLR_DARK_YELLOW "Tumekollane"
+    XTP_IDS_CLR_GREEN       "Roheline"
+    XTP_IDS_CLR_TEAL        "Rohekassinine"
+    XTP_IDS_CLR_BLUE        "Sinine"
+    XTP_IDS_CLR_BLUEGRAY    "Sinakashall"
+    XTP_IDS_CLR_GRAY50      "Hall-50%"
+    XTP_IDS_CLR_RED         "Punane"
+    XTP_IDS_CLR_LIGHTORANGE "Heleoranþ"
+    XTP_IDS_CLR_LIME        "Laim"
+    XTP_IDS_CLR_SEA_GREEN   "Mereroheline"
+    XTP_IDS_CLR_AQUA        "Vesi"
+    XTP_IDS_CLR_LIGHT_BLUE  "Helesinine"
+    XTP_IDS_CLR_VIOLET      "Violett"
+    XTP_IDS_CLR_GRAY40      "Hall-40%"
+    XTP_IDS_CLR_PINK        "Roosa"
+    XTP_IDS_CLR_GOLD        "Kuld"
+    XTP_IDS_CLR_YELLOW      "Kollane"
+    XTP_IDS_CLR_BRIGHT_GREEN "Ereroheline"
+    XTP_IDS_CLR_TURQUOISE   "Türkiissinine"
+    XTP_IDS_CLR_SKY_BLUE    "Taevasinine"
+    XTP_IDS_CLR_PLUM        "Ploom"
+    XTP_IDS_CLR_GRAY25      "Hall-25%"
+    XTP_IDS_CLR_ROSE        "Roosa"
+    XTP_IDS_CLR_TAN         "Päiksepruun"
+    XTP_IDS_CLR_LIGHT_YELLOW "Helekollane"
+    XTP_IDS_CLR_LIGHT_GREEN "Heleroheline"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Hele türkiissinine"
+    XTP_IDS_CLR_PALE_BLUE   "Kahvatusinine"
+    XTP_IDS_CLR_BLACK       "Must"
+    XTP_IDS_CLR_BROWN       "Pruun"
+    XTP_IDS_CLR_OLIVE_GREEN "Oliiviroheline"
+    XTP_IDS_CLR_DARK_GREEN  "Tumeroheline"
+    XTP_IDS_CLR_DARK_TEAL   "Tume rohekassinine"
+    XTP_IDS_CLR_DARK_BLUE   "Tumesinine"
+    XTP_IDS_CLR_LAVENDER    "Lavendel"
+    XTP_IDS_CLR_WHITE       "Valge"
+    XTP_IDS_CLR_GRAY        "Hall"
+    XTP_IDS_CLR_MAROON      "Kastanpruun"
+    XTP_IDS_CLR_OLIVE       "Oliivroheline"
+    XTP_IDS_CLR_NAVY        "Mereväesinine"
+    XTP_IDS_CLR_PURPLE      "Purpur"
+    XTP_IDS_CLR_SILVER      "Hõbe"
+    XTP_IDS_CLR_FUCHSIA     "Fuksiapunane"
+    XTP_IDS_CLR_NOFILL      "Täidiseta\nTäidiseta"
+    XTP_IDS_CLR_AUTOMATIC   "Automaatvärv\nAutomaatvärv"
+    XTP_IDS_CLR_MORE        "Veel värve..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

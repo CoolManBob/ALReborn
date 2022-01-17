@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<purple>
+	<!-- ip check module -->
+	<module name="ipcheck">
+		<group name="setup_info">
+			<property name="nation" value="korea"/>
+			<property name="service_type" value="real"/>
+			<property name="use_dbgw" value="true"/>
+		</group>
+		<group name="for_dbgw">
+			<property name="service_name">
+				<![CDATA[
+				hangame.publishing.ipchecker/dbgw2.0
+				]]>
+			</property>
+			<property name="directory_file" value="IpCheck_Dbgw.xml"/>
+		</group>
+		<group name="for_webcall">
+			<property name="domain" value="pubauth.hangame.com"/>
+			<property name="query_format">
+				<![CDATA[
+				pcip.nhn?ip=%s&gameid=%s
+				]]>
+			</property>
+		</group>
+	</module>
+	<!-- HannEverBill -->
+	<module name="neverbill">
+		<group name="setup_info">
+			<property name="nation" value="korea"/>
+			<property name="service_type" value="real"/>
+			<property name="dbgw_service_name">
+				<![CDATA[
+					common.bill.enc/commandbroker
+				]]>
+			</property>
+			<property name="use_ssl" value="true"/>
+			<property name="log_path" value="c:\\log"/>
+			<property name="connectionless" value="false"/>
+		</group>
+	</module>
+</purple>

@@ -1,0 +1,217 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGIN DIALOG  0, 0, 169, 223
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "LogIn"
+FONT 9, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_COMBO1,40,170,80,97,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,40,185,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOGIN_SVR_ADDR,40,45,80,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,205,42,10
+    PUSHBUTTON      "&Cancel",IDCANCEL,78,205,42,10
+    LTEXT           "TID :",IDC_STATIC,5,173,23,11
+    LTEXT           "NAME :",IDC_STATIC,5,185,34,10
+    LTEXT           "Address :",IDC_STATIC,5,47,31,8
+    EDITTEXT        IDC_EDIT_ID,40,5,80,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,40,25,80,15,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "ID :",IDC_STATIC,5,10,30,10
+    LTEXT           "Password",IDC_STATIC,5,30,35,10
+    LISTBOX         IDC_LIST_GAMESVR,40,65,80,30,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ServerList :",IDC_STATIC,5,65,35,10
+    LISTBOX         IDC_LIST_CHAR,40,105,80,35,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "CharList:",IDC_STATIC,5,105,35,10
+    PUSHBUTTON      "Select",IDC_BUTTON_SELECT_CHAR,5,145,40,15
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_CHAR,60,145,25,15
+    PUSHBUTTON      "Del",IDC_BUTTON_DELETE_CHAR,95,145,25,15
+    PUSHBUTTON      "Next>>",IDC_NEXT_BUTTON_1,125,5,40,15
+    PUSHBUTTON      "Next>>",IDC_NEXT_BUTTON_2,125,80,40,15,WS_DISABLED
+    PUSHBUTTON      "<<Prev",IDC_PREV_BUTTON_1,125,65,40,15,WS_DISABLED
+    PUSHBUTTON      "<<Prev",IDC_PREV_BUTTON_2,125,105,40,15,WS_DISABLED
+    PUSHBUTTON      "<<Prev",IDC_PREV_BUTTON_3,125,170,40,15,WS_DISABLED
+END
+
+IDD_DEVICESELECT DIALOG  0, 0, 187, 89
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_DEVICESEL,7,25,172,33,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_VIDMODE,7,46,172,74,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "EXIT",IDEXIT,103,69,52,14
+    DEFPUSHBUTTON   "OK",IDOK,28,69,50,14
+    LTEXT           "Please select the device to use:",IDC_SELECTDEVICE,7,7,137,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_DEVICESELECT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LOGIN DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "Webzen"
+            VALUE "FileDescription", "ArchLord Client Program"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Archlord"
+            VALUE "LegalCopyright", "Copyright ⓒ 2004"
+            VALUE "OriginalFilename", "AlefClient.exe"
+            VALUE "ProductName", "Webzen ArchLord"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+CURSOR_D1.CUR           CURSOR                  "6-Block.cur"
+CURSOR_M1.CUR           CURSOR                  "1-Normal.cur"
+CURSOR_P1.CUR           CURSOR                  "2-Pickup.cur"
+CURSOR_A1.CUR           CURSOR                  "3-Attack.cur"
+CURSOR_T1.CUR           CURSOR                  "4-Event.cur"
+CURSOR_MOVEITEM1.CUR    CURSOR                  "5-SkillMove.cur"
+CURSOR_REPAIR1.CUR      CURSOR                  "7-Repair.cur"
+CURSOR_REPAIR1_16.CUR   CURSOR                  "7-Repair-16.cur"
+CURSOR_M1_16.CUR        CURSOR                  "1-Normal-16.cur"
+CURSOR_P1_16.CUR        CURSOR                  "2-Pickup-16.cur"
+CURSOR_A1_16.CUR        CURSOR                  "3-Attack-16.cur"
+CURSOR_T1_16.CUR        CURSOR                  "4-Event-16.cur"
+CURSOR_MOVEITEM1_16.CUR CURSOR                  "5-SkillMove-16.cur"
+CURSOR_D1_16.CUR        CURSOR                  "6-Block-16.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON                    "Archrlod.ico"
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

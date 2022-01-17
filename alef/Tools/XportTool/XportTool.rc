@@ -1,0 +1,185 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_XPORTTOOL           ICON                    "XportTool.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_XPORTTOOL MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "끝내기(&X)",                  IDM_EXIT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "정보(&A)...",                 IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_XPORTTOOL ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  22, 17, 230, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "정보"
+FONT 9, "System"
+BEGIN
+    ICON            IDI_XPORTTOOL,IDC_MYICON,14,9,16,16
+    LTEXT           "XportTool 버전 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "확인",IDOK,195,6,30,11,WS_GROUP
+END
+
+IDD_XPORTTOOL DIALOGEX 0, 0, 113, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Xport"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Export",IDB_EXPORT,33,196,50,14
+    CONTROL         "Character template",IDC_CHARACTER_TEMPLATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,15,78,10
+    CONTROL         "Item template",IDC_ITEM_TEMPLATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,31,61,10
+    CONTROL         "Object template",IDC_OBJECT_TEMPLATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,49,67,10
+    CONTROL         "Skill template",IDC_SKILL_TEMPLATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,66,57,10
+    CONTROL         "Effect resource",IDC_EFFECT_RESOURCE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,82,65,10
+    CONTROL         "UI resource",IDC_UI_RESOURCE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,100,53,10
+    CONTROL         "World resource",IDC_WORLD_RESOURCE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,117,65,10
+    CONTROL         "Etc texture",IDC_ETC_TEXTURE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,134,52,10
+    CONTROL         "INI resource",IDC_INI_RESOURCE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,151,56,10
+    CONTROL         "DDS->TX1",IDC_DDS_TX1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,168,49,10
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_XPORTTOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 106
+        VERTGUIDE, 15
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "XportTool"
+    IDC_XPORTTOOL           "XPORTTOOL"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

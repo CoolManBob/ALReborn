@@ -1,0 +1,121 @@
+// AgpmSystemMessage.h
+// (C) NHN Games - ArchLord Development Team
+// kelovon, 20050906
+
+#ifndef _AGPM_SYSTEM_MESSAGE_H_
+#define _AGPM_SYSTEM_MESSAGE_H_
+
+#include "ApModule.h"
+#include "AuPacket.h"
+
+#include "AgpdSystemMessage.h"
+#include "AgpmCharacter.h"
+#include "SingleTon.h"
+
+#define AGPMSYSTEMMESSAGE_MAX_STRING_LENGTH		64
+
+typedef enum _eAgpmSystemMessagePacketType
+{
+	AGPMSYSTEMMESSAGE_PACKET_SYSTEM_MESSAGE = 0	,
+	AGPMSYSTEMMESSAGE_PACKET_MODAL_MESSAGE		,
+	AGPMSYSTEMMESSAGE_PACKET_MODALLESS_MESSAGE	,
+	AGPMSYSTEMMESSAGE_PACKET_CHAT_MESSAGE		,
+	AGPMSYSTEMMESSAGE_PACKET_MAX
+} eAgpmSystemMessagePacketType;
+
+typedef enum _eAgpmSystemMessageCallback
+{
+	AGPMSYSTEMMESSAGE_CB_SYSTEM_MESSAGE = 0,
+	AGPMSYSTEMMESSAGE_CB_MAX,
+} eAgpmSystemMessageCallback;
+
+typedef enum _eAgpmSystemMessageCode
+{
+	AGPMSYSTEMMESSAGE_CODE_LOTTERY_ITEM_TO_POT_ITEM			= 0,	// 보물 상자 아이템 변환
+	AGPMSYSTEMMESSAGE_CODE_LOTTERY_KEY_NOT_USABLE,					// 보물 상자 열쇠는 단독 사용 불가
+	AGPMSYSTEMMESSAGE_CODE_LOTTERYBOX_NEEDS_GOLD_KEY,				// 보물 상자를 열기 위해 열쇠 필요
+	AGPMSYSTEMMESSAGE_CODE_LOTTERYBOX_NEEDS_SILVER_KEY,				// 보물 상자를 열기 위해 열쇠 필요
+	AGPMSYSTEMMESSAGE_CODE_CASH_ITEM_STOP_USING_ITEM,				// %s 아이템이 사용 중지 되었습니다.
+	AGPMSYSTEMMESSAGE_CODE_CASH_ITEM_END_USING_ITEM,				// %s 아이템이 사용 종료 되었습니다.
+	AGPMSYSTEMMESSAGE_CODE_CASH_ITEM_CANNOT_UNUSE_ITEM,				// 캐쉬 아이템은 사용 중지가 불가능합니다.
+	AGPMSYSTEMMESSAGE_CODE_CASH_ITEM_SAME_KIND_ALREADY_IN_USE,		// 같은 기능의 아이템이 이미 사용중입니다.
+	AGPMSYSTEMMESSAGE_CODE_CASH_ITEM_PAUSE,							// 캐쉬 아이템이 일지 정지 되었습니다.
+	AGPMSYSTEMMESSAGE_CODE_CASH_ITEM_CANNOT_UNUSE_STATUS,			// 캐쉬 아이템을 사용 중지 할 수 없는 상태입니다.
+	AGPMSYSTEMMESSAGE_CODE_TAMABLE_FAILURE_MAX_COUNT,
+	AGPMSYSTEMMESSAGE_CODE_TAMABLE_FAILURE_INVALID_TARGET,
+	AGPMSYSTEMMESSAGE_CODE_TAMABLE_FAILURE_ALREADY_TAMING,
+	AGPMSYSTEMMESSAGE_CODE_TAMABLE_FAILURE_MISS,
+	AGPMSYSTEMMESSAGE_CODE_TRANSPARENT_FAILURE_FOR_COMBAT,
+	AGPMSYSTEMMESSAGE_CODE_FIXED_FAILURE_MAX_COUNT,
+	AGPMSYSTEMMESSAGE_CODE_SUMMONS_FAILURE_MAX_COUNT,
+	AGPMSYSTEMMESSAGE_CODE_SUMMONS_FAILURE_LEVEL_LIMIT_REGION,
+	AGPMSYSTEMMESSAGE_CODE_MUTATION_FAILURE_INVALID_TARGET,
+	AGPMSYSTEMMESSAGE_CODE_ITEM_CANNOT_BUY,							// 살 수 없는 아이템.
+	AGPMSYSTEMMESSAGE_CODE_CANNOT_USE_BY_STATUS,					// 사용할 수 없는 상태입니다.
+	AGPMSYSTEMMESSAGE_CODE_CANNOT_USE_BY_REUSE_INTERVAL,			// 재사용 시간이 되지 않았습니다.
+	AGPMSYSTEMMESSAGE_CODE_JUMP_ITEM_USED,							// 점프아이템이 사용되었습니다.
+	AGPMSYSTEMMESSAGE_CODE_LOTTERYBOX_NEEDS_BRONZE_KEY,				// 보물 상자를 열기 위해 열쇠 필요
+	AGPMSYSTEMMESSAGE_CODE_CANNOT_RIDE_WHILE_COMBAT,				// 전투중에는 탈것 탈 수 없다.
+	AGPMSYSTEMMESSAGE_CODE_CANNOT_ATTACKABLE_TARGET,				// 공격할 수 없는 대상입니다.
+	AGPMSYSTEMMESSAGE_CODE_CANNOT_INITIALIZE_SKILL,					// 스킬 초기화 불가. 소유한 스킬이 없다.
+	AGPMSYSTEMMESSAGE_CODE_ITEM_FOR_GUILDMASTER,					// 길드 마스터 전용 아이템
+	AGPMSYSTEMMESSAGE_CODE_LOTTERYBOX_NEEDS_PLATINUM_KEY,			// 보물 상자를 열기 위해 열쇠 필요
+	AGPMSYSTEMMESSAGE_CODE_BANK_SLOT_IS_MAX,						// 더 이상 확장할 수 없습니다.
+	AGPMSYSTEMMESSAGE_CODE_BANK_ADD_SLOT_SUCCESS,					// 창고 확장을 성공적으로 하였습니다.
+	AGPMSYSTEMMESSAGE_CODE_BANK_MONEY_FIRST,						// 돈으로 먼저 확장하세요.
+	AGPMSYSTEMMESSAGE_CODE_PARTY_PORTAL_ERROR_DEAD_MEMBER		,	// 맴버 '%s' 때문에 못가염
+	AGPMSYSTEMMESSAGE_CODE_PARTY_PORTAL_ERROR_IN_SECRET_DUNGEON	,	// 맴버 '%s' 때문에 못가염
+	AGPMSYSTEMMESSAGE_CODE_PARTY_PORTAL_ERROR_IN_SIEGE_WAR		,	// 맴버 '%s' 때문에 못가염
+	AGPMSYSTEMMESSAGE_CODE_PARTY_PORTAL_ERROR_LACK_OF_LEVEL		,	// 맴버 '%s' 때문에 못가염
+	AGPMSYSTEMMESSAGE_CODE_CANNOT_USE_WANGBOK_SCROLL			,	// 왕복문서를 쓰지 못함.
+	AGPMSYSTEMMESSAGE_CODE_GO_COMMAND_LACK_OF_LEVEL				,	// 레벨딸라셔 못가염.
+	AGPMSYSTEMMESSAGE_CODE_INVEN_MONEY_FULL,						// 인벤 겔드 초과
+	AGPMSYSTEMMESSAGE_CODE_PET_IS_HUNGRY,							// a hungry pet.
+	AGPMSYSTEMMESSAGE_CODE_DISABLE_AUCTION,
+	AGPMSYSTEMMESSAGE_CODE_DISABLE_EQUIP_ITEM_THIS_REGION,			// 해당 Region에서는 해당ITEM을 착용할수 없다.
+	AGPMSYSTEMMESSAGE_CODE_NOT_ENOUGH_INVENTORY,					// inventory 부족
+	AGPMSYSTEMMESSAGE_CODE_DISABLE_USE_THIS_REGION,					// 해당 Region에서는 사용할 수 없습니다.
+	AGPMSYSTEMMESSAGE_CODE_MIDNIGHTSHUTDOWN_LEFT_MIN,				// 셧다운제 시행으로 인하여 %d분 후, 만 16세 미만의 고객은 접속이 종료됩니다. 자정(24시)이 되기전 미리 안전한 곳에서 접속을 종료 시켜주시기 바랍니다. 
+	AGPMSYSTEMMESSAGE_CODE_MIDNIGHTSHUTDOWN,						// 셧다운제 시행으로 인하여 만 16세 미만의 고객은 접속이 제한 됩니다.(12AM~6AM)
+	AGPMSYSTEMMESSAGE_CODE_GENERAL_STRING					= 400,
+	AGPMSYSTEMMESSAGE_CODE_DEBUG_STRING						= 500,
+} eAgpmSystemMessageCode;
+
+class AgpmSystemMessage 
+	:	public ApModule	,
+		public SingleTon< AgpmSystemMessage >
+{
+public:
+	AuPacket m_csPacket;
+
+public:
+	AgpmSystemMessage( VOID );
+	virtual ~AgpmSystemMessage( VOID );
+
+	BOOL	OnAddModule	( VOID );
+	BOOL	OnInit		( VOID );
+	BOOL	OnIdle2		( UINT32 ulClockCount );
+	BOOL	OnDestroy	( VOID );
+
+	// OnReceive
+	BOOL	OnReceive				( UINT32 ulType, PVOID pvPacket, INT16 nSize, UINT32 ulNID, DispatchArg *pstCheckArg );
+	
+	// System Message 처리
+	BOOL	ProcessSystemMessage	( INT32 eSysMsgType , INT32 lCode , INT32 lIntParam1 = -1, INT32 lIntParam2 = -1, CHAR* szStringParam1 = NULL, CHAR* szStringParam2 = NULL, AgpdCharacter* pcsCharacter = NULL );
+	BOOL	ProcessSystemMessage	( CHAR* szMsg		, DWORD dwColor = 0x00 , INT32 eSysMsgType = AGPMSYSTEMMESSAGE_PACKET_SYSTEM_MESSAGE  );
+
+	// Make Packet
+	PVOID	MakeSystemMessagePacket	( INT16* pnPacketLength, INT32 lCode, INT32 lIntParam1, INT32 lIntParam2, CHAR* szStringParam1, CHAR* szStringParam2 );
+	
+	PVOID	MakeSystemMessagePacketWithType(INT16* pnPacketLength, INT8 cMsgType, INT32 lCode, INT32 lIntParam1, INT32 lIntParam2, CHAR* szStringParam1, CHAR* szStringParam2);
+
+
+	// Callback Registration
+	BOOL	SetCallbackSystemMessage( ApModuleDefaultCallBack pfCallback , PVOID pClass);
+
+};
+
+#define SystemMessage	AgpmSystemMessage::GetSingleTon()
+
+
+#endif // _AGPM_SYSTEM_MESSAGE_H_

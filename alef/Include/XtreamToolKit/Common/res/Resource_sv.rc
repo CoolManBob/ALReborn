@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Kort datumformat",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   Långt datumformat",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Tid",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   Tid (24 timmar)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   Sidnummer",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Antal sidor",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Vänsterjustera &&b Centrera &&b Högerjustera", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   Ändra fönsterrubrik",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  et-tecken (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Ny rad",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Skriv ut...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Nästa sida",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Föreg. sida",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "Zooma in",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Zooma ut",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Stäng",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "En sida"
+    XTP_IDS_TWOPAGE         "Två sidor"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigoblå"
+    XTP_IDS_CLR_GRAY80      "Grå-80 %"
+    XTP_IDS_CLR_DARK_RED    "Mörkröd"
+    XTP_IDS_CLR_ORANGE      "Orange"
+    XTP_IDS_CLR_DARK_YELLOW "Olivgrön"
+    XTP_IDS_CLR_GREEN       "Grön"
+    XTP_IDS_CLR_TEAL        "Blågrön"
+    XTP_IDS_CLR_BLUE        "Blå"
+    XTP_IDS_CLR_BLUEGRAY    "Blågrå"
+    XTP_IDS_CLR_GRAY50      "Grå-50 %"
+    XTP_IDS_CLR_RED         "Röd"
+    XTP_IDS_CLR_LIGHTORANGE "Ljusorange"
+    XTP_IDS_CLR_LIME        "Gröngul"
+    XTP_IDS_CLR_SEA_GREEN   "Havsgrön"
+    XTP_IDS_CLR_AQUA        "Turkos"
+    XTP_IDS_CLR_LIGHT_BLUE  "Klarblå"
+    XTP_IDS_CLR_VIOLET      "Lila"
+    XTP_IDS_CLR_GRAY40      "Grå-40 %"
+    XTP_IDS_CLR_PINK        "Rosa"
+    XTP_IDS_CLR_GOLD        "Guld"
+    XTP_IDS_CLR_YELLOW      "Gul"
+    XTP_IDS_CLR_BRIGHT_GREEN "Ljusgrön"
+    XTP_IDS_CLR_TURQUOISE   "Ljus turkos"
+    XTP_IDS_CLR_SKY_BLUE    "Himmelsblå"
+    XTP_IDS_CLR_PLUM        "Plommon"
+    XTP_IDS_CLR_GRAY25      "Grå-25 %"
+    XTP_IDS_CLR_ROSE        "Rosenröd"
+    XTP_IDS_CLR_TAN         "Mellanbrun"
+    XTP_IDS_CLR_LIGHT_YELLOW "Ljusgul"
+    XTP_IDS_CLR_LIGHT_GREEN "Pastellgrön"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Pastellblå"
+    XTP_IDS_CLR_PALE_BLUE   "Ljusblå"
+    XTP_IDS_CLR_BLACK       "Svart"
+    XTP_IDS_CLR_BROWN       "Brun"
+    XTP_IDS_CLR_OLIVE_GREEN "Khakigrön"
+    XTP_IDS_CLR_DARK_GREEN  "Mörkgrön"
+    XTP_IDS_CLR_DARK_TEAL   "Mörkblågrön"
+    XTP_IDS_CLR_DARK_BLUE   "Mörkblå"
+    XTP_IDS_CLR_LAVENDER    "Lavendel"
+    XTP_IDS_CLR_WHITE       "Vit"
+    XTP_IDS_CLR_GRAY        "Grå"
+    XTP_IDS_CLR_MAROON      "Mörkröd"
+    XTP_IDS_CLR_OLIVE       "Olivgrön"
+    XTP_IDS_CLR_NAVY        "Mörkblå"
+    XTP_IDS_CLR_PURPLE      "Lila"
+    XTP_IDS_CLR_SILVER      "Silver"
+    XTP_IDS_CLR_FUCHSIA     "Magenta"
+    XTP_IDS_CLR_NOFILL      "Ingen fyllning\nIngen fyllning"
+    XTP_IDS_CLR_AUTOMATIC   "Automatisk färgläggning\nAutomatisk färgläggning"
+    XTP_IDS_CLR_MORE        "Fler färger..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

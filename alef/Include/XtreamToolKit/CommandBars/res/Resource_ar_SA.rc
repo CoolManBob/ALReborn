@@ -1,0 +1,311 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "„Õ—— «·√“—«—"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "’Ê—…",IDC_STATIC,162,7,82,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "«·√·Ê«‰‰",IDC_STATIC,71,106,80,71, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "‰ﬁ··",IDC_STATIC,71,72,81,31, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "&„⁄«Ì‰…",IDC_STATIC,160,106,86,71, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "√œÊ« ",IDC_STATIC,71,9,81,60, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,10,7,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "≈·€«¡ «·√„—",IDCANCEL,10,25,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,160,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,166,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "‘›«›",IDC_STATIC,82,157,27,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "√œÊ« ",XTP_IDC_STATIC_TOOLS,81,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "‰ﬁ··",XTP_IDC_STATIC_MOVE,80,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "«·√·Ê«‰‰",XTP_IDC_STATIC_COLORS,78,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "·ÊÕ… „›« ÌÕ"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "«·›∆…:",IDC_STATIC,195,5,31,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,133,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "«·√Ê«„—:",XTP_IDC_TXT_COMMANDS,41,28,90,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,135,39,91,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           " ⁄ÌÌ‰«  «·„›« ÌÕ:",XTP_IDC_TXT_ASSIGNMENTS,159,28,67,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LBOX_KEYS,62,38,69,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "«÷€ÿ „› «Õ «·«Œ ’«— «·ÃœÌœ:",XTP_IDC_TXT_NEWKEY,41,91,90,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,62,101,69,12,ES_AUTOHSCROLL
+    PUSHBUTTON      " ⁄ÌÌ‰",XTP_IDC_BTN_ASSIGN,2,39,55,14
+    PUSHBUTTON      "≈“«·…",XTP_IDC_BTN_REMOVE,2,56,55,14
+    PUSHBUTTON      "≈⁄«œ…  ⁄ÌÌ‰ «·ﬂ·",XTP_IDC_BTN_ACCEL_RESET,2,73,55,14
+    LTEXT           "«·Ê’›:",XTP_IDC_TXT_DESC_TITLE,188,119,38,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,62,129,164,19,0,
+                    WS_EX_RIGHT | WS_EX_RTLREADING | WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "√‘—ÿ… √œÊ« "
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           ":√‘—ÿ… «·√œÊ« ",IDC_STATIC,4,5,222,8, 0, WS_EX_RIGHT
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,76,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "...ÃœÌœ",XTP_IDC_BUTTON_NEW,2,15,70,14
+    PUSHBUTTON      "...≈⁄«œ…  ”„Ì…",XTP_IDC_BUTTON_RENAME,2,33,70,14
+    PUSHBUTTON      "Õ–›",XTP_IDC_BUTTON_DELETE,2,51,70,14
+    PUSHBUTTON      "...≈⁄«œ…  ⁄ÌÌ‰",XTP_IDC_BUTTON_RESET,2,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "ŒÌ«—« "
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "«·ﬁÊ«∆„ Ê√‘—ÿ… «·√œÊ«  «·„Œ’’…",XTP_IDC_GROUP_PERSONALIZED,4,5,222,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«— «·ﬁÊ«∆„ «·ﬂ«„·… œÊ„«",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,17,216,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«— «·ﬁÊ«∆„ «·ﬂ«„·… »⁄œ „Â·… ﬁ’Ì—…",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,29,204,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "≈⁄«œ…  ⁄ÌÌ‰ »Ì«‰«  «” Œœ«„ «·ﬁÊ«∆„ Ê√‘—ÿ… «·√œÊ« ",
+                    XTP_IDC_BUTTON_RESETDATA,56,42,165,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "€Ì— –·ﬂ", XTP_IDC_GROUP_OTHER,4,70,222,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "—„Ê“ ﬂ»Ì—…",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,82,216,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«—  ·„ÌÕ«  «·‘«‘… ⁄·Ï √‘—ÿ… «·√œÊ« ",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,93,216,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«— „›« ÌÕ «·«Œ ’«— ›Ì  ·„ÌÕ«  «·‘«‘…",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,104,204,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "Õ—ﬂ… «·ﬁÊ«∆„:",IDC_STATIC,172,117,46,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,90,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "«·√Ê«„—"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "·≈÷«›… √„— ≈·Ï ‘—Ìÿ √œÊ« : Õœœ ›∆… Ê«”Õ» «·√„— „‰ „—»⁄ «·ÕÊ«— Â–« ≈·Ï ‘—Ìÿ «·√œÊ« .",
+                    IDC_STATIC,4,5,222,19, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "«·›∆« :",IDC_STATIC,4,25,133,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,145,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "«·√Ê«„—:",IDC_STATIC,152,25,74,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LIST_COMMANDS,0,35,140,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Menus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Application Menus",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Context Menus",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "&Show Menu:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Default menu\nDefault application menu",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Select &context menu:",IDC_STATIC,10,92,68,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,83,90,130,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "‘—Ìÿ √œÊ«  ÃœÌœ"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "«”„ ‘—Ìÿ «·√œÊ« :",IDC_STATIC,82,4,100,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL, WS_EX_RIGHT | WS_EX_RTLREADING
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,78,34,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "≈·€«¡ «·√„—",IDCANCEL,132,34,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP " Œ’Ì’"
+    BEGIN
+        MENUITEM "≈⁄«œ…  ⁄ÌÌ‰",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Õ–›",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "«·«”„:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "‰”Œ ‘ﬂ· «·“—",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "·’ﬁ ‘ﬂ· «·“—",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "≈⁄«œ…  ⁄ÌÌ‰ ‘ﬂ· «·“—",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM " Õ—Ì— ‘ﬂ· «·“—...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM " €ÌÌ— ‘ﬂ· «·“—",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "‰„ÿ «› —«÷Ì",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "‰’ ›ﬁÿ",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "’Ê—… Ê‰’",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "»œ¡ „Ã„Ê⁄…",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "≈€·«ﬁ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       " Œ’Ì’"
+    XTP_IDS_NEWMENU         "ﬁ«∆„… ÃœÌœ…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "”ÌƒœÌ Â–« ≈·Ï Õ–› ”Ã· «·√Ê«„— «· Ì «” Œœ„ Â« ›Ì Â–« «· ÿ»Ìﬁ Ê≈·Ï «” ⁄«œ… «·„Ã„Ê⁄… «·«› —«÷Ì… „‰ «·√Ê«„— «·„—∆Ì… ≈·Ï «·ﬁÊ«∆„ Ê√‘—ÿ… «·√œÊ« . ÊÂÊ ·‰ ÌƒœÌ ≈·Ï «· —«Ã⁄ ⁄‰ √Ì  Œ’Ì’«  ’—ÌÕ…. Â·  —Ìœ »«· √ﬂÌœ «·ﬁÌ«„ »–·ﬂø"
+    XTP_IDS_INVALID_NUMBER  "Â–« «·⁄œœ €Ì— ’«·Õ."
+    XTP_IDS_INVALID_FONTSIZE "˛˛ÌÃ» √‰ ÌﬂÊ‰ «·—ﬁ„ »Ì‰ 1 Ê 1638."
+    XTP_IDS_CONFIRM_RESET   "Â·  —Ìœ »«· √ﬂÌœ ≈⁄«œ…  ⁄ÌÌ‰ «· €ÌÌ—«  «· Ì √Ã—Ì  ⁄·Ï '%s' ‘—Ìÿ «·√œÊ« ø"
+    XTP_IDS_BUILTINMENUS    "ﬁÊ«∆„ „÷„¯‰…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "„Œ’’ %d"
+    XTP_IDS_ERROR_BLANKNAME "·« Ì„ﬂ‰ √‰ ÌﬂÊ‰ «”„ ‘—Ìÿ «·√œÊ«  ›«—€«. «ﬂ » «”„« „⁄Ì‰«."
+    XTP_IDS_ERROR_LIMIT     "‰«”› ·ﬁœ Ê’·  ≈·Ï «·‰Â«Ì… «·„Õœœ…"
+    XTP_IDS_ERROR_EXISTS    "ÌÊÃœ ‘—Ìÿ √œÊ«  «”„Â '%s' »‘ﬂ· „”»ﬁ. «ﬂ » «”„« ¬Œ—."
+    XTP_IDS_RENAMETOOLBAR   "≈⁄«œ…  ”„Ì… ‘—Ìÿ √œÊ« "
+    XTP_IDS_CONFIRM_DELETE  "Â·  —Ìœ »«· √ﬂÌœ Õ–› ‘—Ìÿ «·√œÊ«  '%s'ø"
+    XTP_IDS_ALLCOMMANDS     "ﬂ«›… «·√Ê«„—"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        " Œ’Ì’ √‘—ÿ… «·√œÊ« \n& Œ’Ì’ ..."
+    XTP_ID_CUSTOMIZE_RESET  "\n≈⁄«œ…  ⁄ÌÌ‰"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\n≈÷«›… √Ê ≈“«·… «·√“—«—"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Â· √‰  „ √ﬂœ √‰ﬂ  —Ìœ ≈⁄«œ…  ⁄ÌÌ‰  ⁄ÌÌ‰«  «·„›« ÌÕø ≈‰ Â–« «·≈Ã—«¡ ”Ì·€Ì ﬂ«›… «· ⁄ÌÌ‰«  «·„Œ’’… ··„›« ÌÕ ⁄·Ï „” ÊÏ «·ﬂ «»…."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "Â–« «·«Œ ’«— „⁄Ì‰ Õ«·Ì«.\nÂ·  —Ìœ √⁄«œ…  ⁄ÌÌ‰Âø"
+    XTP_IDS_CONFIRM_UPDATE  "”»»  ÕœÌÀ «·»—«„Ã  €Ì— ›Ì ‘—Ìÿ «·√œÊ«  '%s' . Â·  —€» »≈⁄«œ…  ⁄ÌÌ‰ ‘—Ìÿ «·√œÊ«  «·„Œ’’ Ê Õ„Ì·Â „‰ ÃœÌœø"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "ﬂ«›… „·›«  «·’Ê—|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiles(*.Wmf;*.Emf)|*.wmf;*.emf|Icons(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|All Files(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nŒÌ«—«  ‘—Ìÿ «·√œÊ« "
+    XTP_ID_TOOLBAR_HIDE     "\n≈€·«ﬁ"
+    XTP_ID_POPUPBAR_EXPAND  "\nExpand"
+    XTP_ID_MENUBAR_CLOSE    "\n≈€·«ﬁ «·≈ÿ«—"
+    XTP_ID_MENUBAR_RESTORE  "\n«” ⁄«œ… «·≈ÿ«—"
+    XTP_ID_MENUBAR_MINIMIZE "\n ’€Ì— «·≈ÿ«—"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nﬁ·„"
+    XTP_ID_BUTTON_FILL      "\n·Ê‰ «· ⁄»∆…"
+    XTP_ID_BUTTON_GETCOLOR  "\n«‰ ﬁ«¡ ·Ê‰"
+    XTP_ID_BUTTON_LINE      "\n”ÿ—"
+    XTP_ID_BUTTON_RECTANGLE "\n„” ÿÌ·"
+    XTP_ID_BUTTON_CIRCLE    "\nﬁÿ⁄ ‰«ﬁ’"
+    XTP_ID_BUTTON_COPY      "\n‰”Œ"
+    XTP_ID_BUTTON_PASTE     "\n·’ﬁ"
+    XTP_ID_BUTTON_CLEAR     "\n„”Õ"
+    XTP_ID_BUTTON_UNDO      "\n —«Ã⁄"
+    XTP_ID_BUTTON_REDO      "\n≈⁄«œ…"
+    XTP_ID_BUTTON_OPEN      "\n«” Ì—«œ „‰ „·›"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(≈⁄œ«œ «› —«÷Ì ··‰Ÿ«„)"
+    XTP_IDS_ANIMATION_RANDOM "⁄‘Ê«∆Ì…"
+    XTP_IDS_ANIMATION_UNFOLD "„‰ﬂ‘›…"
+    XTP_IDS_ANIMATION_SLIDE "‘—ÌÕ…"
+    XTP_IDS_ANIMATION_FADE  " ÷«ƒ·"
+    XTP_IDS_ANIMATION_NONE  "»·«"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\n≈‰ ﬁ· ≈·Ï „ﬁ»÷ «·„Ã„Ê⁄… «·«Ê·Ï"
+    XTP_ID_WORKSPACE_MOVENEXT "\n≈‰ ﬁ· ≈·Ï „ﬁ»÷ «·„Ã„Ê⁄… «·À«‰Ì…"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\n„ﬁ»÷ „Ã„Ê⁄… «›ﬁÌ ÃœÌœ"
+    XTP_ID_WORKSPACE_NEWVERTICAL "\n„ﬁ»÷ „Ã„Ê⁄… ⁄„ÊœÌ ÃœÌœ"
+    XTP_ID_WORKSPACE_CANCEL "≈·€«¡ «·√„—"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Active Files"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

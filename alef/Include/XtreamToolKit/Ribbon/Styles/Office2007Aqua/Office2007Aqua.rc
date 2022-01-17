@@ -1,0 +1,186 @@
+//Microsoft Developer Studio generated resource script.
+//
+//
+#include "afxres.h"
+
+
+OFFICE2007AQUA_INI      TEXTFILE MOVEABLE PURE  "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007Theme.ini"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+OFFICE2007AQUA_WORKSPACETOPLEFT_BMP   PNG  MOVEABLE PURE  "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_WorkspaceTopLeft.png"                    
+OFFICE2007AQUA_FRAMESYSTEMBUTTON_BMP   PNG  MOVEABLE PURE  "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameSystemButton.png"                    
+OFFICE2007AQUA_TOOLBARFACEHORIZONTAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarFaceHorizontal.png"
+OFFICE2007AQUA_TOOLBARFACEVERTICAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarFaceVertical.png"
+OFFICE2007AQUA_TOOLBAREXPANDBUTTONHORIZONTAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarExpandButtonHorizontal.png"
+OFFICE2007AQUA_TOOLBAREXPANDBUTTONVERTICAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarExpandButtonVertical.png"
+OFFICE2007AQUA_TOOLBARBUTTONS50_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtons50.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPLIT50_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSplit50.png"
+OFFICE2007AQUA_CONTEXTTABGREENGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabGreenGroupButton.png"
+OFFICE2007AQUA_CONTEXTTABORANGEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabOrangeGroupButton.png"
+OFFICE2007AQUA_CONTEXTTABBLUEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabBlueGroupButton.png"
+OFFICE2007AQUA_CONTEXTTABCYANGROUPBUTTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabCyanGroupButtton.png"
+OFFICE2007AQUA_CONTEXTTABPURPLEGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabPurpleGroupButton.png"
+OFFICE2007AQUA_CONTEXTTABREDGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabRedGroupButton.png"
+OFFICE2007AQUA_CONTEXTTABYELLOWGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabYellowGroupButton.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPLITDROPDOWN50_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSplitDropDown50.png"
+OFFICE2007AQUA_RIBBONTAB_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonTab.png"
+OFFICE2007AQUA_CONTEXTTABPURPLE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabPurple.png"
+OFFICE2007AQUA_CONTEXTTABORANGE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabOrange.png"
+OFFICE2007AQUA_CONTEXTTABGREEN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabGreen.png"
+OFFICE2007AQUA_RIBBONGROUPBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupButton.png"
+OFFICE2007AQUA_CONTEXTTABCYAN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabCyan.png"
+OFFICE2007AQUA_CONTEXTTABYELLOW_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabYellow.png"
+OFFICE2007AQUA_CONTEXTTABBLUE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabBlue.png"
+OFFICE2007AQUA_CONTEXTTABRED_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabRed.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPLIT22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSplit22.png"
+OFFICE2007AQUA_TOOLBARBUTTONS22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtons22.png"
+OFFICE2007AQUA_TOOLBARBUTTONCHECKBOX_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonCheckBox.png"
+OFFICE2007AQUA_TOOLBARBUTTONSPIN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonSpin.png"
+OFFICE2007AQUA_TOOLBARBUTTONRADIOBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonRadioButton.png"
+OFFICE2007AQUA_MENUSELECTEDITEM54_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_MenuSelectedItem54.png"
+OFFICE2007AQUA_CONTROLGALLERYPOPUP_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryPopup.png"
+OFFICE2007AQUA_CONTROLGALLERYUP_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryUp.png"
+OFFICE2007AQUA_CONTROLGALLERYDOWN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryDown.png"
+OFFICE2007AQUA_RIBBONGROUPS_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroups.png"
+OFFICE2007AQUA_RIBBONQUICKACCESSBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonQuickAccessButton.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPLITDROPDOWN22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSplitDropDown22.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALSPLITLEFT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialSplitLeft.png"
+OFFICE2007AQUA_RIBBONQUICKACCESSMORE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonQuickAccessMore.png"
+OFFICE2007AQUA_MENUSELECTEDDISABLEDITEM54_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_MenuSelectedDisabledItem54.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALSPLITDROPDOWNRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialSplitDropDownRight.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALSINGLE_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialSingle.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALSPLITCENTER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialSplitCenter.png"
+OFFICE2007AQUA_FRAMECAPTIONBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionButton.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALSPLITRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialSplitRight.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLTHUMBVERTICAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollThumbVertical.png"
+OFFICE2007AQUA_CONTEXTTABGROUPCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabGroupClient.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALLEFT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialLeft.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALSPLITDROPDOWNCENTER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialSplitDropDownCenter.png"
+OFFICE2007AQUA_CONTEXTTABORANGECLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabOrangeClient.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALSPLITDROPDOWNLEFT_BMP   PNG  MOVEABLE  PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialSplitDropDownLeft.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialRight.png"
+OFFICE2007AQUA_CONTEXTTABCYANCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabCyanClient.png"
+OFFICE2007AQUA_CONTEXTTABGREENCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabGreenClient.png"
+OFFICE2007AQUA_CONTEXTTABYELLOWCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabYellowClient.png"
+OFFICE2007AQUA_CONTEXTTABPURPLECLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabPurpleClient.png"
+OFFICE2007AQUA_CONTEXTTABREDCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabRedClient.png"
+OFFICE2007AQUA_CONTEXTTABPURPLEHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabPurpleHeader.png"
+OFFICE2007AQUA_CONTEXTTABBLUECLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabBlueClient.png"
+OFFICE2007AQUA_MENUSELECTEDITEM22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_MenuSelectedItem22.png"
+OFFICE2007AQUA_CONTEXTTABGREENHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabGreenHeader.png"
+OFFICE2007AQUA_CONTEXTTABBLUEHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabBlueHeader.png"
+OFFICE2007AQUA_RIBBONGROUPCLIENT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupClient.png"
+OFFICE2007AQUA_TOOLBARBUTTONSSPECIALCENTER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsSpecialCenter.png"
+OFFICE2007AQUA_CONTEXTTABORANGEHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabOrangeHeader.png"
+OFFICE2007AQUA_RIBBONOPTIONBUTTON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonOptionButton.png"
+OFFICE2007AQUA_CONTEXTTABREDHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabRedHeader.png"
+OFFICE2007AQUA_CONTEXTTABCYANHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabCyanHeader.png"
+OFFICE2007AQUA_CONTEXTTABYELLOWHEADER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabYellowHeader.png"
+OFFICE2007AQUA_MENUSELECTEDDISABLEDITEM22_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_MenuSelectedDisabledItem22.png"
+OFFICE2007AQUA_TOOLBARBUTTONSCOMBODROPDOWN_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonsComboDropDown.png"
+OFFICE2007AQUA_FRAMECAPTIONCLOSE23_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionClose23.png"
+OFFICE2007AQUA_MENUCHECKEDITEMMARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_MenuCheckedItemMark.png"
+OFFICE2007AQUA_FRAMECAPTIONRESTORE23_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionRestore23.png"
+OFFICE2007AQUA_CONTEXTTABGROUPCAPTION_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabGroupCaption.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLARROWGLYPHS_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollArrowGlyphs.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLARROWSVERTICALLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollArrowsVerticalLight.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLARROWSHORIZONTALDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollArrowsHorizontalDark.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLARROWSHORIZONTALLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollArrowsHorizontalLight.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLHORIZONTALDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollHorizontalDark.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLHORIZONTALLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollHorizontalLight.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLTHUMBGRIPPERHORIZONTAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollThumbGripperHorizontal.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLTHUMBHORIZONTAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollThumbHorizontal.png"
+OFFICE2007AQUA_FRAMECAPTIONCLOSE17_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionClose17.png"
+OFFICE2007AQUA_RIBBONGROUPCAPTION_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupCaption.png"
+OFFICE2007AQUA_FRAMETOPLEFT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameTopLeft.png"
+OFFICE2007AQUA_RIBBONGROUPBUTTONICON_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupButtonIcon.png"
+OFFICE2007AQUA_FRAMECAPTIONMAXIMIZE23_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionMaximize23.png"
+OFFICE2007AQUA_FRAMECAPTIONCLOSE13_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionClose13.png"
+OFFICE2007AQUA_FRAMECAPTIONRESTORE17_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionRestore17.png"
+OFFICE2007AQUA_FRAMECAPTIONRESTORE13_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionRestore13.png"
+OFFICE2007AQUA_FRAMECAPTIONMAXIMIZE17_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionMaximize17.png"
+OFFICE2007AQUA_MENUCHECKEDITEM_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_MenuCheckedItem.png"
+OFFICE2007AQUA_FRAMETOPRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameTopRight.png"
+OFFICE2007AQUA_RIBBONGROUPQUICKACCESS_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupQuickAccess.png"
+OFFICE2007AQUA_RIBBONQUICKACCESSFRAME_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonQuickAccessFrame.png"
+OFFICE2007AQUA_RIBBONQUICKACCESSAREA_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonQuickAccessArea.png"
+OFFICE2007AQUA_FRAMECAPTIONMAXIMIZE13_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionMaximize13.png"
+OFFICE2007AQUA_STATUSBARDEVIDER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_StatusBarDevider.png"
+OFFICE2007AQUA_FRAMECAPTIONMINIMIZE23_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionMinimize23.png"
+OFFICE2007AQUA_TOOLBARBUTTONDROPDOWNGLYPH_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ToolbarButtonDropDownGlyph.png"
+OFFICE2007AQUA_STATUSBARSEPARATOR_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_StatusBarSeparator.png"
+OFFICE2007AQUA_POPUPBARFRAME_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_PopupBarFrame.png"
+OFFICE2007AQUA_FRAMECAPTIONMINIMIZE17_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionMinimize17.png"
+OFFICE2007AQUA_FRAMECAPTIONMINIMIZE13_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameCaptionMinimize13.png"
+OFFICE2007AQUA_STATUSBARGRIPPER_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_StatusBarGripper.png"
+OFFICE2007AQUA_STATUSBARLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_StatusBarLight.png"
+OFFICE2007AQUA_STATUSBARDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_StatusBarDark.png"
+OFFICE2007AQUA_FRAMEBOTTOMRIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameBottomRight.png"
+OFFICE2007AQUA_FRAMEBOTTOMLEFT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameBottomLeft.png"
+OFFICE2007AQUA_RIBBONTABSEPARATOR_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonTabSeparator.png"
+OFFICE2007AQUA_CONTEXTTABSEPARATOR_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ContextTabSeparator.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLTHUMBGRIPPERVERTICAL_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollThumbGripperVertical.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLVERTICALLIGHT_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollVerticalLight.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLARROWSVERTICALDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollArrowsVerticalDark.png"
+OFFICE2007AQUA_CONTROLGALLERYSCROLLVERTICALDARK_BMP   PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ControlGalleryScrollVerticalDark.png"
+OFFICE2007AQUA_FRAMETOPCENTER_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_FrameTopCenter.png"
+OFFICE2007AQUA_RIBBONSYSTEMMENU_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonSystemMenu.png"
+OFFICE2007AQUA_RIBBONSYSTEMMENUBUTTON_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonSystemMenuButton.png"
+OFFICE2007AQUA_MENUSPLITDROPDOWN_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_MenuSplitDropDown.png"
+OFFICE2007AQUA_MENUPOPUPGLYPH_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_MenuPopupGlyph.png"
+
+OFFICE2007AQUA_RIBBONGROUPSSCROLLLEFT_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupsScrollLeft.png"
+OFFICE2007AQUA_RIBBONGROUPSSCROLLLEFTGLYPH_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupsScrollLeftGlyph.png"
+OFFICE2007AQUA_RIBBONGROUPSSCROLLRIGHT_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupsScrollRight.png"
+OFFICE2007AQUA_RIBBONGROUPSSCROLLRIGHTGLYPH_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonGroupsScrollRightGlyph.png"
+OFFICE2007AQUA_SHORTCUTBARITEMS_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_ShortcutBarItems.png"
+
+OFFICE2007AQUA_RIBBONQUICKACCESSAREADWM_BMP PNG  MOVEABLE PURE "Ribbon\\Styles\\Office2007Aqua\\res\\Office2007_RibbonQuickAccessAreaDwm.png"
+
+#ifdef _XTP_INCLUDE_VERSION
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,3,0
+ PRODUCTVERSION 11,1,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "May 24, 2007\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Office 2007 Aqua Ribbon Style\0"
+            VALUE "FileVersion", "11, 1, 3, 0\0"
+            VALUE "InternalName", "Office2007Aqua.dll\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Office2007Aqua.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Office 2007 Aqua Style for Xtreme RibbonBar\0"
+            VALUE "ProductVersion", "11, 1, 3, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // _XTP_INCLUDE_VERSION

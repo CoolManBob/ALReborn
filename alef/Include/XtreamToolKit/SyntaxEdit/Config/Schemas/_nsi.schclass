@@ -1,0 +1,218 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 		lexClass:
+//			name		= c_CPPString
+//		+	parent		= c_CPP
+//		+	parent:dyn	= c_CPP
+
+//		+	children		= 0
+//		+	children		= class1, class2, ...
+
+//		+	previous:class			=	
+//		+	previous:tag			=	
+//		+	previous:tag:separators	=	
+
+//		+	start:class		= 
+//		+	start:Tag		= '"'
+
+//		+	skip:Tag		= '\"'
+
+//		+	end:class		= //
+//		+	end:Tag			= '"'
+//		+	end:separators	= ' '
+
+//		+	Token:tag		= 'if', 'for', 'while', 'do'
+//		+	Token:start:separators	= 
+//		+	Token:end:separators	= 
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+/////////////////////////////////////////////////////////////////////////
+
+/// Nullsoft Installer configuration file ///	
+lexClass:
+	parent:file		= <*.nsi>
+	name			= c_NSI
+	//caseSensitive	= 1
+	txt:colorFG	= 0x000000
+
+lexClass:	
+	name		= c_NSICommentSL
+	parent:dyn	= c_NSI, c_NSIFunctionBlock, c_NSISectionBlock
+	children	= c_URL		
+	start:tag	=';'
+	skip:Tag	= '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:tag		= @eol
+	txt:colorFG	= 0x00A000
+
+lexClass: 	
+	name			= c_String	
+	parent:dyn		= c_NSI
+	children		= c_NSIVars
+	start:Tag		= '"'
+	skip:Tag		= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag			= '"', @eol
+	txt:colorFG		= 0xE00000
+
+lexClass:
+	name		= c_NSIFunctionBlock_Start		
+	parent		= c_NSI	
+	children	= c_String	
+	start:Tag	= 'Function'	
+	end:Separators	= @eol
+	txt:colorFG	= 0x0000FF
+	
+lexClass:
+	name		= c_NSIFunctionBlock_End
+	parent		= c_NSI, c_NSIFunctionBlock
+	children	= 0	
+	start:Tag	= 'FunctionEnd'	
+	end:Separators	= @eol
+	txt:colorFG	= 0x0000FF
+
+lexClass:
+	name		= c_NSIFunctionBlock
+	parent		= c_NSI
+	children	= c_NSIFunctionBlock_End		
+	start:CLASS	= c_NSIFunctionBlock_Start	
+	end:CLASS	= c_NSIFunctionBlock_End	
+	Collapsable	= 1 
+	txt:colorFG	= 0x909090
+
+lexClass:
+	name		= c_NSISectionBlock_Start		
+	parent		= c_NSI
+	children	= c_String	
+	start:Tag	= 'Section'	
+	end:Separators	= @eol
+	txt:colorFG	= 0x0000FF
+	
+lexClass:
+	name		= c_NSISectionBlock_End		
+	parent		= c_NSI, c_NSISectionBlock
+	children	= 0	
+	start:Tag	= 'SectionEnd'	
+	end:Separators	= @eol
+	txt:colorFG	= 0x0000FF
+
+lexClass:
+	name		= c_NSISectionBlock	
+	parent:dyn	= c_NSI
+	start:CLASS	= c_NSISectionBlock_Start	
+	end:CLASS	= c_NSISectionBlock_End	
+	Collapsable	= 1 
+	txt:colorFG	= 0x909090
+
+lexClass:	
+	name		= c_NSIAttributes
+	ParseOnScreen	= 1
+	parent:Dyn	= c_NSI, c_NSISectionBlock, c_NSIFunctionBlock
+	children	= 0	
+    // General installer configuration
+	token:tag	= 'OutFile', 'Name', 'Caption', 'SubCaption', 'BrandingText' 
+	token:tag	= 'Icon', 'WindowIcon', 'BGGradient', 'SilentInstall', 'SilentUnInstall'
+	token:tag	= 'CRCCheck', 'MiscButtonText', 'InstallButtonText', 'FileErrorText'
+	token:tag	= 'SetCompressor', 'LoadLanguageFile'
+    // Install directory configuration
+	token:tag	= 'InstallDirRegKey', 'InstallDir'
+    // License page configuration
+	token:tag	= 'LicenseText', 'LicenseData'
+    // Component page configuration
+	token:tag	= 'ComponentText', 'InstType', 'EnabledBitmap', 'DisabledBitmap', 'SpaceTexts'
+    // Directory page configuration
+	token:tag	= 'DirShow', 'DirText', 'AllowRootDirInstall'
+    // Install page configuration
+	token:tag	= 'InstallColors', 'InstProgressFlags', 'AutoCloseWindow'
+    token:tag	= 'ShowInstDetails', 'DetailsButtonText', 'CompletedText'
+    // Uninstall configuration
+	token:tag	= 'UninstallText', 'UninstallIcon', 'UninstallCaption'
+	token:tag	= 'UninstallSubCaption', 'ShowUninstDetails', 'UninstallButtonText'
+
+	token:start:separators	= ' ', '\t', @eol
+	token:end:separators	= ' ', '\t', @eol
+	
+	txt:colorFG	= 0x0000FF
+	txt:bold = 1
+
+lexClass:	
+	name		= c_NSIInstructions
+	ParseOnScreen	= 1
+	parent:Dyn	= c_NSI, c_NSISectionBlock, c_NSIFunctionBlock
+	children	= 0	
+    // General purpose, basic instructions
+	token:tag	= 'SetOutPath', 'File', 'Exec', 'ExecWait', 'ExecShell' 
+	token:tag	= 'Rename', 'Delete', 'RMDir'
+    // Registry, INI file reading/writing/deleting instructions
+	token:tag	= 'WriteRegStr', 'WriteRegExpandStr', 'WriteRegDWORD', 'WriteRegBin', 'WriteINIStr' 
+	token:tag	= 'ReadRegStr', 'ReadRegDWORD', 'ReadINIStr', 'ReadEnvStr'
+	token:tag	= 'ExpandEnvStrings'
+    token:tag	= 'DeleteRegValue', 'DeleteRegKey', 'DeleteINISec', 'DeleteINIStr'
+	token:tag	= 'EnumRegKey', 'EnumRegValue'
+    // General purpose, advanced instructions
+	token:tag	= 'CreateDirectory', 'CopyFiles', 'SetFileAttributes' 
+	token:tag	= 'CreateShortCut', 'GetTempFileName'
+	token:tag	= 'CallInstDLL', 'RegDLL', 'UnRegDLL'
+	token:tag	= 'GetFullPathName', 'SearchPath'
+	token:tag	= 'GetDLLVersion', 'GetDLLVersionLocal'
+	token:tag	= 'GetFileTime', 'GetFileTimeLocal', 'Nop'
+    // Branching, flow control, error checking, user interaction, etc instructions
+	token:tag	= 'Goto', 'Call', 'Return', 'IfErrors', 'ClearErrors' 
+	token:tag	= 'SetErrors', 'FindWindow', 'SendMessage', 'IsWindow'
+	token:tag	= 'IfFileExists', 'MessageBox'
+	token:tag	= 'StrCmp', 'IntCmp', 'IntCmpU'
+	token:tag	= 'Abort', 'Quit'
+	token:tag	= 'GetFunctionAddress', 'GetLabelAddress', 'GetCurrentAddress'
+    // File and directory i/o instructions
+	token:tag	= 'FindFirst', 'FindNext', 'FindClose'
+	token:tag	= 'FileOpen', 'FileClose', 'FileRead', 'FileWrite', 'FileSeek'
+	token:tag	= 'FileReadByte', 'FileWriteByte'
+    // Uninstaller instructions
+	token:tag	= 'WriteUninstaller'
+    // Misc instructions
+	token:tag	= 'SetDetailsView', 'SetDetailsPrint', 'SetAutoClose'
+	token:tag	= 'DetailPrint', 'SetShellVarContext', 'Sleep'
+	token:tag	= 'BringToFront', 'HideWindow'
+	token:tag	= 'StrCpy', 'StrLen', 'Push', 'Pop', 'Exch', 'IntOp', 'IntFmt'
+    // Rebooting support
+	token:tag	= 'Reboot', 'IfRebootFlag', 'SetRebootFlag'
+    // Install Logging Instructions
+	token:tag	= 'LogSet', 'LogText'
+    // Section Management
+	token:tag	= 'SectionSetFlags', 'SectionGetFlags'
+	token:tag	= 'SectionSetText', 'SectionGetText'
+
+	token:start:separators	= ' ', '\t', @eol
+	token:end:separators	= ' ', '\t', @eol
+
+	txt:colorFG	= 0x0022FF
+
+
+lexClass:	
+	name		= c_NSIFunctionKeywords
+	ParseOnScreen	= 1
+	parent	    = c_NSIFunctionBlock, c_NSISectionBlock
+	children	= 0	
+	token:tag	= 'Section', 'SectionIn', 'SectionDivider', 'AddSize' 
+
+    token:start:separators	= ' ', '\t', @eol
+	token:end:separators	= ' ', '\t', @eol
+
+	txt:colorFG	= 0x0022FF
+
+lexClass: 	
+	name			= c_NSIVars
+	parent:dyn		= c_NSI, c_NSIFunctionBlock, c_NSISectionBlock
+	start:Tag		= '$'
+	end:separators	= @specs, ' ', '\t', @eol
+	txt:colorFG		= 0xCCAA00
+

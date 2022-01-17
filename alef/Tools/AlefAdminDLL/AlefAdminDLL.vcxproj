@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Chinese|Win32">
+      <Configuration>Debug Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug English|Win32">
+      <Configuration>Debug English</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Japanese|Win32">
+      <Configuration>Debug Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Chinese|Win32">
+      <Configuration>Release Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release English|Win32">
+      <Configuration>Release English</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese DLL|Win32">
+      <Configuration>Release Japanese DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese|Win32">
+      <Configuration>Release Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Profile)|Win32">
+      <Configuration>Release(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{89812756-7150-4A0C-B764-EF6AF3B96ACB}</ProjectGuid>
+    <RootNamespace>AlefAdminDLL</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31727.243</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)include\Lua;$(SolutionDir)Modules\AUtility;$(SolutionDir)SoundLibrary\Include;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)WebzenAuth\Include;$(SolutionDir)WebzenShopScript\Include;$(SolutionDir)WebzenShopScript\Include\Interface;$(SolutionDir)Include\DX9;$(SolutionDir)Include\XtreamToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_EXPORT_;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)\Include\XtreamToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rwcore.lib;rplogo.lib;rtfsyst.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModulesD.lib;AgpModulesD.lib;AgcModulesD.lib;PatchZipLibD.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuKbHookD.lib;HanGameForClientD.lib;DbgHelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLLd.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw\lib\debug;$(SolutionDir)lib\debug;$(SolutionDir)lib\debug\STLPort_32bit;$(SolutionDir)lib\debug\XTreamToolKit;$(SolutionDir)SoundLibrary\FMOD\Lib;$(SolutionDir)WebzenAuth\Lib;$(SolutionDir)WebzenShopScript\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName)D.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <ImportLibrary>$(SolutionDir)Lib/Debug/AlefAdminDLLd.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)include\Lua;$(SolutionDir)Modules\AUtility;$(SolutionDir)Include\XtreamToolKit;$(SolutionDir)SoundLibrary\Include;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)WebzenAuth\Include;$(SolutionDir)WebzenShopScript\Include;$(SolutionDir)WebzenShopScript\Include\Interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ADMIN_EXPORT_;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)\Include\XtreamToolKit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuKbHook.lib;HanGameForClient.lib;dbghelp.lib;WebzenAuth.lib;WebzenShopScript.lib;ShopListManager_VS2005_NOSP_MB.lib;FileDownloader_VS2005_NOSP_MB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw\lib\release;$(SolutionDir)lib\release;$(SolutionDir)lib\release\STLPort_32bit;$(SolutionDir)lib\Release\XTreamToolKit;$(SolutionDir)SoundLibrary\FMOD\Lib;$(SolutionDir)WebzenAuth\Lib;$(SolutionDir)WebzenShopScript\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Release/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>_ADMIN_EXPORT_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Release/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_ADMIN_EXPORT_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;rtfsyst.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModulesD.lib;AgpModulesD.lib;AgcModulesD.lib;PatchZipLibD.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuKbHookD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName)D.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Debug/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_ADMIN_EXPORT_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuKbHook.lib;Lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw\lib\release;$(SolutionDir)lib\release;$(SolutionDir)lib\release\DynCode_32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Release/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_ADMIN_EXPORT_;_AREA_CHINA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;rtfsyst.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModulesD.lib;AgpModulesD.lib;AgcModulesD.lib;PatchZipLibD.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuDynCodeClientD.lib;AuKbHookD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;$(SolutionDir)lib/debug;$(SolutionDir)lib/debug/DynCode_32bit;$(SolutionDir)lib/debug/STLPort_32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Debug/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_ADMIN_EXPORT_;_AREA_CHINA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuDynCodeClient.lib;AuKbHook.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/release;$(SolutionDir)lib/release/DynCode_32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Release/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\svn\source_repos\Xtreme ToolkitPro v11.1.3\Source;$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)RW\Include;$(SolutionDir)include\Lua;$(SolutionDir)Client\Lua;D:\svn\source_repos\trunk2\Alef\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_ADMIN_EXPORT_;_AREA_JAPAN_;_JAPAN;NO_GAMEGUARD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);D:\svn\source_repos\Xtreme ToolkitPro v11.1.3\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;rtfsyst.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModulesD.lib;AgpModulesD.lib;AgcModulesD.lib;PatchZipLibD.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuDynCodeClientD.lib;AuKbHookD.lib;HanGameForClientD.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;$(SolutionDir)lib/debug;$(SolutionDir)lib/debug/DynCode_32bit;$(SolutionDir)lib/debug/STLPort_32bit;D:\svn\source_repos\Xtreme ToolkitPro v11.1.3\lib\vc80;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Debug/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_ADMIN_EXPORT_;_AREA_JAPAN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuDynCodeClient.lib;AuKbHook.lib;Lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/release;$(SolutionDir)lib/release/DynCode_32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Release/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'">
+    <PreBuildEvent>
+      <Message>헤더파일을 복사합니다.</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "AlefAdminAPI.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)include\Lua;D:\svn\source_repos\Xtreme ToolkitPro v11.1.3\Source;D:\svn\source_repos\trunk2\Alef\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_ADMIN_EXPORT_;_AREA_JAPAN_;_JAPAN;NO_GAMEGUARD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);D:\svn\source_repos\Xtreme ToolkitPro v11.1.3\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuDynCodeClient.lib;AuKbHook.lib;dbghelp.lib;HanGameForClient.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin/AlefAdminDLL.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/release;$(SolutionDir)lib/release;$(SolutionDir)lib\release\STLPort_32bit;D:\svn\source_repos\Xtreme ToolkitPro v11.1.3\lib\vc80;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\AlefAdminDLL.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)Lib/Release/AlefAdminDLL.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AlefAdminAbout.cpp" />
+    <ClCompile Include="AlefAdminCharacter.cpp" />
+    <ClCompile Include="AlefAdminCharMacro.cpp" />
+    <ClCompile Include="AlefAdminDLL.cpp" />
+    <ClCompile Include="AlefAdminGuild.cpp" />
+    <ClCompile Include="AlefAdminItem.cpp" />
+    <ClCompile Include="AlefAdminMain.cpp" />
+    <ClCompile Include="AlefAdminManager.cpp" />
+    <ClCompile Include="AlefAdminNotice.cpp" />
+    <ClCompile Include="AlefAdminOption.cpp" />
+    <ClCompile Include="AlefAdminQuest.cpp" />
+    <ClCompile Include="AlefAdminSkill.cpp" />
+    <ClCompile Include="AlefAdminStringManager.cpp" />
+    <ClCompile Include="AlefAdminTitle.cpp" />
+    <ClCompile Include="AlefAdminUser.cpp" />
+    <ClCompile Include="AlefAdminWC.cpp" />
+    <ClCompile Include="AlefAdminXTExtension.cpp" />
+    <ClCompile Include="CDataManager.cpp" />
+    <ClCompile Include="ConfigManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlefAdminAbout.h" />
+    <ClInclude Include="AlefAdminAPI.h" />
+    <ClInclude Include="AlefAdminCharacter.h" />
+    <ClInclude Include="AlefAdminCharMacro.h" />
+    <ClInclude Include="AlefAdminDLL.h" />
+    <ClInclude Include="AlefAdminGuild.h" />
+    <ClInclude Include="AlefAdminItem.h" />
+    <ClInclude Include="AlefAdminMain.h" />
+    <ClInclude Include="AlefAdminManager.h" />
+    <ClInclude Include="AlefAdminNotice.h" />
+    <ClInclude Include="AlefAdminOption.h" />
+    <ClInclude Include="AlefAdminQuest.h" />
+    <ClInclude Include="AlefAdminSkill.h" />
+    <ClInclude Include="AlefAdminStringManager.h" />
+    <ClInclude Include="AlefAdminTitle.h" />
+    <ClInclude Include="AlefAdminUser.h" />
+    <ClInclude Include="AlefAdminWC.h" />
+    <ClInclude Include="AlefAdminXTExtension.h" />
+    <ClInclude Include="CDataManager.h" />
+    <ClInclude Include="ConfigManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AlefAdminDLL.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
+    <ResourceCompile Include="AlefAdminDLL_CHN.rc">
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">0x0804</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">0x0804</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">0x0804</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">0x0804</Culture>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">0x0804</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">0x0409</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'">0x0804</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">0x0804</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">0x0804</Culture>
+    </ResourceCompile>
+    <ResourceCompile Include="AlefAdminDLL_ENG.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">0x0409</Culture>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">0x0409</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">0x0409</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">0x0409</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">0x0409</Culture>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">0x0409</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release Japanese DLL|Win32'">0x0409</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">0x0409</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">0x0409</Culture>
+    </ResourceCompile>
+    <ResourceCompile Include="AlefAdminDLL_JPN.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">true</ExcludedFromBuild>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">0x0409</Culture>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AlefAdminDLL.def" />
+    <None Include="res\AlefAdminDLL.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="AlefAdminMacro.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AgcModules\AgcModules.vcxproj">
+      <Project>{1fbf53c3-9711-4bb9-a5c1-db7e06a6301f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AgpModules\AgpModules.vcxproj">
+      <Project>{55deee27-6b81-4be1-bbb0-fd4894e6806d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApModules\ApModules.vcxproj">
+      <Project>{a5c4630c-e440-4767-87cc-6b53905d260e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AlefAdminDLL.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

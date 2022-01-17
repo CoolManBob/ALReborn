@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug(Profile)|Win32">
+      <Configuration>Debug(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Profile)|Win32">
+      <Configuration>Release(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA63D659-C264-4B53-AF71-F43C675DDF52}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31727.243</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WINDLL;_AFXDLL;_MBCS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>mpr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin\AuResourceKeeper.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)AuResourceKeeper.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\debug\$(ProjectName)D.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "$(SolutionDir)Modules\AUtility\AuResourceKeeper\AuRK_API.h" "$(SolutionDir)include"
+copy "$(SolutionDir)Modules\AUtility\AuResourceKeeper\RKDefine.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WINDLL;_AFXDLL;_MBCS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>mpr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin\Release\AuResourceKeeper.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\Release\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "$(SolutionDir)Modules\AUtility\AuResourceKeeper\AuRK_API.h" "$(SolutionDir)include"
+copy "$(SolutionDir)Modules\AUtility\AuResourceKeeper\RKDefine.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WINDLL;_AFXDLL;_MBCS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>mpr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin\AuResourceKeeper.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)AuResourceKeeper.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\debug\$(ProjectName)D.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "$(SolutionDir)Modules\AUtility\AuResourceKeeper\AuRK_API.h" "$(SolutionDir)include"
+copy "$(SolutionDir)Modules\AUtility\AuResourceKeeper\RKDefine.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WINDLL;_AFXDLL;_MBCS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>mpr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin\Release\AuResourceKeeper.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(SolutionDir)lib\Release\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>attrib -r $(SolutionDir)include\*.h
+
+copy "$(SolutionDir)Modules\AUtility\AuResourceKeeper\AuRK_API.h" "$(SolutionDir)include"
+copy "$(SolutionDir)Modules\AUtility\AuResourceKeeper\RKDefine.h" "$(SolutionDir)include"
+
+attrib +r $(SolutionDir)include\*.h
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\AuHistoryDlg.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\AuLoginDlg.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\AuResourceKeeper.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\AuRKMainDlg.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\AuRKSingleton.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\AuSelectDlg.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\AuUsersDlg.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\FolderDlg.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\Md5.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\md5_crypt.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\MenuChecker.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\ProgressBar.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\ProgressDlg.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\RKEntryManager.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\RKParser.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\RKRepository.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\RKUserManager.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\RKWriter.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuResourceKeeper\StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\AuHistoryDlg.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\AuLoginDlg.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\AuResourceKeeper.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\AuRKMainDlg.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\AuRKSingleton.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\AuRK_API.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\AuSelectDlg.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\AuUsersDlg.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\FolderDlg.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\Md5.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\MenuChecker.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\ProgressBar.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\ProgressDlg.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\resource.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\RKDefine.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\RKEntryManager.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\RKInclude.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\RKParser.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\RKRepository.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\RKUserManager.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\RKWriter.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuResourceKeeper\StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Modules\AUtility\AuResourceKeeper\AuResourceKeeper.def" />
+    <None Include="..\..\Modules\AUtility\AuResourceKeeper\res\AuResourceKeeper.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Modules\AUtility\AuResourceKeeper\AuResourceKeeper.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Modules\AUtility\AuResourceKeeper\bitmap1.bmp" />
+    <Image Include="..\..\Modules\AUtility\AuResourceKeeper\toolbar1.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

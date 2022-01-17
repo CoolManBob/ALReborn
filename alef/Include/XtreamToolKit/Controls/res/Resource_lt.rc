@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_LITHUANIAN, SUBLANG_LITHUANIAN
+#pragma code_page(1257)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dienos patarimas"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Uþdaryti",IDOK,221,136,50,14
+    CONTROL         "Rodyti patarimus apie",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,120,10
+    PUSHBUTTON      "Kitas patarimas",XT_IDC_BTN_DAYTIP_NEXT,156,136,57,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Pasirinktinai"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Spalvos:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Atspalvis:",XT_IDC_TXT_HUE,3,108,31,8
+    EDITTEXT        XT_IDC_EDIT_HUE,38,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,62,105,
+                    10,14
+    LTEXT           "Sodrumas:",XT_IDC_TXT_SAT,3,125,34,8
+    EDITTEXT        XT_IDC_EDIT_SAT,38,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,62,122,
+                    10,14
+    LTEXT           "Ryðkumas:",XT_IDC_TXT_LUM,3,140,34,8
+    EDITTEXT        XT_IDC_EDIT_LUM,38,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,62,137,
+                    10,14
+    LTEXT           "Raudona:",XT_IDC_TXT_RED,75,108,32,8
+    EDITTEXT        XT_IDC_EDIT_RED,109,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,133,105,
+                    11,14
+    LTEXT           "Þalia:",XT_IDC_TXT_GREEN,75,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,109,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,133,122,
+                    11,14
+    LTEXT           "Mëlyna:",XT_IDC_TXT_BLUE,75,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,109,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,133,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standartas"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Spalvos:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Sutvarko langus nepersidengian?iomis plok?tumomis"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Pasirinkimo langas",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Aktyvinimas",XT_IDC_BTN_ACTIVATE,226,7,72,14
+    PUSHBUTTON      "Gerai",IDOK,226,24,72,14
+    PUSHBUTTON      "Áraðyti",XT_IDC_BTN_SAVE,226,41,72,14
+    PUSHBUTTON      "Uþdaryti langà",XT_IDC_BTN_CLOSEWINDOWS,226,58,72,14
+    PUSHBUTTON      "Lygiuoti ástriþai",XT_IDC_BTN_CASCADE,226,75,72,14
+    PUSHBUTTON      "Lygiuoti horizontaliai",XT_IDC_BTN_TILEHORZ,226,92,72,14
+    PUSHBUTTON      "Lygiuoti vertikaliai",XT_IDC_BTN_TILEVERT,226,109,72,14
+    PUSHBUTTON      "Maksimaliai sumaþinti",XT_IDC_BTN_MINIMIZE,226,126,72,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Maþos piktogramos",                XT_IDC_SMALLICON
+        MENUITEM "Didelës piktogramos",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Anuliuoti",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cut",                        ID_EDIT_CUT
+        MENUITEM "Copy",                       ID_EDIT_COPY
+        MENUITEM "Paste",                      ID_EDIT_PASTE
+        MENUITEM "Naikinti",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Þymëti viskà",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Rûðiuoti didëjimo tvarka",              XT_IDC_SORTASC
+        MENUITEM "Rûðiuoti maþëjimo tvarka",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Lygiuoti"
+        BEGIN
+            MENUITEM "Kairioji lygiuotë",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Centravimas",                XT_IDC_ALIGNCENTER
+            MENUITEM "Deðinioji lygiuotë",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Naujas"
+    XT_IDC_BTN_DELETE       "Naikinti"
+    XT_IDC_BTN_UP           "Pakelti"
+    XT_IDC_BTN_DOWN         "Nøleisti"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Vardas"
+    XT_IDS_SIZE             "Dydis"
+    XT_IDS_TYPE             "Tipas"
+    XT_IDS_MODIFIED         "Modifikuota"
+    XT_IDS_COLOR_AUTO       "Automatinis"
+    XT_IDS_COLOR_CUST       "Tinkinti..."
+    XT_IDS_SELDIR           "Pasirinkti aplank?"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Visi failai (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Aplanko pavadinimas:"
+    XT_IDS_CLICKKEEPOPEN    "Spustelëkite smeigtukà"
+    XT_IDS_SE_0             "The operating system is out of memory or resources."
+    XT_IDS_SE_ERR_FNF       "The specified file was not found."
+    XT_IDS_SE_ERR_PNF       "The specified path was not found."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "The operating system denied access to the specified file."
+    XT_IDS_SE_ERR_OOM       "There was not enough memory to complete the operation."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "The .exe file is invalid (non-Win32® .exe or error in .exe image)."
+    XT_IDS_SE_ERR_SHARE     "A sharing violation occurred."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "The file name association is incomplete or invalid."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "The DDE transaction could not be completed because the request timed out."
+    XT_IDS_SE_ERR_DDEFAIL   "The DDE transaction failed."
+    XT_IDS_SE_ERR_DDEBUSY   "The DDE transaction could not be completed because other DDE transactions were being processed."
+    XT_IDS_SE_ERR_NOASSOC   "There is no application associated with the given file name extension."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "The specified dynamic-link library was not found."
+    XT_IDS_SE_ERR_UNKOWN    "An unknown error number %d occured."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "R??iuoti did?jan?ia tvarka\nR??iuoti did?jan?ia tvarka"
+    XT_IDC_SORTDSC          "R??iuoti ma??jan?ia tvarka\nR??iuoti ma??jan?ia tvarka"
+    XT_IDC_ALIGNLEFT        "Nustatoma kairioji pastraipos lygiuotë.\nKairioji lygiuotë"
+    XT_IDC_ALIGNCENTER      "Pastraipa centruojama.\nCentravimas"
+    XT_IDC_ALIGNRIGHT       "Pastraipa centruojama.\nCentravimas"
+    XT_IDC_LARGEICON        "Didelës piktogramos\nDidelës piktogramos"
+    XT_IDC_SMALLICON        "Maþos piktogramos\nMaþos piktogramos"
+    XT_IDC_REMOVEITEM       "Ðalinti ið Outlook juostos"
+    XT_IDC_RENAMEITEM       "Pervardyti nuorodà"
+    XT_IDC_REMOVEGROUP      "Ðalinti grupæ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Pervardyti grupæ"
+    XT_IDS_HEX              "Ðeð"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Standartinës spalvos"
+    XT_IDS_TIPTEXT          "Patarimo tekstas"
+    XT_IDS_DIDYOUKNOW       "Ar jûs þinojote..."
+    XT_IDS_FILE_ABSENT      "Ðio failo nëra."
+    XT_IDS_FILE_CORRUPT     "Skaitant failà ávyko klaida."
+    XT_IDS_COLOR_CAPTION    "Spalvos"
+    XT_IDS_NEW              "Naujas"
+    XT_IDS_CURRENT          "Dabartinis"
+    XT_IDS_DIRECTORIES      "Katalogai:"
+    XT_IDS_FILES            "Failai:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "Gerai"
+    XTP_IDS_TASK_YES          "Taip"
+    XTP_IDS_TASK_NO           "Ne"
+    XTP_IDS_TASK_RETRY        "Kartoti"
+    XTP_IDS_TASK_CANCEL       "Atðaukti"
+    XTP_IDS_TASK_CLOSE        "Uþdaryti"
+    XTP_IDS_TASK_SEE_DETAILS  "Rodyti iðsamiai"
+    XTP_IDS_TASK_HIDE_DETAILS "Slëpti detales"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

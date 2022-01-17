@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="BugSlayer">
+      <UniqueIdentifier>{ad86db5f-7305-45cc-8742-bb35371aae55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Client\AlefClient\libHGPSHELP.hpp">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\LuaFunc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\MainWindow.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\MyEngine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\MyException.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\BugslayerUtil.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\CrashHandler.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\Internal.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\PCH.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\SymbolEngine.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\WarningsOff.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\WarningsOn.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Client\AlefClient\LuaFunc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\MainWindow.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\MyEngine.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\MyException.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\BSUFunctions.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\CrashHandler.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\GetLoadedModules.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\IsNT.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\NT4ProcessInfo.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\PCH.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\TLHELPProcessInfo.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Client\AlefClient\1-Normal-16.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\1-Normal.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\2-Pickup-16.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\2-Pickup.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\3-Attack-16.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\3-Attack.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\4-Event-16.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\4-Event.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\5-SkillMove-16.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\5-SkillMove.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\6-Block-16.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\6-Block.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\7-Repair-16.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\Client\AlefClient\7-Repair.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Client\AlefClient\AlefClient.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Client\AlefClient\Archrlod.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\Client\AlefClient\icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rpplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rpteam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="team.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamdictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamlod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teammaterial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teammatfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamoptimize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teampipes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamplayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamshadow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamskin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamstatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="teamtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9\teamd3d9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9\teammatfxd3d9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9\teamrenderd3d9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9\teamshadowd3d9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9\teamskind3d9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9\teamstaticd3d9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rpteam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="team.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teamdictionary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teamlod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teammaterial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teammatfx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teamoptimize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teampipes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teamplayer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teamshadow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teamskin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teamstatic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teamstream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9\teamd3d9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9\teammatfxd3d9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9\teamrenderd3d9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9\teamshadowd3d9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9\teamskind3d9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9\teamstaticd3d9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

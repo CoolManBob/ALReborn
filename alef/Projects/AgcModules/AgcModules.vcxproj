@@ -1,0 +1,1712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug MFC|Win32">
+      <Configuration>Debug MFC</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug(Profile)|Win32">
+      <Configuration>Debug(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugMFC_Efftool|Win32">
+      <Configuration>DebugMFC_Efftool</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_GM|Win32">
+      <Configuration>Debug_GM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Japan|Win32">
+      <Configuration>Debug_Japan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MFC|Win32">
+      <Configuration>Release MFC</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Profile)|Win32">
+      <Configuration>Release(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMFC_EffTool|Win32">
+      <Configuration>ReleaseMFC_EffTool</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_GM|Win32">
+      <Configuration>Release_GM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Japan|Win32">
+      <Configuration>Release_Japan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{1FBF53C3-9711-4BB9-A5C1-DB7E06A6301F}</ProjectGuid>
+    <RootNamespace>AgcModules</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Japan|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Japan|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_GM|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GM|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFC_Efftool|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MFC|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MFC|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Japan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Japan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_GM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFC_Efftool|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MFC|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug MFC|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.31919.74</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MFC|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MFC|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFC_Efftool|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GM|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_GM|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Japan|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Japan|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)\UiLibrary\Include;$(SolutionDir)Include\DX9;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;$(SolutionDir)WebzenAuth\Include;$(SolutionDir)WebzenShopScript\Include;$(SolutionDir)WebzenShopScript\Include\Interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RWDEBUG;USE_API;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4244;4838;4091;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\DX9;$(SolutionDir)UiLibrary\Include;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;$(SolutionDir)WebzenAuth\Include;$(SolutionDir)WebzenShopScript\Include;$(SolutionDir)WebzenShopScript\Include\Interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_API;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4244;4838;4091;5208;5037;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug MFC|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW/Include;$(SolutionDir)Include/STLport/stlport;$(SolutionDir)Modules\AUtility\AuLua\Lua;$(SolutionDir)Include/DX;$(SolutionDir)\UiLibrary\Include;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;$(SolutionDir)WebzenAuth\Include;$(SolutionDir)WebzenShopScript\Include;$(SolutionDir)WebzenShopScript\Include\Interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RWDEBUG;USE_MFC;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\debug\$(ProjectName)D_MFC.lib</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;$(SolutionDir)lib/debug;$(SolutionDir)lib/debug/STLPort_32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MFC|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\DX;$(SolutionDir)UiLibrary\Include;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;$(SolutionDir)WebzenAuth\Include;$(SolutionDir)WebzenShopScript\Include;$(SolutionDir)WebzenShopScript\Include\Interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_MFC;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\release\$(ProjectName)_MFC.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFC_Efftool|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RWDEBUG;USE_MFC;EFF2_SHOWINFO;EFF2_SHOWLOG;EFF2_SHOWERR;_CALCBOUNDINFO;EFF2_FORTOOL;EFF2_APMEMORY_LOG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\debug\$(ProjectName)D_MFC_Efftool.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/GH /Gh %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RWDEBUG;USE_API;__PROFILE__;ALEF_DLLIMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D_Profile.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_Profile.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_MFC;_MAPTOOL_BUILD_ONLY_;EFF2_SHOWINFO;EFF2_SHOWLOG;EFF2_SHOWERR;_CALCBOUNDINFO;EFF2_FORTOOL;EFF2_APMEMORY_LOG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\release\$(ProjectName)_MFC_Efftool.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GM|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RWDEBUG;USE_API;_GM_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GM|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Japan|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)\UiLibrary\Include;$(SolutionDir)Include\DX;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RWDEBUG;USE_API;_AREA_JAPAN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Japan|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+copy "..\..\Client\AcClientSocket\*.h" "..\..\include"
+copy "..\..\Etc\AcuCreateClump\*.h" "..\..\include"
+copy "..\..\Etc\AcuDeviceCheck\*.h" "..\..\include"
+copy "..\..\Etc\AcuFrameMemory\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuIMDraw\*.inl" "..\..\include"
+copy "..\..\Etc\AcuMyFirewall\*.h" "..\..\include"
+copy "..\..\Etc\AcuObject\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatD3DFx\effect.h" "..\..\include"
+copy "..\..\Etc\AcuRpMatFxEx\*.h" "..\..\include"
+copy "..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" "..\..\include"
+copy "..\..\Etc\AcuRpUVAnimData\*.h" "..\..\include"
+copy "..\..\Etc\AcuTexture\*.h" "..\..\include"
+copy "..\..\Etc\AcuMath\*.h" "..\..\include"
+copy "..\..\Etc\AcuParticleDraw\*.h" "..\..\include"
+copy "..\..\Etc\AcuRtAmbOcclMap\*.h" "..\..\include"
+copy "..\..\Etc\AcuFileAdmin\*.h" "..\..\include"
+copy "..\..\Etc\AcuExportDFF\*.h" "..\..\include"
+copy "..\..\Etc\AcuRWUtil\*.h" "..\..\include"
+
+dir /ad /b "..\..\Modules\AClient" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AClient\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\DX;$(SolutionDir)UiLibrary\Include;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_API;_AREA_JAPAN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Client\AcClientSocket\AcClientSocket.cpp" />
+    <ClCompile Include="..\..\Client\AcClientSocket\AcQueue.cpp" />
+    <ClCompile Include="..\..\Client\AcClientSocket\AcSocketManager.cpp" />
+    <ClCompile Include="..\..\Etc\AcuCreateClump\AcuCreateClump.cpp" />
+    <ClCompile Include="..\..\Etc\AcuDeviceCheck\AcuDeviceCheck.cpp" />
+    <ClCompile Include="..\..\Etc\AcuExportDFF\AcuExportDFF.cpp" />
+    <ClCompile Include="..\..\Etc\AcuFileAdmin\AcuFileAdmin.cpp" />
+    <ClCompile Include="..\..\Etc\AcuFrameMemory\AcuFrameMemory.cpp" />
+    <ClCompile Include="..\..\Etc\AcuIMDraw\AcuIMDraw.cpp" />
+    <ClCompile Include="..\..\Etc\AcuIMDraw\AcuObjecWire.cpp" />
+    <ClCompile Include="..\..\Etc\AcuIMDraw\AgcuBasisGeo.cpp" />
+    <ClCompile Include="..\..\Etc\AcuIMDraw\AgcuVtxType.cpp" />
+    <ClCompile Include="..\..\Etc\AcuMath\AcuMath.cpp" />
+    <ClCompile Include="..\..\Etc\acumath\AcuMathFunc.cpp" />
+    <ClCompile Include="..\..\Etc\acumath\AcuSinTbl.cpp" />
+    <ClCompile Include="..\..\Etc\AcuMyFirewall\AcuMyFirewall.cpp" />
+    <ClCompile Include="..\..\Etc\AcuObject\AcuObject.cpp" />
+    <ClCompile Include="..\..\Etc\AcuParticleDraw\AcuParticleDraw.cpp" />
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.c" />
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\effect.c" />
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\effectStateManager.cpp" />
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\pipeline.c" />
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\rwd3d9.c" />
+    <ClCompile Include="..\..\Etc\AcuRpMatFxEx\AcuRpMatFxEx.c" />
+    <ClCompile Include="..\..\Etc\AcuRpMTexture\MTexture.c" />
+    <ClCompile Include="..\..\Etc\AcuRpMTexture\MTPipeD3D8.c" />
+    <ClCompile Include="..\..\Etc\AcuRpMTexture\MTPipeD3D9.c" />
+    <ClCompile Include="..\..\Etc\AcuRpMTexture\MTStream.c" />
+    <ClCompile Include="..\..\Etc\AcuRpUVAnimData\UVAnimData.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\AcuRtAmbOcclMap.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\body.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug MFC|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugMFC_Efftool|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_GM|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Japan|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release MFC|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseMFC_EffTool|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_GM|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Japan|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\image.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\lmrgbren.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\lmwcren.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\polypack.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\prolog.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\sample.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\struct.c" />
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\vis.c" />
+    <ClCompile Include="..\..\Etc\AcuRWUtil\AgcdGeoTriAreaTbl.c" />
+    <ClCompile Include="..\..\Etc\AcuTexture\AcuTexture.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmAdmin\AgcmAdmin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release MFC|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmAmbOcclMap\AgcmAmbOcclMap.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmAnimation\AgcaAnimation.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmAnimation\AgcmAnimation.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmAnimation\AgcmIntervalAnimAdmin.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmArchlord\AgcmArchlord.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmAuction\AgcmAuction.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmBattleGround\AgcmBattleGround.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmBillInfo\AgcmBillInfo.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcmCamera2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamConstrain.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamDampingForce.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamMode.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamPathWork.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamSpringForce.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCashMall\AgcmCashMall.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcCharacterUtil.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacter.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacterAnimation.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacterCustomize.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacterRide.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacterStream.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmChatting2\AgcmChatting2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmChatting2\CTextFilter.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmConnectManager\AgcmConnectManager.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmCustomizeRender\AgcmCustomizeRender.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmDynamicLightmap\AgcmDynamicLightmap.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffAnim.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffBase.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffBoard.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCamera.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCtrl.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCtrlMng.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffGlobal.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffLight.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffMFrm.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffObj.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffParticleSystem.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffPostFX.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffPublicStructs.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSet.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSetMng.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSound.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTail.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTerrainBoard.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTex.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcmEff2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuBezierForTail.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuBillBoard.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEff2ApMemoryLog.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffAnimUtil.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffD3dVtx.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffIniMng.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffPath.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffTable.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffUtil.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffVBMng.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEffectDataAdmin\AgcaEffectData.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventBank\AgcmEventBank.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventCharCustomize\AgcmEventCharCustomize.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcaEffectSet.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcaEventEffectSound.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffect.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectData.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectList.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectStream.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcuEventEffect.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventGacha\AgcmEventGacha.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventGuild\AgcmEventGuild.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventItemConvert\AgcmEventItemConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventItemRepair\AgcmEventItemRepair.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventManager\AgcmEventManager.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNature\AgcmEventNature.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\AgcmEventNPCDialog.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\CExNPC.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\CExNPCDialog.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\CUiExNPCMsgBoxGrid.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\CUiGridItem.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCTrade\AgcmEventNPCTrade.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventPointLight\AgcmEventPointLight.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventProduct\AgcmEventProduct.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventQuest\AgcmEventQuest.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventRefinery\AgcmEventRefinery.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventShrine\AgcmEventShrine.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventSiegeWarNPC\AgcmEventSiegeWarNPC.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventSkillMaster\AgcmEventSkillMaster.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventTeleport\AgcmEventTeleport.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmExportResource\AgcmExportResource.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmExportResource\TemplateLoader.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmFont\AgcmFont.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmFPSManager\AgcmFPSManager.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmGeometryDataManager\AgcmGeometryDataManager.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmGlare\AcuBlur.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmGlare\AgcmGlare.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmGlyph\AgcmGlyph.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmGrass\AgcmGrass.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmGuild\AgcmGuild.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItemConvert\AgcmItemConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcaItemClump.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcdItem.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItem.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemEffectFinder.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemEquip.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemEvolutionTable.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemInventory.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemStream.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmLensFlare\AgcmLensFlare.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmLODManager\AgcmLODList.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmLODManager\AgcmLODManager.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmLogin\AgcmLogin.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AcMapLoader.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AcMaterialList.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AcTextureList.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AgcmMap.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AgcmMapImport.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\Bmp.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\DWSector.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\DWSStream.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\GetArg.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMinimap\AcUIMinimap.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMinimap\AcUIRaider.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMinimap\AcUIWorldmap.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmMinimap\AgcmMinimap.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmNatureEffect\AgcmNatureEffect.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmObject\AgcmObject.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmObject\AgcmObjectList.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmObject\AgcuObject.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmOcTree\AgcmOcTree.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AcUtils.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AgcEngine.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AgcModule.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AgcWindow.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AuRwImage.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\MagImAtomic.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmParty\AgcmParty.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmPostFX\AgcmPostFX.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmPreLODManager\AgcmPreLODAdmin.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmPreLODManager\AgcmPreLODManager.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmPrivateTrade\AgcmPrivateTrade.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmProductMed\AgcmProductMed.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmProduct\AgcmProduct.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmQuest\AgcmQuest.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmRecruit\AcUIRecruit.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmRecruit\AcUIRecruitWrite.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmRecruit\AgcmRecruit.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmRefinery\AgcmRefinery.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmRegistryManager\AgcmRegistryManager.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmRender\AgcmRender.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmRender\AgcmRenderType.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmResourceLoader\AgcmResourceLoader.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmReturnToLogin\AgcmReturnToLogin.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmRide\AgcmRide.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmShadow2\AgcmShadow2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmShadowmap\AgcmShadowmap.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmShadow\AgcmShadow.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmSiegeWar\AgcmSiegeWar.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmSkill\AgcmSkill.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmSkill\AgcmSkillMastery.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmSkill\AgcmSkillStream.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmSound\AgcmSound.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmStartupEncryption\AgcmStartupEncryption.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTargeting\AgcmTargeting.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTargeting\AgcSenderWindow.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmBaseBoard.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmDmgBoard.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmHPBar.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmIDBoard.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmImoticonBoard.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoard.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoardMng.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoardMngCallback.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\CFlagImoticon.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\Image2D.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTitle\AgcmTitle.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmTuner\AgcmTuner.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIArchlord\AgcmUIArchlord.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIAuction\AgcmUIAuction.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIAuction\AgcmUIBoardInfo.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIAuction\AgcmUICategoryInfo.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIBuddy\AgcmUIBuddy.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashInven\AgcmUICashInven.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\AgcmUICashMall.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CUICashMallTexture.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenCashItemBox.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenCashItemBoxPrivate.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenShop.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenShopPrivate.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICastle\AgcmUICastle.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIChannel\AgcmUIChannel.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICharacter\AgcmUICharacter.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICharacter\CharacterPropertyCallBack.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICharacter\CUiCharacterProperty.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIChatting2\AcUIChattingEdit.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIChatting2\AgcmUIChatting2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIConsole\AgcmUIConsole.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIBar.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIBase.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIBbs.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIBbsContent.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIButton.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUICheckBox.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIClock.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUICombo.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIEdit.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIGrid.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIList.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIMessageDialog.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIModalImage.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIScroll.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUISkillTree.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUITexture.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIToolTip.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUITree.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcuTextureList.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AgcmUIControl.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICooldown\AgcmUICooldown.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICustomizing\AgcmUICustomizing.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIDebugInfo\AgcDebugWindow.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIDebugInfo\AgcmUIDebugInfo.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventBank\AgcmUIEventBank.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventGacha\AcUIGacha.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventGacha\AgcmUIEventGacha.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemPhysicalConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemRuneConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemSocketConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemSpiritStoneConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemRepair\AgcmUIEventItemRepair.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventNPCDialog\AgcmUIEventNPCDialog.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventTeleport\AgcmUIEventTeleport.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuildWarehouse\AgcmUIGuildWarehouse.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuild.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattle.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleMember.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleOffer.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleResult.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildCreate.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildCreateComplete.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildCreateConfirm.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildDestroy.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildDestroyComplete.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildDestroyConfirm.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildGuildList.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildMain.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildMark.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildMaxMember.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildMember.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildNotice.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildRelation.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildRename.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildWorldChampionship.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIHelp\AgcmUIHelp.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIHotkey\AgcmUIHotkey.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIBank.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIConvert.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIDuplicateInventory.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIEquip.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIInventory.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIInventorySmall.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIItem.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIItemTooltip.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUINPCTrade.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIPrivateTrade.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUISalesBox.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUISubInventory.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AcArchlordInfo.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AcUIEventButton.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUIAccountCheck.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUICharacterCreate.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUICharacterSelect.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILogin.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSelect.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSetting.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSettingCamera.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSettingCharacter.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUIServerSelect.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlCamera.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlCharacter.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlPostFX.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcuUILoadingWindow.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIMailBox\AgcmUIMailBox.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIMain\AgcmUIMain.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIMain\AgcmUIMainSystemGridTooltip.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcaUIManager2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcmUIManager2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcmUIManager2Stream.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIEffect.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIManager.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIWindow.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIOption\AgcmUIOption.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIPartyOption\AgcmUIPartyOption.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIParty\AgcmUIParty.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIProduct\AgcmUIProduct.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIProduct\AgcmUIProductSkill.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIPvP\AgcmUIPvP.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIQuest2\AgcmUIQuest2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIRefinery\AgcmUIRefinery.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIRemission\AgcmUIRemission.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISearch\AgcmUISearch.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISiegeWar\AgcmUISiegeWar.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmHeroicSkill.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmHeroicSkillCB.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkill2.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkill2Tooltip.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScion.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScionCallback.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISocialAction\AgcmSocialAction.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISocialAction\AgcmUISocialAction.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISplitItem\AgcmUISplitItem.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIStatus\AgcmUIStatus.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISystemMessage\AgcmUISystemMessage.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUITax\AgcmUITax.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUITips\AgcmUITips.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUITips\AgcTipWindow.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIWantedCriminal\AgcmUIWantedCriminal.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmUVAnimation\AgcmUVAnimation.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmWater\AgcmWater.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcmWorld\AgcmWorld.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_camera.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_menu.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_mouse.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_skeleton.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_win.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\AuInputComposer.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\camera.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordChina.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordGlobal.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordJapan.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordKorea.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_Utility.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CRenderDevice.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CRenderDevice_Renderware.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CRenderWindow.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\ImmLib.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\menu.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\mouse.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\skeleton.cpp" />
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\win.cpp" />
+    <ClCompile Include="..\..\Tools\ModelTool\RWUtil.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug MFC|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Client\AcClientSocket\AcClientSocket.h" />
+    <ClInclude Include="..\..\Client\AcClientSocket\AcQueue.h" />
+    <ClInclude Include="..\..\Client\AcClientSocket\AcSocketManager.h" />
+    <ClInclude Include="..\..\Etc\AcuCreateClump\AcuCreateClump.h" />
+    <ClInclude Include="..\..\Etc\AcuDeviceCheck\AcuDeviceCheck.h" />
+    <ClInclude Include="..\..\Etc\AcuExportDFF\AcuExportDFF.h" />
+    <ClInclude Include="..\..\Etc\AcuFileAdmin\AcuFileAdmin.h" />
+    <ClInclude Include="..\..\Etc\AcuFrameMemory\AcuFrameMemory.h" />
+    <ClInclude Include="..\..\Etc\AcuIMDraw\AcuIMDraw.h" />
+    <ClInclude Include="..\..\Etc\AcuIMDraw\AcuObjecWire.h" />
+    <ClInclude Include="..\..\Etc\AcuIMDraw\AgcuBasisGeo.h" />
+    <ClInclude Include="..\..\Etc\AcuIMDraw\AgcuVtxType.h" />
+    <ClInclude Include="..\..\Etc\AcuMath\AcuMath.h" />
+    <ClInclude Include="..\..\Etc\acumath\AcuMathFunc.h" />
+    <ClInclude Include="..\..\Etc\acumath\AcuSinTbl.h" />
+    <ClInclude Include="..\..\Etc\AcuMyFirewall\AcuMyFirewall.h" />
+    <ClInclude Include="..\..\Etc\AcuObject\AcuObject.h" />
+    <ClInclude Include="..\..\Etc\AcuParticleDraw\AcuParticleDraw.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\effect.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\effectStateManager.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\myassert.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\pipeline.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\rwd3d9.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMatFxEx\AcuRpMatFxEx.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\AcuRpMTexture.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\MTexture.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\MTPipe.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\MTStream.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\shadow2.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain2_linear.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain3_linear.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain_linear.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain_linear_FadeOut.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain_linear_Rough.h" />
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\VertexShaderFragments.h" />
+    <ClInclude Include="..\..\Etc\AcuRpUVAnimData\AcuRpUVAnimData.h" />
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\AcuRtAmbOcclMap.h" />
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\fastflit.h" />
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\image.h" />
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\ltmapvar.h" />
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\polypack.h" />
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\rpplugin.h" />
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\sample.h" />
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\vis.h" />
+    <ClInclude Include="..\..\Etc\AcuRWUtil\AgcdGeoTriAreaTbl.h" />
+    <ClInclude Include="..\..\Etc\AcuTexture\AcuTexture.h" />
+    <ClInclude Include="..\..\Include\AuList.h" />
+    <CustomBuild Include="..\..\Modules\AClient\AgcmAdmin\AgcmAdmin.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug MFC|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\Modules\AClient\AgcmAmbOcclMap\AgcmAmbOcclMap.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmAnimation\AgcaAnimation.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmAnimation\AgcdAnimation.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmAnimation\AgcmAnimation.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmAnimation\AgcmIntervalAnimAdmin.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmArchlord\AgcmArchlord.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmAuction\AgcmAuction.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmBattleGround\AgcmBattleGround.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmBillInfo\AgcmBillInfo.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcmCamera2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamConstrain.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamDampingForce.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamMode.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamPathWork.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamSpringForce.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCashMall\AgcmCashMall.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCharacter\AgcCharacterDefine.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCharacter\AgcCharacterUtil.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCharacter\AgcdCharacter.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacter.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmChatting2\AgcmChatting2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmChatting2\CTextFilter.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmConnectManager\AgcmConnectManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmCustomizeRender\AgcmCustomizeRender.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmDynamicLightmap\AgcmDynamicLightmap.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffAnim.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffBase.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffBoard.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCamera.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCtrl.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCtrlMng.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffGlobal.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffLight.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffMFrm.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffObj.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffParticleSystem.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffPostFX.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffPublicStructs.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSet.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSetMng.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSound.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTail.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTerrainBoard.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTex.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcmEff2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuBezierForTail.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuBillBoard.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEff2ApMemoryLog.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffAnimUtil.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffD3dVtx.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffIniMng.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffPath.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffTable.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffUtil.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffVB.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffVBMng.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEffectDataAdmin\AgcaEffectData.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEffectDataAdmin\AgcdEffectData.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventBank\AgcmEventBank.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventCharCustomize\AgcmEventCharCustomize.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcaEffectSet.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcaEventEffectSound.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcdEventEffect.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffect.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectData.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectList.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcuEventEffect.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventGacha\AgcmEventGacha.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventGuild\AgcmEventGuild.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventItemConvert\AgcmEventItemConvert.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventItemRepair\AgcmEventItemRepair.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventManager\AgcmEventManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNature\AgcmEventNature.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\AgcmEventNPCDialog.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\CExNPC.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\CExNPCDialog.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\CUiExNPCMsgBoxGrid.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\CUiGridItem.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCTrade\AgcmEventNPCTrade.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventPointLight\AgcmEventPointLight.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventProduct\AgcmEventProduct.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventQuest\AgcmEventQuest.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventRefinery\AgcmEventRefinery.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventShrine\AgcmEventShrine.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventSiegeWarNPC\AgcmEventSiegeWarNPC.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventSkillMaster\AgcmEventSkillMaster.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventTeleport\AgcmEventTeleport.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmExportResource\AgcmExportResource.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmFont\AgcmFont.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmFPSManager\AgcmFPSManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGeometryDataManager\AgcdGeometryDataManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGeometryDataManager\AgcmGeometryDataManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\AcuBlur.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\AgcmGlare.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\blurpshaderD3D9.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\blurvshaderD3D9.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\blurvshaderdefs.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlyph\AgcmGlyph.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGrass\AgcmGrass.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmGuild\AgcmGuild.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmItemConvert\AgcmItemConvert.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcaItemClump.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcdItem.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcmItem.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcmItemEffectFinder.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcmItemEvolutionTable.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmLensFlare\AgcmLensFlare.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmLODManager\AgcmLODList.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmLODManager\AgcmLODManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmLogin\AgcmLogin.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\AcMapLoader.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\AcMaterialList.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\AcTextureList.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\AgcmMap.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\bmp.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\DWSector.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\DWSStream.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\GetArg.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMinimap\AcUIMinimap.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMinimap\AcUIRaider.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMinimap\AcUIWorldmap.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmMinimap\AgcmMinimap.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmNatureEffect\AgcmNatureEffect.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmObject\AgcdObject.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmObject\AgcmObject.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmObject\AgcmObjectList.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmObject\AgcuObject.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmOcTree\AgcmOcTree.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AcUtils.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AgcEngine.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AgcModule.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AgcWindow.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AuRwImage.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\MagImAtomic.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmParty\AgcmParty.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmPostFX\AgcmPostFX.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmPreLODManager\AgcdPreLOD.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmPreLODManager\AgcmPreLODAdmin.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmPreLODManager\AgcmPreLODManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmPrivateTrade\AgcmPrivateTrade.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmProductMed\AgcmProductMed.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmProduct\AgcmProduct.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmQuest\AgcmQuest.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRecruit\AcUIRecruit.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRecruit\AcUIRecruitWrite.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRecruit\AgcmRecruit.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRefinery\AgcmRefinery.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRegistryManager\AgcmRegistryManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRender\AgcdRenderType.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRender\AgcmRender.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRender\AgcmRenderType.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRender\fadeD3D9.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmResourceLoader\AgcdResourceLoader.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmResourceLoader\AgcmResourceLoader.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmReturnToLogin\AgcmReturnToLogin.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmRide\AgcmRide.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmShadow2\AgcmShadow2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmShadowmap\AgcmShadowmap.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmShadow\AgcmShadow.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmSiegeWar\AgcmSiegeWar.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmSkill\AgcdSkill.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmSkill\AgcmSkill.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmSound\AgcmSound.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmSound\Mss.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmStartupEncryption\AgcmStartupEncryption.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTargeting\AgcmTargeting.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTargeting\AgcSenderWindow.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmBaseBoard.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmDmgBoard.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmHPBar.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmIDBoard.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmImoticonBoard.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoard.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoardDef.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoardMng.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\CFlagImoticon.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\Image2D.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTitle\AgcmTitle.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmTuner\AgcmTuner.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIArchlord\AgcmUIArchlord.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIAuction\AgcmUIAuction.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIBuddy\AgcmUIBuddy.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashInven\AgcmUICashInven.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashMall\AgcmUICashMall.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashMall\CUICashMallTexture.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenCashItemBox.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenShop.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICastle\AgcmUICastle.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIChannel\AgcmUIChannel.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICharacter\AgcdUICharacter.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICharacter\AgcmUICharacter.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICharacter\CharacterPropertyCallBack.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICharacter\CUiCharacterProperty.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIChatting2\AcUIChattingEdit.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIChatting2\AgcmUIChatting2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIConsole\AgcmUIConsole.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIBar.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIBase.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIBbs.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIBbsContent.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIButton.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUICheckBox.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIClock.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUICombo.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIControlHeader.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIEdit.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIGrid.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIList.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIMessageDialog.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIModalImage.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIScroll.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUISkillTree.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUITexture.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIToolTip.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUITree.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcuTextureList.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AgcmUIControl.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICooldown\AgcmUICooldown.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICustomizing\AgcmUICustomizing.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIDebugInfo\AgcDebugWindow.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIDebugInfo\AgcmUIDebugInfo.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventBank\AgcmUIEventBank.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventGacha\AgcmUIEventGacha.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemConvert.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventItemRepair\AgcmUIEventItemRepair.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventNPCDialog\AgcmUIEventNPCDialog.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventTeleport\AgcmUIEventTeleport.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuildWarehouse\AgcmUIGuildWarehouse.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuild.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleMember.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleOffer.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleResult.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIHelp\AgcmUIHelp.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIHotkey\AgcmUIHotkey.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIItem\AgcdUIItem.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIItem\AgcdUIItemTooltip.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIItem.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AcArchlordInfo.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AcUIEventButton.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUIAccountCheck.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUICharacterCreate.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUICharacterSelect.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILogin.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSelect.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSetting.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSettingCamera.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSettingCharacter.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUIServerSelect.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlCamera.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlCharacter.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlPostFX.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcuUILoadingWindow.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\ContainerUtil.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIMailBox\AgcmUIMailBox.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIMain\AgcmUIMain.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIMain\AgcmUIMainSystemGridTooltip.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcaUIManager2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcdUIManager2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcmUIManager2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIEffect.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIManager.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIWindow.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIOption\AgcmUIOption.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIOption\AgcmUIOptionDefine.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIPartyOption\AgcmUIPartyOption.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIParty\AgcmUIParty.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIProduct\AgcmUIProduct.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIProduct\AgcmUIProductSkill.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIPvP\AgcmUIPvP.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIQuest2\AgcmUIQuest2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIRefinery\AgcmUIRefinery.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIRemission\AgcmUIRemission.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISearch\AgcmUISearch.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISiegeWar\AgcmUISiegeWar.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmHeroicSkill.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmHeroicSkillDef.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkill2.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScion.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScionDef.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISocialAction\AgcmSocialAction.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISocialAction\AgcmUISocialAction.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISplitItem\AgcmUISplitItem.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIStatus\AgcmUIStatus.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISystemMessage\AgcdUISystemMessage.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISystemMessage\AgcmUISystemMessage.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUITax\AgcmUITax.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUITips\AgcmUITips.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUITips\AgcTipWindow.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIWantedCriminal\AgcmUIWantedCriminal.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmUVAnimation\AgcmUVAnimation.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmWater\AgcmWater.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcmWorld\AgcmWorld.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\AcDefine.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\AuInputComposer.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\camera.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordChina.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordGlobal.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordJapan.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordKorea.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_Utility.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CRenderDevice.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CRenderDevice_Renderware.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CRenderWindow.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\ImmLib.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\menu.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\mouse.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\mousedat.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\platform.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\ptrdata.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\resource.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\resrc1.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\skeleton.h" />
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\win.h" />
+    <ClInclude Include="..\..\Tools\ModelTool\RWUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Etc\AcuIMDraw\AgcuBasisGeo.inl" />
+    <None Include="..\..\Modules\AClient\AgcmObject\AlefObjects.ini" />
+    <None Include="..\..\Modules\AClient\AgcmRender\release.mak" />
+    <None Include="..\..\Modules\AClient\AgcmRender\standard.mak" />
+    <None Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScion.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\ExpFogBackUp.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\shadow2.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain2_Linear.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain3_Linear.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain_Linear.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain_Linear_FadeOut.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain_Linear_Rough.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Modules\AClient\AgcmDynamicLightmap\lightmap.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Modules\AClient\AgcmGlare\blurpshaderD3D9.psh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Modules\AClient\AgcmGlare\blurvshaderD3D9.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\..\Modules\AClient\AgcmRender\fadeD3D9.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Modules\AClient\AgcSkeleton\Archrlod.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Modules\AClient\AgcSkeleton\win.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AgpModules\AgpModules.vcxproj">
+      <Project>{55deee27-6b81-4be1-bbb0-fd4894e6806d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\HanGameForClient\HanGameForClient.vcxproj">
+      <Project>{1d63a90d-2e76-4f52-9249-4f841b7225b7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\Work\Alef\Modules\AClient\AgcSkeleton\win.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

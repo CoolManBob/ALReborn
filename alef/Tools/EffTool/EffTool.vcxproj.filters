@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{425797f1-7154-4ba4-adc4-0ad1ccdb4345}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{499a8944-c001-4937-a3d4-aad443b05126}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4061a811-7417-4a44-9f6a-58743216a06e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{8186ac95-ac82-4738-96dc-149f082416ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XTPPropertyGridItemCustum">
+      <UniqueIdentifier>{85740fbe-a23b-46a0-879d-62c3ae52689f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XTPPropertyGridItemCustum\EffETC">
+      <UniqueIdentifier>{be3d4395-a700-4025-99f1-3c51c2ac41e7}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="XTPPropertyGridItemCustum\EffBase">
+      <UniqueIdentifier>{3f1cbab3-ff1d-4bb2-8ee5-f9fabb8f3a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XTPPropertyGridItemCustum\EffAnim">
+      <UniqueIdentifier>{5bc6e2f2-87ce-487b-9a3a-6599fda7917e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{ce83f99e-5426-4e21-a550-661bed7daa37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\UseDialog">
+      <UniqueIdentifier>{f5084af9-9bbf-4d25-a842-2739d0e227ac}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Dialog\Base">
+      <UniqueIdentifier>{a00027c2-5f20-4e9f-8105-091618be1303}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BrowserView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EdtView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EffTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EffToolDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EffToolView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolOption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Arrow.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Axis.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\BitmapLoader.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Camera.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\EffUt_HFMap.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\EffUt_Vtx.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Grid.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\MainWindow.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\MyEngine.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\PickUser.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\RenderWare.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\ShowFrm.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_EffSet.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffETC</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_UINT.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffETC</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_Board.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_EffBase.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_Light.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_MFrm.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_Obj.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_PSys.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_PSysSBH.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_Sound.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_Tail.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_AColr.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="XTPPropertyGridItemCustum\XTPGI_Anim.cpp">
+      <Filter>XTPPropertyGridItemCustum\EffAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\Dlg_Effbase.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\Dlg_EffRenderBase.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\Dlg_Newanimitem.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\Dlg_Neweffanim.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\Dlg_Texuvselect.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgEdit.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgListEffSet.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgNewDpnd.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgNewEffBase.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgNewEffSet.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgStaticPropGrid.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgTreeEffSet.cpp">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgList.cpp">
+      <Filter>Dialog\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgStatic.cpp">
+      <Filter>Dialog\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Dlg\DlgTree.cpp">
+      <Filter>Dialog\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BrowserView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EdtView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EffTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EffToolDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EffToolView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolOption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Arrow.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Axis.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\BitmapLoader.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Camera.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\d3dutil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\dxutil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\EffUt_Geo.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\EffUt_HFMap.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\EffUt_Vtx.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Grid.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\MainWindow.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\MyEngine.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\PickUser.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\RenderWare.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\ShowFrm.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Singleton.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_EffSet.h">
+      <Filter>XTPPropertyGridItemCustum\EffETC</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_UINT.h">
+      <Filter>XTPPropertyGridItemCustum\EffETC</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPPropertyGridItemEnum.h">
+      <Filter>XTPPropertyGridItemCustum\EffETC</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_Board.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_EffBase.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_Light.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_MFrm.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_Obj.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_PSys.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_PSysSBH.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_Sound.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_Tail.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_TerrainBoard.h">
+      <Filter>XTPPropertyGridItemCustum\EffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_AColr.h">
+      <Filter>XTPPropertyGridItemCustum\EffAnim</Filter>
+    </ClInclude>
+    <ClInclude Include="XTPPropertyGridItemCustum\XTPGI_Anim.h">
+      <Filter>XTPPropertyGridItemCustum\EffAnim</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\Dlg_Effbase.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\Dlg_EffRenderBase.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\Dlg_Newanimitem.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\Dlg_Neweffanim.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\Dlg_Texuvselect.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgEdit.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgListEffSet.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgNewDpnd.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgNewEffBase.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgNewEffSet.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgStaticPropGrid.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgTreeEffSet.h">
+      <Filter>Dialog\UseDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgList.h">
+      <Filter>Dialog\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgStatic.h">
+      <Filter>Dialog\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Dlg\DlgTree.h">
+      <Filter>Dialog\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\EffTool.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\EffToolDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EffTool.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\EffTool.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sfatul zilei"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Închidere",IDOK,221,136,50,14
+    CONTROL         "&Afisare sugestii la pornire",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,120,10
+    PUSHBUTTON      "Urmãtorul sfat",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Particularizare"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Culori:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Nuanþã:",XT_IDC_TXT_HUE,7,108,28,8
+    EDITTEXT        XT_IDC_EDIT_HUE,36,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,60,105,
+                    10,14
+    LTEXT           "Sat:",XT_IDC_TXT_SAT,7,125,18,8
+    EDITTEXT        XT_IDC_EDIT_SAT,36,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,60,122,
+                    10,14
+    LTEXT           "Lum:",XT_IDC_TXT_LUM,7,140,18,8
+    EDITTEXT        XT_IDC_EDIT_LUM,36,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,60,137,
+                    10,14
+    LTEXT           "Roºu:",XT_IDC_TXT_RED,76,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,106,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,130,105,
+                    11,14
+    LTEXT           "Verde:",XT_IDC_TXT_GREEN,76,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,106,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,130,122,
+                    11,14
+    LTEXT           "Albastru:",XT_IDC_TXT_BLUE,76,140,28,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,106,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,130,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standard"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Culori:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Aranjare ferestre"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Alege &fereastra:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,209,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Activare",XT_IDC_BTN_ACTIVATE,222,7,77,14
+    PUSHBUTTON      "OK",IDOK,222,24,77,14
+    PUSHBUTTON      "Salvare",XT_IDC_BTN_SAVE,222,41,77,14
+    PUSHBUTTON      "Închidere fereastrã",XT_IDC_BTN_CLOSEWINDOWS,222,58,77,14
+    PUSHBUTTON      "În cascadã",XT_IDC_BTN_CASCADE,222,75,77,14
+    PUSHBUTTON      "Împãrþire pe orizontalã",XT_IDC_BTN_TILEHORZ,222,92,77,14
+    PUSHBUTTON      "Împãrþire pe verticalã",XT_IDC_BTN_TILEVERT,222,109,77,14
+    PUSHBUTTON      "Minimizare",XT_IDC_BTN_MINIMIZE,222,126,77,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Pictograme mici",                XT_IDC_SMALLICON
+        MENUITEM "Pictograme mari",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Anulare",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Decupare",                        ID_EDIT_CUT
+        MENUITEM "Copiere",                       ID_EDIT_COPY
+        MENUITEM "Lipire",                      ID_EDIT_PASTE
+        MENUITEM "ªtergere",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Selectare tot",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Sortare ascendentã",              XT_IDC_SORTASC
+        MENUITEM "Sortare descendentã",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Aliniere"
+        BEGIN
+            MENUITEM "Aliniere la stânga",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Aliniere la centru",                XT_IDC_ALIGNCENTER
+            MENUITEM "Aliniere la dreapta",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Nou"
+    XT_IDC_BTN_DELETE       "ªtergere"
+    XT_IDC_BTN_UP           "Mutare în sus"
+    XT_IDC_BTN_DOWN         "Mutare în jos"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Nume"
+    XT_IDS_SIZE             "Dimensiune"
+    XT_IDS_TYPE             "Tip"
+    XT_IDS_MODIFIED         "Modificat"
+    XT_IDS_COLOR_AUTO       "Automatã"
+    XT_IDS_COLOR_CUST       "Particular..."
+    XT_IDS_SELDIR           "Selecteaza director:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Toate fiºierele (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Nume de director:"
+    XT_IDS_CLICKKEEPOPEN    "Faceþi clic pe marcaj pentru a pãstra deschis"
+    XT_IDS_SE_0             "Sistemul de operare nu are suficienta memorie sau resurse."
+    XT_IDS_SE_ERR_FNF       "Fisierul specificat nu a fost gasit."
+    XT_IDS_SE_ERR_PNF       "Calea specificata nu a fost gasita."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "Sistemul de operare a interzis accesul la fisierul specificat."
+    XT_IDS_SE_ERR_OOM       "Nu este memorie suficienta pentru finalizarea operatiei."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "Fisierul .exe nu are formatul corect (non-Win32® .exe sau eroare in imaginea .exe)."
+    XT_IDS_SE_ERR_SHARE     "S-a produs o violare de partajare."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "Asocierea numelui de fisier este incompleta sau incorecta."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "Tranzactia DDE nu a putut fi finalizata deoarece cererea a expirat."
+    XT_IDS_SE_ERR_DDEFAIL   "Tranzactia DDE a esuat."
+    XT_IDS_SE_ERR_DDEBUSY   "Tranzactia DDE nu a putut fi finalizata deoarece alta tranzactii DDE erau in curs de procesare."
+    XT_IDS_SE_ERR_NOASSOC   "Nu exista nici o aplicatie asociata cu extensia de nume de fisier data."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "Libraria cu legare dinamica specificata nu a fost gasita."
+    XT_IDS_SE_ERR_UNKOWN    "O eroare necunoscuta cu numarul %d a avut loc."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Sortare ascendentã\nSortare ascendentã"
+    XT_IDC_SORTDSC          "Sortare descendentã\nSortare descendentã"
+    XT_IDC_ALIGNLEFT        "Paragraf aliniat la stânga.\nAliniere la stânga"
+    XT_IDC_ALIGNCENTER      "Paragraf aliniat la centru.\nCentru"
+    XT_IDC_ALIGNRIGHT       "Paragraf aliniat la dreapta.\nAliniere la dreapta"
+    XT_IDC_LARGEICON        "Pictograme mari\nPictograme mari"
+    XT_IDC_SMALLICON        "Pictograme mici\nPictograme mici"
+    XT_IDC_REMOVEITEM       "Eliminare din bara Outlook"
+    XT_IDC_RENAMEITEM       "Redenumire comandã rapidã"
+    XT_IDC_REMOVEGROUP      "Eliminare grup"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Redenumire grup"
+    XT_IDS_HEX              "Hex"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Culori standard"
+    XT_IDS_TIPTEXT          "Sfat"
+    XT_IDS_DIDYOUKNOW       "ªtiaþi cã..."
+    XT_IDS_FILE_ABSENT      "Fiºierul nu existã."
+    XT_IDS_FILE_CORRUPT     "Eroare la citirea fiºierului."
+    XT_IDS_COLOR_CAPTION    "Culori"
+    XT_IDS_NEW              "Nou"
+    XT_IDS_CURRENT          "Curent"
+    XT_IDS_DIRECTORIES      "Directoare:"
+    XT_IDS_FILES            "Fiºiere:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "OK"
+    XTP_IDS_TASK_YES          "Da"
+    XTP_IDS_TASK_NO           "Nu"
+    XTP_IDS_TASK_RETRY        "Reîncercare"
+    XTP_IDS_TASK_CANCEL       "Revocare"
+    XTP_IDS_TASK_CLOSE        "Închidere"
+    XTP_IDS_TASK_SEE_DETAILS  "Afiºare detalii"
+    XTP_IDS_TASK_HIDE_DETAILS "Ascundere detalii"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tip van de dag"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Sluiten",IDOK,221,136,50,14
+    CONTROL         "&Tips weergeven bij starten",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,120,10
+    PUSHBUTTON      "Volgende tip",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Aangepast"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Kleuren:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Tint:",XT_IDC_TXT_HUE,4,108,18,8
+    EDITTEXT        XT_IDC_EDIT_HUE,43,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,105,
+                    10,14
+    LTEXT           "Intensiteit:",XT_IDC_TXT_SAT,4,125,33,8
+    EDITTEXT        XT_IDC_EDIT_SAT,43,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,122,
+                    10,14
+    LTEXT           "Helderheid:",XT_IDC_TXT_LUM,4,140,37,8
+    EDITTEXT        XT_IDC_EDIT_LUM,43,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,137,
+                    10,14
+    LTEXT           "Rood:",XT_IDC_TXT_RED,83,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,107,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,131,105,
+                    11,14
+    LTEXT           "Groen:",XT_IDC_TXT_GREEN,83,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,107,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,131,122,
+                    11,14
+    LTEXT           "Blauw:",XT_IDC_TXT_BLUE,83,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,107,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,131,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standaard"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Kleuren:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Alle vensters"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Venster selecteren:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Activeren",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "OK",IDOK,233,24,62,14
+    PUSHBUTTON      "Opslaan",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "Venster sluiten",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "Trapsgewijs",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "Onder elkaar",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "Naast elkaar",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "Minimaliseren",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Kleine pictogrammen",                XT_IDC_SMALLICON
+        MENUITEM "Grote pictogrammen",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Ongedaan maken",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Knippen",                        ID_EDIT_CUT
+        MENUITEM "Kopiëren",                       ID_EDIT_COPY
+        MENUITEM "Plakken",                      ID_EDIT_PASTE
+        MENUITEM "Verwijderen",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Alles selecteren",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Oplopend sorteren",              XT_IDC_SORTASC
+        MENUITEM "Aflopend sorteren",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Uitlijning"
+        BEGIN
+            MENUITEM "Links uitlijnen",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Centreren",                XT_IDC_ALIGNCENTER
+            MENUITEM "Rechts uitlijnen",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Nieuw"
+    XT_IDC_BTN_DELETE       "Verwijderen"
+    XT_IDC_BTN_UP           "Omhoog"
+    XT_IDC_BTN_DOWN         "Omlaag"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Naam"
+    XT_IDS_SIZE             "Omvang"
+    XT_IDS_TYPE             "Type"
+    XT_IDS_MODIFIED         "Gewijzigd"
+    XT_IDS_COLOR_AUTO       "Automatisch"
+    XT_IDS_COLOR_CUST       "Aanpassen..."
+    XT_IDS_SELDIR           "Map selecteren:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Alle bestanden (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Mapnaam:"
+    XT_IDS_CLICKKEEPOPEN    "Klik op punaise om dit open te houden."
+    XT_IDS_SE_0             "Het besturingssysteem heeft te weinig geheugen of andere bronnen beschikbaar."
+    XT_IDS_SE_ERR_FNF       "Het opgegeven bestand is niet gevonden."
+    XT_IDS_SE_ERR_PNF       "Het opgegeven pad is niet gevonden."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "Het besturingssysteem weigert toegang tot het opgegeven bestand."
+    XT_IDS_SE_ERR_OOM       "Te weinig geheugen om de opdracht uit te voeren."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "Het .exe bestand is ongeldig (niet-Win32® .exe of fout in uitvoerbaar bestand)."
+    XT_IDS_SE_ERR_SHARE     "Er is een fout bij het delen opgetreden."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "De bestandsnaam associatie is niet compleet of ongeldig."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "De DDE transactie kon niet voltooid worden vanwege een time-out."
+    XT_IDS_SE_ERR_DDEFAIL   "De DDE transactie is mislukt."
+    XT_IDS_SE_ERR_DDEBUSY   "De DDE transactie kon niet voltooid worden omdat andere DDE transacties in bewerking waren."
+    XT_IDS_SE_ERR_NOASSOC   "Er is geen uitvoerbaar programma aan deze bestandsextensie gekoppeld."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "De opgegeven programmabibiliotheek (DLL) is niet gevonden."
+    XT_IDS_SE_ERR_UNKOWN    "Er is een onbekende fout nummer %d opgetreden."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Oplopend sorteren\nOplopend sorteren"
+    XT_IDC_SORTDSC          "Aflopend sorteren\nAflopend sorteren"
+    XT_IDC_ALIGNLEFT        "Alinea uitlijnen aan de linkermarge\nLinks uitlijnen"
+    XT_IDC_ALIGNCENTER      "Alinea centreren tussen de marges\nCentreren"
+    XT_IDC_ALIGNRIGHT       "Alinea uitlijnen aan de rechtermarge\nRechts uitlijnen"
+    XT_IDC_LARGEICON        "Grote pictogrammen weergeven\nGrote pictogrammen"
+    XT_IDC_SMALLICON        "Kleine pictogrammen weergeven\nKleine pictogrammen"
+    XT_IDC_REMOVEITEM       "Verwijderen van Outlook-balk"
+    XT_IDC_RENAMEITEM       "Naam snelkoppeling wijzigen"
+    XT_IDC_REMOVEGROUP      "Groep verwijderen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Naam van groep wijzigen"
+    XT_IDS_HEX              "Hex"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Standaardkleuren"
+    XT_IDS_TIPTEXT          "Tiptekst"
+    XT_IDS_DIDYOUKNOW       "Wist u dit al?"
+    XT_IDS_FILE_ABSENT      "Het opgegeven bestand bestaat niet."
+    XT_IDS_FILE_CORRUPT     "Fout bij het lezen van het bestand."
+    XT_IDS_COLOR_CAPTION    "Kleuren"
+    XT_IDS_NEW              "Nieuw"
+    XT_IDS_CURRENT          "Huidige"
+    XT_IDS_DIRECTORIES      "Mappen:"
+    XT_IDS_FILES            "Bestanden:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "OK"
+    XTP_IDS_TASK_YES          "Ja"
+    XTP_IDS_TASK_NO           "Nee"
+    XTP_IDS_TASK_RETRY        "Opnieuw"
+    XTP_IDS_TASK_CANCEL       "Annuleerknop"
+    XTP_IDS_TASK_CLOSE        "Sluiten"
+    XTP_IDS_TASK_SEE_DETAILS  "Details weergeven"
+    XTP_IDS_TASK_HIDE_DETAILS "Details verbergen"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

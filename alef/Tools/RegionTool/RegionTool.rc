@@ -1,0 +1,623 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RegionTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RegionTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RegionTool 정보"
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "RegionTool 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Renew 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_REGIONTOOL_DIALOG DIALOGEX 0, 0, 350, 288
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RegionTool"
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    LTEXT           "Region View",IDC_REGIONVIEW,7,7,336,274,SS_NOTIFY | SS_SUNKEN
+END
+
+IDD_GOTO DIALOGEX 0, 0, 187, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Go to Division"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_DIVISION,7,20,89,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,23,50,14
+    LTEXT           "가고싶은 디비젼 인덱스",IDC_STATIC,7,7,85,8
+    PUSHBUTTON      "베틀필드(&B)",IDC_GOTO_BATTLEFIELD,17,55,50,14
+    PUSHBUTTON      "델파라스(&D)",IDC_GOTO_DELPARAS,67,55,50,14
+    PUSHBUTTON      "툴란(&T)",IDC_GOTO_TURLAN,117,55,50,14
+    PUSHBUTTON      "트릴가드(&G)",IDC_GOTO_TRILGARD,17,69,50,14
+    PUSHBUTTON      "쿤(&K)",IDC_GOTO_KUN,67,69,50,14
+    GROUPBOX        "Shortcut",IDC_STATIC,7,44,173,44
+END
+
+IDD_TEMPLATE DIALOGEX 0, 0, 252, 267
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Template Edit 창"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,195,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,195,24,50,14
+    LTEXT           "이름",IDC_STATIC,7,10,17,8
+    EDITTEXT        IDC_NAME,34,7,153,14,ES_AUTOHSCROLL
+    LTEXT           "주석",IDC_STATIC,7,28,17,8
+    EDITTEXT        IDC_COMMENT,34,25,153,14,ES_AUTOHSCROLL
+    LTEXT           "인덱스",IDC_STATIC,7,65,25,8
+    EDITTEXT        IDC_INDEX,34,62,65,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "상위 인덱스",IDC_STATIC,117,65,43,8
+    LTEXT           "타입",IDC_STATIC,7,86,17,8
+    COMBOBOX        IDC_TYPE,36,84,61,67,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "안전도",IDC_STATIC,7,100,25,8
+    COMBOBOX        IDC_SAFETY,36,98,61,67,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Ridable",IDC_RIDABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,84,41,10
+    CONTROL         "Pet",IDC_PET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,94,27,10
+    CONTROL         "왕복문서사용",IDC_ITEMTELEPORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,85,64,10
+    CONTROL         "Item Potion",IDC_ITEMPOTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,96,53,10
+    CONTROL         "Item Resurrect",IDC_ITEMRESURRECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,107,64,10
+    CONTROL         "미니맵 작동 불가능",IDC_DISABLEMINIMAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,118,84,10
+    CONTROL         "감옥",IDC_JAIL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,130,32,10
+    EDITTEXT        IDC_WORLDMAP,7,127,93,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "월드맵 설정",IDC_STATIC,7,117,43,8
+    PUSHBUTTON      "지정",IDC_SELECTWORLDMAP,100,127,35,14
+    LTEXT           "디폴트 스케이 셋",IDC_STATIC,7,145,61,8
+    EDITTEXT        IDC_DEFAULTSKYSET,7,155,93,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "지정",IDC_SELECTSKYSET,100,155,35,14
+    CONTROL         "Zone Loading (배아제)",IDC_ZONELOADING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,141,91,10
+    LTEXT           "*템플릿 인덱스가 255까지 제한입니다.",IDC_STATIC,8,47,136,8
+    GROUPBOX        "Zone Loading 설정",IDC_STATIC,141,187,104,73
+    EDITTEXT        IDC_SRC_X,162,198,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SRC_Z,162,210,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SRC_HEIGHT,162,221,35,12,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,148,201,8,8
+    LTEXT           "Z",IDC_STATIC,148,211,8,8
+    LTEXT           "HO",IDC_STATIC,148,222,11,8
+    EDITTEXT        IDC_RADIUS,203,232,35,12,ES_AUTOHSCROLL
+    LTEXT           "Radius",IDC_STATIC,209,223,24,8
+    EDITTEXT        IDC_DST_X,163,233,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DST_Z,163,245,35,12,ES_AUTOHSCROLL
+    LTEXT           "TX",IDC_STATIC,149,236,8,8
+    LTEXT           "TZ",IDC_STATIC,149,246,8,8
+    LTEXT           "시야거리(12타일기본)",IDC_STATIC,7,177,85,8
+    EDITTEXT        IDC_VDISTANCE,7,189,53,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Character Blocking",IDC_CHARACTER_BLOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,153,77,10
+    CONTROL         "뜨거운포션",IDC_ITEM_POTION_TYPE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,163,56,10
+    CONTROL         "길드전용 포션",IDC_ITEM_POTION_GUILD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,174,66,10
+    LTEXT           "레벨제한",IDC_STATIC,7,206,85,8
+    EDITTEXT        IDC_LEVELLIMIT,7,218,53,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "레벨최소값",IDC_STATIC,7,234,85,8
+    EDITTEXT        IDC_LEVELMIN,7,246,53,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PARENTINDEX,163,62,43,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "지역선택",IDC_CHOICEREGION,208,62,35,14
+END
+
+IDD_REGIONMENU DIALOGEX 0, 0, 114, 421
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "리젼메뉴"
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&Save",IDOK,7,369,100,14
+    PUSHBUTTON      "&Exit",IDCANCEL,7,400,100,14
+    PUSHBUTTON      "&Go To",IDC_GOTO,7,355,100,14
+    LTEXT           "Wnd",IDC_MENUWND,7,68,100,281,SS_SUNKEN
+    PUSHBUTTON      "Update All",IDC_BITMAPUPDATE,7,383,100,14,NOT WS_VISIBLE | WS_DISABLED
+END
+
+IDD_EVENT_NATURE_DLG DIALOG  0, 0, 165, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Event Nature 설정"
+FONT 9, "굴림"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,108,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,108,24,50,14
+    LTEXT           "기후대 설정",IDC_STATIC,7,7,38,8
+    COMBOBOX        IDC_WEATHER_TEMPLATE_COMBO,7,19,91,146,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "효과범위 ( 미터 단위 )",IDC_STATIC,7,42,71,8
+    EDITTEXT        IDC_RANGE,7,68,90,14,ES_AUTOHSCROLL
+    CONTROL         "Light",IDC_USE_LIGHT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,111,25,31,10
+    CONTROL         "Fog",IDC_USE_FOG,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,111,39,28,10
+    CONTROL         "Cloud",IDC_USE_CLOUD,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,111,53,35,10
+    CONTROL         "Effect",IDC_USE_EFFECT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,111,67,34,10
+    GROUPBOX        "Use Set",IDC_STATIC,105,13,47,69,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "1Tile 4 미터",IDC_STATIC,7,56,38,8
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 163, 61
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RegionTool Login"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_PASS,31,23,57,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ID,31,7,57,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,106,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,23,50,14
+    LTEXT           "ID",IDC_STATIC,7,10,8,8
+    LTEXT           "Pass",IDC_STATIC,7,25,18,8
+    PUSHBUTTON      "Teleport 모드 전용으로 실행",IDC_BUTTON1,7,40,149,14
+END
+
+IDD_UPLOAD_DATA DIALOGEX 0, 0, 211, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Upload Data Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,154,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,154,24,50,14
+    CONTROL         "Ini\\CharacterTemplate.ini",IDC_CHARACTERTEMPLATE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,109,10
+    CONTROL         "Ini\\SpawnGroup.ini",IDC_SPAWNGROUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,33,89,10
+    CONTROL         "Ini\\SkySet.ini",IDC_SKYSET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,47,70,10
+    CONTROL         "Regiontool\\ 리젼+이미지데이타",IDC_REGIONTOOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,60,136,10
+    CONTROL         "Ini\\Object\\Artist 스카이 정보",IDC_ARTIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,74,136,10
+    CONTROL         "Ini\\Object\\Design 스폰 정보",IDC_DESIGN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,89,132,10
+    CONTROL         "Ini\\ObjectTemplate.ini",IDC_OBJECTTEMPLATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,22,99,8
+END
+
+IDD_GOTO_DIALOG DIALOGEX 0, 0, 186, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "텔레포트"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,69,42,50,14
+    LTEXT           "요기텍스트",IDC_DISPLAY,7,7,172,23,SS_SUNKEN
+    CONTROL         "이 메시지 계속 표시",IDC_SHOWTHISBOXAGAIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,30,86,10
+END
+
+IDD_WORLDMAP_SELECT DIALOGEX 0, 0, 683, 309
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "월드맵 선택 창"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,139,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,139,24,50,14
+    LISTBOX         IDC_LIST,7,7,125,295,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADD,139,228,50,14
+    PUSHBUTTON      "&Remove",IDC_REMOVE,139,267,50,14
+    PUSHBUTTON      "&Save List",IDC_SAVE_MAP_LIST,139,288,50,14
+    PUSHBUTTON      "&Edit",IDC_EDIT,139,247,50,14
+    LTEXT           "Static",IDC_MAP_DISPLAY,198,7,478,295,SS_NOTIFY | WS_BORDER
+END
+
+IDD_WORLDMAP_EDIT DIALOGEX 0, 0, 186, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "월드맵 수정"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,129,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,129,24,50,14
+    LTEXT           "World Map Index",IDC_STATIC,7,9,56,8
+    EDITTEXT        IDC_INDEX,67,7,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Start X",IDC_STATIC,7,25,23,8
+    LTEXT           "Start Z",IDC_STATIC,7,39,23,8
+    LTEXT           "End X",IDC_STATIC,7,54,19,8
+    LTEXT           "End Z",IDC_STATIC,7,68,19,8
+    EDITTEXT        IDC_STARTX,34,22,84,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_STARTZ,34,36,84,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENDX,34,51,84,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENDZ,34,66,84,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Comment",IDC_STATIC,7,102,31,8
+    EDITTEXT        IDC_COMMENT,42,101,137,14,ES_AUTOHSCROLL
+    LTEXT           "Map Item ID",IDC_STATIC,9,86,40,8
+    EDITTEXT        IDC_ITEMID,53,84,99,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "선택",IDC_SELECT_ITEM_ID,153,84,26,14
+    PUSHBUTTON      "좌표계산",IDC_CALCCOODINATE,129,45,50,14
+    PUSHBUTTON      "좌표추출",IDC_CALCCOODINATE2,129,62,50,14
+END
+
+IDD_ITEMSELECT DIALOGEX 0, 0, 186, 268
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "아이템 선택창"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST,7,7,172,238,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "아이템 없어도 보이게함",IDC_NONEEDITEM,7,247,172,14
+END
+
+IDD_SELECTSKYSET DIALOGEX 0, 0, 230, 278
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "스카이셋 선택"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST,7,7,216,264,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROGRESS_DLG DIALOG  0, 0, 187, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "진행상황"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",NOT WS_VISIBLE | WS_DISABLED | WS_BORDER,7,19,173,20
+    CTEXT           "처리메시지",IDC_MESSAGE,7,7,173,11,SS_CENTERIMAGE | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_PERCENT,71,7,40,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+END
+
+IDD_WORLDCOODCALC DIALOGEX 0, 0, 300, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "월드맵 좌표 계산 도우미"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,243,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,243,24,50,14
+    EDITTEXT        IDC_DIVISION1,39,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "디비젼1",IDC_STATIC,7,10,29,8
+    LTEXT           "X좌표",IDC_STATIC,85,10,21,8
+    LTEXT           "Y좌표",IDC_STATIC,156,10,21,8
+    EDITTEXT        IDC_X1,110,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y1,183,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIVISION2,39,25,40,14,ES_AUTOHSCROLL
+    LTEXT           "디비젼2",IDC_STATIC,7,28,29,8
+    LTEXT           "X좌표",IDC_STATIC,85,29,21,8
+    LTEXT           "Y좌표",IDC_STATIC,155,29,21,8
+    EDITTEXT        IDC_X2,109,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y2,183,25,40,14,ES_AUTOHSCROLL
+END
+
+IDD_REGIONSELECT_DLG DIALOGEX 0, 0, 152, 318
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Region Select"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,17,286,50,14
+    PUSHBUTTON      "취소",IDCANCEL,85,286,50,14
+    CONTROL         "",IDC_REGIONSELECT_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,7,130,274
+END
+
+IDD_WORLDCOODCALCEX DIALOGEX 0, 0, 289, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "z"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_DIVISION1,50,7,71,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_X1_EDIT,145,7,51,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y1_EDIT,219,7,51,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIVISION2,50,22,71,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_X2_EDIT,145,22,51,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y2_EDIT,219,22,51,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "추출",ID_EXPORTBTN,232,74,50,14
+    PUSHBUTTON      "취소",IDCANCEL,232,89,50,14
+    LTEXT           "Static",IDC_X1_STATIC,59,57,51,15,SS_SUNKEN
+    LTEXT           "Static",IDC_Y1_STATIC,59,71,51,15,SS_SUNKEN
+    LTEXT           "Static",IDC_X2_STATIC,143,57,51,15,SS_SUNKEN
+    LTEXT           "Static",IDC_Y2_STATIC,143,71,51,15,SS_SUNKEN
+    LTEXT           "Start X",IDC_STATIC,33,57,25,12
+    LTEXT           "Start Z",IDC_STATIC,33,71,25,12
+    LTEXT           "End X",IDC_STATIC,118,57,25,12
+    LTEXT           "End Z",IDC_STATIC,118,71,25,12
+    LTEXT           "Division1",IDC_STATIC,15,7,31,12
+    LTEXT           "Division2",IDC_STATIC,15,21,31,12
+    CTEXT           "X",IDC_STATIC,123,16,19,12
+    CTEXT           "Z",IDC_STATIC,198,16,19,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "FileDescription", "RegionTool MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "RegionTool"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "RegionTool.EXE"
+            VALUE "ProductName", "RegionTool 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_REGIONTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_TEMPLATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_REGIONMENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 107
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 414
+    END
+
+    IDD_EVENT_NATURE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_UPLOAD_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_GOTO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_WORLDMAP_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 676
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+    END
+
+    IDD_WORLDMAP_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_ITEMSELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_SELECTSKYSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_PROGRESS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_WORLDCOODCALC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_REGIONSELECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 311
+    END
+
+    IDD_WORLDCOODCALCEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TEMPLATE DLGINIT
+BEGIN
+    IDC_TYPE, 0x403, 8, 0
+0xcac7, 0xe5b5, 0x3028, 0x0029, 
+    IDC_TYPE, 0x403, 8, 0
+0xb6b8, 0xbbc0, 0x3128, 0x0029, 
+    IDC_TYPE, 0x403, 8, 0
+0xf8b4, 0xafc1, 0x3228, 0x0029, 
+    IDC_SAFETY, 0x403, 12, 0
+0xc8be, 0xfcc0, 0xf6c1, 0xaabf, 0x3028, 0x0029, 
+    IDC_SAFETY, 0x403, 16, 0
+0xdac0, 0xafc0, 0xfcc0, 0xf5c5, 0xf6c1, 0xaabf, 0x3128, 0x0029, 
+    IDC_SAFETY, 0x403, 12, 0
+0xa7c0, 0xe8c7, 0xf6c1, 0xaabf, 0x3228, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_SELECTSKYSETDLG HTML                    "SelectSkySetDlg.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "RegionTool 정보(&A)..."
+    IDS_ALREADY_LOCKED      "락에 실패 했어요~ 누가 쓰나봐요~"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\RegionTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

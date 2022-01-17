@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AgsmLoginDB">
+      <UniqueIdentifier>{6a6fb0d1-4340-4768-97b8-6e675e77dda3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLoginDB\소스 파일">
+      <UniqueIdentifier>{50ec65e8-4dca-4203-be03-bf54cc16d7d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgsmLoginDB\헤더 파일">
+      <UniqueIdentifier>{280a34cd-5fe9-4394-986a-6bdd16f9f81c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\AServer\AgsmLoginDB\AgsmLoginDB.cpp">
+      <Filter>AgsmLoginDB\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AServer\AgsmLoginDB\AgsmSessionMgr.cpp">
+      <Filter>AgsmLoginDB\소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginDB\AgsmLoginDB.h">
+      <Filter>AgsmLoginDB\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AServer\AgsmLoginDB\AgsmSessionMgr.h">
+      <Filter>AgsmLoginDB\헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

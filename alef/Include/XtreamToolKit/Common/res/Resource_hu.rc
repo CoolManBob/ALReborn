@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_HUNGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Rövid dátumformátum",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   Hosszú dátumformátum",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Idõpont",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   Idõpont (24 óra)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   Oldalszám",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Oldalak száma",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Balrazárás &&b Középrezárás &&b Jobbrazárás", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   Ablak címsora",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  És-jel (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Sorvég",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Nyomtat...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Következõ oldal",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Elõzõ lap",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "Nagyítás",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Kicsinyítés",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Bezárás",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Egy oldal"
+    XTP_IDS_TWOPAGE         "Két oldalas"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigókék"
+    XTP_IDS_CLR_GRAY80      "80%-os szürke"
+    XTP_IDS_CLR_DARK_RED    "Sötétvörös"
+    XTP_IDS_CLR_ORANGE      "Narancs"
+    XTP_IDS_CLR_DARK_YELLOW "Sötétsárga"
+    XTP_IDS_CLR_GREEN       "Zöld"
+    XTP_IDS_CLR_TEAL        "Pávakék"
+    XTP_IDS_CLR_BLUE        "Kék"
+    XTP_IDS_CLR_BLUEGRAY    "Kékesszürke"
+    XTP_IDS_CLR_GRAY50      "50%-os szürke"
+    XTP_IDS_CLR_RED         "Vörös"
+    XTP_IDS_CLR_LIGHTORANGE "Világosnarancs"
+    XTP_IDS_CLR_LIME        "Zöldessárga"
+    XTP_IDS_CLR_SEA_GREEN   "Tengerzöld"
+    XTP_IDS_CLR_AQUA        "Vízkék"
+    XTP_IDS_CLR_LIGHT_BLUE  "Világoskék"
+    XTP_IDS_CLR_VIOLET      "Ibolyaszín"
+    XTP_IDS_CLR_GRAY40      "40%-os szürke"
+    XTP_IDS_CLR_PINK        "Rózsaszín"
+    XTP_IDS_CLR_GOLD        "Arany"
+    XTP_IDS_CLR_YELLOW      "Sárga"
+    XTP_IDS_CLR_BRIGHT_GREEN "Fényeszöld"
+    XTP_IDS_CLR_TURQUOISE   "Türkiz"
+    XTP_IDS_CLR_SKY_BLUE    "Égkék"
+    XTP_IDS_CLR_PLUM        "Szilvakék"
+    XTP_IDS_CLR_GRAY25      "25%-os szürke"
+    XTP_IDS_CLR_ROSE        "Rosé"
+    XTP_IDS_CLR_TAN         "Barackszínû"
+    XTP_IDS_CLR_LIGHT_YELLOW "Világossárga"
+    XTP_IDS_CLR_LIGHT_GREEN "Világoszöld"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Világostürkiz"
+    XTP_IDS_CLR_PALE_BLUE   "Halványkék"
+    XTP_IDS_CLR_BLACK       "Fekete"
+    XTP_IDS_CLR_BROWN       "Barna"
+    XTP_IDS_CLR_OLIVE_GREEN "Olívzöld"
+    XTP_IDS_CLR_DARK_GREEN  "Sötétzöld"
+    XTP_IDS_CLR_DARK_TEAL   "Sötét pávakék"
+    XTP_IDS_CLR_DARK_BLUE   "Sötétkék"
+    XTP_IDS_CLR_LAVENDER    "Levendula"
+    XTP_IDS_CLR_WHITE       "Fehér"
+    XTP_IDS_CLR_GRAY        "Szürke"
+    XTP_IDS_CLR_MAROON      "Sötétvörös"
+    XTP_IDS_CLR_OLIVE       "Okkersárga"
+    XTP_IDS_CLR_NAVY        "Sötétkék"
+    XTP_IDS_CLR_PURPLE      "Lila"
+    XTP_IDS_CLR_SILVER      "Ezüst"
+    XTP_IDS_CLR_FUCHSIA     "Lila"
+    XTP_IDS_CLR_NOFILL      "Nincs\nNincs"
+    XTP_IDS_CLR_AUTOMATIC   "Automatikus szín\nAutomatikus szín"
+    XTP_IDS_CLR_MORE        "További színek..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

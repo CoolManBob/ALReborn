@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug EM64T|Win32">
+      <Configuration>Debug EM64T</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug EM64T|x64">
+      <Configuration>Debug EM64T</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Japanese|Win32">
+      <Configuration>Debug Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Japanese|x64">
+      <Configuration>Debug Japanese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release EM64T|Win32">
+      <Configuration>Release EM64T</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release EM64T|x64">
+      <Configuration>Release EM64T</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese|Win32">
+      <Configuration>Release Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese|x64">
+      <Configuration>Release Japanese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{55DEEE27-6B81-4BE1-BBB0-FD4894E6806D}</ProjectGuid>
+    <RootNamespace>AgpModules</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.31919.74</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4244;5208;4091;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4244;5208;4091;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'">
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'">
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;APMEMORY_CHECKER;_WEBZEN_AUTH_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;APMEMORY_CHECKER;_WEBZEN_AUTH_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:EM64T %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:EM64T %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_KOREA_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_JAPAN_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;_AREA_JAPAN_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\APublic\AgpmAdmin\AgpmAdmin.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmAI2\AgpaAI2.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmAI2\AgpmAI2.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmArchlord\AgpmArchlord.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmAreaChatting\AgpmAreaChatting.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmAuctionCategory\AgpmAuctionCategory.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmAuction\AgpaAuction.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmAuction\AgpmAuction.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmBattleGround\AgpmBattleGround.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmBillInfo\AgpmBillInfo.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmBuddy\AgpmBuddy.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCashMall\AgpmCashMall.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCashMall\AgpmCashMallPacket.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCashMall\AgpmCashMallStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCasper\AgpmCasper.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCastle\AgpmCastle.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmChannel\AgpaChannel.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmChannel\AgpmChannel.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCharacter\AgpaCharacter.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCharacter\AgpaCharacterTemplate.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCharacter\AgpmCharacter.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCharacter\AgpmCharacterAction.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCharacter\AgpmCharacterMoney.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCharacter\AgpmCharacterStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCharacter\AgpmCharacterUpdate.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmChatting\AgpmChatting.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmCombat\AgpmCombat.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmConfig\AgpmConfig.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmDropItem2\AgpmDropItem2.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmDropItem\AgpaDropItem.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmDropItem\AgpmDropItem.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEpicZone\AgpmEpicZone.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventBank\AgpmEventBank.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventBinding\AgpaEventBinding.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventBinding\AgpmEventBinding.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventBinding\AgpmEventBindingStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventCharCustomize\AgpmEventCharCustomize.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventFactors\AgpmEventFactors.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventGacha\AgpmEventGacha.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventGuild\AgpmEventGuild.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventItemConvert\AgpmEventItemConvert.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventItemRepair\AgpmEventItemRepair.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventNature\AgpmEventNature.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventNPCDialog\AgpaEventNPCDialog.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventNPCDialog\AgpmEventNPCDialog.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventNPCTrade\AgpaEventNPCTrade.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventNPCTrade\AgpmEventNPCTrade.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventPointLight\AgpmEventPointLight.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventProduct\AgpmEventProduct.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventQuest\AgpmEventQuest.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventRefinery\AgpmEventRefinery.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventSiegeWarNPC\AgpmEventSiegeWarNPC.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventSkillMaster\AgpmEventSkillMaster.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventSkillMaster\AgpmEventSkillMasterStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventSpawn\AgpaSpawnGroup.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventSpawn\AgpmEventSpawn.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventTeleport\AgpmEventTeleport.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmEventTeleport\AgpmEventTeleportStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmFactors\AgpmFactors.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmGamble\AgpmGamble.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmGrid\AgpmGrid.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmGuildWarehouse\AgpmGuildWarehouse.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmGuild\AgpaGuild.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmGuild\AgpdGuild.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmGuild\AgpmGuild.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvert.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvertPacket.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvertPhysicalAttr.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvertRune.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvertSocket.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvertSpiritStone.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvertStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemEgo.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpaItem.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItem.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemBank.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemCashInventory.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemClientGrid.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemEquip.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemField.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemGrid.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemInventory.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemQuest.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemSalesBox.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemSubInventory.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmItem\AgpmItemTradeGrid.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmLogin\AgpmLogin.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmLog\AgpmLog.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmMailBox\AgpaMailBox.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmMailBox\AgpmMailBox.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmMonsterPath\AgpmMonsterPath.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmNatureEffect\AgpmNatureEffect.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmOptimizedPacket2\AgpmOptimizedPacket2.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmParty\AgpaParty.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmParty\AgpmParty.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmPathFind\AgpmPathFind.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmProduct\AgpaProduct.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmProduct\AgpmProduct.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmProduct\AgpmProductStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmPvP\AgpmPvP.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmPvP\AgpmPvPPacket.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmPvP\AgpmPvPStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmQuest\AgpaQuestGroup.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmQuest\AgpaQuestTemplate.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmQuest\AgpdQuest.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmQuest\AgpdQuestFlag.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmQuest\AgpmQuest.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmQuest\AgpmQuestPacket.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmQuest\AgpmQuestStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmRecruit\AgpmRecruit.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmRefinery\AgpaRefinery.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmRefinery\AgpmRefinery.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmRemission\AgpmRemission.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmResourceInfo\AgpmResourceInfo.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmReturnToLogin\AgpmReturnToLogin.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmRide\AgpmRide.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmScript\AgpmScript.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSearch\AgpmSearch.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmShrine\AgpaShrine.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmShrine\AgpaShrineTemplate.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmShrine\AgpmShrine.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSiegeWar\AgpmSiegeWar.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSiegeWar\AgpmSiegeWarApplication.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpaSkill.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpaSkillProductTemplate.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpaSkillSpecializeTemplate.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpaSkillTemplate.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpaSkillTooltipTemplate.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpmSkill.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpmSkillMakePacket.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpmSkillMastery.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSkill\AgpmSkillStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmStartupEncryption\AgpmStartupEncryption.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSummons\AgpmSummons.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmSystemMessage\AgpmSystemMessage.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmTax\AgpmTax.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmTimer\AgpmTimer.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmTitle\AgpaTitle.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmTitle\AgpdTitle.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmTitle\AgpdTitleQuest.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmTitle\AgpmTitle.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmTitle\AgpmTItleStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmTransform\AgpmTransform.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmUIStatus\AgpmUIStatus.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmUnion\AgpmUnion.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmWantedCriminal\AgpmWantedCriminal.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\AgpmWorld\AgpmWorld.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmEventManager\ApaEvent.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmEventManager\ApmEventCondition.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmEventManager\ApmEventManager.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmFactors\ApmFactors.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmMap\ApMapBlocking.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmMap\ApmMap.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmMap\ApWorldSector.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmMap\AuOTree.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmMap\MagPackManager.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmMap\MagUnpackManager.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmObject\ApdObject.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmObject\ApmObject.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApmOcTree\ApmOcTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Modules\APublic\AgpmAdmin\AgpdAdmin.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAdmin\AgpmAdmin.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAdmin\AgppAdmin.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAI2\AgpaAI2.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAI2\AgpdAI2.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAI2\AgpmAI2.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmArchlord\AgpmArchlord.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAreaChatting\AgpmAreaChatting.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAuctionCategory\AgpmAuctionCategory.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAuction\AgpaAuction.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAuction\AgpdAuction.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmAuction\AgpmAuction.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmBattleGround\AgpmBattleGround.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmBattleGround\AgppBattleGround.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmBillInfo\AgpdBillInfo.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmBillInfo\AgpmBillInfo.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmBillInfo\AgppBillInfo.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmBuddy\AgpdBuddy.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmBuddy\AgpmBuddy.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCashMall\AgpdCashMall.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCashMall\AgpmCashMall.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCashMall\AgppCashMall.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCasper\AgpmCasper.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCastle\AgpmCastle.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmChannel\AgpaChannel.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmChannel\AgpdChannel.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmChannel\AgpmChannel.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCharacter\AgpaCharacter.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCharacter\AgpaCharacterTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCharacter\AgpdCharacter.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCharacter\AgpdCharacterImportData.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCharacter\AgpmCharacter.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCharacter\ApAutoLockCharacter.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmChatting\AgpdChatting.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmChatting\AgpmChatting.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmCombat\AgpmCombat.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmConfig\AgpmConfig.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmDropItem2\AgpdDropItem2.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmDropItem2\AgpmDropItem2.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmDropItem\AgpaDropItem.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmDropItem\AgpdDropItem.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmDropItem\AgpmDropItem.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEpicZone\AgpmEpicZone.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventBank\AgpmEventBank.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventBinding\AgpaEventBinding.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventBinding\AgpdEventBinding.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventBinding\AgpmEventBinding.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventCharCustomize\AgpmEventCharCustomize.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventFactors\AgpmEventFactors.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventGacha\AgpdEventGacha.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventGacha\AgpmEventGacha.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventGuild\AgpmEventGuild.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventItemConvert\AgpmEventItemConvert.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventItemRepair\AgpmEventItemRepair.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventNature\AgpdEventNature.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventNature\AgpmEventNature.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventNPCDialog\AgpdEventNPCDialog.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventNPCDialog\AgpmEventNPCDialog.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventNPCDialog\AgppEventNPCDialog.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventNPCTrade\AgpdEventNPCTrade.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventNPCTrade\AgpmEventNPCTrade.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventPointLight\AgpmEventPointLight.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventProduct\AgpmEventProduct.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventQuest\AgpmEventQuest.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventRefinery\AgpmEventRefinery.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventSiegeWarNPC\AgpmEventSiegeWarNPC.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventSkillMaster\AgpdEventSkillMaster.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventSkillMaster\AgpmEventSkillMaster.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventSkillMaster\AgpmEventSkillMasterEvolution.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventSpawn\AgpaSpawnGroup.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventSpawn\AgpdEventSpawn.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventSpawn\AgpmEventSpawn.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventTeleport\AgpdEventTeleport.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmEventTeleport\AgpmEventTeleport.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmFactors\AgpdFactors.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmFactors\AgpmFactors.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGamble\AgpdGamble.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGamble\AgpmGamble.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGrid\AgpdGrid.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGrid\AgpmGrid.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGuildWarehouse\AgpdGuildWarehouse.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGuildWarehouse\AgpmGuildWarehouse.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGuild\AgpaGuild.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGuild\AgpdGuild.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGuild\AgpmGuild.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmGuild\AgppGuild.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItemConvert\AgpdItemConvert.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvert.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItemConvert\AgpmItemConvertStream.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\AgpaItem.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\AgpdItem.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\AgpdItemImportData.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\AgpdItemOptionTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\AgpdItemTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\AgpmItem.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\AgppItem.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\ApdItem.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmItem\ApdItemTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmLogin\AgpmLogin.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmLog\AgpdLog.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmLog\AgpmLog.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmMailBox\AgpaMailBox.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmMailBox\AgpdMailBox.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmMailBox\AgpmMailBox.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmMonsterPath\AgpdMonsterPath.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmMonsterPath\AgpmMonsterPath.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmNatureEffect\AgpmNatureEffect.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmOptimizedPacket2\AgpmOptimizedPacket2.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmParty\AgpaParty.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmParty\AgpdParty.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmParty\AgpmParty.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmPathFind\AgpdPathFind.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmPathFind\AgpmPathFind.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmPathFind\PLinkedList.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmPathFind\SpecializeListPathFind.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmProduct\AgpaProduct.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmProduct\AgpdProduct.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmProduct\AgpmProduct.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmPvP\AgpdPvP.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmPvP\AgpmPvP.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmQuest\AgpaQuestGroup.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmQuest\AgpaQuestTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmQuest\AgpdQuest.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmQuest\AgpdQuestFlag.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmQuest\AgpdQuestTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmQuest\AgpmQuest.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmQuest\AgpmQuestStringTable.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmRecruit\AgpmRecruit.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmRefinery\AgpaRefinery.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmRefinery\AgpdRefinery.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmRefinery\AgpmRefinery.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmRemission\AgpmRemission.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmResourceInfo\AgpmResourceInfo.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmReturnToLogin\AgpmReturnToLogin.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmRide\AgpmRide.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmScript\AgpmScript.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSearch\AgpdSearch.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSearch\AgpmSearch.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmShrine\AgpaShrine.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmShrine\AgpaShrineTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmShrine\AgpdShrine.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmShrine\AgpmShrine.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSiegeWar\AgpdSiegeWar.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSiegeWar\AgpmSiegeWar.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpaSkill.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpaSkillProductTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpaSkillSpecializeTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpaSkillTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpaSkillTooltipTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpdSkill.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpdSkillImportData.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpdSkillProduct.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSkill\AgpmSkill.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmStartupEncryption\AgpmStartupEncryption.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSummons\AgpdSummons.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSummons\AgpmSummons.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSystemMessage\AgpdSystemMessage.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmSystemMessage\AgpmSystemMessage.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTax\AgpdTax.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTax\AgpmTax.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTimer\AgpdTimer.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTimer\AgpmTimer.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTitle\AgpaTitle.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTitle\AgpdTitle.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTitle\AgpdTitleQuest.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTitle\AgpdTitleTemplate.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTitle\AgpmTitle.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTitle\agppTitle.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmTransform\AgpmTransform.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmUIStatus\AgpdUIStatus.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmUIStatus\AgpmUIStatus.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmUnion\AgpmUnion.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmWantedCriminal\AgpdWantedCriminal.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmWantedCriminal\AgpmWantedCriminal.h" />
+    <ClInclude Include="..\..\Modules\APublic\AgpmWorld\AgpmWorld.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmEventManager\ApaEvent.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmEventManager\ApdEvent.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmEventManager\ApmEventManager.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmFactors\ApmFactors.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmMap\ApMapBlocking.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmMap\ApmMap.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmMap\ApWorldSector.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmMap\AuOTree.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmMap\MagPackManager.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmMap\MagUnpackManager.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmObject\ApdObject.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmObject\ApmObject.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApmOcTree\ApmOcTree.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApText\ApText.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApText\ApText_cn.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApText\ApText_kr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Modules\APublic\AgpmFactors\AgpmFactors.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApModules\ApModules.vcxproj">
+      <Project>{a5c4630c-e440-4767-87cc-6b53905d260e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

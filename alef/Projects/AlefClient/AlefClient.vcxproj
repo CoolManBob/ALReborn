@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Chinese|Win32">
+      <Configuration>Debug Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Japanese|Win32">
+      <Configuration>Debug Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Chinese|Win32">
+      <Configuration>Release Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese|Win32">
+      <Configuration>Release Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F8BA859-AA7F-4547-A8B6-5858B0C2B9C8}</ProjectGuid>
+    <RootNamespace>AlefClient</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31727.243</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>rem IncrediBuild_AllowOverlap
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Projects\DShowLib;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;$(SolutionDir)WebzenAuth\Include;$(SolutionDir)WebzenShopScript\Include;$(SolutionDir)WebzenShopScript\Include\Interface;$(SolutionDir)Include\DX9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_MBCS;RWDEBUG;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819; 4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;rtfsyst.lib;winmm.lib;libfreetype.lib;ApModulesD.lib;AgpModulesD.lib;AgcModulesD.lib;PatchZipLibD.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;fmodex_vc.lib;WebzenAuth_d.lib;WebzenShopScript_d.lib;ShopListManager_VS2005_NOSP_MB_d.lib;FileDownloader_VS2005_NOSP_MB_d.lib;atls.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(SolutionDir)Bin\AlefClientD.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;$(SolutionDir)lib/debug;$(SolutionDir)lib/debug/STLPort_32bit;$(SolutionDir)SoundLibrary\FMOD\Lib;$(SolutionDir)Lib\Debug\HanGame\HanGameKorea;$(SolutionDir)WebzenAuth\Lib;$(SolutionDir)WebzenShopScript\Lib;$(SolutionDir)lib/release/dx9/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;atlsd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)Bin\AlefClientD.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>rem IncrediBuild_AllowOverlap
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Projects\DShowLib;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;$(SolutionDir)WebzenAuth\Include;$(SolutionDir)WebzenShopScript\Include;$(SolutionDir)WebzenShopScript\Include\Interface;$(SolutionDir)Include\DX9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_MBCS;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin\AlefClient.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw\lib\release;$(SolutionDir)Lib/Release/HanGame/HanGameKorea;$(SolutionDir)lib\release;$(SolutionDir)SoundLibrary\FMOD\Lib;$(SolutionDir)Lib\Release\nProtect;$(SolutionDir)Lib\Release\dx9\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">
+    <PreBuildEvent>
+      <Command>rem IncrediBuild_AllowOverlap
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_MBCS;RWDEBUG;_AREA_CHINA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;rtfsyst.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModulesD.lib;AgpModulesD.lib;AgcModulesD.lib;PatchZipLibD.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(SolutionDir)Bin\AlefClientD.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;$(SolutionDir)lib/debug;$(SolutionDir)lib/debug/DynCode_32bit;$(SolutionDir)lib/debug/STLPort_32bit;$(SolutionDir)SoundLibrary\FMOD\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)AlefClient.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">
+    <PreBuildEvent>
+      <Command>rem IncrediBuild_AllowOverlap
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_MBCS;_AREA_CHINA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;AuDynCodeClient.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin\AlefClient.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw\lib\release;$(SolutionDir)lib\release;$(SolutionDir)lib\release\DynCode_32bit;$(SolutionDir)lib\release\STLPort_32bit;$(SolutionDir)SoundLibrary\FMOD\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <PreBuildEvent>
+      <Command>rem IncrediBuild_AllowOverlap
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Modules\AUtility;$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Projects\DShowLib;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_MBCS;RWDEBUG;_AREA_JAPAN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;rtfsyst.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModulesD.lib;AgpModulesD.lib;AgcModulesD.lib;PatchZipLibD.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(SolutionDir)Bin\AlefClientD.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;$(SolutionDir)lib/debug/HanGame/HanGameJapan;$(SolutionDir)lib/debug;$(SolutionDir)lib/debug/STLPort_32bit;$(SolutionDir)SoundLibrary\FMOD\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)AlefClient.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <PreBuildEvent>
+      <Command>rem IncrediBuild_AllowOverlap
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;$(SolutionDir)SoundLibrary\FMOD\Include;$(SolutionDir)SoundLibrary\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_MBCS;_AREA_JAPAN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Bin\AlefClient.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw\lib\release;$(SolutionDir)lib\release\HanGame\HanGameJapan;$(SolutionDir)lib\release;$(SolutionDir)lib\release\STLPort_32bit;$(SolutionDir)SoundLibrary\FMOD\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\BugslayerUtil.h" />
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\CrashHandler.h" />
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\Internal.h" />
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\PCH.h" />
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\SymbolEngine.h" />
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\WarningsOff.h" />
+    <ClInclude Include="..\..\Client\AlefClient\BugSlay\WarningsOn.h" />
+    <ClInclude Include="..\..\Client\AlefClient\libHGPSHELP.hpp" />
+    <ClInclude Include="..\..\Client\AlefClient\LuaFunc.h" />
+    <ClInclude Include="..\..\Client\AlefClient\MainWindow.h" />
+    <ClInclude Include="..\..\Client\AlefClient\MyEngine.h" />
+    <ClInclude Include="..\..\Client\AlefClient\MyException.h" />
+    <ClInclude Include="..\..\Client\AlefClient\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\BSUFunctions.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\CrashHandler.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\GetLoadedModules.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\IsNT.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\NT4ProcessInfo.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\PCH.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\BugSlay\TLHELPProcessInfo.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\LuaFunc.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\MainWindow.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\MyEngine.cpp" />
+    <ClCompile Include="..\..\Client\AlefClient\MyException.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Client\AlefClient\1-Normal-16.cur" />
+    <None Include="..\..\Client\AlefClient\1-Normal.cur" />
+    <None Include="..\..\Client\AlefClient\2-Pickup-16.cur" />
+    <None Include="..\..\Client\AlefClient\2-Pickup.cur" />
+    <None Include="..\..\Client\AlefClient\3-Attack-16.cur" />
+    <None Include="..\..\Client\AlefClient\3-Attack.cur" />
+    <None Include="..\..\Client\AlefClient\4-Event-16.cur" />
+    <None Include="..\..\Client\AlefClient\4-Event.cur" />
+    <None Include="..\..\Client\AlefClient\5-SkillMove-16.cur" />
+    <None Include="..\..\Client\AlefClient\5-SkillMove.cur" />
+    <None Include="..\..\Client\AlefClient\6-Block-16.cur" />
+    <None Include="..\..\Client\AlefClient\6-Block.cur" />
+    <None Include="..\..\Client\AlefClient\7-Repair-16.cur" />
+    <None Include="..\..\Client\AlefClient\7-Repair.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Client\AlefClient\AlefClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Client\AlefClient\Archrlod.ico" />
+    <Image Include="..\..\Client\AlefClient\icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AgcModules\AgcModules.vcxproj">
+      <Project>{1fbf53c3-9711-4bb9-a5c1-db7e06a6301f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\AgpModules\AgpModules.vcxproj">
+      <Project>{55deee27-6b81-4be1-bbb0-fd4894e6806d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ApModules\ApModules.vcxproj">
+      <Project>{a5c4630c-e440-4767-87cc-6b53905d260e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\AuDynCode\AuDynCodeClient.vcxproj">
+      <Project>{3e57a97a-4eaa-4a6a-966f-b23c2a1cf91d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\AuKbHookDLL\AuKbHook.vcxproj">
+      <Project>{d6385b8f-fbe2-42ff-9bdf-57701b466312}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

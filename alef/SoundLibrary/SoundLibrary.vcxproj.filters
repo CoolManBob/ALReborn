@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SoundResource">
+      <UniqueIdentifier>{199ced30-e68a-483f-9c1e-869ed89707f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoundInstance">
+      <UniqueIdentifier>{12b980dd-35fa-4a7a-9791-e65483bdf0b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoundManager">
+      <UniqueIdentifier>{e6a0e34a-c448-4ccd-9acb-6e31f7e6ce2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{77858bab-26a1-49a2-be5c-7888ce8a8e2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SoundResource\SoundResource.cpp">
+      <Filter>SoundResource</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundInstance\Sound2D.cpp">
+      <Filter>SoundInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundInstance\Sound3D.cpp">
+      <Filter>SoundInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundInstance\SoundInstance.cpp">
+      <Filter>SoundInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager\SoundManager.cpp">
+      <Filter>SoundManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\SoundUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SoundResource\SoundResource.h">
+      <Filter>SoundResource</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundInstance\Sound2D.h">
+      <Filter>SoundInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundInstance\Sound3D.h">
+      <Filter>SoundInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundInstance\SoundInstance.h">
+      <Filter>SoundInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager\SoundManager.h">
+      <Filter>SoundManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\SoundUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DefineSoundMacro.h" />
+  </ItemGroup>
+</Project>

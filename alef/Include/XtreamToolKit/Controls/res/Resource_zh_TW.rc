@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¨C¤é¤p¯µ³Z"
+FONT 9, "ËÎÌå"
+BEGIN
+    DEFPUSHBUTTON   "Ãö³¬ÀÉ®×",IDOK,221,136,50,14
+    CONTROL         "¦b±Ò°Ê®ÉÅã¥Ü´£¥Ü",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,120,10
+    PUSHBUTTON      "¤U­Ó´£¥Ü",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "¦Û­q¼Ë¦¡"
+FONT 9, "ËÎÌå"
+BEGIN
+    LTEXT           "¦â±m:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,4,
+                    15,116,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,17,86
+    LTEXT           "¦â½Õ:",XT_IDC_TXT_HUE,4,108,33,8
+    EDITTEXT        XT_IDC_EDIT_HUE,45,106,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,105,
+                    10,14
+    LTEXT           "¹¡¦X«×:",XT_IDC_TXT_SAT,4,125,41,8
+    EDITTEXT        XT_IDC_EDIT_SAT,45,122,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,122,
+                    10,14
+    LTEXT           "«G«×:",XT_IDC_TXT_LUM,4,140,33,8
+    EDITTEXT        XT_IDC_EDIT_LUM,45,138,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,137,
+                    10,14
+    LTEXT           "¬õ¦â:",XT_IDC_TXT_RED,86,108,25,8
+    EDITTEXT        XT_IDC_EDIT_RED,111,106,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,105,
+                    11,14
+    LTEXT           "ºñ¦â:",XT_IDC_TXT_GREEN,86,125,25,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,111,122,32,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,122,
+                    11,14
+    LTEXT           "ÂÅ¦â:",XT_IDC_TXT_BLUE,86,140,25,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,111,138,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "¤@¯ë"
+FONT 9, "ËÎÌå"
+BEGIN
+    LTEXT           "¦â±m:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "µøµ¡"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "¿ï¨úµøµ¡:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "±Ò°Ê",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "½T©w",IDOK,233,24,62,14
+    PUSHBUTTON      "Àx¦sÀÉ®×",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "Ãö³¬µøµ¡",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "­«Å|Åã¥Ü",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "¤ô¥­¨Ã±Æ",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "««ª½¨Ã±Æ",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "³Ì¤p¤Æ",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "¤p¹Ï¥Ü",                XT_IDC_SMALLICON
+        MENUITEM "©ñ¤j¹Ï¥Ü",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "´_­ì",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "°Å¤U",                        ID_EDIT_CUT
+        MENUITEM "½Æ»s",                       ID_EDIT_COPY
+        MENUITEM "¶K¤W",                      ID_EDIT_PASTE
+        MENUITEM "§R°£",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "¥þ¿ï",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "»¼¼W±Æ§Ç",              XT_IDC_SORTASC
+        MENUITEM "»¼´î±Æ§Ç",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "¹ï»ô"
+        BEGIN
+            MENUITEM "¾a¥ª¹ï»ô",                  XT_IDC_ALIGNLEFT
+            MENUITEM "¹ï»ô¤¤¥¡",                XT_IDC_ALIGNCENTER
+            MENUITEM "¾a¥k¹ï»ô",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "¶}·sÀÉ®×"
+    XT_IDC_BTN_DELETE       "§R°£"
+    XT_IDC_BTN_UP           "¦V¤W²¾°Ê"
+    XT_IDC_BTN_DOWN         "¦V¤U²¾"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "¦WºÙ"
+    XT_IDS_SIZE             "½Õ¾ã¤j¤p"
+    XT_IDS_TYPE             "Ãþ«¬"
+    XT_IDS_MODIFIED         "­×§ï¤é´Á"
+    XT_IDS_COLOR_AUTO       "¦Û°Ê"
+    XT_IDS_COLOR_CUST       "¦Û­q..."
+    XT_IDS_SELDIR           "¿ï¨ú¥Ø¿ý:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "©Ò¦³ÀÉ®× (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "¥Ø¿ý¦WºÙ:"
+    XT_IDS_CLICKKEEPOPEN    "«ö¤@¤U¹Ï°v¥i«O«ù¶}±Ò"
+    XT_IDS_SE_0             "²Ù×÷ÏµÍ³ÄÚ´æ»ò×ÊÔ´ÒÑºÄ¾¡."
+    XT_IDS_SE_ERR_FNF       "Ö¸¶¨µÄÎÄ¼þÎ´·¢ÏÖ."
+    XT_IDS_SE_ERR_PNF       "Ö¸¶¨µÄÂ·¾¶Î´·¢ÏÖ."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "²Ù×÷ÏµÍ³¾Ü¾ø·ÃÎÊÖ¸¶¨µÄÎÄ¼þ¡£"
+    XT_IDS_SE_ERR_OOM       "ÒÑ¾­Ã»ÓÐ×ã¹»µÄÄÚ´æÍê³É²Ù×÷¡£"
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            ".exe ÎÄ¼þÎÞÐ§ (²»ÊÇWin32¿ÉÖ´ÐÐÎÄ¼þ»ò.exeÓ³Ïó´íÎó)."
+    XT_IDS_SE_ERR_SHARE     "·¢ÉúÁË¹²Ïí³åÍ»¡£"
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "Ïà¹ØµÄÎÄ¼þÃû²»ÍêÈ«»òÎÞÐ§¡£"
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "Ö¸¶¨µÄ DDE ÈÎÎñÒòÎª³¬Ê±¶øÃ»ÓÐÍê³É¡£"
+    XT_IDS_SE_ERR_DDEFAIL   "Ö¸¶¨µÄ DDE ÈÎÎñÊ§°Ü¡£"
+    XT_IDS_SE_ERR_DDEBUSY   "Ö¸¶¨µÄ DDE ÈÎÎñÃ»ÓÐÍê³É£¬ÒòÎªÁíÒ»¸ö DDE ÈÎÎñÕýÔÚ½øÐÐÖÐ¡£"
+    XT_IDS_SE_ERR_NOASSOC   "Ã»ÓÐÓ¦ÓÃ³ÌÐòÓëÖ¸¶¨µÄÎÄ¼þÀ©Õ¹ÃûÏà¹ØÁª¡£"
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "Ã»ÕÒµ½Ö¸¶¨µÄ¶¯Ì¬Á´½Ó¿â¡£"
+    XT_IDS_SE_ERR_UNKOWN    "Ò»¸ö±àºÅÎª %d ´íÎó·¢Éú¡£"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "»¼¼W±Æ§Ç\n»¼¼W±Æ§Ç"
+    XT_IDC_SORTDSC          "»¼´î±Æ§Ç\n»¼´î±Æ§Ç"
+    XT_IDC_ALIGNLEFT        "³]©w¬q¸¨ªº±Æ¦C¤è¦¡¬°¦V¥ªÃä¬É¹ï»ô\n¦V¥ª¹ï»ô"
+    XT_IDC_ALIGNCENTER      "±N¬q¸¨¸m©óÃä¬Éªº¤¤¶¡\n¸m¤¤¹ï»ô"
+    XT_IDC_ALIGNRIGHT       "¬q¸¨¦V¥kÃä¬É¹ï»ô\n¾a¥k¹ï»ô"
+    XT_IDC_LARGEICON        "Åã¥Ü¤j¹Ï¥Ü\n¤j¹Ï¥Ü"
+    XT_IDC_SMALLICON        "Åã¥Ü¤p«¬¹Ï¥Ü\n¤p«¬¹Ï¥Ü"
+    XT_IDC_REMOVEITEM       "±q Outlook ¥\¯à°Ï²¾°£"
+    XT_IDC_RENAMEITEM       "­«·s©R¦W±¶®|"
+    XT_IDC_REMOVEGROUP      "²¾°£¸s²Õ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "­«·s©R¦W¸s²Õ"
+    XT_IDS_HEX              "¤Q¤»¶i¦ì"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "¼Ð·Ç¦â±m"
+    XT_IDS_TIPTEXT          "´£¥Ü¤å¦r"
+    XT_IDS_DIDYOUKNOW       "±zª¾¹D¶Ü..."
+    XT_IDS_FILE_ABSENT      "«ü©wªºÀÉ®×¤£¦s¦b¡C"
+    XT_IDS_FILE_CORRUPT     "Åª¨úÀÉ®×®Éµo¥Í¿ù»~¡C"
+    XT_IDS_COLOR_CAPTION    "¦â±m"
+    XT_IDS_NEW              "¶}·sÀÉ®×"
+    XT_IDS_CURRENT          "¥Ø«e"
+    XT_IDS_DIRECTORIES      "¥Ø¿ý:"
+    XT_IDS_FILES            "ÀÉ®×:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "½T©w"
+    XTP_IDS_TASK_YES          "¬O"
+    XTP_IDS_TASK_NO           "§_"
+    XTP_IDS_TASK_RETRY        "­«¸Õ"
+    XTP_IDS_TASK_CANCEL       "¨ú®ø"
+    XTP_IDS_TASK_CLOSE        "Ãö³¬ÀÉ®×"
+    XTP_IDS_TASK_SEE_DETAILS  "Åã¥Ü¸Ô²Ó¸ê®Æ"
+    XTP_IDS_TASK_HIDE_DETAILS "ÁôÂÃ¸Ô²Ó¸ê®Æ"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

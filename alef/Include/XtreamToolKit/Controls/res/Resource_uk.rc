@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Полезный совет"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Закрити",IDOK,221,136,50,14
+    CONTROL         "&Показывать подсказки при запуске",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,140,10
+    PUSHBUTTON      "Следующий совет",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Вибіркова"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Кольори:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Відтінок:",XT_IDC_TXT_HUE,7,108,18,8
+    EDITTEXT        XT_IDC_EDIT_HUE,33,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,57,105,
+                    10,14
+    LTEXT           "Насичення:",XT_IDC_TXT_SAT,7,125,21,8
+    EDITTEXT        XT_IDC_EDIT_SAT,33,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,57,122,
+                    10,14
+    LTEXT           "Яскравість:",XT_IDC_TXT_LUM,7,140,23,8
+    EDITTEXT        XT_IDC_EDIT_LUM,33,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,57,137,
+                    10,14
+    LTEXT           "Червоний:",XT_IDC_TXT_RED,73,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,97,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,121,105,
+                    11,14
+    LTEXT           "Зелений:",XT_IDC_TXT_GREEN,73,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,97,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,121,122,
+                    11,14
+    LTEXT           "Синій:",XT_IDC_TXT_BLUE,73,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,97,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,121,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "(Стандартний випуск)"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Кольори:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Рядом"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Выберите окно:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Перехід до вікна",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "ОК",IDOK,233,24,62,14
+    PUSHBUTTON      "Зберегти",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "Закрыть окно",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "Каскадом",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "Згори донизу",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "Зліва направо",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "Згорнути",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Дрібні значки",                XT_IDC_SMALLICON
+        MENUITEM "Великі значки",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Скасувати",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "видалення до буфера обміну",                        ID_EDIT_CUT
+        MENUITEM "копіювання",                       ID_EDIT_COPY
+        MENUITEM "Paste",                      ID_EDIT_PASTE
+        MENUITEM "Видалити",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "виділення всіх об'єктів",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Сортування за зростанням",              XT_IDC_SORTASC
+        MENUITEM "Сортування за спаданням",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Вирівнювання"
+        BEGIN
+            MENUITEM "За лівим краєм",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Вирівняти по центру",                XT_IDC_ALIGNCENTER
+            MENUITEM "За правим краєм",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Створити"
+    XT_IDC_BTN_DELETE       "Видалити"
+    XT_IDC_BTN_UP           "Вгору"
+    XT_IDC_BTN_DOWN         "Вниз"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Назва"
+    XT_IDS_SIZE             "Розмір"
+    XT_IDS_TYPE             "Тип"
+    XT_IDS_MODIFIED         "Змінено"
+    XT_IDS_COLOR_AUTO       "Авто"
+    XT_IDS_COLOR_CUST       "Настройка..."
+    XT_IDS_SELDIR           "Выберите папку:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Все файлы (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Имя каталога:"
+    XT_IDS_CLICKKEEPOPEN    "Щоб не закрилося"
+    XT_IDS_SE_0             "В операционной системе недостаточно памяти либо ресурсов."
+    XT_IDS_SE_ERR_FNF       "Указанный файл не найден."
+    XT_IDS_SE_ERR_PNF       "Указанный путь не верен."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "Операционная система запрещает доступ к указанному файлу."
+    XT_IDS_SE_ERR_OOM       "Не хватает памяти для завершения операции."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "Неверный exe-файл (не Win32® .exe или ошибка в образе .exe)."
+    XT_IDS_SE_ERR_SHARE     "Ошибка совместного доступа."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "Ассоциация с именем файла не полная либо испорчена."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "DDE транзакция не выполнена по истечении тайм-аута запроса."
+    XT_IDS_SE_ERR_DDEFAIL   "DDE транзакция не выполнена."
+    XT_IDS_SE_ERR_DDEBUSY   "DDE транзакция не выполнена из-за выполнения других DDE транзакций."
+    XT_IDS_SE_ERR_NOASSOC   "Ни одна из программ не связана с данным расширением имени файла."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "Указанная загружаемая библиотека(dll) не найдена."
+    XT_IDS_SE_ERR_UNKOWN    "Неизвестная ошибка %d."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Сортировка по убыванию\nСортировка по убыванию"
+    XT_IDC_SORTDSC          "Сортировка по убыванию\nСортировка по убыванию"
+    XT_IDC_ALIGNLEFT        "Выравнивание абзаца по левому полю\nПо левому краю"
+    XT_IDC_ALIGNCENTER      "Выравнивание абзаца по центру между полями\nПо центру"
+    XT_IDC_ALIGNRIGHT       "Выравнивание абзаца по правому полю\nПо правому краю"
+    XT_IDC_LARGEICON        "Отображение крупных значков\nКрупные значки"
+    XT_IDC_SMALLICON        "Отображение мелких значков\nМелкие значки"
+    XT_IDC_REMOVEITEM       "Видалити з панелі Outlook"
+    XT_IDC_RENAMEITEM       "Перейменувати ярлик"
+    XT_IDC_REMOVEGROUP      "Видалити групу"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Перейменувати групу"
+    XT_IDS_HEX              "Шестнадцатеричный файл"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Стандартні кольори"
+    XT_IDS_TIPTEXT          "Підказка"
+    XT_IDS_DIDYOUKNOW       "Чи знаєте ви..."
+    XT_IDS_FILE_ABSENT      "Указанный файл не существует."
+    XT_IDS_FILE_CORRUPT     "Ошибка чтения файла."
+    XT_IDS_COLOR_CAPTION    "Кольори"
+    XT_IDS_NEW              "Створити"
+    XT_IDS_CURRENT          "Текущий"
+    XT_IDS_DIRECTORIES      "Каталоги:"
+    XT_IDS_FILES            "Файлы:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "ОК"
+    XTP_IDS_TASK_YES          "Так"
+    XTP_IDS_TASK_NO           "Ні"
+    XTP_IDS_TASK_RETRY        "Повторити"
+    XTP_IDS_TASK_CANCEL       "Скасувати"
+    XTP_IDS_TASK_CLOSE        "Закрити"
+    XTP_IDS_TASK_SEE_DETAILS  "Показати подробиці"
+    XTP_IDS_TASK_HIDE_DETAILS "Приховати подробиці"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

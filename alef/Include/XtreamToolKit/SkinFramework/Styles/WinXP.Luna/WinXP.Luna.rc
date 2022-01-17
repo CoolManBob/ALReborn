@@ -1,0 +1,535 @@
+//Microsoft Developer Studio generated resource script.
+//
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTFILE
+//
+
+EXTRALARGEBLUE_INI      TEXTFILE MOVEABLE PURE  "res\\Blue_ExtraLarge.ini"
+LARGEFONTSBLUE_INI      TEXTFILE MOVEABLE PURE  "res\\Blue_LargeFonts.ini"
+NORMALBLUE_INI          TEXTFILE MOVEABLE PURE  "res\\Blue_Normal.ini"
+THEMES_INI              TEXTFILE MOVEABLE PURE  "res\\Themes.ini"
+EXTRALARGEHOMESTEAD_INI TEXTFILE MOVEABLE PURE  "res\\Homestead_ExtraLarge.ini"
+LARGEFONTSHOMESTEAD_INI TEXTFILE MOVEABLE PURE  "res\\Homestead_LargeFonts.ini"
+NORMALHOMESTEAD_INI     TEXTFILE MOVEABLE PURE  "res\\Homestead_Normal.ini"
+EXTRALARGEMETALLIC_INI  TEXTFILE MOVEABLE PURE  "res\\Metallic_ExtraLarge.ini"
+LARGEFONTSMETALLIC_INI  TEXTFILE MOVEABLE PURE  "res\\Metallic_LargeFonts.ini"
+NORMALMETALLIC_INI      TEXTFILE MOVEABLE PURE  "res\\Metallic_Normal.ini"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+BLUE_BUTTON_BMP         PNG  MOVEABLE PURE   "res\\Blue_button.png"
+BLUE_CAPTIONBUTTON_BMP  PNG  MOVEABLE PURE   "res\\Blue_CaptionButton.png"
+BLUE_CHECKBOX13_BMP     PNG  MOVEABLE PURE   "res\\Blue_CheckBox13.png"
+BLUE_CHECKBOX16_BMP     PNG  MOVEABLE PURE   "res\\Blue_CheckBox16.png"
+BLUE_CHECKBOX25_BMP     PNG  MOVEABLE PURE   "res\\Blue_CheckBox25.png"
+BLUE_CHEVRON_BMP        PNG  MOVEABLE PURE   "res\\Blue_Chevron.png"
+BLUE_CLOSEBUTTON_BMP    PNG  MOVEABLE PURE   "res\\Blue_CloseButton.png"
+BLUE_CLOSEGLYPH19_BMP   PNG  MOVEABLE PURE   "res\\Blue_CloseGlyph19.png"
+BLUE_CLOSEGLYPH23_BMP   PNG  MOVEABLE PURE   "res\\Blue_CloseGlyph23.png"
+BLUE_CLOSEGLYPH6_BMP    PNG  MOVEABLE PURE   "res\\Blue_CloseGlyph6.png"
+BLUE_CLOSEGLYPH9_BMP    PNG  MOVEABLE PURE   "res\\Blue_CloseGlyph9.png"
+BLUE_CLOSEGLYPH_BMP     PNG  MOVEABLE PURE   "res\\Blue_CloseGlyph.png"
+BLUE_COMBOBUTTONGLYPH_BMP PNG  MOVEABLE PURE   "res\\Blue_ComboButtonGlyph.png"
+BLUE_COMBOBUTTON_BMP    PNG  MOVEABLE PURE   "res\\Blue_ComboButton.png"
+BLUE_EXPLORERBARHEADERCLOSE_BMP PNG  MOVEABLE PURE   "res\\Blue_ExplorerBarHeaderClose.png"
+BLUE_EXPLORERBARHEADERPIN_BMP PNG  MOVEABLE PURE   "res\\Blue_ExplorerBarHeaderPin.png"
+BLUE_FIELDOUTLINEBLUE_BMP PNG  MOVEABLE PURE   "res\\Blue_FieldOutlineBlue.png"
+BLUE_FRAMEBOTTOM_BMP    PNG  MOVEABLE PURE   "res\\Blue_frameBottom.png"
+BLUE_FRAMECAPTIONMIN_BMP PNG  MOVEABLE PURE   "res\\Blue_FrameCaptionMin.png"
+BLUE_FRAMECAPTIONSIZING_BMP PNG  MOVEABLE PURE   "res\\Blue_FrameCaptionSizing.png"
+BLUE_FRAMECAPTION_BMP   PNG  MOVEABLE PURE   "res\\Blue_FrameCaption.png"
+BLUE_FRAMELEFT_BMP      PNG  MOVEABLE PURE   "res\\Blue_frameLeft.png"
+BLUE_FRAMEMAXIMIZED_BMP PNG  MOVEABLE PURE   "res\\Blue_FrameMaximized.png"
+BLUE_FRAMERIGHT_BMP     PNG  MOVEABLE PURE   "res\\Blue_frameRight.png"
+BLUE_GRIPPERVERT_BMP    PNG  MOVEABLE PURE   "res\\Blue_GripperVert.png"
+BLUE_GRIPPER_BMP        PNG  MOVEABLE PURE   "res\\Blue_Gripper.png"
+BLUE_GROUPBOX_BMP       PNG  MOVEABLE PURE   "res\\Blue_GroupBox.png"
+BLUE_HELPGLYPH19_BMP    PNG  MOVEABLE PURE   "res\\Blue_HelpGlyph19.png"
+BLUE_HELPGLYPH23_BMP    PNG  MOVEABLE PURE   "res\\Blue_HelpGlyph23.png"
+BLUE_HELPGLYPH6_BMP     PNG  MOVEABLE PURE   "res\\Blue_HelpGlyph6.png"
+BLUE_HELPGLYPH9_BMP     PNG  MOVEABLE PURE   "res\\Blue_HelpGlyph9.png"
+BLUE_HELPGLYPH_BMP      PNG  MOVEABLE PURE   "res\\Blue_HelpGlyph.png"
+BLUE_LISTVIEWHEADERBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Blue_ListviewHeaderBackground.png"
+BLUE_LISTVIEWHEADER_BMP PNG  MOVEABLE PURE   "res\\Blue_ListViewHeader.png"
+BLUE_MAXIMIZEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Blue_MaximizeGlyph19.png"
+BLUE_MAXIMIZEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Blue_MaximizeGlyph23.png"
+BLUE_MAXIMIZEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Blue_MaximizeGlyph6.png"
+BLUE_MAXIMIZEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Blue_MaximizeGlyph9.png"
+BLUE_MAXIMIZEGLYPH_BMP  PNG  MOVEABLE PURE   "res\\Blue_MaximizeGlyph.png"
+BLUE_MDICAPTIONBUTTON_BMP PNG  MOVEABLE PURE   "res\\Blue_MDICaptionButton.png"
+BLUE_MDIGLYPHCLOSE_BMP  PNG  MOVEABLE PURE   "res\\Blue_MDIGlyphClose.png"
+BLUE_MDIGLYPHMINIMIZE_BMP PNG  MOVEABLE PURE   "res\\Blue_MDIGlyphMinimize.png"
+BLUE_MDIGLYPHRESTORE_BMP PNG  MOVEABLE PURE   "res\\Blue_MDIGlyphRestore.png"
+BLUE_MINIMIZEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Blue_MinimizeGlyph19.png"
+BLUE_MINIMIZEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Blue_MinimizeGlyph23.png"
+BLUE_MINIMIZEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Blue_MinimizeGlyph6.png"
+BLUE_MINIMIZEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Blue_MinimizeGlyph9.png"
+BLUE_MINIMIZEGLYPH_BMP  PNG  MOVEABLE PURE   "res\\Blue_MinimizeGlyph.png"
+BLUE_NORMALGROUPBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Blue_NormalGroupBackground.png"
+BLUE_NORMALGROUPCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Blue_NormalGroupCollapse.png"
+BLUE_NORMALGROUPEXPAND_BMP PNG  MOVEABLE PURE   "res\\Blue_NormalGroupExpand.png"
+BLUE_NORMALGROUPHEAD_BMP PNG  MOVEABLE PURE   "res\\Blue_NormalGroupHead.png"
+BLUE_PLACEBARBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Blue_PlaceBarBackground.png"
+BLUE_PLACEBARBUTTONS_BMP PNG  MOVEABLE PURE   "res\\Blue_PlaceBarButtons.png"
+BLUE_PROGRESSCHUNKVERT_BMP PNG  MOVEABLE PURE   "res\\Blue_ProgressChunkVert.png"
+BLUE_PROGRESSCHUNK_BMP  PNG  MOVEABLE PURE   "res\\Blue_ProgressChunk.png"
+BLUE_PROGRESSTRACKVERT_BMP PNG  MOVEABLE PURE   "res\\Blue_ProgressTrackVert.png"
+BLUE_PROGRESSTRACK_BMP  PNG  MOVEABLE PURE   "res\\Blue_ProgressTrack.png"
+BLUE_RADIOBUTTON13_BMP  PNG  MOVEABLE PURE   "res\\Blue_RadioButton13.png"
+BLUE_RADIOBUTTON16_BMP  PNG  MOVEABLE PURE   "res\\Blue_RadioButton16.png"
+BLUE_RADIOBUTTON25_BMP  PNG  MOVEABLE PURE   "res\\Blue_RadioButton25.png"
+BLUE_RESIZEGRIP2_BMP    PNG  MOVEABLE PURE   "res\\Blue_ResizeGrip2.png"
+BLUE_RESTOREGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Blue_RestoreGlyph19.png"
+BLUE_RESTOREGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Blue_RestoreGlyph23.png"
+BLUE_RESTOREGLYPH6_BMP  PNG  MOVEABLE PURE   "res\\Blue_RestoreGlyph6.png"
+BLUE_RESTOREGLYPH9_BMP  PNG  MOVEABLE PURE   "res\\Blue_RestoreGlyph9.png"
+BLUE_RESTOREGLYPH_BMP   PNG  MOVEABLE PURE   "res\\Blue_RestoreGlyph.png"
+BLUE_SCROLLARROWGLYPHSSMALL_BMP PNG  MOVEABLE PURE   "res\\Blue_ScrollArrowGlyphsSmall.png"
+BLUE_SCROLLARROWGLYPHS_BMP PNG  MOVEABLE PURE   "res\\Blue_ScrollArrowGlyphs.png"
+BLUE_SCROLLARROWS_BMP   PNG  MOVEABLE PURE   "res\\Blue_ScrollArrows.png"
+BLUE_SCROLLSHAFTHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Blue_ScrollShaftHorizontal.png"
+BLUE_SCROLLSHAFTVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Blue_ScrollShaftVertical.png"
+BLUE_SCROLLTHUMBGRIPPERHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Blue_ScrollThumbGripperHorizontal.png"
+BLUE_SCROLLTHUMBGRIPPERVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Blue_ScrollThumbGripperVertical.png"
+BLUE_SCROLLTHUMBHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Blue_ScrollThumbHorizontal.png"
+BLUE_SCROLLTHUMBVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Blue_ScrollThumbVertical.png"
+BLUE_SEPARATORVERT_BMP  PNG  MOVEABLE PURE   "res\\Blue_SeparatorVert.png"
+BLUE_SEPARATOR_BMP      PNG  MOVEABLE PURE   "res\\Blue_Separator.png"
+BLUE_SLIDERTRACK_BMP    PNG  MOVEABLE PURE   "res\\Blue_sliderTrack.png"
+BLUE_SMALLCLOSEBUTTON_BMP PNG  MOVEABLE PURE   "res\\Blue_SmallCloseButton.png"
+BLUE_SMALLCLOSEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Blue_SmallCloseGlyph.png"
+BLUE_SMALLFRAMECAPTIONSIZING_BMP PNG  MOVEABLE PURE   "res\\Blue_SmallFrameCaptionSizing.png"
+BLUE_SMALLFRAMECAPTION_BMP PNG  MOVEABLE PURE   "res\\Blue_SmallFrameCaption.png"
+BLUE_SPECIALGROUPBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Blue_SpecialGroupBackground.png"
+BLUE_SPECIALGROUPCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Blue_SpecialGroupCollapse.png"
+BLUE_SPECIALGROUPEXPAND_BMP PNG  MOVEABLE PURE   "res\\Blue_SpecialGroupExpand.png"
+BLUE_SPECIALGROUPHEAD_BMP PNG  MOVEABLE PURE   "res\\Blue_SpecialGroupHead.png"
+BLUE_SPINBUTTONBACKGROUNDDOWN_BMP PNG  MOVEABLE PURE   "res\\Blue_SpinButtonBackgroundDown.png"
+BLUE_SPINBUTTONBACKGROUNDLEFT_BMP PNG  MOVEABLE PURE   "res\\Blue_SpinButtonBackgroundLeft.png"
+BLUE_SPINBUTTONBACKGROUNDRIGHT_BMP PNG  MOVEABLE PURE   "res\\Blue_SpinButtonBackgroundRight.png"
+BLUE_SPINBUTTONBACKGROUNDUP_BMP PNG  MOVEABLE PURE   "res\\Blue_SpinButtonBackgroundUp.png"
+BLUE_SPINDOWNGLYPH_BMP  PNG  MOVEABLE PURE   "res\\Blue_SpinDownGlyph.png"
+BLUE_SPINLEFTGLYPH_BMP  PNG  MOVEABLE PURE   "res\\Blue_SpinLeftGlyph.png"
+BLUE_SPINRIGHTGLYPH_BMP PNG  MOVEABLE PURE   "res\\Blue_SpinRightGlyph.png"
+BLUE_SPINUPGLYPH_BMP    PNG  MOVEABLE PURE   "res\\Blue_SpinUpGlyph.png"
+BLUE_STATUSBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Blue_StatusBackground.png"
+BLUE_STATUSPANE_BMP     PNG  MOVEABLE PURE   "res\\Blue_StatusPane.png"
+BLUE_TABBACKGROUND133_BMP PNG  MOVEABLE PURE   "res\\Blue_TabBackground133.png"
+BLUE_TABBACKGROUND_BMP  PNG  MOVEABLE PURE   "res\\Blue_TabBackground.png"
+BLUE_TABITEMBOTH_BMP    PNG  MOVEABLE PURE   "res\\Blue_tabItemBoth.png"
+BLUE_TABITEMLEFT_BMP    PNG  MOVEABLE PURE   "res\\Blue_tabItemLeft.png"
+BLUE_TABITEMRIGHT_BMP   PNG  MOVEABLE PURE   "res\\Blue_tabItemRight.png"
+BLUE_TABITEMTOPBOTH_BMP PNG  MOVEABLE PURE   "res\\Blue_tabItemTopBoth.png"
+BLUE_TABITEMTOPLEFT_BMP PNG  MOVEABLE PURE   "res\\Blue_tabItemTopLeft.png"
+BLUE_TABITEMTOPRIGHT_BMP PNG  MOVEABLE PURE   "res\\Blue_tabItemTopRight.png"
+BLUE_TABITEMTOP_BMP     PNG  MOVEABLE PURE   "res\\Blue_tabItemTop.png"
+BLUE_TABITEM_BMP        PNG  MOVEABLE PURE   "res\\Blue_tabItem.png"
+BLUE_TABPANEEDGE_BMP    PNG  MOVEABLE PURE   "res\\Blue_TabPaneEdge.png"
+BLUE_TOOLBARBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Blue_ToolbarBackground.png"
+BLUE_TOOLBARBUTTONSSPLITDROPDOWNGLYPH_BMP PNG  MOVEABLE PURE   "res\\Blue_ToolbarButtonsSplitDropdownGlyph.png"
+BLUE_TOOLBARBUTTONSSPLITDROPDOWN_BMP PNG  MOVEABLE PURE   "res\\Blue_ToolbarButtonsSplitDropdown.png"
+BLUE_TOOLBARBUTTONSSPLIT_BMP PNG  MOVEABLE PURE   "res\\Blue_ToolbarButtonsSplit.png"
+BLUE_TOOLBARBUTTONS_BMP PNG  MOVEABLE PURE   "res\\Blue_ToolbarButtons.png"
+BLUE_TOOLBARGRIPPERVERT_BMP PNG  MOVEABLE PURE   "res\\Blue_ToolbarGripperVert.png"
+BLUE_TOOLBARGRIPPER_BMP PNG  MOVEABLE PURE   "res\\Blue_ToolbarGripper.png"
+BLUE_TRACKBARDOWN13_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackBarDown13.png"
+BLUE_TRACKBARDOWN16_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackBarDown16.png"
+BLUE_TRACKBARDOWN25_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackBarDown25.png"
+BLUE_TRACKBARHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackbarHorizontal.png"
+BLUE_TRACKBARLEFT13_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackBarLeft13.png"
+BLUE_TRACKBARLEFT16_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackBarLeft16.png"
+BLUE_TRACKBARLEFT25_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackBarLeft25.png"
+BLUE_TRACKBARRIGHT13_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackbarRight13.png"
+BLUE_TRACKBARRIGHT16_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackBarRight16.png"
+BLUE_TRACKBARRIGHT25_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackBarRight25.png"
+BLUE_TRACKBARUP13_BMP   PNG  MOVEABLE PURE   "res\\Blue_TrackBarUp13.png"
+BLUE_TRACKBARUP16_BMP   PNG  MOVEABLE PURE   "res\\Blue_TrackBarUp16.png"
+BLUE_TRACKBARUP25_BMP   PNG  MOVEABLE PURE   "res\\Blue_TrackBarUp25.png"
+BLUE_TRACKBARVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Blue_TrackbarVertical.png"
+BLUE_TREEEXPANDCOLLAPSE10_BMP PNG  MOVEABLE PURE   "res\\Blue_treeExpandCollapse10.png"
+BLUE_TREEEXPANDCOLLAPSE15_BMP PNG  MOVEABLE PURE   "res\\Blue_treeExpandCollapse15.png"
+BLUE_TREEEXPANDCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Blue_treeExpandCollapse.png"
+HOMESTEAD_BUTTON_BMP    PNG  MOVEABLE PURE   "res\\Homestead_button.png"
+HOMESTEAD_CAPTIONBUTTON_BMP PNG  MOVEABLE PURE   "res\\Homestead_CaptionButton.png"
+HOMESTEAD_CHECKBOX13_BMP PNG  MOVEABLE PURE   "res\\Homestead_CheckBox13.png"
+HOMESTEAD_CHECKBOX16_BMP PNG  MOVEABLE PURE   "res\\Homestead_CheckBox16.png"
+HOMESTEAD_CHECKBOX25_BMP PNG  MOVEABLE PURE   "res\\Homestead_CheckBox25.png"
+HOMESTEAD_CHEVRON_BMP   PNG  MOVEABLE PURE   "res\\Homestead_Chevron.png"
+HOMESTEAD_CLOSEBUTTON_BMP PNG  MOVEABLE PURE   "res\\Homestead_CloseButton.png"
+HOMESTEAD_CLOSEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Homestead_CloseGlyph19.png"
+HOMESTEAD_CLOSEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Homestead_CloseGlyph23.png"
+HOMESTEAD_CLOSEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Homestead_CloseGlyph6.png"
+HOMESTEAD_CLOSEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Homestead_CloseGlyph9.png"
+HOMESTEAD_CLOSEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_CloseGlyph.png"
+HOMESTEAD_COMBOBUTTON_BMP PNG  MOVEABLE PURE   "res\\Homestead_ComboButton.png"
+HOMESTEAD_COMBOBUTTONGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_ComboButtonGlyph.png"
+HOMESTEAD_EXPLORERBARHEADERCLOSE_BMP PNG  MOVEABLE PURE   "res\\Homestead_ExplorerBarHeaderClose.png"
+HOMESTEAD_EXPLORERBARHEADERPIN_BMP PNG  MOVEABLE PURE   "res\\Homestead_ExplorerBarHeaderPin.png"
+HOMESTEAD_FIELDOUTLINEHOMESTEAD_BMP PNG  MOVEABLE PURE   "res\\Homestead_FieldOutlineBlue.png"
+HOMESTEAD_FRAMEBOTTOM_BMP PNG  MOVEABLE PURE   "res\\Homestead_frameBottom.png"
+HOMESTEAD_FRAMECAPTION_BMP PNG  MOVEABLE PURE   "res\\Homestead_FrameCaption.png"
+HOMESTEAD_FRAMECAPTIONMIN_BMP PNG  MOVEABLE PURE   "res\\Homestead_FrameCaptionMin.png"
+HOMESTEAD_FRAMECAPTIONSIZING_BMP PNG  MOVEABLE PURE   "res\\Homestead_FrameCaptionSizing.png"
+HOMESTEAD_FRAMELEFT_BMP PNG  MOVEABLE PURE   "res\\Homestead_frameLeft.png"
+HOMESTEAD_FRAMEMAXIMIZED_BMP PNG  MOVEABLE PURE   "res\\Homestead_FrameMaximized.png"
+HOMESTEAD_FRAMERIGHT_BMP PNG  MOVEABLE PURE   "res\\Homestead_frameRight.png"
+HOMESTEAD_GRIPPER_BMP   PNG  MOVEABLE PURE   "res\\Homestead_Gripper.png"
+HOMESTEAD_GRIPPERVERT_BMP PNG  MOVEABLE PURE   "res\\Homestead_GripperVert.png"
+HOMESTEAD_GROUPBOX_BMP  PNG  MOVEABLE PURE   "res\\Homestead_GroupBox.png"
+HOMESTEAD_HELPGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Homestead_HelpGlyph19.png"
+HOMESTEAD_HELPGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Homestead_HelpGlyph23.png"
+HOMESTEAD_HELPGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Homestead_HelpGlyph6.png"
+HOMESTEAD_HELPGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Homestead_HelpGlyph9.png"
+HOMESTEAD_HELPGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_HelpGlyph.png"
+HOMESTEAD_LISTVIEWHEADER_BMP PNG  MOVEABLE PURE   "res\\Homestead_ListViewHeader.png"
+HOMESTEAD_LISTVIEWHEADERBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Homestead_ListviewHeaderBackground.png"
+HOMESTEAD_MAXIMIZEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Homestead_MaximizeGlyph19.png"
+HOMESTEAD_MAXIMIZEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Homestead_MaximizeGlyph23.png"
+HOMESTEAD_MAXIMIZEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Homestead_MaximizeGlyph6.png"
+HOMESTEAD_MAXIMIZEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Homestead_MaximizeGlyph9.png"
+HOMESTEAD_MAXIMIZEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_MaximizeGlyph.png"
+HOMESTEAD_MDICAPTIONBUTTON_BMP PNG  MOVEABLE PURE   "res\\Homestead_MDICaptionButton.png"
+HOMESTEAD_MDIGLYPHCLOSE_BMP PNG  MOVEABLE PURE   "res\\Homestead_MDIGlyphClose.png"
+HOMESTEAD_MDIGLYPHMINIMIZE_BMP PNG  MOVEABLE PURE   "res\\Homestead_MDIGlyphMinimize.png"
+HOMESTEAD_MDIGLYPHRESTORE_BMP PNG  MOVEABLE PURE   "res\\Homestead_MDIGlyphRestore.png"
+HOMESTEAD_MINIMIZEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Homestead_MinimizeGlyph19.png"
+HOMESTEAD_MINIMIZEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Homestead_MinimizeGlyph23.png"
+HOMESTEAD_MINIMIZEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Homestead_MinimizeGlyph6.png"
+HOMESTEAD_MINIMIZEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Homestead_MinimizeGlyph9.png"
+HOMESTEAD_MINIMIZEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_MinimizeGlyph.png"
+HOMESTEAD_NORMALGROUPBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Homestead_NormalGroupBackground.png"
+HOMESTEAD_NORMALGROUPCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Homestead_NormalGroupCollapse.png"
+HOMESTEAD_NORMALGROUPEXPAND_BMP PNG  MOVEABLE PURE   "res\\Homestead_NormalGroupExpand.png"
+HOMESTEAD_NORMALGROUPHEAD_BMP PNG  MOVEABLE PURE   "res\\Homestead_NormalGroupHead.png"
+HOMESTEAD_PLACEBARBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Homestead_PlaceBarBackground.png"
+HOMESTEAD_PLACEBARBUTTONS_BMP PNG  MOVEABLE PURE   "res\\Homestead_PlaceBarButtons.png"
+HOMESTEAD_PROGRESSCHUNK_BMP PNG  MOVEABLE PURE   "res\\Homestead_ProgressChunk.png"
+HOMESTEAD_PROGRESSCHUNKVERT_BMP PNG  MOVEABLE PURE   "res\\Homestead_ProgressChunkVert.png"
+HOMESTEAD_PROGRESSTRACK_BMP PNG  MOVEABLE PURE   "res\\Homestead_ProgressTrack.png"
+HOMESTEAD_PROGRESSTRACKVERT_BMP PNG  MOVEABLE PURE   "res\\Homestead_ProgressTrackVert.png"
+HOMESTEAD_RADIOBUTTON13_BMP PNG  MOVEABLE PURE   "res\\Homestead_RadioButton13.png"
+HOMESTEAD_RADIOBUTTON16_BMP PNG  MOVEABLE PURE   "res\\Homestead_RadioButton16.png"
+HOMESTEAD_RADIOBUTTON25_BMP PNG  MOVEABLE PURE   "res\\Homestead_RadioButton25.png"
+HOMESTEAD_RESIZEGRIP2_BMP PNG  MOVEABLE PURE   "res\\Homestead_ResizeGrip2.png"
+HOMESTEAD_RESTOREGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Homestead_RestoreGlyph19.png"
+HOMESTEAD_RESTOREGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Homestead_RestoreGlyph23.png"
+HOMESTEAD_RESTOREGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Homestead_RestoreGlyph6.png"
+HOMESTEAD_RESTOREGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Homestead_RestoreGlyph9.png"
+HOMESTEAD_RESTOREGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_RestoreGlyph.png"
+HOMESTEAD_SCROLLARROWGLYPHS_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollArrowGlyphs.png"
+HOMESTEAD_SCROLLARROWGLYPHSSMALL_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollArrowGlyphsSmall.png"
+HOMESTEAD_SCROLLARROWS_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollArrows.png"
+HOMESTEAD_SCROLLSHAFTHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollShaftHorizontal.png"
+HOMESTEAD_SCROLLSHAFTVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollShaftVertical.png"
+HOMESTEAD_SCROLLTHUMBGRIPPERHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollThumbGripperHorizontal.png"
+HOMESTEAD_SCROLLTHUMBGRIPPERVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollThumbGripperVertical.png"
+HOMESTEAD_SCROLLTHUMBHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollThumbHorizontal.png"
+HOMESTEAD_SCROLLTHUMBVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Homestead_ScrollThumbVertical.png"
+HOMESTEAD_SEPARATOR_BMP PNG  MOVEABLE PURE   "res\\Homestead_Separator.png"
+HOMESTEAD_SEPARATORVERT_BMP PNG  MOVEABLE PURE   "res\\Homestead_SeparatorVert.png"
+HOMESTEAD_SLIDERTRACK_BMP PNG  MOVEABLE PURE   "res\\Homestead_sliderTrack.png"
+HOMESTEAD_SMALLCLOSEBUTTON_BMP PNG  MOVEABLE PURE   "res\\Homestead_SmallCloseButton.png"
+HOMESTEAD_SMALLCLOSEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_SmallCloseGlyph.png"
+HOMESTEAD_SMALLFRAMECAPTION_BMP PNG  MOVEABLE PURE   "res\\Homestead_SmallFrameCaption.png"
+HOMESTEAD_SMALLFRAMECAPTIONSIZING_BMP PNG  MOVEABLE PURE   "res\\Homestead_SmallFrameCaptionSizing.png"
+HOMESTEAD_SPECIALGROUPBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpecialGroupBackground.png"
+HOMESTEAD_SPECIALGROUPCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpecialGroupCollapse.png"
+HOMESTEAD_SPECIALGROUPEXPAND_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpecialGroupExpand.png"
+HOMESTEAD_SPECIALGROUPHEAD_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpecialGroupHead.png"
+HOMESTEAD_SPINBUTTONBACKGROUNDDOWN_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpinButtonBackgroundDown.png"
+HOMESTEAD_SPINBUTTONBACKGROUNDLEFT_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpinButtonBackgroundLeft.png"
+HOMESTEAD_SPINBUTTONBACKGROUNDRIGHT_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpinButtonBackgroundRight.png"
+HOMESTEAD_SPINBUTTONBACKGROUNDUP_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpinButtonBackgroundUp.png"
+HOMESTEAD_SPINDOWNGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpinDownGlyph.png"
+HOMESTEAD_SPINLEFTGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpinLeftGlyph.png"
+HOMESTEAD_SPINRIGHTGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpinRightGlyph.png"
+HOMESTEAD_SPINUPGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_SpinUpGlyph.png"
+HOMESTEAD_STATUSBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Homestead_StatusBackground.png"
+HOMESTEAD_STATUSPANE_BMP PNG  MOVEABLE PURE   "res\\Homestead_StatusPane.png"
+HOMESTEAD_TABBACKGROUND133_BMP PNG  MOVEABLE PURE   "res\\Homestead_TabBackground133.png"
+HOMESTEAD_TABBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Homestead_TabBackground.png"
+HOMESTEAD_TABITEM_BMP   PNG  MOVEABLE PURE   "res\\Homestead_tabItem.png"
+HOMESTEAD_TABITEMBOTH_BMP PNG  MOVEABLE PURE   "res\\Homestead_tabItemBoth.png"
+HOMESTEAD_TABITEMLEFT_BMP PNG  MOVEABLE PURE   "res\\Homestead_tabItemLeft.png"
+HOMESTEAD_TABITEMRIGHT_BMP PNG  MOVEABLE PURE   "res\\Homestead_tabItemRight.png"
+HOMESTEAD_TABITEMTOP_BMP PNG  MOVEABLE PURE   "res\\Homestead_tabItemTop.png"
+HOMESTEAD_TABITEMTOPBOTH_BMP PNG  MOVEABLE PURE   "res\\Homestead_tabItemTopBoth.png"
+HOMESTEAD_TABITEMTOPLEFT_BMP PNG  MOVEABLE PURE   "res\\Homestead_tabItemTopLeft.png"
+HOMESTEAD_TABITEMTOPRIGHT_BMP PNG  MOVEABLE PURE   "res\\Homestead_tabItemTopRight.png"
+HOMESTEAD_TABPANEEDGE_BMP PNG  MOVEABLE PURE   "res\\Homestead_TabPaneEdge.png"
+HOMESTEAD_TOOLBARBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Homestead_ToolbarBackground.png"
+HOMESTEAD_TOOLBARBUTTONS_BMP PNG  MOVEABLE PURE   "res\\Homestead_ToolbarButtons.png"
+HOMESTEAD_TOOLBARBUTTONSSPLIT_BMP PNG  MOVEABLE PURE   "res\\Homestead_ToolbarButtonsSplit.png"
+HOMESTEAD_TOOLBARBUTTONSSPLITDROPDOWN_BMP PNG  MOVEABLE PURE   "res\\Homestead_ToolbarButtonsSplitDropdown.png"
+HOMESTEAD_TOOLBARBUTTONSSPLITDROPDOWNGLYPH_BMP PNG  MOVEABLE PURE   "res\\Homestead_ToolbarButtonsSplitDropdownGlyph.png"
+HOMESTEAD_TOOLBARGRIPPER_BMP PNG  MOVEABLE PURE   "res\\Homestead_ToolbarGripper.png"
+HOMESTEAD_TOOLBARGRIPPERVERT_BMP PNG  MOVEABLE PURE   "res\\Homestead_ToolbarGripperVert.png"
+HOMESTEAD_TRACKBARDOWN13_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarDown13.png"
+HOMESTEAD_TRACKBARDOWN16_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarDown16.png"
+HOMESTEAD_TRACKBARDOWN25_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarDown25.png"
+HOMESTEAD_TRACKBARHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackbarHorizontal.png"
+HOMESTEAD_TRACKBARLEFT13_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarLeft13.png"
+HOMESTEAD_TRACKBARLEFT16_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarLeft16.png"
+HOMESTEAD_TRACKBARLEFT25_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarLeft25.png"
+HOMESTEAD_TRACKBARRIGHT13_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackbarRight13.png"
+HOMESTEAD_TRACKBARRIGHT16_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarRight16.png"
+HOMESTEAD_TRACKBARRIGHT25_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarRight25.png"
+HOMESTEAD_TRACKBARUP13_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarUp13.png"
+HOMESTEAD_TRACKBARUP16_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarUp16.png"
+HOMESTEAD_TRACKBARUP25_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackBarUp25.png"
+HOMESTEAD_TRACKBARVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Homestead_TrackbarVertical.png"
+HOMESTEAD_TREEEXPANDCOLLAPSE10_BMP PNG  MOVEABLE PURE   "res\\Homestead_treeExpandCollapse10.png"
+HOMESTEAD_TREEEXPANDCOLLAPSE15_BMP PNG  MOVEABLE PURE   "res\\Homestead_treeExpandCollapse15.png"
+HOMESTEAD_TREEEXPANDCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Homestead_treeExpandCollapse.png"
+METALLIC_BUTTON_BMP     PNG  MOVEABLE PURE   "res\\Metallic_button.png"
+METALLIC_CAPTIONBUTTON_BMP PNG  MOVEABLE PURE   "res\\Metallic_CaptionButton.png"
+METALLIC_CHECKBOX13_BMP PNG  MOVEABLE PURE   "res\\Metallic_CheckBox13.png"
+METALLIC_CHECKBOX16_BMP PNG  MOVEABLE PURE   "res\\Metallic_CheckBox16.png"
+METALLIC_CHECKBOX25_BMP PNG  MOVEABLE PURE   "res\\Metallic_CheckBox25.png"
+METALLIC_CHEVRON_BMP    PNG  MOVEABLE PURE   "res\\Metallic_Chevron.png"
+METALLIC_CLOSEBUTTON_BMP PNG  MOVEABLE PURE   "res\\Metallic_CloseButton.png"
+METALLIC_CLOSEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Metallic_CloseGlyph19.png"
+METALLIC_CLOSEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Metallic_CloseGlyph23.png"
+METALLIC_CLOSEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Metallic_CloseGlyph6.png"
+METALLIC_CLOSEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Metallic_CloseGlyph9.png"
+METALLIC_CLOSEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_CloseGlyph.png"
+METALLIC_COMBOBUTTON_BMP PNG  MOVEABLE PURE   "res\\Metallic_ComboButton.png"
+METALLIC_COMBOBUTTONGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_ComboButtonGlyph.png"
+METALLIC_EXPLORERBARHEADERCLOSE_BMP PNG  MOVEABLE PURE   "res\\Metallic_ExplorerBarHeaderClose.png"
+METALLIC_EXPLORERBARHEADERPIN_BMP PNG  MOVEABLE PURE   "res\\Metallic_ExplorerBarHeaderPin.png"
+METALLIC_FIELDOUTLINEMETALLIC_BMP PNG  MOVEABLE PURE   "res\\Metallic_FieldOutlineBlue.png"
+METALLIC_FRAMEBOTTOM_BMP PNG  MOVEABLE PURE   "res\\Metallic_frameBottom.png"
+METALLIC_FRAMECAPTION_BMP PNG  MOVEABLE PURE   "res\\Metallic_FrameCaption.png"
+METALLIC_FRAMECAPTIONMIN_BMP PNG  MOVEABLE PURE   "res\\Metallic_FrameCaptionMin.png"
+METALLIC_FRAMECAPTIONSIZING_BMP PNG  MOVEABLE PURE   "res\\Metallic_FrameCaptionSizing.png"
+METALLIC_FRAMELEFT_BMP  PNG  MOVEABLE PURE   "res\\Metallic_frameLeft.png"
+METALLIC_FRAMEMAXIMIZED_BMP PNG  MOVEABLE PURE   "res\\Metallic_FrameMaximized.png"
+METALLIC_FRAMERIGHT_BMP PNG  MOVEABLE PURE   "res\\Metallic_frameRight.png"
+METALLIC_GRIPPER_BMP    PNG  MOVEABLE PURE   "res\\Metallic_Gripper.png"
+METALLIC_GRIPPERVERT_BMP PNG  MOVEABLE PURE   "res\\Metallic_GripperVert.png"
+METALLIC_GROUPBOX_BMP   PNG  MOVEABLE PURE   "res\\Metallic_GroupBox.png"
+METALLIC_HELPGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Metallic_HelpGlyph19.png"
+METALLIC_HELPGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Metallic_HelpGlyph23.png"
+METALLIC_HELPGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Metallic_HelpGlyph6.png"
+METALLIC_HELPGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Metallic_HelpGlyph9.png"
+METALLIC_HELPGLYPH_BMP  PNG  MOVEABLE PURE   "res\\Metallic_HelpGlyph.png"
+METALLIC_LISTVIEWHEADER_BMP PNG  MOVEABLE PURE   "res\\Metallic_ListViewHeader.png"
+METALLIC_LISTVIEWHEADERBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Metallic_ListviewHeaderBackground.png"
+METALLIC_MAXIMIZEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Metallic_MaximizeGlyph19.png"
+METALLIC_MAXIMIZEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Metallic_MaximizeGlyph23.png"
+METALLIC_MAXIMIZEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Metallic_MaximizeGlyph6.png"
+METALLIC_MAXIMIZEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Metallic_MaximizeGlyph9.png"
+METALLIC_MAXIMIZEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_MaximizeGlyph.png"
+METALLIC_MDICAPTIONBUTTON_BMP PNG  MOVEABLE PURE   "res\\Metallic_MDICaptionButton.png"
+METALLIC_MDIGLYPHCLOSE_BMP PNG  MOVEABLE PURE   "res\\Metallic_MDIGlyphClose.png"
+METALLIC_MDIGLYPHMINIMIZE_BMP PNG  MOVEABLE PURE   "res\\Metallic_MDIGlyphMinimize.png"
+METALLIC_MDIGLYPHRESTORE_BMP PNG  MOVEABLE PURE   "res\\Metallic_MDIGlyphRestore.png"
+METALLIC_MINIMIZEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Metallic_MinimizeGlyph19.png"
+METALLIC_MINIMIZEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Metallic_MinimizeGlyph23.png"
+METALLIC_MINIMIZEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Metallic_MinimizeGlyph6.png"
+METALLIC_MINIMIZEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Metallic_MinimizeGlyph9.png"
+METALLIC_MINIMIZEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_MinimizeGlyph.png"
+METALLIC_NORMALGROUPBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Metallic_NormalGroupBackground.png"
+METALLIC_NORMALGROUPCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Metallic_NormalGroupCollapse.png"
+METALLIC_NORMALGROUPEXPAND_BMP PNG  MOVEABLE PURE   "res\\Metallic_NormalGroupExpand.png"
+METALLIC_NORMALGROUPHEAD_BMP PNG  MOVEABLE PURE   "res\\Metallic_NormalGroupHead.png"
+METALLIC_PLACEBARBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Metallic_PlaceBarBackground.png"
+METALLIC_PLACEBARBUTTONS_BMP PNG  MOVEABLE PURE   "res\\Metallic_PlaceBarButtons.png"
+METALLIC_PROGRESSCHUNK_BMP PNG  MOVEABLE PURE   "res\\Metallic_ProgressChunk.png"
+METALLIC_PROGRESSCHUNKVERT_BMP PNG  MOVEABLE PURE   "res\\Metallic_ProgressChunkVert.png"
+METALLIC_PROGRESSTRACK_BMP PNG  MOVEABLE PURE   "res\\Metallic_ProgressTrack.png"
+METALLIC_PROGRESSTRACKVERT_BMP PNG  MOVEABLE PURE   "res\\Metallic_ProgressTrackVert.png"
+METALLIC_RADIOBUTTON13_BMP PNG  MOVEABLE PURE   "res\\Metallic_RadioButton13.png"
+METALLIC_RADIOBUTTON16_BMP PNG  MOVEABLE PURE   "res\\Metallic_RadioButton16.png"
+METALLIC_RADIOBUTTON25_BMP PNG  MOVEABLE PURE   "res\\Metallic_RadioButton25.png"
+METALLIC_RESIZEGRIP2_BMP PNG  MOVEABLE PURE   "res\\Metallic_ResizeGrip2.png"
+METALLIC_RESTOREGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Metallic_RestoreGlyph19.png"
+METALLIC_RESTOREGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Metallic_RestoreGlyph23.png"
+METALLIC_RESTOREGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Metallic_RestoreGlyph6.png"
+METALLIC_RESTOREGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Metallic_RestoreGlyph9.png"
+METALLIC_RESTOREGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_RestoreGlyph.png"
+METALLIC_SCROLLARROWGLYPHS_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollArrowGlyphs.png"
+METALLIC_SCROLLARROWGLYPHSSMALL_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollArrowGlyphsSmall.png"
+METALLIC_SCROLLARROWS_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollArrows.png"
+METALLIC_SCROLLSHAFTHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollShaftHorizontal.png"
+METALLIC_SCROLLSHAFTVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollShaftVertical.png"
+METALLIC_SCROLLTHUMBGRIPPERHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollThumbGripperHorizontal.png"
+METALLIC_SCROLLTHUMBGRIPPERVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollThumbGripperVertical.png"
+METALLIC_SCROLLTHUMBHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollThumbHorizontal.png"
+METALLIC_SCROLLTHUMBVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Metallic_ScrollThumbVertical.png"
+METALLIC_SEPARATOR_BMP  PNG  MOVEABLE PURE   "res\\Metallic_Separator.png"
+METALLIC_SEPARATORVERT_BMP PNG  MOVEABLE PURE   "res\\Metallic_SeparatorVert.png"
+METALLIC_SLIDERTRACK_BMP PNG  MOVEABLE PURE   "res\\Metallic_sliderTrack.png"
+METALLIC_SMALLCLOSEBUTTON_BMP PNG  MOVEABLE PURE   "res\\Metallic_SmallCloseButton.png"
+METALLIC_SMALLCLOSEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_SmallCloseGlyph.png"
+METALLIC_SMALLFRAMECAPTION_BMP PNG  MOVEABLE PURE   "res\\Metallic_SmallFrameCaption.png"
+METALLIC_SMALLFRAMECAPTIONSIZING_BMP PNG  MOVEABLE PURE   "res\\Metallic_SmallFrameCaptionSizing.png"
+METALLIC_SPECIALGROUPBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpecialGroupBackground.png"
+METALLIC_SPECIALGROUPCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpecialGroupCollapse.png"
+METALLIC_SPECIALGROUPEXPAND_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpecialGroupExpand.png"
+METALLIC_SPECIALGROUPHEAD_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpecialGroupHead.png"
+METALLIC_SPINBUTTONBACKGROUNDDOWN_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpinButtonBackgroundDown.png"
+METALLIC_SPINBUTTONBACKGROUNDLEFT_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpinButtonBackgroundLeft.png"
+METALLIC_SPINBUTTONBACKGROUNDRIGHT_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpinButtonBackgroundRight.png"
+METALLIC_SPINBUTTONBACKGROUNDUP_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpinButtonBackgroundUp.png"
+METALLIC_SPINDOWNGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpinDownGlyph.png"
+METALLIC_SPINLEFTGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpinLeftGlyph.png"
+METALLIC_SPINRIGHTGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpinRightGlyph.png"
+METALLIC_SPINUPGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_SpinUpGlyph.png"
+METALLIC_STATUSBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Metallic_StatusBackground.png"
+METALLIC_STATUSPANE_BMP PNG  MOVEABLE PURE   "res\\Metallic_StatusPane.png"
+METALLIC_TABBACKGROUND133_BMP PNG  MOVEABLE PURE   "res\\Metallic_TabBackground133.png"
+METALLIC_TABBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Metallic_TabBackground.png"
+METALLIC_TABITEM_BMP    PNG  MOVEABLE PURE   "res\\Metallic_tabItem.png"
+METALLIC_TABITEMBOTH_BMP PNG  MOVEABLE PURE   "res\\Metallic_tabItemBoth.png"
+METALLIC_TABITEMLEFT_BMP PNG  MOVEABLE PURE   "res\\Metallic_tabItemLeft.png"
+METALLIC_TABITEMRIGHT_BMP PNG  MOVEABLE PURE   "res\\Metallic_tabItemRight.png"
+METALLIC_TABITEMTOP_BMP PNG  MOVEABLE PURE   "res\\Metallic_tabItemTop.png"
+METALLIC_TABITEMTOPBOTH_BMP PNG  MOVEABLE PURE   "res\\Metallic_tabItemTopBoth.png"
+METALLIC_TABITEMTOPLEFT_BMP PNG  MOVEABLE PURE   "res\\Metallic_tabItemTopLeft.png"
+METALLIC_TABITEMTOPRIGHT_BMP PNG  MOVEABLE PURE   "res\\Metallic_tabItemTopRight.png"
+METALLIC_TABPANEEDGE_BMP PNG  MOVEABLE PURE   "res\\Metallic_TabPaneEdge.png"
+METALLIC_TOOLBARBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Metallic_ToolbarBackground.png"
+METALLIC_TOOLBARBUTTONS_BMP PNG  MOVEABLE PURE   "res\\Metallic_ToolbarButtons.png"
+METALLIC_TOOLBARBUTTONSSPLIT_BMP PNG  MOVEABLE PURE   "res\\Metallic_ToolbarButtonsSplit.png"
+METALLIC_TOOLBARBUTTONSSPLITDROPDOWN_BMP PNG  MOVEABLE PURE   "res\\Metallic_ToolbarButtonsSplitDropdown.png"
+METALLIC_TOOLBARBUTTONSSPLITDROPDOWNGLYPH_BMP PNG  MOVEABLE PURE   "res\\Metallic_ToolbarButtonsSplitDropdownGlyph.png"
+METALLIC_TOOLBARGRIPPER_BMP PNG  MOVEABLE PURE   "res\\Metallic_ToolbarGripper.png"
+METALLIC_TOOLBARGRIPPERVERT_BMP PNG  MOVEABLE PURE   "res\\Metallic_ToolbarGripperVert.png"
+METALLIC_TRACKBARDOWN13_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarDown13.png"
+METALLIC_TRACKBARDOWN16_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarDown16.png"
+METALLIC_TRACKBARDOWN25_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarDown25.png"
+METALLIC_TRACKBARHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackbarHorizontal.png"
+METALLIC_TRACKBARLEFT13_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarLeft13.png"
+METALLIC_TRACKBARLEFT16_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarLeft16.png"
+METALLIC_TRACKBARLEFT25_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarLeft25.png"
+METALLIC_TRACKBARRIGHT13_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackbarRight13.png"
+METALLIC_TRACKBARRIGHT16_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarRight16.png"
+METALLIC_TRACKBARRIGHT25_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarRight25.png"
+METALLIC_TRACKBARUP13_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarUp13.png"
+METALLIC_TRACKBARUP16_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarUp16.png"
+METALLIC_TRACKBARUP25_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackBarUp25.png"
+METALLIC_TRACKBARVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Metallic_TrackbarVertical.png"
+METALLIC_TREEEXPANDCOLLAPSE10_BMP PNG  MOVEABLE PURE   "res\\Metallic_treeExpandCollapse10.png"
+METALLIC_TREEEXPANDCOLLAPSE15_BMP PNG  MOVEABLE PURE   "res\\Metallic_treeExpandCollapse15.png"
+METALLIC_TREEEXPANDCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Metallic_treeExpandCollapse.png"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,3,0
+ PRODUCTVERSION 11,1,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "May 24, 2007\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Windows XP Luna Style\0"
+            VALUE "FileVersion", "11, 1, 3, 0\0"
+            VALUE "InternalName", "WinXP.Luna.cjstyle\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WinXP.Luna.cjstyle\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Windows XP Luna Style for Xtreme Skin Framework\0"
+            VALUE "ProductVersion", "11, 1, 3, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    5000                    "Windows XP Luna Style"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

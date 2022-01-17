@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Formato data breve",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   Formato data estesa",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Ora",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   Ora (24 ore)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   Numero pagina",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Numero pagine",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Allineamento a sinistra &&b Allineamento al centro &&b Allineamento a destra", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   Titolo finestra",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  E commerciale (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Nuova Riga",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Stampa...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Pagina successiva",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Precedente",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "Zoom avanti",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Zoom indietro",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Chiudi",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Una pagina"
+    XTP_IDS_TWOPAGE         "Due pagine"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indaco"
+    XTP_IDS_CLR_GRAY80      "Grigio 80%"
+    XTP_IDS_CLR_DARK_RED    "Rosso scuro"
+    XTP_IDS_CLR_ORANGE      "Arancione"
+    XTP_IDS_CLR_DARK_YELLOW "Verde oliva"
+    XTP_IDS_CLR_GREEN       "Verde"
+    XTP_IDS_CLR_TEAL        "Verde acqua"
+    XTP_IDS_CLR_BLUE        "Blu"
+    XTP_IDS_CLR_BLUEGRAY    "Grigio blu"
+    XTP_IDS_CLR_GRAY50      "Grigio 50%"
+    XTP_IDS_CLR_RED         "Rosso"
+    XTP_IDS_CLR_LIGHTORANGE "Arancione chiaro"
+    XTP_IDS_CLR_LIME        "Verde limone"
+    XTP_IDS_CLR_SEA_GREEN   "Verde muschio"
+    XTP_IDS_CLR_AQUA        "Azzurro"
+    XTP_IDS_CLR_LIGHT_BLUE  "Blu chiaro"
+    XTP_IDS_CLR_VIOLET      "Viola"
+    XTP_IDS_CLR_GRAY40      "Grigio 40%"
+    XTP_IDS_CLR_PINK        "Fucsia"
+    XTP_IDS_CLR_GOLD        "Oro"
+    XTP_IDS_CLR_YELLOW      "Giallo"
+    XTP_IDS_CLR_BRIGHT_GREEN "Verde limone"
+    XTP_IDS_CLR_TURQUOISE   "Turchese"
+    XTP_IDS_CLR_SKY_BLUE    "Azzurro"
+    XTP_IDS_CLR_PLUM        "Prugna"
+    XTP_IDS_CLR_GRAY25      "Grigio 25%"
+    XTP_IDS_CLR_ROSE        "Rosa"
+    XTP_IDS_CLR_TAN         "Marrone chiaro"
+    XTP_IDS_CLR_LIGHT_YELLOW "Giallo chiaro"
+    XTP_IDS_CLR_LIGHT_GREEN "Verde chiaro"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Turchese chiaro"
+    XTP_IDS_CLR_PALE_BLUE   "Celeste"
+    XTP_IDS_CLR_BLACK       "Nero"
+    XTP_IDS_CLR_BROWN       "Marrone"
+    XTP_IDS_CLR_OLIVE_GREEN "Terra bruciata"
+    XTP_IDS_CLR_DARK_GREEN  "Verde scuro"
+    XTP_IDS_CLR_DARK_TEAL   "Blu notte"
+    XTP_IDS_CLR_DARK_BLUE   "Blu scuro"
+    XTP_IDS_CLR_LAVENDER    "Lilla"
+    XTP_IDS_CLR_WHITE       "Bianco"
+    XTP_IDS_CLR_GRAY        "Grigio"
+    XTP_IDS_CLR_MAROON      "Bordeaux"
+    XTP_IDS_CLR_OLIVE       "Verde oliva"
+    XTP_IDS_CLR_NAVY        "Blu scuro"
+    XTP_IDS_CLR_PURPLE      "Viola"
+    XTP_IDS_CLR_SILVER      "Argento"
+    XTP_IDS_CLR_FUCHSIA     "Fucsia"
+    XTP_IDS_CLR_NOFILL      "Nessun riempimento\nNessun riempimento"
+    XTP_IDS_CLR_AUTOMATIC   "Colore automatico\nColore automatico"
+    XTP_IDS_CLR_MORE        "Altri colori..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

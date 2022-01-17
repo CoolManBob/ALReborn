@@ -1,0 +1,66 @@
+// Calendar resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Calendar/resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(_XTP_NO_BINARY_RESOURCES)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDB_CALENDAR_EVENT_GLYPHS BITMAP  DISCARDABLE     "Calendar/res/EventGlyps.bmp"
+XTP_IDB_CALENDAR_EXPANDSIGNDOWN BITMAP  DISCARDABLE     "Calendar/res/ExpandSignDown.bmp"
+XTP_IDB_CALENDAR_EXPANDSIGNUP BITMAP  DISCARDABLE     "Calendar/res/ExpandSignUp.bmp"
+XTP_IDB_CALENDAR_TENATIVE_PATTERN BITMAP  DISCARDABLE     "Calendar/res/TenativePattern.bmp"
+XTP_IDB_CALENDAR_TENATIVE_PATTERN_2007 BITMAP  DISCARDABLE     "Calendar/res/Office2007_Calendar_TenativePattern.bmp"
+OFFICE2007_CALENDAR_ALLDAYEVENTARROWSLR_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_AllDayEventArrowsLR.bmp"
+OFFICE2007_CALENDAR_EVENTGLYPHS_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_EventGlyphs.bmp"
+OFFICE2007_CALENDAR_EXPANDDAY_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_ExpandDay.bmp"
+OFFICE2007_CALENDAR_HEADER_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_Header.bmp"
+OFFICE2007_CALENDAR_TODAYHEADER_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_TodayHeader.bmp"
+OFFICE2007_CALENDAR_HEADERDVGROUP_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_HeaderDVGroup.bmp"
+OFFICE2007_CALENDAR_HEADERMVDAY_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_HeaderMVDay.bmp"
+OFFICE2007_CALENDAR_TODAYHEADERMVDAY_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_TodayHeaderMVDay.bmp"
+OFFICE2007_CALENDAR_HEADERMVWEEKDAY_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_HeaderMVWeekDay.bmp"
+OFFICE2007_CALENDAR_HEADERMVWEEK_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_HeaderMVWeek.bmp"
+OFFICE2007_CALENDAR_HEADERWVDAY_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2007_Calendar_HeaderWVDay.bmp"
+OFFICE2003_CALENDAR_HEADER_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2003_Calendar_Header.bmp"
+OFFICE2003_CALENDAR_HEADERXP_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2003_Calendar_HeaderXP.bmp"
+OFFICE2003_CALENDAR_TODAYHEADERXP_BMP BITMAP  MOVEABLE PURE   "Calendar/res/Office2003_Calendar_TodayHeaderXP.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_CALENDAR_DRAGMOVE CURSOR  DISCARDABLE     "Calendar/res/DragMove.cur"
+XTP_IDC_CALENDAR_DRAGCOPY CURSOR  DISCARDABLE     "Calendar/res/DragCopy.cur"
+XTP_IDC_DATEPICKER_BACKARROW CURSOR  DISCARDABLE     "Calendar/res/backarrow.cur"
+
+#endif // !defined(_XTP_NO_BINARY_RESOURCES)
+

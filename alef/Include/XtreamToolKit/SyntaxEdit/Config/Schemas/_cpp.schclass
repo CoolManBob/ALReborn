@@ -1,0 +1,335 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 	lexClass:
+//		name		= c_CPPString
+//		parent		= c_CPP
+//		parent:dyn	= c_CPP
+//		parent:file = <*.c|*.cpp|*.h|*.inl|*.tli|*.tlh|*.rc|*.rc2>	
+//
+//		children		= 0
+//		children		= class1, class2, ...
+//
+//		previous:class			=	
+//		previous:tag			=	
+//		previous:tag:separators	=	
+//
+//		start:class		= 
+//		start:Tag		= '"'
+//
+//		skip:Tag		= '\"'
+//
+//		end:class		= //
+//		end:Tag			= '"'
+//		end:separators	= ' '
+//
+//		Token:tag		= 'if', 'for', 'while', 'do'
+//		Token:start:separators	= 
+//		Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//	txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//	txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//	txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//	txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//	txt:Bold	= 1 // {1,0} default: 0
+//	txt:Italic	= 1 // {1,0} default: 0
+//	txt:Underline	= 1 // {1,0} default: 0
+//
+//	caseSensitive	= 1 // {1,0} default: 0
+//
+//	Collapsable	= 1 // {1,0} default: 0
+//	CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//	ParseOnScreen	= 1 // {1,0} default: 0
+// 	
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+// 	global:FirstParseInSeparateThread	= 1		// {0,1} default=1
+// 	global:EditReparceInSeparateThread	= 1		// {0,1} default=1
+// 	global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+// 	global:EditReparceTimeout_ms	= 500		// default= 500 ms; time out for start reparse after last key was pressed.
+// 	global:MaxBackParseOffset		= 100		// default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+// 	global:OnScreenSchCacheLifeTime_sec = 180	// default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+// 	global:ParserThreadIdleLifeTime_sec = 60	// default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+	
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+lexClass: 
+	name			= c_CPP	
+	parent:file		= <*.c|*.cpp|*.h|*.inl|*.tli|*.tlh|*.rc|*.rc2>	
+	caseSensitive		= 1
+	DisplayName       = 'Normal Text'
+
+	//global:FirstParseInSeparateThread	= 0
+	global:EditReparceInSeparateThread	= 1
+
+	//global:EditReparceTimeout_ms	= 250
+	//global:MaxBackParseOffset		= 100
+	//global:OnScreenSchCacheLifeTime_sec = 60
+	//global:ParserThreadIdleLifeTime_sec = -1
+
+
+lexClass: 	
+	name		= c_CPPCodeBlock
+	parent:dyn	= c_CPP, c_CPPCodeBlock
+	start:Tag	= '{'
+	end:tag		= '}'
+	Collapsable	= 1 
+	CollapsedText	= '...'
+	DisplayName		= 'Curly Braces'
+
+lexClass: 	
+	name		= c_URL	
+	ParseOnScreen	= 0
+	parent:dyn	= c_CPP, c_CPPCodeBlock
+	caseSensitive	= 0
+	children		= 0
+	previous:tag	= @specs, ' ', '\t', @eol
+	start:Tag		= 'http:'
+	end:separators	= ' ', '\t', '*', '"', @eol
+	txt:colorBK	= 0xC0FFC0
+	txt:Underline	= 1
+	DisplayName		= 'URL'
+
+lexClass: 	
+	name			= c_String	
+	parent:dyn		= c_CPP, c_CPPCodeBlock
+	children		= c_URL
+	start:Tag		= '"'
+	skip:Tag		= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag			= '"', @eol
+	txt:colorFG		= 0xE00000
+	DisplayName		= 'String (Double Quotes)'
+
+lexClass: 	
+	name			= c_String_char	
+	parent:dyn		= c_CPP, c_CPPCodeBlock
+	children		= 0
+	start:Tag		= '\''
+	//skip:Tag		= '\\"', '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:Tag			= '\'', @eol
+	txt:colorFG		= 0xE00000
+	DisplayName		= 'String (Single Quotes)'
+
+lexClass: 	
+	name			= c_Str_include
+	parent:dyn		= c_CPP, c_CPPCodeBlock
+	children		= 0
+	previous:tag	= '#include'
+	previous:tag:separators = ' ', '\t' 
+	start:Tag		= '<'	
+	end:Tag			= '>', @eol
+	txt:colorFG		= 0xE00000
+	DisplayName		= 'String (Include File)'
+
+lexClass:
+	name		= c_CPPCommentML	
+	parent:dyn	= c_CPP, c_CPPCodeBlock
+	children	= c_URL		
+	start:Tag	='/*'
+	end:Tag		='*/'
+	Collapsable	= 1 
+	CollapsedText	= '/**/' 
+	
+	txt:colorFG	= 0x00CF00
+	DisplayName		= 'Comment (Multi-Line)'
+
+lexClass:
+	name		= c_CPPAfxInsertBlock_Start		
+	parent		= c_CPP, c_CPPCodeBlock	
+	children	= 0	
+	start:Tag	= '//{{AFX'	
+	end:Separators	= @eol
+	txt:colorFG	= 0x00A000
+	DisplayName		= 'Afx Comment Block (start)'
+	
+lexClass:
+	name		= c_CPPAfxInsertBlock_End		
+	parent		= c_CPP, c_CPPCodeBlock, c_CPPAfxInsertBlock	
+	children	= 0	
+	start:Tag	= '//}}AFX'	
+	end:Separators	= @eol
+	txt:colorFG	= 0x00A000
+	DisplayName		= 'Afx Comment Block (end)'
+
+lexClass:
+	name		= c_CPPAfxInsertBlock	
+	parent		= c_CPP, c_CPPCodeBlock
+	children	= c_CPPAfxInsertBlock_End		
+	start:CLASS	= c_CPPAfxInsertBlock_Start	
+	end:CLASS	= c_CPPAfxInsertBlock_End	
+	Collapsable	= 1 
+	txt:colorFG	= 0x909090
+	DisplayName		= 'Afx Comment Block'
+		
+lexClass:	
+	name		= c_CPPCommentSL
+//	ParseOnScreen	= 0
+	parent		= c_CPP, c_CPPCodeBlock
+	children	= c_URL		
+	start:tag	='//'
+	skip:Tag	= '\\\r\n', '\\\n\r', '\\\n', '\\\r'	
+	end:tag		= @eol
+	txt:colorFG	= 0x00A000
+	DisplayName		= 'Comment (Single-Line)'
+	
+lexClass:	
+	name		= c_CPPKeywords
+	ParseOnScreen	= 0
+	parent:Dyn	= c_CPP, c_CPPCodeBlock
+	children	= 0
+	DisplayName		= 'Keyword'
+
+	token:tag	= '#define'
+	token:tag	= '#elif'
+	token:tag	= '#else'
+	token:tag	= '#endif'
+	token:tag	= '#error'
+	token:tag	= '#if'
+	token:tag	= '#ifdef'
+	token:tag	= '#ifndef'
+	token:tag	= '#import'
+	token:tag	= '#include'
+	token:tag	= '#line'
+	token:tag	= '#pragma'
+	token:tag	= '#undef'
+	token:tag	= '__asm'
+	token:tag	= '__assume'
+	token:tag	= '__based'
+	token:tag	= '__cdecl'
+	token:tag	= '__declspec'
+	token:tag	= '__except'
+	token:tag	= '__fastcall'
+	token:tag	= '__finally'
+	token:tag	= '__inline'
+	token:tag	= '__int16'
+	token:tag	= '__int32'
+	token:tag	= '__int64'
+	token:tag	= '__int8'
+	token:tag	= '__leave'
+	token:tag	= '__multiple_inheritance'
+	token:tag	= '__single_inheritance'
+	token:tag	= '__stdcall'
+	token:tag	= '__try'
+	token:tag	= '__uuidof'
+	token:tag	= '__virtual_inheritance'
+	token:tag	= 'auto'
+	token:tag	= 'bool'
+	token:tag	= 'break'
+	token:tag	= 'case'
+	token:tag	= 'catch'
+	token:tag	= 'char'
+	token:tag	= 'class'
+	token:tag	= 'const'
+	token:tag	= 'const_cast'
+	token:tag	= 'continue'
+	token:tag	= 'default'
+	token:tag	= 'defined'
+	token:tag	= 'delete'
+	token:tag	= 'do'
+	token:tag	= 'double'
+	token:tag	= 'dynamic_cast'
+	token:tag	= 'else'
+	token:tag	= 'enum'
+	token:tag	= 'explicit'
+	token:tag	= 'extern'
+	token:tag	= 'float'
+	token:tag	= 'for'
+	token:tag	= 'friend'
+	token:tag	= 'goto'
+	token:tag	= 'if'
+	token:tag	= 'inline'
+	token:tag	= 'int'
+	token:tag	= 'long'
+	token:tag	= 'mutable'
+	token:tag	= 'namespace'
+	token:tag	= 'new'
+	token:tag	= 'operator'
+	token:tag	= 'private'
+	token:tag	= 'protected'
+	token:tag	= 'public'
+	token:tag	= 'register'
+	token:tag	= 'reinterpret_cast'
+	token:tag	= 'return'
+	token:tag	= 'short'
+	token:tag	= 'signed'
+	token:tag	= 'sizeof'
+	token:tag	= 'static'
+	token:tag	= 'static_cast'
+	token:tag	= 'struct'
+	token:tag	= 'switch'
+	token:tag	= 'template'
+	token:tag	= 'this'
+	token:tag	= 'throw'
+	token:tag	= 'try'
+	token:tag	= 'typedef'
+	token:tag	= 'typeid'
+	token:tag	= 'typename'
+	token:tag	= 'union'
+	token:tag	= 'unsigned'
+	token:tag	= 'using'
+	token:tag	= 'virtual'
+	token:tag	= 'void'
+	token:tag	= 'volatile'
+	token:tag	= 'while'
+	token:tag	= 'wmain'
+
+	token:start:separators	= ' ', '\t', ':', ';', '!', '(', ')', ',', '/', '{', '}', @eol
+	token:end:separators	= ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+	
+	txt:colorFG	= 0x0000FF
+	
+lexClass:
+	name		= c_CPPDataTypes
+	ParseOnScreen	= 0
+	parent:Dyn	= c_CPP, c_CPPCodeBlock
+	children	= 0
+	DisplayName		= 'Data Type'
+
+	token:tag	= 'FALSE'
+	token:tag	= 'TRUE'
+	token:tag	= 'BOOL'
+	token:tag	= 'BSTR'
+	token:tag	= 'BYTE'
+	token:tag	= 'COLORREF'
+	token:tag	= 'DWORD'
+	token:tag	= 'LONG'
+	token:tag	= 'LPARAM'
+	token:tag	= 'LPCSTR'
+	token:tag	= 'LPSTR'
+	token:tag	= 'LPCTSTR'
+	token:tag	= 'LPTSTR'
+	token:tag	= 'LPVOID'
+	token:tag	= 'LRESULT'
+	token:tag	= 'UINT'
+	token:tag	= 'WNDPROC'
+	token:tag	= 'WORD'
+	token:tag	= 'WPARAM'
+	token:tag	= 'POSITION'
+	token:tag	= 'LPCRECT'
+
+	token:start:separators	= ' ', '\t', ':', ';', '!', '(', ')', ',', '/', '{', '}', @eol
+	token:end:separators	= ' ', '\t', ':', ';', '!', '(', ')', '{', '}', @eol
+
+	txt:colorFG	= 0x990099
+	txt:bold = 0
+

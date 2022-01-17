@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="ApmEventManagerDlg">
+      <UniqueIdentifier>{271f1207-d3d6-4d6c-9cab-16ea0f078f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApmEventManagerDlg\헤더 파일">
+      <UniqueIdentifier>{c400828d-61f9-44ae-9cd6-97203beddb80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApmEventManagerDlg\소스 파일">
+      <UniqueIdentifier>{1a960796-d4f5-4045-8019-c11e75bec17a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApmDialogs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ApmEventManagerdlg\ApmEventConditionDlg.cpp">
+      <Filter>ApmEventManagerDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ApmEventManagerdlg\ApmEventListDlg.cpp">
+      <Filter>ApmEventManagerDlg\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ApmEventManagerdlg\ApmEventManagerDlg.cpp">
+      <Filter>ApmEventManagerDlg\소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApmDialogs.def">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="res\ApmDialogs.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ApmEventManagerdlg\ApmEventConditionDlg.h">
+      <Filter>ApmEventManagerDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ApmEventManagerdlg\ApmEventListDlg.h">
+      <Filter>ApmEventManagerDlg\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ApmEventManagerdlg\ApmEventManagerDlg.h">
+      <Filter>ApmEventManagerDlg\헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ApmDialogs.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

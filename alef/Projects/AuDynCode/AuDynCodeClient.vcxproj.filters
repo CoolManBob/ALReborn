@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AuDynCodeClient">
+      <UniqueIdentifier>{cefd1c80-389f-4d25-9e6e-90e4f1b17ffd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\AuDynCode.h">
+      <Filter>AuDynCodeClient</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\AuDynCodeClient.cpp">
+      <Filter>AuDynCodeClient</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

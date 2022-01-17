@@ -1,0 +1,307 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_NORWEGIAN, SUBLANG_NORWEGIAN_BOKMAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Rediger knappesymbol"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Bilde",IDC_STATIC,7,7,86,8
+    GROUPBOX        "Farger",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Flytt",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Forhåndsvisning",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Verktøy",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Avbryt",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Gjennomsiktig",IDC_STATIC,135,156,45,8
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Verktøy",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Flytt",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Farger",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Tastatur"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Kategori:",IDC_STATIC,4,5,89,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,4,15,91,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Kommandoer:",XTP_IDC_TXT_COMMANDS,4,28,89,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,4,38,91,77,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tastetilordninger:",XTP_IDC_TXT_ASSIGNMENTS,100,28,73,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,51,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Trykk ny hurtigtast:",XTP_IDC_TXT_NEWKEY,100,93,100,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,103,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Tilordne",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Fjern",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Tilbakestill alle",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Beskrivelse:",XTP_IDC_TXT_DESC_TITLE,4,117,89,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,4,127,171,19,0,
+                    WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Verktøylinjer"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Verktøylinjer:",IDC_STATIC,4,5,148,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Ny...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Gi nytt navn...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Slett",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "Tilbakestill...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Alternativer"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Tilpassede menyer og verktøylinjer",XTP_IDC_GROUP_PERSONALIZED,4,5,222,8
+    CONTROL         "Vis alltid fullstendige menyer",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,216,10
+    CONTROL         "Vis fullstendige menyer etter en kort forsinkelse",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,29,204,10
+    PUSHBUTTON      "&Tilbakestill brukerdataene",
+                    XTP_IDC_BUTTON_RESETDATA,10,42,125,14
+    LTEXT           "Andre", XTP_IDC_GROUP_OTHER,4,70,222,8
+    CONTROL         "Store ikoner",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,82,216,10
+    CONTROL         "Vis skjermtips på verktøylinjer",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,93,216,10
+    CONTROL         "Vis hurtigtaster i skjermtips",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,104,204,10
+    LTEXT           "Menyanimasjoner:",IDC_STATIC,10,117,60,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,75,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Kommandoer"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Hvis du vil legge til en kommando på en verktøylinje, velger du en kategori og drar kommandoen ut av denne dialogboksen til en verktøylinje.",
+                    IDC_STATIC,4,5,220,25
+    LTEXT           "Kategorier:",IDC_STATIC,4,32,80,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,42,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Kommandoer:",IDC_STATIC,90,32,134,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,42,135,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Menus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Application Menus",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Context Menus",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "&Show Menu:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Default menu\nDefault application menu",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Select &context menu:",IDC_STATIC,10,92,68,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,83,90,130,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ny verktøylinje"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Navn på verktøylinje:",IDC_STATIC,4,4,178,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Avbryt",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Tilpass"
+    BEGIN
+        MENUITEM "Tilbakestill",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Slett",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Navn:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Kopier knappesymbol",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Lim inn knappesymbol",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Tilbakestill knappesymbol",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Rediger knappesymbol...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Bytt knappesymbol",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Standardstil",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Ren tekst",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Bilde og tekst",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Start en gruppe",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "Lukk"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Tilpass"
+    XTP_IDS_NEWMENU         "Ny meny"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Dette sletter posten med kommandoer du har brukt i dette programmet, og gjenoppretter standardsettet med synlige kommandoer til menyer og verktøylinjer. Egne tilpasninger fjernes ikke. Er du sikker på at du vil gjøre dette?"
+    XTP_IDS_INVALID_NUMBER  "Dette er ikke et gyldig tall."
+    XTP_IDS_INVALID_FONTSIZE "Tallet må være mellom 1 og 1638."
+    XTP_IDS_CONFIRM_RESET   "Er du sikker på at du vil tilbakestille endringene for verktøylinjen '%s'?"
+    XTP_IDS_BUILTINMENUS    "Innebygde menyer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Tilpasset %d"
+    XTP_IDS_ERROR_BLANKNAME "Navnet på verktøylinjen kan ikke være tomt. Skriv inn et navn."
+    XTP_IDS_ERROR_LIMIT     "Sorry you have reached your limit."
+    XTP_IDS_ERROR_EXISTS    "Verktøylinjen '%s' finnes allerede. Velg et annet navn."
+    XTP_IDS_RENAMETOOLBAR   "Gi nytt navn til verktøylinje"
+    XTP_IDS_CONFIRM_DELETE  "Er du sikker på at du vil slette verktøylinjen %s?"
+    XTP_IDS_ALLCOMMANDS     "Alle kommandoer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\n&Tilpass..."
+    XTP_ID_CUSTOMIZE_RESET  "\nTilbakestill"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\nLegge til eller fjerne knapper"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Are you sure you want to reset the key assignments?  This action will remove all custom key assignments at the text level."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Alle bildefiler|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Punktgrafikk(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiler(*.Wmf;*.Emf)|*.wmf;*.emf|Ikoner(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Alle filer(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nAlternativer for verktøylinje"
+    XTP_ID_TOOLBAR_HIDE     "\nLukk"
+    XTP_ID_POPUPBAR_EXPAND  "\nExpand"
+    XTP_ID_MENUBAR_CLOSE    "\nLukker vinduet"
+    XTP_ID_MENUBAR_RESTORE  "\nGjenopprett vindu"
+    XTP_ID_MENUBAR_MINIMIZE "\nMinimer vindu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nBlyant"
+    XTP_ID_BUTTON_FILL      "\nFyllfarge"
+    XTP_ID_BUTTON_GETCOLOR  "\nHent farge"
+    XTP_ID_BUTTON_LINE      "\nLinje"
+    XTP_ID_BUTTON_RECTANGLE "\nRektangel"
+    XTP_ID_BUTTON_CIRCLE    "\nEllipse"
+    XTP_ID_BUTTON_COPY      "\nKopier"
+    XTP_ID_BUTTON_PASTE     "\nLim inn"
+    XTP_ID_BUTTON_CLEAR     "\nKlart"
+    XTP_ID_BUTTON_UNDO      "\nAngre"
+    XTP_ID_BUTTON_REDO      "\nGjør om"
+    XTP_ID_BUTTON_OPEN      "\nSett inn bilde fra fil"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(Systemstandard)"
+    XTP_IDS_ANIMATION_RANDOM "Tilfeldig"
+    XTP_IDS_ANIMATION_UNFOLD "Brett ut"
+    XTP_IDS_ANIMATION_SLIDE "Lysbilde"
+    XTP_IDS_ANIMATION_FADE  "Ton ned"
+    XTP_IDS_ANIMATION_NONE  "Ingen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSPACE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSPACE_NEWVERTICAL "\nNew &Vertical Tab Group"
+    XTP_ID_WORKSPACE_CANCEL "Avbryt"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Active Files"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

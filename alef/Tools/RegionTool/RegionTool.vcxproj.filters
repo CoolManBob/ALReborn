@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{522fb2e5-9ba3-4b42-b45d-70f910ebe167}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{07359b9c-7ff8-492e-a57c-4f859d8b5037}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{e4dfed18-ef1a-4d00-8af6-b45d8cea132b}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{bd56cc97-22b8-498c-ae55-d631d702827d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BugSlay">
+      <UniqueIdentifier>{4bd6c83d-119c-402c-967a-f867b431fe9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Path Dialog">
+      <UniqueIdentifier>{a9bb85c9-2df0-4d16-bbb7-a46f13e27988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldMap">
+      <UniqueIdentifier>{4cafcdcd-de3b-4d9b-be0b-017dc32751cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EventNatureSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GoToDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionSelectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionToolDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionViewStatic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeleportDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateEditDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldPosExportDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UploadDataDlg.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionMenuDlg.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="RTMenuBlock.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="RTMenuDistance.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="RTMenuRegion.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="RTMenuSky.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="RTMenuSpawn.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\BSUFunctions.cpp">
+      <Filter>BugSlay</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\CrashHandler.cpp">
+      <Filter>BugSlay</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\GetLoadedModules.cpp">
+      <Filter>BugSlay</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\IsNT.cpp">
+      <Filter>BugSlay</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\NT4ProcessInfo.cpp">
+      <Filter>BugSlay</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\PCH.cpp">
+      <Filter>BugSlay</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\TLHELPProcessInfo.cpp">
+      <Filter>BugSlay</Filter>
+    </ClCompile>
+    <ClCompile Include="PathDialog.cpp">
+      <Filter>Path Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp">
+      <Filter>Path Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemSelectDlg.cpp">
+      <Filter>WorldMap</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectSkySetDlg.cpp">
+      <Filter>WorldMap</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMapCalcDlg.cpp">
+      <Filter>WorldMap</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMapEditDlg.cpp">
+      <Filter>WorldMap</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMapSelectDlg.cpp">
+      <Filter>WorldMap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EventNatureSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GoToDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionToolDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionViewStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeleportDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateEditDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UploadDataDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldPosExportDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionMenuDlg.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="RTMenuBlock.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="RTMenuDistance.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="RTMenuRegion.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="RTMenuSky.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="RTMenuSpawn.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\BugslayerUtil.h">
+      <Filter>BugSlay</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\CrashHandler.h">
+      <Filter>BugSlay</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\Internal.h">
+      <Filter>BugSlay</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\PCH.h">
+      <Filter>BugSlay</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\SymbolEngine.h">
+      <Filter>BugSlay</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\WarningsOff.h">
+      <Filter>BugSlay</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\WarningsOn.h">
+      <Filter>BugSlay</Filter>
+    </ClInclude>
+    <ClInclude Include="PathDialog.h">
+      <Filter>Path Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDlg.h">
+      <Filter>Path Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemSelectDlg.h">
+      <Filter>WorldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectSkySetDlg.h">
+      <Filter>WorldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMapCalcDlg.h">
+      <Filter>WorldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMapEditDlg.h">
+      <Filter>WorldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMapSelectDlg.h">
+      <Filter>WorldMap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\RegionTool.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RegionTool.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RegionTool.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SelectSkySetDlg.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

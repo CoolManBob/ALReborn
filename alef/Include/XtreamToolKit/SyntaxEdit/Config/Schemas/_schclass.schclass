@@ -1,0 +1,473 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+// 		lexClass:
+//		+	name		= c_CPPString
+//		+	parent:file = <*.h|*.cpp|*.c>		
+//		+	parent		= c_CPP
+//		+	parent:dyn	= c_CPP
+//
+//		+	children		= 0
+//		+	children		= class1, class2, ...
+//
+//			previous:class			=	
+//			previous:tag			=	
+//			previous:tag:separators	=	
+//
+//			start:class		= 
+//			start:Tag		= '"'
+//
+//			skip:Tag		= '\"'
+//
+//			end:class		= //
+//			end:class:Parent = this	
+//			end:Tag			= '"'
+//			end:separators	= ' '
+//
+//			Token:tag		= 'if', 'for', 'while', 'do'
+//			Token:start:separators	= 
+//			Token:end:separators	= 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//		txt:colorFG	= 0xffc0c0 // color value in hex format. default: black	
+//		txt:colorBK	= 0xffc0c0 // color value in hex format. default: white		
+//
+//		txt:colorSelFG	= 0xffc0c0 // color value in hex format. default: white
+//		txt:colorSelBK	= 0xffc0c0 // color value in hex format. default: black
+//
+//		txt:Bold	= 1 // {1,0} default: 0
+//		txt:Italic	= 1 // {1,0} default: 0
+//		txt:Underline	= 1 // {1,0} default: 0
+//
+//		caseSensitive	= 1 // {1,0} default: 0
+//
+//		Collapsable	= 1 // {1,0} default: 0
+//		CollapsedText	= '/*...*/' // quoted string value. default: '[..]'	
+//
+//		ParseOnScreen	= 1 // {1,0} default: 0
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha	= a-z, A-Z
+// @digit	= 0-9
+// @HexDdigit	= 0-9, a-f, A-F
+// @specs	= "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL		= End Of Line
+//---------------------------------------------
+// special tags:  '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+lexClass:
+ 	name			= c_LEX_CLASS		
+	parent:file		= <*.schclass>	
+	caseSensitive	= 0
+	//txt:colorBK	= 0xfff7ff
+
+lexClass:	
+	name		= c_LexCommentSL	
+	parent:dyn	= c_LEX_CLASS
+	children	= 0
+	start:tag	='//'	
+	end:tag		= @eol
+	txt:colorFG	= 0x00A000
+	
+lexClass:	
+	name					= c_LexClass_section_header			
+	parent					= c_LEX_CLASS, c_LexClass_section
+	children				= 0
+	Token:tag				= 'lexClass:'
+	Token:start:separators	= @eol, ' ', '\t'
+	Token:end:separators	= @eol, ' ', '\t'
+	
+	txt:colorFG	= 0x0000FF
+	txt:colorBK	= 0xAAAAAA
+	txt:Bold	= 1
+
+lexClass:	        
+	name			= c_LexClass_section
+	parent			= c_LEX_CLASS, c_LexClass_section
+	start:class		= c_LexClass_section_header
+	//end:separators	= 'lexClass:'
+	end:class	=  c_LexClass_section_end
+	txt:colorFG		= 0xFF0000		
+	Collapsable	= 1
+		
+lexClass:	
+	name			= c_LexClass_section_end
+	parent			= c_LexClass_section
+	previous:tag			= @eol
+	previous:tag:separators	= ' ', '\t'
+	start:tag		= '//:lexClass'
+	end:tag			= @EOL
+	txt:colorFG		= 0x00A000		
+	txt:colorBK		= 0xE0E0E0		
+	//txt:bold		= 1		
+
+lexClass:	
+	name		= c_LexClass_CommaSeparator
+	ParseOnScreen = 0
+	parent:dyn	= c_LexClass_section
+	children	= 0
+	token:tag	= ','		
+	txt:colorFG	= 0x808080
+	txt:Bold	= 0
+
+
+lexClass:	
+	name		= c_LexClass_Tag_str
+	ParseOnScreen = 0
+	parent:dyn	= c_LexClass_section
+	children	= c_LexClass_Tag_str_specs
+	start:tag	= '\''		
+	end:tag		= '\'', @eol 
+	txt:colorFG	= 0xA00000	
+
+lexClass:	
+	name		= c_LexClass_Tag_str_specs
+	ParseOnScreen = 0
+	parent		= c_LexClass_Tag_str
+	children	= 0		
+	Token:tag		= '\\\\'
+	Token:tag		= '\\t', '\\n', '\\r', '\\a', '\\b', '\\v', '\\f', '\\\'' 
+	txt:colorFG	= 0xC00000	
+	txt:bold	= 1
+		
+lexClass:	
+	name		= c_LexClass_Tag_var
+	ParseOnScreen = 0
+	parent:dyn	= c_LexClass_section
+	children	= 0	
+	
+	token:tag = '@alpha:not', '@digit:not', '@HexDigit:not', '@specs:not', '@EOL:not'
+	token:tag = '@alpha', '@digit', '@HexDdigit', '@specs', '@EOL'	
+	Token:start:separators	= '=', ' ', '\t', ','
+	Token:end:separators	= ' ', '\t', ',', @EOL
+	
+	txt:colorFG	= 0x00A000
+	txt:Bold		= 1	
+
+lexClass:	
+	name		= c_LexClass_color
+	ParseOnScreen = 0
+	parent:dyn	= c_LexClass_section
+	children	= 0	
+	start:tag	= '0x'
+	end:tag		= @HexDigit:not
+	txt:colorFG	= 0x8000FF
+	
+lexClass:	
+	name		= c_LexClass_number
+	ParseOnScreen = 0
+	parent:dyn	= c_LexClass_section
+	children	= 0	
+	start:tag	= @digit
+	end:tag		= @digit:not
+	txt:colorFG	= 0x000080	
+		
+//-- NAME -------------------------------------------------
+lexClass:	
+	name			= c_LexClass_Prop_Name_name_part
+	ParseOnScreen = 0
+	parent			= c_LexClass_section	
+	children		= 0		
+	token:tag		= 'name'
+
+	txt:colorFG	= 0x505050	
+	txt:colorBK	= 0xEEEEEE
+	txt:Bold		= 1
+
+lexClass:	
+	name			= c_LexClass_Prop_Name
+	ParseOnScreen = 0
+	parent			= c_LexClass_section	
+	children		= c_LexClass_Prop_EQ, c_LexClass_Prop_Name_value_part 
+	children		= c_LexCommentSL
+	start:class		= c_LexClass_Prop_Name_name_part
+	end:tag			= @eol
+	txt:colorBK	= 0xEEEEEE
+		
+lexClass:	
+	name			= c_LexClass_Prop_Name_value_part
+	ParseOnScreen	= 0
+	parent			= c_LexClass_Prop_Name
+	children		= c_LexClass_ClassName
+	
+	start:class		= c_LexClass_Prop_EQ
+	end:class		= c_LexClass_ClassName		
+	
+	txt:bold		= 1
+
+//-- PARENT:file -------------------------------------------------	
+lexClass:	
+	name			= c_LexClass_Prop_ParentFile_name_part
+	ParseOnScreen	= 0
+	parent			= c_LexClass_section	
+	children		= 0 
+	token:tag		= 'parent:file' 
+	
+	txt:colorFG	= 0x505050	
+	txt:colorBK = 0xDDDDDD
+	
+	txt:Underline	= 1
+	txt:Bold		= 1
+	
+lexClass:	
+	name			= c_LexClass_Prop_Parent_file
+	ParseOnScreen	= 0
+	parent			= c_LexClass_section	
+	
+	children		= c_LexClass_Prop_EQ 
+	children		= c_LexClass_Prop_Parent2_value_part 
+	
+	start:class		= c_LexClass_Prop_ParentFile_name_part
+	end:tag			= @eol
+
+lexClass:
+	name			= c_LexClass_Prop_Parent2_value_part
+	ParseOnScreen	= 0
+	parent			= c_LexClass_Prop_Parent_file
+	
+	children		= c_LexClass_file_ext_list
+	children		= c_LexCommentSL			
+
+	start:class			= c_LexClass_Prop_EQ
+	end:separators		= @eol
+			
+lexClass:
+	name			= c_LexClass_file_ext_list
+	ParseOnScreen	= 0
+	parent			= c_LexClass_Prop_Parent2_value_part
+	
+	children		= c_LexClass_file_ext1, c_LexClass_file_ext2
+	
+	previous:tag	= '='
+	previous:tag:separators = ' ', '\t'
+		
+	start:tag	= '<'
+	end:tag		= '>'
+	
+	txt:colorFG = 0x0000F0
+								
+lexClass:
+	name			= c_LexClass_file_ext1
+	ParseOnScreen	= 0
+	parent			= c_LexClass_file_ext_list
+	
+	children		= 0
+	previous:tag	= '<'
+	previous:tag:separators = ' ', '\t'
+	start:tag		= '*.'					
+	end:separators	= '|', '>', ' ', '\t'
+	
+	txt:colorFG = 0x800040
+
+lexClass:
+	name			= c_LexClass_file_ext2
+	ParseOnScreen	= 0
+	parent			= c_LexClass_file_ext_list
+	
+	children		= 0
+	previous:tag	= '|'
+	previous:tag:separators = ' ', '\t'
+	start:tag		= '*.'					
+	end:separators	= '|', '>', ' ', '\t'
+	
+	txt:colorFG = 0x800040	
+				
+//-- PARENT (+dyn) -------------------------------------------------	
+lexClass:	
+	name			= c_LexClass_Prop_Parent_name_part
+	ParseOnScreen	= 0
+	parent			= c_LexClass_section	
+	children		= 0 
+	token:tag		= 'parent:dyn', 'parent'
+	
+	txt:colorFG	= 0x505050	
+	txt:Underline	= 1
+	
+lexClass:	
+	name			= c_LexClass_Prop_Parent
+	ParseOnScreen	= 0
+	parent			= c_LexClass_section	
+	
+	children		= c_LexClass_Prop_EQ 
+	children		= c_LexClass_ClassName_List
+			
+	start:class		= c_LexClass_Prop_Parent_name_part
+	end:tag			= @eol
+
+//-- CHILDREN -------------------------------------------------	
+lexClass:	
+	name			= c_LexClass_Prop_Children_name_part
+	ParseOnScreen	= 0	
+	parent			= c_LexClass_section	
+	children		= 0 
+	token:tag		= 'children' 
+	
+	txt:colorFG	= 0x505050	
+			
+lexClass:	
+	name			= c_LexClass_Prop_Children
+	ParseOnScreen	= 0
+	parent			= c_LexClass_section	
+	
+	children		= c_LexClass_Prop_EQ 		
+	children		= c_LexClass_Prop_Children_value1_part
+	children		= c_LexClass_ClassName_List		
+			
+	start:class		= c_LexClass_Prop_Children_name_part
+	end:separators	= @eol
+		
+lexClass:	
+	name			= c_LexClass_Prop_Children_value1_part
+	ParseOnScreen	= 0
+	parent			= c_LexClass_Prop_Children	
+	children		= c_LexClass_Prop_Children_value1_error 
+	//children				= c_LexCommentSL			
+	previous:tag			= '='
+	previous:tag:separators = ' ', '\t'
+	
+	start:tag		= '0'						
+	end:separators	= @eol
+	
+	txt:colorFG		= 0x000090
+	txt:bold = 1
+			
+lexClass:	
+	name			= c_LexClass_Prop_Children_value1_error
+	ParseOnScreen	= 0
+	parent			= c_LexClass_Prop_Children_value1_part	
+	children		= c_LexCommentSL			
+	previous:class	= c_LexClass_Prop_Children_value1_part
+									
+	end:separators	= @eol
+
+	txt:colorFG		= 0xFF0000
+	txt:bold = 0
+
+//////////////////////////////////////////////////////////////////////////////
+lexClass:	
+	name		= c_LexClass_Prop_EQ
+	ParseOnScreen	= 0
+	parent:dyn	= c_LexClass_section
+	children	= 0
+	token:tag	= '='		
+	txt:colorFG	= 0x0000B0
+	txt:Bold	= 0
+
+lexClass:	
+	name		= c_LexClass_ClassName
+	ParseOnScreen	= 0
+	//parent:dyn	= c_LexClass_section
+	parent	= c_LexClass_Prop_Name_value_part //, c_LexClass_ClassName_List, 
+	
+	children	= 0
+	previous:tag = '='
+	previous:tag:separators = ' ', '\t'
+	start:tag				= @alpha, '_'
+	skip:Tag				= @alpha, @digit, '_'
+	end:separators			= @alpha:not, @digit:not
+	
+	txt:colorFG	= 0x0000EE
+	
+
+lexClass: 
+	name = c_LexClass_ClassName_List	
+	ParseOnScreen	= 0
+	parent:dyn				= c_LexClass_section
+		
+	children				= c_LexClass_ClassName_List1 
+	children				= c_LexClass_ClassName_List2
+	children				= c_LexClass_CommaSeparator
+	children				= c_LexCommentSL			
+	
+	previous:tag			= '='
+	previous:tag:separators = ' ', '\t'
+		
+	start:tag				= @alpha, '_'
+	end:separators			= @eol
+			
+lexClass: name = c_LexClass_ClassName_List1
+		ParseOnScreen	= 0
+		parent	= c_LexClass_ClassName_List
+		
+		children	= 0 
+
+		start:class				= c_LexClass_ClassName_List
+		//previous:class				= c_LexClass_ClassName_List
+		skip:Tag				= @alpha, @digit, '_'
+		end:separators			= @alpha:not, @digit:not
+		
+		txt:colorFG	= 0x5000EE
+		
+		
+lexClass: name = c_LexClass_ClassName_List2
+		ParseOnScreen	= 0
+		parent	= c_LexClass_ClassName_List
+		
+		children	= 0 
+		previous:tag			= ','
+		previous:tag:separators = ' ', '\t'
+		
+		start:tag				= @alpha, '_'
+		skip:Tag				= @alpha, @digit, '_'
+		end:separators			= @alpha:not, @digit:not
+		
+		txt:colorFG	= 0x5000EE
+		
+	
+//////////////////////////////////////////////////////////////////////////////		
+
+lexClass:	
+	name		= c_LexClass_Prop_ParseOnScreen
+	ParseOnScreen	= 0
+	parent		= c_LexClass_section
+	children	= 0	
+	token:tag	= 'ParseOnScreen'
+
+	txt:colorFG	= 0x60AF60	
+	txt:colorBK	= 0xDFCFFF
+	//txt:Bold	= 1	
+	txt:Italic	= 0 
+
+lexClass:	
+	name		= c_LexClass_AttributeName
+	ParseOnScreen	= 0
+	parent		= c_LexClass_section
+	children	= 0	
+	token:tag	= 'previous:class', 'previous:tag:separators', 'previous:tag'
+	token:tag	= 'start:class', 'start:Tag'
+	token:tag	= 'skip:Tag'  
+	token:tag	= 'end:class', 'end:class:parent', 'end:Tag', 'end:separators'
+	token:tag	= 'Token:tag', 'Token:start:separators', 'Token:end:separators'
+	
+	token:tag	= 'caseSensitive', 'Collapsable', 'CollapsedText', 'ParseOnScreen'
+	token:tag	= 'RecurrenceDepth', 'DisplayName'
+
+	token:tag	= 'txt:colorFG', 'txt:colorBK', 'txt:colorSelFG', 'txt:colorSelBK'
+	token:tag	= 'txt:Bold', 'txt:Italic', 'txt:Underline'
+	
+	txt:colorFG	= 0x505050	
+	//txt:Bold	= 1	
+	txt:Italic	= 1 
+
+lexClass:	
+	name		= c_LexClass_GlobalAttributeName
+	ParseOnScreen	= 0
+	parent		= c_LexClass_section
+	children	= 0	
+	txt:Bold	= 1	
+	txt:colorFG	= 0x0091E0	
+
+	token:tag	= 'global:FirstParseInSeparateThread'
+	token:tag	= 'global:EditReparceInSeparateThread'
+	token:tag	= 'global:EditReparceTimeout_ms'
+	token:tag	= 'global:MaxBackParseOffset'
+	token:tag	= 'global:OnScreenSchCacheLifeTime_sec'
+	token:tag	= 'global:ParserThreadIdleLifeTime_sec'
+

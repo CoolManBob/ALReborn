@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug(Profile)|Win32">
+      <Configuration>Debug(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release(Profile)|Win32">
+      <Configuration>Release(Profile)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E101D072-8DB6-41FE-9943-60051033CC1C}</ProjectGuid>
+    <RootNamespace>MatD3DFxTool</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31727.243</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)include\Lua;$(SolutionDir)Projects\DShowLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;RWDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4117; 4819; 4996; ;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dx9.lib;dxerr9.lib;rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;rtfsyst.lib;mss32.lib;winmm.lib;angelscriptd.lib;rprandom.lib;rppvs.lib;rtbary.lib;Lua.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)bin\MatD3DFxToolD.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw/lib/debug;$(SolutionDir)lib/debug;$(SolutionDir)lib/debug/STLPort_32bit;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)MatD3DFxToolD.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dx9.lib;rtfsyst.lib;RtRay.lib;RtRAS.lib;RpSpline.lib;RpMorph.lib;RtWing.lib;RtGCond.lib;RpLODAtm.lib;RtPITexD.lib;RtQuat.lib;RpSkin.lib;RtAnim.lib;RpHAnim.lib;rpusrdat.lib;rpmatfx.lib;rtimport.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rttiff.lib;rpworld.lib;rwcore.lib;rplogo.lib;winmm.lib;rtskinsp.lib;rprandom.lib;rppvs.lib;rtbary.lib;AgcModules.lib;dxerr9.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)bin\MatD3DFxTool.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)RW\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcp;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)MatD3DFxTool.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug(Profile)|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;RWDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dx9.lib;dxerr9.lib;rtfsyst.lib;RtRay.lib;RtRAS.lib;RpSpline.lib;RpMorph.lib;RtWing.lib;RtGCond.lib;RpLODAtm.lib;RtPITexD.lib;RtQuat.lib;RpSkin.lib;RtAnim.lib;RpHAnim.lib;rpusrdat.lib;rpmatfx.lib;rtimport.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rttiff.lib;rpworld.lib;rwcore.lib;rplogo.lib;winmm.lib;rtdict.lib;rpuvanim.lib;rtskinsp.lib;rprandom.lib;rppvs.lib;rtbary.lib;AgcModulesD.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)bin\MatD3DFxToolD.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)MatD3DFxToolD.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release(Profile)|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dx9.lib;rtfsyst.lib;RtRay.lib;RtRAS.lib;RpSpline.lib;RpMorph.lib;RtWing.lib;RtGCond.lib;RpLODAtm.lib;RtPITexD.lib;RtQuat.lib;RpSkin.lib;RtAnim.lib;RpHAnim.lib;rpusrdat.lib;rpmatfx.lib;rtimport.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rttiff.lib;rpworld.lib;rwcore.lib;rplogo.lib;winmm.lib;rtskinsp.lib;rprandom.lib;rppvs.lib;rtbary.lib;AgcModules.lib;dxerr9.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)bin\MatD3DFxTool.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)RW\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)MatD3DFxTool.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\AtlasCreation\AtlasContainer.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\AtlasCreation\CmdLineOptions.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\AtlasCreation\Packer.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\AtlasCreation\TextureObject.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\Control.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\DXUTgui\DXUTgui.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\DXUTgui\DXUTmisc.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\FXUI.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\MatD3DFxTool.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\MemoryManager\mmgr.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\Scene.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\camera.c" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\menu.c" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\mouse.c" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\skeleton.c" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\skel\win.c" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\XCrashReport\ExceptionHandler.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\XCrashReport\GetWinVer.cpp" />
+    <ClCompile Include="..\..\Tools\MatD3DFxTool\XCrashReport\MiniVersion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\AtlasContainer.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\CmdLineOptions.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\Packer.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\TATypes.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\AtlasCreation\TextureObject.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\Control.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\DXUTgui\DXUTgui.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\DXUTgui\DXUTmisc.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\FXUI.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\MemoryManager\mmgr.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\MemoryManager\nommgr.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\Scene.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\camera.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\menu.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\mouse.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\mousedat.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\platform.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\ptrdata.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\resource.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\skeleton.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\skel\win.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\CrashFileNames.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\dbghelp.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\ExceptionHandler.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\GetWinVer.h" />
+    <ClInclude Include="..\..\Tools\MatD3DFxTool\XCrashReport\MiniVersion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Tools\MatD3DFxTool\skel\main.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Tools\MatD3DFxTool\skel\win.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AgcModules\AgcModules.vcxproj">
+      <Project>{1fbf53c3-9711-4bb9-a5c1-db7e06a6301f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,397 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ???(??) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PatchClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGINSERVER_SELECT DIALOGEX 0, 0, 221, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login Server Select"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,162,82,14
+    PUSHBUTTON      "CANCEL",IDCANCEL,111,162,82,14
+    CONTROL         "",IDC_SERVER_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,207,152
+END
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PatchClient"
+FONT 9, "Arial"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PatchClient v1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PATCHCLIENT_DIALOG DIALOGEX 0, 0, 426, 423
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "Arial", 400, 0, 0x0
+BEGIN
+    CTEXT           "Being prepared...",IDC_Static_Status,19,248,225,10,NOT WS_VISIBLE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    CONTROL         "&Exit",IDC_EXitButton,"Button",BS_OWNERDRAW | WS_TABSTOP,125,73,48,14
+    CTEXT           "Being prepared...",IDC_Static_DetailInfo,19,208,225,10,NOT WS_VISIBLE | NOT WS_GROUP,WS_EX_TRANSPARENT
+    CONTROL         "&Start Game",IDC_START_GAME,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,94,111,55,25
+    CONTROL         "Register",IDC_RegisterButton,"Button",BS_OWNERDRAW | WS_TABSTOP,126,91,50,14
+    CONTROL         "Option",IDC_OptionButton,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,73,75,50,14
+    CONTROL         "HomePage",IDC_HomepageButton,"Button",BS_OWNERDRAW | WS_TABSTOP,72,91,50,14
+    CTEXT           "0%",IDC_Static_Progress_Percent,117,225,25,8,0,WS_EX_TRANSPARENT
+    LTEXT           "|                |",IDC_LINE,146,43,114,8
+    LTEXT           "Home Page",IDC_HOMEPAGE,96,7,46,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Driver",IDC_DRIVER,285,7,28,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Register",IDC_JOIN,159,7,33,8,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Customer Service",IDC_CUSTOMER,208,7,62,8,NOT WS_VISIBLE | WS_DISABLED
+END
+
+IDD_PATCHCLIENT_OPTION_DIALOG DIALOGEX 0, 0, 172, 325
+STYLE DS_SETFONT | WS_POPUP
+FONT 9, "Arial", 400, 0, 0x81
+BEGIN
+    CONTROL         "Save",IDC_Option_Button_Save,"Button",BS_OWNERDRAW | WS_TABSTOP,20,80,49,18
+    CONTROL         "Cancel",IDC_Option_Button_Cancel,"Button",BS_OWNERDRAW | WS_TABSTOP,75,80,50,20
+    COMBOBOX        IDC_Option_Combo_Resolution,75,10,50,65,CBS_DROPDOWNLIST | WS_VSCROLL
+    COMBOBOX        IDC_Option_Combo_Texture,75,25,50,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_OPTION_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS,15,107,136,12,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_Option_Combo_WindowedMode,75,39,50,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DRIVER_DOWN_DLG DIALOGEX 0, 0, 279, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "OK",IDC_BUTTON_DRIVER_OK,"Button",BS_OWNERDRAW | WS_TABSTOP,57,109,50,14
+    CONTROL         "Cancel",IDC_BUTTON_DRIVER_NO,"Button",BS_OWNERDRAW | WS_TABSTOP,123,110,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,15,135,249,13
+    CONTROL         "Does not use the automated update driver function",IDC_CHECK_DONOTUSECHECKDRIVER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,117,8,8,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BUTTON_OPTION_SET   BITMAP                  "GlobalImage\\Button_Setup_Set.bmp"
+IDB_Button_Close_Set    BITMAP                  "GlobalImage\\Button_Close_Set.bmp"
+IDB_BUTTON_STARTGAME_SET BITMAP                  "GlobalImage\\Button_Start_Set.bmp"
+IDB_Button_Option_Save_Set BITMAP                  "GlobalImage\\Button_Save_Set.bmp"
+IDB_Button_Option_Cancel_Set BITMAP                  "GlobalImage\\Button_Cancel_Set.bmp"
+IDB_Progress2           BITMAP                  "BMPImages\\progressbar_total.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PatchClient.ico"
+IDI_ArchlordIcon        ICON                    "ArchLord.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,1,10
+ PRODUCTVERSION 2,0,1,10
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "FileDescription", "PatchClient MFC Application"
+            VALUE "FileVersion", "2, 0, 1, 10"
+            VALUE "InternalName", "PatchClient"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "PatchClient.EXE"
+            VALUE "ProductName", "PatchClient application"
+            VALUE "ProductVersion", "2, 0, 1, 10"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PATCHCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 415
+    END
+
+    IDD_PATCHCLIENT_OPTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 318
+    END
+
+    IDD_DRIVER_DOWN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "PatchClient 資訊(&A)..."
+    IDS_CONTINUE_DOWNLOAD   "尚有先前傳送的檔案。 請問要繼續傳送嗎？"
+    IDS_MSG_DOWNLOAD        "目前/全部:%d/%d   下載中... [%s]"
+    IDS_MSG_PROGRESS        "目前下載檔案進行 [%.1f/%.1fMB]"
+    IDS_MSG_APPLY_FILE      "目前適用中的檔案 [%s]"
+    IDS_MSG_APPLY_PROGRESS  "目前/全部:%d/%d  更新中[%s]"
+    IDS_MSG_COMPLETE        "更新完畢。"
+    IDS_DISCONNECTED        "與伺服器連接已中斷。"
+    IDS_INSUFFICENT_DISK    "硬碟容量不足！\n 更新時，需要%.2fMB 容量的空間。"
+    IDS_RUN_AGAIN           "請重新執行PatchClient。"
+    IDS_ERROR_DNS           "取得DNS失敗，請變更DNS設定。\n請在ＢＵＧ回報欄回報DNS網址。 "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_CONNECTION    "無法連接PatchServer。\n請檢查下列項目。\n1. PatchServer正在維修。\n2. 網路連接\n3. 在公司，學校，公共機關等場所因防火牆關係\n有可能無法連接，請詢問網路管理員。"
+    IDS_RUN_GAME            "請開始執行遊戲。"
+    IDS_ERROR_FTP_CONNECTION "無法連接FTPServer。"
+    IDS_ERROR_FTP_DISCONNECTED "與FTP伺服器連接已中斷。 "
+    IDS_ERROR_FTP_OPEN      "無法開啟FTP伺服器的檔案。\nFTP伺服器連線忙碌中。\n請稍候再試。"
+    IDS_ERROR_FTP_RECEIVE   "無法從FTP伺服器接受檔案。\nFTP伺服器連線忙碌中。\n請稍候再試。 "
+    IDS_ERROR_FAILED        "更新失敗！"
+    IDS_ERROR_PATCH_CONNECTION "無法連接PatchServer。"
+    IDS_ERROR_DIRECTX       "Archlord需要 DirectX 9.0c 以上的最新版本。\n可以在Microsoft 台灣官網 (http://www.microsoft.com/downloads/zh-tw/default.aspx/)，\n網頁的下載中心取得。請務必安裝符合自己\n電腦作業系統及配備的版本。"
+    IDS_ERROR_RUN_CLIENT    "無法執行GameClient。"
+    IDS_ERROR_SET_DIRECTORY "安裝下載更新directory失敗！！\n關閉程式。"
+    IDS_ERROR_MAKE_PATCH_FOLDER "無法產生Patch資料夾 。"
+    IDS_MSG_JOIN            "加入"
+    IDS_MSG_OPTION          "執行"
+    IDS_MSG_HOMEPAGE        "官網"
+    IDS_MSG_START           "遊戲開始"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_NOTICE          "公告事項"
+    IDS_PATCH_INFO          "更新信息"
+    IDS_PATCH_TOTAL         "目前共有"
+    IDS_REAL_TITLE          "帝王傳記"
+    IDS_TEST_TITLE          "Archlord Test auto update"
+    IDS_CHECK_VERSION       "更新版本確認中...."
+    IDS_VERSION_ERROR       "確認更新版本時發生問題。"
+    IDS_WIDTHSIZE           "593"
+    IDS_HEIGHTSIZE          "399"
+    IDS_PROGRESSBAR1X       "92"
+    IDS_PROGRESSBAR1Y       "546"
+    IDS_PROGRESSBAR2Y       "564"
+    IDS_PROGRESSMSG1X       "175"
+    IDS_PROGRESSMSG1Y       "546"
+    IDS_PROGRESSMSG2Y       "564"
+    IDS_PROGRESSMSGWIDTH    "338"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LANGUAGE_SELECT     "Language"
+    IDS_LANGUAGE_PORTUGUESE "Portuguese"
+    IDS_PROGRESSBARWIDTH    "480"
+    IDS_PROGRESSBARHEIGHT   "10"
+    IDS_EXITBTNPOSX         "776"
+    IDS_EXITBTNPOSY         "3"
+    IDS_LANGUAGE_SPANISH    "Spanish"
+    IDS_WINDOWED_MODE       "視窗模式"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROGRESSMSGHEIGHT   "11"
+    IDS_STARTBTNPOSX        "591"
+    IDS_MSG_CONNECTING      "連接中...."
+    IDS_OPTIONTITLE         "執行"
+    IDS_HIGH                "高"
+    IDS_MIDDLE              "中"
+    IDS_LOW                 "低"
+    IDS_STARTBTNPOSY        "540"
+    IDS_STARTBTNWIDTH       "87"
+    IDS_STARTBTNHEIGHT      "40"
+    IDS_OPTIONBTNPOSX       "687"
+    IDS_OPTIONBTNPOSY       "540"
+    IDS_OPTIONBTNWIDTH      "87"
+    IDS_OPTIONBTNHEIGHT     "40"
+    IDS_INTERFACE1          "類型1"
+    IDS_INTERFACE2          "類型2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPTIONTITLE2        "簡便選項設定"
+    IDS_OPTIONON            "開"
+    IDS_OPTIONOFF           "關"
+    IDS_SCREENSIZE          "畫面大小"
+    IDS_TETUREQUALITY       "Texture 質感"
+    IDS_INTERFACESTYLE      "介面類型"
+    IDS_QUICKOPTIONSPEED    "速度"
+    IDS_QUICKOPTIONQUALITY  "Quality"
+    IDS_USERSPEC            "玩家配備"
+    IDS_RANGEFAR            "遠"
+    IDS_RANGEMIDDLE         "普通"
+    IDS_RANGENEAR           "近"
+    IDS_CHARACTERRANGE      "角色視野範圍"
+    IDS_MAPRANGE            "地圖視野範圍"
+    IDS_NATUREOBJECT        "自然景觀設定"
+    IDS_SPECIALEFFECT       "特殊效果設定"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHADOW              "陰影設定"
+    IDS_WATEREFFECT         "水效果設定"
+    IDS_SPECIALTEXTURE      "高級Texture"
+    IDS_GLOWEFFECT          "亮麗效果"
+    IDS_AUTOEXPOSURE        "自動曝光修正"
+    IDS_IMPACTEFFECT        "Impact效果"
+    IDS_RANGEALL            "全部"
+    IDS_OPTIONDESC1         "若要把簡便設定套用到遊戲內"
+    IDS_OPTIONDESC2         "請把slide bar設定在需要的位置後"
+    IDS_OPTIONDESC3         "按儲存。"
+    IDS_BROOMTYPE1          "種類1"
+    IDS_BROOMTYPE2          "種類2"
+    IDS_ERROR_DOWNLOAD      "檔案下載失敗。"
+    IDS_LANGUAGE_ENGLISH    "English"
+    IDS_LANGUAGE_FRENCH     "French"
+    IDS_LANGUAGE_GERMAN     "German"
+END
+
+//-----------------------------------------------------------------------
+// Manifest
+
+#define IDR_RT_MANIFEST1	1
+IDR_RT_MANIFEST1 RT_MANIFEST DISCARDABLE PURE "archlord.exe.manifest"
+
+#endif    // ???(??) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 4, 1
+#pragma code_page(950)
+#endif //_WIN32
+#include "res\PatchClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   P‰iv‰m‰‰r‰n lyhyt muoto",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   P‰iv‰m‰‰r‰n pitk‰ muoto",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Aika",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   Aika (24 tuntia)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   Sivunumero",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Sivum‰‰r‰",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Vasen tasaus &&b Keskitys &&b Oikea tasaus", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   ikkunan otsikko",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  Et-merkki (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   uusi rivi",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Tulosta...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Seuraava sivu",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Edellinen sivu",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "L‰henn‰",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Loitonna",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Sulje",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Yksi sivu"
+    XTP_IDS_TWOPAGE         "Kaksi sivua"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigonsininen"
+    XTP_IDS_CLR_GRAY80      "Harmaa 80 %"
+    XTP_IDS_CLR_DARK_RED    "Tummanpunainen"
+    XTP_IDS_CLR_ORANGE      "Oranssi"
+    XTP_IDS_CLR_DARK_YELLOW "Tummankeltainen"
+    XTP_IDS_CLR_GREEN       "Vihre‰"
+    XTP_IDS_CLR_TEAL        "Sinivihre‰"
+    XTP_IDS_CLR_BLUE        "Sininen"
+    XTP_IDS_CLR_BLUEGRAY    "Siniharmaa"
+    XTP_IDS_CLR_GRAY50      "Harmaa 50 %"
+    XTP_IDS_CLR_RED         "Punainen"
+    XTP_IDS_CLR_LIGHTORANGE "Vaalea oranssi"
+    XTP_IDS_CLR_LIME        "Keltavihre‰"
+    XTP_IDS_CLR_SEA_GREEN   "Merivedenvihre‰"
+    XTP_IDS_CLR_AQUA        "Tumma turkoosi"
+    XTP_IDS_CLR_LIGHT_BLUE  "Vaaleansininen"
+    XTP_IDS_CLR_VIOLET      "Violetti"
+    XTP_IDS_CLR_GRAY40      "Harmaa 40 %"
+    XTP_IDS_CLR_PINK        "Vaaleanpunainen"
+    XTP_IDS_CLR_GOLD        "Kulta"
+    XTP_IDS_CLR_YELLOW      "Keltainen"
+    XTP_IDS_CLR_BRIGHT_GREEN "Kirkkaanvihre‰"
+    XTP_IDS_CLR_TURQUOISE   "Turkoosi"
+    XTP_IDS_CLR_SKY_BLUE    "Taivaansininen"
+    XTP_IDS_CLR_PLUM        "Luumu"
+    XTP_IDS_CLR_GRAY25      "Harmaa 25 %"
+    XTP_IDS_CLR_ROSE        "Ruusunpunainen"
+    XTP_IDS_CLR_TAN         "Keltaisenruskea"
+    XTP_IDS_CLR_LIGHT_YELLOW "Vaaleankeltainen"
+    XTP_IDS_CLR_LIGHT_GREEN "Vaaleanvihre‰"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Vaalea turkoosi"
+    XTP_IDS_CLR_PALE_BLUE   "Hailakansininen"
+    XTP_IDS_CLR_BLACK       "Musta"
+    XTP_IDS_CLR_BROWN       "Ruskea"
+    XTP_IDS_CLR_OLIVE_GREEN "Oliivinvihre‰"
+    XTP_IDS_CLR_DARK_GREEN  "Tummanvihre‰"
+    XTP_IDS_CLR_DARK_TEAL   "Tumma sinivihre‰"
+    XTP_IDS_CLR_DARK_BLUE   "Tummansininen"
+    XTP_IDS_CLR_LAVENDER    "Laventeli"
+    XTP_IDS_CLR_WHITE       "Valkoinen"
+    XTP_IDS_CLR_GRAY        "Harmaa"
+    XTP_IDS_CLR_MAROON      "Kastanjanruskea"
+    XTP_IDS_CLR_OLIVE       "Oliivinvihre‰"
+    XTP_IDS_CLR_NAVY        "Tummansininen"
+    XTP_IDS_CLR_PURPLE      "Purppura"
+    XTP_IDS_CLR_SILVER      "Hopea"
+    XTP_IDS_CLR_FUCHSIA     "Aniliini"
+    XTP_IDS_CLR_NOFILL      "Ei t‰yttˆ‰\nEi t‰yttˆ‰"
+    XTP_IDS_CLR_AUTOMATIC   "Automaattinen v‰ri\nAutomaattinen v‰ri"
+    XTP_IDS_CLR_MORE        "Lis‰‰ v‰rej‰..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

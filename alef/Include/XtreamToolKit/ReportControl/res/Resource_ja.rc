@@ -1,0 +1,96 @@
+// ReportControl resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Common/Resource.h"
+#include "ReportControl/Resource.h"
+#include "ReportControl/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_REPORT_PRINT_PAGE_SETUP DIALOG DISCARDABLE  32, 32, 283, 250
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "ページ設定"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "用紙",1073,7,80,197,51,WS_GROUP
+    LTEXT           "サイズ :",1089,11,96,40,8
+    COMBOBOX        1137,55,94,141,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "リンク元:",1090,12,113,39,8
+    COMBOBOX        1138,55,111,141,160,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "印刷の向き",1072,211,80,66,51,WS_GROUP
+    RADIOBUTTON     "縦",1056,216,93,56,12,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "横",1057,216,109,58,12
+    GROUPBOX        "余白",1075,8,135,196,58,WS_GROUP
+    LTEXT           "左:",1102,16,151,36,8
+    EDITTEXT        1155,55,148,32,12,WS_GROUP
+    LTEXT           "右:",1103,123,150,35,8
+    EDITTEXT        1157,162,147,32,12,WS_GROUP
+    LTEXT           "上:",1104,16,171,35,8
+    EDITTEXT        1156,55,169,32,12,WS_GROUP
+    LTEXT           "下:",1105,123,171,35,8
+    EDITTEXT        1158,162,169,32,12,WS_GROUP
+    GROUPBOX        "プレビュー",IDC_STATIC,212,135,66,58
+    CONTROL         "",1081,"Static",SS_GRAYRECT | WS_GROUP,261,150,4,38
+    CONTROL         "",1080,"Static",SS_WHITERECT | WS_GROUP,230,147,31,40
+    CONTROL         "",1082,"Static",SS_GRAYRECT | WS_GROUP,235,187,29,2
+    PUSHBUTTON      "ヘルプ",1038,7,230,61,14
+    PUSHBUTTON      "プリンタ...",1026,8,197,60,14
+    DEFPUSHBUTTON   "OK",1,177,230,48,14,WS_GROUP
+    PUSHBUTTON      "キャンセル",2,229,230,48,14
+    GROUPBOX        "ヘッダーとフッター",IDC_STATIC,7,5,270,70
+    LTEXT           "ヘッダー",IDC_STATIC,12,15,190,8
+    LTEXT           "フッター",IDC_STATIC,11,44,190,8
+    EDITTEXT        XTP_IDC_HEADER_FORMAT,12,25,248,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",XTP_IDC_HEADER_FORMAT_BTN,260,25,13,14,
+                    BS_ICON,WS_EX_STATICEDGE
+    EDITTEXT        XTP_IDC_FOOTER_FORMAT,12,55,248,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",XTP_IDC_FOOTER_FORMAT_BTN,260,55,13,14,
+                    BS_ICON,WS_EX_STATICEDGE
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_REPORT_NOGROUPBY         "フィールドごとにグループ分けするときは、ここにフィールド名をドラッグします。"
+    XTP_IDS_REPORT_NOITEMS           "このビューにはアイテムがありません。"
+    XTP_IDS_REPORT_NOFIELDSAVAILABLE "(使用できるフィールドはありません)"
+    XTP_IDS_REPORT_SORTBY            "最優先されるフィールド:"
+
+    XTP_IDS_REPORT_MARGINS_MM        "余白 (ミリ)"
+    XTP_IDS_REPORT_MARGINS_INCH      "余白 (インチ)"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

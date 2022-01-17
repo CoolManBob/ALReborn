@@ -1,0 +1,335 @@
+Exported on Thursday, March 21, 2002 11:44
+DFFDataClass=1
+nScaleFactor=1
+preLightClump=0
+nScaleType=0
+nAnimFrameInterval=1
+morphTargets=0
+retainObjInWorldSpace=0
+triStripMesh=1
+limitUVs=0
+limitUVMax=15
+weldThreshold=0.001
+weldThresholdUV=0.001
+backfaceNormals=0
+2SidedMaterials=0
+CSExport=0
+maxNativeSkin=1
+bonesPro=0
+exportNormals=1
+exportLit=1
+colorVertexPrelight=0
+weldVertices=0
+texturenameCase=0
+exportLabels=1
+filterTopLevelCSKeys=65536
+NoExtraInterpKeys=0
+generateReportFile=1
+displayReport=0
+legacyOptions=0
+exportHAnim=1
+HAnimNoMatrices=0
+HAnimSubHierarchyAnim=0
+HAnimLocalSpaceMatrices=0
+NumWeights=4
+multipleUV=0
+multipleUVMap1=1
+multipleUVMap2=2
+triStripMethod=0
+dMorphEnabled=0
+exportCustomAttributes=0
+bezierEnabled=0
+
+Warning list:
+Informational,,Exporter version 3, 1, 0, 0
+Informational,,RenderWare V3.2.0.0
+Informational,,3DS Max Version 4000.8.0.2048
+Informational,Scene Root,TM=( (1.00 0.00 0.00) (0.00 1.00 0.00) (0.00 0.00 1.00) (0.00 0.00 0.00) ) Det=1.000
+Informational,¶óÀÌÆÃ,TM=( (2.71 0.00 0.00) (0.00 2.71 0.00) (0.00 0.00 2.71) (-92.86 -185.87 105.50) ) Det=19.859
+Informational,Spot01,TM=( (-0.37 0.93 0.00) (0.00 0.00 1.00) (0.93 0.37 0.00) (1716.91 715.79 -405.46) ) Det=1.000
+Informational,Spot01.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (-183.04 -35.36 -405.46) ) Det=1.186
+Informational,Spot02,TM=( (0.46 0.89 0.00) (0.00 0.00 1.00) (0.89 -0.46 0.00) (1875.97 -945.56 -405.46) ) Det=1.000
+Informational,Spot02.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (-492.33 282.77 -405.46) ) Det=1.186
+Informational,Spot03,TM=( (0.95 0.32 0.00) (0.00 0.00 1.00) (0.32 -0.95 0.00) (1136.89 -2860.30 -405.46) ) Det=1.000
+Informational,Spot03.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (-112.84 813.92 -405.46) ) Det=1.186
+Informational,Spot04,TM=( (0.94 -0.34 0.00) (0.00 0.00 1.00) (-0.34 -0.94 0.00) (-837.69 -2735.32 -405.46) ) Det=1.000
+Informational,Spot04.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (437.04 813.92 -405.46) ) Det=1.186
+Informational,Spot05,TM=( (0.42 -0.91 0.00) (0.00 0.00 1.00) (-0.91 -0.42 0.00) (-1512.54 -835.73 -405.46) ) Det=1.000
+Informational,Spot05.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (761.97 214.05 -405.46) ) Det=1.186
+Informational,Spot06,TM=( (-0.09 -1.00 0.00) (0.00 0.00 1.00) (-1.00 0.09 0.00) (-2062.43 89.08 -405.46) ) Det=1.000
+Informational,Spot06.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (1211.88 -210.86 -405.46) ) Det=1.186
+Informational,Spot07,TM=( (-0.74 -0.67 0.00) (0.00 0.00 1.00) (-0.67 0.74 0.00) (-2187.40 2438.57 -405.46) ) Det=1.000
+Informational,Spot07.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (312.07 -335.83 -405.46) ) Det=1.186
+Informational,Spot08,TM=( (-0.85 0.52 0.00) (0.00 0.00 1.00) (0.52 0.85 0.00) (1586.80 2488.56 -405.46) ) Det=1.000
+Informational,Spot08.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (-337.79 -635.77 -405.46) ) Det=1.186
+Informational,Spot09,TM=( (0.00 1.00 0.00) (-0.66 0.00 0.75) (0.75 -0.00 0.66) (1709.87 10.64 1183.61) ) Det=1.000
+Informational,Spot09.Target,TM=( (1.06 0.00 0.00) (0.00 0.00 1.06) (0.00 -1.06 0.00) (-587.73 10.64 -848.89) ) Det=1.186
+Informational,Spot10,TM=( (0.00 1.00 0.00) (-1.00 0.00 0.03) (0.03 -0.00 1.00) (-128.21 10.64 1908.24) ) Det=1.000
+Informational,Spot10.Target,TM=( (1.06 0.00 0.00) (0.00 0.00 1.06) (0.00 -1.06 0.00) (-216.58 10.64 -1308.41) ) Det=1.186
+Informational,Spot11,TM=( (0.00 -1.00 0.00) (0.82 0.00 0.58) (-0.58 -0.00 0.82) (-1330.04 10.64 1236.63) ) Det=1.000
+Informational,Spot11.Target,TM=( (1.06 0.00 0.00) (0.00 0.00 1.06) (0.00 -1.06 0.00) (136.90 10.64 -831.22) ) Det=1.186
+Informational,Spot12,TM=( (-0.00 -1.00 0.00) (-0.53 0.00 0.85) (-0.85 0.00 -0.53) (-2408.15 10.64 -1697.24) ) Det=1.000
+Informational,Spot12.Target,TM=( (1.06 0.00 0.00) (0.00 0.00 1.06) (0.00 -1.06 0.00) (543.40 10.64 158.52) ) Det=1.186
+Informational,Spot15,TM=( (-0.00 1.00 0.00) (0.27 0.00 0.96) (0.96 0.00 -0.27) (2222.42 10.64 -1043.30) ) Det=1.000
+Informational,Spot15.Target,TM=( (1.06 0.00 0.00) (0.00 0.00 1.06) (0.00 -1.06 0.00) (-746.80 10.64 -194.96) ) Det=1.186
+Informational,Spot16,TM=( (-1.00 -0.00 0.00) (0.00 -0.63 0.78) (-0.00 0.78 0.63) (-114.86 1946.12 1011.28) ) Det=1.000
+Informational,Spot16.Target,TM=( (0.00 1.06 0.00) (0.00 0.00 1.06) (1.06 0.00 0.00) (-114.86 -333.81 -844.48) ) Det=1.186
+Informational,Spot17,TM=( (1.00 0.00 0.00) (-0.00 0.74 0.68) (0.00 -0.68 0.74) (-114.86 -1217.51 1294.06) ) Det=1.000
+Informational,Spot17.Target,TM=( (0.00 1.06 0.00) (0.00 0.00 1.06) (1.06 0.00 0.00) (-114.86 602.91 -685.42) ) Det=1.186
+Informational,Spot20,TM=( (-1.00 -0.00 0.00) (0.00 -0.94 0.34) (-0.00 0.34 0.94) (-114.86 832.67 1382.43) ) Det=1.000
+Informational,Spot20.Target,TM=( (0.00 1.06 0.00) (0.00 0.00 1.06) (1.06 0.00 0.00) (-114.86 1.99 -879.83) ) Det=1.186
+Informational,Spot21,TM=( (0.81 0.58 -0.00) (-0.18 0.25 0.95) (0.56 -0.77 0.30) (1182.55 -1580.23 462.68) ) Det=1.000
+Informational,Spot21.Target,TM=( (1.06 0.00 0.00) (0.00 1.06 0.00) (0.00 0.00 1.06) (-412.78 638.96 -405.46) ) Det=1.186
+Informational,body,TM=( (0.45 0.00 0.00) (0.00 0.00 0.41) (0.00 -0.45 0.00) (0.00 -26.84 7.13) ) Det=0.081
+Informational,armor _L_knee,TM=( (0.44 -0.00 0.06) (-0.05 0.00 0.40) (-0.00 -0.45 0.00) (37.76 1.22 -316.39) ) Det=0.081
+Informational,Ä®,TM=( (0.99 0.00 0.00) (0.00 0.99 0.05) (0.00 -0.05 0.99) (-199.64 -55.82 -81.64) ) Det=0.974
+Informational,Bip01,TM=( (-0.09 -0.98 0.19) (0.99 -0.11 -0.11) (0.13 0.18 0.98) (0.00 0.00 293.65) ) Det=1.000
+Informational,Bip01 Footsteps,TM=( (1.00 0.00 0.00) (0.00 1.00 0.00) (0.00 0.00 1.00) (0.00 0.00 8.48) ) Det=1.000
+Informational,Bip01 Pelvis,TM=( (0.13 0.18 0.98) (-0.09 -0.98 0.19) (0.99 -0.11 -0.11) (0.24 6.57 292.43) ) Det=1.000
+Informational,Bip01 Spine,TM=( (0.13 0.24 0.96) (-0.08 -0.97 0.25) (0.99 -0.11 -0.11) (5.17 13.29 331.22) ) Det=1.000
+Informational,Bip01 Spine1,TM=( (0.13 0.07 0.99) (-0.25 -0.96 0.10) (0.96 -0.26 -0.11) (10.60 23.16 371.36) ) Det=1.000
+Informational,Bip01 Neck,TM=( (0.09 -0.09 0.99) (-0.26 -0.96 -0.06) (0.96 -0.26 -0.11) (19.04 27.89 435.48) ) Det=1.000
+Informational,Bip01 Head,TM=( (-0.03 -0.30 0.95) (-0.04 -0.95 -0.30) (1.00 -0.04 0.02) (22.12 24.82 470.31) ) Det=1.000
+Informational,Bip01 HeadNub,TM=( (-0.03 -0.30 0.95) (-0.04 -0.95 -0.30) (1.00 -0.04 0.02) (20.43 6.43 528.31) ) Det=1.000
+Informational,Bip01 Ponytail1,TM=( (0.11 0.65 -0.76) (0.00 0.76 0.65) (0.99 -0.07 0.08) (29.83 34.69 494.04) ) Det=1.000
+Informational,Bip01 Ponytail11,TM=( (0.11 0.68 -0.73) (-0.00 0.73 0.68) (0.99 -0.07 0.08) (33.40 56.26 468.76) ) Det=1.000
+Informational,Bip01 Ponytail12,TM=( (0.10 0.46 -0.88) (0.03 0.88 0.47) (0.99 -0.07 0.08) (36.74 77.41 446.03) ) Det=1.000
+Informational,Bip01 Ponytail1Nub,TM=( (0.03 0.88 0.47) (0.10 0.46 -0.88) (-0.99 0.07 -0.08) (40.19 92.93 416.63) ) Det=1.000
+Informational,Bip01 Ponytail2,TM=( (-0.01 0.67 -0.74) (0.03 0.74 0.67) (1.00 -0.02 -0.03) (14.79 35.33 493.80) ) Det=1.000
+Informational,Bip01 Ponytail21,TM=( (-0.01 0.70 -0.71) (0.03 0.71 0.70) (1.00 -0.02 -0.03) (14.43 58.10 468.62) ) Det=1.000
+Informational,Bip01 Ponytail22,TM=( (-0.02 0.50 -0.87) (0.03 0.87 0.50) (1.00 -0.02 -0.03) (14.14 80.24 446.12) ) Det=1.000
+Informational,Bip01 Ponytail2Nub,TM=( (0.03 0.87 0.50) (-0.02 0.50 -0.87) (-1.00 0.02 0.03) (13.52 97.77 415.80) ) Det=1.000
+Informational,Bip01 L Clavicle,TM=( (0.84 -0.34 -0.42) (0.32 0.94 -0.11) (0.43 -0.04 0.90) (37.01 34.93 433.82) ) Det=1.000
+Informational,Bip01 L UpperArm,TM=( (0.38 -0.27 -0.88) (0.53 0.85 -0.03) (0.76 -0.45 0.47) (58.60 26.24 423.00) ) Det=1.000
+Informational,Bip01 L Forearm,TM=( (-0.10 -0.79 -0.60) (0.64 0.40 -0.65) (0.76 -0.45 0.47) (93.70 1.61 342.52) ) Det=1.000
+Informational,Bip01 L Hand,TM=( (-0.19 -0.80 -0.57) (-0.78 0.48 -0.41) (0.60 0.37 -0.71) (84.85 -65.60 291.75) ) Det=1.000
+Informational,Bip01 L Finger0,TM=( (-0.69 -0.52 -0.50) (0.72 -0.46 -0.51) (0.03 -0.72 0.70) (75.82 -73.03 294.15) ) Det=1.000
+Informational,Bip01 L Finger01,TM=( (-0.69 -0.52 -0.50) (0.72 -0.46 -0.51) (0.03 -0.72 0.70) (66.90 -79.79 287.63) ) Det=1.000
+Informational,Bip01 L Finger02,TM=( (-0.69 -0.52 -0.50) (0.72 -0.46 -0.51) (0.03 -0.72 0.70) (58.14 -86.42 281.23) ) Det=1.000
+Informational,Bip01 L Finger0Nub,TM=( (-0.69 -0.52 -0.50) (0.72 -0.46 -0.51) (0.03 -0.72 0.70) (50.51 -92.20 275.66) ) Det=1.000
+Informational,Bip01 L Finger1,TM=( (-0.31 -0.76 -0.57) (-0.62 0.62 -0.49) (0.72 0.20 -0.66) (75.61 -89.24 282.14) ) Det=1.000
+Informational,Bip01 L Finger11,TM=( (-0.31 -0.76 -0.57) (-0.62 0.62 -0.49) (0.72 0.20 -0.66) (73.00 -95.64 277.37) ) Det=1.000
+Informational,Bip01 L Finger12,TM=( (-0.31 -0.76 -0.57) (-0.62 0.62 -0.49) (0.72 0.20 -0.66) (69.85 -103.42 271.58) ) Det=1.000
+Informational,Bip01 L Finger1Nub,TM=( (-0.31 -0.76 -0.57) (-0.62 0.62 -0.49) (0.72 0.20 -0.66) (66.67 -111.24 265.75) ) Det=1.000
+Informational,Bip01 L Finger2,TM=( (-0.24 -0.71 -0.67) (-0.66 0.62 -0.42) (0.71 0.34 -0.61) (83.94 -85.90 274.33) ) Det=1.000
+Informational,Bip01 L Finger21,TM=( (-0.24 -0.71 -0.67) (-0.66 0.62 -0.42) (0.71 0.34 -0.61) (81.93 -91.91 268.67) ) Det=1.000
+Informational,Bip01 L Finger22,TM=( (-0.24 -0.71 -0.67) (-0.66 0.62 -0.42) (0.71 0.34 -0.61) (79.78 -98.30 262.65) ) Det=1.000
+Informational,Bip01 L Finger2Nub,TM=( (-0.24 -0.71 -0.67) (-0.66 0.62 -0.42) (0.71 0.34 -0.61) (77.27 -105.79 255.60) ) Det=1.000
+Informational,armor _L_Forearm,TM=( (0.24 -0.61 -0.76) (0.56 -0.55 0.62) (-0.79 -0.57 0.21) (100.13 -28.13 312.63) ) Det=1.000
+Informational,armor _L_UpperArm,TM=( (0.54 -0.18 -0.82) (0.57 -0.64 0.51) (-0.62 -0.75 -0.24) (81.26 12.55 369.11) ) Det=1.000
+Informational,armor _L_Clavicle,TM=( (0.95 -0.28 -0.13) (0.10 -0.12 0.99) (-0.29 -0.95 -0.09) (71.35 16.18 425.16) ) Det=1.000
+Informational,Bip01 R Clavicle,TM=( (-0.89 0.19 -0.42) (0.26 0.96 -0.10) (0.39 -0.20 -0.90) (6.98 42.95 437.18) ) Det=1.000
+Informational,Bip01 R UpperArm,TM=( (-0.18 0.44 -0.88) (0.55 0.78 0.28) (0.81 -0.44 -0.38) (-15.75 47.83 426.30) ) Det=1.000
+Informational,Bip01 R Forearm,TM=( (-0.33 0.19 -0.92) (0.48 0.88 0.01) (0.81 -0.44 -0.38) (-31.77 88.12 346.08) ) Det=1.000
+Informational,Bip01 R Hand,TM=( (-0.39 -0.02 -0.92) (0.83 -0.45 -0.34) (-0.40 -0.89 0.20) (-59.82 104.24 267.80) ) Det=1.000
+Informational,Bip01 R Finger0,TM=( (-0.02 -0.46 -0.89) (-0.43 0.80 -0.41) (0.90 0.37 -0.21) (-64.16 94.15 263.15) ) Det=1.000
+Informational,Bip01 R Finger01,TM=( (-0.02 -0.46 -0.89) (-0.43 0.80 -0.41) (0.90 0.37 -0.21) (-64.39 88.13 251.67) ) Det=1.000
+Informational,Bip01 R Finger02,TM=( (-0.02 -0.46 -0.89) (-0.43 0.80 -0.41) (0.90 0.37 -0.21) (-64.63 82.24 240.42) ) Det=1.000
+Informational,Bip01 R Finger0Nub,TM=( (-0.02 -0.46 -0.89) (-0.43 0.80 -0.41) (-0.90 -0.37 0.21) (-64.83 77.09 230.61) ) Det=-1.000
+Warning,Bip01 R Finger0Nub,Negative scaling detected.
+Informational,Bip01 R Finger1,TM=( (-0.32 -0.13 -0.94) (0.93 -0.25 -0.28) (-0.19 -0.96 0.20) (-73.16 96.97 245.32) ) Det=1.000
+Informational,Bip01 R Finger11,TM=( (-0.32 -0.13 -0.94) (0.93 -0.25 -0.28) (-0.19 -0.96 0.20) (-75.88 95.85 237.45) ) Det=1.000
+Informational,Bip01 R Finger12,TM=( (-0.32 -0.13 -0.94) (0.93 -0.25 -0.28) (-0.19 -0.96 0.20) (-79.17 94.50 227.90) ) Det=1.000
+Informational,Bip01 R Finger1Nub,TM=( (-0.32 -0.13 -0.94) (0.93 -0.25 -0.28) (0.19 0.96 -0.20) (-82.50 93.14 218.28) ) Det=-1.000
+Warning,Bip01 R Finger1Nub,Negative scaling detected.
+Informational,Bip01 R Finger2,TM=( (-0.26 -0.02 -0.97) (0.92 -0.32 -0.24) (-0.30 -0.95 0.10) (-69.94 108.25 243.35) ) Det=1.000
+Informational,Bip01 R Finger21,TM=( (-0.26 -0.02 -0.97) (0.92 -0.32 -0.24) (-0.30 -0.95 0.10) (-72.16 108.10 235.15) ) Det=1.000
+Informational,Bip01 R Finger22,TM=( (-0.26 -0.02 -0.97) (0.92 -0.32 -0.24) (-0.30 -0.95 0.10) (-74.51 107.94 226.43) ) Det=1.000
+Informational,Bip01 R Finger2Nub,TM=( (-0.26 -0.02 -0.97) (0.92 -0.32 -0.24) (0.30 0.95 -0.10) (-77.28 107.76 216.21) ) Det=-1.000
+Warning,Bip01 R Finger2Nub,Negative scaling detected.
+Informational,armor _R_Forearm,TM=( (0.20 -0.57 0.80) (-0.91 0.19 0.36) (-0.36 -0.80 -0.48) (-34.83 91.92 336.86) ) Det=1.000
+Informational,armor _R_Clavicle,TM=( (0.94 -0.30 0.13) (-0.15 -0.05 0.99) (-0.29 -0.95 -0.09) (-43.03 49.56 444.08) ) Det=1.000
+Informational,Bip01 L Thigh,TM=( (-0.02 0.02 -1.00) (0.05 -1.00 -0.02) (-1.00 -0.05 0.02) (25.84 3.80 289.65) ) Det=1.000
+Informational,Bip01 L Calf,TM=( (-0.04 0.41 -0.91) (0.03 -0.91 -0.41) (-1.00 -0.05 0.02) (23.03 6.16 158.94) ) Det=1.000
+Informational,Bip01 L Foot,TM=( (-0.01 0.01 -1.00) (0.05 -1.00 -0.01) (-1.00 -0.05 0.01) (18.06 59.70 38.29) ) Det=1.000
+Informational,Bip01 L Toe0,TM=( (0.05 -1.00 -0.01) (0.01 -0.01 1.00) (-1.00 -0.05 0.01) (19.45 24.37 8.18) ) Det=1.000
+Informational,Bip01 L Toe0Nub,TM=( (0.05 -1.00 -0.01) (0.01 -0.01 1.00) (1.00 0.05 -0.01) (20.69 -2.10 7.93) ) Det=-1.000
+Warning,Bip01 L Toe0Nub,Negative scaling detected.
+Informational,armor _L_shoe_f,TM=( (0.99 0.00 -0.15) (0.15 -0.01 0.99) (0.00 -1.00 -0.01) (21.34 16.31 17.40) ) Det=1.000
+Informational,armor _L_shoe,TM=( (0.99 0.00 -0.15) (0.15 -0.01 0.99) (0.00 -1.00 -0.01) (21.70 51.65 24.80) ) Det=1.000
+Informational,armor _L_calf,TM=( (0.99 0.08 -0.13) (0.15 -0.31 0.94) (0.04 -0.95 -0.32) (19.56 15.58 112.70) ) Det=1.000
+Informational,armor _L_thigh,TM=( (0.99 0.04 -0.13) (0.13 0.06 0.99) (0.05 -1.00 0.05) (25.92 9.60 245.17) ) Det=1.000
+Informational,Bip01 R Thigh,TM=( (-0.21 -0.26 -0.94) (-0.43 -0.84 0.33) (-0.88 0.47 0.07) (-25.36 9.34 295.21) ) Det=1.000
+Informational,Bip01 R Calf,TM=( (-0.10 -0.05 -0.99) (-0.47 -0.88 0.09) (-0.88 0.47 0.07) (-52.80 -24.38 171.89) ) Det=1.000
+Informational,Bip01 R Foot,TM=( (-0.11 -0.00 -0.99) (-0.48 -0.88 0.05) (-0.87 0.48 0.09) (-66.09 -30.83 40.62) ) Det=1.000
+Informational,Bip01 R Toe0,TM=( (-0.48 -0.88 0.05) (0.11 0.00 0.99) (-0.87 0.48 0.09) (-86.31 -62.15 12.90) ) Det=1.000
+Informational,Bip01 R Toe0Nub,TM=( (-0.48 -0.88 0.05) (0.11 0.00 0.99) (-0.87 0.48 0.09) (-98.96 -85.39 14.31) ) Det=1.000
+Informational,armor _R_shoe_f,TM=( (0.90 -0.44 0.04) (-0.02 0.06 1.00) (-0.44 -0.90 0.05) (-90.56 -68.42 22.72) ) Det=1.000
+Informational,armor _R_shoe,TM=( (0.90 -0.44 0.04) (-0.02 0.06 1.00) (-0.44 -0.90 0.05) (-74.62 -36.47 28.07) ) Det=1.000
+Informational,armor _R_calf,TM=( (0.89 -0.46 0.05) (0.04 0.18 0.98) (-0.46 -0.87 0.18) (-60.15 -29.89 108.91) ) Det=1.000
+Informational,armor _R_thigh,TM=( (0.90 -0.44 0.04) (0.14 0.37 0.92) (-0.41 -0.82 0.39) (-34.53 3.01 251.62) ) Det=1.000
+Informational,armor _R_knee,TM=( (0.90 -0.44 0.04) (0.14 0.37 0.92) (-0.41 -0.82 0.39) (-48.73 -21.08 190.31) ) Det=1.000
+Informational,armor _body,TM=( (0.99 -0.11 -0.11) (0.13 0.18 0.98) (-0.09 -0.98 0.19) (6.37 19.17 336.27) ) Det=1.000
+Informational,Scene Root,Created a new clump
+Informational,Scene Root,Created a new frame
+Informational,Bip01,Bone Index=0, Bone Tag=6
+Informational,Bip01,Created 11 animation keys for HAnim
+Informational,Bip01 Pelvis,Bone Index=1, Bone Tag=5
+Informational,Bip01 Pelvis,Created 2 animation keys for HAnim
+Informational,Bip01 Spine,Bone Index=2, Bone Tag=4
+Informational,Bip01 Spine,Created 8 animation keys for HAnim
+Informational,Bip01 Spine1,Bone Index=3, Bone Tag=3
+Informational,Bip01 Spine1,Created 8 animation keys for HAnim
+Informational,Bip01 Neck,Bone Index=4, Bone Tag=2
+Informational,Bip01 Neck,Created 6 animation keys for HAnim
+Informational,Bip01 Head,Bone Index=5, Bone Tag=1
+Informational,Bip01 Head,Created 6 animation keys for HAnim
+Informational,Bip01 HeadNub,Bone Index=6, Bone Tag=2000
+Informational,Bip01 HeadNub,Created 2 animation keys for HAnim
+Informational,Bip01 Ponytail1,Bone Index=7, Bone Tag=44
+Informational,Bip01 Ponytail1,Created 7 animation keys for HAnim
+Informational,Bip01 Ponytail11,Bone Index=8, Bone Tag=45
+Informational,Bip01 Ponytail11,Created 7 animation keys for HAnim
+Informational,Bip01 Ponytail12,Bone Index=9, Bone Tag=46
+Informational,Bip01 Ponytail12,Created 7 animation keys for HAnim
+Informational,Bip01 Ponytail1Nub,Bone Index=10, Bone Tag=2001
+Informational,Bip01 Ponytail1Nub,Created 2 animation keys for HAnim
+Informational,Bip01 Ponytail2,Bone Index=11, Bone Tag=41
+Informational,Bip01 Ponytail2,Created 6 animation keys for HAnim
+Informational,Bip01 Ponytail21,Bone Index=12, Bone Tag=42
+Informational,Bip01 Ponytail21,Created 6 animation keys for HAnim
+Informational,Bip01 Ponytail22,Bone Index=13, Bone Tag=43
+Informational,Bip01 Ponytail22,Created 6 animation keys for HAnim
+Informational,Bip01 Ponytail2Nub,Bone Index=14, Bone Tag=2002
+Informational,Bip01 Ponytail2Nub,Created 2 animation keys for HAnim
+Informational,Bip01 L Clavicle,Bone Index=15, Bone Tag=7
+Informational,Bip01 L Clavicle,Created 10 animation keys for HAnim
+Informational,Bip01 L UpperArm,Bone Index=16, Bone Tag=8
+Informational,Bip01 L UpperArm,Created 10 animation keys for HAnim
+Informational,Bip01 L Forearm,Bone Index=17, Bone Tag=9
+Informational,Bip01 L Forearm,Created 10 animation keys for HAnim
+Informational,Bip01 L Hand,Bone Index=18, Bone Tag=10
+Informational,Bip01 L Hand,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger0,Bone Index=19, Bone Tag=17
+Informational,Bip01 L Finger0,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger01,Bone Index=20, Bone Tag=18
+Informational,Bip01 L Finger01,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger02,Bone Index=21, Bone Tag=19
+Informational,Bip01 L Finger02,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger0Nub,Bone Index=22, Bone Tag=2003
+Informational,Bip01 L Finger0Nub,Created 2 animation keys for HAnim
+Informational,Bip01 L Finger1,Bone Index=23, Bone Tag=14
+Informational,Bip01 L Finger1,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger11,Bone Index=24, Bone Tag=15
+Informational,Bip01 L Finger11,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger12,Bone Index=25, Bone Tag=16
+Informational,Bip01 L Finger12,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger1Nub,Bone Index=26, Bone Tag=2004
+Informational,Bip01 L Finger1Nub,Created 2 animation keys for HAnim
+Informational,Bip01 L Finger2,Bone Index=27, Bone Tag=11
+Informational,Bip01 L Finger2,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger21,Bone Index=28, Bone Tag=12
+Informational,Bip01 L Finger21,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger22,Bone Index=29, Bone Tag=13
+Informational,Bip01 L Finger22,Created 10 animation keys for HAnim
+Informational,Bip01 L Finger2Nub,Bone Index=30, Bone Tag=2005
+Informational,Bip01 L Finger2Nub,Created 2 animation keys for HAnim
+Informational,armor _L_Forearm,Bone Index=31, Bone Tag=2006
+Informational,armor _L_Forearm,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _L_Forearm,Created 2 animation keys for HAnim
+Informational,armor _L_UpperArm,Bone Index=32, Bone Tag=2007
+Informational,armor _L_UpperArm,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _L_UpperArm,Created 2 animation keys for HAnim
+Informational,armor _L_Clavicle,Bone Index=33, Bone Tag=2008
+Informational,armor _L_Clavicle,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _L_Clavicle,Created 2 animation keys for HAnim
+Informational,Bip01 R Clavicle,Bone Index=34, Bone Tag=20
+Informational,Bip01 R Clavicle,Created 9 animation keys for HAnim
+Informational,Bip01 R UpperArm,Bone Index=35, Bone Tag=21
+Informational,Bip01 R UpperArm,Created 9 animation keys for HAnim
+Informational,Bip01 R Forearm,Bone Index=36, Bone Tag=22
+Informational,Bip01 R Forearm,Created 9 animation keys for HAnim
+Informational,Bip01 R Hand,Bone Index=37, Bone Tag=23
+Informational,Bip01 R Hand,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger0,Bone Index=38, Bone Tag=30
+Informational,Bip01 R Finger0,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger01,Bone Index=39, Bone Tag=31
+Informational,Bip01 R Finger01,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger02,Bone Index=40, Bone Tag=32
+Informational,Bip01 R Finger02,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger0Nub,Bone Index=41, Bone Tag=2009
+Informational,Bip01 R Finger0Nub,Created 2 animation keys for HAnim
+Informational,Bip01 R Finger1,Bone Index=42, Bone Tag=27
+Informational,Bip01 R Finger1,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger11,Bone Index=43, Bone Tag=28
+Informational,Bip01 R Finger11,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger12,Bone Index=44, Bone Tag=29
+Informational,Bip01 R Finger12,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger1Nub,Bone Index=45, Bone Tag=2010
+Informational,Bip01 R Finger1Nub,Created 2 animation keys for HAnim
+Informational,Bip01 R Finger2,Bone Index=46, Bone Tag=24
+Informational,Bip01 R Finger2,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger21,Bone Index=47, Bone Tag=25
+Informational,Bip01 R Finger21,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger22,Bone Index=48, Bone Tag=26
+Informational,Bip01 R Finger22,Created 9 animation keys for HAnim
+Informational,Bip01 R Finger2Nub,Bone Index=49, Bone Tag=2011
+Informational,Bip01 R Finger2Nub,Created 2 animation keys for HAnim
+Informational,armor _R_Forearm,Bone Index=50, Bone Tag=2012
+Informational,armor _R_Forearm,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _R_Forearm,Created 2 animation keys for HAnim
+Informational,armor _R_Clavicle,Bone Index=51, Bone Tag=2013
+Informational,armor _R_Clavicle,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _R_Clavicle,Created 2 animation keys for HAnim
+Informational,Bip01 L Thigh,Bone Index=52, Bone Tag=37
+Informational,Bip01 L Thigh,Created 9 animation keys for HAnim
+Informational,Bip01 L Calf,Bone Index=53, Bone Tag=38
+Informational,Bip01 L Calf,Created 9 animation keys for HAnim
+Informational,Bip01 L Foot,Bone Index=54, Bone Tag=39
+Informational,Bip01 L Foot,Created 9 animation keys for HAnim
+Informational,Bip01 L Toe0,Bone Index=55, Bone Tag=40
+Informational,Bip01 L Toe0,Created 9 animation keys for HAnim
+Informational,Bip01 L Toe0Nub,Bone Index=56, Bone Tag=2014
+Informational,Bip01 L Toe0Nub,Created 2 animation keys for HAnim
+Informational,armor _L_shoe_f,Bone Index=57, Bone Tag=2015
+Informational,armor _L_shoe_f,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _L_shoe_f,Created 2 animation keys for HAnim
+Informational,armor _L_shoe,Bone Index=58, Bone Tag=2016
+Informational,armor _L_shoe,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _L_shoe,Created 2 animation keys for HAnim
+Informational,armor _L_calf,Bone Index=59, Bone Tag=2017
+Informational,armor _L_calf,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _L_calf,Created 2 animation keys for HAnim
+Informational,armor _L_thigh,Bone Index=60, Bone Tag=2018
+Informational,armor _L_thigh,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _L_thigh,Created 2 animation keys for HAnim
+Informational,Bip01 R Thigh,Bone Index=61, Bone Tag=33
+Informational,Bip01 R Thigh,Created 9 animation keys for HAnim
+Informational,Bip01 R Calf,Bone Index=62, Bone Tag=34
+Informational,Bip01 R Calf,Created 9 animation keys for HAnim
+Informational,Bip01 R Foot,Bone Index=63, Bone Tag=35
+Informational,Bip01 R Foot,Created 9 animation keys for HAnim
+Informational,Bip01 R Toe0,Bone Index=64, Bone Tag=36
+Informational,Bip01 R Toe0,Created 9 animation keys for HAnim
+Informational,Bip01 R Toe0Nub,Bone Index=65, Bone Tag=2019
+Informational,Bip01 R Toe0Nub,Created 2 animation keys for HAnim
+Informational,armor _R_shoe_f,Bone Index=66, Bone Tag=2020
+Informational,armor _R_shoe_f,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _R_shoe_f,Created 2 animation keys for HAnim
+Informational,armor _R_shoe,Bone Index=67, Bone Tag=2021
+Informational,armor _R_shoe,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _R_shoe,Created 2 animation keys for HAnim
+Informational,armor _R_calf,Bone Index=68, Bone Tag=2022
+Informational,armor _R_calf,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _R_calf,Created 2 animation keys for HAnim
+Informational,armor _R_thigh,Bone Index=69, Bone Tag=2023
+Informational,armor _R_thigh,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _R_thigh,Created 2 animation keys for HAnim
+Informational,armor _R_knee,Bone Index=70, Bone Tag=2024
+Informational,armor _R_knee,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _R_knee,Created 2 animation keys for HAnim
+Informational,armor _body,Bone Index=71, Bone Tag=2025
+Informational,armor _body,Added atomic : Vertices=24 Triangles=12 Morph Targets=1
+Informational,armor _body,Created 2 animation keys for HAnim
+Informational,Scene Root,Created a new frame
+Informational,body,Added atomic : Vertices=580 Triangles=1088 Morph Targets=1
+Warning,body,More than 4 weights are assigned to vertex 419
+Warning,body,More than 4 weights are assigned to vertex 421
+Warning,body,More than 4 weights are assigned to vertex 467
+Warning,body,More than 4 weights are assigned to vertex 469
+Warning,body,More than 4 weights are assigned to vertex 476
+Informational,,Written file D:\DreamRealizer\Source\PTest\models\orc_male.anm, size=15 KB (16268)
+Informational,,Written file D:\DreamRealizer\Source\PTest\models\orc_male.DFF, size=81 KB (83084)
+Informational,,Export totals #1: Clumps=1 Frames=2 Atomics=16 Vertices=940 Triangles=1268
+Informational,,Export totals #2: Rot Keys=451 Trans Keys=451
+Informational,,Export totals #3: Exported 72 bones

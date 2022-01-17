@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   Krátký formát data",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   Dlouhý formát data",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   Èas",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   Èas (24 hodin)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   Èíslo stránky",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   Poèet stránek",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   Zarovnané vlevo &&b Zarovnat na støed &&b Zarovnat doprava", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   Okno titulek",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  Ampersand (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   Nový øádek",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Tisk ...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "Další stránka",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "Pøedch. stránka",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "Pøiblížit",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "Oddálit",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "Zavøít",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "Jedna stránka"
+    XTP_IDS_TWOPAGE         "Dvì stránky"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigová modø"
+    XTP_IDS_CLR_GRAY80      "Šedá-80%"
+    XTP_IDS_CLR_DARK_RED    "Tmavì èervená"
+    XTP_IDS_CLR_ORANGE      "Oranžová"
+    XTP_IDS_CLR_DARK_YELLOW "Tmavì žlutá"
+    XTP_IDS_CLR_GREEN       "Zelená"
+    XTP_IDS_CLR_TEAL        "Šedozelená"
+    XTP_IDS_CLR_BLUE        "Modrá"
+    XTP_IDS_CLR_BLUEGRAY    "Modrošedá"
+    XTP_IDS_CLR_GRAY50      "Šedá-50%"
+    XTP_IDS_CLR_RED         "Èervená"
+    XTP_IDS_CLR_LIGHTORANGE "Svìtle oranžová"
+    XTP_IDS_CLR_LIME        "Žlutozelená"
+    XTP_IDS_CLR_SEA_GREEN   "Moøská zeleò"
+    XTP_IDS_CLR_AQUA        "Akvamarínová"
+    XTP_IDS_CLR_LIGHT_BLUE  "Svìtle modrá"
+    XTP_IDS_CLR_VIOLET      "Fialová"
+    XTP_IDS_CLR_GRAY40      "Šedá-40%"
+    XTP_IDS_CLR_PINK        "Rùžová"
+    XTP_IDS_CLR_GOLD        "Zlatá"
+    XTP_IDS_CLR_YELLOW      "Žlutá"
+    XTP_IDS_CLR_BRIGHT_GREEN "Jasnì zelená"
+    XTP_IDS_CLR_TURQUOISE   "Tyrkysová"
+    XTP_IDS_CLR_SKY_BLUE    "Nebeská modø"
+    XTP_IDS_CLR_PLUM        "Švestková"
+    XTP_IDS_CLR_GRAY25      "Šedá-25%"
+    XTP_IDS_CLR_ROSE        "Rùže"
+    XTP_IDS_CLR_TAN         "Písková"
+    XTP_IDS_CLR_LIGHT_YELLOW "Svìtle žlutá"
+    XTP_IDS_CLR_LIGHT_GREEN "Svìtle zelená"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Svìtle tyrkysová"
+    XTP_IDS_CLR_PALE_BLUE   "Bledì modrá"
+    XTP_IDS_CLR_BLACK       "Èerná"
+    XTP_IDS_CLR_BROWN       "Hnìdá"
+    XTP_IDS_CLR_OLIVE_GREEN "Olivovì zelená"
+    XTP_IDS_CLR_DARK_GREEN  "Tmavì zelená"
+    XTP_IDS_CLR_DARK_TEAL   "Tmavì šedozelená"
+    XTP_IDS_CLR_DARK_BLUE   "Tmavì modrá"
+    XTP_IDS_CLR_LAVENDER    "Levandulová"
+    XTP_IDS_CLR_WHITE       "Bílá"
+    XTP_IDS_CLR_GRAY        "Šedá"
+    XTP_IDS_CLR_MAROON      "Kaštanová"
+    XTP_IDS_CLR_OLIVE       "Olivová"
+    XTP_IDS_CLR_NAVY        "Námoønická modø"
+    XTP_IDS_CLR_PURPLE      "Fialová"
+    XTP_IDS_CLR_SILVER      "Støíbrná"
+    XTP_IDS_CLR_FUCHSIA     "Fuchsiová"
+    XTP_IDS_CLR_NOFILL      "Bez výplnì\nBez výplnì"
+    XTP_IDS_CLR_AUTOMATIC   "Automatické barvy\nAutomatické barvy"
+    XTP_IDS_CLR_MORE        "Další barvy..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

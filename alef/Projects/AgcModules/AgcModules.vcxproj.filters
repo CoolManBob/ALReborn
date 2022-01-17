@@ -1,0 +1,3820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AcClientSocket">
+      <UniqueIdentifier>{2ca58e58-7aa7-4280-ba62-be6412da6745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcClientSocket\소스 파일">
+      <UniqueIdentifier>{e86fac4d-2ed9-467f-81b4-89173e0ec05c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcClientSocket\헤더 파일">
+      <UniqueIdentifier>{c52c0759-235a-433b-ba65-f3dbcf72017f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuCreateClump">
+      <UniqueIdentifier>{4036fd44-f290-4fd6-ba6d-b1a838047eee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuCreateClump\소스 파일">
+      <UniqueIdentifier>{96158be4-4d53-4605-9ce5-c3ecc5338384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuCreateClump\헤더 파일">
+      <UniqueIdentifier>{d54cf99a-ea02-4d80-81aa-90d18f1917ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuDeviceCheck">
+      <UniqueIdentifier>{145384a9-6d3a-4f1e-951a-6649e0697ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuDeviceCheck\소스 파일">
+      <UniqueIdentifier>{d24e919d-1a66-4979-8754-07708f18c8f2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuDeviceCheck\헤더 파일">
+      <UniqueIdentifier>{6df01a54-4328-489e-a199-8350f2270458}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuExportDFF">
+      <UniqueIdentifier>{43667335-8c28-49ff-9d8b-73820a22c504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuFileAdmin">
+      <UniqueIdentifier>{5b721c69-dbec-4c26-a45f-dcf5c2736313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuFrameMemory">
+      <UniqueIdentifier>{81b19227-2f0d-48de-adea-cd4be4bb27bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuFrameMemory\소스 파일">
+      <UniqueIdentifier>{a70e0cfc-367c-4020-826d-67260c16ac4a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuFrameMemory\헤더 파일">
+      <UniqueIdentifier>{23c7acd2-d0c6-4fe4-847f-d9e94c943b9a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuIMDraw">
+      <UniqueIdentifier>{943c7f81-b3d4-4d42-b55c-cfa26857cd0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuIMDraw\소스 파일">
+      <UniqueIdentifier>{55ba87ad-73bd-4b42-aefc-d86d9d310ef6}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuIMDraw\헤더 파일">
+      <UniqueIdentifier>{5599ad17-f0cc-436f-992a-a1bc30bae874}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuMath">
+      <UniqueIdentifier>{5d0877af-b689-439d-b804-52093e602787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuMath\소스 파일">
+      <UniqueIdentifier>{c9287003-c39b-4310-b840-ef1c54135bf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuMath\헤더 파일">
+      <UniqueIdentifier>{261acf8c-6867-48ed-8123-4499f7de22bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuMyFirewall">
+      <UniqueIdentifier>{62c80369-8667-4871-b422-a21c32ff2ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuMyFirewall\소스 파일">
+      <UniqueIdentifier>{2e349529-8b06-4ca8-ae72-7528af1622d1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuMyFirewall\헤더 파일">
+      <UniqueIdentifier>{5386a278-b3dc-44ce-a19a-dc896b128400}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuObject">
+      <UniqueIdentifier>{33096e96-b925-4293-8b9d-ee92300289b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuObject\소스 파일">
+      <UniqueIdentifier>{f8833644-ed40-4bfe-96f3-3b9b9c166f3d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuObject\헤더 파일">
+      <UniqueIdentifier>{bb66ea71-53e8-4103-bf5a-1b664aac30c0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuParticleDraw">
+      <UniqueIdentifier>{900deb53-8600-4715-9f7a-f2b0c15cdf4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuParticleDraw\소스 파일">
+      <UniqueIdentifier>{ced05fa5-8e26-4de5-bdf9-8333040b3da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuParticleDraw\헤더 파일">
+      <UniqueIdentifier>{87dea14c-ed78-48d2-aed7-c17beec7acdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRWUtil">
+      <UniqueIdentifier>{b99963f6-915a-4e50-aba2-263c1d5614bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRWUtil\소스 파일">
+      <UniqueIdentifier>{b5c1055f-5e6c-42eb-a64e-816743e2d229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRWUtil\헤더 파일">
+      <UniqueIdentifier>{47c0525b-fc6b-427d-be4f-5f64ff001e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx">
+      <UniqueIdentifier>{23bdfa24-ef68-4023-9a0a-52c7b9177192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx\소스 파일">
+      <UniqueIdentifier>{939cfa27-aa33-4f55-9c3a-45a3e76bd7bc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx\헤더 파일">
+      <UniqueIdentifier>{49abbd7d-9582-4ef0-b8c4-625be9552749}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx\AcuRpMatFxEx">
+      <UniqueIdentifier>{3689daf2-61a0-449f-b712-7db60e0bffd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx\AcuRpMatFxEx\소스 파일">
+      <UniqueIdentifier>{4e4549f8-de3c-46a2-ada9-94464fce90f7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx\AcuRpMatFxEx\헤더 파일">
+      <UniqueIdentifier>{735c4718-34c3-4f76-ad2c-7b9ea446dae6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture">
+      <UniqueIdentifier>{5331f066-918c-47d2-b5cf-244d6a66c21c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\소스 파일">
+      <UniqueIdentifier>{9e490554-6d01-417d-9a8f-7d2eb23dc265}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일">
+      <UniqueIdentifier>{d286b2b4-4c65-4e2e-be97-1bbf7eeaee8d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuRpUVAnimData">
+      <UniqueIdentifier>{6fab7775-0a63-43af-81b6-1b3a05900721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRpUVAnimData\소스 파일">
+      <UniqueIdentifier>{e579675d-e97c-4236-84f8-65ac6f579751}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuRpUVAnimData\헤더 파일">
+      <UniqueIdentifier>{9db8cd2b-bd7c-4645-970a-1a3bf67da93f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuRtAmbOcclMap">
+      <UniqueIdentifier>{fb0a16be-5927-4767-92c6-f42443999758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuRtAmbOcclMap\소스 파일">
+      <UniqueIdentifier>{e94e28f5-d9fb-44be-a8db-a8a005c302ff}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuRtAmbOcclMap\헤더 파일">
+      <UniqueIdentifier>{f11df163-8ad2-40dc-bd07-f22e38736133}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AcuTexture">
+      <UniqueIdentifier>{9f42b12f-3aa4-4425-a081-aed2c9a538a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AcuTexture\소스 파일">
+      <UniqueIdentifier>{30250f57-0193-4804-bc3e-d1c3d0660cf0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AcuTexture\헤더 파일">
+      <UniqueIdentifier>{738f1b2c-3e5a-4a27-89c1-868a35bd6e13}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcModule">
+      <UniqueIdentifier>{b014803c-6532-4e9b-9d75-db2a43abfc0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcModule\소스 파일">
+      <UniqueIdentifier>{427b77e3-7562-4326-84d1-df4f476e4adf}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcModule\헤더 파일">
+      <UniqueIdentifier>{75e03c2e-1184-4770-96e1-500c33e2600d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcModule\Engine">
+      <UniqueIdentifier>{59f97cc8-801c-4272-84d1-9ece317baad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcModule\ImClass">
+      <UniqueIdentifier>{c07cf56b-3313-4f27-8ced-101f02ad5f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcSkeleton">
+      <UniqueIdentifier>{ab23d89f-dbe2-4206-9dc7-c1fb56cafe79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcSkeleton\소스 파일">
+      <UniqueIdentifier>{40795449-550d-4770-b6fa-3ef2a5b32476}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcSkeleton\헤더 파일">
+      <UniqueIdentifier>{e685d694-de77-43e4-ad2c-b95e3f0efe4a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcSkeleton\API">
+      <UniqueIdentifier>{c9cf0b06-dd86-4143-a88c-5cda9d1b6c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcSkeleton\리소스 파일">
+      <UniqueIdentifier>{8c4e830d-dc92-4691-b370-0261b2dc0b81}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="AgcSkeleton\CGameFramework">
+      <UniqueIdentifier>{afcbc554-d600-4e95-8795-997bafde4474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcSkeleton\CGameFramework\RenderDevice">
+      <UniqueIdentifier>{cc3a01a3-77c4-4624-980c-3bf3319ebbdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcSkeleton\CGameFramework\RenderWindow">
+      <UniqueIdentifier>{c0b31e7b-ee67-41a9-9c67-c6eeff4ff934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAmbOcclMap">
+      <UniqueIdentifier>{388e185e-1a7c-4995-9991-cd35b47e03d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAmbOcclMap\소스 파일">
+      <UniqueIdentifier>{afaa1fc5-c422-46e6-9335-6094c8a6f512}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmAmbOcclMap\헤더 파일">
+      <UniqueIdentifier>{20ba2849-6b6c-402f-8cfc-003699135f52}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmAnimation">
+      <UniqueIdentifier>{6002013e-7c05-48e6-b7f8-03e18516b86e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAnimation\소스 파일">
+      <UniqueIdentifier>{e4990a12-3d84-41ce-81a3-fe0b9b802b5f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmAnimation\헤더 파일">
+      <UniqueIdentifier>{28456297-a8a0-4258-94f0-f47048608a26}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmAuction">
+      <UniqueIdentifier>{5b5adbd8-decb-4b37-915d-4216f6e5be84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAuction\소스 파일">
+      <UniqueIdentifier>{f8d9ac2e-751f-4f42-b764-cfeff2bd6c4c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmAuction\헤더 파일">
+      <UniqueIdentifier>{935ec863-1d36-468d-a0ad-ddf9a0241355}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmBillInfo">
+      <UniqueIdentifier>{08238af7-10a6-4a10-82f6-d4225e5785e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmBillInfo\소스 파일">
+      <UniqueIdentifier>{add9aa13-8e50-4cde-8a15-125820172015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmBillInfo\헤더 파일">
+      <UniqueIdentifier>{ca6dec13-9f07-4e78-b057-ea06a03c81a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCamera2">
+      <UniqueIdentifier>{6aa1d0c7-0ae6-4c50-a911-f6f8a7153558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCamera2\소스 파일">
+      <UniqueIdentifier>{ff05c8b7-75aa-4797-ad20-f0fd33f478a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCamera2\헤더 파일">
+      <UniqueIdentifier>{89ebe3de-13a5-4d60-9339-37c03a5619ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCashMall">
+      <UniqueIdentifier>{d7001e7c-2980-4e9f-8586-1cab46a450e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCashMall\소스 파일">
+      <UniqueIdentifier>{baaf6477-9852-48fb-be44-d8042b3cd9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCashMall\헤더 파일">
+      <UniqueIdentifier>{ae2215b8-afc6-43e3-92e4-6bdac6ea47e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCharacter">
+      <UniqueIdentifier>{dca4fbfb-f490-41a0-9e8d-0d97eae3d68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmCharacter\소스 파일">
+      <UniqueIdentifier>{81f0e3ee-c65c-4f82-8b36-a93e0b20142d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmCharacter\헤더 파일">
+      <UniqueIdentifier>{40407ea2-657b-4127-8f3b-bb58c80cb62d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmChatting2">
+      <UniqueIdentifier>{b889af5d-75ca-4197-85f3-7d7bf7d58520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmChatting2\소스 파일">
+      <UniqueIdentifier>{407cee6a-3dc3-4582-9bb0-52e60af4afa2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmChatting2\헤더 파일">
+      <UniqueIdentifier>{c4653edc-e52a-45e2-95b1-ce2eb8998106}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmConnectManager">
+      <UniqueIdentifier>{f9e589c5-2300-4931-acd6-c0cf63b31190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmConnectManager\소스 파일">
+      <UniqueIdentifier>{4bbf7e38-db85-4c31-b596-8389bfe20e2d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmConnectManager\헤더 파일">
+      <UniqueIdentifier>{a91cf5ec-80db-461f-8bb9-8030e32aa64a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmDynamicLightmap">
+      <UniqueIdentifier>{d9832ecc-77ab-4569-90f1-28c0fec08ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmDynamicLightmap\소스 파일">
+      <UniqueIdentifier>{4c9bc903-7f90-4497-af35-e447b53d74e0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmDynamicLightmap\헤더 파일">
+      <UniqueIdentifier>{a7e32e26-7814-4b7f-a411-cd0bb827170f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmDynamicLightmap\AgcmCustomizeRender">
+      <UniqueIdentifier>{3f32d185-c224-4347-98b4-8c2d1893c016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmDynamicLightmap\AgcmCustomizeRender\소스 파일">
+      <UniqueIdentifier>{98922bb6-037d-4453-b282-50ec3bbe7641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmDynamicLightmap\AgcmCustomizeRender\헤더 파일">
+      <UniqueIdentifier>{bdb011b0-d01f-466a-b654-86786946a5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEff2">
+      <UniqueIdentifier>{9e4e7db2-fb80-425c-b7bb-9832b38c50aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEff2\소스 파일">
+      <UniqueIdentifier>{5637faf7-9a50-49f2-8e2d-c014696013ba}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEff2\헤더 파일">
+      <UniqueIdentifier>{5e0007ea-0ff5-406a-8f13-88f6de2156c7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEff2\Module">
+      <UniqueIdentifier>{316dfb29-d597-4c5f-87ae-d89e7a136b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEff2\Manager">
+      <UniqueIdentifier>{b0d31b85-45d4-4b6f-b054-4692ca5f873e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEffectDataAdmin">
+      <UniqueIdentifier>{f215be0c-cc46-4cfa-bb28-f65d3f2c244d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEffectDataAdmin\소스 파일">
+      <UniqueIdentifier>{66607d04-6383-484f-bdb4-0be79777a23b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEffectDataAdmin\헤더 파일">
+      <UniqueIdentifier>{0d20e6b9-563d-4c91-bd79-f814d65f95b1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventBank">
+      <UniqueIdentifier>{380e1996-5f9b-4c79-8b26-ca2d7cd3bc3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventBank\소스 파일">
+      <UniqueIdentifier>{52cdf48b-bfb2-4359-aec8-1b80874090a1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventBank\헤더 파일">
+      <UniqueIdentifier>{fa311c6f-27eb-437d-a5da-17df707b6298}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventCharCustomize">
+      <UniqueIdentifier>{1f4cb5a7-0183-4b92-917e-4a79601e357f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventCharCustomize\소스 파일">
+      <UniqueIdentifier>{14838bf3-fa56-4fd8-b542-a7b67d5baa39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventCharCustomize\헤더 파일">
+      <UniqueIdentifier>{ff81db83-2aaf-4698-b632-44bf94acf503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventEffect">
+      <UniqueIdentifier>{292e133a-d6bf-41a1-a933-a44e7d9417f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventEffect\소스 파일">
+      <UniqueIdentifier>{fc498222-ccae-495c-bade-52cd32f3dc39}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventEffect\헤더 파일">
+      <UniqueIdentifier>{4a97df84-5919-45c0-bf0f-29963cc3edcd}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventGuild">
+      <UniqueIdentifier>{c615bca7-a999-4dae-a442-69f511d19968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventGuild\소스 파일">
+      <UniqueIdentifier>{df008b58-b30f-44eb-a6a2-5d252bb87a8c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventGuild\헤더 파일">
+      <UniqueIdentifier>{d1cfb249-f4ad-4f83-8fce-05b0d7903c2e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventItemConvert">
+      <UniqueIdentifier>{834035dc-343a-45a7-a583-c5bf9ee1d911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventItemConvert\소스 파일">
+      <UniqueIdentifier>{fc50edff-59a5-41b1-a81b-2adffa2e8002}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventItemConvert\헤더 파일">
+      <UniqueIdentifier>{e35f88f8-899c-4c11-af1c-b0961c443429}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventItemRepair">
+      <UniqueIdentifier>{a1c0c511-a2d6-44d8-af60-d78df2340d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventItemRepair\소스 파일">
+      <UniqueIdentifier>{f61a3270-e39e-45bf-9b16-1d8cd2ae0583}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventItemRepair\헤더 파일">
+      <UniqueIdentifier>{5877e5cf-f1b8-48d1-8661-6f7b5b8cd689}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventManager">
+      <UniqueIdentifier>{a5cc35be-f65a-4b25-bf33-856da2fe9424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventManager\소스 파일">
+      <UniqueIdentifier>{e082221c-c07f-4460-8406-7948995fcd1b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventManager\헤더 파일">
+      <UniqueIdentifier>{ac989c59-38d8-4acb-8490-508f69648237}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventNPCDialog">
+      <UniqueIdentifier>{88b711b3-3d08-454e-84ad-a04acb8b525f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCDialog\소스 파일">
+      <UniqueIdentifier>{b96cac74-1c91-4d41-a999-26e3313e679f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventNPCDialog\헤더 파일">
+      <UniqueIdentifier>{c2b018a4-26fa-4695-b78f-29e731556dd2}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventNPCDialog\ExNPC">
+      <UniqueIdentifier>{4332138f-0b0d-4b29-8ed3-2d27130be4e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCTrade">
+      <UniqueIdentifier>{19e381bc-3640-41eb-8866-edd45516de27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNPCTrade\소스 파일">
+      <UniqueIdentifier>{39772d6f-b551-4418-9194-ebbf53327517}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventNPCTrade\헤더 파일">
+      <UniqueIdentifier>{d2255411-4558-4b21-8648-afa04debe037}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventNature">
+      <UniqueIdentifier>{4aa80a0c-bec3-4bea-9cb4-9efb65f20edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventNature\소스 파일">
+      <UniqueIdentifier>{e4260052-a407-4134-8d14-44c7d9951f31}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventNature\헤더 파일">
+      <UniqueIdentifier>{134094ec-5456-43db-9d3b-42e5cd968fe5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventPointLight">
+      <UniqueIdentifier>{e80342fb-e62c-47f8-b742-77480a689778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventProduct">
+      <UniqueIdentifier>{9a24b470-a94d-41fe-abb6-2c63079564c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventProduct\소스 파일">
+      <UniqueIdentifier>{836b0265-1381-41fa-bd5f-6f19fa795d99}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventProduct\헤더 파일">
+      <UniqueIdentifier>{1edd3954-a92c-4b4f-99e7-f74c1cbf83fb}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventQuest">
+      <UniqueIdentifier>{c970d59e-0aea-4b93-9398-acef11a57ed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventQuest\소스 파일">
+      <UniqueIdentifier>{53c43809-0ba1-4c90-9bf5-b2a2d9b8abc1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventQuest\헤더 파일">
+      <UniqueIdentifier>{7eaf83e1-cd75-437c-af2f-d6ef201a7115}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventRefinery">
+      <UniqueIdentifier>{b4ad19f7-a314-48f3-bb97-5243ff77dc09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventRefinery\소스 파일">
+      <UniqueIdentifier>{bac1e9cc-4486-49a0-94ef-6a80f3ad2d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventRefinery\헤더 파일">
+      <UniqueIdentifier>{ed4152d4-1c61-454a-9fba-81bef258c38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventShrine">
+      <UniqueIdentifier>{153146c0-66fb-47d4-a0a5-0a11ba6da956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventShrine\소스 파일">
+      <UniqueIdentifier>{a082a17b-49c4-4ddd-a3f4-7a4fdb64078a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventShrine\헤더 파일">
+      <UniqueIdentifier>{4321aeb6-2200-437b-9b31-0bf332eac930}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventSkillMaster">
+      <UniqueIdentifier>{24608192-fdf6-4963-82db-0cc415c6f45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSkillMaster\소스 파일">
+      <UniqueIdentifier>{d0ba36f8-5d1c-4d88-bcc6-98708f35203d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventSkillMaster\헤더 파일">
+      <UniqueIdentifier>{bc384a5e-32b0-48d2-95cc-fda63f5810f9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventTeleport">
+      <UniqueIdentifier>{f45a6e8a-40da-4642-a72c-c45ab5df9f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventTeleport\소스 파일">
+      <UniqueIdentifier>{a440a508-89ce-4e67-940a-f58c1b40aef4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmEventTeleport\헤더 파일">
+      <UniqueIdentifier>{6c8b92f8-f81c-47ed-ac96-ca72d7cf283e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmExportResource">
+      <UniqueIdentifier>{e11497f5-42fe-4ac1-a907-a7a5a08360e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmFont">
+      <UniqueIdentifier>{af19bc82-e5a0-4362-b101-a7f86970d27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmFont\소스 파일">
+      <UniqueIdentifier>{18f0c7e5-45c4-4257-988f-273969606638}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmFont\헤더 파일">
+      <UniqueIdentifier>{5ea04cca-d48e-4109-912b-3062e1401889}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmGeometryDataManager">
+      <UniqueIdentifier>{b6673e71-f45a-4899-8003-27d00405e1fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmGlare">
+      <UniqueIdentifier>{701fc8cc-3974-47ff-8046-e8db95dac231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmGlare\소스 파일">
+      <UniqueIdentifier>{cc94159a-b133-4de4-b7f4-c5af69ad27cd}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmGlare\헤더 파일">
+      <UniqueIdentifier>{6c4473d2-2b83-4db5-adde-14b01731d442}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmGlyph">
+      <UniqueIdentifier>{a3907a39-eb35-4e05-8117-ab487851a3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmGlyph\소스 파일">
+      <UniqueIdentifier>{024a3e3d-a637-49a5-8561-f2d686f4a8f2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmGlyph\헤더 파일">
+      <UniqueIdentifier>{9ad8a9f3-f0ac-40f9-8812-7c348cbb4717}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmGrass">
+      <UniqueIdentifier>{27fd84d6-0f9e-4ce6-8c1f-b623cc305f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmGrass\소스 파일">
+      <UniqueIdentifier>{cf9c4c0c-8b47-44ea-8965-ff06ee0b145b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmGrass\헤더 파일">
+      <UniqueIdentifier>{c6fbcd57-74e7-455b-8ef3-afa3341e92c8}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmGuild">
+      <UniqueIdentifier>{0f525bb4-2c41-4748-831e-549b589a42d0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmGuild\소스 파일">
+      <UniqueIdentifier>{31799ea9-8f96-48ce-a6d9-a19454fc68bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmGuild\헤더 파일">
+      <UniqueIdentifier>{1623e9ae-4a29-41a9-998c-fb09f14cd6bf}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmItem">
+      <UniqueIdentifier>{57d6c271-1724-4659-a9f4-7775f3e31b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmItem\소스 파일">
+      <UniqueIdentifier>{6424609e-f94e-4ce1-971b-8325df94b10b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmItem\헤더 파일">
+      <UniqueIdentifier>{ffc8eb1c-5a20-4c7a-8794-88ffc65f86d1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmItemConvert">
+      <UniqueIdentifier>{284729b3-fe32-49a1-8f25-34d394c5b4b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmItemConvert\소스 파일">
+      <UniqueIdentifier>{6321a73c-e5d3-40fc-82f1-59a61e901657}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmItemConvert\헤더 파일">
+      <UniqueIdentifier>{e46e9c87-8e3f-47b5-b39a-9c5ef4f9dd5a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmLODManager">
+      <UniqueIdentifier>{ca202702-ebc1-4f2c-9226-ba623dce27e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmLODManager\소스 파일">
+      <UniqueIdentifier>{ae1c38b3-fc18-4e6a-b960-f4429304e228}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmLODManager\헤더 파일">
+      <UniqueIdentifier>{92987f61-1b5f-4d7c-ae91-9146300ac566}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmLensFlare">
+      <UniqueIdentifier>{678cb2c6-2ae2-4485-8d19-e26faf43a24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmLensFlare\소스 파일">
+      <UniqueIdentifier>{5643b7d6-2df6-487e-948b-4fbce066c47d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmLensFlare\헤더 파일">
+      <UniqueIdentifier>{a8e64013-a5ce-4eb9-9de2-3d220c19f5e6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmReturnToLogin">
+      <UniqueIdentifier>{f169867b-741d-4a70-bdab-d8d146e8d238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmReturnToLogin\소스 파일">
+      <UniqueIdentifier>{9055a47b-6e48-4a92-9e0a-d1466f88f87b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmReturnToLogin\헤더 파일">
+      <UniqueIdentifier>{7f891a54-a26d-46c2-aafa-f0a539fec040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmMap">
+      <UniqueIdentifier>{eb9c5986-6cf2-43de-a2c6-f838ca301fca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmMap\소스 파일">
+      <UniqueIdentifier>{4cc38d6f-31b4-4430-bf1d-a1c4f4c762b0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmMap\헤더 파일">
+      <UniqueIdentifier>{64c9a769-22c5-47ad-91cb-1d6d50fe2a14}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmMap\Additional">
+      <UniqueIdentifier>{40f69dcf-0f73-4c21-8329-2a74d01f3bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmMap\DWSector">
+      <UniqueIdentifier>{aafcd583-e05e-4a6c-973d-47e0c5b391bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmMinimap">
+      <UniqueIdentifier>{65609c32-da5d-4fab-adb6-1cda5c8bed45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmMinimap\소스 파일">
+      <UniqueIdentifier>{308a98f9-8004-4606-9d94-d2b4b1a915bc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmMinimap\헤더 파일">
+      <UniqueIdentifier>{94f14f89-0053-4c20-ba63-75923fdaa165}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmObject">
+      <UniqueIdentifier>{02cc3170-d333-4960-b92c-5a5f8adffbc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmObject\소스 파일">
+      <UniqueIdentifier>{df271ff4-68bb-4249-b30b-38f1a827beee}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmObject\헤더 파일">
+      <UniqueIdentifier>{5be9ad6d-0a96-4f05-87d8-9ca88a23bcf7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmOcTree">
+      <UniqueIdentifier>{4a340854-9534-4fa8-9a1c-cd98f0f5e7f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmOcTree\소스 파일">
+      <UniqueIdentifier>{90f75cea-0828-4c1b-b9ca-6b01128ea8f4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmOcTree\헤더 파일">
+      <UniqueIdentifier>{7ac40176-106a-4bba-885a-083da0b1bce9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmParty">
+      <UniqueIdentifier>{038c23db-16aa-4d17-86a0-03b86f4d3a2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmParty\소스 파일">
+      <UniqueIdentifier>{a94ff746-dae9-48e4-a1f0-5acd3ef43ca6}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmParty\헤더 파일">
+      <UniqueIdentifier>{da007eb6-5eb0-4780-8506-b11126a9bbce}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmPostFX">
+      <UniqueIdentifier>{f9608c07-013a-46d1-bb2c-5d2c2de48719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmPreLODManager">
+      <UniqueIdentifier>{f142ce66-8178-41aa-9cb3-ffade9718571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmPreLODManager\소스 파일">
+      <UniqueIdentifier>{3575c616-5c9c-49e3-8d5f-045ef183c9b2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmPreLODManager\헤더 파일">
+      <UniqueIdentifier>{e279ed1d-cbfb-47c9-a49d-cd1f91348ba3}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmPrivateTrade">
+      <UniqueIdentifier>{e9e65afe-bf3b-441c-ab69-cc051448bc66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmPrivateTrade\소스 파일">
+      <UniqueIdentifier>{91668175-ba1c-4c17-9367-106b89683750}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmPrivateTrade\헤더 파일">
+      <UniqueIdentifier>{f60998a1-39e6-47eb-8769-08b841be3f83}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmProduct">
+      <UniqueIdentifier>{c4c4f8fa-25ff-4e2c-85a6-012a1cb64b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmProduct\소스 파일">
+      <UniqueIdentifier>{f3bf6102-028c-49d1-8b5e-a5763ccc3e83}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmProduct\헤더 파일">
+      <UniqueIdentifier>{456b020a-3fc0-4211-80ed-0d06060fe588}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmProductMed">
+      <UniqueIdentifier>{4b6468d9-85ce-45b0-b1f4-915fbc22d1bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmProductMed\헤더 파일">
+      <UniqueIdentifier>{5b533217-9bfe-4f17-ab75-21a28bc59494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmProductMed\소스 파일">
+      <UniqueIdentifier>{447aad82-f31a-49fa-967e-76bbcf932803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmQuest">
+      <UniqueIdentifier>{ec71dec3-cf51-4868-b380-f300b473b2e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmQuest\소스 파일">
+      <UniqueIdentifier>{18e84926-691b-4d38-991f-958e571cd813}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmQuest\헤더 파일">
+      <UniqueIdentifier>{07de0ac9-cd29-4a49-b4b6-3cc9a98692a8}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmRecruit">
+      <UniqueIdentifier>{f644e8ae-5093-4d48-b6cd-c01bdcdddfed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmRecruit\소스 파일">
+      <UniqueIdentifier>{814fd968-7deb-4d30-beff-18d8d5274f10}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmRecruit\헤더 파일">
+      <UniqueIdentifier>{39c45586-31df-4540-9677-1e0aa33f56ac}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmRefinery">
+      <UniqueIdentifier>{f38de890-13b1-462b-abc0-63577b610223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmRefinery\소스 파일">
+      <UniqueIdentifier>{894bc674-3e8b-4534-9d63-c5bdeed530e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmRefinery\헤더 파일">
+      <UniqueIdentifier>{49eb161b-15a4-4533-bb34-d7606bf23582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmRender">
+      <UniqueIdentifier>{30610282-75a6-4ecc-8fc5-5dec3a646958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmRender\소스 파일">
+      <UniqueIdentifier>{5d94f015-e917-4ddf-b672-8d002e652af9}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmRender\헤더 파일">
+      <UniqueIdentifier>{f1879687-4366-4ff3-bf8a-04f3f44c1258}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmRender\RenderWare Makefiles">
+      <UniqueIdentifier>{0f867703-9b7c-4c03-b633-c8537fdbb08d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmResourceLoader">
+      <UniqueIdentifier>{fc650ed1-a87d-4e63-8d88-b7b2c6ff8e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmResourceLoader\소스 파일">
+      <UniqueIdentifier>{08aa3bfd-81ae-40c7-9123-b9c086986171}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmResourceLoader\헤더 파일">
+      <UniqueIdentifier>{fbafd6a9-5295-4725-98d3-ba2d503fd76f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmRide">
+      <UniqueIdentifier>{c98d555f-9c3f-4be3-831d-90d11a26c66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmRide\헤더 파일">
+      <UniqueIdentifier>{99828747-d97d-47a4-9fed-de69ac3426f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmRide\소스 파일">
+      <UniqueIdentifier>{dd21fd67-43b4-4c03-bcc3-4eb98f4647ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmShadow">
+      <UniqueIdentifier>{85e677ae-fb56-4c4a-9778-1a9a60667fe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmShadow\소스 파일">
+      <UniqueIdentifier>{9b2ec36d-600b-4e4f-a79b-b21162131479}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmShadow\헤더 파일">
+      <UniqueIdentifier>{b796ba5b-c5df-49be-bb33-ece8af8c8ea3}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmShadow2">
+      <UniqueIdentifier>{23d5ecff-851b-4b79-bcf9-b096602301d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmShadow2\소스 파일">
+      <UniqueIdentifier>{2a38e14b-44a0-434e-8f05-c4fe7c642116}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmShadow2\헤더 파일">
+      <UniqueIdentifier>{342086e2-f9d7-4c81-bfa2-54c53f1d3f08}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmShadowmap">
+      <UniqueIdentifier>{3b58afcc-af0c-4b71-b167-f68200dfcd01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmShadowmap\소스 파일">
+      <UniqueIdentifier>{abb33ee9-1e10-4875-93d0-b9622d993fdd}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmShadowmap\헤더 파일">
+      <UniqueIdentifier>{b4dc033d-525b-4916-ba11-5c8eefbb9111}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmSkill">
+      <UniqueIdentifier>{c4708812-94fd-4526-aa7d-227ed7a3e229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSkill\소스 파일">
+      <UniqueIdentifier>{4a33a767-25ec-4476-80ef-d3c51f7a72ce}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmSkill\헤더 파일">
+      <UniqueIdentifier>{f1121030-eacf-44a3-9b9e-0f50943d8064}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmSound">
+      <UniqueIdentifier>{0a3a5364-0b31-4057-ba04-2dfea2c972fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSound\소스 파일">
+      <UniqueIdentifier>{b53651fa-0b8e-47de-932f-7a034d1cc0df}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmSound\헤더 파일">
+      <UniqueIdentifier>{25286c28-1a50-412d-9ef0-e87e471824a0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmTargeting">
+      <UniqueIdentifier>{7da3e21f-4274-476f-b4ea-6365ef69011b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmTargeting\소스 파일">
+      <UniqueIdentifier>{ed42d713-043d-4d75-b1ce-b47551148d4f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmTargeting\헤더 파일">
+      <UniqueIdentifier>{ee7ecec6-1724-45d5-b949-cc0b7d4969da}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmTextBoard">
+      <UniqueIdentifier>{4a955808-c2ba-402c-ad68-2bbcc9edbcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmTextBoard\소스 파일">
+      <UniqueIdentifier>{1cb62a10-f102-4568-9947-184bab3fdd83}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmTextBoard\헤더 파일">
+      <UniqueIdentifier>{c9155acb-bd6b-4210-a7ee-2782379de71f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmTextBoard\Manager">
+      <UniqueIdentifier>{982ba07b-ef22-4c49-ba46-1453a52409a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmTuner">
+      <UniqueIdentifier>{4b2b6dad-e1f5-414e-8e10-dce9d759c16d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmTuner\소스 파일">
+      <UniqueIdentifier>{07c1e166-3d7a-4e43-abb0-6acb33df4087}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmTuner\헤더 파일">
+      <UniqueIdentifier>{e1d79a57-08e5-4f23-8146-d9dcf743f4ad}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIAuction">
+      <UniqueIdentifier>{3928b662-70da-4ba5-bdad-0157e569aca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIAuction\소스 파일">
+      <UniqueIdentifier>{abbe4ab0-6ccc-4a03-a09c-1a303503fe8a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIAuction\헤더 파일">
+      <UniqueIdentifier>{523f9672-8d1c-484d-b03c-d3a90eb9d56e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIBuddy">
+      <UniqueIdentifier>{7f9b407c-d0f9-446f-acb2-0d2423e0fd97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIBuddy\소스 파일">
+      <UniqueIdentifier>{3ca2efde-ca1c-45d6-8455-a2326b69bd99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIBuddy\헤더 파일">
+      <UniqueIdentifier>{6766696f-3f33-4920-b30a-acb6c396761d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICashInven">
+      <UniqueIdentifier>{85b7d701-0ac5-4b01-935a-59472c2946cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICashInven\소스 파일">
+      <UniqueIdentifier>{0859fe2c-8dbf-48d5-999c-0cf0e7dc7f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICashInven\헤더 파일">
+      <UniqueIdentifier>{dad4ba10-8fdb-4606-bf29-dfd945abf74f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICashMall">
+      <UniqueIdentifier>{8e62431d-6f42-4c1c-98da-582c520e02a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICashMall\소스 파일">
+      <UniqueIdentifier>{2393f2b6-0c75-4bcb-bb7c-ff118a530de8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICashMall\헤더 파일">
+      <UniqueIdentifier>{e7e1d010-076d-4dad-9534-5c4adcc649c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICashMall\CWebzenShop - 웹젠 인게임샵">
+      <UniqueIdentifier>{8f3076b4-aa36-4e7f-bd56-a31f743f8244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICashMall\CWebzenCashItemBox - 웹젠 유료보관함">
+      <UniqueIdentifier>{a90357b5-66b2-4bb3-9bf5-32886353e939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICastle">
+      <UniqueIdentifier>{389f28d1-4dcb-4212-824d-bdf8000f6d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICastle\소스 파일">
+      <UniqueIdentifier>{40069fd0-7ca3-4dc6-bde0-f814fe77ebae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICastle\헤더 파일">
+      <UniqueIdentifier>{e7bfa736-c753-451e-8050-92b5f9356358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIChannel">
+      <UniqueIdentifier>{73848a75-15ec-4f66-af7c-f81e61aadaab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIChannel\소스 파일">
+      <UniqueIdentifier>{6bd42a4f-a75d-4abe-b31e-4785c01cd9f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIChannel\헤더 파일">
+      <UniqueIdentifier>{9a78a7e8-2487-49a1-855e-52a4159bbb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICharacter">
+      <UniqueIdentifier>{a34f1584-386e-42b2-a98d-73f3db9a39bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICharacter\소스 파일">
+      <UniqueIdentifier>{998fa572-f03d-40cd-b548-56a9e6a68984}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUICharacter\헤더 파일">
+      <UniqueIdentifier>{6e94f791-a092-4444-b3b5-c525c4e88c2d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIChatting2">
+      <UniqueIdentifier>{69c2c080-5c4e-4792-bf7e-ea56c3ec68f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIChatting2\소스 파일">
+      <UniqueIdentifier>{ca73feb3-fd29-4a5c-87f9-751206ed458e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIChatting2\헤더 파일">
+      <UniqueIdentifier>{f58de3bc-ad12-4299-88a9-7e4382031817}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIConsole">
+      <UniqueIdentifier>{124865cd-3439-4f80-96a7-29d6f66c0bcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIConsole\소스 파일">
+      <UniqueIdentifier>{ea244c77-2aaa-481d-a9eb-38d3c4a6f5fb}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIConsole\헤더 파일">
+      <UniqueIdentifier>{1967fad5-e29b-4eeb-bb94-2bf0fa1b5f59}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIControl">
+      <UniqueIdentifier>{1ee0044b-6a48-48e7-a92b-f2864535c45e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIControl\소스 파일">
+      <UniqueIdentifier>{88766d56-69b6-4994-8688-ee565831eeef}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIControl\헤더 파일">
+      <UniqueIdentifier>{c0946d26-a157-4c5a-8a28-353164a23fd9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUICooldown">
+      <UniqueIdentifier>{b56b9663-1b76-43a1-8c0f-4fed116d6657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICooldown\소스 파일">
+      <UniqueIdentifier>{b4a1aaca-f5b3-477f-b7d2-da159bdcc272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICooldown\헤더 파일">
+      <UniqueIdentifier>{1487c9f1-49a2-4314-b1ce-4f11fe2a5fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICustomizing">
+      <UniqueIdentifier>{4d0c45ee-01ba-4a0c-93b2-f95abc24256e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICustomizing\소스 파일">
+      <UniqueIdentifier>{c4a6249b-6f26-4da5-8f5b-e3d42caa8c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUICustomizing\헤더 파일">
+      <UniqueIdentifier>{3185a694-e90d-40e5-921f-8a0d907e17e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIDebugInfo">
+      <UniqueIdentifier>{0c3e3289-6f63-4f9c-95ca-3894b16594f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIDebugInfo\소스 파일">
+      <UniqueIdentifier>{542c249f-1d0b-47c7-80d8-cdddf5af9268}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIDebugInfo\헤더 파일">
+      <UniqueIdentifier>{442eba38-4aab-404a-b6ac-8a450eebb9dd}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventBank">
+      <UniqueIdentifier>{1be9bf1d-ab75-42c0-876a-e621ecfd8901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIEventBank\소스 파일">
+      <UniqueIdentifier>{5421a852-1272-4b9a-81ea-b34b3e098479}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventBank\헤더 파일">
+      <UniqueIdentifier>{e7a23e66-bc99-4dfa-8cb1-48d6be2fc73e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventItemConvert">
+      <UniqueIdentifier>{8c7e78a1-105f-4a3a-a5a3-0990e43d0f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIEventItemConvert\소스 파일">
+      <UniqueIdentifier>{9e16ac03-7423-4ffa-8a6c-5c03c91aab94}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventItemConvert\헤더 파일">
+      <UniqueIdentifier>{b3988b35-03e3-4bf6-ab97-885233beb78f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventItemRepair">
+      <UniqueIdentifier>{b62d5252-0ac4-4976-a58b-aee8916fa813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIEventItemRepair\소스 파일">
+      <UniqueIdentifier>{461e74db-3d7f-48a8-bd4f-22c30635f134}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventItemRepair\헤더 파일">
+      <UniqueIdentifier>{c4d9720f-2fbc-48dd-85d2-ad8e243cab7c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventNPCDialog">
+      <UniqueIdentifier>{f2116a81-1ecf-4111-801c-fecfa7683144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIEventNPCDialog\소스 파일">
+      <UniqueIdentifier>{ad229b51-b755-4fc6-bcee-509ed563fb0d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventNPCDialog\헤더 파일">
+      <UniqueIdentifier>{74f4e965-5387-4ed6-9c5b-f8e4e12d4cb7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventTeleport">
+      <UniqueIdentifier>{3de1061d-8366-40d0-9c14-d4cdcb12d3c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIEventTeleport\소스 파일">
+      <UniqueIdentifier>{b59c60ac-3eed-411b-9678-b0ae5ed08a45}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIEventTeleport\헤더 파일">
+      <UniqueIdentifier>{aec03e0f-043e-4fff-be14-919f5918d331}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIGuild">
+      <UniqueIdentifier>{76fc0fa6-ddc2-4519-9d68-562acbc87c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIGuild\소스 파일">
+      <UniqueIdentifier>{8fe27a15-09aa-4790-a361-204a4c2a551a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIGuild\헤더 파일">
+      <UniqueIdentifier>{ea4125a7-d3b0-4d2f-aa7a-54d4d41c6644}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIItem">
+      <UniqueIdentifier>{3bfb7d4a-7b47-4857-8c01-bbf948f54784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIItem\소스 파일">
+      <UniqueIdentifier>{84751f08-0d26-459f-8d81-342de84a9443}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIItem\헤더 파일">
+      <UniqueIdentifier>{2bdaa948-001f-492c-9d82-631f40ba3583}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIMain">
+      <UniqueIdentifier>{b0811d42-ff06-4b88-bf0c-d35d135813ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIMain\소스 파일">
+      <UniqueIdentifier>{fa52ee09-7124-4980-a6ab-eb28d5ab9434}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIMain\헤더 파일">
+      <UniqueIdentifier>{f2431b53-eaea-479a-9589-24b65bda358d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIManager2">
+      <UniqueIdentifier>{b1200314-d99e-428c-8d71-c654b8fdbcd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIManager2\소스 파일">
+      <UniqueIdentifier>{4a377845-6d2f-4924-8e32-48f825896ec2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIManager2\헤더 파일">
+      <UniqueIdentifier>{4f461e76-bb56-4209-8d93-c2cd11b61ab6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIManager2\UIWindow">
+      <UniqueIdentifier>{71a9ed93-dbf1-497e-bee2-728dc40ab84d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIOption">
+      <UniqueIdentifier>{b128bd51-dbcd-4612-81a2-60e131ce477e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIOption\소스 파일">
+      <UniqueIdentifier>{4cd3e8c6-6e68-46fd-a8d2-acbd175462a1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIOption\헤더 파일">
+      <UniqueIdentifier>{7aa8c6ed-ca46-4742-824f-53a32e03a1f4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIParty">
+      <UniqueIdentifier>{3669f24e-86d4-45c6-a3fa-81097bd5e6b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIParty\소스 파일">
+      <UniqueIdentifier>{98292291-cd09-4fe4-96c2-b1746fbdcb94}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIParty\헤더 파일">
+      <UniqueIdentifier>{3b1c7af6-73fe-40c1-a107-3aa7e63e8cb9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIPartyOption">
+      <UniqueIdentifier>{88659b00-c0fc-46ce-9c00-f3c118e25ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIPartyOption\소스 파일">
+      <UniqueIdentifier>{c7969df5-33ec-4a88-8389-07f20bd28414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIPartyOption\헤더 파일">
+      <UniqueIdentifier>{97a84d10-d208-4092-8f8d-b0d148079117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIProduct">
+      <UniqueIdentifier>{7a7c86eb-1ca8-43f2-bca8-e0766be6accc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIProduct\소스 파일">
+      <UniqueIdentifier>{01740486-ea4c-4afe-89e0-d750862d9e47}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIProduct\헤더 파일">
+      <UniqueIdentifier>{a1f242b6-4275-491e-9456-67b205c3f7c8}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIPvP">
+      <UniqueIdentifier>{d1927ba6-bc6f-47f8-a229-fb27be2c46bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIPvP\헤더 파일">
+      <UniqueIdentifier>{37c8be8c-5c7e-41d9-9ac0-8a58a9ebbf81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIPvP\소스 파일">
+      <UniqueIdentifier>{685e0f60-4e3f-4acd-8eb0-7e515c0cd0bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIQuest2">
+      <UniqueIdentifier>{9da2ab63-ec4b-4189-b394-12b14d670beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIQuest2\소스 파일">
+      <UniqueIdentifier>{3ce2972f-e29b-45bb-b9cc-c58f97c6b185}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIQuest2\헤더 파일">
+      <UniqueIdentifier>{00ae47dd-2c0c-4d19-a1ef-aedc1c3abc4b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIRefinery">
+      <UniqueIdentifier>{776e69af-cffc-4a0a-813f-cceddb360b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIRefinery\소스 파일">
+      <UniqueIdentifier>{974da033-a215-40e4-8796-9eece7eeee41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIRefinery\헤더 파일">
+      <UniqueIdentifier>{32d80a7a-2cb7-4b64-b36a-85bc28c0a2ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIRemission">
+      <UniqueIdentifier>{e884add1-c056-46d8-bc61-1568bab93e0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIRemission\소스 파일">
+      <UniqueIdentifier>{7d286d2a-cb33-4e3c-a306-44eb2ca1f366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIRemission\헤더 파일">
+      <UniqueIdentifier>{7b69fd4d-cf80-4ec5-b9c2-5af05a3279bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISiegeWar">
+      <UniqueIdentifier>{9186e66e-ef6e-48ba-88d0-fb818ffdbee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISiegeWar\소스 파일">
+      <UniqueIdentifier>{fe1fb30b-a40d-45f1-9eb8-5d2384200f5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISiegeWar\헤더 파일">
+      <UniqueIdentifier>{bc3d38fd-0fde-4d99-9053-e96cc3222165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISplitItem">
+      <UniqueIdentifier>{45527b14-01bf-45d5-abf1-0dd7f22459a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISplitItem\소스 파일">
+      <UniqueIdentifier>{1d593ae5-c663-43f7-b43e-139cb6ffbdd6}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUISplitItem\헤더 파일">
+      <UniqueIdentifier>{3f4e012b-a748-4fff-abb8-0c9715d294a8}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIStatus">
+      <UniqueIdentifier>{ea32d31b-717c-40b0-85ea-11a0e90cd455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIStatus\소스 파일">
+      <UniqueIdentifier>{945dab13-c0b4-4264-98df-b3bbe5aeea40}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUIStatus\헤더 파일">
+      <UniqueIdentifier>{47f66c4e-47f8-49ab-90de-e8d80c28312e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUISystemMessage">
+      <UniqueIdentifier>{6708b74d-9e37-4a56-8381-51dd47f4403d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISystemMessage\소스 파일">
+      <UniqueIdentifier>{83d7f0d3-a647-48b3-86c0-b951ca92e89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISystemMessage\헤더 파일">
+      <UniqueIdentifier>{da863d52-f277-4a4a-8054-b7ca02b8573c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUITips">
+      <UniqueIdentifier>{90df52c8-02df-42ea-8013-8d2b12070e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUITips\소스 파일">
+      <UniqueIdentifier>{69422b2a-bec7-4036-a786-9acebd5dbb14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUITips\헤더 파일">
+      <UniqueIdentifier>{437ae58c-5cda-4d20-b4ff-3861898ab518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUVAnimation">
+      <UniqueIdentifier>{b94194b6-a917-4082-ad2a-7295e2a4e7f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUVAnimation\소스 파일">
+      <UniqueIdentifier>{e22bb84b-ece2-4525-81ba-c97f4ad169c7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUVAnimation\헤더 파일">
+      <UniqueIdentifier>{346d415d-f50e-408d-a7de-37d68005f6be}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmWater">
+      <UniqueIdentifier>{e5143845-3e97-4438-b543-a17c4e0b6537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmWater\소스 파일">
+      <UniqueIdentifier>{10df4e56-63cc-40e6-8707-a8f664c78cfc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmWater\헤더 파일">
+      <UniqueIdentifier>{78de978c-aa9d-4394-b7aa-b555fc78badb}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmWorld">
+      <UniqueIdentifier>{569a5397-4051-4781-9c2b-b2353d44c62d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmWorld\소스 파일">
+      <UniqueIdentifier>{99a1a6d1-73ac-4417-80ca-541d607ab359}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmWorld\헤더 파일">
+      <UniqueIdentifier>{7bbe556f-df21-41b9-9fb5-714bb285955d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmNatureEffect">
+      <UniqueIdentifier>{4fc4e7fc-cbfe-406b-a614-525e0e0a5e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmNatureEffect\소스 파일">
+      <UniqueIdentifier>{bc7eb45b-c873-46d2-ab6f-afa1954fc2b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmNatureEffect\헤더 파일">
+      <UniqueIdentifier>{d51db99b-a99e-48b4-867c-97c9a78be537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIHelp">
+      <UniqueIdentifier>{d01ddaa3-b361-4c8d-b24a-7172d36a5e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIHelp\소스 파일">
+      <UniqueIdentifier>{bb90b28a-de91-4815-a100-9cbd54f52d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIHelp\헤더 파일">
+      <UniqueIdentifier>{85cb696c-f5d1-4d12-acc5-7adecb262c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIWantedCriminal">
+      <UniqueIdentifier>{87dc0185-e2fa-450f-9e91-3c42d334a708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIWantedCriminal\소스 파일">
+      <UniqueIdentifier>{eb6ca492-2dfe-4b26-9aab-093ed96e9efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIWantedCriminal\헤더 파일">
+      <UniqueIdentifier>{11c14d10-1f3e-463d-a7ba-35d449362911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSiegeWarNPC">
+      <UniqueIdentifier>{344c4c8a-386f-4932-ad38-ac1d83d0ed62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSiegeWarNPC\소스 파일">
+      <UniqueIdentifier>{73ec5e16-d55a-4532-8614-d751f27239f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventSiegeWarNPC\헤더 파일">
+      <UniqueIdentifier>{4556fccd-edfc-4f71-943e-31c9b8ea0ec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSiegeWar">
+      <UniqueIdentifier>{bc790fd2-1ef6-4ef3-af61-845fdf26f937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSiegeWar\소스 파일">
+      <UniqueIdentifier>{8481485c-45fb-42b0-8c96-703a9b270540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmSiegeWar\헤더 파일">
+      <UniqueIdentifier>{b0da52b4-3850-45d7-adfe-31dafff9e819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIHotkey">
+      <UniqueIdentifier>{c6eb77c8-c02e-472a-9d2e-d77e527f5f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIHotkey\헤더 파일">
+      <UniqueIdentifier>{c392bdbb-7765-41f4-9b7d-d78d8eb4dd92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIHotkey\소스 파일">
+      <UniqueIdentifier>{d4b12ada-6c1d-435b-b24c-5798da896f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmStartupEncryption">
+      <UniqueIdentifier>{cb44bea2-2665-45da-bb3a-e783f4fa9ece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmStartupEncryption\소스 파일">
+      <UniqueIdentifier>{ebbf3eb5-1b69-4335-a228-1b496f181967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmStartupEncryption\헤더 파일">
+      <UniqueIdentifier>{ddce979c-48df-47bb-b2ca-887af121e674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISearch">
+      <UniqueIdentifier>{46fc45ce-eb61-4d9e-bde9-977de3c6b923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISearch\소스 파일">
+      <UniqueIdentifier>{94f85d56-616d-4973-bac2-e3f41138b152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISearch\헤더 파일">
+      <UniqueIdentifier>{94849125-f7e3-4909-bf31-e9cf64728a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUITax">
+      <UniqueIdentifier>{160b5b68-4d23-4c24-bddc-635c6d91ebe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUITax\헤더 파일">
+      <UniqueIdentifier>{daf2430c-acdc-4309-ac81-5c5ee6f95384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUITax\소스 파일">
+      <UniqueIdentifier>{be605cd3-265e-4c05-81a3-4a02416fbda3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIGuildWarehouse">
+      <UniqueIdentifier>{55d2f0c8-c99e-4713-b481-9f4973374dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIGuildWarehouse\헤더 파일">
+      <UniqueIdentifier>{1661ec64-8ce3-45de-82f9-4a87bb9dfa29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIGuildWarehouse\소스파일">
+      <UniqueIdentifier>{1f7d790c-0e25-4da7-8c95-dce80d9381ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmArchlord">
+      <UniqueIdentifier>{c401ebb1-bf14-4e92-bddc-542e210f3d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmArchlord\헤더 파일">
+      <UniqueIdentifier>{08042520-9c40-493d-9804-9f13dd3ae87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmArchlord\소스 파일">
+      <UniqueIdentifier>{6ef08c43-925f-4cd6-bfe6-0f67fba1d45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIArchlord">
+      <UniqueIdentifier>{d077866b-4dc0-4e3d-8df5-57d421932464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIArchlord\헤더 파일">
+      <UniqueIdentifier>{67e0b9d7-1d21-45db-9347-eef09e0a18f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIArchlord\소스 파일">
+      <UniqueIdentifier>{ed3bb6cc-c2b9-44a2-91f1-5c36cb7f6183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISocialAction">
+      <UniqueIdentifier>{a5a31def-f876-4636-aca7-33fb14a06fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIMailBox">
+      <UniqueIdentifier>{ffb13c71-24eb-4129-9f71-ff22e22cb213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIMailBox\소스 파일">
+      <UniqueIdentifier>{2586c512-4b4a-4ccb-8e5f-1bea32b42858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIMailBox\헤더 파일">
+      <UniqueIdentifier>{e66cfaac-1911-4b06-99b6-7d8ad085b021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmEventGacha">
+      <UniqueIdentifier>{f770e4bf-04b7-4fdc-a0ee-75ed7fb8b9f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUIEventGacha">
+      <UniqueIdentifier>{1ec62df8-ea65-4616-ab6a-b3f0bf50ccfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmBattleGround">
+      <UniqueIdentifier>{32e49a7e-e85c-4a1d-93b1-b39e15640522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmLogin">
+      <UniqueIdentifier>{e66f9e5f-2221-4ea3-9322-519ff46b0871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmLogin\소스 파일">
+      <UniqueIdentifier>{e609fdc8-dc22-4c43-81e9-becb2b86ac2d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmLogin\헤더 파일">
+      <UniqueIdentifier>{7bf25da6-d8ae-4118-891f-371b7660dc4c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmAdmin">
+      <UniqueIdentifier>{c30ac213-91c1-43ee-8220-11fe824b650d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAdmin\소스 파일">
+      <UniqueIdentifier>{ff6a7c36-b443-47fa-bc4c-c59312512799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmAdmin\헤더 파일">
+      <UniqueIdentifier>{20ec1508-7de0-476d-8d4e-7cdc00a8b17f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUILogin">
+      <UniqueIdentifier>{19f11db5-fe3d-4561-8f1e-985c4d7e9900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUILogin\AgcmUIServerSelect">
+      <UniqueIdentifier>{a7cffeda-fc73-4a52-b19b-78b1f1412b64}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUILogin\AgcmUICharacterCreate">
+      <UniqueIdentifier>{ddb2a04f-2720-4ade-8978-16d6c0901795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUILogin\AgcmUICharacterSelect">
+      <UniqueIdentifier>{cb483693-2dd0-423a-b572-97053bd5585e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUILogin\AgcmUIController">
+      <UniqueIdentifier>{83cdb5cb-abc9-4901-90a8-e3a8c12225e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUILogin\AgcmUILoginSetting">
+      <UniqueIdentifier>{d7ca47a4-5850-4c1b-bba9-a827061e1b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUILogin\AgcmUILogin">
+      <UniqueIdentifier>{7ebf6974-8ae0-4d8f-acc9-379dedaadb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUILogin\AgcmUIAccountCheck">
+      <UniqueIdentifier>{365e844f-11e4-4699-be8e-7d030d5a7a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmTitle">
+      <UniqueIdentifier>{4365ee59-9629-492a-ac0e-a51c523645cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISkill2">
+      <UniqueIdentifier>{a1daa06c-ae45-46e1-b24b-7e53da063227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISkill2\소스 파일">
+      <UniqueIdentifier>{3dc7f43c-412a-4f85-94ca-6f3d2ab8bbc3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AgcmUISkill2\헤더 파일">
+      <UniqueIdentifier>{e3476caa-4e0d-465c-a053-228786a95669}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AgcmUISkill2\DragonScionSkill">
+      <UniqueIdentifier>{847ce34c-0e28-4554-b058-2b516b468e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmUISkill2\HeroicSkill">
+      <UniqueIdentifier>{8190ec35-cb22-4a2b-b0b5-39e159e18bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmRegistryManager">
+      <UniqueIdentifier>{5416f8da-f96c-46e3-8b07-9db5092bab55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AgcmFPSManager">
+      <UniqueIdentifier>{db20605d-81df-42c9-8549-fff88a4b7817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Client\AcClientSocket\AcClientSocket.cpp">
+      <Filter>AcClientSocket\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AcClientSocket\AcQueue.cpp">
+      <Filter>AcClientSocket\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Client\AcClientSocket\AcSocketManager.cpp">
+      <Filter>AcClientSocket\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuCreateClump\AcuCreateClump.cpp">
+      <Filter>AcuCreateClump\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuDeviceCheck\AcuDeviceCheck.cpp">
+      <Filter>AcuDeviceCheck\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuExportDFF\AcuExportDFF.cpp">
+      <Filter>AcuExportDFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuFileAdmin\AcuFileAdmin.cpp">
+      <Filter>AcuFileAdmin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuFrameMemory\AcuFrameMemory.cpp">
+      <Filter>AcuFrameMemory\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuIMDraw\AcuIMDraw.cpp">
+      <Filter>AcuIMDraw\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuIMDraw\AcuObjecWire.cpp">
+      <Filter>AcuIMDraw\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuIMDraw\AgcuBasisGeo.cpp">
+      <Filter>AcuIMDraw\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuIMDraw\AgcuVtxType.cpp">
+      <Filter>AcuIMDraw\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\acumath\AcuMathFunc.cpp">
+      <Filter>AcuMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\acumath\AcuSinTbl.cpp">
+      <Filter>AcuMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuMath\AcuMath.cpp">
+      <Filter>AcuMath\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuMyFirewall\AcuMyFirewall.cpp">
+      <Filter>AcuMyFirewall\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuObject\AcuObject.cpp">
+      <Filter>AcuObject\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuParticleDraw\AcuParticleDraw.cpp">
+      <Filter>AcuParticleDraw\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRWUtil\AgcdGeoTriAreaTbl.c">
+      <Filter>AcuRWUtil\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.c">
+      <Filter>AcuRpMatD3DFx\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\effect.c">
+      <Filter>AcuRpMatD3DFx\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\effectStateManager.cpp">
+      <Filter>AcuRpMatD3DFx\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\rwd3d9.c">
+      <Filter>AcuRpMatD3DFx\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMatFxEx\AcuRpMatFxEx.c">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMTexture\MTexture.c">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMTexture\MTPipeD3D8.c">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMTexture\MTPipeD3D9.c">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMTexture\MTStream.c">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpUVAnimData\UVAnimData.c">
+      <Filter>AcuRpUVAnimData\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\AcuRtAmbOcclMap.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\body.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\image.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\lmrgbren.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\lmwcren.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\polypack.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\prolog.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\sample.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\struct.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRtAmbOcclMap\vis.c">
+      <Filter>AcuRtAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuTexture\AcuTexture.cpp">
+      <Filter>AcuTexture\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AgcModule.cpp">
+      <Filter>AgcModule\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AgcWindow.cpp">
+      <Filter>AgcModule\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AcUtils.cpp">
+      <Filter>AgcModule\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AgcEngine.cpp">
+      <Filter>AgcModule\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\AuRwImage.cpp">
+      <Filter>AgcModule\ImClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcModule\MagImAtomic.cpp">
+      <Filter>AgcModule\ImClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\AuInputComposer.cpp">
+      <Filter>AgcSkeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\ImmLib.cpp">
+      <Filter>AgcSkeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\camera.cpp">
+      <Filter>AgcSkeleton\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\menu.cpp">
+      <Filter>AgcSkeleton\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\mouse.cpp">
+      <Filter>AgcSkeleton\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\skeleton.cpp">
+      <Filter>AgcSkeleton\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\win.cpp">
+      <Filter>AgcSkeleton\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_camera.cpp">
+      <Filter>AgcSkeleton\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_menu.cpp">
+      <Filter>AgcSkeleton\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_mouse.cpp">
+      <Filter>AgcSkeleton\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_skeleton.cpp">
+      <Filter>AgcSkeleton\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\API_win.cpp">
+      <Filter>AgcSkeleton\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework.cpp">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordChina.cpp">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordGlobal.cpp">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordJapan.cpp">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordKorea.cpp">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_Utility.cpp">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CRenderDevice.cpp">
+      <Filter>AgcSkeleton\CGameFramework\RenderDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CRenderDevice_Renderware.cpp">
+      <Filter>AgcSkeleton\CGameFramework\RenderDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcSkeleton\CRenderWindow.cpp">
+      <Filter>AgcSkeleton\CGameFramework\RenderWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmAmbOcclMap\AgcmAmbOcclMap.cpp">
+      <Filter>AgcmAmbOcclMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmAnimation\AgcaAnimation.cpp">
+      <Filter>AgcmAnimation\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmAnimation\AgcmAnimation.cpp">
+      <Filter>AgcmAnimation\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmAnimation\AgcmIntervalAnimAdmin.cpp">
+      <Filter>AgcmAnimation\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmAuction\AgcmAuction.cpp">
+      <Filter>AgcmAuction\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmBillInfo\AgcmBillInfo.cpp">
+      <Filter>AgcmBillInfo\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcmCamera2.cpp">
+      <Filter>AgcmCamera2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamConstrain.cpp">
+      <Filter>AgcmCamera2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamDampingForce.cpp">
+      <Filter>AgcmCamera2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamMode.cpp">
+      <Filter>AgcmCamera2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamPathWork.cpp">
+      <Filter>AgcmCamera2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamSpringForce.cpp">
+      <Filter>AgcmCamera2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCashMall\AgcmCashMall.cpp">
+      <Filter>AgcmCashMall\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcCharacterUtil.cpp">
+      <Filter>AgcmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacter.cpp">
+      <Filter>AgcmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacterAnimation.cpp">
+      <Filter>AgcmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacterCustomize.cpp">
+      <Filter>AgcmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacterRide.cpp">
+      <Filter>AgcmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacterStream.cpp">
+      <Filter>AgcmCharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmChatting2\CTextFilter.cpp">
+      <Filter>AgcmChatting2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmChatting2\AgcmChatting2.cpp">
+      <Filter>AgcmChatting2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmConnectManager\AgcmConnectManager.cpp">
+      <Filter>AgcmConnectManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmDynamicLightmap\AgcmDynamicLightmap.cpp">
+      <Filter>AgcmDynamicLightmap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmCustomizeRender\AgcmCustomizeRender.cpp">
+      <Filter>AgcmDynamicLightmap\AgcmCustomizeRender\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffAnim.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffBase.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffBoard.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCamera.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCtrl.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffGlobal.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffLight.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffMFrm.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffObj.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffParticleSystem.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffPostFX.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffPublicStructs.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSet.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSound.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTail.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTerrainBoard.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTex.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuBezierForTail.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuBillBoard.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEff2ApMemoryLog.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffAnimUtil.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffD3dVtx.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffPath.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffTable.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffUtil.cpp">
+      <Filter>AgcmEff2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcmEff2.cpp">
+      <Filter>AgcmEff2\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCtrlMng.cpp">
+      <Filter>AgcmEff2\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSetMng.cpp">
+      <Filter>AgcmEff2\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffIniMng.cpp">
+      <Filter>AgcmEff2\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEff2\AgcuEffVBMng.cpp">
+      <Filter>AgcmEff2\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEffectDataAdmin\AgcaEffectData.cpp">
+      <Filter>AgcmEffectDataAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventBank\AgcmEventBank.cpp">
+      <Filter>AgcmEventBank\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventCharCustomize\AgcmEventCharCustomize.cpp">
+      <Filter>AgcmEventCharCustomize\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcaEffectSet.cpp">
+      <Filter>AgcmEventEffect\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcaEventEffectSound.cpp">
+      <Filter>AgcmEventEffect\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffect.cpp">
+      <Filter>AgcmEventEffect\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectData.cpp">
+      <Filter>AgcmEventEffect\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectList.cpp">
+      <Filter>AgcmEventEffect\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectStream.cpp">
+      <Filter>AgcmEventEffect\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventEffect\AgcuEventEffect.cpp">
+      <Filter>AgcmEventEffect\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventGuild\AgcmEventGuild.cpp">
+      <Filter>AgcmEventGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventItemConvert\AgcmEventItemConvert.cpp">
+      <Filter>AgcmEventItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventItemRepair\AgcmEventItemRepair.cpp">
+      <Filter>AgcmEventItemRepair\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventManager\AgcmEventManager.cpp">
+      <Filter>AgcmEventManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\AgcmEventNPCDialog.cpp">
+      <Filter>AgcmEventNPCDialog\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\CExNPC.cpp">
+      <Filter>AgcmEventNPCDialog\ExNPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\CExNPCDialog.cpp">
+      <Filter>AgcmEventNPCDialog\ExNPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\CUiExNPCMsgBoxGrid.cpp">
+      <Filter>AgcmEventNPCDialog\ExNPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCDialog\CUiGridItem.cpp">
+      <Filter>AgcmEventNPCDialog\ExNPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNPCTrade\AgcmEventNPCTrade.cpp">
+      <Filter>AgcmEventNPCTrade\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventNature\AgcmEventNature.cpp">
+      <Filter>AgcmEventNature\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventPointLight\AgcmEventPointLight.cpp">
+      <Filter>AgcmEventPointLight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventProduct\AgcmEventProduct.cpp">
+      <Filter>AgcmEventProduct\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventQuest\AgcmEventQuest.cpp">
+      <Filter>AgcmEventQuest\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventRefinery\AgcmEventRefinery.cpp">
+      <Filter>AgcmEventRefinery\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventShrine\AgcmEventShrine.cpp">
+      <Filter>AgcmEventShrine\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventSkillMaster\AgcmEventSkillMaster.cpp">
+      <Filter>AgcmEventSkillMaster\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventTeleport\AgcmEventTeleport.cpp">
+      <Filter>AgcmEventTeleport\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmExportResource\AgcmExportResource.cpp">
+      <Filter>AgcmExportResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tools\ModelTool\RWUtil.cpp">
+      <Filter>AgcmExportResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmExportResource\TemplateLoader.cpp">
+      <Filter>AgcmExportResource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmFont\AgcmFont.cpp">
+      <Filter>AgcmFont\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmGeometryDataManager\AgcmGeometryDataManager.cpp">
+      <Filter>AgcmGeometryDataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmGlare\AcuBlur.cpp">
+      <Filter>AgcmGlare\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmGlare\AgcmGlare.cpp">
+      <Filter>AgcmGlare\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmGlyph\AgcmGlyph.cpp">
+      <Filter>AgcmGlyph\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmGrass\AgcmGrass.cpp">
+      <Filter>AgcmGrass\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmGuild\AgcmGuild.cpp">
+      <Filter>AgcmGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemEffectFinder.cpp">
+      <Filter>AgcmItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemEvolutionTable.cpp">
+      <Filter>AgcmItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcaItemClump.cpp">
+      <Filter>AgcmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcdItem.cpp">
+      <Filter>AgcmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItem.cpp">
+      <Filter>AgcmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemEquip.cpp">
+      <Filter>AgcmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemInventory.cpp">
+      <Filter>AgcmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItem\AgcmItemStream.cpp">
+      <Filter>AgcmItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmItemConvert\AgcmItemConvert.cpp">
+      <Filter>AgcmItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmLODManager\AgcmLODList.cpp">
+      <Filter>AgcmLODManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmLODManager\AgcmLODManager.cpp">
+      <Filter>AgcmLODManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmLensFlare\AgcmLensFlare.cpp">
+      <Filter>AgcmLensFlare\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmReturnToLogin\AgcmReturnToLogin.cpp">
+      <Filter>AgcmReturnToLogin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AcMapLoader.cpp">
+      <Filter>AgcmMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AcMaterialList.cpp">
+      <Filter>AgcmMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AcTextureList.cpp">
+      <Filter>AgcmMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AgcmMap.cpp">
+      <Filter>AgcmMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\AgcmMapImport.cpp">
+      <Filter>AgcmMap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\Bmp.cpp">
+      <Filter>AgcmMap\Additional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\GetArg.cpp">
+      <Filter>AgcmMap\Additional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\DWSector.cpp">
+      <Filter>AgcmMap\DWSector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMap\DWSStream.cpp">
+      <Filter>AgcmMap\DWSector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMinimap\AcUIMinimap.cpp">
+      <Filter>AgcmMinimap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMinimap\AcUIRaider.cpp">
+      <Filter>AgcmMinimap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMinimap\AcUIWorldmap.cpp">
+      <Filter>AgcmMinimap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmMinimap\AgcmMinimap.cpp">
+      <Filter>AgcmMinimap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmObject\AgcmObject.cpp">
+      <Filter>AgcmObject\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmObject\AgcmObjectList.cpp">
+      <Filter>AgcmObject\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmObject\AgcuObject.cpp">
+      <Filter>AgcmObject\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmOcTree\AgcmOcTree.cpp">
+      <Filter>AgcmOcTree\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmParty\AgcmParty.cpp">
+      <Filter>AgcmParty\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmPostFX\AgcmPostFX.cpp">
+      <Filter>AgcmPostFX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmPreLODManager\AgcmPreLODAdmin.cpp">
+      <Filter>AgcmPreLODManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmPreLODManager\AgcmPreLODManager.cpp">
+      <Filter>AgcmPreLODManager\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmPrivateTrade\AgcmPrivateTrade.cpp">
+      <Filter>AgcmPrivateTrade\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmProduct\AgcmProduct.cpp">
+      <Filter>AgcmProduct\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmProductMed\AgcmProductMed.cpp">
+      <Filter>AgcmProductMed\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmQuest\AgcmQuest.cpp">
+      <Filter>AgcmQuest\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmRecruit\AcUIRecruit.cpp">
+      <Filter>AgcmRecruit\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmRecruit\AcUIRecruitWrite.cpp">
+      <Filter>AgcmRecruit\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmRecruit\AgcmRecruit.cpp">
+      <Filter>AgcmRecruit\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmRefinery\AgcmRefinery.cpp">
+      <Filter>AgcmRefinery\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmRender\AgcmRender.cpp">
+      <Filter>AgcmRender\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmRender\AgcmRenderType.cpp">
+      <Filter>AgcmRender\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmResourceLoader\AgcmResourceLoader.cpp">
+      <Filter>AgcmResourceLoader\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmRide\AgcmRide.cpp">
+      <Filter>AgcmRide\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmShadow\AgcmShadow.cpp">
+      <Filter>AgcmShadow\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmShadow2\AgcmShadow2.cpp">
+      <Filter>AgcmShadow2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmShadowmap\AgcmShadowmap.cpp">
+      <Filter>AgcmShadowmap\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmSkill\AgcmSkill.cpp">
+      <Filter>AgcmSkill\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmSkill\AgcmSkillMastery.cpp">
+      <Filter>AgcmSkill\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmSkill\AgcmSkillStream.cpp">
+      <Filter>AgcmSkill\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmSound\AgcmSound.cpp">
+      <Filter>AgcmSound\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTargeting\AgcmTargeting.cpp">
+      <Filter>AgcmTargeting\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTargeting\AgcSenderWindow.cpp">
+      <Filter>AgcmTargeting\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\CFlagImoticon.cpp">
+      <Filter>AgcmTextBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmBaseBoard.cpp">
+      <Filter>AgcmTextBoard\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmDmgBoard.cpp">
+      <Filter>AgcmTextBoard\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmHPBar.cpp">
+      <Filter>AgcmTextBoard\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmIDBoard.cpp">
+      <Filter>AgcmTextBoard\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmImoticonBoard.cpp">
+      <Filter>AgcmTextBoard\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoard.cpp">
+      <Filter>AgcmTextBoard\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\Image2D.cpp">
+      <Filter>AgcmTextBoard\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoardMng.cpp">
+      <Filter>AgcmTextBoard\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoardMngCallback.cpp">
+      <Filter>AgcmTextBoard\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTuner\AgcmTuner.cpp">
+      <Filter>AgcmTuner\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIAuction\AgcmUIAuction.cpp">
+      <Filter>AgcmUIAuction\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIAuction\AgcmUIBoardInfo.cpp">
+      <Filter>AgcmUIAuction\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIAuction\AgcmUICategoryInfo.cpp">
+      <Filter>AgcmUIAuction\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIBuddy\AgcmUIBuddy.cpp">
+      <Filter>AgcmUIBuddy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashInven\AgcmUICashInven.cpp">
+      <Filter>AgcmUICashInven\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\AgcmUICashMall.cpp">
+      <Filter>AgcmUICashMall\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CUICashMallTexture.cpp">
+      <Filter>AgcmUICashMall\CWebzenShop - 웹젠 인게임샵</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenShop.cpp">
+      <Filter>AgcmUICashMall\CWebzenShop - 웹젠 인게임샵</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenShopPrivate.cpp">
+      <Filter>AgcmUICashMall\CWebzenShop - 웹젠 인게임샵</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenCashItemBox.cpp">
+      <Filter>AgcmUICashMall\CWebzenCashItemBox - 웹젠 유료보관함</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenCashItemBoxPrivate.cpp">
+      <Filter>AgcmUICashMall\CWebzenCashItemBox - 웹젠 유료보관함</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICastle\AgcmUICastle.cpp">
+      <Filter>AgcmUICastle\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIChannel\AgcmUIChannel.cpp">
+      <Filter>AgcmUIChannel\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICharacter\CharacterPropertyCallBack.cpp">
+      <Filter>AgcmUICharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICharacter\CUiCharacterProperty.cpp">
+      <Filter>AgcmUICharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICharacter\AgcmUICharacter.cpp">
+      <Filter>AgcmUICharacter\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIChatting2\AcUIChattingEdit.cpp">
+      <Filter>AgcmUIChatting2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIChatting2\AgcmUIChatting2.cpp">
+      <Filter>AgcmUIChatting2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIConsole\AgcmUIConsole.cpp">
+      <Filter>AgcmUIConsole\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIBar.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIBase.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIBbs.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIBbsContent.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIButton.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUICheckBox.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIClock.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUICombo.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIEdit.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIGrid.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIList.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIMessageDialog.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIModalImage.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIScroll.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUISkillTree.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUITexture.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUIToolTip.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcUITree.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AcuTextureList.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIControl\AgcmUIControl.cpp">
+      <Filter>AgcmUIControl\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICooldown\AgcmUICooldown.cpp">
+      <Filter>AgcmUICooldown\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUICustomizing\AgcmUICustomizing.cpp">
+      <Filter>AgcmUICustomizing\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIDebugInfo\AgcDebugWindow.cpp">
+      <Filter>AgcmUIDebugInfo\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIDebugInfo\AgcmUIDebugInfo.cpp">
+      <Filter>AgcmUIDebugInfo\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventBank\AgcmUIEventBank.cpp">
+      <Filter>AgcmUIEventBank\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemConvert.cpp">
+      <Filter>AgcmUIEventItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemPhysicalConvert.cpp">
+      <Filter>AgcmUIEventItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemRuneConvert.cpp">
+      <Filter>AgcmUIEventItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemSocketConvert.cpp">
+      <Filter>AgcmUIEventItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemSpiritStoneConvert.cpp">
+      <Filter>AgcmUIEventItemConvert\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventItemRepair\AgcmUIEventItemRepair.cpp">
+      <Filter>AgcmUIEventItemRepair\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventNPCDialog\AgcmUIEventNPCDialog.cpp">
+      <Filter>AgcmUIEventNPCDialog\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventTeleport\AgcmUIEventTeleport.cpp">
+      <Filter>AgcmUIEventTeleport\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuild.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattle.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleMember.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleOffer.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleResult.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildCreate.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildCreateComplete.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildCreateConfirm.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildDestroy.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildDestroyComplete.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildDestroyConfirm.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildGuildList.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildMain.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildMark.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildMaxMember.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildMember.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildNotice.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildRelation.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildRename.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildWorldChampionship.cpp">
+      <Filter>AgcmUIGuild\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIBank.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIConvert.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIDuplicateInventory.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIEquip.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIInventory.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIInventorySmall.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIItem.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIItemTooltip.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUINPCTrade.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIPrivateTrade.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUISalesBox.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIItem\AgcmUISubInventory.cpp">
+      <Filter>AgcmUIItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIMain\AgcmUIMain.cpp">
+      <Filter>AgcmUIMain\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIMain\AgcmUIMainSystemGridTooltip.cpp">
+      <Filter>AgcmUIMain\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Etc\AcuRpMatD3DFx\pipeline.c">
+      <Filter>AgcmUIManager2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcaUIManager2.cpp">
+      <Filter>AgcmUIManager2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcmUIManager2.cpp">
+      <Filter>AgcmUIManager2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcmUIManager2Stream.cpp">
+      <Filter>AgcmUIManager2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIEffect.cpp">
+      <Filter>AgcmUIManager2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIManager.cpp">
+      <Filter>AgcmUIManager2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIWindow.cpp">
+      <Filter>AgcmUIManager2\UIWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIOption\AgcmUIOption.cpp">
+      <Filter>AgcmUIOption\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIParty\AgcmUIParty.cpp">
+      <Filter>AgcmUIParty\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIPartyOption\AgcmUIPartyOption.cpp">
+      <Filter>AgcmUIPartyOption\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIProduct\AgcmUIProduct.cpp">
+      <Filter>AgcmUIProduct\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIProduct\AgcmUIProductSkill.cpp">
+      <Filter>AgcmUIProduct\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIPvP\AgcmUIPvP.cpp">
+      <Filter>AgcmUIPvP\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIQuest2\AgcmUIQuest2.cpp">
+      <Filter>AgcmUIQuest2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIRefinery\AgcmUIRefinery.cpp">
+      <Filter>AgcmUIRefinery\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIRemission\AgcmUIRemission.cpp">
+      <Filter>AgcmUIRemission\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISiegeWar\AgcmUISiegeWar.cpp">
+      <Filter>AgcmUISiegeWar\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISplitItem\AgcmUISplitItem.cpp">
+      <Filter>AgcmUISplitItem\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIStatus\AgcmUIStatus.cpp">
+      <Filter>AgcmUIStatus\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISystemMessage\AgcmUISystemMessage.cpp">
+      <Filter>AgcmUISystemMessage\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUITips\AgcmUITips.cpp">
+      <Filter>AgcmUITips\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUITips\AgcTipWindow.cpp">
+      <Filter>AgcmUITips\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUVAnimation\AgcmUVAnimation.cpp">
+      <Filter>AgcmUVAnimation\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmWater\AgcmWater.cpp">
+      <Filter>AgcmWater\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmWorld\AgcmWorld.cpp">
+      <Filter>AgcmWorld\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmNatureEffect\AgcmNatureEffect.cpp">
+      <Filter>AgcmNatureEffect\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIHelp\AgcmUIHelp.cpp">
+      <Filter>AgcmUIHelp\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIWantedCriminal\AgcmUIWantedCriminal.cpp">
+      <Filter>AgcmUIWantedCriminal\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventSiegeWarNPC\AgcmEventSiegeWarNPC.cpp">
+      <Filter>AgcmEventSiegeWarNPC\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmSiegeWar\AgcmSiegeWar.cpp">
+      <Filter>AgcmSiegeWar\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIHotkey\AgcmUIHotkey.cpp">
+      <Filter>AgcmUIHotkey\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmStartupEncryption\AgcmStartupEncryption.cpp">
+      <Filter>AgcmStartupEncryption\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISearch\AgcmUISearch.cpp">
+      <Filter>AgcmUISearch\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUITax\AgcmUITax.cpp">
+      <Filter>AgcmUITax\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIGuildWarehouse\AgcmUIGuildWarehouse.cpp">
+      <Filter>AgcmUIGuildWarehouse\소스파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmArchlord\AgcmArchlord.cpp">
+      <Filter>AgcmArchlord\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIArchlord\AgcmUIArchlord.cpp">
+      <Filter>AgcmUIArchlord\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISocialAction\AgcmSocialAction.cpp">
+      <Filter>AgcmUISocialAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISocialAction\AgcmUISocialAction.cpp">
+      <Filter>AgcmUISocialAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIMailBox\AgcmUIMailBox.cpp">
+      <Filter>AgcmUIMailBox\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmEventGacha\AgcmEventGacha.cpp">
+      <Filter>AgcmEventGacha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventGacha\AcUIGacha.cpp">
+      <Filter>AgcmUIEventGacha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUIEventGacha\AgcmUIEventGacha.cpp">
+      <Filter>AgcmUIEventGacha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmBattleGround\AgcmBattleGround.cpp">
+      <Filter>AgcmBattleGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmLogin\AgcmLogin.cpp">
+      <Filter>AgcmLogin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmAdmin\AgcmAdmin.cpp">
+      <Filter>AgcmAdmin\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AcArchlordInfo.cpp">
+      <Filter>AgcmUILogin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AcUIEventButton.cpp">
+      <Filter>AgcmUILogin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSelect.cpp">
+      <Filter>AgcmUILogin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUIServerSelect.cpp">
+      <Filter>AgcmUILogin\AgcmUIServerSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUICharacterCreate.cpp">
+      <Filter>AgcmUILogin\AgcmUICharacterCreate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUICharacterSelect.cpp">
+      <Filter>AgcmUILogin\AgcmUICharacterSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlCamera.cpp">
+      <Filter>AgcmUILogin\AgcmUIController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlCharacter.cpp">
+      <Filter>AgcmUILogin\AgcmUIController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlPostFX.cpp">
+      <Filter>AgcmUILogin\AgcmUIController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcuUILoadingWindow.cpp">
+      <Filter>AgcmUILogin\AgcmUIController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSetting.cpp">
+      <Filter>AgcmUILogin\AgcmUILoginSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSettingCamera.cpp">
+      <Filter>AgcmUILogin\AgcmUILoginSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSettingCharacter.cpp">
+      <Filter>AgcmUILogin\AgcmUILoginSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILogin.cpp">
+      <Filter>AgcmUILogin\AgcmUILogin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUILogin\AgcmUIAccountCheck.cpp">
+      <Filter>AgcmUILogin\AgcmUIAccountCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmTitle\AgcmTitle.cpp">
+      <Filter>AgcmTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkill2.cpp">
+      <Filter>AgcmUISkill2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkill2Tooltip.cpp">
+      <Filter>AgcmUISkill2\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScion.cpp">
+      <Filter>AgcmUISkill2\DragonScionSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScionCallback.cpp">
+      <Filter>AgcmUISkill2\DragonScionSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmHeroicSkill.cpp">
+      <Filter>AgcmUISkill2\HeroicSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmUISkill2\AgcmHeroicSkillCB.cpp">
+      <Filter>AgcmUISkill2\HeroicSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmRegistryManager\AgcmRegistryManager.cpp">
+      <Filter>AgcmRegistryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AClient\AgcmFPSManager\AgcmFPSManager.cpp">
+      <Filter>AgcmFPSManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Client\AcClientSocket\AcClientSocket.h">
+      <Filter>AcClientSocket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AcClientSocket\AcQueue.h">
+      <Filter>AcClientSocket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Client\AcClientSocket\AcSocketManager.h">
+      <Filter>AcClientSocket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\resrc1.h">
+      <Filter>AcClientSocket\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuCreateClump\AcuCreateClump.h">
+      <Filter>AcuCreateClump\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuDeviceCheck\AcuDeviceCheck.h">
+      <Filter>AcuDeviceCheck\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuExportDFF\AcuExportDFF.h">
+      <Filter>AcuExportDFF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuFileAdmin\AcuFileAdmin.h">
+      <Filter>AcuFileAdmin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuFrameMemory\AcuFrameMemory.h">
+      <Filter>AcuFrameMemory\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuIMDraw\AcuIMDraw.h">
+      <Filter>AcuIMDraw\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuIMDraw\AcuObjecWire.h">
+      <Filter>AcuIMDraw\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuIMDraw\AgcuBasisGeo.h">
+      <Filter>AcuIMDraw\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuIMDraw\AgcuVtxType.h">
+      <Filter>AcuIMDraw\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\acumath\AcuMathFunc.h">
+      <Filter>AcuMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\acumath\AcuSinTbl.h">
+      <Filter>AcuMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuMath\AcuMath.h">
+      <Filter>AcuMath\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuMyFirewall\AcuMyFirewall.h">
+      <Filter>AcuMyFirewall\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuObject\AcuObject.h">
+      <Filter>AcuObject\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuParticleDraw\AcuParticleDraw.h">
+      <Filter>AcuParticleDraw\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRWUtil\AgcdGeoTriAreaTbl.h">
+      <Filter>AcuRWUtil\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\AcuRpMatD3DFx.h">
+      <Filter>AcuRpMatD3DFx\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\effect.h">
+      <Filter>AcuRpMatD3DFx\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\effectStateManager.h">
+      <Filter>AcuRpMatD3DFx\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\myassert.h">
+      <Filter>AcuRpMatD3DFx\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\pipeline.h">
+      <Filter>AcuRpMatD3DFx\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMatD3DFx\rwd3d9.h">
+      <Filter>AcuRpMatD3DFx\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMatFxEx\AcuRpMatFxEx.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\AcuRpMTexture.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\MTexture.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\MTPipe.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\MTStream.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\shadow2.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain2_linear.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain3_linear.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain_linear.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain_linear_FadeOut.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\Terrain_linear_Rough.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpMTexture\VertexShaderFragments.h">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRpUVAnimData\AcuRpUVAnimData.h">
+      <Filter>AcuRpUVAnimData\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\AcuRtAmbOcclMap.h">
+      <Filter>AcuRtAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\fastflit.h">
+      <Filter>AcuRtAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\image.h">
+      <Filter>AcuRtAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\ltmapvar.h">
+      <Filter>AcuRtAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\polypack.h">
+      <Filter>AcuRtAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\rpplugin.h">
+      <Filter>AcuRtAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\sample.h">
+      <Filter>AcuRtAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuRtAmbOcclMap\vis.h">
+      <Filter>AcuRtAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Etc\AcuTexture\AcuTexture.h">
+      <Filter>AcuTexture\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AgcModule.h">
+      <Filter>AgcModule\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AgcWindow.h">
+      <Filter>AgcModule\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\AuList.h">
+      <Filter>AgcModule\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AcUtils.h">
+      <Filter>AgcModule\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AgcEngine.h">
+      <Filter>AgcModule\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\AuRwImage.h">
+      <Filter>AgcModule\ImClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcModule\MagImAtomic.h">
+      <Filter>AgcModule\ImClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\AcDefine.h">
+      <Filter>AgcSkeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\AuInputComposer.h">
+      <Filter>AgcSkeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\ImmLib.h">
+      <Filter>AgcSkeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\camera.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\menu.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\mouse.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\mousedat.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\platform.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\ptrdata.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\resource.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\skeleton.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\win.h">
+      <Filter>AgcSkeleton\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework.h">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordChina.h">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordGlobal.h">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordJapan.h">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_ArchlordKorea.h">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CGameFramework_Utility.h">
+      <Filter>AgcSkeleton\CGameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CRenderDevice.h">
+      <Filter>AgcSkeleton\CGameFramework\RenderDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CRenderDevice_Renderware.h">
+      <Filter>AgcSkeleton\CGameFramework\RenderDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcSkeleton\CRenderWindow.h">
+      <Filter>AgcSkeleton\CGameFramework\RenderWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmAmbOcclMap\AgcmAmbOcclMap.h">
+      <Filter>AgcmAmbOcclMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmAnimation\AgcaAnimation.h">
+      <Filter>AgcmAnimation\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmAnimation\AgcdAnimation.h">
+      <Filter>AgcmAnimation\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmAnimation\AgcmAnimation.h">
+      <Filter>AgcmAnimation\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmAnimation\AgcmIntervalAnimAdmin.h">
+      <Filter>AgcmAnimation\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmAuction\AgcmAuction.h">
+      <Filter>AgcmAuction\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmBillInfo\AgcmBillInfo.h">
+      <Filter>AgcmBillInfo\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcmCamera2.h">
+      <Filter>AgcmCamera2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamConstrain.h">
+      <Filter>AgcmCamera2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamDampingForce.h">
+      <Filter>AgcmCamera2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamMode.h">
+      <Filter>AgcmCamera2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamPathWork.h">
+      <Filter>AgcmCamera2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCamera2\AgcuCamSpringForce.h">
+      <Filter>AgcmCamera2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCashMall\AgcmCashMall.h">
+      <Filter>AgcmCashMall\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCharacter\AgcCharacterDefine.h">
+      <Filter>AgcmCharacter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCharacter\AgcCharacterUtil.h">
+      <Filter>AgcmCharacter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCharacter\AgcdCharacter.h">
+      <Filter>AgcmCharacter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCharacter\AgcmCharacter.h">
+      <Filter>AgcmCharacter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmChatting2\CTextFilter.h">
+      <Filter>AgcmChatting2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmChatting2\AgcmChatting2.h">
+      <Filter>AgcmChatting2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmConnectManager\AgcmConnectManager.h">
+      <Filter>AgcmConnectManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmDynamicLightmap\AgcmDynamicLightmap.h">
+      <Filter>AgcmDynamicLightmap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmCustomizeRender\AgcmCustomizeRender.h">
+      <Filter>AgcmDynamicLightmap\AgcmCustomizeRender\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffAnim.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffBase.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffBoard.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCamera.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCtrl.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffGlobal.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffLight.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffMFrm.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffObj.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffParticleSystem.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffPostFX.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffPublicStructs.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSet.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSound.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTail.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTerrainBoard.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffTex.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuBezierForTail.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuBillBoard.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEff2ApMemoryLog.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffAnimUtil.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffD3dVtx.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffPath.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffTable.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffUtil.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffVB.h">
+      <Filter>AgcmEff2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcmEff2.h">
+      <Filter>AgcmEff2\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffCtrlMng.h">
+      <Filter>AgcmEff2\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcdEffSetMng.h">
+      <Filter>AgcmEff2\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffIniMng.h">
+      <Filter>AgcmEff2\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEff2\AgcuEffVBMng.h">
+      <Filter>AgcmEff2\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEffectDataAdmin\AgcaEffectData.h">
+      <Filter>AgcmEffectDataAdmin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEffectDataAdmin\AgcdEffectData.h">
+      <Filter>AgcmEffectDataAdmin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventBank\AgcmEventBank.h">
+      <Filter>AgcmEventBank\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventCharCustomize\AgcmEventCharCustomize.h">
+      <Filter>AgcmEventCharCustomize\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcaEffectSet.h">
+      <Filter>AgcmEventEffect\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcaEventEffectSound.h">
+      <Filter>AgcmEventEffect\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcdEventEffect.h">
+      <Filter>AgcmEventEffect\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffect.h">
+      <Filter>AgcmEventEffect\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectData.h">
+      <Filter>AgcmEventEffect\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcmEventEffectList.h">
+      <Filter>AgcmEventEffect\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventEffect\AgcuEventEffect.h">
+      <Filter>AgcmEventEffect\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventGuild\AgcmEventGuild.h">
+      <Filter>AgcmEventGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventItemConvert\AgcmEventItemConvert.h">
+      <Filter>AgcmEventItemConvert\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventItemRepair\AgcmEventItemRepair.h">
+      <Filter>AgcmEventItemRepair\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventManager\AgcmEventManager.h">
+      <Filter>AgcmEventManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\AgcmEventNPCDialog.h">
+      <Filter>AgcmEventNPCDialog\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\CExNPC.h">
+      <Filter>AgcmEventNPCDialog\ExNPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\CExNPCDialog.h">
+      <Filter>AgcmEventNPCDialog\ExNPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\CUiExNPCMsgBoxGrid.h">
+      <Filter>AgcmEventNPCDialog\ExNPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCDialog\CUiGridItem.h">
+      <Filter>AgcmEventNPCDialog\ExNPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNPCTrade\AgcmEventNPCTrade.h">
+      <Filter>AgcmEventNPCTrade\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventNature\AgcmEventNature.h">
+      <Filter>AgcmEventNature\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventPointLight\AgcmEventPointLight.h">
+      <Filter>AgcmEventPointLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventProduct\AgcmEventProduct.h">
+      <Filter>AgcmEventProduct\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventQuest\AgcmEventQuest.h">
+      <Filter>AgcmEventQuest\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventRefinery\AgcmEventRefinery.h">
+      <Filter>AgcmEventRefinery\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventShrine\AgcmEventShrine.h">
+      <Filter>AgcmEventShrine\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventSkillMaster\AgcmEventSkillMaster.h">
+      <Filter>AgcmEventSkillMaster\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventTeleport\AgcmEventTeleport.h">
+      <Filter>AgcmEventTeleport\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmExportResource\AgcmExportResource.h">
+      <Filter>AgcmExportResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tools\ModelTool\RWUtil.h">
+      <Filter>AgcmExportResource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmFont\AgcmFont.h">
+      <Filter>AgcmFont\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGeometryDataManager\AgcdGeometryDataManager.h">
+      <Filter>AgcmGeometryDataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGeometryDataManager\AgcmGeometryDataManager.h">
+      <Filter>AgcmGeometryDataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\AcuBlur.h">
+      <Filter>AgcmGlare\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\AgcmGlare.h">
+      <Filter>AgcmGlare\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\blurpshaderD3D9.h">
+      <Filter>AgcmGlare\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\blurvshaderD3D9.h">
+      <Filter>AgcmGlare\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlare\blurvshaderdefs.h">
+      <Filter>AgcmGlare\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGlyph\AgcmGlyph.h">
+      <Filter>AgcmGlyph\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGrass\AgcmGrass.h">
+      <Filter>AgcmGrass\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmGuild\AgcmGuild.h">
+      <Filter>AgcmGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcmItemEffectFinder.h">
+      <Filter>AgcmItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcmItemEvolutionTable.h">
+      <Filter>AgcmItem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcaItemClump.h">
+      <Filter>AgcmItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcdItem.h">
+      <Filter>AgcmItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmItem\AgcmItem.h">
+      <Filter>AgcmItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmItemConvert\AgcmItemConvert.h">
+      <Filter>AgcmItemConvert\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmLODManager\AgcmLODList.h">
+      <Filter>AgcmLODManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmLODManager\AgcmLODManager.h">
+      <Filter>AgcmLODManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmLensFlare\AgcmLensFlare.h">
+      <Filter>AgcmLensFlare\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmReturnToLogin\AgcmReturnToLogin.h">
+      <Filter>AgcmReturnToLogin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\AcMapLoader.h">
+      <Filter>AgcmMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\AcMaterialList.h">
+      <Filter>AgcmMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\AcTextureList.h">
+      <Filter>AgcmMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\AgcmMap.h">
+      <Filter>AgcmMap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\bmp.h">
+      <Filter>AgcmMap\Additional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\GetArg.h">
+      <Filter>AgcmMap\Additional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\DWSector.h">
+      <Filter>AgcmMap\DWSector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMap\DWSStream.h">
+      <Filter>AgcmMap\DWSector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMinimap\AcUIMinimap.h">
+      <Filter>AgcmMinimap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMinimap\AcUIRaider.h">
+      <Filter>AgcmMinimap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMinimap\AcUIWorldmap.h">
+      <Filter>AgcmMinimap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmMinimap\AgcmMinimap.h">
+      <Filter>AgcmMinimap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmObject\AgcdObject.h">
+      <Filter>AgcmObject\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmObject\AgcmObject.h">
+      <Filter>AgcmObject\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmObject\AgcmObjectList.h">
+      <Filter>AgcmObject\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmObject\AgcuObject.h">
+      <Filter>AgcmObject\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmOcTree\AgcmOcTree.h">
+      <Filter>AgcmOcTree\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmParty\AgcmParty.h">
+      <Filter>AgcmParty\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmPostFX\AgcmPostFX.h">
+      <Filter>AgcmPostFX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmPreLODManager\AgcdPreLOD.h">
+      <Filter>AgcmPreLODManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmPreLODManager\AgcmPreLODAdmin.h">
+      <Filter>AgcmPreLODManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmPreLODManager\AgcmPreLODManager.h">
+      <Filter>AgcmPreLODManager\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmPrivateTrade\AgcmPrivateTrade.h">
+      <Filter>AgcmPrivateTrade\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmProduct\AgcmProduct.h">
+      <Filter>AgcmProduct\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmProductMed\AgcmProductMed.h">
+      <Filter>AgcmProductMed\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmQuest\AgcmQuest.h">
+      <Filter>AgcmQuest\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRecruit\AcUIRecruit.h">
+      <Filter>AgcmRecruit\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRecruit\AcUIRecruitWrite.h">
+      <Filter>AgcmRecruit\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRecruit\AgcmRecruit.h">
+      <Filter>AgcmRecruit\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRefinery\AgcmRefinery.h">
+      <Filter>AgcmRefinery\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRender\AgcdRenderType.h">
+      <Filter>AgcmRender\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRender\AgcmRender.h">
+      <Filter>AgcmRender\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRender\AgcmRenderType.h">
+      <Filter>AgcmRender\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRender\fadeD3D9.h">
+      <Filter>AgcmRender\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmResourceLoader\AgcdResourceLoader.h">
+      <Filter>AgcmResourceLoader\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmResourceLoader\AgcmResourceLoader.h">
+      <Filter>AgcmResourceLoader\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRide\AgcmRide.h">
+      <Filter>AgcmRide\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmShadow\AgcmShadow.h">
+      <Filter>AgcmShadow\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmShadow2\AgcmShadow2.h">
+      <Filter>AgcmShadow2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmShadowmap\AgcmShadowmap.h">
+      <Filter>AgcmShadowmap\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmSkill\AgcdSkill.h">
+      <Filter>AgcmSkill\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmSkill\AgcmSkill.h">
+      <Filter>AgcmSkill\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmSound\AgcmSound.h">
+      <Filter>AgcmSound\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmSound\Mss.h">
+      <Filter>AgcmSound\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTargeting\AgcmTargeting.h">
+      <Filter>AgcmTargeting\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTargeting\AgcSenderWindow.h">
+      <Filter>AgcmTargeting\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\CFlagImoticon.h">
+      <Filter>AgcmTextBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmBaseBoard.h">
+      <Filter>AgcmTextBoard\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmDmgBoard.h">
+      <Filter>AgcmTextBoard\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmHPBar.h">
+      <Filter>AgcmTextBoard\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmIDBoard.h">
+      <Filter>AgcmTextBoard\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmImoticonBoard.h">
+      <Filter>AgcmTextBoard\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoard.h">
+      <Filter>AgcmTextBoard\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\Image2D.h">
+      <Filter>AgcmTextBoard\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoardDef.h">
+      <Filter>AgcmTextBoard\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTextBoard\AgcmTextBoardMng.h">
+      <Filter>AgcmTextBoard\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTuner\AgcmTuner.h">
+      <Filter>AgcmTuner\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIAuction\AgcmUIAuction.h">
+      <Filter>AgcmUIAuction\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIBuddy\AgcmUIBuddy.h">
+      <Filter>AgcmUIBuddy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashInven\AgcmUICashInven.h">
+      <Filter>AgcmUICashInven\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashMall\AgcmUICashMall.h">
+      <Filter>AgcmUICashMall\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashMall\CUICashMallTexture.h">
+      <Filter>AgcmUICashMall\CWebzenShop - 웹젠 인게임샵</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenShop.h">
+      <Filter>AgcmUICashMall\CWebzenShop - 웹젠 인게임샵</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICashMall\CWebzenCashItemBox.h">
+      <Filter>AgcmUICashMall\CWebzenCashItemBox - 웹젠 유료보관함</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICastle\AgcmUICastle.h">
+      <Filter>AgcmUICastle\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIChannel\AgcmUIChannel.h">
+      <Filter>AgcmUIChannel\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICharacter\CharacterPropertyCallBack.h">
+      <Filter>AgcmUICharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICharacter\CUiCharacterProperty.h">
+      <Filter>AgcmUICharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICharacter\AgcdUICharacter.h">
+      <Filter>AgcmUICharacter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICharacter\AgcmUICharacter.h">
+      <Filter>AgcmUICharacter\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIChatting2\AcUIChattingEdit.h">
+      <Filter>AgcmUIChatting2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIChatting2\AgcmUIChatting2.h">
+      <Filter>AgcmUIChatting2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIConsole\AgcmUIConsole.h">
+      <Filter>AgcmUIConsole\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIBar.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIBase.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIBbs.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIBbsContent.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIButton.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUICheckBox.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIClock.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUICombo.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIControlHeader.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIEdit.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIGrid.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIList.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIMessageDialog.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIModalImage.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIScroll.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUISkillTree.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUITexture.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUIToolTip.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcUITree.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AcuTextureList.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIControl\AgcmUIControl.h">
+      <Filter>AgcmUIControl\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICooldown\AgcmUICooldown.h">
+      <Filter>AgcmUICooldown\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUICustomizing\AgcmUICustomizing.h">
+      <Filter>AgcmUICustomizing\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIDebugInfo\AgcDebugWindow.h">
+      <Filter>AgcmUIDebugInfo\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIDebugInfo\AgcmUIDebugInfo.h">
+      <Filter>AgcmUIDebugInfo\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventBank\AgcmUIEventBank.h">
+      <Filter>AgcmUIEventBank\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventItemConvert\AgcmUIEventItemConvert.h">
+      <Filter>AgcmUIEventItemConvert\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventItemRepair\AgcmUIEventItemRepair.h">
+      <Filter>AgcmUIEventItemRepair\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventNPCDialog\AgcmUIEventNPCDialog.h">
+      <Filter>AgcmUIEventNPCDialog\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventTeleport\AgcmUIEventTeleport.h">
+      <Filter>AgcmUIEventTeleport\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuild.h">
+      <Filter>AgcmUIGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleMember.h">
+      <Filter>AgcmUIGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleOffer.h">
+      <Filter>AgcmUIGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuild\AgcmUIGuildBattleResult.h">
+      <Filter>AgcmUIGuild\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIItem\AgcdUIItem.h">
+      <Filter>AgcmUIItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIItem\AgcdUIItemTooltip.h">
+      <Filter>AgcmUIItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIItem\AgcmUIItem.h">
+      <Filter>AgcmUIItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIMain\AgcmUIMain.h">
+      <Filter>AgcmUIMain\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIMain\AgcmUIMainSystemGridTooltip.h">
+      <Filter>AgcmUIMain\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcaUIManager2.h">
+      <Filter>AgcmUIManager2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcdUIManager2.h">
+      <Filter>AgcmUIManager2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcmUIManager2.h">
+      <Filter>AgcmUIManager2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIEffect.h">
+      <Filter>AgcmUIManager2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIManager.h">
+      <Filter>AgcmUIManager2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIManager2\AgcUIWindow.h">
+      <Filter>AgcmUIManager2\UIWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIOption\AgcmUIOption.h">
+      <Filter>AgcmUIOption\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIOption\AgcmUIOptionDefine.h">
+      <Filter>AgcmUIOption\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIParty\AgcmUIParty.h">
+      <Filter>AgcmUIParty\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIPartyOption\AgcmUIPartyOption.h">
+      <Filter>AgcmUIPartyOption\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIProduct\AgcmUIProduct.h">
+      <Filter>AgcmUIProduct\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIProduct\AgcmUIProductSkill.h">
+      <Filter>AgcmUIProduct\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIPvP\AgcmUIPvP.h">
+      <Filter>AgcmUIPvP\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIQuest2\AgcmUIQuest2.h">
+      <Filter>AgcmUIQuest2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIRefinery\AgcmUIRefinery.h">
+      <Filter>AgcmUIRefinery\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIRemission\AgcmUIRemission.h">
+      <Filter>AgcmUIRemission\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISiegeWar\AgcmUISiegeWar.h">
+      <Filter>AgcmUISiegeWar\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISplitItem\AgcmUISplitItem.h">
+      <Filter>AgcmUISplitItem\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIStatus\AgcmUIStatus.h">
+      <Filter>AgcmUIStatus\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISystemMessage\AgcdUISystemMessage.h">
+      <Filter>AgcmUISystemMessage\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISystemMessage\AgcmUISystemMessage.h">
+      <Filter>AgcmUISystemMessage\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUITips\AgcmUITips.h">
+      <Filter>AgcmUITips\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUITips\AgcTipWindow.h">
+      <Filter>AgcmUITips\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUVAnimation\AgcmUVAnimation.h">
+      <Filter>AgcmUVAnimation\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmWater\AgcmWater.h">
+      <Filter>AgcmWater\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmWorld\AgcmWorld.h">
+      <Filter>AgcmWorld\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmNatureEffect\AgcmNatureEffect.h">
+      <Filter>AgcmNatureEffect\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIHelp\AgcmUIHelp.h">
+      <Filter>AgcmUIHelp\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIWantedCriminal\AgcmUIWantedCriminal.h">
+      <Filter>AgcmUIWantedCriminal\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventSiegeWarNPC\AgcmEventSiegeWarNPC.h">
+      <Filter>AgcmEventSiegeWarNPC\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmSiegeWar\AgcmSiegeWar.h">
+      <Filter>AgcmSiegeWar\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIHotkey\AgcmUIHotkey.h">
+      <Filter>AgcmUIHotkey\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmStartupEncryption\AgcmStartupEncryption.h">
+      <Filter>AgcmStartupEncryption\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISearch\AgcmUISearch.h">
+      <Filter>AgcmUISearch\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUITax\AgcmUITax.h">
+      <Filter>AgcmUITax\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIGuildWarehouse\AgcmUIGuildWarehouse.h">
+      <Filter>AgcmUIGuildWarehouse\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmArchlord\AgcmArchlord.h">
+      <Filter>AgcmArchlord\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIArchlord\AgcmUIArchlord.h">
+      <Filter>AgcmUIArchlord\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISocialAction\AgcmSocialAction.h">
+      <Filter>AgcmUISocialAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISocialAction\AgcmUISocialAction.h">
+      <Filter>AgcmUISocialAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIMailBox\AgcmUIMailBox.h">
+      <Filter>AgcmUIMailBox\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmEventGacha\AgcmEventGacha.h">
+      <Filter>AgcmEventGacha</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUIEventGacha\AgcmUIEventGacha.h">
+      <Filter>AgcmUIEventGacha</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmBattleGround\AgcmBattleGround.h">
+      <Filter>AgcmBattleGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmLogin\AgcmLogin.h">
+      <Filter>AgcmLogin\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AcArchlordInfo.h">
+      <Filter>AgcmUILogin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AcUIEventButton.h">
+      <Filter>AgcmUILogin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSelect.h">
+      <Filter>AgcmUILogin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\ContainerUtil.h">
+      <Filter>AgcmUILogin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUIServerSelect.h">
+      <Filter>AgcmUILogin\AgcmUIServerSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUICharacterCreate.h">
+      <Filter>AgcmUILogin\AgcmUICharacterCreate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUICharacterSelect.h">
+      <Filter>AgcmUILogin\AgcmUICharacterSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlCamera.h">
+      <Filter>AgcmUILogin\AgcmUIController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlCharacter.h">
+      <Filter>AgcmUILogin\AgcmUIController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcuUIControlPostFX.h">
+      <Filter>AgcmUILogin\AgcmUIController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcuUILoadingWindow.h">
+      <Filter>AgcmUILogin\AgcmUIController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSetting.h">
+      <Filter>AgcmUILogin\AgcmUILoginSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSettingCamera.h">
+      <Filter>AgcmUILogin\AgcmUILoginSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILoginSettingCharacter.h">
+      <Filter>AgcmUILogin\AgcmUILoginSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUILogin.h">
+      <Filter>AgcmUILogin\AgcmUILogin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUILogin\AgcmUIAccountCheck.h">
+      <Filter>AgcmUILogin\AgcmUIAccountCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmTitle\AgcmTitle.h">
+      <Filter>AgcmTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkill2.h">
+      <Filter>AgcmUISkill2\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScion.h">
+      <Filter>AgcmUISkill2\DragonScionSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScionDef.h">
+      <Filter>AgcmUISkill2\DragonScionSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmHeroicSkill.h">
+      <Filter>AgcmUISkill2\HeroicSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmUISkill2\AgcmHeroicSkillDef.h">
+      <Filter>AgcmUISkill2\HeroicSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmRegistryManager\AgcmRegistryManager.h">
+      <Filter>AgcmRegistryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AClient\AgcmFPSManager\AgcmFPSManager.h">
+      <Filter>AgcmFPSManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Etc\AcuIMDraw\AgcuBasisGeo.inl">
+      <Filter>AcuIMDraw\헤더 파일</Filter>
+    </None>
+    <None Include="..\..\Modules\AClient\AgcmObject\AlefObjects.ini">
+      <Filter>AgcmObject</Filter>
+    </None>
+    <None Include="..\..\Modules\AClient\AgcmRender\release.mak">
+      <Filter>AgcmRender\RenderWare Makefiles</Filter>
+    </None>
+    <None Include="..\..\Modules\AClient\AgcmRender\standard.mak">
+      <Filter>AgcmRender\RenderWare Makefiles</Filter>
+    </None>
+    <None Include="..\..\Modules\AClient\AgcmUISkill2\AgcmUISkillDragonScion.inl">
+      <Filter>AgcmUISkill2\DragonScionSkill</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\ExpFogBackUp.vsh">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\shadow2.vsh">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain2_Linear.vsh">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain3_Linear.vsh">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain_Linear.vsh">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain_Linear_FadeOut.vsh">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Etc\AcuRpMTexture\Terrain_Linear_Rough.vsh">
+      <Filter>AcuRpMatD3DFx\AcuRpMatFxEx\AcuRpMTexture</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Modules\AClient\AgcmDynamicLightmap\lightmap.vsh">
+      <Filter>AgcmDynamicLightmap</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Modules\AClient\AgcmGlare\blurpshaderD3D9.psh">
+      <Filter>AgcmGlare</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Modules\AClient\AgcmGlare\blurvshaderD3D9.vsh">
+      <Filter>AgcmGlare</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Modules\AClient\AgcmRender\fadeD3D9.vsh">
+      <Filter>AgcmRender</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Modules\AClient\AgcSkeleton\Archrlod.ico">
+      <Filter>AgcSkeleton\리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Modules\AClient\AgcSkeleton\win.rc">
+      <Filter>AgcSkeleton\리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Modules\AClient\AgcmAdmin\AgcmAdmin.h">
+      <Filter>AgcmAdmin\헤더 파일</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

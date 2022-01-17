@@ -1,0 +1,697 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\AlefAdminDLL.rc2""  // Microsoft Visual C++에서 편집하지 않은 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "Comments", "만든이 : 김태희"
+            VALUE "CompanyName", "(주)NHN Games"
+            VALUE "FileDescription", "-_-"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AlefAdminDLL.dll"
+            VALUE "LegalCopyright", "(주)NHN Games.  All rights reserved."
+            VALUE "OriginalFilename", "AlefAdminDLL.dll"
+            VALUE "ProductName", "ArchLord Admin Client"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 551, 450
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "AlefAdminClient"
+MENU IDR_MENU_MAIN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CB_SEARCH_TYPE,2,1,68,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_SEARCH_FIELD,72,1,132,13,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Search",IDC_B_SEARCH,206,1,50,13
+    CONTROL         "",IDC_LC_SEARCH_RESULT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,2,16,546,75
+    CONTROL         "",IDC_TAB_MAIN,"SysTabControl32",0x0,2,94,546,276
+    CONTROL         "",IDC_TAB_MESSAGE,"SysTabControl32",0x0,2,371,546,70
+    RTEXT           "",IDC_S_CURRENT_USER,334,3,205,8
+    CONTROL         "Save me",IDC_CH_SOS,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,262,4,39,8
+END
+
+IDD_CHARACTER DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_CHAR,"SysTabControl32",0x0,274,6,181,272
+    CONTROL         "",IDC_S_CHAR_GRID_PLACE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,4,6,267,271
+END
+
+IDD_ITEM DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_CB_POS,4,6,89,129,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh",IDC_B_REFRESH,96,6,58,14
+    CONTROL         "",IDC_LC_ITEM,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,24,282,192
+    CONTROL         "",IDC_L_ITEM_CONVERT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,290,29,163,71
+    PUSHBUTTON      "Refresh",IDC_B_REFRESH_CONVERT,291,135,45,13
+    PUSHBUTTON      "Delete",IDC_B_DELETE,420,135,33,13
+    COMBOBOX        IDC_CB_CONVERT_PHYSICAL,290,102,47,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_CONVERT_SOCKET,337,102,45,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_CONVERT_SPIRIT_STONE,383,102,71,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_CONVERT_STONE,290,116,92,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Begin Upgrade",IDC_B_CONVERT,383,116,70,13
+    LISTBOX         IDC_L_OPTION_ADDED,290,164,71,54,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_L_OPTION_ALL,382,164,71,55,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_B_OPTION_ADD,363,174,18,14
+    PUSHBUTTON      ">>",IDC_B_OPTION_REMOVE,363,190,18,14
+    EDITTEXT        IDC_E_OPTION_DESC,290,219,163,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_CREATE_COUNT,100,245,25,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Create",IDC_B_CREATE,372,259,82,16,BS_MULTILINE
+    EDITTEXT        IDC_E_CREATE_TID,27,245,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Upgrade",IDC_STATIC,288,19,168,133
+    GROUPBOX        "Item Creation",IDC_STATIC,4,234,452,43
+    LTEXT           "Count :",IDC_S_CREATE_TID2,80,248,19,8
+    GROUPBOX        "Option",IDC_STATIC,288,154,168,80
+    LTEXT           "[Item Holder]",IDC_STATIC,175,8,44,8
+    LTEXT           "The character name will now be displayed.",IDC_S_ITEM_OWNER,223,8,227,8
+    LTEXT           "TID :",IDC_STATIC,9,248,16,9
+    COMBOBOX        IDC_CB_ITEM_LIST,9,260,117,88,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,128,240,1,36
+    CONTROL         "",IDC_CHK_USING,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,138,262,8,8
+    LTEXT           "In Use",IDC_STATIC,132,249,21,8
+    LTEXT           "Time Left :",IDC_S_REMAIN_TIME,158,248,32,8
+    EDITTEXT        IDC_E_R_TIME_DAY,193,246,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Day",IDC_S_R_TIME_DATE,221,248,8,8
+    EDITTEXT        IDC_E_R_TIME_HOUR,232,246,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Hour",IDC_S_R_TIME_HOUR,259,248,8,8
+    EDITTEXT        IDC_E_R_TIME_MIN,270,246,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Minute",IDC_S_R_TIME_MIN,298,248,8,8
+    EDITTEXT        IDC_E_R_TIME_SEC,307,246,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Second",IDC_S_R_TIME_SEC,335,248,8,8
+    COMBOBOX        IDC_CB_E_DATE_YEAR,193,261,28,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "/",IDC_STATIC,224,263,8,8
+    COMBOBOX        IDC_CB_E_DATE_MONTH,232,261,25,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "/",IDC_STATIC,262,263,8,8
+    COMBOBOX        IDC_CB_E_DATE_DAY,270,261,25,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_E_DATE_HOUR,307,261,25,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           ":",IDC_STATIC,335,263,8,8
+    COMBOBOX        IDC_CB_E_DATE_MIN,342,261,25,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Search",IDC_B_ITEM_SEARCH,54,245,24,13
+    COMBOBOX        IDC_CB_EXPIRE_DATE_DEFAULT,157,261,33,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_DELETE_REASON,337,135,83,54,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_CREATE_REASON,372,243,82,69,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,369,240,1,36
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,291,132,162,1
+    LTEXT           "Durability :",IDC_STATIC,5,219,27,8
+    EDITTEXT        IDC_E_DURABILITY,32,217,36,12,ES_AUTOHSCROLL
+    LTEXT           "/",IDC_STATIC,71,219,8,8
+    PUSHBUTTON      "Change",IDC_B_ITEM_UPDATE,115,217,24,13
+    EDITTEXT        IDC_E_MAX_DURABILITY,77,217,36,12,ES_AUTOHSCROLL
+END
+
+IDD_SKILL DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Skill Acquired",IDC_STATIC,4,2,223,257
+    GROUPBOX        "Skill List",IDC_STATIC,230,2,224,257
+    COMBOBOX        IDC_CB_SKILL_TYPE,153,13,60,95,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LV_OWN_SKILL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,29,216,210
+    COMBOBOX        IDC_CB_SKILL_CATEGORY,233,13,207,125,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LV_ALL_SKILL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,233,29,216,226
+    PUSHBUTTON      "Reset Everything",IDC_B_INIT_SKILL_ALL,177,263,41,15
+    PUSHBUTTON      "Reset Partialy",IDC_B_INIT_SKILL_SPECIFIC,220,263,41,15
+    PUSHBUTTON      "Level Up",IDC_B_LEVEL_UP,263,263,41,15
+    PUSHBUTTON      "Learn",IDC_B_LEARN,349,263,41,15
+    EDITTEXT        IDC_E_REMAIN_POINT,41,264,22,12,ES_AUTOHSCROLL
+    LTEXT           "Skill Point",IDC_STATIC,4,266,35,9
+    PUSHBUTTON      "Refresh",IDC_B_REFRESH,413,263,41,15
+    CONTROL         "",IDC_CK_OWN_SKILL_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,14,9,12
+    CONTROL         "",IDC_CK_ALL_SKILL_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,441,14,9,12
+    PUSHBUTTON      "Level Down",IDC_B_LEVEL_DOWN,306,263,41,15
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,67,262,1,18
+    EDITTEXT        IDC_E_PRODUCT_LEVEL,31,243,164,12,ES_AUTOHSCROLL
+    LTEXT           "Mastery Lv",IDC_STATIC,8,245,21,8
+    PUSHBUTTON      "Modify",IDC_B_PRODUCT_EXP_CHANGE,196,242,26,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,173,262,1,18
+    LTEXT           "",IDC_S_SKILL_CHARNAME,9,16,141,8
+END
+
+IDD_OPTION DIALOGEX 0, 0, 185, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,38,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,95,50,14
+    CONTROL         "",IDC_SL_ALPHA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,8,43,169,10
+    GROUPBOX        "Adjust Transparency",IDC_STATIC,3,2,179,55
+    CONTROL         "Adjusting Window Transparent.",IDC_CH_USE_LAYERED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,16,158,8
+    LTEXT           "70%",IDC_S_ALPHA,82,30,20,8
+    GROUPBOX        "Chatting",IDC_STATIC,3,61,179,31
+    CONTROL         "Save Whisper",IDC_CH_SAVE_WHISPER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,75,48,8
+END
+
+IDD_NOTICE DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_E_NOTICE,4,6,391,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_B_SEND,397,6,58,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,4,24,452,1
+    EDITTEXT        IDC_E_NOTICE_TEXT,4,30,391,247,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Play",IDC_B_PLAY,397,30,58,14
+    PUSHBUTTON      "Stop Temporarily",IDC_B_PAUSE,397,44,29,14
+    PUSHBUTTON      "Stop",IDC_B_STOP,426,44,29,14
+    PUSHBUTTON      "Help Text",IDC_B_HELP,397,70,58,14
+    PUSHBUTTON      "Save",IDC_B_SAVE,397,108,29,14
+    PUSHBUTTON      "Save as New",IDC_B_SAVE_AS,426,108,29,14
+    PUSHBUTTON      "Open",IDC_B_LOAD,397,122,29,14
+    LISTBOX         IDC_L_NOTICE,397,138,59,140,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_NOTICE_FILENAME,397,95,59,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Delete",IDC_B_DELETE,426,122,29,14
+END
+
+IDD_CHARMACRO DIALOGEX 0, 0, 171, 238
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    LISTBOX         IDC_L_MACRO,1,13,168,207,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Run Macro",IDC_B_RUN_MACRO,1,222,168,14
+    PUSHBUTTON      "L",IDC_B_LOAD,126,2,9,9
+    PUSHBUTTON      "+",IDC_B_ADD,136,2,9,9
+    PUSHBUTTON      "-",IDC_B_REMOVE,147,2,9,9
+    PUSHBUTTON      "S",IDC_B_SAVE,158,2,9,9
+    LTEXT           "Macro File Name",IDC_S_MACRO_FILENAME,2,2,123,8
+END
+
+IDD_GUILD DIALOGEX 0, 0, 458, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Guild Search",IDC_STATIC,4,4,224,26
+    GROUPBOX        "Server's Guild Information",IDC_STATIC,232,4,224,26
+    COMBOBOX        IDC_CB_GUILD_SEARCH_TYPE,7,14,71,64,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_GUILD_SEARCH_FIELD,78,13,114,14,ES_AUTOHSCROLL
+    LTEXT           "Total # of Guilds :",IDC_STATIC,235,17,37,9
+    LTEXT           "000000",IDC_S_GUILD_COUNT,275,17,22,9
+    LTEXT           "000000",IDC_S_GUILD_MEMBER_COUNT,393,17,21,9
+    PUSHBUTTON      "Refresh",IDC_B_GUILD_INFO_REFRESH,421,13,31,14
+    PUSHBUTTON      "Search",IDC_B_GUILD_SEARCH,193,13,31,14
+    GROUPBOX        "Guild Information",IDC_STATIC,4,34,452,245
+    EDITTEXT        IDC_E_GUILD_NOTICE,353,48,100,212,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "# of Characters Registered in Guild :",IDC_STATIC,310,17,80,9
+    CONTROL         "",IDC_LV_MEMBER,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,187,48,166,211
+    CONTROL         "",IDC_LV_GUILD,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,48,178,211
+    PUSHBUTTON      "Dissolve Guild",IDC_B_GUILD_DESTROY,142,261,43,15
+    PUSHBUTTON      "Kick User",IDC_B_MEMBER_FORCED_LEAVE,267,261,43,15
+    PUSHBUTTON      "Change Master",IDC_B_CHANGE_MASTER,310,261,43,15
+    PUSHBUTTON      "Change Notice",IDC_B_CHANGE_NOTICE,410,261,43,15
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 186, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ArchLord Admin Client"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,0,65,185,14
+    LTEXT           "ㅡㅡㅡㅡㅡㅡㅡ ㅠ ㅡㅡㅡㅡㅡㅡㅡ",IDC_STATIC,25,0,126,8
+    LTEXT           "Last Build Date : 2006-08-17",IDC_STATIC,2,40,180,8
+    LTEXT           "Produced By : Tai Hee, Kim",IDC_STATIC,2,11,180,8
+    LTEXT           "                        Archlord Server Programmer",IDC_STATIC,1,29,173,8
+    LTEXT           "",IDC_STATIC,2,51,180,8
+    LTEXT           "                        steeple@naver.com",IDC_STATIC,1,19,173,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 544
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 443
+    END
+
+    IDD_CHARACTER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 185
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_ITEM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 185
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_SKILL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 412
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_NOTICE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 185
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CHARMACRO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GUILD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 185
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Always Top(&T)",              ID_32771
+        MENUITEM "Exit(&X)",                    ID_32772
+    END
+    POPUP "Tool(&T)"
+    BEGIN
+        MENUITEM "Option(&O)",                  ID_OPTION
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "AlefAdminClient Information(&H)", IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ITEM DLGINIT
+BEGIN
+    IDC_CB_EXPIRE_DATE_DEFAULT, 0x403, 7, 0
+0xbec1, 0xe1b7, 0xcfc0, "\000" 
+    IDC_CB_EXPIRE_DATE_DEFAULT, 0x403, 7, 0
+0xe2b1, 0xbbba, 0xaab0, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_RESULT_1       "Changed the character's '%s' of '%s' to '%d'."
+    IDS_EDIT_RESULT_2       "Changed the character's '%s' of '%s' to '%.2f'."
+    IDS_EDIT_RESULT_3       "Changed the character's '%s' of '%s' to '%I64d'."
+    IDS_EDIT_RESULT_4       "Changed the character's '%s' of '%s' to  '%s'."
+    IDS_EDIT_RESULT_FAILURE "Failed to fix."
+    IDS_SKILL_LEARN_ALREADY "Character  '%s' has already acquired the '%s'  skill so it will now be upgraded."
+    IDS_SKILL_LEARN_SUCCESS "Character  '%s'  has acquired the  '%s'  skill."
+    IDS_SKILL_LEARN_FAILURE "Character  '%s'  can't acquired the  '%s'  skill."
+    IDS_SKILL_UPGRADE_FAILURE 
+                            "The skill level for'%s'  of character  '%s'  cannot be changed."
+    IDS_SKILL_UPGRADE_SUCCESS 
+                            "The skill level for  '%s'  of the character  '%s'  has been changed into '%d'."
+    IDS_ITEM_CREATE_SUCCESS "'%s' (%d) item(s) have been made."
+    IDS_ITEM_CREATE_FAILURE "Has failed to create '%s' item."
+    IDS_ITEM_CONVERT_SUCCESS_PHY 
+                            "Buffed the basic level of '%s' item to '%d' stage."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEM_CONVERT_SUCCESS_SOCKET 
+                            "The socket of '%s' item has been penetrated with '%d'."
+    IDS_ITEM_CONVERT_SUCCESS_STONE "Applied '%s' to '%s' item."
+    IDS_ITEM_CONVERT_FAILURE "Failed to upgrade '%s' item."
+    IDS_ITEM_DELETE_SUCCESS "Deleted '%s' item."
+    IDS_ITEM_DELETE_FAILURE "Failed to delete the item."
+    IDS_MAIN_CURRENT_USER   "Server : %s, The Current CCU : %d"
+    IDS_NOTICE_ASK_APPLY    "Do you want to apply the new changes?"
+    IDS_ITEM_OPTION_ADD_SUCCESS "Added option to the item."
+    IDS_ITEM_OPTION_REMOVE_SUCCESS "Took out the option from the item."
+    IDS_ITEM_CREATE_OWNER   "Do you want to insert '%s' item to '%s' character?  (If you choose No, the item will be added to your character)."
+    IDS_ITEM_CREATE_ACCNAME_CONFIRM 
+                            "Please double check that the '%s' character's account is '%s' again.  Is this correct?"
+    IDS_ITEM_CREATE_INVEN_FULL 
+                            "The inventory is full.  Cannot store any more items."
+    IDS_ITEM_DELETE_CONFIRM "Do you want to delete the item?"
+    IDS_ITEM_REFRESH        "To view the changes implemented, please click Refresh button."
+    IDS_EDIT_CONFIRM        "Do you want to make changes to the character information?"
+    IDS_EDIT_DB_CHAR        "You are trying to make changes to the offline character.  The data you can change are, Lv, XP, coordinates, and Inventory Gold."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_DB_REFRESH     "To see the results, please click the 'Refresh' button."
+    IDS_ITEM_CONVERT_CONFIRM "Do you want to upgrade the item?"
+    IDS_ITEM_CONVERT_WARNING 
+                            "Please be cautious when trying to upgrade item of the offline character.  Do you really wish to upgrade?"
+    IDS_ITEM_INIT_SOCKET    "The number of sockets cannot be reduced per stages, but will be reset.  Do you wish to continue?"
+    IDS_NOT_PRIVILEGE       "You do not have the permission to do this."
+    IDS_MAIN_SERVER         "Server : %s"
+    IDS_ITEM_INSERT_DELETE_REASON 
+                            "You have to state the reason for the deletion if the item that you're trying to delete is a cash item."
+    IDS_ITEM_INSERT_CREATE_REASON 
+                            "You have to state the reason for the item creation if the item that you're trying to create is a cash item."
+    IDS_GUILD_DESTROY_CONFIRM "Do you really wish to dissolve '%s' Guild?"
+    IDS_GUILD_LEAVE_ONLY_MEMBER 
+                            "This is only possible for the general guild members."
+    IDS_GUILD_MEMBER_FORCED_LEAVE 
+                            "Are you going to kick '%s' from '%s' guild?"
+    IDS_GUILD_CHANGE_MASTER "Are you going to change '%s' guild's guild master to '%s'?"
+    IDS_GUILD_CHANGE_MASTER_CONFIRM 
+                            "To change the guild master, all of the guild's members should be offline.  Are you ready?"
+    IDS_GUILD_CHANGE_NOTICE_CONFIRM 
+                            "Do you want to change the guild notice?  (The maximum characters for the notice is 80)."
+    IDS_ITEM_UPDATE_CONFIRM "Do you want to change the item attributes?"
+    IDS_LOGIN_TIME          "Login Time"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHARNAME            "Char Name"
+    IDS_ACCNAME             "Account"
+    IDS_RACE                "Race"
+    IDS_CLASS               "Class"
+    IDS_SERVER              "Server"
+    IDS_LEVEL               "Level"
+    IDS_GUILD_NOTICE_EXCEED_MAX_LENGTH 
+                            "Have exceeded the maximum notice length. (Upto 80 letters)"
+    IDS_EXP                 "XP"
+    IDS_CRIMINAL_STATUS     "Attack First Mode(AFM)"
+    IDS_MURDERER_POINT      "Villain Point"
+    IDS_RCF                 "Time Left for AFM"
+    IDS_RMF                 "Time Left for Villain Status"
+    IDS_CON                 "Stamina"
+    IDS_STR                 "Power"
+    IDS_INT                 "Knowledge"
+    IDS_WIS                 "Wisdom"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEX                 "Agillity"
+    IDS_CHA                 "Charisma"
+    IDS_NORMAL_ATTACK       "Attack"
+    IDS_DEFENSE             "Defense"
+    IDS_SKILL_BLOCK         "Skill Block"
+    IDS_PHYSICAL_RES        "Resistance"
+    IDS_AR                  "Attack Rate"
+    IDS_ADDITIONAL_AR       "Add. Accuracy Rate"
+    IDS_BLOCK               "Defense Rate"
+    IDS_EVADE               "Add. Dodge Rate"
+    IDS_ATTACK_SPEED        "Attack Speed"
+    IDS_MOVE_SPEED          "Movement Speed"
+    IDS_CHAR_CREATION_DATE  "Character Creation Date"
+    IDS_LAST_IP             "Last Accessed IP"
+    IDS_EDIT_EXP            "Please enter in %% unti you edit"
+    IDS_ATTACK_POWER        "Attack"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RES_POWER           "Resistance"
+    IDS_PLAY_TIME           "Play time"
+    IDS_POSITION            "Current Coordinates"
+    IDS_IP                  "Accessed IP"
+    IDS_GUILD_ID            "Guild Name"
+    IDS_INVENTORY           "Inventory"
+    IDS_BANK                "Storage"
+    IDS_DELETE_REASON       "Reason for the Delete"
+    IDS_DELETE_REPAY        "Refund"
+    IDS_CREATE_REASON       "Reason for the Creation"
+    IDS_CREATE_REWARD       "Reward"
+    IDS_ITEM_POS            "Location"
+    IDS_ITEM_NAME           "Name"
+    IDS_ITEM_COUNT          "Count"
+    IDS_ITEM_CONVERT        "Buff"
+    IDS_ITEM_SOCKET         "Socket"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEM_RANK           "Rank"
+    IDS_ITEM_USE            "In Use"
+    IDS_ITEM_REMAIN_TIME    "Time Left"
+    IDS_ITEM_EXPIRE_DATE    "End Date"
+    IDS_ITEM_USE_COUNT      "Number of times used"
+    IDS_ITEM_EQUIP          "Equip"
+    IDS_ITEM_INVENTORY      "Inventory"
+    IDS_ITEM_AUCTION        "Item Trade"
+    IDS_ITEM_CASH_INVEN     "Loney Inventory"
+    IDS_ITEM_SOCKETED_ITEM  "Buff Item"
+    IDS_ITEM_PHYSICAL_CONVERT "Physical Buff"
+    IDS_ITEM_SPIRIT_STONE   "Elemental Stone"
+    IDS_ITEM_RUNE           "Foundation Stone"
+    IDS_ITEM_SOLD_OUT       "Sold"
+    IDS_ITEM_PAUSED         "Stopped Temporarily"
+    IDS_TIME_DAY            "Day"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EQUIP_RIGHT_HAND    "Right Hand"
+    IDS_EQUIP_LEFT_HAND     "Left Hand"
+    IDS_EQUIP_HEAD          "Head"
+    IDS_EQUIP_CHEST         "Breastplate"
+    IDS_EQUIP_PANTS         "Trousers"
+    IDS_EQUIP_FEET          "Foot"
+    IDS_EQUIP_ARM           "Forearm"
+    IDS_EQUIP_NECKLACE      "Necklace"
+    IDS_EQUIP_RING          "Ring"
+    IDS_EQUIP_STANDARD      "Mount Weapons"
+    IDS_EQUIP_RIDE          "Mount"
+    IDS_SET_ON_INVENTORY    "Please place the item in the inventory first"
+    IDS_MAX_OPTION          "You can add upto '%d' options."
+    IDS_CANNOT_ADD_OPTION_TO_LOGOUT_USER 
+                            "You cannot add option to the items to the characters who are offline."
+    IDS_NOT_SELECTED_ITEM   "The item that option has to be added(or item that creates) has not been selected"
+    IDS_NOT_SUPPORTED_REMOVE_OPTION "Taking off options not supported."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_THIS_PLACE_NOTICE   "Notice is generated here."
+    IDS_COLUMN              "Item"
+    IDS_DATA                "Description"
+    IDS_GUILD_BASIC         "Basic Information"
+    IDS_GUILD_MASTER_ID     "Master ID"
+    IDS_GUILD_RANK          "Rank"
+    IDS_GUILD_CREATION_DATE "Create Date"
+    IDS_GUILD_PASSWORD      "Password"
+    IDS_GUILD_MEMBER_COUNT  "Number of Members"
+    IDS_GUILD_BATTLE        "Guild war"
+    IDS_GUILD_BATTLE_STATUS "Guild War Status"
+    IDS_GUILD_BATTLE_RECORD "Record"
+    IDS_GUILD_ENEMY_GUILD_ID "Enemy Guild Name"
+    IDS_GUILD_BATTLE_ACCEPT_TIME "Time Accepted"
+    IDS_GUILD_BATTLE_START_TIME "Start Time"
+    IDS_GUILD_BATTLE_DURATION "Time"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_BATTLE_SCORE  "Player Point"
+    IDS_GUILD_BATTLE_ENEMY_SCORE "Enemy Point"
+    IDS_GUILD_MASTER        "Master"
+    IDS_GUILD_MEMBER        "Guild Member"
+    IDS_GUILD_JOIN_REQUEST  "Waiting to Register"
+    IDS_GUILD_LEAVE_REQUEST "Waiting to Quit"
+    IDS_GUILD_LEAVE_MEMBER_SUCCESS "Guild Member was kicked from the guild."
+    IDS_GUILD_LEAVE_MEMBER_FAILED "Could not kick the guild member."
+    IDS_GUILD_DESTROY_SUCCESS "Have dissolved the guild."
+    IDS_GUILD_DESTROY_FAILED "Could not dissolve the guild."
+    IDS_GUILD_CHANGE_MASTER_SUCCESS "The guild master has been changed."
+    IDS_GUILD_CHANGE_MASTER_FAILED "Was unable to change the guild master."
+    IDS_GUILD_CHANGE_NOTICE_SUCCESS "Changed the guild notice."
+    IDS_GUILD_CHANGE_NOTICE_FAILED "Was unable to change the guild notice."
+    IDS_GUILD_BATTLE_STATUS_NONE "Normal Status"
+    IDS_GUILD_BATTLE_STATUS_READY "Waiting"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_BATTLE_STATUS_BATTLE "In Combat"
+    IDS_WHISPER             "Whisper"
+    IDS_SEARCH_CHARNAME     "Character Name"
+    IDS_SEARCH_ACCNAME      "Account Name"
+    IDS_LOGIN_STATUS        "Connection Status"
+    IDS_ONLINE              "Online"
+    IDS_OFFLINE             "Offline"
+    IDS_SKILL_NAME          "Skill Name"
+    IDS_BANK_ITEM_DELETE_CONFIRM 
+                            "When you delete any storage items, the relevant characters need to be offline.\nIf not, an unexpected error might occur."
+    IDS_BANK_ITEM_DELETE_CONFIRM2 
+                            "Deleting '%s' of the storage item.  Do you want to continue?"
+    IDS_SKILL_MASTERY_0     "Combat"
+    IDS_SKILL_MASTERY_1     "Buff"
+    IDS_SKILL_MASTERY_2     "Class"
+    IDS_SKILL_MASTERY_3     "Passive"
+    IDS_SKILL_PRODUCT       "Craft"
+    IDS_SKILL_NOT_ENOUGH_POINT "Not enough Skill Points"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DESC                "Description"
+    IDS_SKILL_CONFIRM_1     "Do you want to reset all of the skills that the character has?"
+    IDS_SKILL_CONFIRM_2     "Do you want to reset the selected skills?"
+    IDS_SKILL_CONFIRM_3     "Do you want to level up the selected skills?"
+    IDS_SKILL_CONFIRM_4     "Do you want to level down the selected skills?"
+    IDS_SKILL_CONFIRM_5     "Do you want to allow that character to learn the selected skills?"
+    IDS_SKILL_CONFIRM_6     "Do you want to make changes to the mastery lv of the selected crafting skills?"
+    IDS_SKILL_PRODUCT_COMPOSE "Produce"
+    IDS_SKILL_DISABLE_BY_ONLINE 
+                            "This cannot be done while the character is online."
+    IDS_SKILL_DISABLE_BY_COMPOSE "This cannot be done to the produce."
+    IDS_SKILL_EXP_ERROR     "Please enter as %% value from 0 to 100."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\AlefAdminDLL.rc2"  // Microsoft Visual C++에서 편집하지 않은 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

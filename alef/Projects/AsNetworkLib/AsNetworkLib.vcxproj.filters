@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ApIOCPDispatcher">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="ApIOCPDispatcher\소스 파일">
+      <UniqueIdentifier>{b660c501-3905-477a-859a-da36adeaaad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ApIOCPDispatcher\헤더 파일">
+      <UniqueIdentifier>{b68e352f-f14a-4faa-8a60-4cb6932b86c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsCommonLib">
+      <UniqueIdentifier>{8e3841a5-97e4-45a5-8b29-3e09f6fc3202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsCommonLib\소스 파일">
+      <UniqueIdentifier>{45ffd8d2-1f81-47ac-894e-af8be8116a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsCommonLib\헤더 파일">
+      <UniqueIdentifier>{ac448be2-5802-4d65-8dac-1e0d77d3b616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsDP8Client">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="AsDP8Client\소스 파일">
+      <UniqueIdentifier>{a93b7f2c-2f2b-4e7a-b1ff-0e5fd76480fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsDP8Client\헤더 파일">
+      <UniqueIdentifier>{7785dbcf-5392-4d4d-b177-de130b3bdd69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsIOCPServer">
+      <UniqueIdentifier>{086f56d8-d070-4106-80a5-1bae7f542636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsIOCPServer\소스 파일">
+      <UniqueIdentifier>{f74c73bd-01b3-4eff-9a6b-4f74154ecf4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsIOCPServer\헤더 파일">
+      <UniqueIdentifier>{155e7d9b-1a83-4ca9-a969-3e02b4652f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuService">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="AuService\소스 파일">
+      <UniqueIdentifier>{0693dfd1-714a-4331-9603-f4c7296e6c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AuService\헤더 파일">
+      <UniqueIdentifier>{5054cabb-68ce-4880-be2d-ceac44ebf5bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\APublic\ApIOCPDispatcher\ApIOCP.cpp">
+      <Filter>ApIOCPDispatcher\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\APublic\ApIOCPDispatcher\ApIOCPDispatcher.cpp">
+      <Filter>ApIOCPDispatcher\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsCommonLib\AsCommonLib.cpp">
+      <Filter>AsCommonLib\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsCommonLib\AsDebugOutput.cpp">
+      <Filter>AsCommonLib\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsCommonLib\AspActionValidCheck.cpp">
+      <Filter>AsCommonLib\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsDP8Client\AsDP8Client.cpp">
+      <Filter>AsDP8Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\ApFilterFunction.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsException.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsIOCPServer.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsListener.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsObject.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsServerSocket.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsServerSocketManager.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsTimer.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Server\AsIOCPServer\AsWSABufManager.cpp">
+      <Filter>AsIOCPServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuService\AuService.cpp">
+      <Filter>AuService\소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Modules\APublic\ApIOCPDispatcher\ApIOCP.h">
+      <Filter>ApIOCPDispatcher\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\APublic\ApIOCPDispatcher\ApIOCPDispatcher.h">
+      <Filter>ApIOCPDispatcher\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsCommonLib\AsCMDQueue.h">
+      <Filter>AsCommonLib\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsCommonLib\AsCommonLib.h">
+      <Filter>AsCommonLib\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsCommonLib\AsDebugOutput.h">
+      <Filter>AsCommonLib\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsCommonLib\AspActionValidCheck.h">
+      <Filter>AsCommonLib\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsDP8Client\AsDP8Client.h">
+      <Filter>AsDP8Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\ApFilterFunction.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsException.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsIOCPServer.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsListener.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsObject.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsServerSocket.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsServerSocketManager.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsTimer.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Server\AsIOCPServer\AsWSABufManager.h">
+      <Filter>AsIOCPServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Modules\AUtility\AuService\AuService.h">
+      <Filter>AuService\헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

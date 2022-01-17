@@ -1,0 +1,148 @@
+// Common resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(__XTPCOMMONRESOURCE_RC__)
+#define __XTPCOMMONRESOURCE_RC__
+
+#include "Common/Resource.h"
+#include "Common/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+
+XTP_IDR_MENU_HEADERFOOTER_FORMATS MENU DISCARDABLE 
+BEGIN
+    POPUP "HF"
+    BEGIN
+        MENUITEM "&&d   簡短日期樣式",    XTP_ID_HF_FORMAT_D1
+        MENUITEM "&&D   完整日期樣式",     XTP_ID_HF_FORMAT_D2
+        MENUITEM SEPARATOR
+        MENUITEM "&&t   時間",                 XTP_ID_HF_FORMAT_T1
+        MENUITEM "&&T   時間 (24 小時制)",       XTP_ID_HF_FORMAT_T2 
+        MENUITEM SEPARATOR
+        MENUITEM "&&p   頁碼",          XTP_ID_HF_FORMAT_P1
+        MENUITEM "&&P   頁數",      XTP_ID_HF_FORMAT_P2
+        MENUITEM SEPARATOR
+        MENUITEM "&&b   靠左對齊 &&b 置中對齊 &&b 靠右對齊", XTP_ID_HF_FORMAT_B
+        MENUITEM SEPARATOR
+        MENUITEM "&&w   視窗標題",         XTP_ID_HF_FORMAT_W
+        MENUITEM "&&&&  符號 (&&)",       XTP_ID_HF_FORMAT_UMP
+        MENUITEM "\\n   換行",             XTP_ID_HF_FORMAT_N
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 392, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "列印(P)...",AFX_ID_PREVIEW_PRINT,2,2,44,12,BS_FLAT
+    PUSHBUTTON      "下一頁",AFX_ID_PREVIEW_NEXT,48,2,44,12,BS_FLAT
+    PUSHBUTTON      "上一網頁",AFX_ID_PREVIEW_PREV,94,2,44,12,BS_FLAT
+    PUSHBUTTON      "",AFX_ID_PREVIEW_NUMPAGE,140,2,44,12,BS_FLAT
+    PUSHBUTTON      "拉近",AFX_ID_PREVIEW_ZOOMIN,186,2,44,12,BS_FLAT
+    PUSHBUTTON      "拉遠",AFX_ID_PREVIEW_ZOOMOUT,232,2,44,12,BS_FLAT
+    PUSHBUTTON      "關閉查詢",AFX_ID_PREVIEW_CLOSE,278,2,44,12,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ONEPAGE         "單頁"
+    XTP_IDS_TWOPAGE         "兩頁"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "靛藍"
+    XTP_IDS_CLR_GRAY80      "80% 灰度值"
+    XTP_IDS_CLR_DARK_RED    "深紅色"
+    XTP_IDS_CLR_ORANGE      "橙色"
+    XTP_IDS_CLR_DARK_YELLOW "深黃色"
+    XTP_IDS_CLR_GREEN       "綠色"
+    XTP_IDS_CLR_TEAL        "藍綠"
+    XTP_IDS_CLR_BLUE        "藍色"
+    XTP_IDS_CLR_BLUEGRAY    "藍灰色"
+    XTP_IDS_CLR_GRAY50      "灰 50%"
+    XTP_IDS_CLR_RED         "紅色"
+    XTP_IDS_CLR_LIGHTORANGE "淺橙"
+    XTP_IDS_CLR_LIME        "亮綠色"
+    XTP_IDS_CLR_SEA_GREEN   "海藻綠"
+    XTP_IDS_CLR_AQUA        "青色"
+    XTP_IDS_CLR_LIGHT_BLUE  "淺藍"
+    XTP_IDS_CLR_VIOLET      "紫蘿蘭色"
+    XTP_IDS_CLR_GRAY40      "40% 灰度值"
+    XTP_IDS_CLR_PINK        "粉紅色"
+    XTP_IDS_CLR_GOLD        "金色"
+    XTP_IDS_CLR_YELLOW      "黃色"
+    XTP_IDS_CLR_BRIGHT_GREEN "亮綠色"
+    XTP_IDS_CLR_TURQUOISE   "淺粉藍色"
+    XTP_IDS_CLR_SKY_BLUE    "天藍"
+    XTP_IDS_CLR_PLUM        "梅紅色"
+    XTP_IDS_CLR_GRAY25      "灰 25%"
+    XTP_IDS_CLR_ROSE        "玫瑰紅"
+    XTP_IDS_CLR_TAN         "深黃褐"
+    XTP_IDS_CLR_LIGHT_YELLOW "淺黃"
+    XTP_IDS_CLR_LIGHT_GREEN "淺綠"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "淺綠藍"
+    XTP_IDS_CLR_PALE_BLUE   "淡藍"
+    XTP_IDS_CLR_BLACK       "黑色"
+    XTP_IDS_CLR_BROWN       "褐色"
+    XTP_IDS_CLR_OLIVE_GREEN "橄欖綠"
+    XTP_IDS_CLR_DARK_GREEN  "深綠"
+    XTP_IDS_CLR_DARK_TEAL   "深藍綠"
+    XTP_IDS_CLR_DARK_BLUE   "深藍色"
+    XTP_IDS_CLR_LAVENDER    "淡紫"
+    XTP_IDS_CLR_WHITE       "白色"
+    XTP_IDS_CLR_GRAY        "灰色"
+    XTP_IDS_CLR_MAROON      "暗紅色"
+    XTP_IDS_CLR_OLIVE       "橄欖色"
+    XTP_IDS_CLR_NAVY        "漆濂懦"
+    XTP_IDS_CLR_PURPLE      "紫色"
+    XTP_IDS_CLR_SILVER      "銀色"
+    XTP_IDS_CLR_FUCHSIA     "桃紅"
+    XTP_IDS_CLR_NOFILL      "拸沓喃晇伎\n拸沓喃晇伎"
+    XTP_IDS_CLR_AUTOMATIC   "赻雄扢离晇伎\n赻雄扢离晇伎"
+    XTP_IDS_CLR_MORE        "其他色彩..."
+END
+
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#endif // __XTPCOMMONRESOURCE_RC___

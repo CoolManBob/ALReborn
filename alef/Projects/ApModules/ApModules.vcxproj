@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Chinese|Win32">
+      <Configuration>Debug Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Chinese|x64">
+      <Configuration>Debug Chinese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug EM64T|Win32">
+      <Configuration>Debug EM64T</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug EM64T|x64">
+      <Configuration>Debug EM64T</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug English|Win32">
+      <Configuration>Debug English</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug English|x64">
+      <Configuration>Debug English</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Japanese|Win32">
+      <Configuration>Debug Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Japanese|x64">
+      <Configuration>Debug Japanese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Chinese|Win32">
+      <Configuration>Release Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Chinese|x64">
+      <Configuration>Release Chinese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release EM64T Chinese|Win32">
+      <Configuration>Release EM64T Chinese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release EM64T Chinese|x64">
+      <Configuration>Release EM64T Chinese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release EM64T|Win32">
+      <Configuration>Release EM64T</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release EM64T|x64">
+      <Configuration>Release EM64T</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release English|Win32">
+      <Configuration>Release English</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release English|x64">
+      <Configuration>Release English</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese|Win32">
+      <Configuration>Release Japanese</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Japanese|x64">
+      <Configuration>Release Japanese</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MT|Win32">
+      <Configuration>Release MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MT|x64">
+      <Configuration>Release MT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{A5C4630C-E440-4767-87CC-6B53905D260E}</ProjectGuid>
+    <RootNamespace>ApModules</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release English|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release English|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.31919.74</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|Win32'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release English|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|x64'">
+    <OutDir>$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4091;4200</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4091;4200</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_AREA_CHINA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>AuDynCodeClientD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+      <AdditionalLibraryDirectories>D:\svn\source_repos\branches\releaseCHN\Alef\Lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_CHINA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release English|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_KOREA_;_MT_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_AREA_JAPAN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|Win32'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)RW\Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_AREA_JAPAN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;_AREA_KOREA_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_KOREA_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;_AREA_CHINA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_CHINA_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:EM64T %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release English|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_WESTERN_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:EM64T %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug English|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;_AREA_WESTERN_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:EM64T %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_CHINA_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;_AREA_JAPAN_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Release\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">
+    <PreBuildEvent>
+      <Message>헤더 파일들을 복사합니다...</Message>
+      <Command>rem IncrediBuild_AllowOverlap
+
+attrib -r ..\..\include\*.h
+
+dir /ad /b "..\..\Modules\APublic" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\APublic\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+dir /ad /b "..\..\Modules\AUtility" | find /v ".svn" &gt; subdir.txt
+for /F %25%25i in (subdir.txt) do copy "..\..\Modules\AUtility\%25%25i\*.h" "..\..\include"
+del subdir.txt
+
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\*.h" "..\..\include"
+copy "..\..\Modules\AUtility\AuCryptAlgorithm\AuDynCode\*.h" "..\..\include"
+
+del "..\..\include\stdafx.h"
+del "..\..\include\resource.h"
+
+attrib +r ..\..\include\*.h
+</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;_AREA_JAPAN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\Debug\$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Modules\APublic\ApAdmin\ApAdmin.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApAdmin\ApSet.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApBase\ApLockManager.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApBase\ApMemoryChecker.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApBase\ApMutualEx.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApBase\ApRWLock.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApBase\CSLog.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApBase\MagDebug.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApMemoryTracker\ApMemoryTracker.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApMemory\ApHeap.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApMemory\ApMemoryManager.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApModule\ApModule.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApModule\ApModuleManager.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApModule\ApModuleStream.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApServerMonitor\ApServerMonitor.cpp" />
+    <ClCompile Include="..\..\Modules\APublic\ApServerMonitor\ApServerMonitorPacket.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuConsole\AuConsole.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\AuBlowFish.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\AuMD5Mac.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\AuRijnDael.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\AuSeed.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuCrypt\AuCrypt.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuCrypt\AuCryptManager.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuEtcUtil\MemMappedFile.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuEtcUtil\StrUtil.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuExcelTxtLib\AuExcelBinaryLib.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuExcelTxtLib\AuExcelTxtLib.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuFileFind\AuFileFind.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuGameEnv\AuGameEnv.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuGameGuard\augameguard.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuGameGuard\AuNPGameLib.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuGenerateID\AuGenerateID.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuIgnoringHelper\AuIgnoringHelper.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuIniManager\AuIniManager.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuIPBlockingManager\AuIPBlockingManager.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuJapan\AuGameInfoJpn.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuJapan\AuJapaneseClientAuth.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuLocalize\AuRegionNameConver.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuLocalize\AuTranslateRegionName.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuLua\AuLua.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuMath\AuMath.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuMath\AuMathEx.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuMD5EnCrypt\AuMD5Encrypt.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuPacket\AuCircularBuffer.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuPacket\AuMiniLZO.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuPacket\AuPacket.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuPacket\minilzo.c" />
+    <ClCompile Include="..\..\Modules\AUtility\AuPackingManager\AuPackingManager.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuPatchCheckCode\AuPatchCheckCode.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuProcessManager\AuProcessManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug English|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release English|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release MT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuProcessManager\AuSingleProcessChecker.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug English|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release English|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release MT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Modules\AUtility\AuProfileManager\AuProfileManager.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuRandomNumberGenerator\AuRandomNumber.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuScriptEngine\AuAngelScriptEngine.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuScriptEngine\AuScriptEngine.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuScriptEngine\stdstring.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuStringConv\AuStringConv.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuStrTable\AuStrTable.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuTickCounter\AuTickCounter.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuTimeStamp\AuTimeStamp.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXCrashReport\ExceptionHandler.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXCrashReport\GetWinVer.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXCrashReport\MiniVersion.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXCrashReport\StackWalker.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\AuXmlParser.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinystr.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinyxml.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\ApErrorCode.h" />
+    <ClInclude Include="..\..\Include\ApPacket.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApAdmin\ApAdmin.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApAdmin\ApArray.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApAdmin\ApSet.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApAdmin\ApSort.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApBase.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApDefine.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApLockManager.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApMemoryChecker.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApMutualEx.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApRWLock.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApSafeArray.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApString.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApUtil.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\ApVector.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\AuEzSTL.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\CSLog.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\MagDebug.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApBase\NoMemoryChecker.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApMemoryTracker\ApCRTHeader.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApMemoryTracker\ApMemoryTracker.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApHeap.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApMemory.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApMemoryAllocator.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApMemoryManager.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApMemory\ApMemoryPool.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApModule\ApModule.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApModule\ApModuleManager.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApModule\ApModuleStream.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApServerMonitor\ApServerMonitor.h" />
+    <ClInclude Include="..\..\Modules\APublic\ApServerMonitor\ApServerMonitorPacket.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuConsole\AuConsole.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\AuBlowFish.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuCryptAlgorithm.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuCryptAlgorithmBase.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuMD5Mac\AuMD5Mac.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\AuRijnDael.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\AuSeed.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuCrypt\AuCrypt.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuCrypt\AuCryptManager.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuEtcUtil\MemMappedFile.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuEtcUtil\StrUtil.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuExcelTxtLib\AuExcelBinaryLib.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuExcelTxtLib\AuExcelTxtLib.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuFileFind\AuFileFind.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuGameEnv\AuGameEnv.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuGameGuard\AuGameGuard.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuGameGuard\AuNPGameLib.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuGenerateID\AuGenerateID.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuIgnoringHelper\AuIgnoringHelper.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuIniManager\AuIniManager.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuIPBlockingManager\AuIPBlockingManager.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\AuGameInfoJpn.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\AuJapaneseClientAuth.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\HanAuthForClient.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\HanBillingForSvr.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\HanGameInfoForClient.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuJapan\HanReportForClient.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuLocalize\AuRegionNameConvert.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuLocalize\AuTranslateRegionName.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuLua\AuLua.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuMath\AuMath.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuMath\AuMathEx.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuMD5EnCrypt\AuMD5Encrypt.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\AuCircularBuffer.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\AuMiniLZO.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\AuPacket.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\AuType.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\lzoconf.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuPacket\minilzo.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuPackingManager\AuPackingManager.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuPatchCheckCode\AuPatchCheckCode.h" />
+    <CustomBuild Include="..\..\Modules\AUtility\AuProcessManager\AuProcessManager.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug English|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release English|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release MT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Modules\AUtility\AuProcessManager\AuSingleProcessChecker.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug English|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Japanese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release EM64T Chinese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release EM64T|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release English|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release MT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\..\Modules\AUtility\AuProfileManager\AuProfileManager.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuRandomNumberGenerator\AuRandomNumber.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuScriptEngine\AuAngelScriptEngine.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuScriptEngine\AuScriptEngine.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuScriptEngine\stdstring.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuScriptEngine\stdvector.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuStringConv\AuStringConv.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuStrTable\AuStrTable.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuTickCounter\AuTickCounter.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuTimeStamp\AuTimeStamp.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\CrashFileNames.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\dbghelp.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\ExceptionHandler.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\GetWinVer.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\MiniVersion.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXCrashReport\StackWalker.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXmlParser\AuXmlParser.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinystr.h" />
+    <ClInclude Include="..\..\Modules\AUtility\AuXmlParser\TinyXml\tinyxml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuBlowFish\AuBlowFish.h2" />
+    <None Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuRijnDael\AuRijnDael.h2" />
+    <None Include="..\..\Modules\AUtility\AuCryptAlgorithm\AuSeed\AuSeed.h2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

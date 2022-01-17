@@ -1,0 +1,128 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "DialogDD"=".\Dialog\DialogDD.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name XListCtrlDD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DialogDS"=".\Dialog\DialogDS.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name XListCtrlDS
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DialogSS"=".\Dialog\DialogSS.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name XListCtrlSS
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MDI"=".\MDI\MDI.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name XListCtrlDD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PropertySheet"=".\PropertySheet\PropertySheet.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name XListCtrlDD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "XListCtrlDD"=".\XListCtrlLib\XListCtrlDD.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "XListCtrlDS"=".\XListCtrlLib\XListCtrlDS.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "XListCtrlSS"=".\XListCtrlLib\XListCtrlSS.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

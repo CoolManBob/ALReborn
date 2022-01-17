@@ -1,0 +1,307 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_BULGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Редактор на бутони"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Грефика",IDC_STATIC,7,7,86,8
+    GROUPBOX        "Цевтове",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Движение",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Преглед",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Инструменти",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "Да",IDOK,193,7,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Прозрачност",IDC_STATIC,135,156,42,8
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Tools",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Move",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Colors",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Клевиатура"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Категория:",IDC_STATIC,4,5,89,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,4,15,91,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Команди:",XTP_IDC_TXT_COMMANDS,4,28,89,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,4,38,91,77,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Клавиш:",XTP_IDC_TXT_ASSIGNMENTS,100,28,73,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,51,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Натиснете нов клавиш:",XTP_IDC_TXT_NEWKEY,100,93,100,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,103,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Приложи",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Махни",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Възстанови",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Описание:",XTP_IDC_TXT_DESC_TITLE,4,117,89,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,4,127,171,19,0,
+                    WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Ленти с бутони"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Ленти с бутони:",IDC_STATIC,4,5,148,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Нов(а)...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Преименувай...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "&Изтрий",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "Възстанови...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Опции"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Персонализирани менюта и ленти",XTP_IDC_GROUP_PERSONALIZED,4,5,222,8
+    CONTROL         "Показвай винаги пълно меню",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,216,10
+    CONTROL         "Показвай пълно меню след кратко забавяне",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,29,204,10
+    PUSHBUTTON      "Възстанови данните за ползвани меню и ленти",
+                    XTP_IDC_BUTTON_RESETDATA,10,42,188,14
+    LTEXT           "Други", XTP_IDC_GROUP_OTHER,4,70,222,8
+    CONTROL         "Големи икони",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,82,216,10
+    CONTROL         "Показвай обяснения в лентите",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,93,216,10
+    CONTROL         "Показвай бързи клавиши в обясненията",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,104,204,10
+    LTEXT           "Анимирани менюта:",IDC_STATIC,10,117,77,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,88,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Команди"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "За добавяне на команда към лента: изберете категория и изтеглете командана от диалоговия прозорец върху лентата.",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Категории:",IDC_STATIC,4,25,80,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,111,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Команди:",IDC_STATIC,90,25,134,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,135,111,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Менюта"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Менюта на програмата",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Контекстни менюта",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "Покажи меню:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Възстанови",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Меню по подразбиране\nМеню по подразбиране на програмата",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Избор на конт.маню:",IDC_STATIC,10,92,77,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,87,90,126,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Възстанови",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Нова лента с бутони"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Име на лентата:",IDC_STATIC,4,4,178,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Да",IDOK,78,34,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Промяна"
+    BEGIN
+        MENUITEM "Възстанови",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Изтрий",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Име:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Копирай графиката на бутона",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Постави графиката на бутона",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Възстанови графиката на бутона",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Редакция на графиката на бутона...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Промени графиката на бутона",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Стил по подразбиране",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Само текст",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Графиката и текст",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Начало на ова група",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "Затвори"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Промяна"
+    XTP_IDS_NEWMENU         "Ново меню"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Това ще изтрие записа на командите, които използвате и ще възстанови менютата и лентите с бутони по подразбиране.  Няма да бъдат изтрити никакви специфични промени.   Да продължа ли?"
+    XTP_IDS_INVALID_NUMBER  "Невалидно число."
+    XTP_IDS_INVALID_FONTSIZE "Числото трябва да е между 1 и 1638."
+    XTP_IDS_CONFIRM_RESET   "Да възстановя ли '%s' лента с бутони?"
+    XTP_IDS_BUILTINMENUS    "Втрадено меню"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Потребителски %d"
+    XTP_IDS_ERROR_BLANKNAME "Името на лентата не може да е празно. Моля въведете име."
+    XTP_IDS_ERROR_LIMIT     "Съжалявам но е достигнат лимита ви."
+    XTP_IDS_ERROR_EXISTS    "Лента с име '%s' вече съществува. Напишете друго име."
+    XTP_IDS_RENAMETOOLBAR   "Преименуване на лента"
+    XTP_IDS_CONFIRM_DELETE  "Да изтрия ли '%s' лента?"
+    XTP_IDS_ALLCOMMANDS     "Всички Команди"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "Промяна на вида на програмата, лентите и менютата.\nПромяна..."
+    XTP_ID_CUSTOMIZE_RESET  "\n&Възстанови лента"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\n&Добавяне или махане на бутони"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Да възстановя ли всички клавишни комбинации?  Това действие ще премахне потребителски зададените клавиши на текстово ниво."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "Този клавиш е прикачен.\nДа го променя ли?"
+    XTP_IDS_CONFIRM_UPDATE  "Поради подновяване на софтуерно обновяване лентата '%s' беше променена. Да възстановя ли лентата и да заредя новата?"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Всички графични файлове|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiles(*.Wmf;*.Emf)|*.wmf;*.emf|Icons(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Всички файлове(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nОпции на лентата с бутони"
+    XTP_ID_TOOLBAR_HIDE     "\nЗатвори"
+    XTP_ID_POPUPBAR_EXPAND  "\nРазшири"
+    XTP_ID_MENUBAR_CLOSE    "\nЗатвори прозореца"
+    XTP_ID_MENUBAR_RESTORE  "\nВъзстанови прозореца"
+    XTP_ID_MENUBAR_MINIMIZE "\nМинимизирай прозореца"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nМолив"
+    XTP_ID_BUTTON_FILL      "\nПълноцветен"
+    XTP_ID_BUTTON_GETCOLOR  "\nИзбор на цвят"
+    XTP_ID_BUTTON_LINE      "\nЛиния"
+    XTP_ID_BUTTON_RECTANGLE "\nПравоъгълник"
+    XTP_ID_BUTTON_CIRCLE    "\nЕлипса"
+    XTP_ID_BUTTON_COPY      "\nКопирай"
+    XTP_ID_BUTTON_PASTE     "\nВмъкни"
+    XTP_ID_BUTTON_CLEAR     "\nИзчисти"
+    XTP_ID_BUTTON_UNDO      "\nВърни"
+    XTP_ID_BUTTON_REDO      "\nПриложи пак"
+    XTP_ID_BUTTON_OPEN      "\nИмпорт от файл"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(по подразбиране на системата)"
+    XTP_IDS_ANIMATION_RANDOM "Случаен"
+    XTP_IDS_ANIMATION_UNFOLD "Развит"
+    XTP_IDS_ANIMATION_SLIDE "Слайд"
+    XTP_IDS_ANIMATION_FADE  "Избледняващ"
+    XTP_IDS_ANIMATION_NONE  "Нищо"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\nПремести в предната група"
+    XTP_ID_WORKSPACE_MOVENEXT "\nПремести в следващата група"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\nНова хоризонтална група"
+    XTP_ID_WORKSPACE_NEWVERTICAL "\nНова вертикална група"
+    XTP_ID_WORKSPACE_CANCEL "\nОтказ"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Активни файлове"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

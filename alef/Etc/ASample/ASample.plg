@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ASample - Win32 D3D8 Debug NoDPVS--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"ASample___Win32_D3D8_Debug_NoDPVS0/win.res" /i "share\win" /d "_DEBUG" "D:\Alef\etc\asample\share\win\win.rc"" 
+Creating temporary file "C:\DOCUME~1\정남영\LOCALS~1\Temp\RSP12E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "../../rwsdk/include/d3d8" /I "./src" /I "./src/win" /I "./share" /I "./share/win" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "RWLOGO" /D "RWDEBUG" /FR"ASample___Win32_D3D8_Debug_NoDPVS0/" /Fp"obj/d3d8d/template.pch" /YX /Fo"ASample___Win32_D3D8_Debug_NoDPVS0/" /Fd"ASample___Win32_D3D8_Debug_NoDPVS0/" /FD /GZ /c 
+"D:\Alef\etc\asample\share\win\win.cpp"
+"D:\Alef\etc\asample\share\mouse.cpp"
+"D:\Alef\etc\asample\share\skeleton.cpp"
+"D:\Alef\etc\asample\share\camera.cpp"
+"D:\Alef\etc\asample\share\menu.cpp"
+"D:\Alef\etc\asample\src\win\events.cpp"
+"D:\Alef\etc\asample\src\alcamera.cpp"
+"D:\Alef\etc\asample\src\alcharacter.cpp"
+"D:\Alef\etc\asample\src\alclump.cpp"
+"D:\Alef\etc\asample\src\alcollision.cpp"
+"D:\Alef\etc\asample\src\alhanim.cpp"
+"D:\Alef\etc\asample\src\allight.cpp"
+"D:\Alef\etc\asample\src\alpick.cpp"
+"D:\Alef\etc\asample\src\alshadow.cpp"
+"D:\Alef\etc\asample\src\alshadow2.cpp"
+"D:\Alef\etc\asample\src\alworld.cpp"
+"D:\Alef\etc\asample\src\ASample.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\정남영\LOCALS~1\Temp\RSP12E.tmp"" 
+Creating temporary file "C:\DOCUME~1\정남영\LOCALS~1\Temp\RSP12F.tmp" with contents
+[
+rtanim.lib rtpick.lib rpusrdat.lib rpskin.lib rtintsec.lib rpcollis.lib rtquat.lib rphanim.lib rtcharse.lib rtbmp.lib rtpng.lib rpworld.lib rwcore.lib rplogo.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"obj/d3d8d/template_d3d8d.pdb" /debug /machine:I386 /out:"./ASample_d3d8d.exe" /pdbtype:sept /libpath:"C:/RW/Graphics/rwsdk/lib/d3d8/debug" 
+.\ASample___Win32_D3D8_Debug_NoDPVS0\win.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\mouse.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\skeleton.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\camera.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\menu.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\events.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alcamera.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alcharacter.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alclump.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alcollision.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alhanim.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\allight.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alpick.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alshadow.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alshadow2.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\alworld.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\ASample.obj
+.\ASample___Win32_D3D8_Debug_NoDPVS0\win.res
+]
+Creating command line "link.exe @"C:\DOCUME~1\정남영\LOCALS~1\Temp\RSP12F.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+win.cpp
+d:\alef\etc\asample\share\win\win.cpp(38) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+mouse.cpp
+skeleton.cpp
+d:\alef\etc\asample\share\skeleton.cpp(26) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+camera.cpp
+d:\alef\etc\asample\share\camera.cpp(21) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+menu.cpp
+d:\alef\etc\asample\share\menu.cpp(22) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+events.cpp
+d:\alef\etc\asample\src\win\events.cpp(32) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alcamera.cpp
+d:\alef\etc\asample\share\camera.h(24) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alcharacter.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alclump.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alcollision.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alhanim.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+allight.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alpick.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alshadow.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alshadow2.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+alworld.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+ASample.cpp
+d:\alef\etc\asample\src\headers.h(1) : fatal error C1083: Cannot open include file: 'rwcore.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+ASample_d3d8d.exe - 16 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,15 @@
+MacroType=2
+MacroFunctionType=2
+MacroDescription=접속끊어버리기
+
+MacroType=1
+MacroCommand=/살려줘 
+MacroDescription=HP, MP 꽉 채우기
+
+Macrotype=2
+MacroFunctionType=3
+MacroDescription=배울 수 있는 모든 스킬 배우기
+
+Macrotype=2
+MacroFunctionType=4
+MacroDescription=업글할 수 있는 모든 스킬 업글

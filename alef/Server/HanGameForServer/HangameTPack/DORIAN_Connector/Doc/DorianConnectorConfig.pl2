@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<PORTE>
+	<module name="DORIAN">
+		<!-- Dorian connector config -->
+		<!-- Server IP max size: 16 bytes -->
+		<!-- Server port max size: 4 bytes -->
+		
+		<group name="CONNECTOR_INFO">
+			<property name="SERVER_IP" value="119.205.221.147"/>
+			<property name="SERVER_PORT" value="9090"/>
+			<property name="HEARTBEAT_CYCLE" value="60"/>
+			<property name="RECONNECT_CYCLE" value="60"/>
+			<property name="PL2RELOAD_CYCLE" value="10"/>
+			<property name="CHARGE_CYCLE" value="510"/>
+			<property name="USE_USER_NUMBER" value="false"/>
+		</group>
+		
+		<group name="BILLING_ID_INFO">
+			<property name="ID_COUNT" value="1"/>
+			<property_array name="1" size="3" value0="2" value1="정량제" value2="2"/>
+		</group>
+
+		<group name="SPECIFIC_EVENT_CODE_INFO">
+			<property name="EVENT_CODE_COUNT" value="999"/>
+		</group>
+		
+		<!-- Log config -->
+		<!-- Log4x config file name max size: 256 bytes -->
+		<!-- Log4x service name max size: 256 bytes -->
+		<!-- Log4x logger name max size: 256 bytes -->
+		
+		<group name="LOG4X_INFO">
+			<property name="LOG4X_CONFIG_FILE" value="DorianConnectorLog4X.xml"/>
+			<property name="LOG4X_SERVICE" value="DorianConnector"/>
+			<property name="LOG4X_LOGGER" value="AllLog"/>
+		</group>
+	</module>
+</porte>

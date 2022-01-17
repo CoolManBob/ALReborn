@@ -1,0 +1,265 @@
+//Microsoft Developer Studio generated resource script.
+//
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTFILE
+//
+
+EXTRALARGEROYALE_INI    TEXTFILE MOVEABLE PURE  "res\\Royale_ExtraLarge.ini"
+LARGEFONTSROYALE_INI    TEXTFILE MOVEABLE PURE  "res\\Royale_LargeFonts.ini"
+NORMALROYALE_INI        TEXTFILE MOVEABLE PURE  "res\\Royale_Normal.ini"
+THEMES_INI              TEXTFILE MOVEABLE PURE  "res\\Themes.ini"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+ROYALE_BUTTON_BMP       PNG  MOVEABLE PURE   "res\\Royale_button.png"
+ROYALE_CAPTIONBUTTON_BMP PNG  MOVEABLE PURE   "res\\Royale_CaptionButton.png"
+ROYALE_CHECKBOX13_BMP   PNG  MOVEABLE PURE   "res\\Royale_CheckBox13.png"
+ROYALE_CHECKBOX16_BMP   PNG  MOVEABLE PURE   "res\\Royale_CheckBox16.png"
+ROYALE_CHECKBOX25_BMP   PNG  MOVEABLE PURE   "res\\Royale_CheckBox25.png"
+ROYALE_CHEVRON_BMP      PNG  MOVEABLE PURE   "res\\Royale_Chevron.png"
+ROYALE_CLOSEBUTTON_BMP  PNG  MOVEABLE PURE   "res\\Royale_CloseButton.png"
+ROYALE_CLOSEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Royale_CloseGlyph19.png"
+ROYALE_CLOSEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Royale_CloseGlyph23.png"
+ROYALE_CLOSEGLYPH6_BMP  PNG  MOVEABLE PURE   "res\\Royale_CloseGlyph6.png"
+ROYALE_CLOSEGLYPH9_BMP  PNG  MOVEABLE PURE   "res\\Royale_CloseGlyph9.png"
+ROYALE_CLOSEGLYPH_BMP   PNG  MOVEABLE PURE   "res\\Royale_CloseGlyph.png"
+ROYALE_COMBOBUTTONGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_ComboButtonGlyph.png"
+ROYALE_COMBOBUTTON_BMP  PNG  MOVEABLE PURE   "res\\Royale_ComboButton.png"
+ROYALE_EXPLORERBARHEADERCLOSE_BMP PNG  MOVEABLE PURE   "res\\Royale_ExplorerBarHeaderClose.png"
+ROYALE_EXPLORERBARHEADERPIN_BMP PNG  MOVEABLE PURE   "res\\Royale_ExplorerBarHeaderPin.png"
+ROYALE_FIELDOUTLINEROYALE_BMP PNG  MOVEABLE PURE   "res\\Royale_FieldOutlineBlue.png"
+ROYALE_FRAMEBOTTOM_BMP  PNG  MOVEABLE PURE   "res\\Royale_frameBottom.png"
+ROYALE_FRAMECAPTIONMIN_BMP PNG  MOVEABLE PURE   "res\\Royale_FrameCaptionMin.png"
+ROYALE_FRAMECAPTIONSIZING_BMP PNG  MOVEABLE PURE   "res\\Royale_FrameCaptionSizing.png"
+ROYALE_FRAMECAPTION_BMP PNG  MOVEABLE PURE   "res\\Royale_FrameCaption.png"
+ROYALE_FRAMELEFT_BMP    PNG  MOVEABLE PURE   "res\\Royale_frameLeft.png"
+ROYALE_FRAMEMAXIMIZED_BMP PNG  MOVEABLE PURE   "res\\Royale_FrameMaximized.png"
+ROYALE_FRAMERIGHT_BMP   PNG  MOVEABLE PURE   "res\\Royale_frameRight.png"
+ROYALE_GRIPPERVERT_BMP  PNG  MOVEABLE PURE   "res\\Royale_GripperVert.png"
+ROYALE_GRIPPER_BMP      PNG  MOVEABLE PURE   "res\\Royale_Gripper.png"
+ROYALE_GROUPBOX_BMP     PNG  MOVEABLE PURE   "res\\Royale_GroupBox.png"
+ROYALE_HELPGLYPH19_BMP  PNG  MOVEABLE PURE   "res\\Royale_HelpGlyph19.png"
+ROYALE_HELPGLYPH23_BMP  PNG  MOVEABLE PURE   "res\\Royale_HelpGlyph23.png"
+ROYALE_HELPGLYPH6_BMP   PNG  MOVEABLE PURE   "res\\Royale_HelpGlyph6.png"
+ROYALE_HELPGLYPH9_BMP   PNG  MOVEABLE PURE   "res\\Royale_HelpGlyph9.png"
+ROYALE_HELPGLYPH_BMP    PNG  MOVEABLE PURE   "res\\Royale_HelpGlyph.png"
+ROYALE_LISTVIEWHEADERBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Royale_ListviewHeaderBackground.png"
+ROYALE_LISTVIEWHEADER_BMP PNG  MOVEABLE PURE   "res\\Royale_ListViewHeader.png"
+ROYALE_MAXIMIZEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Royale_MaximizeGlyph19.png"
+ROYALE_MAXIMIZEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Royale_MaximizeGlyph23.png"
+ROYALE_MAXIMIZEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Royale_MaximizeGlyph6.png"
+ROYALE_MAXIMIZEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Royale_MaximizeGlyph9.png"
+ROYALE_MAXIMIZEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_MaximizeGlyph.png"
+ROYALE_MDICAPTIONBUTTON_BMP PNG  MOVEABLE PURE   "res\\Royale_MDICaptionButton.png"
+ROYALE_MDIGLYPHCLOSE_BMP PNG  MOVEABLE PURE   "res\\Royale_MDIGlyphClose.png"
+ROYALE_MDIGLYPHMINIMIZE_BMP PNG  MOVEABLE PURE   "res\\Royale_MDIGlyphMinimize.png"
+ROYALE_MDIGLYPHRESTORE_BMP PNG  MOVEABLE PURE   "res\\Royale_MDIGlyphRestore.png"
+ROYALE_MINIMIZEGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Royale_MinimizeGlyph19.png"
+ROYALE_MINIMIZEGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Royale_MinimizeGlyph23.png"
+ROYALE_MINIMIZEGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Royale_MinimizeGlyph6.png"
+ROYALE_MINIMIZEGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Royale_MinimizeGlyph9.png"
+ROYALE_MINIMIZEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_MinimizeGlyph.png"
+ROYALE_NORMALGROUPBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Royale_NormalGroupBackground.png"
+ROYALE_NORMALGROUPCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Royale_NormalGroupCollapse.png"
+ROYALE_NORMALGROUPEXPAND_BMP PNG  MOVEABLE PURE   "res\\Royale_NormalGroupExpand.png"
+ROYALE_NORMALGROUPHEAD_BMP PNG  MOVEABLE PURE   "res\\Royale_NormalGroupHead.png"
+ROYALE_PLACEBARBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Royale_PlaceBarBackground.png"
+ROYALE_PLACEBARBUTTONS_BMP PNG  MOVEABLE PURE   "res\\Royale_PlaceBarButtons.png"
+ROYALE_PROGRESSCHUNKVERT_BMP PNG  MOVEABLE PURE   "res\\Royale_ProgressChunkVert.png"
+ROYALE_PROGRESSCHUNK_BMP PNG  MOVEABLE PURE   "res\\Royale_ProgressChunk.png"
+ROYALE_PROGRESSTRACKVERT_BMP PNG  MOVEABLE PURE   "res\\Royale_ProgressTrackVert.png"
+ROYALE_PROGRESSTRACK_BMP PNG  MOVEABLE PURE   "res\\Royale_ProgressTrack.png"
+ROYALE_RADIOBUTTON13_BMP PNG  MOVEABLE PURE   "res\\Royale_RadioButton13.png"
+ROYALE_RADIOBUTTON16_BMP PNG  MOVEABLE PURE   "res\\Royale_RadioButton16.png"
+ROYALE_RADIOBUTTON25_BMP PNG  MOVEABLE PURE   "res\\Royale_RadioButton25.png"
+ROYALE_RESIZEGRIP2_BMP  PNG  MOVEABLE PURE   "res\\Royale_ResizeGrip2.png"
+ROYALE_RESTOREGLYPH19_BMP PNG  MOVEABLE PURE   "res\\Royale_RestoreGlyph19.png"
+ROYALE_RESTOREGLYPH23_BMP PNG  MOVEABLE PURE   "res\\Royale_RestoreGlyph23.png"
+ROYALE_RESTOREGLYPH6_BMP PNG  MOVEABLE PURE   "res\\Royale_RestoreGlyph6.png"
+ROYALE_RESTOREGLYPH9_BMP PNG  MOVEABLE PURE   "res\\Royale_RestoreGlyph9.png"
+ROYALE_RESTOREGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_RestoreGlyph.png"
+ROYALE_SCROLLARROWGLYPHSSMALL_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollArrowGlyphsSmall.png"
+ROYALE_SCROLLARROWGLYPHS_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollArrowGlyphs.png"
+ROYALE_SCROLLARROWS_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollArrows.png"
+ROYALE_SCROLLSHAFTHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollShaftHorizontal.png"
+ROYALE_SCROLLSHAFTVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollShaftVertical.png"
+ROYALE_SCROLLTHUMBGRIPPERHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollThumbGripperHorizontal.png"
+ROYALE_SCROLLTHUMBGRIPPERVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollThumbGripperVertical.png"
+ROYALE_SCROLLTHUMBHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollThumbHorizontal.png"
+ROYALE_SCROLLTHUMBVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Royale_ScrollThumbVertical.png"
+ROYALE_SEPARATORVERT_BMP PNG  MOVEABLE PURE   "res\\Royale_SeparatorVert.png"
+ROYALE_SEPARATOR_BMP    PNG  MOVEABLE PURE   "res\\Royale_Separator.png"
+ROYALE_SLIDERTRACK_BMP  PNG  MOVEABLE PURE   "res\\Royale_sliderTrack.png"
+ROYALE_SMALLCLOSEBUTTON_BMP PNG  MOVEABLE PURE   "res\\Royale_SmallCloseButton.png"
+ROYALE_SMALLCLOSEGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_SmallCloseGlyph.png"
+ROYALE_SMALLFRAMECAPTIONSIZING_BMP PNG  MOVEABLE PURE   "res\\Royale_SmallFrameCaptionSizing.png"
+ROYALE_SMALLFRAMECAPTION_BMP PNG  MOVEABLE PURE   "res\\Royale_SmallFrameCaption.png"
+ROYALE_SPECIALGROUPBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Royale_SpecialGroupBackground.png"
+ROYALE_SPECIALGROUPCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Royale_SpecialGroupCollapse.png"
+ROYALE_SPECIALGROUPEXPAND_BMP PNG  MOVEABLE PURE   "res\\Royale_SpecialGroupExpand.png"
+ROYALE_SPECIALGROUPHEAD_BMP PNG  MOVEABLE PURE   "res\\Royale_SpecialGroupHead.png"
+ROYALE_SPINBUTTONBACKGROUNDDOWN_BMP PNG  MOVEABLE PURE   "res\\Royale_SpinButtonBackgroundDown.png"
+ROYALE_SPINBUTTONBACKGROUNDLEFT_BMP PNG  MOVEABLE PURE   "res\\Royale_SpinButtonBackgroundLeft.png"
+ROYALE_SPINBUTTONBACKGROUNDRIGHT_BMP PNG  MOVEABLE PURE   "res\\Royale_SpinButtonBackgroundRight.png"
+ROYALE_SPINBUTTONBACKGROUNDUP_BMP PNG  MOVEABLE PURE   "res\\Royale_SpinButtonBackgroundUp.png"
+ROYALE_SPINDOWNGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_SpinDownGlyph.png"
+ROYALE_SPINLEFTGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_SpinLeftGlyph.png"
+ROYALE_SPINRIGHTGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_SpinRightGlyph.png"
+ROYALE_SPINUPGLYPH_BMP  PNG  MOVEABLE PURE   "res\\Royale_SpinUpGlyph.png"
+ROYALE_STATUSBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Royale_StatusBackground.png"
+ROYALE_STATUSPANE_BMP   PNG  MOVEABLE PURE   "res\\Royale_StatusPane.png"
+ROYALE_TABBACKGROUND133_BMP PNG  MOVEABLE PURE   "res\\Royale_TabBackground133.png"
+ROYALE_TABBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Royale_TabBackground.png"
+ROYALE_TABITEMBOTH_BMP  PNG  MOVEABLE PURE   "res\\Royale_tabItemBoth.png"
+ROYALE_TABITEMLEFT_BMP  PNG  MOVEABLE PURE   "res\\Royale_tabItemLeft.png"
+ROYALE_TABITEMRIGHT_BMP PNG  MOVEABLE PURE   "res\\Royale_tabItemRight.png"
+ROYALE_TABITEMTOPBOTH_BMP PNG  MOVEABLE PURE   "res\\Royale_tabItemTopBoth.png"
+ROYALE_TABITEMTOPLEFT_BMP PNG  MOVEABLE PURE   "res\\Royale_tabItemTopLeft.png"
+ROYALE_TABITEMTOPRIGHT_BMP PNG  MOVEABLE PURE   "res\\Royale_tabItemTopRight.png"
+ROYALE_TABITEMTOP_BMP   PNG  MOVEABLE PURE   "res\\Royale_tabItemTop.png"
+ROYALE_TABITEM_BMP      PNG  MOVEABLE PURE   "res\\Royale_tabItem.png"
+ROYALE_TABPANEEDGE_BMP  PNG  MOVEABLE PURE   "res\\Royale_TabPaneEdge.png"
+ROYALE_TOOLBARBACKGROUND_BMP PNG  MOVEABLE PURE   "res\\Royale_ToolbarBackground.png"
+ROYALE_TOOLBARBUTTONSSPLITDROPDOWNGLYPH_BMP PNG  MOVEABLE PURE   "res\\Royale_ToolbarButtonsSplitDropdownGlyph.png"
+ROYALE_TOOLBARBUTTONSSPLITDROPDOWN_BMP PNG  MOVEABLE PURE   "res\\Royale_ToolbarButtonsSplitDropdown.png"
+ROYALE_TOOLBARBUTTONSSPLIT_BMP PNG  MOVEABLE PURE   "res\\Royale_ToolbarButtonsSplit.png"
+ROYALE_TOOLBARBUTTONS_BMP PNG  MOVEABLE PURE   "res\\Royale_ToolbarButtons.png"
+ROYALE_TOOLBARGRIPPERVERT_BMP PNG  MOVEABLE PURE   "res\\Royale_ToolbarGripperVert.png"
+ROYALE_TOOLBARGRIPPER_BMP PNG  MOVEABLE PURE   "res\\Royale_ToolbarGripper.png"
+ROYALE_TRACKBARDOWN13_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarDown13.png"
+ROYALE_TRACKBARDOWN16_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarDown16.png"
+ROYALE_TRACKBARDOWN25_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarDown25.png"
+ROYALE_TRACKBARHORIZONTAL_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackbarHorizontal.png"
+ROYALE_TRACKBARLEFT13_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarLeft13.png"
+ROYALE_TRACKBARLEFT16_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarLeft16.png"
+ROYALE_TRACKBARLEFT25_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarLeft25.png"
+ROYALE_TRACKBARRIGHT13_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackbarRight13.png"
+ROYALE_TRACKBARRIGHT16_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarRight16.png"
+ROYALE_TRACKBARRIGHT25_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarRight25.png"
+ROYALE_TRACKBARUP13_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarUp13.png"
+ROYALE_TRACKBARUP16_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarUp16.png"
+ROYALE_TRACKBARUP25_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackBarUp25.png"
+ROYALE_TRACKBARVERTICAL_BMP PNG  MOVEABLE PURE   "res\\Royale_TrackbarVertical.png"
+ROYALE_TREEEXPANDCOLLAPSE10_BMP PNG  MOVEABLE PURE   "res\\Royale_treeExpandCollapse10.png"
+ROYALE_TREEEXPANDCOLLAPSE15_BMP PNG  MOVEABLE PURE   "res\\Royale_treeExpandCollapse15.png"
+ROYALE_TREEEXPANDCOLLAPSE_BMP PNG  MOVEABLE PURE   "res\\Royale_treeExpandCollapse.png"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 11,1,3,0
+ PRODUCTVERSION 11,1,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "May 24, 2007\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Windows XP Royale Visual Style\0"
+            VALUE "FileVersion", "11, 1, 3, 0\0"
+            VALUE "InternalName", "WinXP.Royale.cjstyle\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WinXP.Royale.cjstyle\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Windows XP Royale Visual Style for Xtreme Skin Framework\0"
+            VALUE "ProductVersion", "11, 1, 3, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    5000                    "Windows XP Royale Style"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

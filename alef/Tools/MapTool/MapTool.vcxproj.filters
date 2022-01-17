@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{dddda180-b381-4518-85b4-9ae91a83f366}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{e316ba85-a57f-41c1-91a5-a81e154036f3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="EngineClass">
+      <UniqueIdentifier>{cfd8c4fb-4d6f-4aac-89cb-84ca8f71450d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow">
+      <UniqueIdentifier>{0a2e802d-4906-4e9a-93a4-99eb060a420c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{a319fac8-0d61-43f4-9b05-d97e0dd4f3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{f803ee58-cc46-4c79-9fdb-b9d01e4e186a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{571f7beb-c941-4c11-b4e8-4805d89016e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Undo">
+      <UniqueIdentifier>{6ba62b95-d096-496d-b6de-a67c944da337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{20c23443-a937-4274-8d7c-a92a9f8224ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BugSlayer">
+      <UniqueIdentifier>{e97357a9-77ba-4435-8311-5434ad6cfd0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIBLib">
+      <UniqueIdentifier>{335de699-407a-4e72-acb7-2a01c67e4486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dungeon">
+      <UniqueIdentifier>{72dab3ba-3dc0-4943-b36d-4511a1b528fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AmbOcclMap">
+      <UniqueIdentifier>{c06bc93e-2f05-4323-9386-3859893b6a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UTIL">
+      <UniqueIdentifier>{408f6470-8f7f-4ec9-9864-10490f2c0ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4624f0ad-79c3-4447-84d7-8a00142ec732}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AdjustHeightDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlefMapDocument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlefToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BobbyUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClipPlaneSetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertTextureDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DDSConvertDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventNatureChangeFilterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FindObjectSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GrassSetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyReferenceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapSelectStatic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NatureEffectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCNameDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectBrushSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PositionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RgbSelectStatic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMiniMapWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIOutputWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UITileList_MapTabWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UITileList_ObjectTabWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UITileList_TileTabWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UITileListWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterHeightDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEngine.cpp">
+      <Filter>EngineClass</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="HeightMap.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="AtomicFilterDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="EditConsoleDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="HSVControlStatic.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="MapSelectDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectDialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPropertiesDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionDialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PortionStatic.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PrelightAdjustDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RgbSelectDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RoughDisplayDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="RoughMapGenerateDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SectorCreateDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyTemplatePreviewDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyValueChangeDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SubDivisionDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="TileEditCategoryDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="TileNameEditDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="UITileList_EditTileDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="UndoManager.cpp">
+      <Filter>Undo</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_AmbOcclMap.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_BitmapExport.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_Blocking.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_BossSpawn.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_CameraWalk.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_GeometryEffect.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_Grass.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_LineBlock.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_LoadBlock.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_NatureEffect.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_NoLayer.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_NPC.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_PointLight.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_TextureInfo.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_Water.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="UITileList_Others.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="UITileList_PluginBase.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\BSUFunctions.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\CrashHandler.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\GetLoadedModules.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\IsNT.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\NT4ProcessInfo.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\PCH.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="BugSlay\TLHELPProcessInfo.cpp">
+      <Filter>BugSlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="DIBUTIL.cpp">
+      <Filter>DIBLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonTemplateEditDlg.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonToolBar.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonWnd.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="AmbOcclMap\AmbOcclMap.cpp">
+      <Filter>AmbOcclMap</Filter>
+    </ClCompile>
+    <ClCompile Include="AxisManager.cpp">
+      <Filter>UTIL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\alpha.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ambient.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\anim.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\background.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\backgroundforEvent.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Blocking_Plugin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\camera.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\clump.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\color.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\colortable.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\directional.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hsv_tabl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HSV_Table.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\MapTool.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\snapto.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\softspot.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Splash.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\spotlight.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\TOOLBAT_ICON_DOWN.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\TOOLBAT_ICON_UP.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\trash.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\world.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\zdolly.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\노멀셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\섭디비전셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\섭디비전언셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\알파셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\오브젝트셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\오브젝트언셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\지오메트리셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\지오메트리언셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\타일선택이미지.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\타일선택이미지2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\타일셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\타일언셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\타일창타일.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\타일카테고리셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\타일카테고리언셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\통짜셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\플로트셀렉트.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MapTool.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyEngine.h">
+      <Filter>EngineClass</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>MainWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="MapToolConst.h">
+      <Filter>MainWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="HeightMap.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="AtomicFilterDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="EditConsoleDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="HSVControlStatic.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="MapSelectDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPropertiesDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="PortionStatic.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="PrelightAdjustDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RgbSelectDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RoughDisplayDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="RoughMapGenerateDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SectorCreateDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyTemplatePreviewDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyValueChangeDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SubDivisionDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="TileEditCategoryDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="TileNameEditDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="UITileList_EditTileDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="UndoManager.h">
+      <Filter>Undo</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_AmbOcclMap.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_BitmapExport.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_Blocking.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_BossSpawn.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_CameraWalk.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_GeometryEffect.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_Grass.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_LineBlock.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_LoadBlock.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_NatureEffect.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_NoLayer.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_NPC.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_PointLight.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_TextureInfo.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_Water.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="UITileList_Others.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="UITileList_PluginBase.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\BugslayerUtil.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\CrashHandler.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\Internal.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\PCH.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\SymbolEngine.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\WarningsOff.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="BugSlay\WarningsOn.h">
+      <Filter>BugSlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DIBAPI.h">
+      <Filter>DIBLib</Filter>
+    </ClInclude>
+    <ClInclude Include="DIBUTIL.h">
+      <Filter>DIBLib</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonTemplateEditDlg.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonToolBar.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonWnd.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="AmbOcclMap\AmbOcclMap.h">
+      <Filter>AmbOcclMap</Filter>
+    </ClInclude>
+    <ClInclude Include="AxisManager.h">
+      <Filter>UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="AdjustHeightDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlefMapDocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlefToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BobbyUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClipPlaneSetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertTextureDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSConvertDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventNatureChangeFilterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FindObjectSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassSetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyReferenceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapSelectStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NatureEffectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCNameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBrushSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PositionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderWare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RgbSelectStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMiniMapWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIOutputWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UITileList_MapTabWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UITileList_ObjectTabWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UITileList_TileTabWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UITileListWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterHeightDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MapTool.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,307 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "עורך הלחצנים"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "תמונה",IDC_STATIC,223,7,23,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "צבעים",IDC_STATIC,71,106,80,71, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "העבר",IDC_STATIC,71,72,81,31, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "תצוגה מקדימה",IDC_STATIC,160,106,86,71, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "כלים",IDC_STATIC,71,9,81,60, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    DEFPUSHBUTTON   "אישור",IDOK,10,7,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "ביטול",IDCANCEL,10,25,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,160,17,86,80, WS_EX_RIGHT | WS_EX_RTLREADING
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,166,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_RIGHT | WS_EX_RTLREADING | WS_EX_STATICEDGE
+    LTEXT           "שקוף",IDC_STATIC,79,156,39,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "כלים",XTP_IDC_STATIC_TOOLS,81,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER, WS_EX_RIGHT | WS_EX_RTLREADING
+    CTEXT           "העבר",XTP_IDC_STATIC_MOVE,80,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "צבעים",XTP_IDC_STATIC_COLORS,78,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "לוח המקשים"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "קטגוריה:",IDC_STATIC,195,5,31,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,133,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "פקודות:",XTP_IDC_TXT_COMMANDS,188,28,38,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,135,38,91,77,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "הקצאות מקשים:",XTP_IDC_TXT_ASSIGNMENTS,64,28,67,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LBOX_KEYS,56,38,75,51,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "הקש מקש קיצור חדש:",XTP_IDC_TXT_NEWKEY,55,93,76,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,56,103,75,12,ES_AUTOHSCROLL, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "הקצה",XTP_IDC_BTN_ASSIGN,2,39,49,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "הסר",XTP_IDC_BTN_REMOVE,2,56,49,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "איפוס הכל",XTP_IDC_BTN_ACCEL_RESET,2,73,49,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "תיאור:",XTP_IDC_TXT_DESC_TITLE,188,117,38,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,53,127,171,19,0,
+                    WS_EX_RIGHT | WS_EX_RTLREADING | WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "סרגלי כלים"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "סרגלי כלים:",IDC_STATIC,183,5,43,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,76,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "חדש...",XTP_IDC_BUTTON_NEW,2,15,70,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "שינוי שם...",XTP_IDC_BUTTON_RENAME,2,33,70,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "מחיקה",XTP_IDC_BUTTON_DELETE,2,51,70,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "איפוס...",XTP_IDC_BUTTON_RESET,2,69,70,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "אפשרויות"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "תפריטים וסרגלי כלים מותאמים אישית",XTP_IDC_GROUP_PERSONALIZED,4,5,222,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "הצג תמיד תפריטים מלאים",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,17,216,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "הצג תפריטים מלאים לאחר השהיה קצרה",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,29,204,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "אפס נתוני שימוש בסרגלי כלים ובתפריטים",
+                    XTP_IDC_BUTTON_RESETDATA,60,42,160,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "אחר", XTP_IDC_GROUP_OTHER,4,70,222,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "סמלים גדולים",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,82,216,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "הצג תיאורי כלים בסרגלי כלים",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,93,216,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "הצג מקשי קיצור בתיאורי כלים",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,104,204,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "הנפשות תפריט:",IDC_STATIC,164,117,56,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,81,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "פקודות"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "להוספת פקודה לסרגל כלים: בחר קטגוריה וגרור את הפקודה מחוץ לתיבת דו-שיח זו אל סרגל כלים.",
+                    IDC_STATIC,6,5,220,19, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "קטגוריות:",IDC_STATIC,188,25,38,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,145,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "פקודות:",IDC_STATIC,102,25,38,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LIST_COMMANDS,4,35,136,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Menus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Application Menus",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Context Menus",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "&Show Menu:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Default menu\nDefault application menu",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Select &context menu:",IDC_STATIC,10,92,68,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,83,90,130,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "סרגל כלים חדש"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "שם סרגל הכלים:",IDC_STATIC,82,4,100,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL, WS_EX_RIGHT | WS_EX_RTLREADING
+    DEFPUSHBUTTON   "אישור",IDOK,58,34,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "ביטול",IDCANCEL,4,34,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "התאמה אישית"
+    BEGIN
+        MENUITEM "איפוס",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "מחיקה",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "שם:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "העתק תמונת פקד",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "הדבק תמונת פקד",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "אפס תמונת פקד",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "עריכת תמונת פקד...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "שנה תמונת פקד",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "סגנון ברירת מחדל",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "טקסט בלבד",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "תמונה וטקסט",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "התחל קבוצה",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "סגור "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "התאמה אישית"
+    XTP_IDS_NEWMENU         "תפריט חדש"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "פעולה זו תגרום למחיקת רשומת הפקודות בהן השתמשת ביישום זה ולשחזור קבוצת הפקודות הגלויות המשמשת כברירת מחדל בתפריטים ובסרגלי כלים. פעולה זו לא תבטל התאמות אישיות מפורשות. האם אתה בטוח שברצונך לבצע פעולה זו?"
+    XTP_IDS_INVALID_NUMBER  "מספר זה אינו מספר חוקי."
+    XTP_IDS_INVALID_FONTSIZE "‏‏המספר חייב להיות בין 1 ל- 1638."
+    XTP_IDS_CONFIRM_RESET   "האם אתה בטוח שברצונך לאפס את השינויים שבוצעו בסרגל הכלים '%s' סרגל כלים?"
+    XTP_IDS_BUILTINMENUS    "תפריטים מוכללים"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "התאמה אישית %d"
+    XTP_IDS_ERROR_BLANKNAME "שם סרגל הכלים אינו יכול להיות ריק. הקלד שם."
+    XTP_IDS_ERROR_LIMIT     "סליחה, הגעת אל הגבול שלך."
+    XTP_IDS_ERROR_EXISTS    "סרגל כלים בשם '%s' כבר קיים. הקלד שם אחר."
+    XTP_IDS_RENAMETOOLBAR   "שינוי שם סרגל כלים"
+    XTP_IDS_CONFIRM_DELETE  "האם אתה בטוח שברצונך למחוק את סרגל הכלים '%s'?"
+    XTP_IDS_ALLCOMMANDS     "כל הפקודות"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\nהתאמה אישית..."
+    XTP_ID_CUSTOMIZE_RESET  "\nאיפוס"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\nהוסף או הסר לחצנים"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "האם אתה בטוח שברצונך לאפס את הקצאות המקשים? פעולה זו תסיר את כל הקצאות המקשים המותאמות אישית."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "קיצור דרך זה מוקצה.\nהאם ברצונך להקצות מחדש קיצור דרך זה?"
+    XTP_IDS_CONFIRM_UPDATE  "בעיקבות עידכון התוכנה '%s' השתנה. האם ברצונך לאפס את השינויים ?"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "כל קבצי התמונה|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiles(*.Wmf;*.Emf)|*.wmf;*.emf|Icons(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|All Files(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nאפשרויות סרגל כלים"
+    XTP_ID_TOOLBAR_HIDE     "\nסגור"
+    XTP_ID_POPUPBAR_EXPAND  "\nExpand"
+    XTP_ID_MENUBAR_CLOSE    "\nסגור חלון"
+    XTP_ID_MENUBAR_RESTORE  "\nשחזר חלון"
+    XTP_ID_MENUBAR_MINIMIZE "\nמזער חלון"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nעיפרון"
+    XTP_ID_BUTTON_FILL      "\nצבע מילוי"
+    XTP_ID_BUTTON_GETCOLOR  "\nבחירת צבע"
+    XTP_ID_BUTTON_LINE      "\nקו"
+    XTP_ID_BUTTON_RECTANGLE "\nמלבן"
+    XTP_ID_BUTTON_CIRCLE    "\nאליפסה"
+    XTP_ID_BUTTON_COPY      "\nהעתק"
+    XTP_ID_BUTTON_PASTE     "\nהדבק"
+    XTP_ID_BUTTON_CLEAR     "\nנקה"
+    XTP_ID_BUTTON_UNDO      "\nבטל"
+    XTP_ID_BUTTON_REDO      "\nבצע שוב"
+    XTP_ID_BUTTON_OPEN      "\nייבוא מקובץ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(ברירת מחדל של המערכת)"
+    XTP_IDS_ANIMATION_RANDOM "אקראי"
+    XTP_IDS_ANIMATION_UNFOLD "חשיפה"
+    XTP_IDS_ANIMATION_SLIDE "גלישה"
+    XTP_IDS_ANIMATION_FADE  "מעומעם"
+    XTP_IDS_ANIMATION_NONE  "ללא"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\nלך אל לשונית קודמת"
+    XTP_ID_WORKSPACE_MOVENEXT "\nלך אל לשונית הבאה"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\nלשונית אנכית חדשה"
+    XTP_ID_WORKSPACE_NEWVERTICAL "\nלשונית אופקית חדשה"
+    XTP_ID_WORKSPACE_CANCEL "ביטול"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Active Files"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

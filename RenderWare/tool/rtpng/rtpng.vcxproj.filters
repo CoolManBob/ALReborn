@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{00432969-e1f0-4609-bb38-de1a0f136513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lpng">
+      <UniqueIdentifier>{aebdebc0-af6f-438d-8a1b-331a0f9d4413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lpng\Header Files">
+      <UniqueIdentifier>{064adb75-63bf-4186-ada5-b74bb5d7376a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lpng\Source Files">
+      <UniqueIdentifier>{2d885c4c-31a1-45dd-8c52-d3d31697844c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib\Header Files">
+      <UniqueIdentifier>{00df4aa7-a4f3-4127-ac84-170bbc2f12f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib\Source Files">
+      <UniqueIdentifier>{3325bb8e-f4d7-421a-b7a6-fa8c67701037}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lpng1012\png.h">
+      <Filter>lpng\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lpng1012\pngasmrd.h">
+      <Filter>lpng\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lpng1012\pngconf.h">
+      <Filter>lpng\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\deflate.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\infblock.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\infcodes.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\inffast.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\inffixed.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\inftrees.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\infutil.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\trees.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\zconf.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\zlib.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib113\zutil.h">
+      <Filter>zlib\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rpplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rtpng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lpng1012\png.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngerror.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pnggccrd.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngget.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngmem.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngpread.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngread.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngrio.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngrtran.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngrutil.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngset.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngtrans.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngvcrd.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngwio.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngwrite.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngwtran.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lpng1012\pngwutil.c">
+      <Filter>lpng\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\adler32.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\compress.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\crc32.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\deflate.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\gzio.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\infblock.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\infcodes.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\inffast.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\inflate.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\inftrees.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\infutil.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\trees.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\uncompr.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib113\zutil.c">
+      <Filter>zlib\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtpng.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

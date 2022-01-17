@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Log4XConfig xmlns="http://www.nhncorp.com/xgp/Log4XConfig.xsd">
+  <Log4X ServiceName="DorianConnector"/>
+
+  <!-- Logger information -->
+  <Loggers>
+    <Logger Name="AllLog" LogLevel="ALL"/>
+  </Loggers>
+
+  <!-- Appender information -->
+  <Appenders>
+    <Appender Name="File Appender" Type="Log4XBasic.DailyRollingFileAppender">
+      <AppenderParameter Name="LoggingDirectory" Value="DorianConnectorLog"/>
+      <AppenderParameter Name="Schedule" Value="Hourly"/>
+      <AppenderParameter Name="FileNamePrefix" Value="DorianConnector_"/>
+      <AppenderParameter Name="FileNamePostfix" Value=".log"/>
+      <AppenderParameter Name="ImmediateFlush" Value="true"/>
+      <AppenderParameter Name="Append" Value="true"/>
+    </Appender>
+  </Appenders>
+
+  <!-- Layout information -->
+  <Layouts>
+    <Layout Name="Basic Layout" Type="Log4XBasic.BasicLayout"/>
+  </Layouts>
+
+  <!-- Logger binding information -->
+  <LoggerBindings>
+    <LoggerBinding LoggerRef="AllLog">
+      <AppenderRef Name="File Appender"/>
+    </LoggerBinding>
+  </LoggerBindings>
+
+  <!-- Appender binding information -->
+  <AppenderBindings>
+    <AppenderBinding AppenderRef="File Appender">
+      <LayoutRef Name="Basic Layout"/>
+    </AppenderBinding>
+  </AppenderBindings>
+</Log4XConfig>

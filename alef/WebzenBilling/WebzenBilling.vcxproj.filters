@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="LibClientSession">
+      <UniqueIdentifier>{a77cd5d7-6347-41ba-970b-22867b860b96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebzenBilling">
+      <UniqueIdentifier>{ea119f88-1124-42e3-bf26-dc27b59c23a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebzenShop">
+      <UniqueIdentifier>{3d1babf5-80ab-4f45-ad6d-0e2f62528d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{95ebd854-4e25-4546-a17e-13726fbfbb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WebzenManager">
+      <UniqueIdentifier>{bc880d47-5019-4952-9e6f-f5d7f3a96502}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\LibClientSession\LibClientSession.cpp">
+      <Filter>LibClientSession</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\WebzenBilling\CWebzenBilling.cpp">
+      <Filter>WebzenBilling</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\WebzenShop\CWebzenShop.cpp">
+      <Filter>WebzenShop</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Utility\CWebzenUtility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CWebzenManager.cpp">
+      <Filter>WebzenManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\LibClientSession.h">
+      <Filter>LibClientSession</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CWebzenBilling.h">
+      <Filter>WebzenBilling</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CWebzenShop.h">
+      <Filter>WebzenShop</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CWebzenUtility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CWebzenManager.h">
+      <Filter>WebzenManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ContainerUtil.h" />
+  </ItemGroup>
+</Project>

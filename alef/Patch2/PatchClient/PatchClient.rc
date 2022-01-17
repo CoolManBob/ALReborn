@@ -1,0 +1,380 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PatchClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PatchClient.ico"
+IDI_ArchlordIcon        ICON                    "ArchLord.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PatchClient 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PatchClient 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PATCHCLIENT_DIALOG DIALOGEX 0, 0, 426, 423
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    CTEXT           "대기중...",IDC_Static_Status,19,248,225,10,NOT WS_GROUP,WS_EX_TRANSPARENT
+    CONTROL         "&Exit",IDC_EXitButton,"Button",BS_OWNERDRAW | WS_TABSTOP,125,73,48,14
+    CTEXT           "대기중...",IDC_Static_DetailInfo,19,208,225,10,NOT WS_GROUP,WS_EX_TRANSPARENT
+    CONTROL         "&Start Game",IDC_START_GAME,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,94,111,55,25
+    CONTROL         "Register",IDC_RegisterButton,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,126,91,50,14
+    CONTROL         "Option",IDC_OptionButton,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,73,75,50,14
+    CONTROL         "HomePage",IDC_HomepageButton,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,72,91,50,14
+    CTEXT           "0%",IDC_Static_Progress_Percent,117,225,25,8,0,WS_EX_TRANSPARENT
+    LTEXT           "|              |               |",IDC_LINE,146,43,78,8
+    LTEXT           "홈페이지",IDC_HOMEPAGE,129,7,28,8,NOT WS_VISIBLE
+    LTEXT           "드라이버",IDC_DRIVER,244,7,28,8,NOT WS_VISIBLE
+    LTEXT           "가입하기",IDC_JOIN,168,7,28,8,NOT WS_VISIBLE
+    LTEXT           "고객센터",IDC_CUSTOMER,204,7,28,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_BUTTON_MORE,"Button",BS_OWNERDRAW | WS_TABSTOP,286,178,15,7,WS_EX_TRANSPARENT
+END
+
+IDD_PATCHCLIENT_OPTION_DIALOG DIALOGEX 0, 0, 172, 325
+STYLE DS_SETFONT | WS_POPUP
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    CONTROL         "Save",IDC_Option_Button_Save,"Button",BS_OWNERDRAW | WS_TABSTOP,20,80,49,18
+    CONTROL         "Cancel",IDC_Option_Button_Cancel,"Button",BS_OWNERDRAW | WS_TABSTOP,75,80,50,20
+    COMBOBOX        IDC_Option_Combo_Resolution,75,10,50,65,CBS_DROPDOWNLIST | WS_VSCROLL
+    COMBOBOX        IDC_Option_Combo_Texture,75,25,50,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_OPTION_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS,15,107,136,12,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_Option_Combo_WindowedMode,75,39,50,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DRIVER_DOWN_DLG DIALOGEX 0, 0, 279, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "확인",IDC_BUTTON_DRIVER_OK,"Button",BS_OWNERDRAW | WS_TABSTOP,57,109,50,14
+    CONTROL         "취소",IDC_BUTTON_DRIVER_NO,"Button",BS_OWNERDRAW | WS_TABSTOP,123,110,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,15,135,249,13
+    CONTROL         "드라이버 자동업데이트 기능을 사용하지 않음",IDC_CHECK_DONOTUSECHECKDRIVER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,117,8,8,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,1,12
+ PRODUCTVERSION 2,0,1,12
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "FileDescription", "Archlord PatchClient"
+            VALUE "FileVersion", "2, 0, 1, 12"
+            VALUE "InternalName", "PatchClient"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "Archlord.exe"
+            VALUE "ProductName", "Archlord PatchClient"
+            VALUE "ProductVersion", "2, 0, 1, 12"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PATCHCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 415
+    END
+
+    IDD_PATCHCLIENT_OPTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 318
+    END
+
+    IDD_DRIVER_DOWN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_Button_Close_Set    BITMAP                  "BMPImages\\Button_Close_Set.bmp"
+IDB_Button_Option_Save_Set BITMAP                  "BMPImages\\Option\\Button_Save_Set.bmp"
+IDB_Button_Option_Cancel_Set BITMAP                  "BMPImages\\Option\\Button_Cancel_Set.bmp"
+IDB_Progress2           BITMAP                  "BMPImages\\progressbar_total.bmp"
+IDB_BUTTON_OPTION       BITMAP                  "BMPImages\\button_option.bmp"
+IDB_BUTTON_START        BITMAP                  "BMPImages\\button_start.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "PatchClient 정보(&A)..."
+    IDS_CONTINUE_DOWNLOAD   "기존에 받던 파일이 있습니다. 이어받기를 하시겠습니까?"
+    IDS_MSG_DOWNLOAD        "현재/전체:%d/%d   다운로드중... [%s]"
+    IDS_MSG_PROGRESS        "현재 다운로드중인 파일 진행률 [%.1f/%.1fMB]"
+    IDS_MSG_APPLY_FILE      "현재 적용중인 파일[%s]"
+    IDS_MSG_APPLY_PROGRESS  "현재/전체:%d/%d  패치적용중[%s]"
+    IDS_MSG_COMPLETE        "패치완료."
+    IDS_DISCONNECTED        "서버와의 접속이 끊겼습니다."
+    IDS_INSUFFICENT_DISK    "디스크 용량 부족!!\n 패치를 위해서는 %.2fMB 만큼의 여유 공간이 필요합니다."
+    IDS_RUN_AGAIN           "패치클라이언트를 다시 실행해주십시요."
+    IDS_ERROR_DNS           "DNS얻어오기에 실패했습니다. DNS설정을 바꾸어주십시요.\nDNS주소를 버그신고게시판에 신고해 주십시오."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_CONNECTION    "패치서버로 접속하지 못했습니다.\n아래의 사항을 체크하여주십시요.\n1. 패치 서버 점검중.\n2. 인터넷 연결\n3. 회사,학교,공공기관등의 장소에서는 방화벽에 의해 접속이\n불가능할 수도 있습니다. 네트웍관리자에게 문의하십시요."
+    IDS_RUN_GAME            "게임을 실행해 주십시오."
+    IDS_ERROR_FTP_CONNECTION "FTP서버로 접속하지 못했습니다."
+    IDS_ERROR_FTP_DISCONNECTED "FTP서버와의 접속이 끊겼습니다."
+    IDS_ERROR_FTP_OPEN      "FTP서버의 파일을 열지못했습니다.\nFTP서버에 너무나 많은 접속이 이루어진 상태입니다.\n잠시후 다시 시도해 주십시요."
+    IDS_ERROR_FTP_RECEIVE   "FTP서버로부터 파일을 받지못했습니다.\nFTP서버에 너무나 많은 접속이 이루어진 상태입니다.\n잠시후 다시 시도해 주십시요."
+    IDS_ERROR_FAILED        "패치 실패!"
+    IDS_ERROR_PATCH_CONNECTION "패치서버로 접속 할 수 없습니다."
+    IDS_ERROR_DIRECTX       "아크로드는 DirectX 9.0c 이상의 최신버전에서 실행이 가능합니다.\nMicrosoft 홈페이지 (http://www.microsoft.com/korea/directx/),\n인터넷의 공개자료실 등에서 구할 수 있습니다. 반드시 본인의 \n컴퓨터 OS 버전에 맞는 것을 설치하시기 바랍니다."
+    IDS_ERROR_RUN_CLIENT    "게임 클라이언트를 실행할 수 없습니다."
+    IDS_ERROR_SET_DIRECTORY "패치 다운로드 디렉토리세팅실패!!\n프로그램을 종료합니다."
+    IDS_ERROR_MAKE_PATCH_FOLDER "패치 폴더를 만들지 못했습니다."
+    IDS_MSG_JOIN            "가입하기"
+    IDS_MSG_OPTION          "실행옵션"
+    IDS_MSG_HOMEPAGE        "홈페이지"
+    IDS_MSG_START           "게임시작"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_NOTICE          "공지사항"
+    IDS_PATCH_INFO          "Update info"
+    IDS_PATCH_TOTAL         "Total now"
+    IDS_REAL_TITLE          "Archlord auto update"
+    IDS_TEST_TITLE          "Archlord Test auto update"
+    IDS_CHECK_VERSION       "패치 버전 확인중.........."
+    IDS_VERSION_ERROR       "패치버전 확인중 문제발생."
+    IDS_WIDTHSIZE           "593"
+    IDS_HEIGHTSIZE          "399"
+    IDS_PROGRESSBAR1X       "92"
+    IDS_PROGRESSBAR1Y       "546"
+    IDS_PROGRESSBAR2Y       "564"
+    IDS_PROGRESSMSG1X       "175"
+    IDS_PROGRESSMSG1Y       "546"
+    IDS_PROGRESSMSG2Y       "564"
+    IDS_PROGRESSMSGWIDTH    "338"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROGRESSBARWIDTH    "480"
+    IDS_PROGRESSBARHEIGHT   "10"
+    IDS_EXITBTNPOSX         "570"
+    IDS_EXITBTNPOSY         "2"
+    IDS_WINDOWED_MODE       "창 모드"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROGRESSMSGHEIGHT   "11"
+    IDS_STARTBTNPOSX        "591"
+    IDS_MSG_CONNECTING      "연결중...."
+    IDS_OPTIONTITLE         "실행옵션"
+    IDS_HIGH                "상"
+    IDS_MIDDLE              "중"
+    IDS_LOW                 "하"
+    IDS_STARTBTNPOSY        "540"
+    IDS_STARTBTNWIDTH       "104"
+    IDS_STARTBTNHEIGHT      "34"
+    IDS_OPTIONBTNPOSX       "687"
+    IDS_OPTIONBTNPOSY       "540"
+    IDS_OPTIONBTNWIDTH      "104"
+    IDS_OPTIONBTNHEIGHT     "26"
+    IDS_INTERFACE1          "스타일1"
+    IDS_INTERFACE2          "스타일2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPTIONTITLE2        "간편 옵션 설정"
+    IDS_OPTIONON            "켜기"
+    IDS_OPTIONOFF           "끄기"
+    IDS_SCREENSIZE          "화면 크기"
+    IDS_TETUREQUALITY       "텍스쳐 질감"
+    IDS_INTERFACESTYLE      "인터페이스 스타일"
+    IDS_QUICKOPTIONSPEED    "속도"
+    IDS_QUICKOPTIONQUALITY  "퀄리티"
+    IDS_USERSPEC            "유저사양"
+    IDS_RANGEFAR            "멀리"
+    IDS_RANGEMIDDLE         "보통"
+    IDS_RANGENEAR           "가까이"
+    IDS_CHARACTERRANGE      "캐릭터 시야범위"
+    IDS_MAPRANGE            "맵 시야범위"
+    IDS_NATUREOBJECT        "자연물 설정"
+    IDS_SPECIALEFFECT       "특수효과 설정"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHADOW              "그림자 설정"
+    IDS_WATEREFFECT         "물효과 설정"
+    IDS_SPECIALTEXTURE      "고급 텍스쳐"
+    IDS_GLOWEFFECT          "뽀샤시 효과"
+    IDS_AUTOEXPOSURE        "자동노출 보정"
+    IDS_IMPACTEFFECT        "임팩트 효과"
+    IDS_RANGEALL            "전체"
+    IDS_OPTIONDESC1         "간편 설정을 게임내 적용시키려면"
+    IDS_OPTIONDESC2         "슬라이드 바를 원하는 설정에 위치시키고"
+    IDS_OPTIONDESC3         "저장을 눌러주시기 바랍니다."
+    IDS_BROOMTYPE1          "타입1"
+    IDS_BROOMTYPE2          "타입2"
+    IDS_ERROR_DOWNLOAD      "파일 다운로드에 실패했습니다."
+    IDS_ERROR_CLIENTFILE_CURRUPTED "클라이언트 파일이 손상되어 게임을 시작할 수 없습니다."
+    IDS_NOTICE_DO_RESTART   "패치작업을 완료하기 위해 게임을 다시 실행해 주시기 바랍니다."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\PatchClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

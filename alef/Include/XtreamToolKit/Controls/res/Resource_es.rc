@@ -1,0 +1,258 @@
+// Controls resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Controls/Resource.h"
+#include "Controls/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) && !defined(_XTP_NO_STANDARDCONTROLS_RES)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sugerencia del día"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "Cierre",IDOK,221,136,50,14
+    CONTROL         "&Mostrar sugerencias al inicio",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,120,10
+    PUSHBUTTON      "Siguiente",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Personalizado"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Colores:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Matiz:",XT_IDC_TXT_HUE,7,108,19,8
+    EDITTEXT        XT_IDC_EDIT_HUE,28,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,52,105,
+                    10,14
+    LTEXT           "Sat.:",XT_IDC_TXT_SAT,7,125,18,8
+    EDITTEXT        XT_IDC_EDIT_SAT,28,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,52,122,
+                    10,14
+    LTEXT           "Lum.:",XT_IDC_TXT_LUM,7,140,18,8
+    EDITTEXT        XT_IDC_EDIT_LUM,28,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,52,137,
+                    10,14
+    LTEXT           "Rojo:",XT_IDC_TXT_RED,67,108,17,8
+    EDITTEXT        XT_IDC_EDIT_RED,89,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,105,
+                    11,14
+    LTEXT           "Verde:",XT_IDC_TXT_GREEN,67,125,21,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,89,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,122,
+                    11,14
+    LTEXT           "Azul:",XT_IDC_TXT_BLUE,67,140,16,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,89,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Estándar"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Colores:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Organizar ventanas"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Seleccione la &ventana:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Activar",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "Aceptar",IDOK,233,24,62,14
+    PUSHBUTTON      "Save",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "&Cerrar ventana",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "Cascada",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "Mosaico horizontal",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "Mosaico vertical",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "Minimizar",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Iconos pequeños",                XT_IDC_SMALLICON
+        MENUITEM "Iconos grandes",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Deshacer",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cortar",                        ID_EDIT_CUT
+        MENUITEM "Copiar",                       ID_EDIT_COPY
+        MENUITEM "Borrar hoja de datos",                      ID_EDIT_PASTE
+        MENUITEM "Eliminar celdas",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Seleccionar todo",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Orden ascendente",              XT_IDC_SORTASC
+        MENUITEM "Deshacer",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Alineación"
+        BEGIN
+            MENUITEM "Alinear a la izquierda",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Alinear verticalmente",                XT_IDC_ALIGNCENTER
+            MENUITEM "Alinear a la derecha",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Nuevo"
+    XT_IDC_BTN_DELETE       "Eliminar celdas"
+    XT_IDC_BTN_UP           "Subir"
+    XT_IDC_BTN_DOWN         "Bajar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Nombre"
+    XT_IDS_SIZE             "Ajustar tamaño"
+    XT_IDS_TYPE             "Tipo"
+    XT_IDS_MODIFIED         "Modificado"
+    XT_IDS_COLOR_AUTO       "Automáticamente"
+    XT_IDS_COLOR_CUST       "Personalizar..."
+    XT_IDS_SELDIR           "Elija un directorio:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Todos los archivos (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Nombre de directorio:"
+    XT_IDS_CLICKKEEPOPEN    "Para dejar abierta, use este icono"
+    XT_IDS_SE_0             "El sistema operativo no dispone de memoria o de recursos."
+    XT_IDS_SE_ERR_FNF       "No se encontró el archivo especificado."
+    XT_IDS_SE_ERR_PNF       "No se encontró la ruta especificada."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "El sistema operativo denegó el acceso al archivo especificado."
+    XT_IDS_SE_ERR_OOM       "No hay memoria suficiente para completar la operación."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "El archivo .exe no es válido (no es un .exe Win32® o error en la imagen .exe)."
+    XT_IDS_SE_ERR_SHARE     "Infracción de recurso compartido."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "La asociación de nombre de archivo es incompleta o no es válida."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "No se pudo completar la transacción DDE, la petición superó el tiempo de espera."
+    XT_IDS_SE_ERR_DDEFAIL   "Falló la transacción DDE."
+    XT_IDS_SE_ERR_DDEBUSY   "No se pudo completar la transacción DDE, se estaban procesando otras transacciones DDE."
+    XT_IDS_SE_ERR_NOASSOC   "No hay ninguna aplicación asociada a la extensión de nombre de archivo indicada."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "No se ha encontrado la biblioteca de vínculos dinámicos."
+    XT_IDS_SE_ERR_UNKOWN    "El número de error es desconocido %d."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Orden ascendente\nOrden ascendente"
+    XT_IDC_SORTDSC          "Orden descendente\nOrden descendente"
+    XT_IDC_ALIGNLEFT        "Alinea el párrafo con el margen izquierdo\nAlinear a la izquierda"
+    XT_IDC_ALIGNCENTER      "Centra el párrafo entre los márgenes\nCentrar"
+    XT_IDC_ALIGNRIGHT       "Alinea el párrafo con el margen derecho\nAlinear a la derecha"
+    XT_IDC_LARGEICON        "Muestra iconos grandes\nIconos grandes"
+    XT_IDC_SMALLICON        "Muestra iconos pequeños\nIconos pequeños"
+    XT_IDC_REMOVEITEM       "Quitar de la barra de Outlook"
+    XT_IDC_RENAMEITEM       "Cambiar nombre de acceso directo"
+    XT_IDC_REMOVEGROUP      "Quitar grupo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Cambiar nombre de grupo"
+    XT_IDS_HEX              "Hexadecimal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Colores estándar"
+    XT_IDS_TIPTEXT          "Texto de sugerencia"
+    XT_IDS_DIDYOUKNOW       "Sabía que..."
+    XT_IDS_FILE_ABSENT      "El archivo especificado no existe."
+    XT_IDS_FILE_CORRUPT     "Error al leer el archivo."
+    XT_IDS_COLOR_CAPTION    "Colores"
+    XT_IDS_NEW              "Nuevo"
+    XT_IDS_CURRENT          "Current"
+    XT_IDS_DIRECTORIES      "Directorios:"
+    XT_IDS_FILES            "Archivos:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_TASK_OK           "Aceptar"
+    XTP_IDS_TASK_YES          "Sí"
+    XTP_IDS_TASK_NO           "No"
+    XTP_IDS_TASK_RETRY        "Reintentar"
+    XTP_IDS_TASK_CANCEL       "Cancelar"
+    XTP_IDS_TASK_CLOSE        "Cerrar"
+    XTP_IDS_TASK_SEE_DETAILS  "Mostrar detalles"
+    XTP_IDS_TASK_HIDE_DETAILS "Ocultar detalles"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

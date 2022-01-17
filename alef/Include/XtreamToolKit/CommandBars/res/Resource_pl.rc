@@ -1,0 +1,307 @@
+// CommandBars resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2007 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "CommandBars/Resource.h"
+#include "CommandBars/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edytor przycisków"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Obraz",IDC_STATIC,7,7,86,8
+    GROUPBOX        "Kolory",IDC_STATIC,102,106,80,71
+    GROUPBOX        "przeniesienie",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Podgl¹d",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Narzêdzia",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Anuluj",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Przezroczysty",IDC_STATIC,135,156,44,8
+    LTEXT           "",XTP_IDC_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Narzêdzia",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "przeniesienie",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_IDC_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Kolory",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 240, 150
+ STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Klawiatura"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Kategoria:",IDC_STATIC,4,5,89,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,4,15,91,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Polecenia:",XTP_IDC_TXT_COMMANDS,4,28,89,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,4,38,91,77,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Przypisania klawiszy:",XTP_IDC_TXT_ASSIGNMENTS,100,28,73,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,51,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Naciœnij nowy klawisz skrótu:",XTP_IDC_TXT_NEWKEY,100,93,100,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,103,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Przypisz",XTP_IDC_BTN_ASSIGN,179,39,59,14
+    PUSHBUTTON      "Usuñ",XTP_IDC_BTN_REMOVE,179,56,59,14
+    PUSHBUTTON      "Resetuj wszystko",XTP_IDC_BTN_ACCEL_RESET,179,73,59,14
+    LTEXT           "Opis:",XTP_IDC_TXT_DESC_TITLE,4,117,89,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,4,127,171,19,0,
+                    WS_EX_STATICEDGE
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 240, 150
+ STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Paski narzêdzi"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Paski narzêdzi:",IDC_STATIC,4,5,148,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,158,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Nowy...",XTP_IDC_BUTTON_NEW,167,15,70,14
+    PUSHBUTTON      "Zmieñ nazwê...",XTP_IDC_BUTTON_RENAME,167,33,70,14
+    PUSHBUTTON      "Usuñ",XTP_IDC_BUTTON_DELETE,167,51,70,14
+    PUSHBUTTON      "Resetuj...",XTP_IDC_BUTTON_RESET,167,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 240, 150
+ STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Opcje"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Spersonalizowane menu i paski narzêdzi",XTP_IDC_GROUP_PERSONALIZED,4,5,232,8
+    CONTROL         "Zawsze pokazuj pe³ne menu",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,17,216,10
+    CONTROL         "Poka¿ pe³ne menu po krótkim opóŸnieniu",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,29,204,10
+    PUSHBUTTON      "Resetuj dane u¿ycia menu i paska narzêdzi",
+                    XTP_IDC_BUTTON_RESETDATA,10,42,147,14
+    LTEXT           "Inne", XTP_IDC_GROUP_OTHER,4,70,232,8
+    CONTROL         "Du¿e ikony",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,82,216,10
+    CONTROL         "Poka¿ etykietki na paskach narzêdzi",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,93,216,10
+    CONTROL         "Poka¿ klawisze skrótu w etykietkach",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,104,204,10
+    LTEXT           "Animacje menu:",IDC_STATIC,10,117,56,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,70,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 240, 150
+ STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Polecenia"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Aby dodaæ polecenie do paska narzêdzi: wybierz kategoriê i przeci¹gnij polecenie z okna dialogowego na pasek narzêdzi.",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Kategorie:",IDC_STATIC,4,25,80,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,111,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Polecenia:",IDC_STATIC,90,25,134,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,146,111,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_MENUS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "&Menus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Application Menus",XTP_IDC_STATIC_APPLICATIONMENUS,4,5,222,
+                    8
+    LTEXT           "Context Menus",XTP_IDC_STATIC_CONTEXTMENUS,4,80,222,8
+    LTEXT           "&Show Menu:",IDC_STATIC,10,20,44,11
+    COMBOBOX        XTP_IDC_COMBO_APPMENUS,54,18,159,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETAPP,10,57,70,14
+    LTEXT           "Default menu\nDefault application menu",XTP_IDC_STATIC_DESCRIPTION,37,34,181,18
+    ICON            0,XTP_IDC_STATIC_ICON,10,32,21,20
+    LTEXT           "Select &context menu:",IDC_STATIC,10,92,68,10
+    COMBOBOX        XTP_IDC_COMBO_CONTEXTMENUS,83,90,130,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Reset",XTP_IDC_BUTTON_RESETCONTEXT,10,108,70,14
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nowy pasek narzêdzi"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Nazwa paska narzêdzi:",IDC_STATIC,4,4,178,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Anuluj",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Dostosuj"
+    BEGIN
+        MENUITEM "Resetuj",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Usuñ",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Nazwa:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Kopiuj obrazek przycisku",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Wklej obrazek przycisku",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Przywróæ obrazek przycisku",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Edytuj obrazek przycisku...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Zmieñ obraz przycisku",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Styl domyœlny",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Tylko tekst",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Obraz i tekst",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Rozpocznij grupê",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE_CLOSE "Zamknij"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Dostosuj"
+    XTP_IDS_NEWMENU         "Nowe menu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Spowoduje to usuniêcie historii poleceñ u¿ywanych w tej aplikacji i przywrócenie domyœlnego zestawu widocznych poleceñ na menu i paskach narzêdzi. Nie spowoduje to cofniêcia ¿adnych jawnych ustawieñ niestandardowych. Czy na pewno chcesz kontynuowaæ?"
+    XTP_IDS_INVALID_NUMBER  "Nieprawid³owa liczba."
+    XTP_IDS_INVALID_FONTSIZE "Liczba musi siê zawieraæ pomiêdzy 1 a 1638."
+    XTP_IDS_CONFIRM_RESET   "Czy na pewno chcesz zresetowaæ zmiany wprowadzone w '%s' pasek narzedzi?"
+    XTP_IDS_BUILTINMENUS    "Menu wbudowane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Niestandardowe %d"
+    XTP_IDS_ERROR_BLANKNAME "Nazwa paska narzêdzi musi zawieraæ jakieœ znaki. Wpisz dowoln¹ nazwê."
+    XTP_IDS_ERROR_LIMIT     "Sorry you have reached your limit."
+    XTP_IDS_ERROR_EXISTS    "Pasek narzedzi o nazwie '%s' ju? istnieje. Podaj inn1 nazwe."
+    XTP_IDS_RENAMETOOLBAR   "Zmienianie nazwy paska narzêdzi"
+    XTP_IDS_CONFIRM_DELETE  "Czy na pewno chcesz usun1a pasek narzedzi o nazwie '%s'?"
+    XTP_IDS_ALLCOMMANDS     "Wszystkie polecenia"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\n&Dostosuj..."
+    XTP_ID_CUSTOMIZE_RESET  "\nResetuj"
+    XTP_ID_CUSTOMIZE_ADDORREMOVE "\nDodaj lub usuñ przyciski"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Are you sure you want to reset the key assignments?  This action will remove all custom key assignments at the text level."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Wszystkie pliki obrazów|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Mapy bitowe(*.Bmp;*.Dib)|*.bmp;*.dib|Metapliki(*.Wmf;*.Emf)|*.wmf;*.emf|Ikony(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Wszystkie pliki(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nOpcje paska narzedzi"
+    XTP_ID_TOOLBAR_HIDE     "\nZamknij"
+    XTP_ID_POPUPBAR_EXPAND  "\nExpand"
+    XTP_ID_MENUBAR_CLOSE    "\nZamknij okno"
+    XTP_ID_MENUBAR_RESTORE  "\nPrzywróa okno"
+    XTP_ID_MENUBAR_MINIMIZE "\nMinimalizuj okno"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nO³ówek"
+    XTP_ID_BUTTON_FILL      "\nKolor wype³nienia"
+    XTP_ID_BUTTON_GETCOLOR  "\nWybieranie koloru"
+    XTP_ID_BUTTON_LINE      "\nLinia"
+    XTP_ID_BUTTON_RECTANGLE "\nProstok¹t"
+    XTP_ID_BUTTON_CIRCLE    "\nElipsa"
+    XTP_ID_BUTTON_COPY      "\nKopiuj"
+    XTP_ID_BUTTON_PASTE     "\nWklej"
+    XTP_ID_BUTTON_CLEAR     "\nWyczyœæ"
+    XTP_ID_BUTTON_UNDO      "\nCofnij"
+    XTP_ID_BUTTON_REDO      "\nWykonaj ponownie"
+    XTP_ID_BUTTON_OPEN      "\nImportuj z pliku"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(domyœlne systemu)"
+    XTP_IDS_ANIMATION_RANDOM "Losowe"
+    XTP_IDS_ANIMATION_UNFOLD "Rozwiñ"
+    XTP_IDS_ANIMATION_SLIDE "Wysuwanie"
+    XTP_IDS_ANIMATION_FADE  "Zanikaj"
+    XTP_IDS_ANIMATION_NONE  "Brak"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSPACE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSPACE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSPACE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSPACE_NEWVERTICAL "\nNew &Vertical Tab Group"
+    XTP_ID_WORKSPACE_CANCEL "Anuluj"
+    XTP_IDS_TABNAVIGATEBUTTON_ACTIVEFILES "Active Files"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

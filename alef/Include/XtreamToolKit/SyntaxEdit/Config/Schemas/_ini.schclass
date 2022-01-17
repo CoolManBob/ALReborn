@@ -1,0 +1,121 @@
+//=======================================================================
+//================ Lex class support ====================================
+//=======================================================================
+//      lexClass:
+//              name            = c_INI
+//              parent          = c_INI
+//              parent:file = <*.INI>      
+//
+//              children                = 0
+//              children                = class1, class2, ...
+//
+//              previous:class                  =       
+//              previous:tag                    =       
+//              previous:tag:separators =       
+//
+//              start:class             = 
+//              start:Tag               = '"'
+//
+//              skip:Tag                = '\"'
+//
+//              end:class               = //
+//              end:Tag                 = '"'
+//              end:separators  = ' '
+//
+//              Token:tag               = 'if', 'for', 'while', 'do'
+//              Token:start:separators  = 
+//              Token:end:separators    = 
+//-----------------------------------------------------------------------
+//---------------- Attributes -------------------------------------------
+//-----------------------------------------------------------------------
+//      txt:colorFG     = 0xffc0c0 // color value in hex format. default: black 
+//      txt:colorBK     = 0xffc0c0 // color value in hex format. default: white         
+//
+//      txt:colorSelFG  = 0xffc0c0 // color value in hex format. default: white
+//      txt:colorSelBK  = 0xffc0c0 // color value in hex format. default: black
+//
+//      txt:Bold        = 1 // {1,0} default: 0
+//      txt:Italic      = 1 // {1,0} default: 0
+//      txt:Underline   = 1 // {1,0} default: 0
+//
+//      caseSensitive   = 1 // {1,0} default: 0
+//
+//      Collapsable     = 1 // {1,0} default: 0
+//      CollapsedText   = '/*...*/' // quoted string value. default: '[..]'     
+//
+//      ParseOnScreen   = 1 // {1,0} default: 0
+//      
+//-----------------------------------------------------------------------
+//* Global attributes ***************************************************
+//-----------------------------------------------------------------------
+//      global:FirstParseInSeparateThread       = 1             // {0,1} default=1
+//      global:EditReparceInSeparateThread      = 1             // {0,1} default=1
+//      global:ConfigChangedReparceInSeparateThread= 1 // {0,1} default=1
+//      global:EditReparceTimeout_ms    = 500           // default= 500 ms; time out for start reparse after last key was pressed.
+//      global:MaxBackParseOffset               = 100           // default= 100 chars; maximum back buffer size. Some times parser look back for the text from current position.
+//      global:OnScreenSchCacheLifeTime_sec = 180       // default= 180 sec; -1 and 0 means infinite; time out for on screen parsed pices of text. for memory using optimization.
+//      global:ParserThreadIdleLifeTime_sec = 60        // default=60 sec; -1 and 0 means infinite; time out for existing of parser thread when parser idle (no parse requests).
+        
+/////////////////////////////////////////////////////////////////////////
+
+//=======================================================================
+//================ Variables support ====================================
+//=======================================================================
+// NON operation - example:   @alpha:not
+//
+// @alpha       = a-z, A-Z
+// @digit       = 0-9
+// @HexDdigit   = 0-9, a-f, A-F
+// @specs       = "~`!@#$%^&*()_-+=\\|{}[];:'\",.<>/?"
+// @EOL         = End Of Line
+//---------------------------------------------
+// special tags:  '\\', '\'', '\t', '\r', '\n'
+/////////////////////////////////////////////////////////////////////////
+
+lexClass: 
+        name                    = c_INI 
+        parent:file             = <*.INI>  
+        caseSensitive           = 0
+
+
+lexClass:       
+        name            = c_INISection
+        parent          = c_INI
+        start:Tag       = '['
+        end:tag         = ']', @eol
+        txt:colorFG     = 0xAA00AA
+
+lexClass:
+        name            = c_INIidentifier
+        parent          = c_INI
+        previous:tag    = @eol, ' ', '\t'
+        start:Tag       = @alpha
+        skip:Tag        = @digit, '_'
+        end:separators  = @alpha:not
+        
+        txt:colorFG     = 0x0088AA
+
+lexClass:
+        name            = c_INIValue
+        parent          = c_INI
+        previous:tag    = '=' 
+        skip:Tag        = ' '
+        end:Tag         = @eol
+        txt:colorFG     = 0xAA11FF
+
+lexClass:
+        name            = c_INIString
+        parent          = c_INI
+        previous:tag    = '=', ' ', '\t', @eol
+        start:Tag       = '"'
+        end:Tag         = '"'
+        
+        txt:colorFG     = 0xAA1111
+
+lexClass:
+        name            = c_INIRemark
+        parent          = c_INI
+        start:Tag       = ';'
+        end:Tag         = @eol
+        txt:colorFG     = 0x008200 
+
