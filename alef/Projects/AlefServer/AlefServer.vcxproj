@@ -331,7 +331,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WIN32_WINNT=0x0500;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -518,8 +518,8 @@
       <Optimization>MaxSpeed</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)include\Billing\HannEver;$(SolutionDir)include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;_WIN64;NDEBUG;_CONSOLE;APMEMORY_CHECKER;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)Modules\AUtility;$(SolutionDir)include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;NDEBUG;_CONSOLE;APMEMORY_CHECKER;_AREA_GLOBAL_;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -769,7 +769,6 @@
     <ClCompile Include="..\..\Server\AlefServer\AuNProtect.cpp" />
     <ClCompile Include="..\..\Server\AlefServer\MemoryPoolStream.cpp" />
     <ClCompile Include="..\..\Server\AlefServer\ServerEngine.cpp" />
-    <ClCompile Include="..\..\Server\AlefServer\ServiceEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Server\AlefServer\MemoryPoolStream.h" />
@@ -779,14 +778,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AgsModules\AgsModules.vcxproj">
       <Project>{aea137c2-3eab-40c8-80b9-78fe659027b2}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\AuDynCode\AuDynCodeServer.vcxproj">
-      <Project>{7bac528b-a299-480a-a1b7-0bde98486478}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\HanGameForServer\HanGameForServer.vcxproj">
-      <Project>{5a50ddd0-2806-49e5-9186-50433a293d16}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

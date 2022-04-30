@@ -12,39 +12,7 @@
 
 #include "d3d10.h"
 
-///////////////////////////////////////////////////////////////////////////
-// ID3D10Blob:
-// ------------
-// The buffer object is used by D3D10 to return arbitrary size data.
-//
-// GetBufferPointer -
-//    Returns a pointer to the beginning of the buffer.
-//
-// GetBufferSize -
-//    Returns the size of the buffer, in bytes.
-///////////////////////////////////////////////////////////////////////////
-
-typedef interface ID3D10Blob ID3D10Blob;
-typedef interface ID3D10Blob *LPD3D10BLOB;
-
-// {8BA5FB08-5195-40e2-AC58-0D989C3A0102}
-DEFINE_GUID(IID_ID3D10Blob, 
-0x8ba5fb08, 0x5195, 0x40e2, 0xac, 0x58, 0xd, 0x98, 0x9c, 0x3a, 0x1, 0x2);
-
-#undef INTERFACE
-#define INTERFACE ID3D10Blob
-
-DECLARE_INTERFACE_(ID3D10Blob, IUnknown)
-{
-    // IUnknown
-    STDMETHOD(QueryInterface)(THIS_ REFIID iid, LPVOID *ppv) PURE;
-    STDMETHOD_(ULONG, AddRef)(THIS) PURE;
-    STDMETHOD_(ULONG, Release)(THIS) PURE;
-
-    // ID3D10Blob
-    STDMETHOD_(LPVOID, GetBufferPointer)(THIS) PURE;
-    STDMETHOD_(SIZE_T, GetBufferSize)(THIS) PURE;
-};
+// ID3D10Blob has been made version-neutral and moved to d3dcommon.h.
 
 #ifdef __cplusplus
 extern "C" {

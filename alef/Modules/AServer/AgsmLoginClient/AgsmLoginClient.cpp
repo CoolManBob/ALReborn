@@ -563,13 +563,13 @@ BOOL AgsmLoginClient::ProcessSignOn(CHAR *pszAccount, INT8 cAccountLen, CHAR *ps
 			_TRUNCATE );
 	}
 #elif _AREA_GLOBAL_
-	if(AP_SERVICE_AREA_GLOBAL == g_eServiceArea && pszExtraForForeign != NULL)
+	/*if (AP_SERVICE_AREA_GLOBAL == g_eServiceArea && pszExtraForForeign != NULL)
 	{
 		strncpy_s( pAgsmLoginQueueInfo->m_szGBAuthString,
 		sizeof(pAgsmLoginQueueInfo->m_szGBAuthString),
 		pszExtraForForeign,
 		_TRUNCATE );
-	}
+	}*/
 
 #endif
 

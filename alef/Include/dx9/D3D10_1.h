@@ -4,14 +4,6 @@
 
 
  /* File created by MIDL compiler version 7.00.0555 */
-/* Compiler settings for d3d10_1.idl:
-    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 7.00.0555 
-    protocol : all , ms_ext, c_ext, robust
-    error checks: allocation ref bounds_check enum stub_data 
-    VC __declspec() decoration level: 
-         __declspec(uuid()), __declspec(selectany), __declspec(novtable)
-         DECLSPEC_UUID(), MIDL_INTERFACE()
-*/
 /* @@MIDL_FILE_HEADING(  ) */
 
 #pragma warning( disable: 4049 )  /* more than 64k source lines */
@@ -304,20 +296,7 @@ typedef struct D3D10_TEXCUBE_ARRAY_SRV1
     UINT NumCubes;
     } 	D3D10_TEXCUBE_ARRAY_SRV1;
 
-typedef 
-enum D3D10_SRV_DIMENSION1
-    {	D3D10_1_SRV_DIMENSION_UNKNOWN	= 0,
-	D3D10_1_SRV_DIMENSION_BUFFER	= 1,
-	D3D10_1_SRV_DIMENSION_TEXTURE1D	= 2,
-	D3D10_1_SRV_DIMENSION_TEXTURE1DARRAY	= 3,
-	D3D10_1_SRV_DIMENSION_TEXTURE2D	= 4,
-	D3D10_1_SRV_DIMENSION_TEXTURE2DARRAY	= 5,
-	D3D10_1_SRV_DIMENSION_TEXTURE2DMS	= 6,
-	D3D10_1_SRV_DIMENSION_TEXTURE2DMSARRAY	= 7,
-	D3D10_1_SRV_DIMENSION_TEXTURE3D	= 8,
-	D3D10_1_SRV_DIMENSION_TEXTURECUBE	= 9,
-	D3D10_1_SRV_DIMENSION_TEXTURECUBEARRAY	= 10
-    } 	D3D10_SRV_DIMENSION1;
+typedef D3D_SRV_DIMENSION D3D10_SRV_DIMENSION1;
 
 typedef struct D3D10_SHADER_RESOURCE_VIEW_DESC1
     {

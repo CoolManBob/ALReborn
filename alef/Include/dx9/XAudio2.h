@@ -40,9 +40,16 @@
 //DEFINE_CLSID(XAudio2_Debug, 4256535c, 1ea4, 4d4b, 8a, d5, f9, db, 76, 2e, ca, 9e);
 
 // XAudio 2.5 (August 2009 SDK)
-DEFINE_CLSID(XAudio2, 4c9b6dde, 6809, 46e6, a2, 78, 9b, 6a, 97, 58, 86, 70);
-DEFINE_CLSID(XAudio2_Debug, 715bdd1a, aa82, 436b, b0, fa, 6a, ce, a3, 9b, d0, a1);
+//DEFINE_CLSID(XAudio2, 4c9b6dde, 6809, 46e6, a2, 78, 9b, 6a, 97, 58, 86, 70);
+//DEFINE_CLSID(XAudio2_Debug, 715bdd1a, aa82, 436b, b0, fa, 6a, ce, a3, 9b, d0, a1);
 
+// XAudio 2.6 (February 2010 SDK)
+//DEFINE_CLSID(XAudio2, 3eda9b49, 2085, 498b, 9b, b2, 39, a6, 77, 84, 93, de);
+//DEFINE_CLSID(XAudio2_Debug, 47199894, 7cc2, 444d, 98, 73, ce, d2, 56, 2c, c6, 0e);
+
+// XAudio 2.7 (June 2010 SDK)
+DEFINE_CLSID(XAudio2, 5a508685, a254, 4fba, 9b, 82, 9a, 24, b0, 03, 06, af);
+DEFINE_CLSID(XAudio2_Debug, db05ea35, 0329, 4d4b, a5, 3a, 6d, ea, d0, 3d, 38, 52);
 DEFINE_IID(IXAudio2, 8bcf1f58, 9fe7, 4583, 8a, c6, e2, ad, c4, 65, c8, bb);
 
 
@@ -298,7 +305,7 @@ typedef struct XAUDIO2_BUFFER
 {
     UINT32 Flags;                       // Either 0 or XAUDIO2_END_OF_STREAM.
     UINT32 AudioBytes;                  // Size of the audio data buffer in bytes.
-    BYTE* pAudioData;                   // Pointer to the audio data buffer.
+    const BYTE* pAudioData;             // Pointer to the audio data buffer.
     UINT32 PlayBegin;                   // First sample in this buffer to be played.
     UINT32 PlayLength;                  // Length of the region to be played in samples,
                                         //  or 0 to play the whole buffer.
@@ -319,12 +326,12 @@ typedef struct XAUDIO2_BUFFER
 // client must call IXAudio2SourceVoice::Discontinuity after submitting it.
 typedef struct XAUDIO2_BUFFER_WMA
 {
-    UINT32* pDecodedPacketCumulativeBytes; // Decoded packet's cumulative size array.
-                                        //  Each element is the number of bytes accumulated
-                                        //  when the corresponding XWMA packet is decoded in
-                                        //  order.  The array must have PacketCount elements.
-    UINT32 PacketCount;                 // Number of XWMA packets submitted. Must be >= 1 and
-                                        //  divide evenly into XAUDIO2_BUFFER.AudioBytes.
+    const UINT32* pDecodedPacketCumulativeBytes; // Decoded packet's cumulative size array.
+                                                 //  Each element is the number of bytes accumulated
+                                                 //  when the corresponding XWMA packet is decoded in
+                                                 //  order.  The array must have PacketCount elements.
+    UINT32 PacketCount;                          // Number of XWMA packets submitted. Must be >= 1 and
+                                                 //  divide evenly into XAUDIO2_BUFFER.AudioBytes.
 } XAUDIO2_BUFFER_WMA;
 
 // Returned by IXAudio2SourceVoice::GetState

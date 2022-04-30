@@ -13,8 +13,13 @@
 
 // Current name of the DLL shipped in the same SDK as this header.
 // The name reflects the current version
+#ifndef XINPUT_USE_9_1_0
 #define XINPUT_DLL_A  "xinput1_3.dll"
 #define XINPUT_DLL_W L"xinput1_3.dll"
+#else
+#define XINPUT_DLL_A  "xinput9_1_0.dll"
+#define XINPUT_DLL_W L"xinput9_1_0.dll"
+#endif
 #ifdef UNICODE
     #define XINPUT_DLL XINPUT_DLL_W
 #else
@@ -30,12 +35,19 @@
 // Device subtypes available in XINPUT_CAPABILITIES
 //
 #define XINPUT_DEVSUBTYPE_GAMEPAD       0x01
+
+#ifndef XINPUT_USE_9_1_0
+
 #define XINPUT_DEVSUBTYPE_WHEEL         0x02
 #define XINPUT_DEVSUBTYPE_ARCADE_STICK  0x03
 #define XINPUT_DEVSUBTYPE_FLIGHT_SICK   0x04
 #define XINPUT_DEVSUBTYPE_DANCE_PAD     0x05
 #define XINPUT_DEVSUBTYPE_GUITAR        0x06
 #define XINPUT_DEVSUBTYPE_DRUM_KIT      0x08
+
+#endif // !XINPUT_USE_9_1_0
+
+
 
 //
 // Flags for XINPUT_CAPABILITIES
@@ -72,6 +84,9 @@
 // Flags to pass to XInputGetCapabilities
 //
 #define XINPUT_FLAG_GAMEPAD             0x00000001
+
+
+#ifndef XINPUT_USE_9_1_0
 
 //
 // Devices that support batteries
@@ -148,6 +163,8 @@
 #define XINPUT_KEYSTROKE_KEYUP          0x0002
 #define XINPUT_KEYSTROKE_REPEAT         0x0004
 
+#endif //!XINPUT_USE_9_1_0
+
 //
 // Structures used by XInput APIs
 //
@@ -183,6 +200,8 @@ typedef struct _XINPUT_CAPABILITIES
     XINPUT_VIBRATION                    Vibration;
 } XINPUT_CAPABILITIES, *PXINPUT_CAPABILITIES;
 
+#ifndef XINPUT_USE_9_1_0
+
 typedef struct _XINPUT_BATTERY_INFORMATION
 {
     BYTE BatteryType;
@@ -198,6 +217,8 @@ typedef struct _XINPUT_KEYSTROKE
     BYTE    HidCode;
 } XINPUT_KEYSTROKE, *PXINPUT_KEYSTROKE;
 
+#endif // !XINPUT_USE_9_1_0
+
 //
 // XInput APIs
 //
@@ -207,48 +228,52 @@ extern "C" {
 
 DWORD WINAPI XInputGetState
 (
-    DWORD         dwUserIndex,  // [in] Index of the gamer associated with the device
-    XINPUT_STATE* pState        // [out] Receives the current state
+    __in  DWORD         dwUserIndex,  // Index of the gamer associated with the device
+    __out XINPUT_STATE* pState        // Receives the current state
 );
 
 DWORD WINAPI XInputSetState
 (
-    DWORD             dwUserIndex,  // [in] Index of the gamer associated with the device
-    XINPUT_VIBRATION* pVibration    // [in, out] The vibration information to send to the controller
+    __in DWORD             dwUserIndex,  // Index of the gamer associated with the device
+    __in XINPUT_VIBRATION* pVibration    // The vibration information to send to the controller
 );
 
 DWORD WINAPI XInputGetCapabilities
 (
-    DWORD                dwUserIndex,   // [in] Index of the gamer associated with the device
-    DWORD                dwFlags,       // [in] Input flags that identify the device type
-    XINPUT_CAPABILITIES* pCapabilities  // [out] Receives the capabilities
+    __in  DWORD                dwUserIndex,   // Index of the gamer associated with the device
+    __in  DWORD                dwFlags,       // Input flags that identify the device type
+    __out XINPUT_CAPABILITIES* pCapabilities  // Receives the capabilities
 );
 
 void WINAPI XInputEnable
 (
-    BOOL enable     // [in] Indicates whether xinput is enabled or disabled. 
+    __in BOOL enable     // [in] Indicates whether xinput is enabled or disabled. 
 );
 
 DWORD WINAPI XInputGetDSoundAudioDeviceGuids
 (
-    DWORD dwUserIndex,          // [in] Index of the gamer associated with the device
-    GUID* pDSoundRenderGuid,    // [out] DSound device ID for render
-    GUID* pDSoundCaptureGuid    // [out] DSound device ID for capture
+    __in  DWORD dwUserIndex,          // Index of the gamer associated with the device
+    __out GUID* pDSoundRenderGuid,    // DSound device ID for render
+    __out GUID* pDSoundCaptureGuid    // DSound device ID for capture
 );
+
+#ifndef XINPUT_USE_9_1_0
 
 DWORD WINAPI XInputGetBatteryInformation
 (
-    DWORD                       dwUserIndex,        // [in]  Index of the gamer associated with the device
-    BYTE                        devType,            // [in]  Which device on this user index
-    XINPUT_BATTERY_INFORMATION* pBatteryInformation // [out] Contains the level and types of batteries
+    __in  DWORD                       dwUserIndex,        // Index of the gamer associated with the device
+    __in  BYTE                        devType,            // Which device on this user index
+    __out XINPUT_BATTERY_INFORMATION* pBatteryInformation // Contains the level and types of batteries
 );
 
 DWORD WINAPI XInputGetKeystroke
 (
-    DWORD dwUserIndex,              // [in]  Index of the gamer associated with the device
-    DWORD dwReserved,               // [in]  Reserved for future use
-    PXINPUT_KEYSTROKE pKeystroke    // [out] Pointer to an XINPUT_KEYSTROKE structure that receives an input event.
+    __in       DWORD dwUserIndex,              // Index of the gamer associated with the device
+    __reserved DWORD dwReserved,               // Reserved for future use
+    __out      PXINPUT_KEYSTROKE pKeystroke    // Pointer to an XINPUT_KEYSTROKE structure that receives an input event.
 );
+
+#endif //!XINPUT_USE_9_1_0
 
 #ifdef __cplusplus
 }

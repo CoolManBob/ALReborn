@@ -528,7 +528,7 @@ BOOL AgsmTitle::UsingTitleSendToClient(AgpdCharacter* pcsCharacter)
 	INT32 nTitleTid = pcsCharacter->m_csTitle->GetUseTitle();
 	IterTitle iterTitle = pcsCharacter->m_csTitle->FindByTitleID(nTitleTid);
 
-	if(!iterTitle)
+	if(!&iterTitle)
 		return FALSE;
 
 	TitleUnUse(pcsCharacter, (*iterTitle).lTitleID, (*iterTitle).lSetTime);
@@ -646,7 +646,7 @@ BOOL AgsmTitle::SetTitleQuestStatusCheckValue(AgpdCharacter* pcsCharacter, INT32
 
 	IterCurrentTitleQuest currentTitleQuest = pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(lTitleID);
 
-	if(!currentTitleQuest)
+	if(!&currentTitleQuest)
 		return FALSE;
 
 	INT32	lValue	= 0;
@@ -1373,7 +1373,7 @@ BOOL AgsmTitle::TitleQuestCompleteResult(PACKET_AGSP_TITLE_QUEST_COMPLETE_RESULT
 
 	IterCurrentTitleQuest iter = pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(pPacket->nTitleID);
 
-	if(!iter)
+	if(!&iter)
 		return FALSE;
 
 	if(pPacket->bTitleQuestCompleteResult)
@@ -1414,7 +1414,7 @@ BOOL AgsmTitle::TitleQuestListResult(PACKET_AGSP_TITLE_QUEST_LIST_RESULT *pPacke
 		if(!pTitleTemplate)
 			return FALSE;
 
-		if(pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(pPacket->nTitleID))
+		if(&pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(pPacket->nTitleID))
 			return FALSE;
 
 		AgpdCurrentTitleQuest stTitleQuest;
@@ -1527,7 +1527,7 @@ BOOL AgsmTitle::GetSelectTitleQuestResult(AuDatabase2 *pDatabase, AgpdCharacter 
 	if(!pTitleTemplate)	
 		return FALSE;
 
-	if(pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(nTitleTid))
+	if(&pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(nTitleTid))
 		return FALSE;
 
 	AgpdCurrentTitleQuest stTitleQuest;
@@ -1928,7 +1928,7 @@ BOOL AgsmTitle::MakeAndSendTitleQuestCheckRelayPacket(AgpdCharacter* pcsCharacte
 
 	IterCurrentTitleQuest iter = pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(lTitleID);
 
-	if(!iter)
+	if(!&iter)
 		return FALSE;
 
 	INT32 i = 0;
@@ -2153,7 +2153,7 @@ BOOL AgsmTitle::MakeAndSendTitleQuestCheckResultPacket(AgpdCharacter* pcsCharact
 	
 	IterCurrentTitleQuest iter = pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(lTitleID);
 
-	if(!iter)
+	if(!&iter)
 		return FALSE;
 
 	INT32 i = 0;

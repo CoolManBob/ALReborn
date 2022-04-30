@@ -18,13 +18,13 @@
 #define _XACT3_H_
 
 //------------------------------------------------------------------------------
-// XACT class and interface IDs (Version 3.5)
+// XACT class and interface IDs (Version 3.7)
 //------------------------------------------------------------------------------
 #ifndef _XBOX // XACT COM support only exists on Windows
     #include <comdecl.h> // For DEFINE_CLSID, DEFINE_IID and DECLARE_INTERFACE
-    DEFINE_CLSID(XACTEngine,         074b110f, 7f58, 4743, ae, a5, 12, f1, 5b, 50, 74, ed);
-    DEFINE_CLSID(XACTAuditionEngine, 3e96e3f2, ce27, 41b1, ba, f0, 15, 77, 8c, d0, d8, 1a);
-    DEFINE_CLSID(XACTDebugEngine,    41573416, af5b, 4877, a2, 80, 29, a0, 36, 1e, f2, 1b);
+    DEFINE_CLSID(XACTEngine,         bcc782bc, 6492, 4c22, 8c, 35, f5, d7, 2f, e7, 3c, 6e);
+    DEFINE_CLSID(XACTAuditionEngine, 9ecdd80d, 0e81, 40d8, 89, 03, 2b, f7, b1, 31, ac, 43);
+    DEFINE_CLSID(XACTDebugEngine,    02860630, bf3b, 42a8, b1, 4e, 91, ed, a2, f5, 1e, a5);
     DEFINE_IID(IXACT3Engine,         b1ee676a, d9cd, 4d2a, 89, a8, fa, 53, eb, 9e, 48, 0b);
 #endif
 

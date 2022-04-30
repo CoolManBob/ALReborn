@@ -365,10 +365,10 @@ BOOL AgcuCamMode::ReadXMLData( CONST string& strFileName )
 				pPitchElement->Attribute("Min", &fMinPitch);
 				pPitchElement->Attribute("Max", &fMaxPitch);
 
-				ADD_CAMERA_SETTING(
+				/*ADD_CAMERA_SETTING(
 					iTID, (float)fHeight, (float)fFace,
 					(float)fMinLen, (float)fMaxLen,
-					(float)fMinPitch, (float)fMaxPitch);
+					(float)fMinPitch, (float)fMaxPitch);*/
 
 				pSettingNode = pSettingNode->NextSibling("Specific");
 			}

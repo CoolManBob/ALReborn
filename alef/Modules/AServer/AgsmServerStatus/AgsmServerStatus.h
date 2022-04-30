@@ -19,8 +19,8 @@
 #include "AgsmDatabasePool.h"
 #include "AgpmSiegeWar.h"
 
-#include "WISMApiDll.h"
-#pragma comment(lib, "WISMApiWRS64.lib")
+//#include "WISMApiDll.h"
+//#pragma comment(lib, "WISMApiWRS64.lib")
 
 
 
@@ -61,7 +61,7 @@ private:
 
 	INT32	m_lPatchVersion;
 
-	WISM::CWISMNotification m_WISMObj;
+	//WISM::CWISMNotification m_WISMObj;
 
 public:
 	PVOID m_pServerMainClass;

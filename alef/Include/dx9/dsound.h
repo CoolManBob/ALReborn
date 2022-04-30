@@ -657,7 +657,7 @@ DECLARE_INTERFACE_(IDirectSound8, IDirectSound)
     STDMETHOD(Initialize)           (THIS_ __in_opt LPCGUID pcGuidDevice) PURE;
 
     // IDirectSound8 methods
-    STDMETHOD(VerifyCertification)  (THIS_ __in __out LPDWORD pdwCertified) PURE;
+    STDMETHOD(VerifyCertification)  (THIS_ __out LPDWORD pdwCertified) PURE;
 };
 
 #define IDirectSound8_QueryInterface(p,a,b)       IDirectSound_QueryInterface(p,a,b)

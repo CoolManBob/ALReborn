@@ -7,9 +7,9 @@
 
 #ifdef _WIN64
 	#ifdef _DEBUG
-	#pragma comment(lib, "lua5.1.2.Win64.static.MTd.lib")
+	#pragma comment(lib, "lua5.1.5.Win64.static.lib")
 	#else
-	#pragma comment(lib, "lua5.1.2.Win64.static.MT.lib")
+	#pragma comment(lib, "lua5.1.5.Win64.static.lib")
 	#endif
 #elif _WIN32
 	#ifdef _DEBUG

@@ -8,10 +8,23 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
+#include "d3dx11.h"
+
 #ifndef __D3DX11GPGPU_H__
 #define __D3DX11GPGPU_H__
 
-#include "d3dx11.h"
+// Current name of the DLL shipped in the same SDK as this header.
+
+
+#define D3DCSX_DLL_W L"d3dcsx_43.dll"
+#define D3DCSX_DLL_A "d3dcsx_43.dll"
+
+#ifdef UNICODE
+    #define D3DCSX_DLL D3DCSX_DLL_W 
+#else
+    #define D3DCSX_DLL D3DCSX_DLL_A
+#endif
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -329,7 +342,7 @@ typedef enum D3DX11_FFT_CREATE_FLAG
 // ppFFT                      Pointer to returned context pointer               out
 //------------------------------------------------------------------------------
 
-HRESULT D3DX11CreateFFT( 
+HRESULT WINAPI D3DX11CreateFFT( 
    ID3D11DeviceContext* pDeviceContext,
    __in const D3DX11_FFT_DESC* pDesc,
    UINT Flags,
@@ -337,29 +350,21 @@ HRESULT D3DX11CreateFFT(
    __out ID3DX11FFT** ppFFT
  );
 
-HRESULT D3DX11CreateFFT1DReal( 
+HRESULT WINAPI D3DX11CreateFFT1DReal( 
    ID3D11DeviceContext* pDeviceContext,
    UINT X,
    UINT Flags,
    __out D3DX11_FFT_BUFFER_INFO* pBufferInfo,
    __out ID3DX11FFT** ppFFT
  );
-HRESULT D3DX11CreateFFT1DComplex( 
+HRESULT WINAPI D3DX11CreateFFT1DComplex( 
    ID3D11DeviceContext* pDeviceContext,
    UINT X,
    UINT Flags,
    __out D3DX11_FFT_BUFFER_INFO* pBufferInfo,
    __out ID3DX11FFT** ppFFT
  );
-HRESULT D3DX11CreateFFT2DReal( 
-   ID3D11DeviceContext* pDeviceContext,
-   UINT X,
-   UINT Y,
-   UINT Flags,
-   __out D3DX11_FFT_BUFFER_INFO* pBufferInfo,
-   __out ID3DX11FFT** ppFFT
- );
-HRESULT D3DX11CreateFFT2DComplex( 
+HRESULT WINAPI D3DX11CreateFFT2DReal( 
    ID3D11DeviceContext* pDeviceContext,
    UINT X,
    UINT Y,
@@ -367,7 +372,15 @@ HRESULT D3DX11CreateFFT2DComplex(
    __out D3DX11_FFT_BUFFER_INFO* pBufferInfo,
    __out ID3DX11FFT** ppFFT
  );
-HRESULT D3DX11CreateFFT3DReal( 
+HRESULT WINAPI D3DX11CreateFFT2DComplex( 
+   ID3D11DeviceContext* pDeviceContext,
+   UINT X,
+   UINT Y,
+   UINT Flags,
+   __out D3DX11_FFT_BUFFER_INFO* pBufferInfo,
+   __out ID3DX11FFT** ppFFT
+ );
+HRESULT WINAPI D3DX11CreateFFT3DReal( 
    ID3D11DeviceContext* pDeviceContext,
    UINT X,
    UINT Y,
@@ -376,7 +389,7 @@ HRESULT D3DX11CreateFFT3DReal(
    __out D3DX11_FFT_BUFFER_INFO* pBufferInfo,
    __out ID3DX11FFT** ppFFT
  );
-HRESULT D3DX11CreateFFT3DComplex( 
+HRESULT WINAPI D3DX11CreateFFT3DComplex( 
    ID3D11DeviceContext* pDeviceContext,
    UINT X,
    UINT Y,

@@ -1017,7 +1017,7 @@ BOOL AgcmLogin::SendCreateCharacter(TCHAR *pszAccount, TCHAR *pszWorld, INT32 lT
 	if (NULL == pszWorld)
 		pszWorld = m_szWorldName;
 
-	PVOID pvDetailCharInfo = m_pAgpmLogin->m_csPacketCharInfo.MakePacket(FALSE, &nPacketLength, AGPMLOGIN_PACKET_TYPE,
+	/*PVOID pvDetailCharInfo = m_pAgpmLogin->m_csPacketCharInfo.MakePacket(FALSE, &nPacketLength, AGPMLOGIN_PACKET_TYPE,
 		&lTID,			//TID
 		pszCharID,		//CharID
 		NULL,			//MaxRegisterChars
@@ -1027,7 +1027,20 @@ BOOL AgcmLogin::SendCreateCharacter(TCHAR *pszAccount, TCHAR *pszWorld, INT32 lT
 		&lHairIndex,
 		&lFaceIndex,
 		NULL
-		);
+		);*/
+
+	PVOID pvDetailCharInfo = m_pAgpmLogin->m_csPacketCharInfo.MakePacket(FALSE, &nPacketLength, AGPMLOGIN_PACKET_TYPE,
+		&lTID,			//TID
+		pszCharID,		//CharID
+		NULL,			//MaxRegisterChars
+		NULL,		//Slot Index
+		NULL,			//Union Info
+		NULL,
+		&lHairIndex,
+		&lFaceIndex,
+		NULL
+	);
+
 	if (NULL == pvDetailCharInfo)
 		return FALSE;
 

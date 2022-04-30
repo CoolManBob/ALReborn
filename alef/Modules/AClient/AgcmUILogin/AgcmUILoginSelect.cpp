@@ -36,7 +36,7 @@ VOID	AgcmUILoginSelect::OpenLoginSelect( VOID )
 {
 	AgcmUIManager2* pcmUIManager = ( AgcmUIManager2* )g_pEngine->GetModule( "AgcmUIManager2" );
 	AgcmLogin* pcmLogin = ( AgcmLogin* )g_pEngine->GetModule( "AgcmLogin" );
-	Initialize( pcmUIManager, pcmLogin );
+	//Initialize( pcmUIManager, pcmLogin ); //20220118 - CMBDev - Disabled init function due to double loading of Archlord.ini
 	INT	nGroupCount	=	m_ArchlordLoginInfo.GetGroupCount();
 
 	// Group이 존재하면 선택창을 띄운다.

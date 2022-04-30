@@ -256,7 +256,7 @@ class AgsmLoginDB : public AgsModule
 
 		// 영문 인증
 #ifdef _AREA_WESTERN_
-		CCogpas	*m_pCogpas;
+		//CCogpas	*m_pCogpas;
 #endif
 
 		//	Database

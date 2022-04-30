@@ -27,9 +27,6 @@
     <ClCompile Include="..\..\Server\AlefServer\ServerEngine.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Server\AlefServer\ServiceEngine.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Server\AlefServer\MemoryPoolStream.h">

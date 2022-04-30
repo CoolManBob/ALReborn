@@ -31,6 +31,17 @@
 #define XAPOBASE_DEFAULT_BUFFER_COUNT 1
 
 
+//--------------<M-A-C-R-O-S>-----------------------------------------------//
+// assertion
+#if !defined(XAPOASSERT)
+    #if XAPODEBUG
+        #define XAPOASSERT(exp) if (!(exp)) { OutputDebugStringA("XAPO ASSERT: " #exp ", {" __FUNCTION__ "}\n"); __debugbreak(); }
+    #else
+        #define XAPOASSERT(exp) __assume(exp)
+    #endif
+#endif
+
+
 //--------------<D-A-T-A---T-Y-P-E-S>---------------------------------------//
 #pragma pack(push, 8) // set packing alignment to ensure consistency across arbitrary build environments, and ensure synchronization variables used by Interlocked functionality are correctly aligned
 
@@ -144,8 +155,9 @@ public:
 
     // IUnknown methods:
     // retrieves the requested interface pointer if supported
-    STDMETHOD(QueryInterface) (REFIID riid, __deref_out void** ppInterface)
+    STDMETHOD(QueryInterface) (REFIID riid, __deref_out_opt void** ppInterface)
     {
+        XAPOASSERT(ppInterface != NULL);
         HRESULT hr = S_OK;
 
         if (riid == __uuidof(IXAPO)) {
@@ -266,8 +278,9 @@ public:
 
     // IUnknown methods:
     // retrieves the requested interface pointer if supported
-    STDMETHOD(QueryInterface) (REFIID riid, __deref_out void** ppInterface)
+    STDMETHOD(QueryInterface) (REFIID riid, __deref_out_opt void** ppInterface)
     {
+        XAPOASSERT(ppInterface != NULL);
         HRESULT hr = S_OK;
 
         if (riid == __uuidof(IXAPOParameters)) {

@@ -110,257 +110,43 @@
 
 
 
-//----------------------------------------------------------------------------
-// D3D10_SHADER_MACRO:
-// ----------
-// Preprocessor macro definition.  The application pass in a NULL-terminated
-// array of this structure to various D3D10 APIs.  This enables the application
-// to #define tokens at runtime, before the file is parsed.
-//----------------------------------------------------------------------------
-
-typedef struct _D3D10_SHADER_MACRO
-{
-    LPCSTR Name;
-    LPCSTR Definition;
-
-} D3D10_SHADER_MACRO, *LPD3D10_SHADER_MACRO;
+typedef D3D_SHADER_MACRO D3D10_SHADER_MACRO;
+typedef D3D10_SHADER_MACRO* LPD3D10_SHADER_MACRO;
 
 
-//----------------------------------------------------------------------------
-// D3D10_SHADER_VARIABLE_CLASS:
-//----------------------------------------------------------------------------
+typedef D3D_SHADER_VARIABLE_CLASS D3D10_SHADER_VARIABLE_CLASS;
+typedef D3D10_SHADER_VARIABLE_CLASS* LPD3D10_SHADER_VARIABLE_CLASS;
 
-typedef enum _D3D10_SHADER_VARIABLE_CLASS
-{
-    D3D10_SVC_SCALAR,
-    D3D10_SVC_VECTOR,
-    D3D10_SVC_MATRIX_ROWS,
-    D3D10_SVC_MATRIX_COLUMNS,
-    D3D10_SVC_OBJECT,
-    D3D10_SVC_STRUCT,
-    
-    D3D11_SVC_INTERFACE_CLASS,
-    D3D11_SVC_INTERFACE_POINTER,
+typedef D3D_SHADER_VARIABLE_FLAGS D3D10_SHADER_VARIABLE_FLAGS;
+typedef D3D10_SHADER_VARIABLE_FLAGS* LPD3D10_SHADER_VARIABLE_FLAGS;
 
-    // force 32-bit size enum
-    D3D10_SVC_FORCE_DWORD = 0x7fffffff
+typedef D3D_SHADER_VARIABLE_TYPE D3D10_SHADER_VARIABLE_TYPE;
+typedef D3D10_SHADER_VARIABLE_TYPE* LPD3D10_SHADER_VARIABLE_TYPE;
 
-} D3D10_SHADER_VARIABLE_CLASS, *LPD3D10_SHADER_VARIABLE_CLASS;
+typedef D3D_SHADER_INPUT_FLAGS D3D10_SHADER_INPUT_FLAGS;
+typedef D3D10_SHADER_INPUT_FLAGS* LPD3D10_SHADER_INPUT_FLAGS;
 
-typedef enum _D3D10_SHADER_VARIABLE_FLAGS
-{
-    D3D10_SVF_USERPACKED = 1,
-    D3D10_SVF_USED       = 2,
+typedef D3D_SHADER_INPUT_TYPE D3D10_SHADER_INPUT_TYPE;
+typedef D3D10_SHADER_INPUT_TYPE* LPD3D10_SHADER_INPUT_TYPE;
 
-    D3D11_SVF_INTERFACE_POINTER = 4,
-    D3D11_SVF_INTERFACE_PARAMETER = 8,
+typedef D3D_SHADER_CBUFFER_FLAGS D3D10_SHADER_CBUFFER_FLAGS;
+typedef D3D10_SHADER_CBUFFER_FLAGS* LPD3D10_SHADER_CBUFFER_FLAGS;
 
-    // force 32-bit size enum
-    D3D10_SVF_FORCE_DWORD = 0x7fffffff
+typedef D3D_CBUFFER_TYPE D3D10_CBUFFER_TYPE;
+typedef D3D10_CBUFFER_TYPE* LPD3D10_CBUFFER_TYPE;
 
-} D3D10_SHADER_VARIABLE_FLAGS, *LPD3D10_SHADER_VARIABLE_FLAGS;
+typedef D3D_NAME D3D10_NAME;
 
-//----------------------------------------------------------------------------
-// D3D10_SHADER_VARIABLE_TYPE:
-//----------------------------------------------------------------------------
-typedef enum _D3D10_SHADER_VARIABLE_TYPE
-{
-    D3D10_SVT_VOID = 0,
-    D3D10_SVT_BOOL = 1,
-    D3D10_SVT_INT = 2,
-    D3D10_SVT_FLOAT = 3,
-    D3D10_SVT_STRING = 4,
-    D3D10_SVT_TEXTURE = 5,
-    D3D10_SVT_TEXTURE1D = 6,
-    D3D10_SVT_TEXTURE2D = 7,
-    D3D10_SVT_TEXTURE3D = 8,
-    D3D10_SVT_TEXTURECUBE = 9,
-    D3D10_SVT_SAMPLER = 10,
-    D3D10_SVT_PIXELSHADER = 15,
-    D3D10_SVT_VERTEXSHADER = 16,
-    D3D10_SVT_UINT = 19,
-    D3D10_SVT_UINT8 = 20,
-    D3D10_SVT_GEOMETRYSHADER = 21,
-    D3D10_SVT_RASTERIZER = 22,
-    D3D10_SVT_DEPTHSTENCIL = 23,
-    D3D10_SVT_BLEND = 24,
-    D3D10_SVT_BUFFER = 25,
-    D3D10_SVT_CBUFFER = 26,
-    D3D10_SVT_TBUFFER = 27,
-    D3D10_SVT_TEXTURE1DARRAY = 28,
-    D3D10_SVT_TEXTURE2DARRAY = 29,
-    D3D10_SVT_RENDERTARGETVIEW = 30,
-    D3D10_SVT_DEPTHSTENCILVIEW = 31,
+typedef D3D_RESOURCE_RETURN_TYPE D3D10_RESOURCE_RETURN_TYPE;
 
-    D3D10_SVT_TEXTURE2DMS = 32,
-    D3D10_SVT_TEXTURE2DMSARRAY = 33,
+typedef D3D_REGISTER_COMPONENT_TYPE D3D10_REGISTER_COMPONENT_TYPE;
 
-    D3D10_SVT_TEXTURECUBEARRAY = 34,
+typedef D3D_INCLUDE_TYPE D3D10_INCLUDE_TYPE;
 
-    D3D11_SVT_HULLSHADER = 35,
-    D3D11_SVT_DOMAINSHADER = 36,
-
-    D3D11_SVT_INTERFACE_POINTER = 37,
-    D3D11_SVT_COMPUTESHADER = 38,
-
-    D3D11_SVT_DOUBLE = 39,
-    
-    D3D11_SVT_RWTEXTURE1D,
-    D3D11_SVT_RWTEXTURE1DARRAY,
-    D3D11_SVT_RWTEXTURE2D,
-    D3D11_SVT_RWTEXTURE2DARRAY,
-    D3D11_SVT_RWTEXTURE3D,
-    D3D11_SVT_RWBUFFER,
-
-    D3D11_SVT_BYTEADDRESS_BUFFER,
-    D3D11_SVT_RWBYTEADDRESS_BUFFER,
-    D3D11_SVT_STRUCTURED_BUFFER,
-    D3D11_SVT_RWSTRUCTURED_BUFFER,
-    D3D11_SVT_APPEND_STRUCTURED_BUFFER,
-    D3D11_SVT_CONSUME_STRUCTURED_BUFFER,
-
-    // force 32-bit size enum
-    D3D10_SVT_FORCE_DWORD = 0x7fffffff
-
-} D3D10_SHADER_VARIABLE_TYPE, *LPD3D10_SHADER_VARIABLE_TYPE;
-
-typedef enum _D3D10_SHADER_INPUT_FLAGS
-{
-    D3D10_SIF_USERPACKED = 1,
-    D3D10_SIF_COMPARISON_SAMPLER = 2,  // is this a comparison sampler?
-    D3D10_SIF_TEXTURE_COMPONENT_0 = 4, // this 2-bit value encodes c - 1, where c
-    D3D10_SIF_TEXTURE_COMPONENT_1 = 8, // is the number of components in the texture
-    D3D10_SIF_TEXTURE_COMPONENTS = 12,
-
-    // force 32-bit size enum
-    D3D10_SIF_FORCE_DWORD = 0x7fffffff
-} D3D10_SHADER_INPUT_FLAGS, *LPD3D10_SHADER_INPUT_FLAGS;
-
-//----------------------------------------------------------------------------
-// D3D10_SHADER_INPUT_TYPE
-//----------------------------------------------------------------------------
-typedef enum _D3D10_SHADER_INPUT_TYPE
-{
-    D3D10_SIT_CBUFFER,
-    D3D10_SIT_TBUFFER,
-    D3D10_SIT_TEXTURE,
-    D3D10_SIT_SAMPLER,
-    D3D11_SIT_UAV_RWTYPED,
-    D3D11_SIT_STRUCTURED,
-    D3D11_SIT_UAV_RWSTRUCTURED,
-    D3D11_SIT_BYTEADDRESS,
-    D3D11_SIT_UAV_RWBYTEADDRESS,
-    D3D11_SIT_UAV_APPEND_STRUCTURED,
-    D3D11_SIT_UAV_CONSUME_STRUCTURED,
-    D3D11_SIT_UAV_RWSTRUCTURED_WITH_COUNTER,
-} D3D10_SHADER_INPUT_TYPE, *LPD3D10_SHADER_INPUT_TYPE;
-
-typedef enum _D3D10_SHADER_CBUFFER_FLAGS
-{
-    D3D10_CBF_USERPACKED = 1,
-
-    // force 32-bit size enum
-    D3D10_CBF_FORCE_DWORD = 0x7fffffff
-} D3D10_SHADER_CBUFFER_FLAGS, *LPD3D10_SHADER_CBUFFER_FLAGS;
-
-typedef enum _D3D10_CBUFFER_TYPE
-{
-    D3D10_CT_CBUFFER,
-    D3D10_CT_TBUFFER,
-}  D3D10_CBUFFER_TYPE, *LPD3D10_CBUFFER_TYPE;
-
-typedef enum D3D10_NAME
-{
-    D3D10_NAME_UNDEFINED = 0,
-
-    // Names meaningful to both HLSL and hardware
-    D3D10_NAME_POSITION = 1,
-    D3D10_NAME_CLIP_DISTANCE = 2,
-    D3D10_NAME_CULL_DISTANCE = 3,
-    D3D10_NAME_RENDER_TARGET_ARRAY_INDEX = 4,
-    D3D10_NAME_VIEWPORT_ARRAY_INDEX = 5,
-    D3D10_NAME_VERTEX_ID = 6,
-    D3D10_NAME_PRIMITIVE_ID = 7,
-    D3D10_NAME_INSTANCE_ID = 8,
-    D3D10_NAME_IS_FRONT_FACE = 9,
-    D3D10_NAME_SAMPLE_INDEX = 10,
-    D3D11_NAME_FINAL_QUAD_EDGE_TESSFACTOR = 11, 
-    D3D11_NAME_FINAL_QUAD_INSIDE_TESSFACTOR = 12, 
-    D3D11_NAME_FINAL_TRI_EDGE_TESSFACTOR = 13, 
-    D3D11_NAME_FINAL_TRI_INSIDE_TESSFACTOR = 14, 
-    D3D11_NAME_FINAL_LINE_DETAIL_TESSFACTOR = 15,
-    D3D11_NAME_FINAL_LINE_DENSITY_TESSFACTOR = 16,
-
-    // Names meaningful to HLSL only
-    D3D10_NAME_TARGET = 64,
-    D3D10_NAME_DEPTH = 65,
-    D3D10_NAME_COVERAGE = 66,
-    D3D11_NAME_DEPTH_GREATER_EQUAL = 67,
-    D3D11_NAME_DEPTH_LESS_EQUAL = 68,
-
-} D3D10_NAME;
-
-typedef enum D3D10_RESOURCE_RETURN_TYPE
-{
-    D3D10_RETURN_TYPE_UNORM = 1,
-    D3D10_RETURN_TYPE_SNORM = 2,
-    D3D10_RETURN_TYPE_SINT = 3,
-    D3D10_RETURN_TYPE_UINT = 4,
-    D3D10_RETURN_TYPE_FLOAT = 5,
-    D3D10_RETURN_TYPE_MIXED = 6,
-} D3D10_RESOURCE_RETURN_TYPE;
-
-typedef enum D3D10_REGISTER_COMPONENT_TYPE
-{
-    D3D10_REGISTER_COMPONENT_UNKNOWN = 0,
-    D3D10_REGISTER_COMPONENT_UINT32 = 1,
-    D3D10_REGISTER_COMPONENT_SINT32 = 2,
-    D3D10_REGISTER_COMPONENT_FLOAT32 = 3
-} D3D10_REGISTER_COMPONENT_TYPE;
-
-
-//----------------------------------------------------------------------------
-// D3D10_INCLUDE_TYPE:
-//----------------------------------------------------------------------------
-
-typedef enum _D3D10_INCLUDE_TYPE
-{
-    D3D10_INCLUDE_LOCAL,
-    D3D10_INCLUDE_SYSTEM,
-
-    // force 32-bit size enum
-    D3D10_INCLUDE_FORCE_DWORD = 0x7fffffff
-
-} D3D10_INCLUDE_TYPE, *LPD3D10_INCLUDE_TYPE;
-
-
-//----------------------------------------------------------------------------
-// ID3D10Include:
-// -------------
-// This interface is intended to be implemented by the application, and can
-// be used by various D3D10 APIs.  This enables application-specific handling
-// of #include directives in source files.
-//
-// Open()
-//    Opens an include file.  If successful, it should fill in ppData and
-//    pBytes.  The data pointer returned must remain valid until Close is
-//    subsequently called.  The name of the file is encoded in UTF-8 format.
-// Close()
-//    Closes an include file.  If Open was successful, Close is guaranteed
-//    to be called before the API using this interface returns.
-//----------------------------------------------------------------------------
-
-typedef interface ID3D10Include ID3D10Include;
-typedef interface ID3D10Include *LPD3D10INCLUDE;
-
-#undef INTERFACE
-#define INTERFACE ID3D10Include
-
-DECLARE_INTERFACE(ID3D10Include)
-{
-    STDMETHOD(Open)(THIS_ D3D10_INCLUDE_TYPE IncludeType, LPCSTR pFileName, LPCVOID pParentData, LPCVOID *ppData, UINT *pBytes) PURE;
-    STDMETHOD(Close)(THIS_ LPCVOID pData) PURE;
-};
+// ID3D10Include has been made version-neutral and moved to d3dcommon.h.
+typedef interface ID3DInclude ID3D10Include;
+typedef interface ID3DInclude* LPD3D10INCLUDE;
+#define IID_ID3D10Include IID_ID3DInclude
 
 
 //----------------------------------------------------------------------------

@@ -10,7 +10,7 @@
 #ifndef __D3D11SHADER_H__
 #define __D3D11SHADER_H__
 
-#include "d3d10_1shader.h"
+#include "d3dcommon.h"
 
 
 typedef enum D3D11_SHADER_VERSION_TYPE
@@ -32,25 +32,9 @@ typedef enum D3D11_SHADER_VERSION_TYPE
 #define D3D11_SHVER_GET_MINOR(_Version) \
     (((_Version) >> 0) & 0xf)
 
-typedef enum D3D11_RESOURCE_RETURN_TYPE
-{
-    D3D11_RETURN_TYPE_UNORM = 1,
-    D3D11_RETURN_TYPE_SNORM = 2,
-    D3D11_RETURN_TYPE_SINT = 3,
-    D3D11_RETURN_TYPE_UINT = 4,
-    D3D11_RETURN_TYPE_FLOAT = 5,
-    D3D11_RETURN_TYPE_MIXED = 6,
-    D3D11_RETURN_TYPE_DOUBLE = 7,
-    D3D11_RETURN_TYPE_CONTINUED = 8,
-} D3D11_RESOURCE_RETURN_TYPE;
+typedef D3D_RESOURCE_RETURN_TYPE D3D11_RESOURCE_RETURN_TYPE;
 
-typedef enum _D3D11_CBUFFER_TYPE
-{
-    D3D11_CT_CBUFFER,
-    D3D11_CT_TBUFFER,
-    D3D11_CT_INTERFACE_POINTERS,
-    D3D11_CT_RESOURCE_BIND_INFO,
-}  D3D11_CBUFFER_TYPE, *LPD3D11_CBUFFER_TYPE;
+typedef D3D_CBUFFER_TYPE D3D11_CBUFFER_TYPE;
 
 
 typedef struct _D3D11_SIGNATURE_PARAMETER_DESC
@@ -58,8 +42,8 @@ typedef struct _D3D11_SIGNATURE_PARAMETER_DESC
     LPCSTR                      SemanticName;   // Name of the semantic
     UINT                        SemanticIndex;  // Index of the semantic
     UINT                        Register;       // Number of member variables
-    D3D10_NAME                  SystemValueType;// A predefined system value, or D3D10_NAME_UNDEFINED if not applicable
-    D3D10_REGISTER_COMPONENT_TYPE ComponentType;// Scalar type (e.g. uint, float, etc.)
+    D3D_NAME                    SystemValueType;// A predefined system value, or D3D_NAME_UNDEFINED if not applicable
+    D3D_REGISTER_COMPONENT_TYPE ComponentType;// Scalar type (e.g. uint, float, etc.)
     BYTE                        Mask;           // Mask to indicate which components of the register
                                                 // are used (combination of D3D10_COMPONENT_MASK values)
     BYTE                        ReadWriteMask;  // Mask to indicate whether a given component is 
@@ -72,7 +56,7 @@ typedef struct _D3D11_SIGNATURE_PARAMETER_DESC
 typedef struct _D3D11_SHADER_BUFFER_DESC
 {
     LPCSTR                  Name;           // Name of the constant buffer
-    D3D11_CBUFFER_TYPE      Type;           // Indicates type of buffer content
+    D3D_CBUFFER_TYPE        Type;           // Indicates type of buffer content
     UINT                    Variables;      // Number of member variables
     UINT                    Size;           // Size of CB (in bytes)
     UINT                    uFlags;         // Buffer description flags
@@ -93,8 +77,8 @@ typedef struct _D3D11_SHADER_VARIABLE_DESC
 
 typedef struct _D3D11_SHADER_TYPE_DESC
 {
-    D3D10_SHADER_VARIABLE_CLASS Class;          // Variable class (e.g. object, matrix, etc.)
-    D3D10_SHADER_VARIABLE_TYPE  Type;           // Variable type (e.g. float, sampler, etc.)
+    D3D_SHADER_VARIABLE_CLASS   Class;          // Variable class (e.g. object, matrix, etc.)
+    D3D_SHADER_VARIABLE_TYPE    Type;           // Variable type (e.g. float, sampler, etc.)
     UINT                        Rows;           // Number of rows (for matrices, 1 for other numeric, 0 if not applicable)
     UINT                        Columns;        // Number of columns (for vectors & matrices, 1 for other numeric, 0 if not applicable)
     UINT                        Elements;       // Number of elements (0 if not an array)
@@ -103,31 +87,11 @@ typedef struct _D3D11_SHADER_TYPE_DESC
     LPCSTR                      Name;           // Name of type, can be NULL
 } D3D11_SHADER_TYPE_DESC;
 
-typedef enum D3D11_TESSELLATOR_DOMAIN
-{
-    D3D11_TESSELLATOR_DOMAIN_UNDEFINED = 0,
-    D3D11_TESSELLATOR_DOMAIN_ISOLINE   = 1,
-    D3D11_TESSELLATOR_DOMAIN_TRI       = 2,
-    D3D11_TESSELLATOR_DOMAIN_QUAD      = 3
-} D3D11_TESSELLATOR_DOMAIN;
+typedef D3D_TESSELLATOR_DOMAIN D3D11_TESSELLATOR_DOMAIN;
 
-typedef enum D3D11_TESSELLATOR_PARTITIONING
-{
-    D3D11_TESSELLATOR_PARTITIONING_UNDEFINED       = 0,
-    D3D11_TESSELLATOR_PARTITIONING_INTEGER         = 1,
-    D3D11_TESSELLATOR_PARTITIONING_POW2            = 2,
-    D3D11_TESSELLATOR_PARTITIONING_FRACTIONAL_ODD  = 3,
-    D3D11_TESSELLATOR_PARTITIONING_FRACTIONAL_EVEN = 4
-} D3D11_TESSELLATOR_PARTITIONING;
+typedef D3D_TESSELLATOR_PARTITIONING D3D11_TESSELLATOR_PARTITIONING;
 
-typedef enum D3D11_TESSELLATOR_OUTPUT_PRIMITIVE
-{
-    D3D11_TESSELLATOR_OUTPUT_UNDEFINED    = 0,
-    D3D11_TESSELLATOR_OUTPUT_POINT        = 1,
-    D3D11_TESSELLATOR_OUTPUT_LINE         = 2,
-    D3D11_TESSELLATOR_OUTPUT_TRIANGLE_CW  = 3,
-    D3D11_TESSELLATOR_OUTPUT_TRIANGLE_CCW = 4
-} D3D11_TESSELLATOR_OUTPUT_PRIMITIVE;
+typedef D3D_TESSELLATOR_OUTPUT_PRIMITIVE D3D11_TESSELLATOR_OUTPUT_PRIMITIVE;
 
 typedef struct _D3D11_SHADER_DESC
 {
@@ -159,15 +123,15 @@ typedef struct _D3D11_SHADER_DESC
     UINT                    ArrayInstructionCount;       // Number of array instructions used
     UINT                    CutInstructionCount;         // Number of cut instructions used
     UINT                    EmitInstructionCount;        // Number of emit instructions used
-    D3D10_PRIMITIVE_TOPOLOGY GSOutputTopology;           // Geometry shader output topology
+    D3D_PRIMITIVE_TOPOLOGY   GSOutputTopology;           // Geometry shader output topology
     UINT                    GSMaxOutputVertexCount;      // Geometry shader maximum output vertex count
-    D3D11_PRIMITIVE         InputPrimitive;              // GS/HS input primitive
+    D3D_PRIMITIVE           InputPrimitive;              // GS/HS input primitive
     UINT                    PatchConstantParameters;     // Number of parameters in the patch constant signature
     UINT                    cGSInstanceCount;            // Number of Geometry shader instances
     UINT                    cControlPoints;              // Number of control points in the HS->DS stage
-    D3D11_TESSELLATOR_OUTPUT_PRIMITIVE HSOutputPrimitive; // Primitive output by the tessellator
-    D3D11_TESSELLATOR_PARTITIONING HSPartitioning;       // Partitioning mode of the tessellator
-    D3D11_TESSELLATOR_DOMAIN TessellatorDomain;          // Domain of the tessellator (quad, tri, isoline)
+    D3D_TESSELLATOR_OUTPUT_PRIMITIVE HSOutputPrimitive;  // Primitive output by the tessellator
+    D3D_TESSELLATOR_PARTITIONING HSPartitioning;         // Partitioning mode of the tessellator
+    D3D_TESSELLATOR_DOMAIN  TessellatorDomain;           // Domain of the tessellator (quad, tri, isoline)
     // instruction counts
     UINT cBarrierInstructions;                           // Number of barrier instructions in a compute shader
     UINT cInterlockedInstructions;                       // Number of interlocked instructions
@@ -177,13 +141,13 @@ typedef struct _D3D11_SHADER_DESC
 typedef struct _D3D11_SHADER_INPUT_BIND_DESC
 {
     LPCSTR                      Name;           // Name of the resource
-    D3D10_SHADER_INPUT_TYPE     Type;           // Type of resource (e.g. texture, cbuffer, etc.)
+    D3D_SHADER_INPUT_TYPE       Type;           // Type of resource (e.g. texture, cbuffer, etc.)
     UINT                        BindPoint;      // Starting bind point
     UINT                        BindCount;      // Number of contiguous bind points (for arrays)
     
     UINT                        uFlags;         // Input binding flags
-    D3D11_RESOURCE_RETURN_TYPE  ReturnType;     // Return type (if texture)
-    D3D10_SRV_DIMENSION         Dimension;      // Dimension (if texture)
+    D3D_RESOURCE_RETURN_TYPE    ReturnType;     // Return type (if texture)
+    D3D_SRV_DIMENSION           Dimension;      // Dimension (if texture)
     UINT                        NumSamples;     // Number of samples (0 if not MS texture)
 } D3D11_SHADER_INPUT_BIND_DESC;
 
@@ -260,9 +224,14 @@ DECLARE_INTERFACE(ID3D11ShaderReflectionConstantBuffer)
     STDMETHOD_(ID3D11ShaderReflectionVariable*, GetVariableByName)(THIS_ __in LPCSTR Name) PURE;
 };
 
-// {17F27486-A342-4D10-8842-AB0874E7F670}
+// The ID3D11ShaderReflection IID may change from SDK version to SDK version
+// if the reflection API changes.  This prevents new code with the new API
+// from working with an old binary.  Recompiling with the new header
+// will pick up the new IID.
+
+// 0a233719-3960-4578-9d7c-203b8b1d9cc1
 DEFINE_GUID(IID_ID3D11ShaderReflection, 
-0x17f27486, 0xa342, 0x4d10, 0x88, 0x42, 0xab, 0x08, 0x74, 0xe7, 0xf6, 0x70);
+0x0a233719, 0x3960, 0x4578, 0x9d, 0x7c, 0x20, 0x3b, 0x8b, 0x1d, 0x9c, 0xc1);
 
 #undef INTERFACE
 #define INTERFACE ID3D11ShaderReflection
@@ -299,11 +268,16 @@ DECLARE_INTERFACE_(ID3D11ShaderReflection, IUnknown)
     STDMETHOD_(UINT, GetConversionInstructionCount)(THIS) PURE;
     STDMETHOD_(UINT, GetBitwiseInstructionCount)(THIS) PURE;
     
-    STDMETHOD_(D3D10_PRIMITIVE, GetGSInputPrimitive)(THIS) PURE;
+    STDMETHOD_(D3D_PRIMITIVE, GetGSInputPrimitive)(THIS) PURE;
     STDMETHOD_(BOOL, IsSampleFrequencyShader)(THIS) PURE;
 
     STDMETHOD_(UINT, GetNumInterfaceSlots)(THIS) PURE;
     STDMETHOD(GetMinFeatureLevel)(THIS_ __out enum D3D_FEATURE_LEVEL* pLevel) PURE;
+
+    STDMETHOD_(UINT, GetThreadGroupSize)(THIS_
+                                         __out_opt UINT* pSizeX,
+                                         __out_opt UINT* pSizeY,
+                                         __out_opt UINT* pSizeZ) PURE;
 };
 
 //////////////////////////////////////////////////////////////////////////////

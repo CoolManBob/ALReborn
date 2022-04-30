@@ -15,8 +15,8 @@
 // Current name of the DLL shipped in the same SDK as this header.
 
 
-#define D3DX11_DLL_W L"d3dx11_42.dll"
-#define D3DX11_DLL_A "d3dx11_42.dll"
+#define D3DX11_DLL_W L"d3dx11_43.dll"
+#define D3DX11_DLL_A "d3dx11_43.dll"
 
 #ifdef UNICODE
     #define D3DX11_DLL D3DX11_DLL_W 
@@ -39,7 +39,7 @@ extern "C" {
 ///////////////////////////////////////////////////////////////////////////
 
 
-#define D3DX11_SDK_VERSION 42
+#define D3DX11_SDK_VERSION 43
 
 
 #ifdef D3D_DIAG_DLL

@@ -59,7 +59,8 @@ public:
 	BOOL erase(iterator __pos)
 	{
 		AuAutoLock pLock(m_CriticalSection);
-		return (_Base::erase(__pos) > 0);
+		_Base::erase(__pos);
+		return true;
 	}
 };
 

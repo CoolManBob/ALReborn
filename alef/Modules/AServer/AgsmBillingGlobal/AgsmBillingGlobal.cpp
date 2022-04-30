@@ -82,12 +82,14 @@ BOOL AgsmBillingGlobal::Initialize()
 	m_pWZShop->SetCallbackOnInquireCash(AgsmBillingGlobal::OnInquireCash);
 	m_pWZShop->SetCallbackOnBuyProduct(AgsmBillingGlobal::OnBuyProduct);
 	//JK_À¥Á¨ºô¸µ
+#ifdef _WEBZEN_BILLING_
 	m_pWZShop->SetCallbackOnNetConnect(AgsmBillingGlobal::OnNetConnectShop);
 	m_pWZShop->SetCallbackOnInquireSalesZoneScriptVersion(AgsmBillingGlobal::OnInquireSalesZoneScriptVersion);
 	m_pWZShop->SetCallbackOnUpdateVersion(AgsmBillingGlobal::OnUpdateVersion);
 	m_pWZShop->SetCallbackOnUseStorage(AgsmBillingGlobal::OnUseStorage);	
 	m_pWZShop->SetCallbackOnInquireStorageListPageNoGiftMessage(AgsmBillingGlobal::OnInquireStorageListPageNoGiftMessage);
 	m_pWZShop->SetCallbackOnRollbackUseStorage(AgsmBillingGlobal::OnRollbackUseStorage);
+#endif
 	m_pWZShop->Initialize();
 
 	//////////////////////////////////////////////////////////////////////////
@@ -195,12 +197,13 @@ BOOL AgsmBillingGlobal::ConnectBilling()
 //JK_À¥Á¨ºô¸µ
 void AgsmBillingGlobal::OnNetConnectShop(PVOID pOnNetConnect)
 {
+#ifdef _WEBZEN_BILLING_
 	stOnNetConnect* pNetConnect = (stOnNetConnect*)pOnNetConnect;
 	if(pNetConnect->success)
 	{
 		m_pWZShop->InquireSalesZoneScriptVersion(WZBILLING_GAMECODE, WZBILLING_SALESZONE);
 	}
-
+#endif
 }
 
 void AgsmBillingGlobal::OnLog( char* strLog )
@@ -211,6 +214,7 @@ void AgsmBillingGlobal::OnLog( char* strLog )
 //JK_À¥Á¨ºô¸µ
 void AgsmBillingGlobal::OnInquireSalesZoneScriptVersion( PVOID pInquire )
 {
+#ifdef _WEBZEN_BILLING_
 	stSalesZoneScriptVersion* pSalesZoneScriptVersion = (stSalesZoneScriptVersion*)pInquire;
 
 	{
@@ -230,12 +234,13 @@ void AgsmBillingGlobal::OnInquireSalesZoneScriptVersion( PVOID pInquire )
 
 
 	AgsmBilling::GetInstance()->SetSalesZoneScriptVersion(pSalesZoneScriptVersion->Year, pSalesZoneScriptVersion->YaerIdentity);
-
+#endif
 }
 
 //JK_À¥Á¨ºô¸µ
 void AgsmBillingGlobal::OnUpdateVersion( PVOID pInquire )
 {
+#ifdef _WEBZEN_BILLING_
 	stSalesZoneScriptVersion* pSalesZoneScriptVersion = (stSalesZoneScriptVersion*)pInquire;
 
 	{
@@ -255,7 +260,7 @@ void AgsmBillingGlobal::OnUpdateVersion( PVOID pInquire )
 	}
 
 	AgsmBilling::GetInstance()->UpdateScriptVersionAllUser(pSalesZoneScriptVersion->Year, pSalesZoneScriptVersion->YaerIdentity);
-
+#endif
 }
 
 
@@ -266,7 +271,11 @@ BOOL AgsmBillingGlobal::InquireCash( CHAR* szAccountID )
 //JK_À¥Á¨ºô¸µ
 BOOL AgsmBillingGlobal::InquireCash( DWORD dwAccountGUID )
 {
+#ifdef _WEBZEN_BILLING_
 	return m_pWZShop->InquireCash(WZBILLING_GAMECODE, 0, dwAccountGUID, true, 0 ); // archlord gamecode = 417
+#else
+	return false;
+#endif
 }
 
 void AgsmBillingGlobal::OnInquireCash( PVOID pInquire )

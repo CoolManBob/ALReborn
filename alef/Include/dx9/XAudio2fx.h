@@ -50,10 +50,22 @@
 //DEFINE_CLSID(AudioReverb_Debug, da7738a2, cd0c, 4367, 9a, ac, d7, ea, d7, c6, 4f, 98);
 
 // XAudio 2.5 (March 2009 SDK)
-DEFINE_CLSID(AudioVolumeMeter, 2139e6da, c341, 4774, 9a, c3, b4, e0, 26, 34, 7f, 64);
-DEFINE_CLSID(AudioVolumeMeter_Debug, a5cc4e13, ca00, 416b, a6, ee, 49, fe, e7, b5, 43, d0);
-DEFINE_CLSID(AudioReverb, d06df0d0, 8518, 441e, 82, 2f, 54, 51, d5, c5, 95, b8);
-DEFINE_CLSID(AudioReverb_Debug, 613604ec, 304c, 45ec, a4, ed, 7a, 1c, 61, 2e, 9e, 72);
+//DEFINE_CLSID(AudioVolumeMeter, 2139e6da, c341, 4774, 9a, c3, b4, e0, 26, 34, 7f, 64);
+//DEFINE_CLSID(AudioVolumeMeter_Debug, a5cc4e13, ca00, 416b, a6, ee, 49, fe, e7, b5, 43, d0);
+//DEFINE_CLSID(AudioReverb, d06df0d0, 8518, 441e, 82, 2f, 54, 51, d5, c5, 95, b8);
+//DEFINE_CLSID(AudioReverb_Debug, 613604ec, 304c, 45ec, a4, ed, 7a, 1c, 61, 2e, 9e, 72);
+
+// XAudio 2.6 (February 2010 SDK)
+//DEFINE_CLSID(AudioVolumeMeter, e48c5a3f, 93ef, 43bb, a0, 92, 2c, 7c, eb, 94, 6f, 27);
+//DEFINE_CLSID(AudioVolumeMeter_Debug, 9a9eaef7, a9e0, 4088, 9b, 1b, 9c, a0, 3a, 1a, ec, d4);
+//DEFINE_CLSID(AudioReverb, cecec95a, d894, 491a, be, e3, 5e, 10, 6f, b5, 9f, 2d);
+//DEFINE_CLSID(AudioReverb_Debug, 99a1c72e, 364c, 4c1b, 96, 23, fd, 5c, 8a, bd, 90, c7);
+
+// XAudio 2.7 (June 2010 SDK)
+DEFINE_CLSID(AudioVolumeMeter, cac1105f, 619b, 4d04, 83, 1a, 44, e1, cb, f1, 2d, 57);
+DEFINE_CLSID(AudioVolumeMeter_Debug, 2d9a0f9c, e67b, 4b24, ab, 44, 92, b3, e7, 70, c0, 20);
+DEFINE_CLSID(AudioReverb, 6a93130e, 1d53, 41d1, a9, cf, e7, 58, 80, 0b, b1, 79);
+DEFINE_CLSID(AudioReverb_Debug, c4f82dd4, cb4e, 4ce1, 8b, db, ee, 32, d4, 19, 82, 69);
 
 // Ignore the rest of this header if only the GUID definitions were requested
 #ifndef GUID_DEFS_ONLY
@@ -167,14 +179,15 @@ typedef struct XAUDIO2FX_VOLUMEMETER_LEVELS
  * The reverb supports only FLOAT32 audio with the following channel
  * configurations:
  *     Input: Mono   Output: Mono
+ *     Input: Mono   Output: 5.1
  *     Input: Stereo Output: Stereo
  *     Input: Stereo Output: 5.1
  * The framerate must be within [20000, 48000] Hz.
  *
- * When configured to mono, delay filters associated with the right channel
+ * When using mono input, delay filters associated with the right channel
  * are not executed.  In this case, parameters such as PositionRight and
  * PositionMatrixRight have no effect.  This also means the reverb uses
- * less CPU when configured to mono.
+ * less CPU when hosted in a mono submix.
  *
  **************************************************************************/
 

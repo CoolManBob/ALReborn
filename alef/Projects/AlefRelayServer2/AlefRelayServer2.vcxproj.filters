@@ -18,17 +18,11 @@
     <ClCompile Include="..\..\Server\AlefRelayServer2\AlefRelayServer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Server\AlefRelayServer2\RelayService.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Server\AlefRelayServer2\ServerEngine.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Server\AlefRelayServer2\RelayService.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Server\AlefRelayServer2\ServerEngine.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>

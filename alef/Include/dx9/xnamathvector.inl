@@ -1256,7 +1256,7 @@ XMFINLINE XMVECTOR XMVectorPermute
         ++pControl;
         VectorIndex = (uIndex>>4)&1;
         uIndex &= 0x0F;
-#if defined(_XM_X86_) || defined(_XM_X64_)
+#if defined(_XM_LITTLEENDIAN_)
         uIndex ^= 3; // Swap byte ordering on little endian machines
 #endif
         pWork[0] = aByte[VectorIndex][uIndex];
@@ -2132,11 +2132,26 @@ XMFINLINE XMVECTOR XMVectorTruncate
 {
 #if defined(_XM_NO_INTRINSICS_)
     XMVECTOR Result;
-    Result.vector4_f32[0] = (FLOAT)((INT)V.vector4_f32[0]);
-    Result.vector4_f32[1] = (FLOAT)((INT)V.vector4_f32[1]);
-    Result.vector4_f32[2] = (FLOAT)((INT)V.vector4_f32[2]);
-    Result.vector4_f32[3] = (FLOAT)((INT)V.vector4_f32[3]);
+    UINT     i;
 
+    // Avoid C4701
+    Result.vector4_f32[0] = 0.0f;
+
+    for (i = 0; i < 4; i++)
+    {
+        if (XMISNAN(V.vector4_f32[i]))
+        {
+            Result.vector4_u32[i] = 0x7FC00000;
+        }
+        else if (fabsf(V.vector4_f32[i]) < 8388608.0f)
+        {
+            Result.vector4_f32[i] = (FLOAT)((INT)V.vector4_f32[i]);
+        }
+        else
+        {
+            Result.vector4_f32[i] = V.vector4_f32[i];
+        }
+    }
     return Result;
 
 #elif defined(_XM_SSE_INTRINSICS_)
@@ -2623,6 +2638,27 @@ XMFINLINE XMVECTOR XMVectorMultiplyAdd
 
 //------------------------------------------------------------------------------
 
+XMFINLINE XMVECTOR XMVectorDivide
+(
+    FXMVECTOR V1, 
+    FXMVECTOR V2
+)
+{
+#if defined(_XM_NO_INTRINSICS_)
+    XMVECTOR Result;
+    Result.vector4_f32[0] = V1.vector4_f32[0] / V2.vector4_f32[0];
+    Result.vector4_f32[1] = V1.vector4_f32[1] / V2.vector4_f32[1];
+    Result.vector4_f32[2] = V1.vector4_f32[2] / V2.vector4_f32[2];
+    Result.vector4_f32[3] = V1.vector4_f32[3] / V2.vector4_f32[3];
+    return Result;
+#elif defined(_XM_SSE_INTRINSICS_)
+    return _mm_div_ps( V1, V2 );
+#else // _XM_VMX128_INTRINSICS_
+#endif // _XM_VMX128_INTRINSICS_
+}
+
+//------------------------------------------------------------------------------
+
 XMFINLINE XMVECTOR XMVectorNegativeMultiplySubtract
 (
     FXMVECTOR V1, 
@@ -2665,8 +2701,8 @@ XMFINLINE XMVECTOR XMVectorScale
     return vResult;
 
 #elif defined(_XM_SSE_INTRINSICS_)
-	XMVECTOR vResult = _mm_set_ps1(ScaleFactor);
-	return _mm_mul_ps(vResult,V);
+   XMVECTOR vResult = _mm_set_ps1(ScaleFactor);
+   return _mm_mul_ps(vResult,V);
 #elif defined(XM_NO_MISALIGNED_VECTOR_ACCESS)
 #endif // _XM_VMX128_INTRINSICS_
 }
@@ -2679,7 +2715,6 @@ XMFINLINE XMVECTOR XMVectorReciprocalEst
 )
 {
 #if defined(_XM_NO_INTRINSICS_)
-
     XMVECTOR Result;
     UINT     i;
 
@@ -2688,24 +2723,19 @@ XMFINLINE XMVECTOR XMVectorReciprocalEst
 
     for (i = 0; i < 4; i++)
     {
-        if (XMISINF(V.vector4_f32[i]))
+        if (XMISNAN(V.vector4_f32[i]))
         {
-            Result.vector4_f32[i] = (V.vector4_f32[i] < 0.0f) ? -0.0f : 0.0f;
+            Result.vector4_u32[i] = 0x7FC00000;
         }
-        else if (V.vector4_f32[i] == -0.0f)
+        else if (V.vector4_f32[i] == 0.0f || V.vector4_f32[i] == -0.0f)
         {
-            Result.vector4_u32[i] = 0xFF800000;
-        }
-        else if (V.vector4_f32[i] == 0.0f)
-        {
-            Result.vector4_u32[i] = 0x7F800000;
+            Result.vector4_u32[i] = 0x7F800000 | (V.vector4_u32[i] & 0x80000000);
         }
         else
         {
-            Result.vector4_f32[i] = 1.0f / V.vector4_f32[i];
+            Result.vector4_f32[i] = 1.f / V.vector4_f32[i];
         }
     }
-
     return Result;
 
 #elif defined(_XM_SSE_INTRINSICS_)
@@ -2723,6 +2753,7 @@ XMFINLINE XMVECTOR XMVectorReciprocal
 {
 #if defined(_XM_NO_INTRINSICS_)
     return XMVectorReciprocalEst(V);
+
 #elif defined(_XM_SSE_INTRINSICS_)
     return _mm_div_ps(g_XMOne,V);
 #else // _XM_VMX128_INTRINSICS_
@@ -2742,7 +2773,7 @@ XMFINLINE XMVECTOR XMVectorSqrtEst
     // if (x == +Infinity)  sqrt(x) = +Infinity
     // if (x == +0.0f)      sqrt(x) = +0.0f
     // if (x == -0.0f)      sqrt(x) = -0.0f
-    // if (x < -0.0f)       sqrt(x) = QNaN
+    // if (x < 0.0f)        sqrt(x) = QNaN
 
     XMVECTOR Result = XMVectorReciprocalSqrtEst(V);
     XMVECTOR Zero = XMVectorZero();
@@ -2776,7 +2807,7 @@ XMFINLINE XMVECTOR XMVectorSqrt
     // if (x == +Infinity)  sqrt(x) = +Infinity
     // if (x == +0.0f)      sqrt(x) = +0.0f
     // if (x == -0.0f)      sqrt(x) = -0.0f
-    // if (x < -0.0f)       sqrt(x) = QNaN
+    // if (x < 0.0f)        sqrt(x) = QNaN
 
     Result = XMVectorReciprocalSqrt(V);
     Zero = XMVectorZero();
@@ -2803,6 +2834,11 @@ XMFINLINE XMVECTOR XMVectorReciprocalSqrtEst
 {
 #if defined(_XM_NO_INTRINSICS_)
 
+    // if (x == +Infinity)  rsqrt(x) = 0
+    // if (x == +0.0f)      rsqrt(x) = +Infinity
+    // if (x == -0.0f)      rsqrt(x) = -Infinity
+    // if (x < 0.0f)        rsqrt(x) = QNaN
+
     XMVECTOR Result;
     UINT     i;
 
@@ -2811,13 +2847,13 @@ XMFINLINE XMVECTOR XMVectorReciprocalSqrtEst
 
     for (i = 0; i < 4; i++)
     {
-        if (V.vector4_f32[i] == 0.0f)
+        if (XMISNAN(V.vector4_f32[i]))
         {
-            Result.vector4_u32[i] = 0x7F800000;
+            Result.vector4_u32[i] = 0x7FC00000;
         }
-        else if (V.vector4_f32[i] == -0.0f)
+        else if (V.vector4_f32[i] == 0.0f || V.vector4_f32[i] == -0.0f)
         {
-            Result.vector4_u32[i] = 0xFF800000;
+            Result.vector4_u32[i] = 0x7F800000 | (V.vector4_u32[i] & 0x80000000);
         }
         else if (V.vector4_f32[i] < 0.0f)
         {
@@ -4415,22 +4451,22 @@ XMINLINE XMVECTOR XMVectorATan2
     // Return the inverse tangent of Y / X in the range of -Pi to Pi with the following exceptions:
 
     //     Y == 0 and X is Negative         -> Pi with the sign of Y
-    //     Y == 0 and X is Positive         -> 0 with the sign of Y
+    //     y == 0 and x is positive         -> 0 with the sign of y
     //     Y != 0 and X == 0                -> Pi / 2 with the sign of Y
-    //     X == -Infinity and Finite Y > 0  -> Pi with the sign of Y
-    //     X == +Infinity and Finite Y > 0  -> 0 with the sign of Y
+    //     Y != 0 and X is Negative         -> atan(y/x) + (PI with the sign of Y)
+    //     X == -Infinity and Finite Y      -> Pi with the sign of Y
+    //     X == +Infinity and Finite Y      -> 0 with the sign of Y
     //     Y == Infinity and X is Finite    -> Pi / 2 with the sign of Y
     //     Y == Infinity and X == -Infinity -> 3Pi / 4 with the sign of Y
     //     Y == Infinity and X == +Infinity -> Pi / 4 with the sign of Y
-    //     TODO: Return Y / X if the result underflows
 
     XMVECTOR Reciprocal;
     XMVECTOR V;
     XMVECTOR YSign;
     XMVECTOR Pi, PiOverTwo, PiOverFour, ThreePiOverFour;
-    XMVECTOR YEqualsZero, XEqualsZero, XIsPositive, YEqualsInfinity, XEqualsInfinity, FiniteYGreaterZero;
+    XMVECTOR YEqualsZero, XEqualsZero, XIsPositive, YEqualsInfinity, XEqualsInfinity;
     XMVECTOR ATanResultValid;
-    XMVECTOR R0, R1, R2, R3, R4, R5, R6, R7;
+    XMVECTOR R0, R1, R2, R3, R4, R5;
     XMVECTOR Zero;
     XMVECTOR Result;
     static CONST XMVECTOR ATan2Constants = {XM_PI, XM_PIDIV2, XM_PIDIV4, XM_PI * 3.0f / 4.0f};
@@ -4449,8 +4485,6 @@ XMINLINE XMVECTOR XMVectorATan2
     XIsPositive = XMVectorEqualInt(XIsPositive, Zero);
     YEqualsInfinity = XMVectorIsInfinite(Y);
     XEqualsInfinity = XMVectorIsInfinite(X);
-    FiniteYGreaterZero = XMVectorGreater(Y, Zero);
-    FiniteYGreaterZero = XMVectorSelect(FiniteYGreaterZero, Zero, YEqualsInfinity);
 
     YSign = XMVectorAndInt(Y, g_XMNegativeZero.v);
     Pi = XMVectorOrInt(Pi, YSign);
@@ -4463,25 +4497,25 @@ XMINLINE XMVECTOR XMVectorATan2
     R3 = XMVectorSelect(R2, R1, YEqualsZero);
     R4 = XMVectorSelect(ThreePiOverFour, PiOverFour, XIsPositive);
     R5 = XMVectorSelect(PiOverTwo, R4, XEqualsInfinity);
-    R6 = XMVectorSelect(R3, R5, YEqualsInfinity);
-    R7 = XMVectorSelect(R6, R1, FiniteYGreaterZero);
-    Result = XMVectorSelect(R6, R7, XEqualsInfinity);
+    Result = XMVectorSelect(R3, R5, YEqualsInfinity);
     ATanResultValid = XMVectorEqualInt(Result, ATanResultValid);
 
     Reciprocal = XMVectorReciprocal(X);
     V = XMVectorMultiply(Y, Reciprocal);
     R0 = XMVectorATan(V);
 
-    Result = XMVectorSelect(Result, R0, ATanResultValid);
+    R1 = XMVectorSelect( Pi, Zero, XIsPositive );
+    R2 = XMVectorAdd(R0, R1);
+
+    Result = XMVectorSelect(Result, R2, ATanResultValid);
 
     return Result;
 
 #elif defined(_XM_SSE_INTRINSICS_)
     static CONST XMVECTORF32 ATan2Constants = {XM_PI, XM_PIDIV2, XM_PIDIV4, XM_PI * 3.0f / 4.0f};
+
     // Mask if Y>0 && Y!=INF
-    XMVECTOR FiniteYGreaterZero = _mm_cmpgt_ps(Y,g_XMZero);
     XMVECTOR YEqualsInfinity = XMVectorIsInfinite(Y);
-    FiniteYGreaterZero = _mm_andnot_ps(YEqualsInfinity,FiniteYGreaterZero);
     // Get the sign of (Y&0x80000000)
     XMVECTOR YSign = _mm_and_ps(Y, g_XMNegativeZero);
     // Get the sign bits of X
@@ -4489,10 +4523,10 @@ XMINLINE XMVECTOR XMVectorATan2
     // Change them to masks
     XIsPositive = XMVectorEqualInt(XIsPositive,g_XMZero);
     // Get Pi
-    XMVECTOR R1 = _mm_load_ps1(&ATan2Constants.f[0]);
+    XMVECTOR Pi = _mm_load_ps1(&ATan2Constants.f[0]);
     // Copy the sign of Y
-    R1 = _mm_or_ps(R1,YSign);
-    R1 = XMVectorSelect(R1,YSign,XIsPositive);
+    Pi = _mm_or_ps(Pi,YSign);
+    XMVECTOR R1 = XMVectorSelect(Pi,YSign,XIsPositive);
     // Mask for X==0
     XMVECTOR vConstants = _mm_cmpeq_ps(X,g_XMZero);
     // Get Pi/2 with with sign of Y
@@ -4513,7 +4547,7 @@ XMINLINE XMVECTOR XMVectorATan2
     vConstants = XMVectorSelect(PiOverTwo,vConstants,XEqualsInfinity);
 
     XMVECTOR vResult = XMVectorSelect(R2,vConstants,YEqualsInfinity);
-    vConstants = XMVectorSelect(vResult,R1,FiniteYGreaterZero);
+    vConstants = XMVectorSelect(R1,vResult,YEqualsInfinity);
     // At this point, any entry that's zero will get the result
     // from XMVectorATan(), otherwise, return the failsafe value
     vResult = XMVectorSelect(vResult,vConstants,XEqualsInfinity);
@@ -4523,6 +4557,10 @@ XMINLINE XMVECTOR XMVectorATan2
     vConstants = _mm_div_ps(Y,X);
     vConstants = XMVectorATan(vConstants);
     // Discard entries that have been declared void
+
+    XMVECTOR R3 = XMVectorSelect( Pi, g_XMZero, XIsPositive );
+    vConstants = _mm_add_ps( vConstants, R3 );
+
     vResult = XMVectorSelect(vResult,vConstants,ATanResultValid);
     return vResult;
 #else // _XM_VMX128_INTRINSICS_
@@ -5139,9 +5177,9 @@ XMFINLINE XMVECTOR XMVectorATan2Est
     XMVECTOR V;
     XMVECTOR YSign;
     XMVECTOR Pi, PiOverTwo, PiOverFour, ThreePiOverFour;
-    XMVECTOR YEqualsZero, XEqualsZero, XIsPositive, YEqualsInfinity, XEqualsInfinity, FiniteYGreaterZero;
+    XMVECTOR YEqualsZero, XEqualsZero, XIsPositive, YEqualsInfinity, XEqualsInfinity;
     XMVECTOR ATanResultValid;
-    XMVECTOR R0, R1, R2, R3, R4, R5, R6, R7;
+    XMVECTOR R0, R1, R2, R3, R4, R5;
     XMVECTOR Zero;
     XMVECTOR Result;
     static CONST XMVECTOR ATan2Constants = {XM_PI, XM_PIDIV2, XM_PIDIV4, XM_PI * 3.0f / 4.0f};
@@ -5160,8 +5198,6 @@ XMFINLINE XMVECTOR XMVectorATan2Est
     XIsPositive = XMVectorEqualInt(XIsPositive, Zero);
     YEqualsInfinity = XMVectorIsInfinite(Y);
     XEqualsInfinity = XMVectorIsInfinite(X);
-    FiniteYGreaterZero = XMVectorGreater(Y, Zero);
-    FiniteYGreaterZero = XMVectorSelect(FiniteYGreaterZero, Zero, YEqualsInfinity);
 
     YSign = XMVectorAndInt(Y, g_XMNegativeZero.v);
     Pi = XMVectorOrInt(Pi, YSign);
@@ -5174,25 +5210,25 @@ XMFINLINE XMVECTOR XMVectorATan2Est
     R3 = XMVectorSelect(R2, R1, YEqualsZero);
     R4 = XMVectorSelect(ThreePiOverFour, PiOverFour, XIsPositive);
     R5 = XMVectorSelect(PiOverTwo, R4, XEqualsInfinity);
-    R6 = XMVectorSelect(R3, R5, YEqualsInfinity);
-    R7 = XMVectorSelect(R6, R1, FiniteYGreaterZero);
-    Result = XMVectorSelect(R6, R7, XEqualsInfinity);
+    Result = XMVectorSelect(R3, R5, YEqualsInfinity);
     ATanResultValid = XMVectorEqualInt(Result, ATanResultValid);
 
     Reciprocal = XMVectorReciprocalEst(X);
     V = XMVectorMultiply(Y, Reciprocal);
     R0 = XMVectorATanEst(V);
 
-    Result = XMVectorSelect(Result, R0, ATanResultValid);
+    R1 = XMVectorSelect( Pi, Zero, XIsPositive );
+    R2 = XMVectorAdd(R0, R1);
+
+    Result = XMVectorSelect(Result, R2, ATanResultValid);
 
     return Result;
 
 #elif defined(_XM_SSE_INTRINSICS_)
     static CONST XMVECTORF32 ATan2Constants = {XM_PI, XM_PIDIV2, XM_PIDIV4, XM_PI * 3.0f / 4.0f};
+
     // Mask if Y>0 && Y!=INF
-    XMVECTOR FiniteYGreaterZero = _mm_cmpgt_ps(Y,g_XMZero);
     XMVECTOR YEqualsInfinity = XMVectorIsInfinite(Y);
-    FiniteYGreaterZero = _mm_andnot_ps(YEqualsInfinity,FiniteYGreaterZero);
     // Get the sign of (Y&0x80000000)
     XMVECTOR YSign = _mm_and_ps(Y, g_XMNegativeZero);
     // Get the sign bits of X
@@ -5200,10 +5236,10 @@ XMFINLINE XMVECTOR XMVectorATan2Est
     // Change them to masks
     XIsPositive = XMVectorEqualInt(XIsPositive,g_XMZero);
     // Get Pi
-    XMVECTOR R1 = _mm_load_ps1(&ATan2Constants.f[0]);
+    XMVECTOR Pi = _mm_load_ps1(&ATan2Constants.f[0]);
     // Copy the sign of Y
-    R1 = _mm_or_ps(R1,YSign);
-    R1 = XMVectorSelect(R1,YSign,XIsPositive);
+    Pi = _mm_or_ps(Pi,YSign);
+    XMVECTOR R1 = XMVectorSelect(Pi,YSign,XIsPositive);
     // Mask for X==0
     XMVECTOR vConstants = _mm_cmpeq_ps(X,g_XMZero);
     // Get Pi/2 with with sign of Y
@@ -5224,16 +5260,21 @@ XMFINLINE XMVECTOR XMVectorATan2Est
     vConstants = XMVectorSelect(PiOverTwo,vConstants,XEqualsInfinity);
 
     XMVECTOR vResult = XMVectorSelect(R2,vConstants,YEqualsInfinity);
-    vConstants = XMVectorSelect(vResult,R1,FiniteYGreaterZero);
+    vConstants = XMVectorSelect(R1,vResult,YEqualsInfinity);
     // At this point, any entry that's zero will get the result
     // from XMVectorATan(), otherwise, return the failsafe value
     vResult = XMVectorSelect(vResult,vConstants,XEqualsInfinity);
     // Any entries not 0xFFFFFFFF, are considered precalculated
     XMVECTOR ATanResultValid = XMVectorEqualInt(vResult,g_XMNegOneMask);
     // Let's do the ATan2 function
-    vConstants = _mm_div_ps(Y,X);
+    XMVECTOR Reciprocal = _mm_rcp_ps(X);
+    vConstants = _mm_mul_ps(Y, Reciprocal);
     vConstants = XMVectorATanEst(vConstants);
     // Discard entries that have been declared void
+
+    XMVECTOR R3 = XMVectorSelect( Pi, g_XMZero, XIsPositive );
+    vConstants = _mm_add_ps( vConstants, R3 );
+
     vResult = XMVectorSelect(vResult,vConstants,ATanResultValid);
     return vResult;
 #else // _XM_VMX128_INTRINSICS_
@@ -6371,24 +6412,22 @@ XMFINLINE XMVECTOR XMVector2Normalize
 )
 {
 #if defined(_XM_NO_INTRINSICS_)
+    FLOAT fLength;
+    XMVECTOR vResult;
 
-    XMVECTOR LengthSq;
-    XMVECTOR Zero;
-    XMVECTOR InfiniteLength;
-    XMVECTOR ZeroLength;
-    XMVECTOR Select;
-    XMVECTOR Result;
+    vResult = XMVector2Length( V );
+    fLength = vResult.vector4_f32[0];
 
-    LengthSq = XMVector2LengthSq(V);
-    Zero = XMVectorZero();
-    Result = XMVectorReciprocalSqrt(LengthSq);
-    InfiniteLength = XMVectorEqualInt(LengthSq, g_XMInfinity.v);
-    ZeroLength = XMVectorEqual(LengthSq, Zero);
-    Result = XMVectorMultiply(V, Result);
-    Select = XMVectorEqualInt(InfiniteLength, ZeroLength);
-    Result = XMVectorSelect(LengthSq, Result, Select);
-
-    return Result;
+    // Prevent divide by zero
+    if (fLength > 0) {
+        fLength = 1.0f/fLength;
+    }
+    
+    vResult.vector4_f32[0] = V.vector4_f32[0]*fLength;
+    vResult.vector4_f32[1] = V.vector4_f32[1]*fLength;
+    vResult.vector4_f32[2] = V.vector4_f32[2]*fLength;
+    vResult.vector4_f32[3] = V.vector4_f32[3]*fLength;
+    return vResult;
 
 #elif defined(_XM_SSE_INTRINSICS_)
     // Perform the dot product on x and y only
@@ -6398,13 +6437,21 @@ XMFINLINE XMVECTOR XMVector2Normalize
 	vLengthSq = _mm_shuffle_ps(vLengthSq,vLengthSq,_MM_SHUFFLE(0,0,0,0));
     // Prepare for the division
     XMVECTOR vResult = _mm_sqrt_ps(vLengthSq);
+    // Create zero with a single instruction
+    XMVECTOR vZeroMask = _mm_setzero_ps();
+    // Test for a divide by zero (Must be FP to detect -0.0)
+    vZeroMask = _mm_cmpneq_ps(vZeroMask,vResult);
     // Failsafe on zero (Or epsilon) length planes
     // If the length is infinity, set the elements to zero
     vLengthSq = _mm_cmpneq_ps(vLengthSq,g_XMInfinity);
     // Reciprocal mul to perform the normalization
     vResult = _mm_div_ps(V,vResult);
     // Any that are infinity, set to zero
-    vResult = _mm_and_ps(vResult,vLengthSq);
+    vResult = _mm_and_ps(vResult,vZeroMask);
+    // Select qnan or result based on infinite length
+	XMVECTOR vTemp1 = _mm_andnot_ps(vLengthSq,g_XMQNaN);
+    XMVECTOR vTemp2 = _mm_and_ps(vResult,vLengthSq);
+    vResult = _mm_or_ps(vTemp1,vTemp2);
     return vResult;
 #else // _XM_VMX128_INTRINSICS_
 #endif // _XM_VMX128_INTRINSICS_
@@ -8020,19 +8067,21 @@ XMFINLINE XMVECTOR XMVector3Normalize
 )
 {
 #if defined(_XM_NO_INTRINSICS_)
-    FLOAT fLengthSq;
+    FLOAT fLength;
     XMVECTOR vResult;
 
-    fLengthSq = sqrtf((V.vector4_f32[0]*V.vector4_f32[0])+(V.vector4_f32[1]*V.vector4_f32[1])+(V.vector4_f32[2]*V.vector4_f32[2]));
+    vResult = XMVector3Length( V );
+    fLength = vResult.vector4_f32[0];
+
     // Prevent divide by zero
-    if (fLengthSq) {
-        fLengthSq = 1.0f/fLengthSq;
+    if (fLength > 0) {
+        fLength = 1.0f/fLength;
     }
     
-    vResult.vector4_f32[0] = V.vector4_f32[0]*fLengthSq;
-    vResult.vector4_f32[1] = V.vector4_f32[1]*fLengthSq;
-    vResult.vector4_f32[2] = V.vector4_f32[2]*fLengthSq;
-    vResult.vector4_f32[3] = V.vector4_f32[3]*fLengthSq;
+    vResult.vector4_f32[0] = V.vector4_f32[0]*fLength;
+    vResult.vector4_f32[1] = V.vector4_f32[1]*fLength;
+    vResult.vector4_f32[2] = V.vector4_f32[2]*fLength;
+    vResult.vector4_f32[3] = V.vector4_f32[3]*fLength;
     return vResult;
 
 #elif defined(_XM_SSE_INTRINSICS_)
@@ -8045,13 +8094,21 @@ XMFINLINE XMVECTOR XMVector3Normalize
 	vLengthSq = _mm_shuffle_ps(vLengthSq,vLengthSq,_MM_SHUFFLE(0,0,0,0));
     // Prepare for the division
     XMVECTOR vResult = _mm_sqrt_ps(vLengthSq);
+    // Create zero with a single instruction
+    XMVECTOR vZeroMask = _mm_setzero_ps();
+    // Test for a divide by zero (Must be FP to detect -0.0)
+    vZeroMask = _mm_cmpneq_ps(vZeroMask,vResult);
     // Failsafe on zero (Or epsilon) length planes
     // If the length is infinity, set the elements to zero
     vLengthSq = _mm_cmpneq_ps(vLengthSq,g_XMInfinity);
     // Divide to perform the normalization
     vResult = _mm_div_ps(V,vResult);
     // Any that are infinity, set to zero
-    vResult = _mm_and_ps(vResult,vLengthSq);
+    vResult = _mm_and_ps(vResult,vZeroMask);
+    // Select qnan or result based on infinite length
+	XMVECTOR vTemp1 = _mm_andnot_ps(vLengthSq,g_XMQNaN);
+    XMVECTOR vTemp2 = _mm_and_ps(vResult,vLengthSq);
+    vResult = _mm_or_ps(vTemp1,vTemp2);
     return vResult;
 #else // _XM_VMX128_INTRINSICS_
 #endif // _XM_VMX128_INTRINSICS_
@@ -10206,15 +10263,10 @@ XMFINLINE XMVECTOR XMVector4NormalizeEst
     vLengthSq = _mm_add_ps(vLengthSq,vTemp);
     // Splat the length
 	vLengthSq = _mm_shuffle_ps(vLengthSq,vLengthSq,_MM_SHUFFLE(2,2,2,2));
-    // Prepare for the division
+    // Get the reciprocal
     XMVECTOR vResult = _mm_rsqrt_ps(vLengthSq);
-    // Failsafe on zero (Or epsilon) length planes
-    // If the length is infinity, set the elements to zero
-    vLengthSq = _mm_cmpneq_ps(vLengthSq,g_XMInfinity);
     // Reciprocal mul to perform the normalization
     vResult = _mm_mul_ps(vResult,V);
-    // Any that are infinity, set to zero
-    vResult = _mm_and_ps(vResult,vLengthSq);
     return vResult;
 #else // _XM_VMX128_INTRINSICS_
 #endif // _XM_VMX128_INTRINSICS_
@@ -10228,24 +10280,22 @@ XMFINLINE XMVECTOR XMVector4Normalize
 )
 {
 #if defined(_XM_NO_INTRINSICS_)
+    FLOAT fLength;
+    XMVECTOR vResult;
 
-    XMVECTOR LengthSq;
-    XMVECTOR Zero;
-    XMVECTOR InfiniteLength;
-    XMVECTOR ZeroLength;
-    XMVECTOR Select;
-    XMVECTOR Result;
+    vResult = XMVector4Length( V );
+    fLength = vResult.vector4_f32[0];
 
-    LengthSq = XMVector4LengthSq(V);
-    Zero = XMVectorZero();
-    Result = XMVectorReciprocalSqrt(LengthSq);
-    InfiniteLength = XMVectorEqualInt(LengthSq, g_XMInfinity.v);
-    ZeroLength = XMVectorEqual(LengthSq, Zero);
-    Result = XMVectorMultiply(V, Result);
-    Select = XMVectorEqualInt(InfiniteLength, ZeroLength);
-    Result = XMVectorSelect(LengthSq, Result, Select);
-
-    return Result;
+    // Prevent divide by zero
+    if (fLength > 0) {
+        fLength = 1.0f/fLength;
+    }
+    
+    vResult.vector4_f32[0] = V.vector4_f32[0]*fLength;
+    vResult.vector4_f32[1] = V.vector4_f32[1]*fLength;
+    vResult.vector4_f32[2] = V.vector4_f32[2]*fLength;
+    vResult.vector4_f32[3] = V.vector4_f32[3]*fLength;
+    return vResult;
 
 #elif defined(_XM_SSE_INTRINSICS_)
     // Perform the dot product on x,y,z and w
@@ -10264,13 +10314,21 @@ XMFINLINE XMVECTOR XMVector4Normalize
 	vLengthSq = _mm_shuffle_ps(vLengthSq,vLengthSq,_MM_SHUFFLE(2,2,2,2));
     // Prepare for the division
     XMVECTOR vResult = _mm_sqrt_ps(vLengthSq);
+    // Create zero with a single instruction
+    XMVECTOR vZeroMask = _mm_setzero_ps();
+    // Test for a divide by zero (Must be FP to detect -0.0)
+    vZeroMask = _mm_cmpneq_ps(vZeroMask,vResult);
     // Failsafe on zero (Or epsilon) length planes
     // If the length is infinity, set the elements to zero
     vLengthSq = _mm_cmpneq_ps(vLengthSq,g_XMInfinity);
     // Divide to perform the normalization
     vResult = _mm_div_ps(V,vResult);
     // Any that are infinity, set to zero
-    vResult = _mm_and_ps(vResult,vLengthSq);
+    vResult = _mm_and_ps(vResult,vZeroMask);
+    // Select qnan or result based on infinite length
+	XMVECTOR vTemp1 = _mm_andnot_ps(vLengthSq,g_XMQNaN);
+    XMVECTOR vTemp2 = _mm_and_ps(vResult,vLengthSq);
+    vResult = _mm_or_ps(vTemp1,vTemp2);
     return vResult;
 #else // _XM_VMX128_INTRINSICS_
 #endif // _XM_VMX128_INTRINSICS_
@@ -10882,8 +10940,7 @@ XMFINLINE XMVECTOR& operator/=
     FXMVECTOR       V2
 )
 {
-    XMVECTOR InvV = XMVectorReciprocal(V2);
-    V1 = XMVectorMultiply(V1, InvV);
+    V1 = XMVectorDivide(V1,V2);
     return V1;
 }
 
@@ -10952,8 +11009,7 @@ XMFINLINE XMVECTOR operator/
     FXMVECTOR V2
 )
 {
-    XMVECTOR InvV = XMVectorReciprocal(V2);
-    return XMVectorMultiply(V1, InvV);
+    return XMVectorDivide(V1,V2);
 }
 
 //------------------------------------------------------------------------------
@@ -11013,6 +11069,18 @@ XMFINLINE _XMFLOAT2::_XMFLOAT2
 XMFINLINE _XMFLOAT2& _XMFLOAT2::operator=
 (
     CONST _XMFLOAT2& Float2
+)
+{
+    x = Float2.x;
+    y = Float2.y;
+    return *this;
+}
+
+//------------------------------------------------------------------------------
+
+XMFINLINE XMFLOAT2A& XMFLOAT2A::operator=
+(
+    CONST XMFLOAT2A& Float2
 )
 {
     x = Float2.x;
@@ -11295,6 +11363,19 @@ XMFINLINE _XMFLOAT3::_XMFLOAT3
 XMFINLINE _XMFLOAT3& _XMFLOAT3::operator=
 (
     CONST _XMFLOAT3& Float3
+)
+{
+    x = Float3.x;
+    y = Float3.y;
+    z = Float3.z;
+    return *this;
+}
+
+//------------------------------------------------------------------------------
+
+XMFINLINE XMFLOAT3A& XMFLOAT3A::operator=
+(
+    CONST XMFLOAT3A& Float3
 )
 {
     x = Float3.x;
@@ -11863,6 +11944,20 @@ XMFINLINE _XMFLOAT4::_XMFLOAT4
 XMFINLINE _XMFLOAT4& _XMFLOAT4::operator=
 (
     CONST _XMFLOAT4& Float4
+)
+{
+    x = Float4.x;
+    y = Float4.y;
+    z = Float4.z;
+    w = Float4.w;
+    return *this;
+}
+
+//------------------------------------------------------------------------------
+
+XMFINLINE XMFLOAT4A& XMFLOAT4A::operator=
+(
+    CONST XMFLOAT4A& Float4
 )
 {
     x = Float4.x;
@@ -12777,13 +12872,13 @@ XMFINLINE _XMUICO4& _XMUICO4::operator=
 
 XMFINLINE _XMCOLOR::_XMCOLOR
 (
-    FLOAT _x,
-    FLOAT _y,
-    FLOAT _z,
-    FLOAT _w
+    FLOAT _r,
+    FLOAT _g,
+    FLOAT _b,
+    FLOAT _a
 )
 {
-    XMStoreColor(this, XMVectorSet(_x, _y, _z, _w));
+    XMStoreColor(this, XMVectorSet(_r, _g, _b, _a));
 }
 
 //------------------------------------------------------------------------------

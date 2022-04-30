@@ -282,7 +282,7 @@ public:
 		LACKOFLEVEL
 	};
 	template< class ErrorCallback >
-	BOOL	CheckPartyMemberForRecallParty( AgpdCharacter *pcsCharacter , ErrorCallback ErrorCallback );
+	BOOL	CheckPartyMemberForRecallParty( AgpdCharacter *pcsCharacter , ErrorCallback callback );
 		// Callback ( error , pcsCharacter );
 
 	BOOL	RecallPartyMember(AgpdCharacter *pcsCharacter);

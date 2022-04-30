@@ -5179,11 +5179,11 @@ BOOL AgsmItem::ProcessItemSkillPlus(AgpdItem* pcsItem, AgpdCharacter* pcsCharact
 																			0);
 
 	// 표본에서 랜덤하게 AGPMITEM_MAX_SKILL_PLUS_EFFECT 개수만큼 뽑는다.
-	std::random_sample(pcsItem->m_pcsItemTemplate->m_aunSkillPlusTID.begin(),
+	/*std::random_sample(pcsItem->m_pcsItemTemplate->m_aunSkillPlusTID.begin(),
 						iter,		// 0 이 위치하기 직전까지만 표본을 뽑는다.
 						aunEffectTID.begin(),
-						aunEffectTID.end());
-
+						aunEffectTID.end());*/ //TODO: FIXME
+	
 	// 한번 섞어준다.
 	std::random_shuffle(aunEffectTID.begin(), aunEffectTID.end());
 

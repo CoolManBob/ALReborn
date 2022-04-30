@@ -9,7 +9,9 @@
 #include "rwcore.h"
 #include <algorithm>
 #include <vector>
+#include <iostream>
 using std::vector;
+using std::ifstream;
 
 enum eTblDir
 {
@@ -335,14 +337,35 @@ RwInt32 stTimeTable<T>::bToFile(FILE* fp)
 template<class T>
 RwInt32 stTimeTable<T>::bFromFile(FILE* fp)
 {
+
+	//ofstream outFile("stTimeTable.txt", ios::app);
 	//binary
 	ASSERT(fp);
 	int nSize;
 	int ir = fread( (LPVOID)(&nSize), sizeof(nSize), 1, fp );
+	
+	//outFile << "nSize: " << nSize << " ir: " << ir << endl;
+
 	m_stlvecTimeVal.resize(nSize);
+
+#ifdef _DEBUG
+	if (nSize == 0)
+		return 4;
+#endif
+
 	ASSERT( ir == 1 );
 	ir = fread( (LPVOID)(&m_stlvecTimeVal[0]), sizeof(stTimeVal), nSize, fp );
+
+	//outFile << "ir: " << ir << endl;
+
 	return (ir*sizeof(stTimeVal) + 4);//byte
+
+	/*ifstream inFile = fp;
+	int nSize = 0;
+	inFile.read(&nSize, sizeof(nSize));
+	m_stlvecTimeVal.resize(nSize);
+	inFile.read(&m_stlvecTimeVal[0], sizeof(stTimeVal)*nSize);
+	return (nSize * sizeof(stTimeVal) + 4);	*/
 }
 
 template<class T>

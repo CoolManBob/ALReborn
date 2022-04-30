@@ -97,7 +97,7 @@ BOOL AgsmServerStatus::OnAddModule()
 
 BOOL AgsmServerStatus::OnInit()
 {
-	m_WISMObj.Open();//JK_WISM연동
+	//m_WISMObj.Open();//JK_WISM연동
 
 	return TRUE;
 }
@@ -125,24 +125,24 @@ BOOL AgsmServerStatus::OnIdle(UINT32 ulClockCount)
 	INT32 nNormalPCRoom = m_pAgsmCharacter->GetNumOfPCRoomPlayers() - nPremiumPCRoom;
 
 
-	WISM::CNotificationNumber aNumber;
-	aNumber.mSystemId = GetServerSystemID();
-	aNumber.mActivityId = 1005;//동접
-	aNumber.mNumber[WISM::eNotificationNumberValue] = m_pAgsmCharacter->GetNumOfPlayers();
-	
-	m_WISMObj.NotifyNumber(aNumber);
-	
-	aNumber.mSystemId = GetServerSystemID();
-	aNumber.mActivityId = 1007;//유료pc방
-	aNumber.mNumber[WISM::eNotificationNumberValue] = nPremiumPCRoom;
-	
-	m_WISMObj.NotifyNumber(aNumber);
+	//WISM::CNotificationNumber aNumber;
+	//aNumber.mSystemId = GetServerSystemID();
+	//aNumber.mActivityId = 1005;//동접
+	//aNumber.mNumber[WISM::eNotificationNumberValue] = m_pAgsmCharacter->GetNumOfPlayers();
+	//
+	//m_WISMObj.NotifyNumber(aNumber);
+	//
+	//aNumber.mSystemId = GetServerSystemID();
+	//aNumber.mActivityId = 1007;//유료pc방
+	//aNumber.mNumber[WISM::eNotificationNumberValue] = nPremiumPCRoom;
+	//
+	//m_WISMObj.NotifyNumber(aNumber);
 
-	aNumber.mSystemId = GetServerSystemID();
-	aNumber.mActivityId = 1008;//무료pc방
-	aNumber.mNumber[WISM::eNotificationNumberValue] = nNormalPCRoom;
+	//aNumber.mSystemId = GetServerSystemID();
+	//aNumber.mActivityId = 1008;//무료pc방
+	//aNumber.mNumber[WISM::eNotificationNumberValue] = nNormalPCRoom;
 
-	m_WISMObj.NotifyNumber(aNumber);
+	//m_WISMObj.NotifyNumber(aNumber);
 
 
 	m_lLastSendServerMonitorInfo = ulClockCount;
@@ -154,7 +154,7 @@ BOOL AgsmServerStatus::OnDestroy()
 {
 	Stop();
 
-	m_WISMObj.Close();
+	//m_WISMObj.Close();
 
 	return TRUE;
 }

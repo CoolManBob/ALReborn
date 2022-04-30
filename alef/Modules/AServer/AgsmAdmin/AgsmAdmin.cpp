@@ -2351,7 +2351,7 @@ void AgsmAdmin::ProcessNoticeRepeat()
 				(*iter).m_szMessage = NULL;
 			}
 
-			pcsNotice = iter;
+			pcsNotice = &*iter;
 
 			m_vtNotice.erase(iter);
 			iter = m_vtNotice.begin();

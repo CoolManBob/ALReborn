@@ -218,7 +218,7 @@ BOOL AgsmAdmin::ProcessTitleOperationQuestEdit(stAgpdAdminTitleOperation* pstTit
 
 	IterCurrentTitleQuest iter = pcsCharacter->m_csTitleQuest->FindTitleQuestByTitleID(pstTitle->lTitleTid);
 
-	if(!iter)
+	if(!&iter) //Does this work? lol
 		return FALSE;
 
 	INT32 i = 0;

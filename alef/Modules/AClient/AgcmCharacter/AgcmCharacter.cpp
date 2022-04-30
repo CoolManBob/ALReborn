@@ -6061,6 +6061,10 @@ BOOL AgcmCharacter::SendMoveCharacter(AuPOS *posDest, MOVE_DIRECTION eMoveDirect
 
 	m_ulPrevSendMoveTime = m_ulCurTick;
 
+	AgpdCharacter* pdChar = m_pcsAgpmCharacter->GetCharacterLock(GetSelfCID());
+
+	m_pcsAgpmCharacter->MoveCharacter(GetSelfCID(), posDest, (MOVE_DIRECTION)cMoveDirection, cMoveFlag & AGPMCHARACTER_MOVE_FLAG_PATHFINDING, cMoveFlag & AGPMCHARACTER_MOVE_FLAG_FAST);
+
 	return TRUE;
 }
 

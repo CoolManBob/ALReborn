@@ -421,7 +421,7 @@ AgsmLoginDB::AgsmLoginDB()
 	m_lNumExpeditionList	= 0;
 
 #ifdef _AREA_WESTERN_
-	m_pCogpas = 0;
+	//m_pCogpas = 0;
 #endif
 	}
 
@@ -520,9 +520,9 @@ BOOL AgsmLoginDB::OnAddModule()
 #endif
 
 #ifdef _AREA_WESTERN_
-	m_pCogpas = new CCogpas;
+	/*m_pCogpas = new CCogpas;
 	if (!m_pCogpas->LoadDLL())
-		return FALSE;
+		return FALSE;*/
 #endif
 
 	return TRUE;
@@ -1062,7 +1062,7 @@ BOOL AgsmLoginDB::ProcessCheckAccount1(AgsmLoginQueueInfo *pQueryInfo, ApHttp* p
 #endif
 
 #ifdef _AREA_WESTERN_	// 영국의 경우 blocking으로 인증을 처리한다
-		lResult = m_pCogpas->Authenticate(pQueryInfo->m_szAccountID, pQueryInfo->m_szPassword);
+		//lResult = m_pCogpas->Authenticate(pQueryInfo->m_szAccountID, pQueryInfo->m_szPassword);
 #endif
 	}
 	
@@ -1188,7 +1188,7 @@ BOOL AgsmLoginDB::ProcessCheckAccount2(AgsmLoginQueueInfo *pQueryInfo)
 	
 	_tprintf(_T("ProcessCheckAccount2 - 7\n"));
 
-	if(GetGameEnv().IsDebugTest())
+	/*if (GetGameEnv().IsDebugTest())
 	{
 #ifdef _WEBZEN_AUTH_
 		if (AUDATABASE2_QR_SUCCESS != pDatabase->ExecuteQuery())
@@ -1202,7 +1202,7 @@ BOOL AgsmLoginDB::ProcessCheckAccount2(AgsmLoginQueueInfo *pQueryInfo)
 #endif
 	}
 	else
-	{
+	{*/
 		// account
 		if (AUDATABASE2_QR_SUCCESS != pDatabase->ExecuteQuery()&& !m_pAgpmConfig->IsNoAccountAuth())
 			{
@@ -1217,7 +1217,7 @@ BOOL AgsmLoginDB::ProcessCheckAccount2(AgsmLoginQueueInfo *pQueryInfo)
 			sprintf_s(strCharBuff, sizeof(strCharBuff), "AgsmLoginDB::ProcessCheckAccount2 - 3\n");
 			AuLogFile_s(LOGIN_ERROR_FILE_NAME, strCharBuff);
 			}
-	}
+	//}
 
 	INT32	lAccountLV = 0;
 	TCHAR	szPenalty[6];
@@ -1254,7 +1254,7 @@ BOOL AgsmLoginDB::ProcessCheckAccount2(AgsmLoginQueueInfo *pQueryInfo)
 	_tprintf(_T("ProcessCheckAccount2 - 10\n"));
 
 	// 한국에서만 하자 -ㅂ-;
-	if (AP_SERVICE_AREA_KOREA == g_eServiceArea && false == GetGameEnv().IsDebugTest() && false == m_pAgpmConfig->IsNoAccountAuth())
+	if (AP_SERVICE_AREA_KOREA == g_eServiceArea && /*false == GetGameEnv().IsDebugTest() &&*/ false == m_pAgpmConfig->IsNoAccountAuth())
 	{
 		// 2007.11.20. steeple
 		// 나이체크가 한게임 모듈로 변경.
@@ -1770,7 +1770,7 @@ BOOL AgsmLoginDB::ProcessGetUnion(AgsmLoginQueueInfo *pQueryInfo)
 	
 	// if NC17 server, check social no.
 
-	if (g_eServiceArea == AP_SERVICE_AREA_KOREA && false == GetGameEnv().IsDebugTest())
+	if (g_eServiceArea == AP_SERVICE_AREA_KOREA)// && false == GetGameEnv().IsDebugTest())
 		{
 		if (pAgpdWorld->IsNC17())
 			{
@@ -3793,7 +3793,7 @@ BOOL AgsmLoginDB::_CheckAccountPassword(AuDatabase2 *pDatabase, UINT32 ulClientN
 
 		char strCharBuff[256] = { 0, };
 		sprintf_s(strCharBuff, sizeof(strCharBuff), "_CheckAccountPassword - SetParm Error ( AccountID : %s)\n" ,pszAccountID);
-		AuLogFile_s(LOGIN_AUTH_FILE_NAME, strCharBuff);
+		//AuLogFile_s(LOGIN_AUTH_FILE_NAME, strCharBuff);
 
 		return FALSE;
 	}
@@ -3804,7 +3804,7 @@ BOOL AgsmLoginDB::_CheckAccountPassword(AuDatabase2 *pDatabase, UINT32 ulClientN
 
 		char strCharBuff[256] = { 0, };
 		sprintf_s(strCharBuff, sizeof(strCharBuff), "_CheckAccountPassword - ExecuteQuery Error\n");
-		AuLogFile_s(LOGIN_AUTH_FILE_NAME, strCharBuff);
+		//AuLogFile_s(LOGIN_AUTH_FILE_NAME, strCharBuff);
 
 		return FALSE;
 	}
