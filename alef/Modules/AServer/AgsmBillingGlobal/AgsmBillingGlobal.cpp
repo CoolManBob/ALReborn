@@ -10,7 +10,7 @@ CWebzenBilling* m_pWZBilling = NULL;
 
 #ifdef _WEBZEN_BILLING_
 
-#ifdef _WIN64
+/*#ifdef _WIN64
 	#ifdef _DEBUG
 		#pragma comment(lib, "WebzenBillingD_x64_KOR.lib") 
 	#else
@@ -38,7 +38,7 @@ CWebzenBilling* m_pWZBilling = NULL;
 	#else
 		#pragma comment(lib, "WebzenBilling.lib") 
 	#endif
-#endif
+#endif*/
 
 #endif //_WEBZEN_BILLING_
 
@@ -58,16 +58,16 @@ AgsmBillingGlobal::AgsmBillingGlobal()
 
 AgsmBillingGlobal::~AgsmBillingGlobal()
 {
-	if( m_pWZShop )
+	/*if( m_pWZShop )
 		delete m_pWZShop;
 
 	if( m_pWZBilling )
-		delete m_pWZBilling;
+		delete m_pWZBilling;*/
 }
 
 BOOL AgsmBillingGlobal::Initialize()
 {
-	m_AdminGUID.SetCount(10000);
+	/*m_AdminGUID.SetCount(10000);
 	if (!m_AdminGUID.InitializeObject(sizeof(AgpdBillingGlobal*), m_AdminGUID.GetCount()))
 		return FALSE;
 
@@ -102,27 +102,27 @@ BOOL AgsmBillingGlobal::Initialize()
 	m_pWZBilling->SetCallbackOnUserStatus(AgsmBillingGlobal::OnUserStatus);
 	m_pWZBilling->SetCallbackOnInquirePersonDeduct(AgsmBillingGlobal::OnInquirePersonDeduct);
 	m_pWZBilling->SetCallbackOnInquirePCRoomPoint(AgsmBillingGlobal::OnInquirePCRoomPoint);
-	m_pWZBilling->Initialize();
+	m_pWZBilling->Initialize();*/
 
 	return TRUE;
 }
 
 BOOL AgsmBillingGlobal::OnIdle()
 {
-	eWZConnect eStatusShop = m_pWZShop->GetStatus();
+	/*eWZConnect eStatusShop = m_pWZShop->GetStatus();
 	if(eStatusShop == eNotConnect)
 		ConnectShop();
 
 	eWZConnect eStatusBilling = m_pWZBilling->GetStatus();
 	if(eStatusBilling == eNotConnect)
-		ConnectBilling();
+		ConnectBilling();*/
 
 	return TRUE;
 }
 
 BOOL AgsmBillingGlobal::ConnectShop()
 {
-	AuXmlDocument pDoc;
+	/*AuXmlDocument pDoc;
 	if(!pDoc.LoadFile("WebzenBilling.xml"))
 		return FALSE;
 
@@ -152,14 +152,14 @@ BOOL AgsmBillingGlobal::ConnectShop()
 		CHAR strLog[256] = { 0, };
 		sprintf_s(strLog, sizeof(strLog), "ConnectShop : pIPAddress = %s, pPort = %s", pIPAddress, pPort);
 		OnLog(strLog);
-	}
+	}*/
 
 	return TRUE;
 }
 
 BOOL AgsmBillingGlobal::ConnectBilling()
 {
-	AuXmlDocument pDoc;
+	/*AuXmlDocument pDoc;
 	if(!pDoc.LoadFile("WebzenBilling.xml"))
 		return FALSE;
 
@@ -189,7 +189,7 @@ BOOL AgsmBillingGlobal::ConnectBilling()
 		CHAR strLog[256] = { 0, };
 		sprintf_s(strLog, sizeof(strLog), "ConnectBilling : pIPAddress = %s, pPort = %s", pIPAddress, pPort);
 		OnLog(strLog);
-	}
+	}*/
 
 	return TRUE;
 }
@@ -197,24 +197,24 @@ BOOL AgsmBillingGlobal::ConnectBilling()
 //JK_À¥Á¨ºô¸µ
 void AgsmBillingGlobal::OnNetConnectShop(PVOID pOnNetConnect)
 {
-#ifdef _WEBZEN_BILLING_
+/*#ifdef _WEBZEN_BILLING_
 	stOnNetConnect* pNetConnect = (stOnNetConnect*)pOnNetConnect;
 	if(pNetConnect->success)
 	{
 		m_pWZShop->InquireSalesZoneScriptVersion(WZBILLING_GAMECODE, WZBILLING_SALESZONE);
 	}
-#endif
+#endif*/
 }
 
 void AgsmBillingGlobal::OnLog( char* strLog )
 {
-	printf("%s\n", strLog);
-	AuLogFile_s("LOG\\WZBilling.txt", strLog);
+	//printf("%s\n", strLog);
+	//AuLogFile_s("LOG\\WZBilling.txt", strLog);
 }
 //JK_À¥Á¨ºô¸µ
 void AgsmBillingGlobal::OnInquireSalesZoneScriptVersion( PVOID pInquire )
 {
-#ifdef _WEBZEN_BILLING_
+/*#ifdef _WEBZEN_BILLING_
 	stSalesZoneScriptVersion* pSalesZoneScriptVersion = (stSalesZoneScriptVersion*)pInquire;
 
 	{
@@ -234,13 +234,13 @@ void AgsmBillingGlobal::OnInquireSalesZoneScriptVersion( PVOID pInquire )
 
 
 	AgsmBilling::GetInstance()->SetSalesZoneScriptVersion(pSalesZoneScriptVersion->Year, pSalesZoneScriptVersion->YaerIdentity);
-#endif
+#endif*/
 }
 
 //JK_À¥Á¨ºô¸µ
 void AgsmBillingGlobal::OnUpdateVersion( PVOID pInquire )
 {
-#ifdef _WEBZEN_BILLING_
+/*#ifdef _WEBZEN_BILLING_
 	stSalesZoneScriptVersion* pSalesZoneScriptVersion = (stSalesZoneScriptVersion*)pInquire;
 
 	{
@@ -260,27 +260,29 @@ void AgsmBillingGlobal::OnUpdateVersion( PVOID pInquire )
 	}
 
 	AgsmBilling::GetInstance()->UpdateScriptVersionAllUser(pSalesZoneScriptVersion->Year, pSalesZoneScriptVersion->YaerIdentity);
-#endif
+#endif*/
 }
 
 
 BOOL AgsmBillingGlobal::InquireCash( CHAR* szAccountID )
 {
-	return m_pWZShop->InquireCash(1, 0, szAccountID, WZBILLING_GAMECODE, false); // archlord gamecode = 417
+	//return m_pWZShop->InquireCash(1, 0, szAccountID, WZBILLING_GAMECODE, false); // archlord gamecode = 417
+	return true;
 }
 //JK_À¥Á¨ºô¸µ
 BOOL AgsmBillingGlobal::InquireCash( DWORD dwAccountGUID )
 {
-#ifdef _WEBZEN_BILLING_
+/*#ifdef _WEBZEN_BILLING_
 	return m_pWZShop->InquireCash(WZBILLING_GAMECODE, 0, dwAccountGUID, true, 0 ); // archlord gamecode = 417
 #else
 	return false;
-#endif
+#endif*/
+	return true;
 }
 
 void AgsmBillingGlobal::OnInquireCash( PVOID pInquire )
 {
-	stInquire* pInquireResult = (stInquire*)pInquire;
+	/*stInquire* pInquireResult = (stInquire*)pInquire;
 
 	{
 		CHAR strLog[256] = { 0, };
@@ -292,22 +294,24 @@ void AgsmBillingGlobal::OnInquireCash( PVOID pInquire )
 	AgsmBilling::GetInstance()->OnInquireCash(pInquireResult->ResultCode, pInquireResult->AccountSeq, pInquireResult->WCoinSum);
 #else
 	AgsmBilling::GetInstance()->OnInquireCash(pInquireResult->ResultCode, pInquireResult->AccountID, pInquireResult->WCoinSum, pInquireResult->PCoinSum);
-#endif
+#endif*/
 }
 
 BOOL AgsmBillingGlobal::BuyProduct(CHAR* AccountID, INT32 ProductID, CHAR* ProductName, UINT64 ListSeq, INT32 Class, INT32 Level, CHAR* szCharName, INT32 ServerIndex, double Price, INT32 lType )
 {
-	return m_pWZShop->BuyProduct(0, AccountID, WZBILLING_GAMECODE, ProductID, ProductName, ListSeq, Class, Level, szCharName, ServerIndex, WZBILLING_SALESZONE, Price, 'C', lType);
+	//return m_pWZShop->BuyProduct(0, AccountID, WZBILLING_GAMECODE, ProductID, ProductName, ListSeq, Class, Level, szCharName, ServerIndex, WZBILLING_SALESZONE, Price, 'C', lType);
+	return true;
 }
 //JK_À¥Á¨ºô¸µ
 BOOL AgsmBillingGlobal::BuyProduct(DWORD dwAccountSeq, INT32 ProductSeq, INT32 DisplaySeq, INT32 PriceSeq, INT32 Class, INT32 Level, CHAR* szCharName, CHAR* szRank,  INT32 ServerIndex)
 {
-	return m_pWZShop->BuyProduct(WZBILLING_GAMECODE, dwAccountSeq, ProductSeq, DisplaySeq, WZBILLING_SALESZONE, PriceSeq, Class, Level, szCharName, szRank, ServerIndex);
+	//return m_pWZShop->BuyProduct(WZBILLING_GAMECODE, dwAccountSeq, ProductSeq, DisplaySeq, WZBILLING_SALESZONE, PriceSeq, Class, Level, szCharName, szRank, ServerIndex);
+	return true;
 }
 
 void AgsmBillingGlobal::OnBuyProduct(PVOID pBuyProduct)
 {
-#ifdef _WEBZEN_BILLING_
+/*#ifdef _WEBZEN_BILLING_
 	stBuyProduct_Union* pstBuyProduct = (stBuyProduct_Union*)pBuyProduct;
 
 	{
@@ -330,17 +334,18 @@ void AgsmBillingGlobal::OnBuyProduct(PVOID pBuyProduct)
 	}
 
 	AgsmBilling::GetInstance()->OnBuyProduct(pstBuyProduct->ResultCode, pstBuyProduct->AccountID, pstBuyProduct->DeductCashSeq);
-#endif
+#endif*/
 }
 //JK_À¥Á¨ºô¸µ
 BOOL AgsmBillingGlobal::UseStorage(DWORD AccountSeq, CHAR* szIP, DWORD StorageSeq, DWORD StorageItemSeq, INT32 Class, INT32 Level, CHAR* CharName, CHAR* Rank, INT32 ServerIndex)
 {
-	return m_pWZShop->UseStorage(AccountSeq, WZBILLING_GAMECODE, inet_addr(szIP), StorageSeq, StorageItemSeq, 'P',Class, Level, CharName, Rank,ServerIndex);
+	//return m_pWZShop->UseStorage(AccountSeq, WZBILLING_GAMECODE, inet_addr(szIP), StorageSeq, StorageItemSeq, 'P',Class, Level, CharName, Rank,ServerIndex);
+	return true;
 }
 
 void AgsmBillingGlobal::OnUseStorage( PVOID pUseStorage)
 {
-	stUseStorage* pstUseStorage = (stUseStorage*)pUseStorage;
+	/*stUseStorage* pstUseStorage = (stUseStorage*)pUseStorage;
 	
 	{
 		CHAR strLog[256] = { 0, };
@@ -350,18 +355,19 @@ void AgsmBillingGlobal::OnUseStorage( PVOID pUseStorage)
 	}
 	
 	AgsmBilling::GetInstance()->OnUseStorage(pstUseStorage->AccountSeq, pstUseStorage->ResultCode, pstUseStorage->InGameProductID, pstUseStorage->PropertyCount, pstUseStorage->ProductSeq, pstUseStorage->StorageSeq, pstUseStorage->StorageItemSeq, pstUseStorage->PropertyList);
-
+	*/
 
 }
 //JK_À¥Á¨ºô¸µ
 BOOL AgsmBillingGlobal::InquireStorageList(DWORD AccountSeq, INT32 NowPage)
 {
-	return m_pWZShop->InquireStorageListPageNoGiftMessage(AccountSeq, WZBILLING_GAMECODE, WZBILLING_SALESZONE, 'A', NowPage,STORAGELISTCOUNT_PER_PAGE);
+	//return m_pWZShop->InquireStorageListPageNoGiftMessage(AccountSeq, WZBILLING_GAMECODE, WZBILLING_SALESZONE, 'A', NowPage,STORAGELISTCOUNT_PER_PAGE);
+	return true;
 }
 //JK_À¥Á¨ºô¸µ
 void AgsmBillingGlobal::OnInquireStorageListPageNoGiftMessage( PVOID pStorageList )
 {
-	stStorageListPageNoGiftMessage* pstStorageList = (stStorageListPageNoGiftMessage*)pStorageList;
+	/*stStorageListPageNoGiftMessage* pstStorageList = (stStorageListPageNoGiftMessage*)pStorageList;
 
 	{
 		CHAR strLog[256] = { 0, };
@@ -371,12 +377,12 @@ void AgsmBillingGlobal::OnInquireStorageListPageNoGiftMessage( PVOID pStorageLis
 	}
 
 	AgsmBilling::GetInstance()->OnInquireStorageListPageGiftMessage(pstStorageList->AccountID, pstStorageList->ResultCode, pstStorageList->StorageType, pstStorageList->NowPage, pstStorageList->TotalPage, pstStorageList->TotalCount, pstStorageList->ListCount, pstStorageList->StorageList);
-	
+	*/
 }
 //JK_À¥Á¨ºô¸µ 
 BOOL AgsmBillingGlobal::RollbackUseStorage(DWORD AccountSeq, DWORD StorageSeq, DWORD StorageItemSeq)
 {
-	if( ! m_pWZShop->RollbackUseStorage(AccountSeq, WZBILLING_GAMECODE, StorageSeq, StorageItemSeq))
+	/*if( ! m_pWZShop->RollbackUseStorage(AccountSeq, WZBILLING_GAMECODE, StorageSeq, StorageItemSeq))
 	{
 		CHAR strLog[256] = { 0, };
 		sprintf_s(strLog, sizeof(strLog), "RollbackUseStorage Function FAIL!!: AccountSeq = %d,StorageSeq = %d, StorageItemSeq = %d ", 
@@ -384,26 +390,26 @@ BOOL AgsmBillingGlobal::RollbackUseStorage(DWORD AccountSeq, DWORD StorageSeq, D
 		OnLog(strLog);
 
 		return FALSE;
-	}
+	}*/
 	return TRUE;
 }
 
 void AgsmBillingGlobal::OnRollbackUseStorage( PVOID pRollbackUseStorage )
 {
-	stRollbackUseStorage* pstRollbackUseStorage = (stRollbackUseStorage*)pRollbackUseStorage;
+	/*stRollbackUseStorage* pstRollbackUseStorage = (stRollbackUseStorage*)pRollbackUseStorage;
 	
 	{
 		CHAR strLog[256] = { 0, };
 		sprintf_s(strLog, sizeof(strLog), "OnRollbackUseStorage : AccountSeq = %d,ResultCode = %d ", 
 			pstRollbackUseStorage->AccountSeq, pstRollbackUseStorage->ResultCode);
 		OnLog(strLog);
-	}
+	}*/
 	
 }
 
 void AgsmBillingGlobal::OnUserStatus( PVOID UserStatus )
 {
-	stUserStatus* pUserStatus = (stUserStatus*)UserStatus;
+	//stUserStatus* pUserStatus = (stUserStatus*)UserStatus;
 
 	/*pUserStatus->dwAccountGUID;
 	pUserStatus->dwBillingGUID;
@@ -415,7 +421,7 @@ void AgsmBillingGlobal::OnUserStatus( PVOID UserStatus )
 	pUserStatus->nAccessCheck;
 	pUserStatus->nResultCode;*/
 
-	if(pUserStatus->nResultCode == 0 && pUserStatus->dwBillingGUID > 0 )
+	/*if(pUserStatus->nResultCode == 0 && pUserStatus->dwBillingGUID > 0 )
 	{
 		{
 			CTime tEnd = CTime(pUserStatus->EndDate);
@@ -432,28 +438,28 @@ void AgsmBillingGlobal::OnUserStatus( PVOID UserStatus )
 #else
 		AgsmBilling::GetInstance()->OnUserStatus(pUserStatus->dwAccountGUID, pUserStatus->dwBillingGUID, pUserStatus->EndDate, pUserStatus->dRestTime, pUserStatus->nDeductType);
 #endif //_WEBZEN_BILLING_
-	}
+	}*/
 
 }
 
 void AgsmBillingGlobal::OnInquirePersonDeduct( PVOID InquirePersonDeduct )
 {
-	stInquirePersonDeduct* pInquirePersonDeduct = (stInquirePersonDeduct*)InquirePersonDeduct;
+	/*stInquirePersonDeduct* pInquirePersonDeduct = (stInquirePersonDeduct*)InquirePersonDeduct;
 
-	AgsmBilling::GetInstance()->OnInquirePersonDeduct(pInquirePersonDeduct->AccountGUID, pInquirePersonDeduct->ResultCode);
+	AgsmBilling::GetInstance()->OnInquirePersonDeduct(pInquirePersonDeduct->AccountGUID, pInquirePersonDeduct->ResultCode);*/
 }
 
 BOOL AgsmBillingGlobal::InquirePersonDeduct( DWORD AccountGUID )
 {
-	if( m_pWZBilling )
-		m_pWZBilling->InquirePersonDeduct(AccountGUID, WZBILLING_GAMECODE);
+	/*if( m_pWZBilling )
+		m_pWZBilling->InquirePersonDeduct(AccountGUID, WZBILLING_GAMECODE);*/
 
 	return TRUE;
 }
 //JK_PC¹æ°ú±Ý»óÅÂÈ®ÀÎ
 void AgsmBillingGlobal::OnInquirePCRoomPoint( PVOID pInquirePCRoomPoint )
 {
-	stInquirePCRoomPoint* pstInquirePCRoomPoint = (stInquirePCRoomPoint*)pInquirePCRoomPoint;
+	/*stInquirePCRoomPoint* pstInquirePCRoomPoint = (stInquirePCRoomPoint*)pInquirePCRoomPoint;
 
 	if(pstInquirePCRoomPoint->ResultCode == -2)
 	{
@@ -469,128 +475,131 @@ void AgsmBillingGlobal::OnInquirePCRoomPoint( PVOID pInquirePCRoomPoint )
 
 		AgsmBilling::GetInstance()->ReloginWebzen(pstInquirePCRoomPoint->AccountGUID);
 		
-	}
+	}*/
 
 }
 
 BOOL AgsmBillingGlobal::AddUser(AgpdCharacter* pcsCharacter, DWORD AccountGUID)
 {
-	AgpdBillingGlobal* pBillingUser = new AgpdBillingGlobal;
+	/*AgpdBillingGlobal* pBillingUser = new AgpdBillingGlobal;
 	if(!pBillingUser)
 		return FALSE;
 
 	pBillingUser->pcsCharacter = pcsCharacter;
 	pBillingUser->AccountGUID = AccountGUID;
 
-	m_AdminGUID.AddObject(&pBillingUser, AccountGUID);
+	m_AdminGUID.AddObject(&pBillingUser, AccountGUID);*/
 
 	return TRUE;
 }
 
 BOOL AgsmBillingGlobal::RemoveUser(DWORD AccountGUID)
 {
-	AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
+	/*AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
 	if(!pBillingUser || !*pBillingUser)
 		return FALSE;
 
 	m_AdminGUID.RemoveObject(AccountGUID);
 
-	delete (*pBillingUser);
+	delete (*pBillingUser);*/
 
 	return TRUE;
 }
 
 AgpdCharacter* AgsmBillingGlobal::GetCharacter( DWORD AccountGUID )
 {
-	AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
+	/*AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
 	if(!pBillingUser || !*pBillingUser)
 		return NULL;
 
-	return (*pBillingUser)->pcsCharacter;
+	return (*pBillingUser)->pcsCharacter;*/
+	return nullptr;
 }
 
 BOOL AgsmBillingGlobal::SetBillingGUID(DWORD AccountGUID, DWORD BillingGUID)
 {
-	AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
+	/*AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
 	if(!pBillingUser || !*pBillingUser)
 		return FALSE;
 
-	(*pBillingUser)->dwBillingGUID = BillingGUID;
+	(*pBillingUser)->dwBillingGUID = BillingGUID;*/
 
 	return TRUE;
 }
 //JK_À¥Á¨ºô¸µ
 DWORD AgsmBillingGlobal::GetBillingGUID(DWORD AccountGUID)
 {
-	AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
+	/*AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
 	if(!pBillingUser || !*pBillingUser)
 		return FALSE;
 
-	return (*pBillingUser)->dwBillingGUID;
+	return (*pBillingUser)->dwBillingGUID;*/
+	return 0;
 }
 
 BOOL AgsmBillingGlobal::Login( DWORD AccountGUID, CHAR* szIP )
 {
-	if( m_pWZBilling )
-		m_pWZBilling->UserLogin(AccountGUID, inet_addr(szIP), 0, WZBILLING_GAMECODE, WZBILLING_SERVERTYPE);
+	/*if( m_pWZBilling )
+		m_pWZBilling->UserLogin(AccountGUID, inet_addr(szIP), 0, WZBILLING_GAMECODE, WZBILLING_SERVERTYPE);*/
 
 	return TRUE;
 }
 //JK_À¥Á¨ºô¸µ
 BOOL AgsmBillingGlobal::LoginWebzen( DWORD AccountGUID, CHAR* szIP, DWORD PCRoomGUID)
 {
-	if( m_pWZBilling )
-		m_pWZBilling->UserLogin(AccountGUID, inet_addr(szIP), PCRoomGUID, WZBILLING_GAMECODE, WZBILLING_SERVERTYPE);
+	/*if( m_pWZBilling )
+		m_pWZBilling->UserLogin(AccountGUID, inet_addr(szIP), PCRoomGUID, WZBILLING_GAMECODE, WZBILLING_SERVERTYPE);*/
 
 	return TRUE;
 }
 
 void AgsmBillingGlobal::LogOut( DWORD AccountGUID )
 {
-	AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
+	/*AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
 	if(!pBillingUser || !*pBillingUser)
 		return;
 
 	DWORD dwBillingGUID = (*pBillingUser)->dwBillingGUID;
 
 	if( m_pWZBilling && dwBillingGUID > 0)
-		m_pWZBilling->UserLogout(dwBillingGUID);
+		m_pWZBilling->UserLogout(dwBillingGUID);*/
 }
 //JK_À¥Á¨ºô¸µ : ¼ýÀÚÀÇ ¹®ÀÚ¿­ÀÎ°¡?
 BOOL AgsmBillingGlobal::IsNumberFromItemID( char* pData, int nSize )
 {
-	for(int i = 0 ; i < nSize; i++)
+	/*for(int i = 0 ; i < nSize; i++)
 	{
 		if(isdigit(pData[i]) == false)
 			return FALSE;
-	}
+	}*/
 	return TRUE;
 }
 //JK_PC¹æ°ú±Ý»óÅÂÈ®ÀÎ
 BOOL AgsmBillingGlobal::SetPCRoomGUID(DWORD AccountGUID, DWORD PCRoomGUID)
 {
-	AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
+	/*AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
 	if(!pBillingUser || !*pBillingUser)
 		return FALSE;
 
-	(*pBillingUser)->dwPCRoomGUID = PCRoomGUID;
+	(*pBillingUser)->dwPCRoomGUID = PCRoomGUID;*/
 
 	return TRUE;
 }
 //JK_À¥Á¨ºô¸µ
 DWORD AgsmBillingGlobal::GetPCRoomGUID(DWORD AccountGUID)
 {
-	AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
+	/*AgpdBillingGlobal** pBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObject(AccountGUID);
 	if(!pBillingUser || !*pBillingUser)
 		return FALSE;
 
-	return (*pBillingUser)->dwPCRoomGUID;
+	return (*pBillingUser)->dwPCRoomGUID;*/
+	return 0;
 }
 
 //JK_À¥Á¨ºô¸µ
 void AgsmBillingGlobal::CheckPCRoomPointAllUser()
 {
-	INT32 lIndex = 0;
+	/*INT32 lIndex = 0;
 	AgpdBillingGlobal** ppBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObjectSequence(&lIndex);
 	while(ppBillingUser && *ppBillingUser)
 	{
@@ -602,5 +611,5 @@ void AgsmBillingGlobal::CheckPCRoomPointAllUser()
 		}
 
 		ppBillingUser = (AgpdBillingGlobal**)m_AdminGUID.GetObjectSequence(&lIndex);
-	}
+	}*/
 }

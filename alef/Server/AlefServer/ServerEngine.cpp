@@ -23,11 +23,6 @@ Last Update: 2002. 09. 10
 #include "AgpmEpicZone.h"
 #include "AgpmMonsterPath.h"
 
-#if defined (_AREA_GLOBAL_) || defined(_AREA_KOREA_)
-#include "AuGameGuard.h" //JK_게임가드주석처리
-AuGGCSAuth g_pcsGameGuard; //JK_게임가드주석처리
-#endif
-
 #ifdef _AREA_JAPAN_
 #include "AuNProtect.h"
 #endif
@@ -264,7 +259,7 @@ AgpmMonsterPath			*g_pcsAgpmMonsterPath;
 AgpmTitle				*g_pcsAgpmTitle;
 AgsmTitle				*g_pcsAgsmTitle;
 
-ServerEngine::ServerEngine(GUID guidApp)
+ServerEngine::ServerEngine()
 {
 //	SetGUID(guidApp);
 	m_lRelayCheckCount	= 0;
@@ -479,8 +474,8 @@ BOOL ServerEngine::OnRegisterModule()
 	REGISTER_MODULE(g_pcsAgsmGlobalChatting, AgsmGlobalChatting);
 	REGISTER_MODULE(g_pcsAgsmAreaChatting, AgsmAreaChatting);
 	
-	REGISTER_MODULE(g_pcsAgsmBilling, AgsmBilling);
-	REGISTER_MODULE(g_pcsAgsmCashMall, AgsmCashMall);
+	//REGISTER_MODULE(g_pcsAgsmBilling, AgsmBilling);
+	//REGISTER_MODULE(g_pcsAgsmCashMall, AgsmCashMall); //cmb, disabled billing module for now
 
 	REGISTER_MODULE(g_pcsAgsmArchlord, AgsmArchlord);
 	
@@ -521,13 +516,6 @@ BOOL ServerEngine::OnRegisterModule()
 	// 모듈 등록 바로 다음에 스크립트 등록 해야 된다.
 #ifdef _DEBUG
 	RegisterScriptCommand();
-#endif
-
-#ifdef _USE_NPROTECT_GAMEGUARD_
-	if(!g_pcsGameGuard.Init())
-		return FALSE;
-	
-	printf("GameGuard Initialize success\n");
 #endif
 
 //#ifdef	_PROFILE_

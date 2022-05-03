@@ -420,11 +420,11 @@ BOOL AgsmCashMall::ProcessBuyItemWebzen(AgpdCharacter *pcsCharacter, INT32 Packa
 	if (!Lock.Result()) return FALSE;
 
 	// send to billing server
-	if (!m_pcsAgsmBilling->SendBuyCashItemWebzen(pcsCharacter, PackageSeq,DisplaySeq, PriceSeq))
+	/*if (!m_pcsAgsmBilling->SendBuyCashItemWebzen(pcsCharacter, PackageSeq,DisplaySeq, PriceSeq))
 	{
 		SendBuyResult(pcsCharacter, AGPMCASH_BUY_RESULT_FAIL);
 		return FALSE;
-	}
+	}*/
 
 //	m_pcsAgsmItem->WriteCashItemBuyList(pcsCharacter, &stList);
 
@@ -447,11 +447,11 @@ BOOL AgsmCashMall::ProcessUseStorage(AgpdCharacter *pcsCharacter, INT32 StorageS
 	}
 
 	// send to billing server
-	if (!m_pcsAgsmBilling->SendUseStorageToBilling(pcsCharacter, StorageSeq, StorageItemSeq))
+	/*if (!m_pcsAgsmBilling->SendUseStorageToBilling(pcsCharacter, StorageSeq, StorageItemSeq))
 	{
 		//SendBuyResult(pcsCharacter, AGPMCASH_BUY_RESULT_FAIL);
 		return FALSE;
-	}
+	}*/
 
 	//	m_pcsAgsmItem->WriteCashItemBuyList(pcsCharacter, &stList);
 
@@ -470,11 +470,11 @@ BOOL AgsmCashMall::ProcessInquireStorageList(AgpdCharacter *pcsCharacter, INT32 
 
 	// send to billing server
 	
-	if (!m_pcsAgsmBilling->SendInquireStorageListToBilling(pcsCharacter,NowPage))
+	/*if (!m_pcsAgsmBilling->SendInquireStorageListToBilling(pcsCharacter,NowPage))
 	{
 		//SendBuyResult(pcsCharacter, AGPMCASH_BUY_RESULT_FAIL);
 		return FALSE;
-	}
+	}*/
 
 	return TRUE;
 }	

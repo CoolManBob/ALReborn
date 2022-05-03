@@ -101,11 +101,6 @@ public:
 	BOOL	SetPCRoomGUID(DWORD AccountGUID, DWORD PCRoomGUID);
 	DWORD	GetPCRoomGUID(DWORD AccountGUID);
 	void	CheckPCRoomPointAllUser();
-
-
-
-
-
 };
 
 

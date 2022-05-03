@@ -441,8 +441,8 @@ attrib +r ..\..\include\*.h
 </Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_AREA_KOREA_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\oci;$(SolutionDir)Modules\AUtility;$(SolutionDir)Include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeader />
@@ -718,7 +718,7 @@ attrib +r ..\..\include\*.h
 </Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;C:\255\A1\Archlordsvn\kor_110\Alef\Include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\oci;$(SolutionDir)Include\dx9;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_AREA_WESTERN_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -846,7 +846,7 @@ attrib +r ..\..\include\*.h
       <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;..\..\Include\oci;$(SolutionDir)\Modules\AUtility;$(SolutionDir)\include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN64;_DEBUG;_CONSOLE;_AREA_KOREA_;APMEMORY_CHECKER;_WEBZEN_AUTH_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -897,8 +897,8 @@ attrib +r ..\..\include\*.h
       <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)include\stlport\stlport;..\..\Include\oci;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;NDEBUG;_CONSOLE;_AREA_KOREA_;APMEMORY_CHECKER;_WEBZEN_AUTH_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;..\..\Include\oci;$(SolutionDir)\Modules\AUtility;$(SolutionDir)\include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_CONSOLE;_AREA_WESTERN_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
@@ -906,9 +906,11 @@ attrib +r ..\..\include\*.h
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CallingConvention>FastCall</CallingConvention>
+      <DisableSpecificWarnings>4244;4251</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+      <Verbose>true</Verbose>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug EM64T|x64'">

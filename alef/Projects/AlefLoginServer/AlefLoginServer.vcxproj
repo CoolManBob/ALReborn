@@ -287,8 +287,8 @@
       <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;_WIN64;_DEBUG;_CONSOLE;_AREA_KOREA_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\Modules\AUtility;$(SolutionDir)\include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;_DEBUG;_CONSOLE;_AREA_WESTERN_;APMEMORY_CHECKER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -298,11 +298,12 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CallingConvention>FastCall</CallingConvention>
+      <DisableSpecificWarnings>4244;4091;5208</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <AdditionalDependencies>AgsmLoginDBD_x64.lib;AgsModulesD_x64.lib;DbgHelp_AMD64.Lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(SolutionDir)Bin\AlefLoginServerD.exe</OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)lib\Debug;$(SolutionDir)lib\Debug\STLPort_64bit;$(SolutionDir)lib\Debug\nProtect;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\Debug;$(SolutionDir)lib\Debug\nProtect;$(SolutionDir)lib\Release\dx9\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)AlefLoginServer.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>

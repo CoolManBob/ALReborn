@@ -19,10 +19,10 @@
 #define _USE_NPROTECT_GAMEGUARD_
 */
 
-#if defined(_WIN64) || defined(WIN64)
+/*#if defined(_WIN64) || defined(WIN64)
 
 	#include "nProtect/ggsrv25.h"
-	#define _USE_NPROTECT_GAMEGUARD_//JK_게임가드주석처리
+	//#define _USE_NPROTECT_GAMEGUARD_//JK_게임가드주석처리
 	#pragma comment(lib, "ggsrvlib25" )
 
 	// callback
@@ -38,6 +38,6 @@
 		BOOL Init();
 	};
 
-#endif
+#endif*/
 
 #endif //_AUGAMEGUARD_H

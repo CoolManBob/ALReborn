@@ -256,13 +256,13 @@ void AgsmBilling::InitFuncPtr( void )
 	SendGetCashMoneyPtr		= &AgsmBilling::SendGetCashMoneyGlobal;
 //	SendBuyCashItemPtr		= &AgsmBilling::SendBuyCashItemGlobal;
 #else
-	OnAddModulePtr	= &AgsmBilling::OnAddModuleKr;
-	OnInitPtr		= &AgsmBilling::OnInitKr;
-	OnDisconnectPtr = &AgsmBilling::OnDisconnectKr;
+	//OnAddModulePtr	= &AgsmBilling::OnAddModuleKr;
+	//OnInitPtr		= &AgsmBilling::OnInitKr;
+	//OnDisconnectPtr = &AgsmBilling::OnDisconnectKr;
 
-	ConnectBillingServerPtr = &AgsmBilling::ConnectBillingServerKr;
-	SendGetCashMoneyPtr		= &AgsmBilling::SendGetCashMoneyKr;
-	SendBuyCashItemPtr		= &AgsmBilling::SendBuyCashItemKr;
+	//ConnectBillingServerPtr = &AgsmBilling::ConnectBillingServerKr;
+	//SendGetCashMoneyPtr		= &AgsmBilling::SendGetCashMoneyKr;
+	//SendBuyCashItemPtr		= &AgsmBilling::SendBuyCashItemKr;
 #endif
 
 #endif

@@ -291,13 +291,14 @@ attrib +r ..\..\include\*.h
 </Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\STLport\stlport;$(SolutionDir)Include\oci;$(SolutionDir)Include\Billing\HannEver;$(SolutionDir)Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ORACLE_THROUGH_OCI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\oci;$(SolutionDir)Include\Billing\HannEver;$(SolutionDir)Modules\AUtility;$(SolutionDir)Include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ORACLE_THROUGH_OCI;_WEBZEN_BILLING_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4477;4091;5208;4474</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
@@ -506,8 +507,8 @@ attrib +r ..\..\include\*.h
       <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;$(SolutionDir)\Server\WebzenShop\ClientStub;$(SolutionDir)\Server\WebzenShop\Public_src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;_WIN64;_DEBUG;_CONSOLE;_AREA_KOREA_;APMEMORY_CHECKER;_WEBZEN_AUTH_;_WEBZEN_BILLING_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;..\..\include\oci;$(SolutionDir)\Modules\AUtility;$(SolutionDir)\include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;_DEBUG;_CONSOLE;_AREA_WESTERN_;_AREA_GLOBAL_;APMEMORY_CHECKER;_WEBZEN_AUTH_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -518,6 +519,7 @@ attrib +r ..\..\include\*.h
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CallingConvention>FastCall</CallingConvention>
+      <DisableSpecificWarnings>4244;4477;4091;5208;4474</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <AdditionalOptions>/Gh /GH %(AdditionalOptions)</AdditionalOptions>
@@ -559,8 +561,8 @@ attrib +r ..\..\include\*.h
       <AdditionalOptions>/favor:AMD64 %(AdditionalOptions)</AdditionalOptions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)include;..\..\include\oci;..\..\include\Billing\HannEver;$(SolutionDir)\include\stlport\stlport;$(SolutionDir)\Modules\AUtility;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN64;_WIN64;NDEBUG;_CONSOLE;_AREA_KOREA_;APMEMORY_CHECKER;_WEBZEN_AUTH_;_WEBZEN_BILLING_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;..\..\include\oci;$(SolutionDir)\Modules\AUtility;$(SolutionDir)\include\dx9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WIN64;NDEBUG;_CONSOLE;_AREA_GLOBAL_;_AREA_WESTERN_;APMEMORY_CHECKER;_WEBZEN_AUTH_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
@@ -568,9 +570,11 @@ attrib +r ..\..\include\*.h
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CallingConvention>FastCall</CallingConvention>
+      <DisableSpecificWarnings>4244;4477;4091;5208;4474</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <OutputFile>$(SolutionDir)lib\Release\$(ProjectName)_x64.lib</OutputFile>
+      <Verbose>true</Verbose>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Japanese|x64'">
@@ -1107,10 +1111,6 @@ attrib +r ..\..\include\*.h
     </ProjectReference>
     <ProjectReference Include="..\AsNetworkLib\AsNetworkLib.vcxproj">
       <Project>{cfd93f15-c931-4506-8e73-36d3817f8e65}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\HanGameForServer\HanGameForServer.vcxproj">
-      <Project>{5a50ddd0-2806-49e5-9186-50433a293d16}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
