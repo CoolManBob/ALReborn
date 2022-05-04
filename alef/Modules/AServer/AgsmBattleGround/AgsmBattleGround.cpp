@@ -121,7 +121,8 @@ BOOL AgsmBattleGround::OnInit()
 		lua_register(pLuaState, "SpawnCharacters",			AgsmBattleGround::SpawnCharacters);
 		lua_register(pLuaState, "BattleGroundStatistic",	AgsmBattleGround::BattleGroundStatistic);
 
-		pluaPack.Open("ini\\Lua\\BattleGround.lua", (Decrypt_CFunction)StrUtil::Decrypt);
+		//pluaPack.Open("ini\\Lua\\BattleGround.lua", (Decrypt_CFunction)StrUtil::Decrypt);
+		pluaPack.Open("ini\\Lua\\BattleGround.lua", 0);
 
  		if(!pluaPack.dobuffer(pLuaState))
  			return FALSE;

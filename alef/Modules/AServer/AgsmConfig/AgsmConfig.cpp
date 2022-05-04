@@ -87,7 +87,8 @@ BOOL AgsmConfig::LoadConfigLua()
 {
 	if(m_bReloadConfigLua)
 	{
-		pluaPack.Open("INI\\Lua\\EventConfig.lua", (Decrypt_CFunction)StrUtil::Decrypt);
+		//pluaPack.Open("INI\\Lua\\EventConfig.lua", (Decrypt_CFunction)StrUtil::Decrypt);
+		pluaPack.Open("INI\\Lua\\EventConfig.lua", 0);
 
  		if(!pluaPack.dobuffer(pLuaState))
  			return FALSE;

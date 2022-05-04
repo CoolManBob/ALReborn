@@ -17,7 +17,7 @@
 #include "ApBase.h"
 
 typedef UINT (WINAPI *ThreadProc)(PVOID);
-const INT32 MAX_THREAD_COUNT = 20;	// 최대 쓰레드 갯수정의
+const INT32 MAX_THREAD_COUNT = 24;	// 최대 쓰레드 갯수정의
 
 #if _MSC_VER < 1300
 #ifdef	_DEBUG

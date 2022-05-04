@@ -142,7 +142,8 @@ BOOL AgsmEpicZone::OnTimer(UINT32 ulClockCount)
 	{
 		while(iter != m_mapBossZone.end())
 		{
-			m_pLuaPack.Open(iter->second.m_szLuaFileName, (Decrypt_CFunction)StrUtil::Decrypt);
+			//m_pLuaPack.Open(iter->second.m_szLuaFileName, (Decrypt_CFunction)StrUtil::Decrypt);
+			m_pLuaPack.Open(iter->second.m_szLuaFileName, 0);
 			if(!m_pLuaPack.dobuffer(m_pLuaState))
 			{
 				iter++;

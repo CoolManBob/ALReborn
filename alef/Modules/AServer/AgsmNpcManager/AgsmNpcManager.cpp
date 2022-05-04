@@ -195,7 +195,8 @@ BOOL AgsmNpcManager::LoadNpcManagerFile(char* fileName)
 		INT32 nPlainText;
 		pElemFile->Attribute("PlainText", &nPlainText);
 
-		if(!pNpcExData->pLuaPack->Open(szFileName, (nPlainText) ?  NULL : (Decrypt_CFunction)AgsmNpcManager::Decrypt))
+		//if(!pNpcExData->pLuaPack->Open(szFileName, (nPlainText) ?  NULL : (Decrypt_CFunction)AgsmNpcManager::Decrypt))
+		if (!pNpcExData->pLuaPack->Open(szFileName, 0))
 		{
 			TRACE("error : %s[%d]\n", __FUNCDNAME__, __LINE__);
 
