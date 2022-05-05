@@ -84,7 +84,7 @@ int DoConsole()
 	//OpenLog(AS_LOG_FILE);
 	OpenLog(AS_LOG_CONSOLE);
 
-	ServerEngine serverEngine(g_guidApp);
+	ServerEngine serverEngine;
 
 	serverEngine.SetCrashReportExceptionHandler();
 
@@ -148,11 +148,11 @@ int DoConsole()
 
 	printf("Processing - 3000\n");
 
-	if (!serverEngine.ConnectBillingServer())
+	/*if (!serverEngine.ConnectBillingServer())
 	{
 		CoUninitialize();
 		return 0;
-	}
+	}*/ //cmb disabled billing server
 
 	printf("Processing - 4000\n");
 

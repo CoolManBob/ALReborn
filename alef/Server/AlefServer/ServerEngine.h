@@ -201,7 +201,7 @@ public:
 	HANDLE	m_hEventGuildLoadComplete;
 
 public:
-	ServerEngine(GUID guidApp);
+	ServerEngine();
 	~ServerEngine();
 
 	BOOL	Shutdown();
