@@ -334,7 +334,7 @@ BOOL ServerEngine::OnRegisterModule()
 #ifdef _AREA_KOREA_
 	g_pcsAgpmResourceInfo->SetMinorVersion(04);
 #else
-	g_pcsAgpmResourceInfo->SetMinorVersion(00);
+	g_pcsAgpmResourceInfo->SetMinorVersion(02);
 #endif
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

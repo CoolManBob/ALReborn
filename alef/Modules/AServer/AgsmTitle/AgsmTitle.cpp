@@ -528,7 +528,7 @@ BOOL AgsmTitle::UsingTitleSendToClient(AgpdCharacter* pcsCharacter)
 	INT32 nTitleTid = pcsCharacter->m_csTitle->GetUseTitle();
 	IterTitle iterTitle = pcsCharacter->m_csTitle->FindByTitleID(nTitleTid);
 
-	if(!&iterTitle)
+	if(nTitleTid == 0) //Not using a Title
 		return FALSE;
 
 	TitleUnUse(pcsCharacter, (*iterTitle).lTitleID, (*iterTitle).lSetTime);
