@@ -1062,7 +1062,19 @@ BOOL AgsmLoginDB::ProcessCheckAccount1(AgsmLoginQueueInfo *pQueryInfo, ApHttp* p
 #endif
 
 #ifdef _AREA_WESTERN_	// 영국의 경우 blocking으로 인증을 처리한다
-		//lResult = m_pCogpas->Authenticate(pQueryInfo->m_szAccountID, pQueryInfo->m_szPassword);
+		
+			_tprintf(_T("ProcessCheckAccount1 - 4\n"));
+			if (m_pAgpmConfig->IsNoAccountAuth())
+			{
+				_tprintf(_T("ProcessCheckAccount1 - 5\n"));
+				lResult = AGSMLOGINDB_AUTH_RESULT_SUCCESS;
+			}
+			else if (m_pAgpmConfig->IsDBAccountAuth())
+			{
+				_tprintf(_T("ProcessCheckAccount1 - 6\n"));
+				lResult = ProcessCheckAccountFromDB(pQueryInfo);
+			}
+
 #endif
 	}
 	
