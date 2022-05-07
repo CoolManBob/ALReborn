@@ -641,12 +641,12 @@ BOOL				AgpmEventSpawn::LoadSpawnInfoFromExcel( char *pstrFileName)
 		CHAR* szGroupName		= m_csAuExcelTxtLib.GetData(0, lCurrentRow);
 		CHAR* szName			= m_csAuExcelTxtLib.GetData(1, lCurrentRow);
 		CHAR* szTotalMobCount	= m_csAuExcelTxtLib.GetData(2, lCurrentRow);
+		CHAR* szMaxMobCount		= m_csAuExcelTxtLib.GetData(2, lCurrentRow);
 		CHAR* szSpawntime		= m_csAuExcelTxtLib.GetData(3, lCurrentRow);
 		CHAR* szBobTID			= m_csAuExcelTxtLib.GetData(4, lCurrentRow);
 		CHAR* szRate			= m_csAuExcelTxtLib.GetData(7, lCurrentRow);
-		CHAR* szMaxMobCount		= m_csAuExcelTxtLib.GetData(8, lCurrentRow);
-		CHAR* szAITID			= m_csAuExcelTxtLib.GetData(9, lCurrentRow);
-		CHAR* szSiegeWarType	= m_csAuExcelTxtLib.GetData(11, lCurrentRow);
+		CHAR* szAITID			= m_csAuExcelTxtLib.GetData(8, lCurrentRow);
+		CHAR* szSiegeWarType	= m_csAuExcelTxtLib.GetData(10, lCurrentRow);
 
 		if(szGroupName)
 		{

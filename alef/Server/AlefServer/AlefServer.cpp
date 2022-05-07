@@ -231,18 +231,21 @@ int DoConsole()
 
 		case 'c':
 			{
+				printf("\ng_bPrintNumCharacter	= 1");
 				g_bPrintNumCharacter	= 1;
 			}
 			break;
 
 		case 'a':
 			{
+				printf("\ng_bPrintActiveCellCount	= 1");
 				g_bPrintActiveCellCount	= 1;
 			}
 			break;
 
 		case 'p':
 			{
+				printf("\ng_bPrintRemovePoolTID	= 1");
 				g_bPrintRemovePoolTID	= 1;
 			}
 			break;
