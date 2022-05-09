@@ -1271,7 +1271,7 @@ BOOL	ApmObject::StreamReadAllDivision()
 
 BOOL	ApmObject::StreamReadAllDivisionVersion2()
 {
-	StreamReadAllDivision( "Ini\\" APMOBJECT_INI_SERVER_FILE_NAME );
+	StreamReadAllDivision( "Ini\\Object\\OBS\\" APMOBJECT_INI_SERVER_FILE_NAME );
 	StreamReadAllDivision( APMOBJECT_LOCAL_INI_FILE_NAME_2_SPAWN , NULL , TRUE );
 	StreamReadAllDivision( APMOBJECT_LOCAL_INI_FILE_NAME_2_BOSSSPAWN , NULL , TRUE );
 

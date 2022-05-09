@@ -509,6 +509,20 @@ BOOL ServerEngine::OnRegisterModule()
 		return FALSE;
 	}
 
+	printf_s("Load Binding Data\n");
+
+	if (!g_pcsApmObject->StreamReadTemplate("Ini\\ObjectTemplate.ini", NULL, NULL, NULL, ENC_SVR_DATA))
+	{
+		ASSERT(!"g_csApmObject StreamReadTemplate 실패");
+		return FALSE;
+	}
+
+	if (!g_pcsApmObject->StreamReadAllDivisionVersion2())
+	{
+		ASSERT(!"g_csApmObject StreamRead(Object) 실패");
+		return FALSE;
+	}
+
 	// Make Base CharacterInfo in ServerEngine
 	printf_s("Make Base CharacterInfo\n");
 	if(!g_pcsAgsmLoginClient->CreateBaseCharacterOfRace(1))

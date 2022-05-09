@@ -199,7 +199,7 @@
     <Link>
       <AdditionalDependencies>rttoon.lib;rptoon.lib;rpskinmatfxtoon.lib;randomam.lib;RtDict.lib;RpUVAnim.lib;rtfsyst.lib;RtRay.lib;rttiff.lib;rtwing.lib;rtgcond.lib;rtimport.lib;RtPITexD.lib;rpmatfx.lib;rplodatm.lib;rpmorph.lib;rtanim.lib;rpspline.lib;rtquat.lib;rpskinmatfx.lib;rtras.lib;rphanim.lib;rpusrdat.lib;rtintsec.lib;rtpick.lib;rpcollis.lib;rtcharse.lib;rtbmp.lib;rtpng.lib;rpworld.lib;rwcore.lib;rplogo.lib;mss32.lib;winmm.lib;libfreetype.lib;ApModules.lib;AgpModules.lib;AgcModules.lib;PatchZipLib.lib;angelscript.lib;rprandom.lib;rppvs.lib;rtbary.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(SolutionDir)Bin\AlefClient.exe</OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)rw\lib\release;$(SolutionDir)Lib/Release/HanGame/HanGameKorea;$(SolutionDir)lib\release;$(SolutionDir)SoundLibrary\FMOD\Lib;$(SolutionDir)Lib\Release\nProtect;$(SolutionDir)Lib\Release\dx9\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)rw\lib\release;$(SolutionDir)Lib/Release/HanGame/HanGameKorea;$(SolutionDir)lib\release;$(SolutionDir)SoundLibrary\FMOD\Lib;$(SolutionDir)Lib\Release\nProtect;$(SolutionDir)Lib\Release\dx9\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(SolutionDir)/Bin/$(ProjectName).pdb</ProgramDatabaseFile>

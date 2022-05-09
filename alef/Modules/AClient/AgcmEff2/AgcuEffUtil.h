@@ -5,7 +5,6 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-
 #include "ApBase.h"
 #include "rwcore.h"
 #include "rpworld.h"

@@ -874,7 +874,7 @@ const char* Eff2Ut_DxErrMSG(HRESULT hr)
 	static char	buff[256]		= "";
 	Eff2Ut_ZEROBLOCK( buff );
 
-	wsprintf( buff, "Error code: 0x%x ====>> DX err msg : %s", hr, DXGetErrorString( hr ) );
+	//wsprintf( buff, "Error code: 0x%x ====>> DX err msg : %s", hr, DXGetErrorString( hr ) );
 	return buff;
 }
 
