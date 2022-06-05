@@ -255,7 +255,9 @@ BOOL fn_CharacterProperty_SpeedMove( void* pData, void* pCharacter )
 	int nValueCurrent = 0;
 	ppmFactor->GetValue( &ppdCharacter->m_csFactor, &nValueCurrent, AGPD_FACTORS_TYPE_RESULT, AGPD_FACTORS_TYPE_CHAR_STATUS, AGPD_FACTORS_CHARSTATUS_TYPE_MOVEMENT_FAST );
 
-	nValueCurrent = ( int )( ( ( double )nValueCurrent * ( double ) 100 ) / ( ( double )nValueOriginal + FLT_EPSILON ));
+	float var = (((double)nValueCurrent * (double)100) / ((double)nValueOriginal + FLT_EPSILON));
+	var = (int)(var * 100 + .5);
+	nValueCurrent = (int)var / 100;
 
 	char strText[ 128 ] = { 0, };
 	MakeFormattedString( strText, pEntry->m_strValueFormat, 100, nValueCurrent, pEntry->m_dwValueColor, pEntry->m_dwValueColorUpper, pEntry->m_dwValueColorLower );
