@@ -676,14 +676,20 @@ BOOL				AgpmEventSpawn::LoadSpawnInfoFromExcel( char *pstrFileName)
 						continue;
 					}
 
-					if(szTotalMobCount)
+					if (szTotalMobCount)
+					{
 						pcsSpawn->m_lTotalCharacter = atoi(szTotalMobCount);
+					}
 
-					if(szSiegeWarType)
+					if (szSiegeWarType)
+					{
 						pcsSpawn->m_lSiegeWarType = (AgpdSpawnSiegeWarType)atoi(szSiegeWarType);
+					}
 
-					if(szSpawntime)
-						pcsSpawn->m_lSpawnInterval = atoi(szSpawntime);
+					if (szSpawntime) 
+					{
+						pcsSpawn->m_lSpawnInterval = atoi(szSpawntime) / 1000;
+					}
 
 					for(INT32 i = 0; i < AGPDSPAWN_MAX_CHAR_NUM; ++i)
 					{
