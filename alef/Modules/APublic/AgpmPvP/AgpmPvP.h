@@ -351,7 +351,7 @@ public:
 	BOOL InitEnemyGuildList(AgpdCharacter* pcsCharacter);
 	BOOL AddEnemyGuild(AgpdCharacter* pcsCharacter, CHAR* szGuildID, INT8 cPvPMode = -1, UINT32 ulLastCombatClock = 0);
 	BOOL RemoveEnemyGuild(AgpdCharacter* pcsCharacter, CHAR* szGuildID);
-	inline BOOL UpdateEnemyGuild(AgpdCharacter* pcsCharacter, CHAR* szGuildID, INT8 cPvPMode = -1, UINT32 ulLastCombatClock = 0);
+	BOOL UpdateEnemyGuild(AgpdCharacter* pcsCharacter, CHAR* szGuildID, INT8 cPvPMode = -1, UINT32 ulLastCombatClock = 0);
 	inline BOOL IsEnemyGuild(AgpdCharacter* pcsCharacter, CHAR* szGuildID);
 	inline AgpdPvPGuildInfo* GetEnemyGuildInfo(AgpdCharacter* pcsCharacter, CHAR* szGuildID);
 
@@ -367,7 +367,7 @@ public:
 	inline BOOL IsSafePvPMode(AgpdCharacter* pcsCharacter);
 	inline BOOL IsFreePvPMode(AgpdCharacter* pcsCharacter);
 	inline BOOL IsCombatPvPMode(AgpdCharacter* pcsCharacter);
-	inline eAgpdPvPMode GetPvPModeByPosition(FLOAT fX, FLOAT fZ);
+	eAgpdPvPMode GetPvPModeByPosition(FLOAT fX, FLOAT fZ);
 	inline eAgpdPvPMode GetPvPModeByRegion(INT16 nRegionIndex);
 
 	// Status
@@ -390,8 +390,8 @@ public:
 	inline BOOL IsEnemyCharacter(AgpdCharacter* pcsCharacter, AgpdCharacter* pcsTarget, BOOL bServer = TRUE);
 	BOOL IsAttackable(AgpdCharacter* pcsCharacter, AgpdCharacter* pcsTarget, BOOL bForce);
 	BOOL IsSkillEnable(AgpdSkill* pcsSkill, AgpdCharacter* pcsTarget, AgpdCharacter* pcsSummonsOwner = NULL);
-	inline BOOL IsAttackSkill(AgpdSkill* pcsSkill);
-	inline BOOL IsAttackSkill(AgpdSkillTemplate* pcsSkillTemplate);
+	BOOL IsAttackSkill(AgpdSkill* pcsSkill);
+	BOOL IsAttackSkill(AgpdSkillTemplate* pcsSkillTemplate);
 	inline BOOL IsAreaSkill(AgpdSkill* pcsSkill);
 
 	// Common For Summons

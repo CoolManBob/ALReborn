@@ -1822,7 +1822,7 @@ AgpdItemTemplate* AgpmItem::GetItemTemplate(CHAR *szTName)
 	{
 		AgpdItemTemplate* pcsTemplate = it->second;
 
-		if(!strcmp(szTName, pcsTemplate->m_szName))
+		if(!strcmp(szTName, pcsTemplate->m_szName.c_str()))
 			return pcsTemplate;
 	}
 	

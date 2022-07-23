@@ -128,7 +128,7 @@ BOOL AgcmUIEventItemConvert::CheckRuneConvert()
 
 	case AGPDITEMCONVERT_RUNE_RESULT_SUCCESS:
 		{
-			strcpy(m_szRuneName, ((AgpdItemTemplate *) pcsRuneItem->m_pcsItemTemplate)->m_szName);
+			strcpy(m_szRuneName, ((AgpdItemTemplate *) pcsRuneItem->m_pcsItemTemplate)->m_szName.c_str());
 
 			m_pcsAgcmUIManager2->ThrowEvent(m_lEventUpdateConvertConfirm);
 

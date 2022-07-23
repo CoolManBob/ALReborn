@@ -1691,7 +1691,7 @@ BOOL AgpmPvP::RemoveEnemyGuild(AgpdCharacter* pcsCharacter, CHAR* szGuildID)
 	//return TRUE;
 }
 
-inline BOOL AgpmPvP::UpdateEnemyGuild(AgpdCharacter* pcsCharacter, CHAR* szGuildID, INT8 cPvPMode, UINT32 ulLastCombatClock)
+BOOL AgpmPvP::UpdateEnemyGuild(AgpdCharacter* pcsCharacter, CHAR* szGuildID, INT8 cPvPMode, UINT32 ulLastCombatClock)
 {
 	if(!pcsCharacter || !szGuildID)
 		return FALSE;
@@ -2050,7 +2050,7 @@ inline BOOL AgpmPvP::IsCombatPvPMode(AgpdCharacter* pcsCharacter)
 }
 
 // X, Z 좌표로 현재 리전을 얻어서 PvP 모드를 리턴한다.
-inline eAgpdPvPMode AgpmPvP::GetPvPModeByPosition(FLOAT fX, FLOAT fZ)
+eAgpdPvPMode AgpmPvP::GetPvPModeByPosition(FLOAT fX, FLOAT fZ)
 {
 	INT16 nRegionIndex = m_papmMap->GetRegion(fX, fZ);
 	return GetPvPModeByRegion(nRegionIndex);
@@ -2854,7 +2854,7 @@ BOOL AgpmPvP::IsSkillEnable(AgpdSkill* pcsSkill, AgpdCharacter* pcsTarget, AgpdC
 
 // Attack 스킬인지 확인한다.
 // Debuf 스킬도 Attack 으로 간주
-inline BOOL AgpmPvP::IsAttackSkill(AgpdSkill* pcsSkill)
+BOOL AgpmPvP::IsAttackSkill(AgpdSkill* pcsSkill)
 {
 	if(!pcsSkill || !pcsSkill->m_pcsTemplate)
 		return FALSE;
@@ -2862,7 +2862,7 @@ inline BOOL AgpmPvP::IsAttackSkill(AgpdSkill* pcsSkill)
 	return IsAttackSkill((AgpdSkillTemplate*)pcsSkill->m_pcsTemplate);
 }
 
-inline BOOL AgpmPvP::IsAttackSkill(AgpdSkillTemplate* pcsSkillTemplate)
+BOOL AgpmPvP::IsAttackSkill(AgpdSkillTemplate* pcsSkillTemplate)
 {
 	if(!pcsSkillTemplate)
 		return FALSE;

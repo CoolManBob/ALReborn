@@ -177,7 +177,7 @@ BOOL AgpmItem::TemplateWriteCB(PVOID pData, ApModule *pClass, ApModuleStream *pS
 	AgpmItem				*pThis = (AgpmItem *) pClass;
 
 	// Character Template의 값들을 Write한다.
-	if (!pStream->WriteValue(AGPMITEM_INI_NAME_NAME, pcsTemplate->m_szName))
+	if (!pStream->WriteValue(AGPMITEM_INI_NAME_NAME, pcsTemplate->m_szName.c_str()))
 	{
 		TRACE("AgpmItem::TemplateWriteCB() Error (1) !!!\n");
 		return FALSE;
@@ -407,26 +407,29 @@ BOOL AgpmItem::TemplateReadCB(PVOID pData, ApModule *pClass, ApModuleStream *pSt
 		}
 		else if (!strcmp(szValueName, AGPMITEM_INI_NAME_NAME))
 		{
-			pStream->GetValue(pcsTemplate->m_szName, AGPMITEM_MAX_ITEM_NAME);
+			char nameTemp[AGPMITEM_MAX_ITEM_NAME];
+			pStream->GetValue(nameTemp, AGPMITEM_MAX_ITEM_NAME);
+
+			pcsTemplate->m_szName = nameTemp;
 
 			// 지금 돈의 Other Type이 세팅이 안되어 있다. 고로.. 돈 TID가 세팅 안된다.
 			// 임시로 이름이 "겔드"인게 있음 그걸로 Money TID를 세팅한다.
 
-			if (g_eServiceArea == AP_SERVICE_AREA_CHINA)
+			/*if (g_eServiceArea == AP_SERVICE_AREA_CHINA)
 			{
-				if ( strcmp(pcsTemplate->m_szName, GeldName[AP_SERVICE_AREA_CHINA]) == 0 )
+				if ( strcmp(pcsTemplate->m_szName.c_str(), GeldName[AP_SERVICE_AREA_CHINA]) == 0)
+					pThis->m_lItemMoneyTID = pcsTemplate->m_lID;
+			}*/
+			if (g_eServiceArea == AP_SERVICE_AREA_WESTERN)
+			{
+				if ( pcsTemplate->m_szName.compare(GeldName[AP_SERVICE_AREA_WESTERN]) == 0)
 					pThis->m_lItemMoneyTID = pcsTemplate->m_lID;
 			}
-			else if (g_eServiceArea == AP_SERVICE_AREA_WESTERN)
+			/*else
 			{
-				if ( strcmp(pcsTemplate->m_szName, GeldName[AP_SERVICE_AREA_WESTERN]) == 0 )
+				if ( strcmp(pcsTemplate->m_szName.c_str(), GeldName[AP_SERVICE_AREA_KOREA]) == 0)
 					pThis->m_lItemMoneyTID = pcsTemplate->m_lID;
-			}
-			else
-			{
-				if ( strcmp(pcsTemplate->m_szName, GeldName[AP_SERVICE_AREA_KOREA]) == 0 )
-					pThis->m_lItemMoneyTID = pcsTemplate->m_lID;
-			}
+			}*/
 		}
 		else if (!strcmp(szValueName, AGPMITEM_INI_NAME_TYPE))
 		{
@@ -717,12 +720,14 @@ BOOL AgpmItem::StreamReadTemplate(CHAR *szFile, CHAR *pszErrorMessage, BOOL bDec
 			return FALSE;
 		}
 
-		char* pTemplateName = GetItemTemplateName( pcsAgpdItemTemplate->m_lID );
-		if( pTemplateName && strlen( pTemplateName ) > 0 )
+		string pTemplateName = GetItemTemplateName( pcsAgpdItemTemplate->m_lID );
+		if( pTemplateName.length() > 0)
 		{
 			// 엔트리파일에서 읽어들인 이름이 있다면 그걸로 이름을 바꿔준다.
-			memset( pcsAgpdItemTemplate->m_szName, 0, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ) );
-			strcpy_s( pcsAgpdItemTemplate->m_szName, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ), pTemplateName );
+			//memset( pcsAgpdItemTemplate->m_szName, 0, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ) );
+			//strcpy_s( pcsAgpdItemTemplate->m_szName, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ), pTemplateName );
+			pcsAgpdItemTemplate->m_szName.resize(sizeof(char) * (AGPMITEM_MAX_ITEM_NAME + 1));
+			pcsAgpdItemTemplate->m_szName = pTemplateName;
 		}
 		else
 		{
@@ -806,11 +811,11 @@ BOOL AgpmItem::StreamReadTemplates( char* pPathName, char* pEntryFileName, char*
 		stItemTemplateEntry* pTemplateEntry = &Iter->second;
 		if( pTemplateEntry )
 		{
-			if( !StreamReadOneTemplate( pTemplateEntry->m_strTemplateFileName, bDecryption ) )
+			if( !StreamReadOneTemplate( (char*)pTemplateEntry->m_strTemplateFileName.c_str(), bDecryption))
 			{
 				if( pErrorString )
 				{
-					sprintf( pErrorString, "ERROR: Failed to load Item Template. ( FileName = %s )", pTemplateEntry->m_strTemplateFileName );
+					sprintf( pErrorString, "ERROR: Failed to load Item Template. ( FileName = %s )", pTemplateEntry->m_strTemplateFileName.c_str() );
 #ifdef _DEBUG
 					OutputDebugString( pErrorString );
 #endif
@@ -868,12 +873,14 @@ BOOL AgpmItem::StreamReadOneTemplate( char* pFileName, BOOL bDecryption )
 	if( !ppdItemTemplate ) return FALSE;
 	if( !csStream.EnumReadCallback( AGPMITEM_DATA_TYPE_TEMPLATE, ppdItemTemplate, this ) ) return FALSE;
 
-	char* pTemplateName = GetItemTemplateName( ppdItemTemplate->m_lID );
-	if( pTemplateName && strlen( pTemplateName ) > 0 )
+	string pTemplateName = GetItemTemplateName( ppdItemTemplate->m_lID );
+	if( pTemplateName.length() > 0)
 	{
 		// 엔트리파일에서 읽어들인 이름이 있다면 그걸로 이름을 바꿔준다.
-		memset( ppdItemTemplate->m_szName, 0, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ) );
-		strcpy_s( ppdItemTemplate->m_szName, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ), pTemplateName );
+		//memset( ppdItemTemplate->m_szName, 0, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ) );
+		//strcpy_s( ppdItemTemplate->m_szName, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ), pTemplateName );
+		ppdItemTemplate->m_szName.resize(sizeof(char) * (AGPMITEM_MAX_ITEM_NAME + 1));
+		ppdItemTemplate->m_szName = pTemplateName;
 	}
 	else
 	{
@@ -4015,11 +4022,11 @@ void AgpmItem::ClearItemTemplateEntry( void )
 	m_mapItemTemplates.clear();
 }
 
-BOOL AgpmItem::AddItemTemplateEntry( int nTID, char* pName, char* pFileName )
+BOOL AgpmItem::AddItemTemplateEntry( int nTID, string pName, string pFileName )
 {
 	if( nTID <= 0 ) return FALSE;
-	if( !pName || strlen( pName ) <= 0 ) return FALSE;
-	if( !pFileName || strlen( pFileName ) <= 0 ) return FALSE;
+	if( pName.empty() || pName.size() <= 0) return FALSE;
+	if( pFileName.empty() || pFileName.size() <= 0) return FALSE;
 
 	std::map< int, stItemTemplateEntry >::iterator Iter;
 	Iter = m_mapItemTemplates.find( nTID );
@@ -4030,8 +4037,10 @@ BOOL AgpmItem::AddItemTemplateEntry( int nTID, char* pName, char* pFileName )
 		if( pEntry )
 		{
 			pEntry->m_nTID = nTID;
-			strcpy_s( pEntry->m_strTemplateName, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ), pName );
-			strcpy_s( pEntry->m_strTemplateFileName, sizeof( char ) * 256, pFileName );
+			pEntry->m_strTemplateName = pName;
+			pEntry->m_strTemplateFileName = pFileName;
+			//strcpy_s( pEntry->m_strTemplateName, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ), pName.c_str() );
+			//strcpy_s( pEntry->m_strTemplateFileName, sizeof( char ) * 256, pFileName.c_str() );
 		}
 	}
 	else
@@ -4039,8 +4048,10 @@ BOOL AgpmItem::AddItemTemplateEntry( int nTID, char* pName, char* pFileName )
 		stItemTemplateEntry NewEntry;
 
 		NewEntry.m_nTID = nTID;
-		strcpy_s( NewEntry.m_strTemplateName, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ), pName );
-		strcpy_s( NewEntry.m_strTemplateFileName, sizeof( char ) * 256, pFileName );
+		NewEntry.m_strTemplateName = pName;
+		NewEntry.m_strTemplateFileName = pFileName;
+		//strcpy_s( NewEntry.m_strTemplateName, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ), pName.c_str() );
+		//strcpy_s( NewEntry.m_strTemplateFileName, sizeof( char ) * 256, pFileName.c_str() );
 
 		m_mapItemTemplates.insert( std::map< int, stItemTemplateEntry >::value_type( nTID, NewEntry ) );
 	}
@@ -4048,15 +4059,15 @@ BOOL AgpmItem::AddItemTemplateEntry( int nTID, char* pName, char* pFileName )
 	return TRUE;
 }
 
-char* AgpmItem::GetItemTemplateName( int nTID )
+string AgpmItem::GetItemTemplateName( int nTID )
 {
 	std::map< int, stItemTemplateEntry >::iterator Iter;
 	Iter = m_mapItemTemplates.find( nTID );
 
-	if( Iter == m_mapItemTemplates.end() ) return NULL;
+	if( Iter == m_mapItemTemplates.end() ) return "";
 	
 	stItemTemplateEntry* pEntry = &Iter->second;
-	if( !pEntry ) return NULL;
+	if( !pEntry ) return "";
 
 	return pEntry->m_strTemplateName;
 }
@@ -4082,11 +4093,11 @@ BOOL AgpmItem::LoadItemTemplateEntryINI( char* pFileName, BOOL bEncryption )
 			const char* pValueName = csStream.GetValueName();
 			if( !pValueName || strlen( pValueName ) <= 0 ) continue;
 
-			char* pTemplateName = NULL;
+			string pTemplateName;
 			if( strcmp( pValueName, "TemplateName" ) == 0 )
 			{
 				pTemplateName = ( char* )csStream.GetValue();
-				if( !pTemplateName || strlen( pTemplateName ) <= 0 ) continue;
+				if( pTemplateName.empty() || pTemplateName.length() <= 0) continue;
 			}
 
 			csStream.ReadNextValue();
@@ -4094,11 +4105,11 @@ BOOL AgpmItem::LoadItemTemplateEntryINI( char* pFileName, BOOL bEncryption )
 			pValueName = csStream.GetValueName();
 			if( !pValueName || strlen( pValueName ) <= 0 ) continue;
 
-			char* pTemplateFileName = NULL;
+			string pTemplateFileName;
 			if( strcmp( pValueName, "TemplateFileName" ) == 0 )
 			{
 				pTemplateFileName = ( char* )csStream.GetValue();
-				if( !pTemplateFileName || strlen( pTemplateFileName ) <= 0 ) continue;
+				if( pTemplateFileName.empty() || pTemplateFileName.length() <= 0) continue;
 			}
 
 			AddItemTemplateEntry( nTID, pTemplateName, pTemplateFileName );
@@ -4205,8 +4216,8 @@ BOOL AgpmItem::SaveItemTemplateEntryINI( char* pFileName, BOOL bEncryption )
 		char strSectionName[ 32 ] = { 0, };
 		sprintf_s( strSectionName, sizeof(strSectionName), "%d", pEntry->m_nTID );
 		csStream.SetSection( strSectionName );
-		csStream.WriteValue( "TemplateName", pEntry->m_strTemplateName );
-		csStream.WriteValue( "TemplateFileName", pEntry->m_strTemplateFileName );
+		csStream.WriteValue( "TemplateName", pEntry->m_strTemplateName.c_str() );
+		csStream.WriteValue( "TemplateFileName", pEntry->m_strTemplateFileName.c_str() );
 
 		Iter++;
 	}

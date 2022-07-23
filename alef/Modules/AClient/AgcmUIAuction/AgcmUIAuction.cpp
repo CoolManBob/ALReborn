@@ -520,7 +520,7 @@ BOOL AgcmUIAuction::CBBoardSelect( PVOID pData, PVOID pClass, PVOID pCustData )
 
 				if( pcsItemTemplate )
 				{
-					strcat( pcsAuctionBoardUnit->m_pstrItemName, pcsItemTemplate->m_szName );
+					strcat( pcsAuctionBoardUnit->m_pstrItemName, pcsItemTemplate->m_szName.c_str() );
 					bStackableItem = pcsItemTemplate->m_bStackable;
 				}
 			}
@@ -1009,7 +1009,7 @@ BOOL AgcmUIAuction::GetCategoryText( INT32 lDepth, INT32 lCategory )
 					AgcdUICategoryInfoUnit* pcsData = new AgcdUICategoryInfoUnit;
 					if( pcsData )
 					{
-						pcsData->m_pstrCategoryName = pcsAgpdItemTemplate->m_szName;
+						pcsData->m_pstrCategoryName = (char*)pcsAgpdItemTemplate->m_szName.c_str();
 						pcsData->m_lCategoryID = pcsAgpdItemTemplate->m_lID;
 
 						m_paCategoryUD[ lCounter ] = pcsData;

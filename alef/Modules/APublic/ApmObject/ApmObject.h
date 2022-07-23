@@ -54,6 +54,7 @@ enum ApmObjectCallbackPoint			// Callback ID in Object Module
 #define	APMOBJECT_INI_FILE_NAME				"Obj%05d.ini"
 #define	APMOBJECT_INI_SERVER_FILE_NAME		"OBS%04d.ini"
 
+
 // 맵툴용 파일 버전 1.1
 #define APMOBJECT_LOCAL_INI_FILE_NAME_NORMAL	"Ini\\obdn%04d.ini"
 #define APMOBJECT_LOCAL_INI_FILE_NAME_STATIC	"Ini\\obds%04d.ini"

@@ -356,8 +356,8 @@ BOOL AgcmUICashInven::CBDisplayCashInvenItemInfoName(PVOID pClass, PVOID pData, 
 	AgpdItem *pcsItem = pThis->m_pcsAgpmItem->GetItem(pcsGridItem);
 	if (!pcsItem || !pcsItem->m_pcsItemTemplate) return FALSE;
 
-	if (pcsItem->m_pcsItemTemplate->m_szName)
-		pUIEdit->SetText(pcsItem->m_pcsItemTemplate->m_szName);
+	if (pcsItem->m_pcsItemTemplate->m_szName.length() > 0)
+		pUIEdit->SetText((CHAR*)pcsItem->m_pcsItemTemplate->m_szName.c_str());
 	return TRUE;
 }
 

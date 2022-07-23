@@ -394,7 +394,8 @@ enum eAgpmItemSectionType
 
 class AgpdItemTemplate : public ApdItemTemplate {
 public:
-	CHAR					m_szName[AGPMITEM_MAX_ITEM_NAME + 1];			// item name
+	//CHAR					m_szName[AGPMITEM_MAX_ITEM_NAME + 1];			// item name
+	string					m_szName;
 	AgpmItemType			m_nType;										// item type (equip, usable, other)
 	INT32					m_nSubType;										// item subtype	(Ride Àü¿ë)
 	INT32					m_lExtraType;									// item extra type 2007.09.14. steeple
@@ -462,7 +463,7 @@ public:
 	
 	eAgpmItemSectionType	m_eItemSectionType;
 
-	CHAR * GetName()		{ return m_szName; }
+	CHAR * GetName()		{ return (CHAR*)m_szName.c_str(); }
 };
 
 class AgpdItemTemplateEquip : public AgpdItemTemplate

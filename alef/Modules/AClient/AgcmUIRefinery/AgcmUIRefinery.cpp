@@ -264,8 +264,8 @@ void AgcmUIRefinery::OnSuccess(INT32 lResultItemTID)
 	if (psz)
 		{
 		CHAR sz[512];
-		sprintf(sz, psz, pAgpdItemTemplate->m_szName);
-		m_pszNotify = pAgpdItemTemplate->m_szName;
+		sprintf(sz, psz, pAgpdItemTemplate->m_szName.c_str());
+		m_pszNotify = (CHAR*)pAgpdItemTemplate->m_szName.c_str();
 		AddSystemMessage(sz);
 		}
 	

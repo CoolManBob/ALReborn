@@ -181,7 +181,7 @@ bool AgpmAuctionCategory::LoadCategoryInfo( char *pstrFileName, bool bEncrypt )
 
 				if( pcsItemTemplate )
 				{
-					if( strcmp( pcsItemTemplate->m_szName, pstrItemName ) == 0 )
+					if( strcmp( pcsItemTemplate->m_szName.c_str(), pstrItemName) == 0)
 					{
 						AgpdAuctionCategory1Info	**ppcsAgpdAuctionCategory1Info;
 						AgpdAuctionCategory2Info	**ppcsAgpdAuctionCategory2Info;

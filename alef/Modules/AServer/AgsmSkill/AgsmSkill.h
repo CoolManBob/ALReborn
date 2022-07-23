@@ -448,7 +448,7 @@ public:
 	BOOL				CheckDOTCount(AgpdSkill* pcsSkill, ApBase* pcsTarget);
 	
 	BOOL				CheckLevelDiff(AgpdSkill* pcsSkill, ApBase* pcsTarget);	// 2006.06.27. steeple
-	inline BOOL			CheckOnceAffected(AgpdSkillTemplate* pcsSkillTemplate);	// 2006.11.27. steeple
+	BOOL				CheckOnceAffected(AgpdSkillTemplate* pcsSkillTemplate);	// 2006.11.27. steeple
 
 	BOOL				SetConnectionInfo(AgpdSkill* pcsSkill);							// 2007.10.23. steeple
 	BOOL				CheckConnectionInfo(AgpdSkill* pcsSkill, ApBase* pcsTarget, BOOL bProcessInterval = FALSE);	// 2007.10.23. steeple

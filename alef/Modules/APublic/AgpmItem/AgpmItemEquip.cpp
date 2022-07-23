@@ -175,7 +175,7 @@ BOOL AgpmItem::EquipItem(AgpdCharacter *pcsCharacter, AgpdItemADChar *pcsItemADC
 		if(!bLogin && IsEnableEquipItemInMyRegion(pcsCharacter, pcsItem) == FALSE)			
 		{
 			if(m_pagpmSystemMessage)
-				m_pagpmSystemMessage->ProcessSystemMessage(0, AGPMSYSTEMMESSAGE_CODE_DISABLE_EQUIP_ITEM_THIS_REGION, -1, -1, pcsItem->m_pcsItemTemplate->m_szName, NULL, pcsCharacter);
+				m_pagpmSystemMessage->ProcessSystemMessage(0, AGPMSYSTEMMESSAGE_CODE_DISABLE_EQUIP_ITEM_THIS_REGION, -1, -1, (CHAR*)pcsItem->m_pcsItemTemplate->m_szName.c_str(), NULL, pcsCharacter);
 			return FALSE;
 		}
 	}

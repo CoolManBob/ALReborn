@@ -1407,14 +1407,18 @@ private :
 	struct stItemTemplateEntry
 	{
 		int				m_nTID;
-		char			m_strTemplateName[ AGPMITEM_MAX_ITEM_NAME + 1 ];
-		char			m_strTemplateFileName[ 256 ];
+		string			m_strTemplateName;
+		string			m_strTemplateFileName;
+		//char			m_strTemplateName[ AGPMITEM_MAX_ITEM_NAME + 1 ];
+		//char			m_strTemplateFileName[ 256 ];
 
 		stItemTemplateEntry( void )
 		{
 			m_nTID = 0;
-			memset( m_strTemplateName, 0, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ) );
-			memset( m_strTemplateFileName, 0, sizeof( char ) * 256 );
+			m_strTemplateName.resize(sizeof(char) * (AGPMITEM_MAX_ITEM_NAME + 1));
+			m_strTemplateFileName.resize(sizeof(char) * 256);
+			//memset( m_strTemplateName, 0, sizeof( char ) * ( AGPMITEM_MAX_ITEM_NAME + 1 ) );
+			//memset( m_strTemplateFileName, 0, sizeof( char ) * 256 );
 		}
 	};
 
@@ -1424,8 +1428,10 @@ private :
 
 public :
 	void				ClearItemTemplateEntry( void );
-	BOOL				AddItemTemplateEntry( int nTID, char* pName, char* pFileName );
-	char*				GetItemTemplateName( int nTID );
+	//BOOL				AddItemTemplateEntry( int nTID, char* pName, char* pFileName );
+	BOOL				AddItemTemplateEntry(int nTID, string pName, string pFileName);
+	//char*				GetItemTemplateName( int nTID );
+	string				GetItemTemplateName(int nTID);
 
 	BOOL				LoadItemTemplateEntryINI( char* pFileName, BOOL bEncryption );
 	BOOL				SaveItemTemplateEntryINI( char* pFileName, BOOL bEncryption );
