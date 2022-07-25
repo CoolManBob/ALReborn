@@ -1749,8 +1749,7 @@ PVOID AgcmCharacter::OnAnimCB(PVOID pvData)
 		{			
 			if ( pstAttachedData->m_unCustFlags & AGCMCHAR_ACF_CLUMP_HIDE_END_TIME )
 			{
-				//if ( pstAgcdCharacter->m_pClump && (pstAgcdCharacter->m_cTransparentType == (INT8) AGCMCHAR_TRANSPARENT_NONE) )
-				if (pstAgcdCharacter->m_pClump && (pstAgcdCharacter->m_cTransparentType == (INT8)AGCMCHAR_TRANSPARENT_FULL))
+				if ( pstAgcdCharacter->m_pClump && (pstAgcdCharacter->m_cTransparentType == (INT8) AGCMCHAR_TRANSPARENT_NONE) )
 					AgcmCharacter::m_pThisAgcmCharacter->ShowClumpForced(lCID, FALSE, pstAttachedData->m_uClumpFadeOutTime);
 			}
 		}

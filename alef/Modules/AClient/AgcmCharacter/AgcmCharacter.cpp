@@ -11161,7 +11161,7 @@ VOID AgcmCharacter::ShowClumpForced(INT32 lCID, BOOL bShow, UINT32 uFadeTime)
 	if ( !pClump )
 		return;	
 	
-	if ( bShow )
+	/*if ( bShow )
 	{
 		m_pcsAgcmRender->InvisibleFxEnd(pClump);
 		m_pcsAgcmRender->StartFadeInClump(pClump, 0, uFadeTime);
@@ -11202,7 +11202,7 @@ VOID AgcmCharacter::ShowClumpForced(INT32 lCID, BOOL bShow, UINT32 uFadeTime)
 			//todo: 현재는 강제로 effect를 그리도록 이 옵션을 주고 있음. 모델툴에서 checkbox 등으로 설정가능하게 빼야할것임
 			pAgcdCharacter->m_pClump->stType.eType |= ACUOBJECT_TYPE_FORCED_RENDER_EFFECT;
 		}
-	}
+	}*/
 }
 //@}
 
